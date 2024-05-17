@@ -10,6 +10,9 @@ def parse_file(file_path):
     
     tree = parser.compilation_unit()  
     
+    root_node = tree.children[0] 
+    node_type = type(root_node).__name__
+    
     print(tree.toStringTree(recog=parser))
     pass
 
