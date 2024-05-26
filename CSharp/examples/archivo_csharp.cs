@@ -1,10 +1,33 @@
-//Hello world
 using System;
             
 class Program
 {
     static void Main()
     {
-        int a = 0;
+        A a = new A();
+        // for (int i = 0; i < 2; i++)
+        // {
+        //     Console.WriteLine("" + i);
+        // }
+        
+        // while (true):
+        //     break;
+
+        // try
+        // {
+        //     Console.WriteLine("a");
+        // }
+        // catch (Exception ex)
+        // {
+        //     Console.WriteLine("Error inesperado: {ex.Message}");
+        // }
     }
 }
+abstract class A
+{
+    public abstract void Run();
+}
+// public interface B
+// {
+//     void Run();
+// }

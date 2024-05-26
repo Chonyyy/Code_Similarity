@@ -10,12 +10,9 @@ def parse_file(file_path):
     stream = CommonTokenStream(lexer)
     parser = CSharpParser(stream)
     
-    tree = parser.compilation_unit()  
-    
+    tree = parser.compilation_unit()     
     root_node = tree.children[0] 
-    # node_type = type(root_node).__name__
-    
-    bfs_tree(tree)
+    # bfs_tree(tree)
     
     extractor = FeatureExtractorListener()
     walk_tree(extractor, tree)
