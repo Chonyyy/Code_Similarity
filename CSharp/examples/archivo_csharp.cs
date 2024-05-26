@@ -1,9 +1,10 @@
+//Hello world
 using System;
             
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello, World!");
+        int a = 0;
     }
 }
