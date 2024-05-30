@@ -11,18 +11,17 @@ class FeatureExtractorListener(CSharpParserListener):
         self.methods = 0
         self.classes = 0
         self.interfaces = 0
-       
         self.abstract_classes = 0
         self.import_statements = 0
         self.nested_classes = 0
         self.exceptions_handled = 0
         self.method_lengths = []
         self.function_calls = 0
-        
+
         self.variable_names = set()
         self.method_names = set()
         self.class_names = set()
-        self.interfaces_names = set()
+        self.interface_names = set()
         self.distinct_tokens = {}
         self.control_structures = {
             'if': 0,
@@ -31,6 +30,9 @@ class FeatureExtractorListener(CSharpParserListener):
             'while': 0,
             'dowhile': 0
         }
+        
+        self.method_return_types = {}
+        self.method_parameters = {}
 
     def enterEveryRule(self, ctx):
         node_type = type(ctx).__name__
@@ -52,10 +54,38 @@ class FeatureExtractorListener(CSharpParserListener):
             start_line = ctx.start.line
             stop_line = ctx.stop.line
             self.method_lengths.append(stop_line - start_line + 1)
+            
+            try:
+                # Obtener tipo de retorno
+                # Obtener tipo de retorno
+                return_type = self.get_return_type(ctx)
+                self.method_return_types[ctx.start.text] = return_type
+                
+                return_type = "void"
+                if ctx.return_type() is not None:
+                    return_type_ctx = ctx.return_type().type()
+                    if return_type_ctx is not None:
+                        return_type = return_type_ctx.getText()
+                self.method_return_types[ctx.start.text] = return_type
+                
+                # Obtener parámetros del método
+                param_count = 0
+                param_info = []
+                
+                if(type(ctx.children[2]).__name__ == "Formal_parameter_listContext"):
+                    for param in ctx.children[2].children[0].fixed_parameter() :
+                        param_type = param.children[0].children[0].getText()
+                        param_name = param.children[0].children[1].getText()
+                        param_info.append((param_type, param_name))
+                        param_count += 1
+                    self.method_parameters[ctx.start.text] = {"count": param_count, "params": param_info}
         
+            except:
+                pass
+            
         elif node_type == "Interface_definitionContext":
             self.interfaces += 1
-            self.interfaces_names.add(ctx.children[1].start.text)
+            self.interface_names.add(ctx.children[1].start.text)
                 
         elif node_type == "Class_definitionContext": 
             self.classes += 1
@@ -96,9 +126,15 @@ class FeatureExtractorListener(CSharpParserListener):
 
     def exitEveryRule(self, ctx):
         self.current_depth -= 1
+        
+    def get_return_type(self, ctx):
+        for child in ctx.children:
+            if type(child).__name__ == "ReturnStatementContext":
+                return child.getText()
+        return "void"
 
     def get_features(self):
-       return {
+        return {
             "total_nodes": self.total_nodes,
             "node_count": self.node_count,
             "max_depth": self.max_depth,
@@ -113,10 +149,13 @@ class FeatureExtractorListener(CSharpParserListener):
             "variable_names": list(self.variable_names),
             "method_names": list(self.method_names),
             "class_names": list(self.class_names),
-            "interfaces_names": list(self.interfaces_names),
+            "interface_names": list(self.interface_names),
             "distinct_tokens_count": self.distinct_tokens,
-            "control_structures_count": self.control_structures
+            "control_structures_count": self.control_structures,
+            "method_return_types": self.method_return_types,
+            "method_parameters": self.method_parameters
         }
+
 
 def walk_tree(listener, node):
     if not node:

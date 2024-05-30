@@ -23,11 +23,20 @@ class Program
         // }
     }
 }
-abstract class A
-{
-    public abstract void Run();
-}
+// abstract class A
+// {
+//     public abstract void Run();
+// }
 // public interface B
 // {
 //     void Run();
 // }
+
+class CLA
+{
+    public bool Lala(int a, string s){
+        Console.WriteLine(a);
+        return true;
+    }
+
+}
