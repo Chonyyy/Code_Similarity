@@ -31,12 +31,36 @@ class Program
 // {
 //     void Run();
 // }
+// sealed class B
+// {
+//     public int b(int a)
+//     {
+//         return a
+//     }
+// }
 
-class CLA
+public class CLA
 {
-    public bool Lala(int a, string s){
-        Console.WriteLine(a);
-        return true;
+    const int a = 7;
+    private bool Lala(int a, string s){
+        return a;
     }
-
+    async bool Lalaa(int a, string s){
+        return a;
+    }
 }
+
+// sealed class Singleton {
+//     private static Singleton _instance;
+
+//     private Singleton() { }
+
+//     public static Singleton Instance {
+//         get {
+//             if (_instance == null) {
+//                 _instance = new Singleton();
+//             }
+//             return _instance;
+//         }
+//     }
+// }

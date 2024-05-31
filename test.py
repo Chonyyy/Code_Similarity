@@ -12,8 +12,7 @@ def parse_file(file_path):
     
     tree = parser.compilation_unit()     
     root_node = tree.children[0] 
-    # bfs_tree(tree)
-    
+
     extractor = FeatureExtractorListener()
     walk_tree(extractor, tree)
     features = extractor.get_features()

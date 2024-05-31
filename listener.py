@@ -12,6 +12,7 @@ class FeatureExtractorListener(CSharpParserListener):
         self.classes = 0
         self.interfaces = 0
         self.abstract_classes = 0
+        self.sealed_classes = 0
         self.import_statements = 0
         self.nested_classes = 0
         self.exceptions_handled = 0
@@ -30,6 +31,27 @@ class FeatureExtractorListener(CSharpParserListener):
             'while': 0,
             'dowhile': 0
         }
+        self.access_modifiers_methods = {
+            'public': 0,
+            'private': 0,
+            'protected': 0,
+            'internal': 0,
+            'protected internal': 0,
+            'private protected': 0,
+            'static': 0
+        }
+        self.other_modifiers = {
+            'const': 0,#ya
+            'readonly': 0,
+            'volatile': 0,
+            'virtual': 0,
+            'override': 0,
+            'new': 0, #ya
+            'partial': 0,
+            'extern': 0,
+            'unsafe': 0,
+            'async': 0
+        }
         
         self.method_return_types = {}
         self.method_parameters = {}
@@ -40,6 +62,12 @@ class FeatureExtractorListener(CSharpParserListener):
         self.current_depth += 1
         self.total_nodes += 1
         
+        try:
+            if ctx.start.text == "const":
+                pass
+        except:
+            pass
+        
         if self.current_depth > self.max_depth:
             self.max_depth = self.current_depth
 
@@ -48,40 +76,27 @@ class FeatureExtractorListener(CSharpParserListener):
             self.variables += 1
             self.variable_names.add(ctx.start.text)
         
-        elif node_type == "Method_declarationContext":  
+        elif node_type == "Method_declarationContext": 
             self.methods += 1
             self.method_names.add(ctx.start.text)
             start_line = ctx.start.line
             stop_line = ctx.stop.line
             self.method_lengths.append(stop_line - start_line + 1)
             
-            try:
-                # Obtener tipo de retorno
-                # Obtener tipo de retorno
-                return_type = self.get_return_type(ctx)
-                self.method_return_types[ctx.start.text] = return_type
-                
-                return_type = "void"
-                if ctx.return_type() is not None:
-                    return_type_ctx = ctx.return_type().type()
-                    if return_type_ctx is not None:
-                        return_type = return_type_ctx.getText()
-                self.method_return_types[ctx.start.text] = return_type
-                
-                # Obtener parámetros del método
-                param_count = 0
-                param_info = []
-                
-                if(type(ctx.children[2]).__name__ == "Formal_parameter_listContext"):
-                    for param in ctx.children[2].children[0].fixed_parameter() :
-                        param_type = param.children[0].children[0].getText()
-                        param_name = param.children[0].children[1].getText()
-                        param_info.append((param_type, param_name))
-                        param_count += 1
-                    self.method_parameters[ctx.start.text] = {"count": param_count, "params": param_info}
-        
-            except:
-                pass
+            return_type = ctx.parentCtx.start.text
+            self.method_return_types[ctx.start.text] = return_type
+            
+            # Obtener parámetros del método
+            param_count = 0
+            param_info = []
+            
+            if(type(ctx.children[2]).__name__ == "Formal_parameter_listContext"):
+                for param in ctx.children[2].children[0].fixed_parameter() :
+                    param_type = param.children[0].children[0].getText()
+                    param_name = param.children[0].children[1].getText()
+                    param_info.append((param_type, param_name))
+                    param_count += 1
+                self.method_parameters[ctx.start.text] = {"count": param_count, "params": param_info}
             
         elif node_type == "Interface_definitionContext":
             self.interfaces += 1
@@ -94,6 +109,8 @@ class FeatureExtractorListener(CSharpParserListener):
                 self.class_names.add(node.start.text)
             if ctx.parentCtx.start.text == 'abstract':
                 self.abstract_classes += 1
+            if ctx.parentCtx.start.text == 'sealed':
+                self.sealed_classes += 1
             
         elif node_type == "TryStatementContext":
             self.exceptions_handled += 1
@@ -118,7 +135,24 @@ class FeatureExtractorListener(CSharpParserListener):
         
         elif node_type == "DoWhileStatementContext":
             self.control_structures['dowhile'] += 1
-
+            
+        elif node_type == "Local_variable_initializerContext":
+            self.other_modifiers[ctx.start.text] += 1
+            
+        elif node_type == "Constant_declarationContext":
+            self.other_modifiers["const"] += 1
+        
+        elif node_type == "Class_member_declarationContext":
+            modifiers = self.get_modifiers(ctx)
+            for modifier in modifiers:
+                if modifier in self.access_modifiers_methods:
+                    self.access_modifiers_methods[modifier] += 1
+                    break
+                elif modifier in self.other_modifiers:
+                    self.other_modifiers[modifier] +=1
+                    break
+            
+        
         # Captura de tokens distintos y su conteo
         if hasattr(ctx, 'symbol'):
             token_text = ctx.symbol.text
@@ -126,12 +160,36 @@ class FeatureExtractorListener(CSharpParserListener):
 
     def exitEveryRule(self, ctx):
         self.current_depth -= 1
-        
-    def get_return_type(self, ctx):
-        for child in ctx.children:
-            if type(child).__name__ == "ReturnStatementContext":
-                return child.getText()
-        return "void"
+    
+    def get_modifiers(self, ctx):
+        modifiers = []
+        if hasattr(ctx, 'all_member_modifiers'):
+            try:
+                all_modifiers = ctx.all_member_modifiers().getText().split()
+                for modifier in all_modifiers:
+                    if modifier == 'public':
+                        modifiers.append('public')
+                    elif modifier == 'private':
+                        modifiers.append('private')
+                    elif modifier == 'protected':
+                        modifiers.append('protected')
+                    elif modifier == 'static':
+                        modifiers.append('static')
+                    # elif modifier == 'const':
+                    #     modifiers.append('const')
+                    elif modifier == 'internal':
+                        if 'protected internal' in all_modifiers:
+                            modifiers.append('protected internal')
+                        else:
+                            modifiers.append('internal')
+                    elif modifier == 'protected':
+                        if 'internal' in all_modifiers:
+                            modifiers.append('protected internal')
+                        elif 'private protected' in all_modifiers:
+                            modifiers.append('private protected')
+            except:
+                pass
+        return modifiers
 
     def get_features(self):
         return {
@@ -142,6 +200,7 @@ class FeatureExtractorListener(CSharpParserListener):
             "number_of_methods": self.methods,
             "number_of_classes": self.classes,
             "number_of_abstract_classes": self.abstract_classes,
+            "number_of_sealed_classes": self.sealed_classes,
             "number_of_interfaces": self.interfaces,
             "import_statements": self.import_statements,
             "exceptions_handled": self.exceptions_handled,
@@ -153,7 +212,9 @@ class FeatureExtractorListener(CSharpParserListener):
             "distinct_tokens_count": self.distinct_tokens,
             "control_structures_count": self.control_structures,
             "method_return_types": self.method_return_types,
-            "method_parameters": self.method_parameters
+            "method_parameters": self.method_parameters,
+            "access_modifiers_methods_count": self.access_modifiers_methods,
+            "other_modifiers_count": self.other_modifiers
         }
 
 
