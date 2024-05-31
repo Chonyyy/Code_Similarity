@@ -7,7 +7,11 @@ class FeatureExtractorListener(CSharpParserListener):
         self.current_depth = 0
         self.total_nodes = 0
         self.node_count = {}
+        
         self.variables = 0
+        self.constants = 0
+        self.out_variables = 0
+        
         self.methods = 0
         self.classes = 0
         self.interfaces = 0
@@ -41,12 +45,11 @@ class FeatureExtractorListener(CSharpParserListener):
             'static': 0
         }
         self.other_modifiers = {
-            'const': 0,#ya
             'readonly': 0,
             'volatile': 0,
             'virtual': 0,
             'override': 0,
-            'new': 0, #ya
+            'new': 0, 
             'partial': 0,
             'extern': 0,
             'unsafe': 0,
@@ -63,7 +66,7 @@ class FeatureExtractorListener(CSharpParserListener):
         self.total_nodes += 1
         
         try:
-            if ctx.start.text == "const":
+            if ctx.start.text == "partial":
                 pass
         except:
             pass
@@ -140,19 +143,15 @@ class FeatureExtractorListener(CSharpParserListener):
             self.other_modifiers[ctx.start.text] += 1
             
         elif node_type == "Constant_declarationContext":
-            self.other_modifiers["const"] += 1
+            self.constants += 1
         
-        elif node_type == "Class_member_declarationContext":
-            modifiers = self.get_modifiers(ctx)
-            for modifier in modifiers:
-                if modifier in self.access_modifiers_methods:
-                    self.access_modifiers_methods[modifier] += 1
-                    break
-                elif modifier in self.other_modifiers:
-                    self.other_modifiers[modifier] +=1
-                    break
+        elif node_type == "All_member_modifierContext":
+            modifier = ctx.start.text
+            if modifier in self.other_modifiers:
+                self.other_modifiers[modifier] += 1
+            if modifier in self.access_modifiers_methods:
+                self.access_modifiers_methods[modifier] += 1
             
-        
         # Captura de tokens distintos y su conteo
         if hasattr(ctx, 'symbol'):
             token_text = ctx.symbol.text
@@ -161,42 +160,13 @@ class FeatureExtractorListener(CSharpParserListener):
     def exitEveryRule(self, ctx):
         self.current_depth -= 1
     
-    def get_modifiers(self, ctx):
-        modifiers = []
-        if hasattr(ctx, 'all_member_modifiers'):
-            try:
-                all_modifiers = ctx.all_member_modifiers().getText().split()
-                for modifier in all_modifiers:
-                    if modifier == 'public':
-                        modifiers.append('public')
-                    elif modifier == 'private':
-                        modifiers.append('private')
-                    elif modifier == 'protected':
-                        modifiers.append('protected')
-                    elif modifier == 'static':
-                        modifiers.append('static')
-                    # elif modifier == 'const':
-                    #     modifiers.append('const')
-                    elif modifier == 'internal':
-                        if 'protected internal' in all_modifiers:
-                            modifiers.append('protected internal')
-                        else:
-                            modifiers.append('internal')
-                    elif modifier == 'protected':
-                        if 'internal' in all_modifiers:
-                            modifiers.append('protected internal')
-                        elif 'private protected' in all_modifiers:
-                            modifiers.append('private protected')
-            except:
-                pass
-        return modifiers
-
     def get_features(self):
         return {
             "total_nodes": self.total_nodes,
             "node_count": self.node_count,
             "max_depth": self.max_depth,
             "number_of_variables": self.variables,
+            "number_of_constants": self.constants,
             "number_of_methods": self.methods,
             "number_of_classes": self.classes,
             "number_of_abstract_classes": self.abstract_classes,
@@ -214,7 +184,8 @@ class FeatureExtractorListener(CSharpParserListener):
             "method_return_types": self.method_return_types,
             "method_parameters": self.method_parameters,
             "access_modifiers_methods_count": self.access_modifiers_methods,
-            "other_modifiers_count": self.other_modifiers
+            "other_modifiers_count": self.other_modifiers,
+            "out_variables": self.out_variables,
         }
 
 

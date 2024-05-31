@@ -5,7 +5,7 @@ from collections import deque
 from listener import FeatureExtractorListener, walk_tree
 
 def parse_file(file_path):
-    input_stream = FileStream(file_path)
+    input_stream = FileStream(file_path, encoding='utf-8')
     lexer = CSharpLexer(input_stream, None)
     stream = CommonTokenStream(lexer)
     parser = CSharpParser(stream)
