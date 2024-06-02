@@ -12,7 +12,7 @@ def parse_file(file_path):
     
     tree = parser.compilation_unit()     
     root_node = tree.children[0] 
-
+    
     extractor = FeatureExtractorListener()
     walk_tree(extractor, tree)
     features = extractor.get_features()
@@ -45,8 +45,9 @@ def bfs_tree(tree):
         try:
             print(current_node.symbol.text)
         except:
-            for child in current_node.children:
-                    queue.append(child)
+            if not current_node.children == None:
+                for child in current_node.children:
+                        queue.append(child)
 
 
 parse_file("CSharp/examples/archivo_csharp.cs")

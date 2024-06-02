@@ -3,10 +3,10 @@ from Python.CSharpParserListener import CSharpParserListener
 class FeatureExtractorListener(CSharpParserListener):
 
     def __init__(self):
-        self.max_depth = 0
-        self.current_depth = 0
         self.total_nodes = 0
         self.node_count = {}
+        self.max_depth = 0
+        self.current_depth = 0
         
         self.variables = 0
         self.constants = 0
@@ -18,15 +18,21 @@ class FeatureExtractorListener(CSharpParserListener):
         self.abstract_classes = 0
         self.sealed_classes = 0
         self.import_statements = 0
-        self.nested_classes = 0
-        self.exceptions_handled = 0
-        self.method_lengths = []
+        # self.exceptions_handled = 0
         self.function_calls = 0
+        self.try_catch_blocks = 0
+        self.lists = 0
+        self.dicts = 0
+        self.enums = 0
+        self.delegates = 0
 
         self.variable_names = set()
         self.method_names = set()
+        self.method_lengths = []
         self.class_names = set()
         self.interface_names = set()
+        self.enum_names = set()
+        self.delegate_names = set()
         self.distinct_tokens = {}
         self.control_structures = {
             'if': 0,
@@ -55,6 +61,21 @@ class FeatureExtractorListener(CSharpParserListener):
             'unsafe': 0,
             'async': 0
         }
+        self.library_calls = {
+            "Console": 0,
+            "Math": 0
+            # "List": 0,
+            # "Dictionary": 0
+        }
+        self.linq_queries = {
+            "Select": 0,
+            "Where": 0,
+            "OrderBy": 0,
+            "GroupBy": 0,
+            "Join": 0,
+            "Sum": 0,
+            "Count": 0
+        }
         
         self.method_return_types = {}
         self.method_parameters = {}
@@ -66,11 +87,11 @@ class FeatureExtractorListener(CSharpParserListener):
         self.total_nodes += 1
         
         try:
-            if ctx.start.text == "partial":
+            if ctx.start.text == "delegate":
                 pass
         except:
             pass
-        
+         
         if self.current_depth > self.max_depth:
             self.max_depth = self.current_depth
 
@@ -78,7 +99,7 @@ class FeatureExtractorListener(CSharpParserListener):
         if node_type == "Local_variable_declaratorContext":
             self.variables += 1
             self.variable_names.add(ctx.start.text)
-        
+         
         elif node_type == "Method_declarationContext": 
             self.methods += 1
             self.method_names.add(ctx.start.text)
@@ -95,10 +116,17 @@ class FeatureExtractorListener(CSharpParserListener):
             
             if(type(ctx.children[2]).__name__ == "Formal_parameter_listContext"):
                 for param in ctx.children[2].children[0].fixed_parameter() :
-                    param_type = param.children[0].children[0].getText()
-                    param_name = param.children[0].children[1].getText()
+                    if param.children[0].children[0].getText() == "out":
+                        self.out_variables += 1
+                        param_type = param.children[1].children[0].getText()
+                        param_name = param.children[1].children[1].getText()
+                    else:
+                        param_type = param.children[0].children[0].getText()
+                        param_name = param.children[0].children[1].getText()
+                    
                     param_info.append((param_type, param_name))
                     param_count += 1
+                    
                 self.method_parameters[ctx.start.text] = {"count": param_count, "params": param_info}
             
         elif node_type == "Interface_definitionContext":
@@ -116,10 +144,10 @@ class FeatureExtractorListener(CSharpParserListener):
                 self.sealed_classes += 1
             
         elif node_type == "TryStatementContext":
-            self.exceptions_handled += 1
+            self.try_catch_blocks += 1
         
         elif node_type == "ObjectCreationExpressionContext":
-            self.function_calls += 1
+            self.function_calls += 1 #Revisar esto
             
         elif node_type == "Using_directivesContext":
             self.import_statements += 1
@@ -140,10 +168,20 @@ class FeatureExtractorListener(CSharpParserListener):
             self.control_structures['dowhile'] += 1
             
         elif node_type == "Local_variable_initializerContext":
-            self.other_modifiers[ctx.start.text] += 1
+            modif = ctx.start.text
+            if modif in self.other_modifiers:
+                self.other_modifiers[modif] += 1
             
         elif node_type == "Constant_declarationContext":
             self.constants += 1
+        
+        elif node_type == "Enum_definitionContext":# estooo
+            self.enums += 1
+            self.enum_names.add(ctx.children[1].start.text)
+            
+        elif node_type == "Delegate_definitionContext":
+            self.delegates += 1
+            self.delegate_names.add((ctx.start.text, ctx.children[1].start.text))# tupla nombre, tipo de retorno
         
         elif node_type == "All_member_modifierContext":
             modifier = ctx.start.text
@@ -151,7 +189,17 @@ class FeatureExtractorListener(CSharpParserListener):
                 self.other_modifiers[modifier] += 1
             if modifier in self.access_modifiers_methods:
                 self.access_modifiers_methods[modifier] += 1
-            
+        
+        elif node_type == "Method_invocationContext":
+            method_name = ctx.parentCtx.start.text
+            if method_name in self.library_calls:
+                self.library_calls[method_name] += 1 
+        
+        elif node_type == "IdentifierContext":
+            name = ctx.start.text
+            if name in self.linq_queries:
+                self.linq_queries[name] += 1
+             
         # Captura de tokens distintos y su conteo
         if hasattr(ctx, 'symbol'):
             token_text = ctx.symbol.text
@@ -167,25 +215,35 @@ class FeatureExtractorListener(CSharpParserListener):
             "max_depth": self.max_depth,
             "number_of_variables": self.variables,
             "number_of_constants": self.constants,
+            "out_variables": self.out_variables,
             "number_of_methods": self.methods,
             "number_of_classes": self.classes,
+            "number_of_interfaces": self.interfaces,
             "number_of_abstract_classes": self.abstract_classes,
             "number_of_sealed_classes": self.sealed_classes,
-            "number_of_interfaces": self.interfaces,
             "import_statements": self.import_statements,
-            "exceptions_handled": self.exceptions_handled,
+            "number_of_try_blocks": self.try_catch_blocks,
+            "number_of_lists": self.lists,
+            "number_of_dictionaries": self.dicts,
+            "number_of_enums": self.enums,
+            "number_of_delegates": self.delegates,
             "function_calls": self.function_calls,
             "variable_names": list(self.variable_names),
             "method_names": list(self.method_names),
+            "method_lengths": self.method_lengths,
             "class_names": list(self.class_names),
             "interface_names": list(self.interface_names),
+            "delegate_names": list(self.delegate_names),
+            "enums_names":list(self.enum_names),
             "distinct_tokens_count": self.distinct_tokens,
             "control_structures_count": self.control_structures,
-            "method_return_types": self.method_return_types,
-            "method_parameters": self.method_parameters,
             "access_modifiers_methods_count": self.access_modifiers_methods,
             "other_modifiers_count": self.other_modifiers,
+            "method_return_types": self.method_return_types,
+            "method_parameters": self.method_parameters,
             "out_variables": self.out_variables,
+            "linq_queries": self.linq_queries,
+            "library_calls": self.library_calls
         }
 
 
