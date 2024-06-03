@@ -131,3 +131,19 @@
 33. **`number_of_delegates`**
     - **Descripción**: Número de delegados definidos.
     - **Importancia**: Los delegados son tipos que representan referencias a métodos, permitiendo pasar métodos como argumentos.
+
+34. **`number_of_lambdas`**
+   - **Descripción**: Número de expresiones lambda utilizadas.
+   - **Importancia**: Las expresiones lambda son una forma concisa de escribir métodos anónimos y son clave para la programación funcional y las consultas LINQ.
+
+35. **`number_of_getters_setters`**
+   - **Descripción**: Número de getters y setters definidos en propiedades.
+   - **Importancia**: Los getters y setters controlan el acceso a los datos de una clase y son esenciales para la encapsulación y la validación de datos.
+
+36. **`number_of_tuples`**
+   - **Descripción**: Número de tuplas utilizadas.
+   - **Importancia**: Las tuplas son útiles para devolver múltiples valores de un método y pueden simplificar la estructura de datos en el código.
+
+37. **`number_of_namespaces`**
+    - **Descripción**: Número de espacios de nombres definidos.
+    - **Importancia**: Los espacios de nombres organizan el código en grupos lógicos y evitan conflictos de nombres.

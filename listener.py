@@ -18,7 +18,6 @@ class FeatureExtractorListener(CSharpParserListener):
         self.abstract_classes = 0
         self.sealed_classes = 0
         self.import_statements = 0
-        # self.exceptions_handled = 0
         self.function_calls = 0
         self.try_catch_blocks = 0
         self.lists = 0
@@ -79,6 +78,11 @@ class FeatureExtractorListener(CSharpParserListener):
         
         self.method_return_types = {}
         self.method_parameters = {}
+        
+        self.number_of_lambdas = 0
+        self.number_of_getters_setters = {'get': 0, 'set': 0}
+        self.number_of_tuples = 0
+        self.number_of_namespaces = 0
 
     def enterEveryRule(self, ctx):
         node_type = type(ctx).__name__
@@ -87,7 +91,9 @@ class FeatureExtractorListener(CSharpParserListener):
         self.total_nodes += 1
         
         try:
-            if ctx.start.text == "delegate":
+            if ctx.start.text == "namespace":
+                pass
+            if ctx.start.text == "lambda":
                 pass
         except:
             pass
@@ -96,9 +102,18 @@ class FeatureExtractorListener(CSharpParserListener):
             self.max_depth = self.current_depth
 
         # identificar diferentes tipos de nodos:
-        if node_type == "Local_variable_declaratorContext":
+        if node_type == "Local_variable_declarationContext":
+            var_type = ctx.children[0].start.text
+            var_name = ctx.children[1].start.text
             self.variables += 1
-            self.variable_names.add(ctx.start.text)
+            self.variable_names.add((var_type, var_name))
+            
+            if var_type == "Tuple":
+                self.number_of_tuples += 1
+            if var_type == "List":
+                self.lists += 1
+            if var_type == "Dictionary":
+                self.dicts += 1
          
         elif node_type == "Method_declarationContext": 
             self.methods += 1
@@ -175,13 +190,15 @@ class FeatureExtractorListener(CSharpParserListener):
         elif node_type == "Constant_declarationContext":
             self.constants += 1
         
-        elif node_type == "Enum_definitionContext":# estooo
+        elif node_type == "Enum_definitionContext":
             self.enums += 1
             self.enum_names.add(ctx.children[1].start.text)
             
         elif node_type == "Delegate_definitionContext":
             self.delegates += 1
-            self.delegate_names.add((ctx.start.text, ctx.children[1].start.text))# tupla nombre, tipo de retorno
+            name = ctx.start.text
+            return_type = ctx.children[1].start.text
+            self.delegate_names.add((name, return_type))
         
         elif node_type == "All_member_modifierContext":
             modifier = ctx.start.text
@@ -194,6 +211,22 @@ class FeatureExtractorListener(CSharpParserListener):
             method_name = ctx.parentCtx.start.text
             if method_name in self.library_calls:
                 self.library_calls[method_name] += 1 
+        
+        if node_type == "Lambda_expressionContext":
+            self.number_of_lambdas += 1
+
+        if node_type == "Accessor_declarationsContext":
+            accessor_type = ctx.children[0].getText()
+            if accessor_type == "get":
+                self.number_of_getters_setters['get'] += 1
+            elif accessor_type == "set":
+                self.number_of_getters_setters['set'] += 1
+        
+        if node_type == "Set_accessor_declarationContext":
+            self.number_of_getters_setters['set'] += 1
+
+        if node_type == "Namespace_declarationContext":
+            self.number_of_namespaces += 1
         
         elif node_type == "IdentifierContext":
             name = ctx.start.text
@@ -243,7 +276,11 @@ class FeatureExtractorListener(CSharpParserListener):
             "method_parameters": self.method_parameters,
             "out_variables": self.out_variables,
             "linq_queries": self.linq_queries,
-            "library_calls": self.library_calls
+            "library_calls": self.library_calls,
+            "number_of_lambdas": self.number_of_lambdas,
+            "number_of_getters_setters": self.number_of_getters_setters,
+            "number_of_tuples": self.number_of_tuples,
+            "number_of_namespaces": self.number_of_namespaces
         }
 
 
