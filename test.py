@@ -29,3 +29,4 @@ output_json_path = os.path.join(DATA_FOLDER, f"features_{timestamp}.json")
 # Guardar los features en un archivo JSON
 with open(output_json_path, 'w', encoding='utf-8') as json_file:
     json.dump(project_features, json_file, ensure_ascii=False, indent=4)
+
