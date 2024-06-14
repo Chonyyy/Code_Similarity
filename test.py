@@ -1,77 +1,31 @@
-import os
-import json, time
-from antlr4 import *
-from Python.CSharpLexer import CSharpLexer
-from Python.CSharpParser import CSharpParser
-from collections import deque
+import json, time, os
 from listener import FeatureExtractorListener, walk_tree
+from parser.parser import parse_project, bfs_tree
 
-def parse_files_in_directory(directory_path,  output_directory):
-    combined_content = ""
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/'
 
-    # Recorrer recursivamente el directorio y subdirectorios
-    for root, _, files in os.walk(directory_path):
-        for filename in files:
-            if filename.endswith(".cs"):
-                file_path = os.path.join(root, filename)
-                with open(file_path, 'r', encoding='utf-8') as file:
-                    combined_content += file.read() + "\n"
+DATA_FOLDER = f'{os.getcwd()}/data/'
 
-    input_stream = InputStream(combined_content)
-    lexer = CSharpLexer(input_stream, None)
-    stream = CommonTokenStream(lexer)
-    parser = CSharpParser(stream)    
-    tree = parser.compilation_unit()
+os.makedirs(DATA_FOLDER, exist_ok=True)
 
-    extractor = FeatureExtractorListener()
-    walk_tree(extractor, tree)
-    features = extractor.get_features()
-    
-    # Generar un nombre de archivo JSON único usando la marca de tiempo
-    timestamp = time.strftime("%Y%m%d-%H%M%S")
-    output_json_path = os.path.join(output_directory, f"features_{timestamp}.json")
-    
-    # Guardar los features en un archivo JSON
-    with open(output_json_path, 'w', encoding='utf-8') as json_file:
-        json.dump(features, json_file, ensure_ascii=False, indent=4)
-    
-    print(f"Features saved to {output_json_path}")
-    
-    # bfs_tree(tree)
-    pass
+project_features = []
 
-def bfs_tree(tree):
-    """
-    Realiza una búsqueda en amplitud (BFS) sobre el árbol de análisis sintáctico.
-    
-    param tree: El árbol de análisis sintáctico generado por ANTLR.
-    """
-    
-    queue = deque([tree])
-    
-    while queue:
-        # Sacar el primer nodo de la cola
-        current_node = queue.popleft()
+for f in os.scandir(PROJECTS_FOLDER):
+    if f.is_dir():
+        ast = parse_project(PROJECTS_FOLDER + f.name)
         
-        # Imprimir el tipo de nodo
-        print(type(current_node).__name__)
+        extractor = FeatureExtractorListener()
+        walk_tree(extractor, ast)
+        features = extractor.get_features()
+        features['project_name'] = f.name
+        project_features.append(features)
+        # Imprimir el arbol para debuggear
+        # bfs_tree(ast)
         
-        try:
-            print(current_node.symbol.text)
-        except:
-            if current_node.children is not None:
-                for child in current_node.children:
-                    queue.append(child)
+# Generar un nombre de archivo JSON único usando la marca de tiempo
+timestamp = time.strftime("%Y%m%d-%H%M%S")
+output_json_path = os.path.join(DATA_FOLDER, f"features_{timestamp}.json")
 
-
-# Directorio que contiene los archivos .cs
-# directory_path = "CSharp/examples_ok/"
-directory_path = "C:/Users/Chony/Downloads/moogle-main/moogle-main/"
-
-# Directorio donde se guardarán los archivos JSON de salida
-output_directory = "Features/"
-
-# Crear el directorio de salida si no existe
-os.makedirs(output_directory, exist_ok=True)
-
-parse_files_in_directory(directory_path, output_directory)
+# Guardar los features en un archivo JSON
+with open(output_json_path, 'w', encoding='utf-8') as json_file:
+    json.dump(project_features, json_file, ensure_ascii=False, indent=4)
