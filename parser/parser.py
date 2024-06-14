@@ -12,9 +12,16 @@ def parse_project(project_addr):
         for filename in files:
             if filename.endswith(".cs"):
                 file_path = os.path.join(root, filename)
-                with open(file_path, 'r', encoding='utf-8') as file:
-                    combined_content += file.read() + "\n"
-
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as file:
+                        combined_content += file.read() + "\n"
+                except UnicodeDecodeError:
+                    try:
+                        with open(file_path, 'r', encoding='iso-8859-1') as file:
+                            combined_content += file.read() + "\n"
+                    except UnicodeDecodeError:
+                        print("Codificación desconocida")
+                    
     input_stream = InputStream(combined_content)
     lexer = CSharpLexer(input_stream, None)
     stream = CommonTokenStream(lexer)

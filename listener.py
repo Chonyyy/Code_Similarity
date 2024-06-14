@@ -33,54 +33,48 @@ class FeatureExtractorListener(CSharpParserListener):
         self.enum_names = set()
         self.delegate_names = set()
         self.distinct_tokens = {}
-        self.control_structures = {
-            'if': 0,
-            'switch': 0,
-            'for': 0,
-            'while': 0,
-            'dowhile': 0
-        }
-        self.access_modifiers_methods = {
-            'public': 0,
-            'private': 0,
-            'protected': 0,
-            'internal': 0,
-            'protected internal': 0,
-            'private protected': 0,
-            'static': 0
-        }
-        self.other_modifiers = {
-            'readonly': 0,
-            'volatile': 0,
-            'virtual': 0,
-            'override': 0,
-            'new': 0, 
-            'partial': 0,
-            'extern': 0,
-            'unsafe': 0,
-            'async': 0
-        }
-        self.library_calls = {
-            "Console": 0,
-            "Math": 0
-            # "List": 0,
-            # "Dictionary": 0
-        }
-        self.linq_queries = {
-            "Select": 0,
-            "Where": 0,
-            "OrderBy": 0,
-            "GroupBy": 0,
-            "Join": 0,
-            "Sum": 0,
-            "Count": 0
-        }
+        
+        self.control_structures_if = 0
+        self.control_structures_switch = 0
+        self.control_structures_for = 0
+        self.control_structures_while = 0
+        self.control_structures_dowhile = 0
+        
+        self.access_modifiers_public = 0
+        self.access_modifiers_private = 0
+        self.access_modifiers_protected = 0
+        self.access_modifiers_internal = 0
+        self.access_modifiers_static = 0
+        self.access_modifiers_protected_internal = 0 
+        self.access_modifiers_private_protected = 0
+        
+        self.modifier_readonly = 0
+        self.modifier_volatile = 0
+        self.modifier_virtual = 0
+        self.modifier_override = 0
+        self.modifier_new = 0
+        self.modifier_partial = 0
+        self.modifier_extern = 0
+        self.modifier_unsafe = 0
+        self.modifier_async = 0
+        
+        self.library_call_console = 0
+        self.library_call_math = 0
+        
+        self.linq_queries_select = 0
+        self.linq_queries_where = 0
+        self.linq_queries_orderBy = 0
+        self.linq_queries_groupBy = 0
+        self.linq_queries_join = 0
+        self.linq_queries_sum = 0
+        self.linq_queries_count = 0
         
         self.method_return_types = {}
         self.method_parameters = {}
         
         self.number_of_lambdas = 0
-        self.number_of_getters_setters = {'get': 0, 'set': 0}
+        self.number_of_getters = 0
+        self.number_of_setters = 0
         self.number_of_tuples = 0
         self.number_of_namespaces = 0
 
@@ -137,8 +131,8 @@ class FeatureExtractorListener(CSharpParserListener):
                     param_name = param.children[2].start.text
                     param_info.append((param_type, param_name))
                     param_count += 1
-                    
-                if ctx.children[2] .fixed_parameter():
+                
+                if ctx.children[2].fixed_parameters():
                     for param in ctx.children[2].children[0].fixed_parameter() :
                         if param.children[0].children[0].getText() == "out":
                             self.out_variables += 1
@@ -177,24 +171,23 @@ class FeatureExtractorListener(CSharpParserListener):
             self.import_statements += 1
         
         elif node_type == "IfStatementContext":
-            self.control_structures['if'] += 1
+            self.control_structures_if += 1
 
         elif node_type == "SwitchStatementContext":
-            self.control_structures['switch'] += 1
+            self.control_structures_switch += 1
             
         elif node_type == "ForStatementContext":
-            self.control_structures['for'] += 1
+            self.control_structures_for += 1
         
         elif node_type == "WhileStatementContext":
-            self.control_structures['while'] += 1
+            self.control_structures_while += 1
         
         elif node_type == "DoWhileStatementContext":
-            self.control_structures['dowhile'] += 1
+            self.control_structures_dowhile += 1
             
         elif node_type == "Local_variable_initializerContext":
-            modif = ctx.start.text
-            if modif in self.other_modifiers:
-                self.other_modifiers[modif] += 1
+            modifier = ctx.start.text
+            self._count_modifiers(modifier)
             
         elif node_type == "Constant_declarationContext":
             self.constants += 1
@@ -211,15 +204,14 @@ class FeatureExtractorListener(CSharpParserListener):
         
         elif node_type == "All_member_modifierContext":
             modifier = ctx.start.text
-            if modifier in self.other_modifiers:
-                self.other_modifiers[modifier] += 1
-            if modifier in self.access_modifiers_methods:
-                self.access_modifiers_methods[modifier] += 1
-        
+            self._count_modifiers(modifier)
+                    
         elif node_type == "Method_invocationContext":
             method_name = ctx.parentCtx.start.text
-            if method_name in self.library_calls:
-                self.library_calls[method_name] += 1 
+            if method_name == 'Console':
+                self.library_call_console += 1
+            if method_name == 'Math':
+                self.library_call_math += 1 
         
         if node_type == "Lambda_expressionContext":
             self.number_of_lambdas += 1
@@ -227,25 +219,72 @@ class FeatureExtractorListener(CSharpParserListener):
         if node_type == "Accessor_declarationsContext":
             accessor_type = ctx.children[0].getText()
             if accessor_type == "get":
-                self.number_of_getters_setters['get'] += 1
+                self.number_of_getters += 1
             elif accessor_type == "set":
-                self.number_of_getters_setters['set'] += 1
+                self.number_of_setters += 1
         
         if node_type == "Set_accessor_declarationContext":
-            self.number_of_getters_setters['set'] += 1
+            self.number_of_setters += 1
 
         if node_type == "Namespace_declarationContext":
             self.number_of_namespaces += 1
         
         elif node_type == "IdentifierContext":
             name = ctx.start.text
-            if name in self.linq_queries:
-                self.linq_queries[name] += 1
+            if name == 'Select':
+                self.linq_queries_select += 1
+            if name == 'Where':
+                self.linq_queries_where += 1
+            if name == 'OrderBy':
+                self.linq_queries_orderBy += 1
+            if name == 'GroupBy':
+                self.linq_queries_groupBy += 1
+            if name == 'Join':
+                self.linq_queries_join += 1
+            if name == 'Sum':
+                self.linq_queries_sum += 1
+            if name == 'Count':
+                self.linq_queries_sum += 1
              
         # Captura de tokens distintos y su conteo
         if hasattr(ctx, 'symbol'):
             token_text = ctx.symbol.text
             self.distinct_tokens[token_text] = self.distinct_tokens.get(token_text, 0) + 1
+
+    def _count_modifiers(self, modifier):
+        if modifier == 'new':
+            self.modifier_new += 1
+        elif modifier == 'readonly':
+            self.modifier_readonly += 1
+        elif modifier == 'volatile':
+            self.modifier_volatile += 1
+        elif modifier == 'virtual':
+            self.modifier_virtual += 1
+        elif modifier == 'override':
+            self.modifier_override += 1
+        elif modifier == 'partial':
+            self.modifier_partial += 1
+        elif modifier == 'extern':
+            self.modifier_extern += 1
+        elif modifier == 'unsafe':
+            self.modifier_unsafe += 1
+        elif modifier == 'async':
+            self.modifier_async += 1
+            
+        if modifier == 'public':
+            self.access_modifiers_public += 1
+        elif modifier == 'private':
+            self.access_modifiers_private += 1
+        elif modifier == 'static':
+            self.access_modifiers_static += 1
+        elif modifier == 'protected':
+            self.access_modifiers_protected += 1
+        elif modifier == 'internal':
+            self.access_modifiers_internal += 1
+        elif modifier == 'protected internal':
+            self.access_modifiers_protected_internal += 1
+        elif modifier == 'private protected':
+            self.access_modifiers_private_protected += 1
 
     def exitEveryRule(self, ctx):
         self.current_depth -= 1
@@ -278,16 +317,43 @@ class FeatureExtractorListener(CSharpParserListener):
             "delegate_names": list(self.delegate_names),
             "enums_names":list(self.enum_names),
             "distinct_tokens_count": self.distinct_tokens,
-            "control_structures_count": self.control_structures,
-            "access_modifiers_methods_count": self.access_modifiers_methods,
-            "other_modifiers_count": self.other_modifiers,
+            "control_structures_if": self.control_structures_if,
+            "control_structures_switch": self.control_structures_switch,
+            "control_structures_for": self.control_structures_for,
+            "control_structures_while": self.control_structures_while,
+            "control_structures_dowhile": self.control_structures_dowhile,
+            "access_modifiers_public": self.access_modifiers_public,
+            "access_modifiers_private": self.access_modifiers_private,
+            "access_modifiers_protected": self.access_modifiers_protected,
+            "access_modifiers_internal": self.access_modifiers_internal,
+            "access_modifiers_static": self.access_modifiers_static,
+            "access_modifiers_protected_internal": self.access_modifiers_protected_internal,
+            "access_modifiers_private_protected": self.access_modifiers_private_protected,
+            "modifier_readonly": self.modifier_readonly,
+            "modifier_volatile": self.modifier_volatile,
+            "modifier_virtual": self.modifier_virtual,
+            "modifier_override": self.modifier_override,
+            "modifier_new": self.modifier_new,
+            "modifier_partial": self.modifier_partial,
+            "modifier_readonly": self.modifier_readonly,
+            "modifier_extern": self.modifier_extern,
+            "modifier_unsafe": self.modifier_unsafe,
+            "modifier_async": self.modifier_async,
             "method_return_types": self.method_return_types,
             "method_parameters": self.method_parameters,
             "out_variables": self.out_variables,
-            "linq_queries": self.linq_queries,
-            "library_calls": self.library_calls,
+            "linq_querie_select": self.linq_queries_select,
+            "linq_queries_where": self.linq_queries_where,
+            "linq_queries_orderBy": self.linq_queries_orderBy,
+            "linq_queries_groupBy": self.linq_queries_groupBy,
+            "linq_queries_join": self.linq_queries_join,
+            "linq_queries_sum": self.linq_queries_sum,
+            "linq_queries_count": self.linq_queries_count,
+            "library_call_console": self.library_call_console,
+            "library_call_math": self.library_call_math,
             "number_of_lambdas": self.number_of_lambdas,
-            "number_of_getters_setters": self.number_of_getters_setters,
+            "number_of_getters": self.number_of_getters,
+            "number_of_setters": self.number_of_setters,
             "number_of_tuples": self.number_of_tuples,
             "number_of_namespaces": self.number_of_namespaces
         }
