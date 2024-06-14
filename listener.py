@@ -130,18 +130,31 @@ class FeatureExtractorListener(CSharpParserListener):
             param_info = []
             
             if(type(ctx.children[2]).__name__ == "Formal_parameter_listContext"):
-                for param in ctx.children[2].children[0].fixed_parameter() :
-                    if param.children[0].children[0].getText() == "out":
-                        self.out_variables += 1
-                        param_type = param.children[1].children[0].getText()
-                        param_name = param.children[1].children[1].getText()
-                    else:
-                        param_type = param.children[0].children[0].getText()
-                        param_name = param.children[0].children[1].getText()
-                    
-                    param_info.append((param_type, param_name))
-                    param_count += 1
-                    
+                try:
+                    for param in ctx.children[2].children[0].fixed_parameter() :
+                        if param.children[0].children[0].getText() == "out":
+                            self.out_variables += 1
+                            param_type = param.children[1].children[0].getText()
+                            param_name = param.children[1].children[1].getText()
+                        else:
+                            param_type = param.children[0].children[0].getText()
+                            param_name = param.children[0].children[1].getText()
+                        
+                        param_info.append((param_type, param_name))
+                        param_count += 1
+                except:
+                    for param in ctx.children[2].fixed_parameters() :
+                        if param.children[0].children[0].getText() == "out":
+                            self.out_variables += 1
+                            param_type = param.children[1].children[0].getText()
+                            param_name = param.children[1].children[1].getText()
+                        else:
+                            param_type = param.children[0].children[0].getText()
+                            param_name = param.children[0].children[1].getText()
+                        
+                        param_info.append((param_type, param_name))
+                        param_count += 1
+                       
                 self.method_parameters[ctx.start.text] = {"count": param_count, "params": param_info}
             
         elif node_type == "Interface_definitionContext":

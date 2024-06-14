@@ -1,6 +1,7 @@
-import json, time, os
+import json, time, os, io
+from contextlib import redirect_stdout, redirect_stderr
 from listener import FeatureExtractorListener, walk_tree
-from parser.parser import parse_project, bfs_tree
+from parser.parser import parse_project
 
 PROJECTS_FOLDER = f'{os.getcwd()}/Projects/'
 
@@ -12,8 +13,15 @@ project_features = []
 
 for f in os.scandir(PROJECTS_FOLDER):
     if f.is_dir():
-        ast = parse_project(PROJECTS_FOLDER + f.name)
-        
+        print(PROJECTS_FOLDER + f.name)
+        try:
+            # Create an in-memory buffer
+            buffer = io.StringIO()
+            with redirect_stdout(buffer), redirect_stderr(buffer):
+                ast = parse_project(PROJECTS_FOLDER + f.name)
+        except:
+            print("Error Detected")
+            continue
         extractor = FeatureExtractorListener()
         walk_tree(extractor, ast)
         features = extractor.get_features()
