@@ -22,6 +22,7 @@ for f in os.scandir(PROJECTS_FOLDER):
         except:
             print("Error Detected")
             continue
+        # ast = parse_project(PROJECTS_FOLDER + f.name)
         extractor = FeatureExtractorListener()
         walk_tree(extractor, ast)
         features = extractor.get_features()
