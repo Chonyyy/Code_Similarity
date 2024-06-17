@@ -14,15 +14,15 @@ project_features = []
 for f in os.scandir(PROJECTS_FOLDER):
     if f.is_dir():
         print(PROJECTS_FOLDER + f.name)
-        try:
-            # Create an in-memory buffer
-            buffer = io.StringIO()
-            with redirect_stdout(buffer), redirect_stderr(buffer):
-                ast = parse_project(PROJECTS_FOLDER + f.name)
-        except:
-            print("Error Detected")
-            continue
-        # ast = parse_project(PROJECTS_FOLDER + f.name)
+        # try:
+        #     # Create an in-memory buffer
+        #     buffer = io.StringIO()
+        #     with redirect_stdout(buffer), redirect_stderr(buffer):
+        #         ast = parse_project(PROJECTS_FOLDER + f.name)
+        # except:
+        #     print("Error Detected")
+        #     continue
+        ast = parse_project(PROJECTS_FOLDER + f.name)
         extractor = FeatureExtractorListener()
         walk_tree(extractor, ast)
         features = extractor.get_features()

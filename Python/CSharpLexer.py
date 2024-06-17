@@ -1361,4 +1361,3 @@ class CSharpLexer(CSharpLexerBase):
                 return self.is_verbatium_double_quote_inside
          
 
-

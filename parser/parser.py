@@ -2,7 +2,24 @@ import os
 from antlr4 import InputStream, CommonTokenStream
 from Python.CSharpLexer import CSharpLexer
 from Python.CSharpParser import CSharpParser
+from antlr4.error.ErrorListener import ErrorListener
 from collections import deque
+
+class CustomErrorListener(ErrorListener):
+    def __init__(self):
+        super(CustomErrorListener, self).__init__()
+        self.errors = []
+
+    def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
+        error_message = f"Syntax error at line {line}, column {column}: {msg}"
+        self.errors.append(error_message)
+        print(error_message)
+
+    def reportTokenRecognitionError(self, recognizer, e):
+        token = e.offendingToken
+        error_message = f"Token recognition error at line {token.line}:{token.column} token recognition error at: '{token.text}'"
+        self.errors.append(error_message)
+        print(error_message)
 
 def parse_project(project_addr):
     combined_content = ""
@@ -26,6 +43,20 @@ def parse_project(project_addr):
     lexer = CSharpLexer(input_stream, None)
     stream = CommonTokenStream(lexer)
     parser = CSharpParser(stream)    
+    
+    # Configura el custom error listener
+    error_listener = CustomErrorListener()
+    lexer.removeErrorListeners()  # Remueve los error listeners por defecto
+    lexer.addErrorListener(error_listener)
+    parser.removeErrorListeners()  # Remueve los error listeners por defecto
+    parser.addErrorListener(error_listener)
+
+    # Manejo de errores encontrados
+    if error_listener.errors:
+        print("Errors encountered during parsing:")
+        for error in error_listener.errors:
+            print(error)
+            
     tree = parser.compilation_unit()
     
     return tree

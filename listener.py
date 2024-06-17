@@ -11,6 +11,7 @@ class FeatureExtractorListener(CSharpParserListener):
         self.variables = 0
         self.constants = 0
         self.out_variables = 0
+        self.ref_params = 0
         
         self.methods = 0
         self.classes = 0
@@ -85,7 +86,7 @@ class FeatureExtractorListener(CSharpParserListener):
         self.total_nodes += 1
         
         try:
-            if ctx.start.text == "namespace":
+            if ctx.start.text == "void":
                 pass
             if ctx.start.text == "lambda":
                 pass
@@ -138,14 +139,19 @@ class FeatureExtractorListener(CSharpParserListener):
                             self.out_variables += 1
                             param_type = param.children[1].children[0].getText()
                             param_name = param.children[1].children[1].getText()
+                            
+                        elif param.children[0].children[0].getText() == "ref":
+                            self.ref_params += 1
+                            param_type = param.children[1].children[0].getText()
+                            param_name = param.children[1].children[1].getText()
+                            
                         else:
                             param_type = param.children[0].children[0].getText()
                             param_name = param.children[0].children[1].getText()
                         
                         param_info.append((param_type, param_name))
-                        param_count += 1
                 
-                self.method_parameters[ctx.start.text] = {"count": param_count, "params": param_info}
+                self.method_parameters[ctx.start.text] = param_info
             
         elif node_type == "Interface_definitionContext":
             self.interfaces += 1
@@ -247,9 +253,9 @@ class FeatureExtractorListener(CSharpParserListener):
                 self.linq_queries_sum += 1
              
         # Captura de tokens distintos y su conteo
-        if hasattr(ctx, 'symbol'):
-            token_text = ctx.symbol.text
-            self.distinct_tokens[token_text] = self.distinct_tokens.get(token_text, 0) + 1
+        # if hasattr(ctx, 'symbol'):
+        #     token_text = ctx.symbol.text
+        #     self.distinct_tokens[token_text] = self.distinct_tokens.get(token_text, 0) + 1
 
     def _count_modifiers(self, modifier):
         if modifier == 'new':
@@ -297,6 +303,7 @@ class FeatureExtractorListener(CSharpParserListener):
             "number_of_variables": self.variables,
             "number_of_constants": self.constants,
             "out_variables": self.out_variables,
+            "ref_params": self.ref_params,
             "number_of_methods": self.methods,
             "number_of_classes": self.classes,
             "number_of_interfaces": self.interfaces,
