@@ -1,7 +1,7 @@
 import json, time, os, io
 from contextlib import redirect_stdout, redirect_stderr
 from listener import FeatureExtractorListener, walk_tree
-from parser.parser import parse_project
+from parser.parser_old import parse_project
 
 PROJECTS_FOLDER = f'{os.getcwd()}/Projects/'
 

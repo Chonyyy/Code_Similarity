@@ -1,0 +1,2081 @@
+{
+    "total_nodes": 153035,
+    "node_count": {
+        "Compilation_unitContext": 107,
+        "ErrorNodeImpl": 5294,
+        "Using_directivesContext": 81,
+        "UsingNamespaceDirectiveContext": 126,
+        "TerminalNodeImpl": 29419,
+        "Namespace_or_type_nameContext": 2748,
+        "IdentifierContext": 9240,
+        "Namespace_member_declarationsContext": 106,
+        "Namespace_member_declarationContext": 514,
+        "Namespace_declarationContext": 106,
+        "Qualified_identifierContext": 106,
+        "Namespace_bodyContext": 106,
+        "Type_declarationContext": 408,
+        "All_member_modifiersContext": 1147,
+        "All_member_modifierContext": 1264,
+        "Class_definitionContext": 156,
+        "Type_parameter_listContext": 132,
+        "Type_parameterContext": 133,
+        "Class_bodyContext": 181,
+        "Class_member_declarationsContext": 181,
+        "Class_member_declarationContext": 840,
+        "Common_member_declarationContext": 839,
+        "Constructor_declarationContext": 96,
+        "Formal_parameter_listContext": 293,
+        "Fixed_parametersContext": 293,
+        "Fixed_parameterContext": 708,
+        "Arg_declarationContext": 708,
+        "Type_Context": 3148,
+        "Base_typeContext": 3161,
+        "Class_typeContext": 2449,
+        "Type_argument_listContext": 1212,
+        "Simple_typeContext": 571,
+        "Numeric_typeContext": 479,
+        "Integral_typeContext": 463,
+        "Rank_specifierContext": 124,
+        "ExpressionContext": 3795,
+        "Non_assignment_expressionContext": 3431,
+        "Conditional_expressionContext": 3418,
+        "Null_coalescing_expressionContext": 3418,
+        "Conditional_or_expressionContext": 3418,
+        "Conditional_and_expressionContext": 3430,
+        "Inclusive_or_expressionContext": 3450,
+        "Exclusive_or_expressionContext": 3450,
+        "And_expressionContext": 3450,
+        "Equality_expressionContext": 3454,
+        "Relational_expressionContext": 3577,
+        "Shift_expressionContext": 3720,
+        "Additive_expressionContext": 3720,
+        "Multiplicative_expressionContext": 3812,
+        "Switch_expressionContext": 3832,
+        "Range_expressionContext": 3832,
+        "Unary_expressionContext": 4259,
+        "Primary_expressionContext": 4160,
+        "LiteralExpressionContext": 686,
+        "LiteralContext": 686,
+        "Boolean_literalContext": 120,
+        "BodyContext": 87,
+        "BlockContext": 455,
+        "Statement_listContext": 432,
+        "StatementContext": 1197,
+        "Embedded_statementContext": 1087,
+        "ExpressionStatementContext": 562,
+        "AssignmentContext": 328,
+        "SimpleNameExpressionContext": 3124,
+        "Assignment_operatorContext": 328,
+        "Typed_member_declarationContext": 587,
+        "Property_declarationContext": 205,
+        "Member_nameContext": 205,
+        "Accessor_declarationsContext": 190,
+        "Accessor_bodyContext": 270,
+        "Set_accessor_declarationContext": 80,
+        "Method_declarationContext": 280,
+        "Method_member_nameContext": 280,
+        "Method_bodyContext": 280,
+        "ForStatementContext": 101,
+        "For_initializerContext": 101,
+        "Local_variable_declarationContext": 361,
+        "Local_variable_typeContext": 401,
+        "Local_variable_declaratorContext": 361,
+        "Local_variable_initializerContext": 361,
+        "Member_accessContext": 1270,
+        "For_iteratorContext": 101,
+        "IfStatementContext": 205,
+        "Bracket_expressionContext": 389,
+        "Indexer_argumentContext": 389,
+        "If_bodyContext": 218,
+        "ReturnStatementContext": 219,
+        "DeclarationStatementContext": 260,
+        "ObjectCreationExpressionContext": 248,
+        "Object_creation_expressionContext": 173,
+        "Method_invocationContext": 458,
+        "Argument_listContext": 490,
+        "ArgumentContext": 1206,
+        "Class_baseContext": 138,
+        "Floating_point_typeContext": 16,
+        "Right_arrowContext": 32,
+        "Throwable_expressionContext": 41,
+        "Field_declarationContext": 53,
+        "Variable_declaratorsContext": 57,
+        "Variable_declaratorContext": 57,
+        "Indexer_declarationContext": 4,
+        "ThrowStatementContext": 4,
+        "ForeachStatementContext": 40,
+        "YieldStatementContext": 13,
+        "IsTypeContext": 13,
+        "ContinueStatementContext": 12,
+        "Lambda_expressionContext": 13,
+        "Anonymous_function_signatureContext": 13,
+        "Anonymous_function_bodyContext": 13,
+        "ThisReferenceExpressionContext": 1,
+        "Expression_listContext": 36,
+        "Tuple_typeContext": 153,
+        "Tuple_elementContext": 283,
+        "WhileStatementContext": 9,
+        "ParenthesisExpressionsContext": 22,
+        "Constructor_initializerContext": 25,
+        "Interface_definitionContext": 25,
+        "Variant_type_parameter_listContext": 19,
+        "Variant_type_parameterContext": 20,
+        "Parameter_modifierContext": 5,
+        "TupleExpressionContext": 66,
+        "BreakStatementContext": 15,
+        "Accessor_modifierContext": 16,
+        "Cast_expressionContext": 12,
+        "Variable_initializerContext": 171,
+        "AttributesContext": 54,
+        "Attribute_sectionContext": 80,
+        "Attribute_listContext": 1,
+        "AttributeContext": 1,
+        "Implicit_anonymous_function_parameter_listContext": 2,
+        "MemberAccessExpressionContext": 10,
+        "Predefined_typeContext": 10,
+        "Array_initializerContext": 46,
+        "String_literalContext": 39,
+        "Delegate_definitionContext": 7,
+        "Return_typeContext": 7,
+        "Object_or_collection_initializerContext": 4,
+        "Collection_initializerContext": 4,
+        "Element_initializerContext": 9,
+        "Enum_definitionContext": 1,
+        "Enum_bodyContext": 1,
+        "Enum_member_declarationContext": 9,
+        "Event_declarationContext": 4,
+        "DefaultValueExpressionContext": 1,
+        "BaseAccessExpressionContext": 2
+    },
+    "max_depth": 7015,
+    "number_of_variables": 361,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 4,
+    "number_of_methods": 280,
+    "number_of_classes": 156,
+    "number_of_interfaces": 25,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 81,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 2,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 1,
+    "number_of_delegates": 7,
+    "function_calls": 248,
+    "variable_names": [
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "players"
+        ],
+        [
+            "var",
+            "teams"
+        ],
+        [
+            "var",
+            "cont"
+        ],
+        [
+            "Hand",
+            "copy"
+        ],
+        [
+            "var",
+            "index"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "players"
+        ],
+        [
+            "var",
+            "teams"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "b"
+        ],
+        [
+            "var",
+            "c"
+        ],
+        [
+            "var",
+            "a"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "id"
+        ],
+        [
+            "var",
+            "win"
+        ],
+        [
+            "var",
+            "sum"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "condition"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "index"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "cant"
+        ],
+        [
+            "var",
+            "visited"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "team"
+        ],
+        [
+            "List",
+            "aux"
+        ],
+        [
+            "var",
+            "nodeDimension"
+        ],
+        [
+            "var",
+            "valuesNode"
+        ],
+        [
+            "var",
+            "ind"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "values"
+        ],
+        [
+            "var",
+            "value"
+        ],
+        [
+            "var",
+            "tableLongana"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "circular"
+        ],
+        [
+            "var",
+            "nodeGeometry"
+        ],
+        [
+            "var",
+            "tableGeometry"
+        ],
+        [
+            "var",
+            "connection"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "team"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "rnd"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "remove"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "play"
+        ],
+        [
+            "var",
+            "win"
+        ],
+        [
+            "var",
+            "sum"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "change"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "stop"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "rnd"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "hand"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "score"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "double",
+            "sum"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "sum"
+        ],
+        [
+            "var",
+            "id"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "ind"
+        ],
+        [
+            "var",
+            "rnd"
+        ],
+        [
+            "IBeginGame",
+            "begin"
+        ],
+        [
+            "var",
+            "r"
+        ],
+        [
+            "var",
+            "val"
+        ],
+        [
+            "var",
+            "values"
+        ],
+        [
+            "Token",
+            "token"
+        ],
+        [
+            "var",
+            "tokens"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "Token",
+            "tokenPer"
+        ],
+        [
+            "var",
+            "permutation"
+        ],
+        [
+            "var",
+            "activate"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "win"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "rnd"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "min"
+        ],
+        [
+            "var",
+            "max"
+        ],
+        [
+            "double",
+            "sum"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "char",
+            "vocals"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "index"
+        ],
+        [
+            "double",
+            "max"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "max"
+        ],
+        [
+            "double",
+            "sum"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "valid"
+        ],
+        [
+            "var",
+            "ind"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "move"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "validMoves"
+        ],
+        [
+            "var",
+            "strategiesMoves"
+        ],
+        [
+            "var",
+            "myHand"
+        ],
+        [
+            "var",
+            "playerTeams"
+        ],
+        [
+            "var",
+            "index"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "ind"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "teamId"
+        ],
+        [
+            "var",
+            "players"
+        ],
+        [
+            "var",
+            "value"
+        ],
+        [
+            "var",
+            "teams"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "init"
+        ],
+        [
+            "var",
+            "judge"
+        ],
+        [
+            "var",
+            "playersInfo"
+        ],
+        [
+            "var",
+            "turns"
+        ],
+        [
+            "var",
+            "teamGame"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "value"
+        ],
+        [
+            "var",
+            "tokens"
+        ],
+        [
+            "List",
+            "aux"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "game"
+        ],
+        [
+            "var",
+            "hand"
+        ],
+        [
+            "var",
+            "copy"
+        ],
+        [
+            "var",
+            "id"
+        ],
+        [
+            "var",
+            "possible"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "tournamentCopy"
+        ],
+        [
+            "var",
+            "ind"
+        ],
+        [
+            "var",
+            "player"
+        ],
+        [
+            "var",
+            "move"
+        ],
+        [
+            "var",
+            "rulesCopy"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "play"
+        ],
+        [
+            "var",
+            "location"
+        ],
+        [
+            "var",
+            "action"
+        ],
+        [
+            "var",
+            "playerInfo"
+        ],
+        [
+            "var",
+            "values"
+        ],
+        [
+            "var",
+            "valuesPlay"
+        ],
+        [
+            "LocationGui",
+            "locationPlay"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "indRow"
+        ],
+        [
+            "var",
+            "indColumn"
+        ],
+        [
+            "var",
+            "type"
+        ],
+        [
+            "var",
+            "first"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "IEnumerable",
+            "aux"
+        ],
+        [
+            "IEnumerable",
+            "locations"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "actualhead"
+        ],
+        [
+            "var",
+            "head"
+        ],
+        [
+            "var",
+            "cant"
+        ],
+        [
+            "var",
+            "column"
+        ],
+        [
+            "Parity",
+            "func"
+        ],
+        [
+            "var",
+            "condition"
+        ],
+        [
+            "string",
+            "values"
+        ],
+        [
+            "var",
+            "minY"
+        ],
+        [
+            "var",
+            "top"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "node"
+        ],
+        [
+            "var",
+            "values"
+        ],
+        [
+            "var",
+            "type"
+        ],
+        [
+            "var",
+            "ind"
+        ],
+        [
+            "var",
+            "left"
+        ],
+        [
+            "var",
+            "n"
+        ],
+        [
+            "var",
+            "locationGui"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "minX"
+        ],
+        [
+            "var",
+            "m"
+        ],
+        [
+            "var",
+            "auxValues"
+        ],
+        [
+            "T",
+            "a"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "node"
+        ],
+        [
+            "INode",
+            "node"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "nodeGeometry"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "var",
+            "geometry"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "TableGame",
+            "table"
+        ],
+        [
+            "var",
+            "expand"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "int",
+            "y"
+        ],
+        [
+            "var",
+            "center"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "var",
+            "node"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "TableGame",
+            "table"
+        ],
+        [
+            "var",
+            "values"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "token"
+        ],
+        [
+            "var",
+            "nodeDimension"
+        ],
+        [
+            "var",
+            "node"
+        ],
+        [
+            "TableGame",
+            "table"
+        ],
+        [
+            "INode",
+            "node"
+        ],
+        [
+            "var",
+            "nodeDimensionConnect"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "var",
+            "geometry"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "TableGame",
+            "table"
+        ],
+        [
+            "var",
+            "expand"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "int",
+            "y"
+        ],
+        [
+            "var",
+            "center"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "valuesAux"
+        ],
+        [
+            "var",
+            "coord1"
+        ],
+        [
+            "var",
+            "e"
+        ],
+        [
+            "var",
+            "se"
+        ],
+        [
+            "var",
+            "coord3"
+        ],
+        [
+            "var",
+            "geometry"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "coordinates"
+        ],
+        [
+            "TableGame",
+            "table"
+        ],
+        [
+            "var",
+            "coord2"
+        ],
+        [
+            "var",
+            "w"
+        ],
+        [
+            "var",
+            "nw"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "sw"
+        ],
+        [
+            "var",
+            "ne"
+        ],
+        [
+            "var",
+            "listCopy"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "listCopy1"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "max"
+        ],
+        [
+            "var",
+            "equal"
+        ],
+        [
+            "var",
+            "sum"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "node"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "tableGeometry"
+        ]
+    ],
+    "method_names": [
+        "Clone",
+        "FindPLayerById",
+        "FindTeamPlayer",
+        "FindTeamById",
+        "Clone",
+        "Add",
+        "GetEnumerator",
+        "IEnumerable",
+        "Clone",
+        "Mata",
+        "Clone",
+        "IsAPass",
+        "IEnumerable",
+        "CopyTo",
+        "HowManyTokensContains",
+        "Contains",
+        "Add",
+        "Remove",
+        "GetEnumerator",
+        "Clear",
+        "Clone",
+        "Clone",
+        "GCD",
+        "Compare",
+        "DeterminatePlayers",
+        "RunRule",
+        "Clone",
+        "RunRule",
+        "RunRule",
+        "Clone",
+        "DeterminateDistribution",
+        "RunRule",
+        "Clone",
+        "AssignScore",
+        "Reorganize",
+        "DeterminateTeams",
+        "Compare",
+        "ScoreToken",
+        "ValidPlay",
+        "AssignValues",
+        "Steal",
+        "DeterminateWinner",
+        "Winner",
+        "DeterminateDistribution",
+        "Deal",
+        "MakeTokens",
+        "Turn",
+        "Visibility",
+        "Start",
+        "ToPass",
+        "DeterminatePlayers",
+        "RunRule",
+        "Clone",
+        "Visibility",
+        "ValuesEquals",
+        "AssignValues",
+        "ValidPlay",
+        "RunRule",
+        "Clone",
+        "Reorganize",
+        "RunRule",
+        "Clone",
+        "Clone",
+        "AssignScore",
+        "AssignScore",
+        "Turn",
+        "Steal",
+        "RunRule",
+        "Clone",
+        "RunRule",
+        "Clone",
+        "RunRule",
+        "Clone",
+        "RunRule",
+        "Clone",
+        "RunRule",
+        "Clone",
+        "AssignScore",
+        "RunRule",
+        "Clone",
+        "ScoreToken",
+        "Start",
+        "MakeTokens",
+        "Comb",
+        "CircularComb",
+        "RunRule",
+        "Clone",
+        "Winner",
+        "RunRule",
+        "Clone",
+        "Compare",
+        "DeterminateWinner",
+        "RunRule",
+        "ValidPlayPlayer",
+        "AssignValues",
+        "ValidPlays",
+        "Clone",
+        "ToPass",
+        "Compare",
+        "DeterminateTeams",
+        "Combinations",
+        "Play",
+        "GetValidMoves",
+        "GetStrategiesMoves",
+        "Play",
+        "RandomScorer",
+        "MostPopular",
+        "Reset",
+        "DeterminatePlayerTeams",
+        "PostGame",
+        "SortTeam",
+        "PreGame",
+        "TournamentGame",
+        "EndTournament",
+        "CreateTournament",
+        "StartGame",
+        "DeterminateLongana",
+        "DeterminateTeams",
+        "Reset",
+        "LocationTable",
+        "TokensPlayNode",
+        "LocationHand",
+        "Reset",
+        "Game",
+        "HistoryPlayer",
+        "PostPlay",
+        "PlayPlayer",
+        "PlayToken",
+        "EndGame",
+        "StartGame",
+        "PrePlay",
+        "NoValid",
+        "GuiJudge",
+        "AssignValues",
+        "DeterminateLocationHand",
+        "ExecuteMessageEvent",
+        "LocationHand",
+        "IReset",
+        "ExecuteTableEvent",
+        "ExecuteResetEvent",
+        "LocationTable",
+        "ExecuteHandEvent",
+        "Reset",
+        "LocationTable",
+        "Reset",
+        "DeterminateLocation",
+        "LocationHand",
+        "LocationTable",
+        "Reset",
+        "DeterminateHead",
+        "CreateLocationTable",
+        "LocationHand",
+        "AssignFindLocationGui",
+        "ReorganizeCoordinates",
+        "LocationTable",
+        "DeterminateTypeToken",
+        "Reset",
+        "Build",
+        "Injection",
+        "Build",
+        "ExpandGeometry",
+        "CreateNode",
+        "AssignValues",
+        "AssignCoordinates",
+        "ValuesNodeTable",
+        "ExpandGeometry",
+        "FindCenterExpand",
+        "Expand",
+        "FindCenter",
+        "Clone",
+        "Reset",
+        "UnionNode",
+        "AssignCantPlayers",
+        "Expand",
+        "Clone",
+        "Reset",
+        "IEnumerable",
+        "GetHashCode",
+        "ToString",
+        "Equals",
+        "GetEnumerator",
+        "Clone",
+        "AssignValueConnection",
+        "CreateNode",
+        "AssignValues",
+        "Reset",
+        "Expand",
+        "Clone",
+        "ValuesNodeTable",
+        "Reset",
+        "Connection",
+        "ExpandGeometry",
+        "FindCenterExpand",
+        "Expand",
+        "FindCenter",
+        "Clone",
+        "Reset",
+        "Equals",
+        "GetHashCode",
+        "AssignFathers",
+        "ValuesNodeTable",
+        "AssignValues",
+        "AuxClone",
+        "UnionNode",
+        "IReset",
+        "PlayTable",
+        "MoveTable",
+        "Reset",
+        "Expand",
+        "Clone",
+        "FreeTable",
+        "Clone",
+        "ExpandGeometry",
+        "Expand",
+        "Reset",
+        "Equals",
+        "GetHashCode",
+        "Clone",
+        "SumConnectionFree",
+        "CircularArray"
+    ],
+    "method_lengths": [
+        8,
+        8,
+        9,
+        18,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        12,
+        7,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        9,
+        21,
+        4,
+        4,
+        4,
+        5,
+        4,
+        5,
+        13,
+        4,
+        4,
+        4,
+        4,
+        13,
+        1,
+        5,
+        10,
+        5,
+        10,
+        4,
+        22,
+        4,
+        4,
+        4,
+        4,
+        10,
+        6,
+        8,
+        4,
+        4,
+        13,
+        27,
+        3,
+        4,
+        7,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        13,
+        6,
+        15,
+        19,
+        26,
+        4,
+        17,
+        13,
+        4,
+        4,
+        23,
+        15,
+        12,
+        4,
+        4,
+        13,
+        3,
+        29,
+        4,
+        21,
+        7,
+        6,
+        6,
+        4,
+        10,
+        10,
+        10,
+        4,
+        3,
+        15,
+        18,
+        4,
+        24,
+        9,
+        4,
+        7,
+        4,
+        13,
+        4,
+        13,
+        4,
+        13,
+        4,
+        13,
+        12,
+        10,
+        4,
+        4,
+        13,
+        4,
+        7,
+        7,
+        14,
+        7,
+        21,
+        6,
+        26,
+        6,
+        17,
+        15,
+        20,
+        4,
+        13,
+        7,
+        7,
+        20,
+        20,
+        4,
+        7,
+        9,
+        4,
+        14,
+        20,
+        4,
+        11,
+        12,
+        9,
+        5,
+        4,
+        4,
+        5,
+        4,
+        15,
+        19,
+        2,
+        11,
+        12,
+        10,
+        5,
+        5,
+        4,
+        22,
+        43,
+        10,
+        12,
+        4,
+        12,
+        17,
+        5,
+        27,
+        28,
+        5,
+        7,
+        6,
+        4,
+        4,
+        33,
+        6,
+        36,
+        30,
+        4,
+        10,
+        21,
+        14,
+        4,
+        9,
+        4,
+        5,
+        4,
+        5,
+        5,
+        1,
+        1,
+        22,
+        24,
+        1,
+        31,
+        4,
+        7,
+        9,
+        22,
+        57,
+        4,
+        21,
+        8,
+        12,
+        22,
+        21,
+        17,
+        4,
+        6,
+        5,
+        13,
+        1,
+        17,
+        12,
+        13,
+        7,
+        8,
+        9,
+        9,
+        16,
+        7,
+        6,
+        12,
+        21,
+        7,
+        4,
+        12,
+        6,
+        4,
+        4,
+        9,
+        4,
+        4,
+        5,
+        10,
+        6,
+        15,
+        9,
+        8,
+        4,
+        1,
+        8,
+        8,
+        9,
+        9,
+        15,
+        7,
+        6,
+        6,
+        4,
+        1,
+        4,
+        1,
+        10,
+        5,
+        4,
+        5,
+        7,
+        11,
+        1,
+        1,
+        1,
+        10,
+        45,
+        7,
+        6,
+        9,
+        4,
+        1,
+        4,
+        27
+    ],
+    "class_names": [
+        "GameStatus",
+        "InfoPlayer",
+        "History",
+        "InfoTeams",
+        "InfoPlayerTournament",
+        "Move",
+        "Hand",
+        "TournamentStatus",
+        "SmallNumberComparison",
+        "CongruenceComparison",
+        "GcdComparison",
+        "ComodinComparison",
+        "DivisibleComparison",
+        "HighNumberComparison",
+        "EvenPlayerGame",
+        "OddPlayerGame",
+        "ClassicPlayerGame",
+        "ScorePlayerTournamentRule",
+        "SecondRoundTournament",
+        "ClassicWin",
+        "NoValidPlay",
+        "CantToPassTeam",
+        "CantToPass",
+        "CantGamesTournament",
+        "ConditionDefault",
+        "HigherThanScoreHandCondition",
+        "ClassicTeamWin",
+        "NoValidPlayFirstPlayerPass",
+        "PostRoundCondition",
+        "MaxScoreTeamTournament",
+        "ImmediatePass",
+        "SumFreeNode",
+        "ReorganizeHandsRule",
+        "ClassicDistribution",
+        "TeamDistribution",
+        "WinnerGameRule",
+        "DistributionPlayerRule",
+        "TeamVisibilityPlayer",
+        "ClassicVisibilityPlayer",
+        "ValidPlayDimension",
+        "ValidPlayLongana",
+        "ValidPlayGeometry",
+        "ValidPlayLonganaComplement",
+        "ComodinToken",
+        "TurnPlayerRule",
+        "HandsTeamWin",
+        "ClassicReorganize",
+        "StealTokenRule",
+        "InfoRules",
+        "GameScorePlayerTournament",
+        "ClassicScorePlayerTournament",
+        "AssignScoreHandsHighCant",
+        "AssignScoreSumFreeNode",
+        "AssignScoreClassic",
+        "AssignScoreHandsSmallCant",
+        "AssignScoreHands",
+        "TurnPlayerInvert",
+        "TurnPlayerClassic",
+        "TurnPlayerRepeatPlay",
+        "InfoRulesTournament",
+        "NoStealToken",
+        "ChooseStealToken",
+        "ClassicStealToken",
+        "WinnerTournamentRule",
+        "VisibilityPlayerRule",
+        "TeamsGameRule",
+        "ActionConditionRule",
+        "ToPassTokenRule",
+        "BeginGameRule",
+        "PointForTeam",
+        "PlayersScoreTeamTournament",
+        "ClassicScoreTeamTournament",
+        "PlayerGameRule",
+        "AssignScoreTokenMax",
+        "AssignScoreTokenMin",
+        "AssignScoreTokenLetter",
+        "AssignScoreTokenClassic",
+        "AssignScoreTokenGcd",
+        "BeginGameToken",
+        "BeginGameRandom",
+        "BeginGameLastWinner",
+        "CircularTokensMaker",
+        "RandomDealer",
+        "ClassicTokensMaker",
+        "ScoreTeamTournamentRule",
+        "WinnerGameTeamHigh",
+        "WinnerGameSmall",
+        "WinnerGameTeamSmall",
+        "WinnerGameHigh",
+        "AssignScorePlayerRule",
+        "LetterComparisonVocalsComodin",
+        "LetterComparisonAlphabet",
+        "ClassicWinnerTournament",
+        "MaxPlayerScore",
+        "IsValidRule",
+        "NoToPassToken",
+        "YesToPassToken",
+        "ClassicComparison",
+        "LeagueTeam",
+        "ClassicTeam",
+        "RandomPlayer",
+        "Player",
+        "Scorer",
+        "BuildGame",
+        "LocationGui",
+        "JudgeTournament",
+        "InitializerGame",
+        "PrinterDimension",
+        "Judge",
+        "InfoPlayerGui",
+        "Printer",
+        "PrinterLongana",
+        "PrinterDomino",
+        "PrinterGeometry",
+        "SelectReorganizeHands",
+        "SelectValidPlay",
+        "SelectDealer",
+        "SelectAssignScoreToken",
+        "SelectScoreTeamTournament",
+        "SelectWinnerGame",
+        "SelectComparison",
+        "SelectVisibilityPlayer",
+        "SelectScorePlayerTournament",
+        "BuildRules",
+        "SelectBeginGame",
+        "SelectMaker",
+        "ParamSelectFunction",
+        "ParamSelect",
+        "SelectPlayerGameTournament",
+        "SelectGamesCreated",
+        "SelectAssignScorePlayer",
+        "BuildRulesTournament",
+        "SelectMoveScorer",
+        "SelectCondition",
+        "SelectTurnPlayer",
+        "SelectDistributionPlayer",
+        "SelectTeamGameTournament",
+        "SelectTable",
+        "SelectTournamentCreated",
+        "SelectWinnerTournament",
+        "SelectSteal",
+        "SelectStrategies",
+        "SelectDefaultStrategy",
+        "TableGeometry",
+        "TableHexagonal",
+        "TableLongana",
+        "Token",
+        "TableDimension",
+        "NodeDimension",
+        "TableSquare",
+        "NodeGeometry",
+        "TableGame",
+        "TableTriangular",
+        "ValuesNode",
+        "Coordinates",
+        "AuxTable"
+    ],
+    "interface_names": [
+        "ICondition",
+        "IBeginGame",
+        "IVisibilityPlayer",
+        "IWinnerTournament",
+        "IWinnerGame",
+        "IComparison",
+        "IDealer",
+        "IReorganizeHands",
+        "IAssignScoreToken",
+        "IAssignScorePlayer",
+        "IPlayerGame",
+        "IValidPlay",
+        "ITokensMaker",
+        "ITurnPlayer",
+        "IDistributionPlayer",
+        "ITeamsGame",
+        "IScoreTeamTournament",
+        "IToPassToken",
+        "IScorePlayerTournament",
+        "IStealToken",
+        "IStrategy",
+        "IVariant",
+        "INode",
+        "IReset",
+        "ICloneable"
+    ],
+    "delegate_names": [
+        [
+            "delegate",
+            "double"
+        ],
+        [
+            "delegate",
+            "void"
+        ],
+        [
+            "delegate",
+            "bool"
+        ],
+        [
+            "delegate",
+            "T1"
+        ]
+    ],
+    "enums_names": [
+        "TypeToken"
+    ],
+    "distinct_tokens_count": {},
+    "control_structures_if": 205,
+    "control_structures_switch": 0,
+    "control_structures_for": 101,
+    "control_structures_while": 9,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 723,
+    "access_modifiers_private": 110,
+    "access_modifiers_protected": 36,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 15,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 45,
+    "modifier_volatile": 0,
+    "modifier_virtual": 3,
+    "modifier_override": 41,
+    "modifier_new": 346,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "method_return_types": {
+        "FindPLayerById": "int",
+        "FindTeamById": "int",
+        "FindTeamPlayer": "int",
+        "Clone": "GameStatus",
+        "GetEnumerator": "IEnumerator",
+        "IEnumerable": "IEnumerator",
+        "Add": "void",
+        "IsAPass": "bool",
+        "Mata": "bool",
+        "Clear": "void",
+        "Contains": "bool",
+        "CopyTo": "void",
+        "Remove": "bool",
+        "HowManyTokensContains": "int",
+        "Compare": "bool",
+        "GCD": "int",
+        "DeterminatePlayers": "void",
+        "RunRule": "void",
+        "DeterminateDistribution": "void",
+        "Deal": "Hand",
+        "MakeTokens": "List",
+        "AssignScore": "void",
+        "ScoreToken": "int",
+        "Start": "void",
+        "Reorganize": "void",
+        "Steal": "void",
+        "ToPass": "bool",
+        "Turn": "void",
+        "ValidPlay": "bool",
+        "AssignValues": "T",
+        "Visibility": "void",
+        "Winner": "void",
+        "DeterminateTeams": "void",
+        "DeterminateWinner": "void",
+        "ValuesEquals": "bool",
+        "Comb": "void",
+        "CircularComb": "void",
+        "ValidPlays": "List",
+        "ValidPlayPlayer": "bool",
+        "Combinations": "void",
+        "Play": "IEnumerable",
+        "GetValidMoves": "IEnumerable",
+        "GetStrategiesMoves": "IEnumerable",
+        "RandomScorer": "double",
+        "MostPopular": "double",
+        "Reset": "BuildGame",
+        "CreateTournament": "TournamentStatus",
+        "TournamentGame": "void",
+        "PreGame": "void",
+        "PostGame": "void",
+        "EndTournament": "bool",
+        "DeterminatePlayerTeams": "List",
+        "SortTeam": "void",
+        "StartGame": "GameStatus",
+        "DeterminateLongana": "void",
+        "LocationTable": "void",
+        "LocationHand": "void",
+        "TokensPlayNode": "IEnumerable",
+        "Game": "void",
+        "GuiJudge": "void",
+        "PlayPlayer": "void",
+        "HistoryPlayer": "void",
+        "PlayToken": "void",
+        "PrePlay": "bool",
+        "PostPlay": "void",
+        "EndGame": "bool",
+        "NoValid": "bool",
+        "IReset": "Printer",
+        "ExecuteMessageEvent": "void",
+        "ExecuteTableEvent": "void",
+        "ExecuteHandEvent": "void",
+        "ExecuteResetEvent": "void",
+        "DeterminateLocationHand": "void",
+        "DeterminateHead": "INode",
+        "DeterminateLocation": "IEnumerable",
+        "AssignFindLocationGui": "IEnumerable",
+        "DeterminateTypeToken": "(",
+        "CreateLocationTable": "LocationGui",
+        "ReorganizeCoordinates": "int",
+        "Build": "InfoRules",
+        "Injection": "void",
+        "ExpandGeometry": "(",
+        "AssignCoordinates": "void",
+        "CreateNode": "NodeGeometry",
+        "ValuesNodeTable": "ValuesNode",
+        "Expand": "void",
+        "FindCenterExpand": "(",
+        "FindCenter": "(",
+        "AssignCantPlayers": "void",
+        "UnionNode": "void",
+        "Equals": "bool",
+        "GetHashCode": "int",
+        "ToString": "string",
+        "AssignValueConnection": "void",
+        "Connection": "int",
+        "PlayTable": "void",
+        "FreeTable": "void",
+        "MoveTable": "INode",
+        "AssignFathers": "void",
+        "AuxClone": "TableGame",
+        "CircularArray": "IEnumerable",
+        "SumConnectionFree": "int"
+    },
+    "method_parameters": {},
+    "linq_querie_select": 26,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 1,
+    "linq_queries_sum": 82,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 5,
+    "number_of_lambdas": 13,
+    "number_of_getters": 190,
+    "number_of_setters": 80,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 106,
+    "project_name": "n-omino-main"
+}

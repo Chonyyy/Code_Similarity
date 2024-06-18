@@ -1,0 +1,3122 @@
+{
+    "total_nodes": 229092,
+    "node_count": {
+        "Compilation_unitContext": 145,
+        "Namespace_member_declarationsContext": 164,
+        "Namespace_member_declarationContext": 329,
+        "Type_declarationContext": 266,
+        "All_member_modifiersContext": 1005,
+        "All_member_modifierContext": 1076,
+        "TerminalNodeImpl": 44909,
+        "Class_definitionContext": 214,
+        "IdentifierContext": 13823,
+        "Class_bodyContext": 271,
+        "Class_member_declarationsContext": 265,
+        "Class_member_declarationContext": 837,
+        "Common_member_declarationContext": 855,
+        "Constructor_declarationContext": 52,
+        "Formal_parameter_listContext": 394,
+        "Fixed_parametersContext": 394,
+        "Fixed_parameterContext": 769,
+        "Arg_declarationContext": 773,
+        "Type_Context": 3822,
+        "Base_typeContext": 3853,
+        "Class_typeContext": 3026,
+        "Namespace_or_type_nameContext": 3249,
+        "BodyContext": 53,
+        "BlockContext": 1064,
+        "Statement_listContext": 1048,
+        "StatementContext": 2743,
+        "Embedded_statementContext": 2439,
+        "ExpressionStatementContext": 1313,
+        "ExpressionContext": 6087,
+        "Non_assignment_expressionContext": 5537,
+        "Conditional_expressionContext": 5514,
+        "Null_coalescing_expressionContext": 5514,
+        "Conditional_or_expressionContext": 5514,
+        "Conditional_and_expressionContext": 5549,
+        "Inclusive_or_expressionContext": 5609,
+        "Exclusive_or_expressionContext": 5609,
+        "And_expressionContext": 5609,
+        "Equality_expressionContext": 5609,
+        "Relational_expressionContext": 5853,
+        "Shift_expressionContext": 6012,
+        "Additive_expressionContext": 6012,
+        "Multiplicative_expressionContext": 6179,
+        "Switch_expressionContext": 6235,
+        "Range_expressionContext": 6235,
+        "Unary_expressionContext": 6996,
+        "Primary_expressionContext": 6826,
+        "SimpleNameExpressionContext": 3795,
+        "Member_accessContext": 3433,
+        "Method_invocationContext": 1475,
+        "Argument_listContext": 1205,
+        "ArgumentContext": 1887,
+        "TypeofExpressionContext": 104,
+        "Unbound_type_nameContext": 104,
+        "ParenthesisExpressionsContext": 128,
+        "Cast_expressionContext": 66,
+        "WhileStatementContext": 12,
+        "LiteralExpressionContext": 1327,
+        "LiteralContext": 1327,
+        "Boolean_literalContext": 163,
+        "TryStatementContext": 20,
+        "DeclarationStatementContext": 491,
+        "Local_variable_declarationContext": 553,
+        "Local_variable_typeContext": 690,
+        "Local_variable_declaratorContext": 553,
+        "Local_variable_initializerContext": 546,
+        "Catch_clausesContext": 20,
+        "Specific_catch_clauseContext": 3,
+        "String_literalContext": 351,
+        "Typed_member_declarationContext": 637,
+        "Simple_typeContext": 952,
+        "Method_declarationContext": 527,
+        "Method_member_nameContext": 527,
+        "Method_bodyContext": 523,
+        "ReturnStatementContext": 446,
+        "IfStatementContext": 343,
+        "If_bodyContext": 429,
+        "Field_declarationContext": 179,
+        "Variable_declaratorsContext": 179,
+        "Variable_declaratorContext": 179,
+        "Variable_initializerContext": 78,
+        "Numeric_typeContext": 755,
+        "Integral_typeContext": 755,
+        "Type_argument_listContext": 930,
+        "ObjectCreationExpressionContext": 536,
+        "Object_creation_expressionContext": 517,
+        "Property_declarationContext": 79,
+        "Member_nameContext": 79,
+        "Accessor_declarationsContext": 64,
+        "Accessor_bodyContext": 98,
+        "ThisReferenceExpressionContext": 838,
+        "AssignmentContext": 591,
+        "Assignment_operatorContext": 591,
+        "Bracket_expressionContext": 334,
+        "Indexer_argumentContext": 334,
+        "ForeachStatementContext": 137,
+        "Class_baseContext": 174,
+        "Constructor_initializerContext": 9,
+        "Object_or_collection_initializerContext": 29,
+        "Collection_initializerContext": 29,
+        "Element_initializerContext": 66,
+        "Using_directivesContext": 69,
+        "UsingNamespaceDirectiveContext": 234,
+        "Interface_definitionContext": 57,
+        "Interface_baseContext": 32,
+        "Interface_type_listContext": 35,
+        "Lambda_expressionContext": 17,
+        "Anonymous_function_signatureContext": 17,
+        "Implicit_anonymous_function_parameter_listContext": 7,
+        "Right_arrowContext": 37,
+        "Anonymous_function_bodyContext": 17,
+        "Throwable_expressionContext": 77,
+        "Local_function_declarationContext": 4,
+        "Local_function_headerContext": 4,
+        "Return_typeContext": 4,
+        "Local_function_bodyContext": 4,
+        "MemberAccessExpressionContext": 32,
+        "Predefined_typeContext": 32,
+        "General_catch_clauseContext": 17,
+        "ForStatementContext": 66,
+        "For_initializerContext": 66,
+        "For_iteratorContext": 66,
+        "IsTypeContext": 29,
+        "BreakStatementContext": 10,
+        "ContinueStatementContext": 6,
+        "ThrowStatementContext": 5,
+        "Struct_definitionContext": 3,
+        "Struct_interfacesContext": 3,
+        "Struct_bodyContext": 3,
+        "Struct_member_declarationContext": 18,
+        "ErrorNodeImpl": 1558,
+        "YieldStatementContext": 1,
+        "Enum_definitionContext": 2,
+        "Enum_bodyContext": 2,
+        "Enum_member_declarationContext": 9,
+        "Parameter_arrayContext": 2,
+        "Array_typeContext": 2,
+        "Rank_specifierContext": 20,
+        "Qualified_alias_memberContext": 9,
+        "Namespace_declarationContext": 63,
+        "Qualified_identifierContext": 63,
+        "Namespace_bodyContext": 63,
+        "Operator_declarationContext": 2,
+        "Overloadable_operatorContext": 2,
+        "Expression_listContext": 14,
+        "Tuple_typeContext": 43,
+        "Tuple_elementContext": 86,
+        "TupleExpressionContext": 57,
+        "Parameter_modifierContext": 40,
+        "BaseAccessExpressionContext": 9,
+        "Set_accessor_declarationContext": 34,
+        "AttributesContext": 2,
+        "Attribute_sectionContext": 2,
+        "Variant_type_parameter_listContext": 9,
+        "Variant_type_parameterContext": 9,
+        "Global_attribute_sectionContext": 26,
+        "Global_attribute_targetContext": 26,
+        "Attribute_listContext": 27,
+        "AttributeContext": 27,
+        "Attribute_argumentContext": 29,
+        "Query_expressionContext": 6,
+        "From_clauseContext": 6,
+        "Query_bodyContext": 6,
+        "Query_body_clauseContext": 6,
+        "Where_clauseContext": 6,
+        "Select_or_group_clauseContext": 6
+    },
+    "max_depth": 9132,
+    "number_of_variables": 553,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 40,
+    "number_of_methods": 527,
+    "number_of_classes": 214,
+    "number_of_interfaces": 57,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 69,
+    "number_of_try_blocks": 20,
+    "number_of_lists": 130,
+    "number_of_dictionaries": 9,
+    "number_of_enums": 2,
+    "number_of_delegates": 0,
+    "function_calls": 536,
+    "variable_names": [
+        [
+            "Tournament",
+            "tournament"
+        ],
+        [
+            "ITournamentGenerator",
+            "tournamentGenerator"
+        ],
+        [
+            "IDrawable",
+            "drawable"
+        ],
+        [
+            "IGameFinalizable",
+            "gameFinalizable"
+        ],
+        [
+            "IRoundFinalizationRule",
+            "roundFinalizationRule"
+        ],
+        [
+            "IReversePlayerOrder",
+            "reversePlayerOrder"
+        ],
+        [
+            "bool",
+            "activity"
+        ],
+        [
+            "bool",
+            "activity"
+        ],
+        [
+            "List",
+            "winners"
+        ],
+        [
+            "int",
+            "maxScore"
+        ],
+        [
+            "int",
+            "minScore"
+        ],
+        [
+            "List",
+            "teamScores"
+        ],
+        [
+            "List",
+            "winners"
+        ],
+        [
+            "int",
+            "maxScore"
+        ],
+        [
+            "List",
+            "teamScores"
+        ],
+        [
+            "List",
+            "players"
+        ],
+        [
+            "List",
+            "players"
+        ],
+        [
+            "Move",
+            "move"
+        ],
+        [
+            "string",
+            "entry"
+        ],
+        [
+            "int",
+            "value"
+        ],
+        [
+            "Func",
+            "Func"
+        ],
+        [
+            "Dictionary",
+            "Graph"
+        ],
+        [
+            "List",
+            "matches"
+        ],
+        [
+            "List",
+            "teams"
+        ],
+        [
+            "Match",
+            "principal"
+        ],
+        [
+            "Match",
+            "semifinalA"
+        ],
+        [
+            "Dictionary",
+            "graph"
+        ],
+        [
+            "Match",
+            "semifinalB"
+        ],
+        [
+            "List",
+            "teamsA"
+        ],
+        [
+            "Match",
+            "final"
+        ],
+        [
+            "List",
+            "teamsB"
+        ],
+        [
+            "Team",
+            "teamD"
+        ],
+        [
+            "Team",
+            "teamA"
+        ],
+        [
+            "Team",
+            "teamC"
+        ],
+        [
+            "Team",
+            "teamB"
+        ],
+        [
+            "Move",
+            "move"
+        ],
+        [
+            "List",
+            "players"
+        ],
+        [
+            "List",
+            "sequence"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "IFace",
+            "faceA"
+        ],
+        [
+            "IFace",
+            "faceB"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "faces"
+        ],
+        [
+            "Player",
+            "playerA"
+        ],
+        [
+            "IFace",
+            "faceA"
+        ],
+        [
+            "IFace",
+            "faceB"
+        ],
+        [
+            "Team",
+            "teamB"
+        ],
+        [
+            "Player",
+            "playerB"
+        ],
+        [
+            "Team",
+            "teamA"
+        ],
+        [
+            "List",
+            "temporalPlayers"
+        ],
+        [
+            "List",
+            "temporalTeams"
+        ],
+        [
+            "List",
+            "players"
+        ],
+        [
+            "bool",
+            "doNothing"
+        ],
+        [
+            "int",
+            "total"
+        ],
+        [
+            "List",
+            "scores"
+        ],
+        [
+            "int",
+            "score"
+        ],
+        [
+            "List",
+            "totalValues"
+        ],
+        [
+            "int",
+            "minScore"
+        ],
+        [
+            "List",
+            "teamScores"
+        ],
+        [
+            "List",
+            "teams"
+        ],
+        [
+            "List",
+            "winners"
+        ],
+        [
+            "int",
+            "maxScore"
+        ],
+        [
+            "int",
+            "value"
+        ],
+        [
+            "Func",
+            "Func"
+        ],
+        [
+            "List",
+            "protectedTokens"
+        ],
+        [
+            "IFaceGenerator",
+            "faceGenerator"
+        ],
+        [
+            "IntFacesGenerator",
+            "faceGenerator"
+        ],
+        [
+            "IFilterTokenRule",
+            "filterTokenRule"
+        ],
+        [
+            "string",
+            "entry"
+        ],
+        [
+            "ITokenGenerator",
+            "tokenGenerator"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "int",
+            "intA"
+        ],
+        [
+            "int",
+            "intB"
+        ],
+        [
+            "int",
+            "total"
+        ],
+        [
+            "List",
+            "scores"
+        ],
+        [
+            "Event",
+            "nextPlayer"
+        ],
+        [
+            "Event",
+            "distributeTokens"
+        ],
+        [
+            "Event",
+            "reversePlayerOrder"
+        ],
+        [
+            "Event",
+            "newGame"
+        ],
+        [
+            "Event",
+            "newRoundGame"
+        ],
+        [
+            "Event",
+            "game"
+        ],
+        [
+            "Event",
+            "gameOver"
+        ],
+        [
+            "Event",
+            "roundGame"
+        ],
+        [
+            "Event",
+            "roundGameOver"
+        ],
+        [
+            "ITokenDealer",
+            "tokenDealer"
+        ],
+        [
+            "Event",
+            "processCurrentTurn"
+        ],
+        [
+            "Event",
+            "drawTokenCurrentPlayer"
+        ],
+        [
+            "bool",
+            "right"
+        ],
+        [
+            "List",
+            "players"
+        ],
+        [
+            "List",
+            "visibleTokens"
+        ],
+        [
+            "ProtectedToken",
+            "protectedToken"
+        ],
+        [
+            "List",
+            "teams"
+        ],
+        [
+            "List",
+            "scores"
+        ],
+        [
+            "List",
+            "protectedTokens"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Player",
+            "player"
+        ],
+        [
+            "List",
+            "moves"
+        ],
+        [
+            "Dictionary",
+            "playerBoard"
+        ],
+        [
+            "Tuple",
+            "playerMove"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "Move",
+            "move"
+        ],
+        [
+            "Board",
+            "board"
+        ],
+        [
+            "bool",
+            "left"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "int",
+            "b"
+        ],
+        [
+            "int",
+            "a"
+        ],
+        [
+            "ITokenValue",
+            "tokenValue"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "ProtectedToken",
+            "token"
+        ],
+        [
+            "ProtectedToken",
+            "tokenC"
+        ],
+        [
+            "ProtectedToken",
+            "tokenRight"
+        ],
+        [
+            "ProtectedToken",
+            "tokenLeft"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "Tuple",
+            "availableTokens"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "int",
+            "numberOfTeamsThatBelongs"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "value"
+        ],
+        [
+            "List",
+            "playableTokens"
+        ],
+        [
+            "int",
+            "frequency"
+        ],
+        [
+            "Token",
+            "tokenToPlay"
+        ],
+        [
+            "Func",
+            "Func"
+        ],
+        [
+            "int",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Token",
+            "token"
+        ],
+        [
+            "List",
+            "tokensToSelect"
+        ],
+        [
+            "string",
+            "mostFrequencyId"
+        ],
+        [
+            "string",
+            "entry"
+        ],
+        [
+            "Dictionary",
+            "idFrequency"
+        ],
+        [
+            "Move",
+            "move"
+        ],
+        [
+            "HashSet",
+            "markIn"
+        ],
+        [
+            "Queue",
+            "queue"
+        ],
+        [
+            "Match",
+            "match"
+        ],
+        [
+            "Game",
+            "currentGame"
+        ],
+        [
+            "Dictionary",
+            "inDegree"
+        ],
+        [
+            "HashSet",
+            "mark"
+        ],
+        [
+            "List",
+            "nextMatchesList"
+        ],
+        [
+            "Events",
+            "mainEvent"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "string",
+            "id"
+        ],
+        [
+            "Func",
+            "Func"
+        ],
+        [
+            "object",
+            "obj"
+        ],
+        [
+            "List",
+            "types"
+        ],
+        [
+            "List",
+            "implementations"
+        ],
+        [
+            "List",
+            "types"
+        ],
+        [
+            "dynamic",
+            "instance"
+        ],
+        [
+            "List",
+            "fichasJugadores"
+        ],
+        [
+            "int",
+            "posParaJugar"
+        ],
+        [
+            "Dictionary",
+            "argumentos"
+        ],
+        [
+            "bool",
+            "huboJugada"
+        ],
+        [
+            "int",
+            "cantFichasJugadorActual"
+        ],
+        [
+            "(",
+            "jugada"
+        ],
+        [
+            "List",
+            "recorrido2"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "random"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "Ficha",
+            "MejorFicha"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "posFicha"
+        ],
+        [
+            "int",
+            "actual"
+        ],
+        [
+            "int",
+            "totalPuntos"
+        ],
+        [
+            "int",
+            "posFichaMano"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Ficha",
+            "f"
+        ],
+        [
+            "(",
+            "sol"
+        ],
+        [
+            "string",
+            "trabajo"
+        ],
+        [
+            "Ficha",
+            "f"
+        ],
+        [
+            "(",
+            "result"
+        ],
+        [
+            "string",
+            "respuesta"
+        ],
+        [
+            "List",
+            "posManoIzq"
+        ],
+        [
+            "List",
+            "posManoDer"
+        ],
+        [
+            "List",
+            "posiblesDerechas"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "posiblesIzquierdas"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "int",
+            "num"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "Ficha",
+            "f"
+        ],
+        [
+            "int",
+            "aux"
+        ],
+        [
+            "bool",
+            "revisados"
+        ],
+        [
+            "int",
+            "intentos"
+        ],
+        [
+            "int",
+            "num"
+        ],
+        [
+            "Ficha",
+            "f"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "Ficha",
+            "gorda"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "suelto"
+        ],
+        [
+            "int",
+            "num"
+        ],
+        [
+            "Ficha",
+            "ficha"
+        ],
+        [
+            "int",
+            "respuesta"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "ParteFicha",
+            "ocho"
+        ],
+        [
+            "ParteFicha",
+            "cinco"
+        ],
+        [
+            "ParteFicha",
+            "seis"
+        ],
+        [
+            "List",
+            "fichas"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "ParteFicha",
+            "tres"
+        ],
+        [
+            "ParteFicha",
+            "dos"
+        ],
+        [
+            "ParteFicha",
+            "uno"
+        ],
+        [
+            "ParteFicha",
+            "cuatro"
+        ],
+        [
+            "ParteFicha",
+            "cero"
+        ],
+        [
+            "ParteFicha",
+            "siete"
+        ],
+        [
+            "ParteFicha",
+            "nueve"
+        ],
+        [
+            "List",
+            "partes"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "ParteFicha",
+            "ocho"
+        ],
+        [
+            "ParteFicha",
+            "cinco"
+        ],
+        [
+            "ParteFicha",
+            "seis"
+        ],
+        [
+            "List",
+            "fichas"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "ParteFicha",
+            "tres"
+        ],
+        [
+            "ParteFicha",
+            "dos"
+        ],
+        [
+            "ParteFicha",
+            "uno"
+        ],
+        [
+            "ParteFicha",
+            "cuatro"
+        ],
+        [
+            "ParteFicha",
+            "cero"
+        ],
+        [
+            "ParteFicha",
+            "siete"
+        ],
+        [
+            "ParteFicha",
+            "nueve"
+        ],
+        [
+            "List",
+            "partes"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "totalPuntos"
+        ],
+        [
+            "int",
+            "puntos"
+        ],
+        [
+            "List",
+            "valorFichasPorJugador"
+        ],
+        [
+            "Random",
+            "a"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "num"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "List",
+            "valorFichasPorJugador"
+        ],
+        [
+            "List",
+            "fichasJugadores"
+        ],
+        [
+            "int",
+            "max"
+        ],
+        [
+            "(",
+            "resultAux"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "min"
+        ],
+        [
+            "int",
+            "jugadorGanador"
+        ],
+        [
+            "int",
+            "jugadorActual"
+        ],
+        [
+            "bool",
+            "empate"
+        ],
+        [
+            "List",
+            "aux"
+        ],
+        [
+            "Ficha",
+            "resultemporal"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "System",
+            "r"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "a"
+        ],
+        [
+            "int",
+            "valor"
+        ],
+        [
+            "List",
+            "piezasValidas"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "list"
+        ],
+        [
+            "int",
+            "punt"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "puntP"
+        ],
+        [
+            "int",
+            "min"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "bool",
+            "mask"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "List",
+            "pasa"
+        ],
+        [
+            "List",
+            "fichasValidas"
+        ],
+        [
+            "IFicha",
+            "ficha"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "num"
+        ],
+        [
+            "List",
+            "fichasValidas"
+        ],
+        [
+            "int",
+            "tempValue"
+        ],
+        [
+            "List",
+            "pasa"
+        ],
+        [
+            "int",
+            "maxvalue"
+        ],
+        [
+            "IFicha",
+            "ficha"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "fichasValidas"
+        ],
+        [
+            "int",
+            "tempValue"
+        ],
+        [
+            "List",
+            "pasa"
+        ],
+        [
+            "int",
+            "maxvalue"
+        ],
+        [
+            "List",
+            "piezasValidas"
+        ],
+        [
+            "(",
+            "valores"
+        ],
+        [
+            "int",
+            "punt"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "puntP"
+        ],
+        [
+            "int",
+            "min"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "bool",
+            "mask"
+        ],
+        [
+            "(",
+            "valores"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "IPlayer",
+            "player"
+        ],
+        [
+            "int",
+            "pasesMayor"
+        ],
+        [
+            "string",
+            "resp2"
+        ],
+        [
+            "int",
+            "x6"
+        ],
+        [
+            "ICalculaPuntos",
+            "calcula"
+        ],
+        [
+            "int",
+            "x4"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "List",
+            "ListaJugadores"
+        ],
+        [
+            "string",
+            "resp3"
+        ],
+        [
+            "IAccionDespuesDeLaJugada",
+            "adj"
+        ],
+        [
+            "int",
+            "r"
+        ],
+        [
+            "int",
+            "noJugadores"
+        ],
+        [
+            "bool",
+            "equipo"
+        ],
+        [
+            "IReglas",
+            "reglas"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "string",
+            "resp4"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "x2"
+        ],
+        [
+            "IProximoJugador",
+            "proximoJugador"
+        ],
+        [
+            "var",
+            "creando5"
+        ],
+        [
+            "int",
+            "x5"
+        ],
+        [
+            "var",
+            "creandoSalir"
+        ],
+        [
+            "var",
+            "creando4"
+        ],
+        [
+            "string",
+            "resp6"
+        ],
+        [
+            "string",
+            "resp5"
+        ],
+        [
+            "int",
+            "x3"
+        ],
+        [
+            "IGanador",
+            "ganador"
+        ],
+        [
+            "var",
+            "creando2"
+        ],
+        [
+            "List",
+            "fichasJugadores"
+        ],
+        [
+            "int",
+            "result"
+        ],
+        [
+            "int",
+            "totalDeFichasJuegoActual"
+        ],
+        [
+            "IContarPuntos",
+            "ContarPuntos"
+        ],
+        [
+            "var",
+            "creando6"
+        ],
+        [
+            "string",
+            "resp"
+        ],
+        [
+            "int",
+            "noJug"
+        ],
+        [
+            "bool",
+            "juegoEnEquipo"
+        ],
+        [
+            "var",
+            "creando"
+        ],
+        [
+            "int",
+            "FichasDomino"
+        ],
+        [
+            "List",
+            "jug"
+        ],
+        [
+            "int",
+            "noFichPorJug"
+        ],
+        [
+            "int",
+            "cantMaxFichas"
+        ],
+        [
+            "var",
+            "creando3"
+        ],
+        [
+            "IValidarJugada",
+            "validarJugada"
+        ],
+        [
+            "string",
+            "jugString"
+        ],
+        [
+            "List",
+            "jugadores"
+        ],
+        [
+            "int",
+            "respuesta"
+        ],
+        [
+            "int",
+            "cantJugadores"
+        ],
+        [
+            "int",
+            "reg"
+        ],
+        [
+            "Move",
+            "lastMove"
+        ],
+        [
+            "List",
+            "implementations"
+        ],
+        [
+            "List",
+            "players"
+        ],
+        [
+            "Player",
+            "currentPlayer"
+        ],
+        [
+            "List",
+            "winners"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "ConsoleKeyInfo",
+            "keyInfo"
+        ],
+        [
+            "string",
+            "entry"
+        ],
+        [
+            "List",
+            "gameInterfaces"
+        ],
+        [
+            "string",
+            "read"
+        ],
+        [
+            "int",
+            "selection"
+        ],
+        [
+            "ITournamentWinnerRule",
+            "tournamentWinnerRule"
+        ],
+        [
+            "ConsoleInterface",
+            "consoleInterface"
+        ],
+        [
+            "GameLogic",
+            "gameLogic"
+        ]
+    ],
+    "method_names": [
+        "IsConditionMetToReverse",
+        "IsDrawable",
+        "IsLastPlayerPassed",
+        "IsGameOver",
+        "IsNotLastPlayerPassed",
+        "CurrentPlayerPlayedAllTokens",
+        "Identity",
+        "IsRoundGameOver",
+        "IsAllPlayersPassed",
+        "GetActivity",
+        "AddPower",
+        "GetActivity",
+        "Clear",
+        "AddPowers",
+        "GetWinners",
+        "GetRoundGame",
+        "GetWinners",
+        "GetPlayers",
+        "GetTokenVisibilityPlayers",
+        "IsConditionMet",
+        "IsGameFinalizable",
+        "Distribute",
+        "GetTournament",
+        "GetTeams",
+        "IsRoundGameOver",
+        "GetValue",
+        "GetTeam",
+        "Main",
+        "GraphicBoard",
+        "GraphicNullableBoard",
+        "GetEntry",
+        "NewGame",
+        "GraphicTable",
+        "NewTournament",
+        "Action",
+        "TournamentOver",
+        "GraphicBoardAndPositions",
+        "SendMessage",
+        "GameOver",
+        "UpdateGame",
+        "UpdateTournament",
+        "GetOrderPlayersequence",
+        "KTimesTokens",
+        "Generate",
+        "ColorsToFaces",
+        "GetFaces",
+        "IntFaces",
+        "GetPlayer",
+        "IsJoinable",
+        "Apply",
+        "IsDrawable",
+        "GetGame",
+        "GetTeamOrder",
+        "GetScore",
+        "GetScore",
+        "GetTournamentWinners",
+        "Generate",
+        "IsIdJoinable",
+        "GetScore",
+        "StartAt",
+        "Action",
+        "Start",
+        "AddEdge",
+        "Action",
+        "GetAllPlayers",
+        "WatchThesePlayers",
+        "GetAllTeams",
+        "IsDistributed",
+        "SelectCurrentPlayerMove",
+        "GetTableString",
+        "GetRoundPlayerScore",
+        "GetCurrentPlayer",
+        "GetTabletokens",
+        "EndRoundGame",
+        "GetNumberOfMoves",
+        "GetPlayerTeam",
+        "DrawTokenPlayer",
+        "GetPlayersAndBoardTokensVisibleByPlayer",
+        "GetLastMove",
+        "ReversePlayerOrder",
+        "GetTeamAllRoundScores",
+        "PlayerPlayedAllTokens",
+        "GetRoundWinners",
+        "GetBoardNullableTokensVisibleForPlayer",
+        "WatchAllPlayers",
+        "ProcessCurrentTurn",
+        "GetNumberOfRounds",
+        "GetRoundTeamScore",
+        "PlayToken",
+        "GetTokenPositionMiddle",
+        "DrawTokenCurrentPlayer",
+        "GetNumberOfContiguousPassedTurns",
+        "CurrentPlayerPlayedAllTokens",
+        "IsIdJoinable",
+        "SetGameToEnded",
+        "GetNumberOfPlayers",
+        "IsCurrentRoundEnded",
+        "GetPlayerTotalPassedTurns",
+        "GetBoardProtectedTokensVisibleForPlayer",
+        "GetWinnersAllRound",
+        "GetBoardString",
+        "GetCurrentPlayerTokensPlayableAndPosition",
+        "GetTeamAllRoundScore",
+        "GetPlayerTokensPlayableAndPosition",
+        "GetPlayerBoard",
+        "GetCurrentPlayerBoardString",
+        "IsGameEnded",
+        "NewRoundGame",
+        "NextPlayer",
+        "SaveRoundGameResults",
+        "LastMoveWasDraw",
+        "DistributeTokens",
+        "GetPositionMiddle",
+        "GetBoardTokens",
+        "CompareTo",
+        "ToString",
+        "IsDouble",
+        "GetValue",
+        "Rotate",
+        "PutAt",
+        "TakeAt",
+        "Take",
+        "Shuffle",
+        "Init",
+        "Put",
+        "PutRandom",
+        "Swap",
+        "TakeLast",
+        "Clear",
+        "TakeRandom",
+        "PutLast",
+        "GetProtectedTokens",
+        "GetTokensWithoutProtection",
+        "ToString",
+        "Put",
+        "Clear",
+        "GetToken",
+        "CompareTo",
+        "Forget",
+        "GetCurrentOwner",
+        "GetTokenWithoutVisibility",
+        "IsVisible",
+        "Rotate",
+        "NewOwner",
+        "Watch",
+        "OrderBy",
+        "CopyTo",
+        "Sort",
+        "Contains",
+        "ToString",
+        "Add",
+        "Remove",
+        "GetEnumerator",
+        "Clear",
+        "GetTokens",
+        "Add",
+        "GetEnumerator",
+        "Remove",
+        "Contains",
+        "CheckTeamsAndPlayers",
+        "Reverse",
+        "RestartWithPlayer",
+        "NextPlayer",
+        "CurrentPlayer",
+        "RestartOrder",
+        "ChooseTokenIndex",
+        "GetWinners",
+        "IsDistributed",
+        "GetNumberOfMoves",
+        "GetLastMove",
+        "Distributed",
+        "SetWinners",
+        "SetTeamScore",
+        "ResetContiguousPassedTurns",
+        "IsRoundEnded",
+        "PassTurn",
+        "GetTeamScore",
+        "PlayMove",
+        "GetMoves",
+        "GetPlayerTotalPassedTurns",
+        "GetContiguousPassedTurns",
+        "EndRound",
+        "AddMove",
+        "LastMoveWasDraw",
+        "GetEnumerator",
+        "GetCurrentHistoryRound",
+        "GetHistoryRounds",
+        "GetNumberOfRounds",
+        "IsGameEnded",
+        "SetGameToEnded",
+        "NewHistoryRound",
+        "GetNumberOfMatches",
+        "GetTournamentHistory",
+        "StartTournament",
+        "GetTeams",
+        "StoreTeamsFromMatches",
+        "UpdateTournamentHistory",
+        "IsDirectedAcyclicGraph",
+        "CheckMatchesAndNextMatches",
+        "DFS",
+        "GetWinners",
+        "GetTeams",
+        "RemoveTeam",
+        "RemoveTeams",
+        "AddTeam",
+        "AddTeams",
+        "PlayMatch",
+        "GetGame",
+        "GetNumberOfMatches",
+        "AddTeamTotalScore",
+        "GetTeamMatchesWon",
+        "GetTeamTotalScore",
+        "AddMatch",
+        "TeamWinMatch",
+        "GetPlayerName",
+        "GetTeamName",
+        "GetHumanName",
+        "ReadLines",
+        "GetTeamId",
+        "GetPlayerId",
+        "SetDefault",
+        "CreateInstance",
+        "GetImplementations",
+        "GetSubInterfaces",
+        "GetDefault",
+        "CreateInstanceFromDefault",
+        "Initialize",
+        "GetInstance",
+        "InitializeAll",
+        "Equals",
+        "ToString",
+        "ImprimirMesa",
+        "GetGanador",
+        "Jugar",
+        "TerminoPartida",
+        "GetJugadores",
+        "AddDer",
+        "imprimirMesa",
+        "Extremos",
+        "AddIzq",
+        "TerminoModo",
+        "TerminoUnaPratida",
+        "GetGanador",
+        "TerminoModo",
+        "GetGanador",
+        "TerminoUnaPratida",
+        "TerminoModo",
+        "TerminoUnaPratida",
+        "GetGanador",
+        "TerminoModo",
+        "TerminoUnaPratida",
+        "GetGanador",
+        "Jugar",
+        "Ordena",
+        "Jugar",
+        "Calcula",
+        "Jugar",
+        "juegaConMesa",
+        "Jugar",
+        "Jugar",
+        "Jugar",
+        "juegaConMesa",
+        "Jugar",
+        "Jugar",
+        "Jugar",
+        "maxFichas",
+        "fichas",
+        "maxFichas",
+        "fichas",
+        "maxFichas",
+        "fichas",
+        "CantFichasTotalJuego",
+        "JugadorInicial",
+        "CantFichasPorJugador",
+        "CalcularPuntosGanoJugador",
+        "ContarPuntos",
+        "JugadorInicial",
+        "FinalizoPartida",
+        "ProximoJugador",
+        "Ganador",
+        "CantFichasTotalJuego",
+        "Ganador",
+        "ProximoJugador",
+        "Repartir",
+        "FinalizoPartida",
+        "CantFichasPorJugador",
+        "CalcularPuntosGanoJugador",
+        "AccionDespuesDeLaJugada",
+        "ValidarJugada",
+        "ValidarJugada",
+        "Repartir",
+        "AccionDespuesDeLaJugada",
+        "CantFichasTotalJuego",
+        "Ganador",
+        "ProximoJugador",
+        "Repartir",
+        "FinalizoPartida",
+        "CantFichasPorJugador",
+        "CalcularPuntosGanoJugador",
+        "AccionDespuesDeLaJugada",
+        "ValidarJugada",
+        "ToString",
+        "Value",
+        "PiezasValidas",
+        "JugadaValida",
+        "CreacionFichas",
+        "PuntuacionJugador",
+        "PuntuacionMinima",
+        "PasadoDoble",
+        "Finalizo",
+        "Repartir",
+        "Salida",
+        "Finalizo",
+        "OrdenNormal",
+        "OrdenInverso",
+        "ProximoTurno",
+        "Main",
+        "Jugada",
+        "ToString",
+        "JugadaRandom",
+        "FichaGorda",
+        "ToString",
+        "JugadaGorda",
+        "Jugada",
+        "FichaGorda",
+        "Jugada",
+        "ToString",
+        "PiezasValidas",
+        "JugadaValida",
+        "Actualizar",
+        "ToString",
+        "PuntuacionJugador",
+        "PuntuacionMinima",
+        "ProximoTurno",
+        "Repartir",
+        "Ganador",
+        "Actualizar",
+        "ToString",
+        "MayorPases",
+        "Ganador",
+        "ProximoTurno",
+        "Repartir",
+        "Actualizar",
+        "PuntuacionJugador",
+        "PuntuacionMinima",
+        "PiezasValidas",
+        "JugadaValida",
+        "Ganador",
+        "Finalizo",
+        "Jugada",
+        "Value",
+        "Main",
+        "EscogiendoHastaQueDobleJugar",
+        "IniciaRegla",
+        "EscogiendoCantidadFichasPorJugador",
+        "CreandoModo",
+        "ChequeandoJuegoEnEquipo",
+        "RellenarReglaPersonalizada",
+        "AsignandoCantidadJugadores",
+        "ComoDeseaHacerLaEquivalenciaEntrePuntosYFichas",
+        "IniciaJugadores",
+        "CrearArbitro",
+        "ValidarJugada",
+        "ComoEscogerProximoJugador",
+        "ComoEscogerGanador",
+        "ComoCalcularlospuntosAsignadosAlGanador",
+        "QueHacerDespuesdeCadaJugada",
+        "Main",
+        "GraphicNullableBoard",
+        "NewTournament",
+        "Action",
+        "SendMessage",
+        "GameOver",
+        "UpdateGame",
+        "Skip",
+        "GetEntry",
+        "GraphicBoardAndPositions",
+        "GetIntFromConsoleKeyInfo",
+        "ClearGame",
+        "UpdateTournament",
+        "GraphicBoard",
+        "NewGame",
+        "GraphicTable",
+        "ClearTournament",
+        "TournamentOver",
+        "ConsoleClear",
+        "Main",
+        "Dispose",
+        "InitializeComponent",
+        "Main"
+    ],
+    "method_lengths": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        11,
+        11,
+        6,
+        6,
+        19,
+        4,
+        4,
+        7,
+        14,
+        1,
+        27,
+        28,
+        16,
+        1,
+        4,
+        4,
+        1,
+        27,
+        28,
+        1,
+        11,
+        9,
+        9,
+        9,
+        9,
+        1,
+        4,
+        12,
+        16,
+        1,
+        11,
+        11,
+        4,
+        1,
+        6,
+        6,
+        6,
+        12,
+        1,
+        7,
+        7,
+        7,
+        7,
+        1,
+        14,
+        14,
+        14,
+        21,
+        1,
+        7,
+        7,
+        7,
+        9,
+        7,
+        7,
+        9,
+        1,
+        4,
+        16,
+        1,
+        4,
+        4,
+        1,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        12,
+        1,
+        4,
+        11,
+        17,
+        14,
+        24,
+        24,
+        1,
+        11,
+        11,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4,
+        4,
+        1,
+        12,
+        26,
+        1,
+        4,
+        4,
+        1,
+        4,
+        4,
+        1,
+        4,
+        1,
+        40,
+        14,
+        1,
+        13,
+        8,
+        1,
+        11,
+        13,
+        4,
+        1,
+        29,
+        30,
+        1,
+        18,
+        18,
+        18,
+        18,
+        18,
+        1,
+        4,
+        42,
+        1,
+        11,
+        13,
+        1,
+        6,
+        9,
+        25,
+        1,
+        7,
+        4,
+        4,
+        4,
+        3,
+        4,
+        6,
+        9,
+        4,
+        4,
+        4,
+        15,
+        20,
+        16,
+        45,
+        4,
+        24,
+        7,
+        7,
+        49,
+        18,
+        22,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        9,
+        11,
+        4,
+        4,
+        4,
+        5,
+        4,
+        13,
+        4,
+        14,
+        19,
+        18,
+        4,
+        4,
+        25,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        13,
+        4,
+        4,
+        13,
+        4,
+        4,
+        9,
+        16,
+        6,
+        4,
+        4,
+        4,
+        7,
+        6,
+        7,
+        4,
+        16,
+        15,
+        4,
+        11,
+        4,
+        4,
+        4,
+        7,
+        7,
+        4,
+        4,
+        4,
+        9,
+        16,
+        4,
+        4,
+        4,
+        4,
+        4,
+        7,
+        4,
+        4,
+        4,
+        4,
+        7,
+        7,
+        7,
+        7,
+        4,
+        25,
+        5,
+        4,
+        4,
+        9,
+        5,
+        1,
+        40,
+        25,
+        13,
+        80,
+        80,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        7,
+        6,
+        4,
+        4,
+        4,
+        20,
+        4,
+        4,
+        9,
+        4,
+        4,
+        4,
+        11,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        12,
+        4,
+        24,
+        18,
+        22,
+        13,
+        4,
+        4,
+        60,
+        4,
+        4,
+        4,
+        7,
+        7,
+        14,
+        9,
+        4,
+        4,
+        4,
+        9,
+        9,
+        9,
+        9,
+        4,
+        8,
+        8,
+        13,
+        8,
+        8,
+        11,
+        6,
+        4,
+        6,
+        8,
+        8,
+        9,
+        11,
+        9,
+        6,
+        11,
+        1,
+        4,
+        1,
+        52,
+        5,
+        19,
+        5,
+        7,
+        8,
+        4,
+        13,
+        5,
+        5,
+        1,
+        1,
+        1,
+        4,
+        14,
+        6,
+        4,
+        14,
+        6,
+        15,
+        6,
+        4,
+        62,
+        6,
+        15,
+        1,
+        1,
+        1,
+        60,
+        32,
+        74,
+        15,
+        27,
+        8,
+        6,
+        15,
+        6,
+        18,
+        1,
+        1,
+        1,
+        27,
+        1,
+        26,
+        1,
+        1,
+        1,
+        1,
+        11,
+        11,
+        14,
+        9,
+        9,
+        1,
+        12,
+        16,
+        12,
+        5,
+        1,
+        6,
+        5,
+        1,
+        13,
+        7,
+        1,
+        51,
+        22,
+        53,
+        7,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4,
+        4,
+        1,
+        18,
+        1,
+        8,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        9,
+        3,
+        9,
+        10,
+        14,
+        16,
+        9,
+        22,
+        11,
+        28,
+        5,
+        18,
+        8,
+        13,
+        13,
+        4,
+        9,
+        3,
+        8,
+        9,
+        16,
+        9,
+        3,
+        9,
+        16,
+        3,
+        9,
+        8,
+        42,
+        3,
+        16,
+        9,
+        13,
+        25,
+        14,
+        42,
+        3,
+        4,
+        16,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        7,
+        14,
+        12,
+        42,
+        8,
+        18,
+        19,
+        33,
+        30,
+        31,
+        29,
+        30,
+        31,
+        31,
+        10,
+        27,
+        4,
+        4,
+        4,
+        4,
+        4,
+        67,
+        21,
+        11,
+        6,
+        4,
+        7,
+        10,
+        89,
+        97,
+        10,
+        53,
+        51,
+        13,
+        139,
+        6,
+        8,
+        343,
+        7
+    ],
+    "class_names": [
+        "GameLogic",
+        "States",
+        "Power",
+        "PowerHandler",
+        "PlayAgainCurrentPlayerPower",
+        "EndGamePower",
+        "PassNextPlayerTurnPower",
+        "EndRoundPower",
+        "OnlyOneWinnerRuleMin",
+        "WinnerRuleMin",
+        "WinnerRuleMax",
+        "ClassicRoundGame",
+        "PlayWhilePossibleRoundGame",
+        "RoundWinnerRuleMin",
+        "RoundWinnerRuleMax",
+        "TwoRandomPlayers",
+        "TwoFrequencyPlayers",
+        "TwoGreedyPlayers",
+        "TwoTableFrequencyPlayers",
+        "ClassicFourGreedyPlayers",
+        "TeamTokenVisibility",
+        "EverybodyTokenVisibility",
+        "ClassicIndividualTokenVisibility",
+        "ReverseWithDoubles",
+        "NoReverse",
+        "ReverseWithPass",
+        "OneRoundGameFinalizable",
+        "ClassicTenRoundGameFinalizable",
+        "HundredPointsGameFinalizable",
+        "ThreeRoundGameFinalizable",
+        "ClassicTenTokensDistribution",
+        "RandomMaxTenTokensDistribution",
+        "VariableTokensDistribution",
+        "ClassicSevenTokensDistribution",
+        "GetTournamentOneClassicMatch",
+        "GetEliminationTournamentFourTeams",
+        "GetTournamentOneMatchThreeGreedyAndHumanPlayers",
+        "GetTournamentOneMatchRandomAndHumanPlayers",
+        "ClassicRandomAndHumanTeamsWithOnlyOnePlayer",
+        "ClassicFourGreedyTeamsWithOnlyOnePlayer",
+        "FrequencyAndTableFrequencyTeams",
+        "ClassicThreeGreedyAndHumanTeamsWithOnlyOnePlayer",
+        "TwoRandomTeamsWithOnlyOnePlayer",
+        "GreedyAndRandomTeams",
+        "ClassicTwoGreedyTeams",
+        "ClassicFinalizationRule",
+        "DoubleFinalizationRule",
+        "MultiplicationTokenValue",
+        "ClassicSumTokenValue",
+        "ClassicGreedyTeamOnePlayer",
+        "ClassicHumanTeamOnePlayer",
+        "ClassicTableFrequencyTeamTwoPlayers",
+        "ClassicFrequencyTeamTwoPlayers",
+        "ClassicRandomTeamOnePlayer",
+        "ClassicGreedyTeamTwoPlayers",
+        "ClassicRandomTeamTwoPlayers",
+        "ClassicOrderPlayersequence",
+        "TwoTurnsOrderPlayersequence",
+        "ClassicTokenGenerator",
+        "CycleTokenGenerator",
+        "TokenGeneration",
+        "DoubleFacesPassTurnPowerClassicTokenGenerator",
+        "DoubleZeroEndRoundPowerClassicTokenGenerator",
+        "IntFacesGenerator",
+        "ColorFacesGenerator",
+        "FaceColors",
+        "FaceInts",
+        "ClassicFrequencyPlayer",
+        "ClassicGreddyPlayer",
+        "ClassicHumanPlayer",
+        "ClassicRandomPlayer",
+        "ClassicTableFrequencyPlayer",
+        "JoinByIdAndDifferentTeam",
+        "ClassicJoinById",
+        "WithoutDoblesFilterBoxRules",
+        "NonFilterBoxRules",
+        "ClassicNoDraw",
+        "ClassicPassTurnDraw",
+        "ClassicGame",
+        "adjacentTeamOrder",
+        "AlternateTeamOrder",
+        "ScoreTeamSumRule",
+        "ScoreTeamMaxRule",
+        "RoundPassesScorePlayer",
+        "RoundScorePlayerMaxRule",
+        "RoundScorePlayerSumRule",
+        "ClassicTournamentMinScore",
+        "ClassicTournamentMaxGamesWon",
+        "ClassicTenBoxGenerator",
+        "ClassicSevenWithoutDoublesBoxGenerator",
+        "VariableIntFacesBoxGenerator",
+        "ClassicTenBoxGeneratorWithPowerDoubleFacesPassTurn",
+        "ClassicSevenBoxGenerator",
+        "ClassicIdJoinable",
+        "DivisibilityIdJoinable",
+        "RoundScoreTeamSumRule",
+        "RoundScoreTeamMaxRule",
+        "Event",
+        "ComplexEvent",
+        "ProcessCurrentTurn",
+        "NewGame",
+        "DoNothing",
+        "Events",
+        "ReversePlayerOrder",
+        "PlayWhilePossibleRoundGameEvent",
+        "MainEvent",
+        "DrawTokenCurrentPlayer",
+        "ClassicRoundGameEvent",
+        "NewRoundGame",
+        "NextPlayer",
+        "GameOver",
+        "DistributeTokens",
+        "RoundGameOver",
+        "ClassicGameEvent",
+        "TokenUnavailabilityException",
+        "TournamentIsNotDirectedAcyclicGraph",
+        "TokenDealerUnavailabilityException",
+        "Game",
+        "Box",
+        "Table",
+        "ProtectedToken",
+        "Board",
+        "Team",
+        "Player",
+        "TeamInfo",
+        "OrderPlayer",
+        "FrequencyStrategy",
+        "TableFrequencyStrategy",
+        "GreedyStrategy",
+        "HumanSelection",
+        "RandomStrategy",
+        "HistoryRound",
+        "Move",
+        "History",
+        "Tournament",
+        "Match",
+        "TournamentHistory",
+        "Names",
+        "Namer",
+        "DependencyContainerRegister",
+        "DependencyContainer",
+        "DependencyContainerOrganizer",
+        "DependencyGetter",
+        "ParteFicha",
+        "Ficha",
+        "Arbitro",
+        "Mesa",
+        "Amistoso",
+        "Match",
+        "HastaX",
+        "Jugador",
+        "Matematico",
+        "Botagorda",
+        "Humano",
+        "Leo",
+        "Pasador",
+        "Aleatorio",
+        "ESHumano",
+        "ESLeo",
+        "ESAleatorio",
+        "ESBotagorda",
+        "ESMatematico",
+        "Emojis",
+        "Doble9",
+        "CalcularPuntosGanoJugador_Clasico",
+        "CalcularPuntosGanoJugador_Comunista",
+        "CalcularPuntosGanoJugador_SoloYo",
+        "CalcularPuntosGanoJugador_Capitalista",
+        "CalcularPuntosGanoJugador_Quincena",
+        "ContarPuntos_DobleDoble",
+        "ContarPuntos_Clasico",
+        "ContarPuntos_ManoDura",
+        "ClaseComunReglas",
+        "FinalizarJugada_Llegue100",
+        "FinalizarJugada_Clasico",
+        "ProximoJugador_Clasico",
+        "ProximoJugador_Aleatorio",
+        "Ganador_Inverso",
+        "Ganador_Clasico",
+        "Ganador_SiEmpataAcumulaSusPuntos",
+        "Ganador_Quincena",
+        "ClasicoIndividual",
+        "ValidarJugada_Mayor",
+        "ValidarJugada_Clasica",
+        "ValidarJugada_Menor",
+        "Repartir_Clasico",
+        "AccionDespuesDeLaJugada_Quincena",
+        "Personalizada",
+        "Ficha",
+        "ReglaAlternativa",
+        "CantidadFichas",
+        "PuntuacionAlternativa",
+        "CondicionFinalizacionAlternativa",
+        "RepartirFichasAlternativa",
+        "OrdenSalida",
+        "CondicionFinalizacion",
+        "OrdenTurnosAlternativo",
+        "Program",
+        "JugadorRandom",
+        "JugadorAlternado",
+        "JugadorBotaGorda",
+        "Reglas",
+        "Tablero",
+        "Puntuacion",
+        "OrdenTurnos",
+        "RepartirFichas",
+        "QuienGano",
+        "TableroAlternativo",
+        "QuienGanoAlternativo",
+        "Program",
+        "ConsoleInterface",
+        "Program",
+        "Form1",
+        "Program"
+    ],
+    "interface_names": [
+        "IGameWinnerRule",
+        "IRoundGame",
+        "IRoundWinnerRule",
+        "IPlayersGenerator",
+        "ITokenVisibility",
+        "IGraphics",
+        "IReversePlayerOrder",
+        "IGameFinalizable",
+        "ITokenDealer",
+        "ITournamentGenerator",
+        "ITeamsGenerator",
+        "IRoundFinalizationRule",
+        "ITokenValue",
+        "ITeamGenerator",
+        "IGraphicInterface",
+        "IOrderPlayerSequence",
+        "ITokenGenerator",
+        "IFaceGenerator",
+        "IPlayerGenerator",
+        "IJoinable",
+        "IFilterTokenRule",
+        "IDrawable",
+        "IGame",
+        "ITeamOrder",
+        "IScoreTeam",
+        "IRoundScorePlayer",
+        "ITournamentWinnerRule",
+        "IBoxGenerator",
+        "IBaseInterface",
+        "ISelector",
+        "IIdJoinable",
+        "IRoundScoreTeam",
+        "IFace",
+        "IStrategy",
+        "IModo",
+        "IJuegaConMesa",
+        "IEstrategias",
+        "IEstrategiasSalir",
+        "IDomino",
+        "IReglas",
+        "ICalculaPuntos",
+        "IContarPuntos",
+        "IFinalizarJugada",
+        "IProximoJugador",
+        "IGanador",
+        "IValidarJugada",
+        "IRepartir",
+        "IAccionDespuesDeLaJugada",
+        "IOrdenTurnos",
+        "IRepartirFichas",
+        "IBoard",
+        "IScore",
+        "IRegla",
+        "IQuienGano",
+        "ICondicionFinalizacion",
+        "IPlayer",
+        "IFicha"
+    ],
+    "delegate_names": [],
+    "enums_names": [
+        "Position",
+        "ParametrosDefinenGanador"
+    ],
+    "distinct_tokens_count": {},
+    "control_structures_if": 343,
+    "control_structures_switch": 0,
+    "control_structures_for": 66,
+    "control_structures_while": 12,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 865,
+    "access_modifiers_private": 123,
+    "access_modifiers_protected": 11,
+    "access_modifiers_internal": 1,
+    "access_modifiers_static": 44,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 3,
+    "modifier_volatile": 0,
+    "modifier_virtual": 1,
+    "modifier_override": 21,
+    "modifier_new": 193,
+    "modifier_partial": 1,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "method_return_types": {
+        "Identity": "bool",
+        "IsAllPlayersPassed": "bool",
+        "IsLastPlayerPassed": "bool",
+        "IsNotLastPlayerPassed": "bool",
+        "CurrentPlayerPlayedAllTokens": "bool",
+        "IsRoundGameOver": "bool",
+        "IsGameOver": "bool",
+        "IsConditionMetToReverse": "bool",
+        "IsDrawable": "bool",
+        "GetActivity": "bool",
+        "Clear": "void",
+        "AddPower": "void",
+        "AddPowers": "void",
+        "GetWinners": "List",
+        "GetRoundGame": "Event",
+        "GetPlayers": "List",
+        "GetTokenVisibilityPlayers": "List",
+        "IsConditionMet": "bool",
+        "IsGameFinalizable": "bool",
+        "Distribute": "void",
+        "GetTournament": "Tournament",
+        "GetTeams": "List",
+        "GetValue": "int",
+        "GetTeam": "Team",
+        "GraphicTable": "string",
+        "GraphicBoard": "string",
+        "GraphicNullableBoard": "string",
+        "GraphicBoardAndPositions": "string",
+        "GetEntry": "string",
+        "SendMessage": "void",
+        "Action": "void",
+        "Main": "void",
+        "NewGame": "void",
+        "NewTournament": "void",
+        "GameOver": "void",
+        "TournamentOver": "void",
+        "UpdateGame": "void",
+        "UpdateTournament": "void",
+        "GetOrderPlayersequence": "List",
+        "Generate": "List",
+        "KTimesTokens": "List",
+        "GetFaces": "List",
+        "ColorsToFaces": "List",
+        "IntFaces": "List",
+        "GetPlayer": "Player",
+        "IsJoinable": "bool",
+        "Apply": "bool",
+        "GetGame": "Event",
+        "GetTeamOrder": "List",
+        "GetScore": "int",
+        "GetTournamentWinners": "List",
+        "IsIdJoinable": "bool",
+        "Start": "void",
+        "AddEdge": "void",
+        "StartAt": "bool",
+        "NewRoundGame": "void",
+        "GetBoardNullableTokensVisibleForPlayer": "List",
+        "GetBoardProtectedTokensVisibleForPlayer": "List",
+        "GetPlayerTokensPlayableAndPosition": "List",
+        "GetCurrentPlayerTokensPlayableAndPosition": "List",
+        "SelectCurrentPlayerMove": "Tuple",
+        "WatchAllPlayers": "void",
+        "WatchThesePlayers": "void",
+        "PlayToken": "void",
+        "ProcessCurrentTurn": "void",
+        "DistributeTokens": "void",
+        "GetNumberOfContiguousPassedTurns": "int",
+        "GetNumberOfPlayers": "int",
+        "NextPlayer": "void",
+        "PlayerPlayedAllTokens": "bool",
+        "GetNumberOfMoves": "int",
+        "GetTableString": "string",
+        "GetBoardString": "string",
+        "GetCurrentPlayer": "Player",
+        "GetAllPlayers": "List",
+        "GetPlayerBoard": "Board",
+        "GetCurrentPlayerBoardString": "string",
+        "GetPlayerTotalPassedTurns": "int",
+        "IsDistributed": "bool",
+        "GetLastMove": "Move",
+        "ReversePlayerOrder": "void",
+        "GetAllTeams": "List",
+        "GetPlayerTeam": "Team",
+        "GetRoundPlayerScore": "int",
+        "GetRoundTeamScore": "int",
+        "GetRoundWinners": "List",
+        "SaveRoundGameResults": "void",
+        "GetTeamAllRoundScores": "List",
+        "GetTeamAllRoundScore": "int",
+        "GetWinnersAllRound": "List",
+        "GetNumberOfRounds": "int",
+        "EndRoundGame": "void",
+        "IsCurrentRoundEnded": "bool",
+        "GetBoardTokens": "List",
+        "GetTabletokens": "List",
+        "GetTokenPositionMiddle": "ProtectedToken",
+        "GetPositionMiddle": "int",
+        "DrawTokenPlayer": "void",
+        "DrawTokenCurrentPlayer": "void",
+        "LastMoveWasDraw": "bool",
+        "GetPlayersAndBoardTokensVisibleByPlayer": "Dictionary",
+        "SetGameToEnded": "void",
+        "IsGameEnded": "bool",
+        "ToString": "string",
+        "IsDouble": "bool",
+        "Rotate": "void",
+        "CompareTo": "int",
+        "Init": "void",
+        "TakeAt": "ProtectedToken",
+        "TakeRandom": "ProtectedToken",
+        "TakeLast": "ProtectedToken",
+        "Take": "List",
+        "PutAt": "void",
+        "PutRandom": "void",
+        "PutLast": "void",
+        "Put": "void",
+        "Swap": "void",
+        "Shuffle": "void",
+        "GetProtectedTokens": "List",
+        "GetTokensWithoutProtection": "List",
+        "NewOwner": "void",
+        "GetCurrentOwner": "Player",
+        "Watch": "void",
+        "Forget": "void",
+        "IsVisible": "bool",
+        "GetToken": "Token",
+        "GetTokenWithoutVisibility": "Token",
+        "GetTokens": "List",
+        "OrderBy": "void",
+        "Sort": "void",
+        "GetEnumerator": "IEnumerator",
+        "Add": "void",
+        "Contains": "bool",
+        "CopyTo": "void",
+        "Remove": "void",
+        "CheckTeamsAndPlayers": "void",
+        "Reverse": "void",
+        "CurrentPlayer": "Player",
+        "RestartWithPlayer": "void",
+        "RestartOrder": "void",
+        "ChooseTokenIndex": "int",
+        "Distributed": "void",
+        "EndRound": "void",
+        "IsRoundEnded": "bool",
+        "SetWinners": "void",
+        "SetTeamScore": "void",
+        "GetTeamScore": "int",
+        "PassTurn": "void",
+        "GetContiguousPassedTurns": "int",
+        "ResetContiguousPassedTurns": "int",
+        "PlayMove": "void",
+        "AddMove": "void",
+        "GetMoves": "List",
+        "NewHistoryRound": "void",
+        "GetCurrentHistoryRound": "HistoryRound",
+        "GetHistoryRounds": "List",
+        "UpdateTournamentHistory": "void",
+        "GetTournamentHistory": "TournamentHistory",
+        "DFS": "bool",
+        "IsDirectedAcyclicGraph": "bool",
+        "CheckMatchesAndNextMatches": "bool",
+        "StoreTeamsFromMatches": "void",
+        "GetNumberOfMatches": "int",
+        "StartTournament": "void",
+        "AddTeam": "void",
+        "RemoveTeam": "void",
+        "AddTeams": "void",
+        "RemoveTeams": "void",
+        "PlayMatch": "void",
+        "AddMatch": "void",
+        "TeamWinMatch": "void",
+        "GetTeamMatchesWon": "int",
+        "AddTeamTotalScore": "void",
+        "GetTeamTotalScore": "int",
+        "ReadLines": "List",
+        "GetPlayerId": "string",
+        "GetPlayerName": "string",
+        "GetHumanName": "string",
+        "GetTeamId": "string",
+        "GetTeamName": "string",
+        "SetDefault": "void",
+        "GetDefault": "Type",
+        "GetSubInterfaces": "List",
+        "GetImplementations": "List",
+        "CreateInstance": "object",
+        "CreateInstanceFromDefault": "object",
+        "InitializeAll": "void",
+        "Initialize": "void",
+        "GetInstance": "dynamic",
+        "Equals": "bool",
+        "ImprimirMesa": "void",
+        "GetJugadores": "List",
+        "Jugar": "Ficha",
+        "TerminoPartida": "bool",
+        "GetGanador": "(",
+        "AddDer": "void",
+        "AddIzq": "void",
+        "imprimirMesa": "void",
+        "Extremos": "(",
+        "TerminoUnaPratida": "void",
+        "TerminoModo": "bool",
+        "Ordena": "void",
+        "Calcula": "int",
+        "juegaConMesa": "void",
+        "maxFichas": "int",
+        "fichas": "List",
+        "CantFichasTotalJuego": "int",
+        "CantFichasPorJugador": "int",
+        "JugadorInicial": "int",
+        "CalcularPuntosGanoJugador": "int",
+        "ContarPuntos": "List",
+        "FinalizoPartida": "bool",
+        "ProximoJugador": "int",
+        "Ganador": "(",
+        "AccionDespuesDeLaJugada": "void",
+        "Repartir": "List",
+        "ValidarJugada": "bool",
+        "Value": "int",
+        "PiezasValidas": "List",
+        "JugadaValida": "bool",
+        "CreacionFichas": "void",
+        "PuntuacionMinima": "void",
+        "PuntuacionJugador": "int",
+        "Finalizo": "bool",
+        "PasadoDoble": "bool",
+        "Salida": "IPlayer",
+        "ProximoTurno": "IPlayer",
+        "OrdenNormal": "IPlayer",
+        "OrdenInverso": "IPlayer",
+        "Jugada": "IFicha",
+        "JugadaGorda": "IFicha",
+        "FichaGorda": "IFicha",
+        "JugadaRandom": "IFicha",
+        "Actualizar": "void",
+        "MayorPases": "IPlayer",
+        "AsignandoCantidadJugadores": "int",
+        "ChequeandoJuegoEnEquipo": "bool",
+        "CreandoModo": "IModo",
+        "CrearArbitro": "Arbitro",
+        "EscogiendoHastaQueDobleJugar": "int",
+        "EscogiendoCantidadFichasPorJugador": "int",
+        "IniciaRegla": "IReglas",
+        "ComoEscogerGanador": "void",
+        "ComoEscogerProximoJugador": "void",
+        "ComoDeseaHacerLaEquivalenciaEntrePuntosYFichas": "void",
+        "ComoCalcularlospuntosAsignadosAlGanador": "void",
+        "QueHacerDespuesdeCadaJugada": "void",
+        "RellenarReglaPersonalizada": "void",
+        "IniciaJugadores": "List",
+        "GetIntFromConsoleKeyInfo": "int",
+        "ClearGame": "void",
+        "ClearTournament": "void",
+        "ConsoleClear": "void",
+        "Skip": "void",
+        "Dispose": "void",
+        "InitializeComponent": "void"
+    },
+    "method_parameters": {},
+    "linq_querie_select": 0,
+    "linq_queries_where": 2,
+    "linq_queries_orderBy": 5,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 185,
+    "linq_queries_count": 0,
+    "library_call_console": 138,
+    "library_call_math": 5,
+    "number_of_lambdas": 17,
+    "number_of_getters": 64,
+    "number_of_setters": 34,
+    "number_of_tuples": 3,
+    "number_of_namespaces": 63,
+    "project_name": "Domino-main"
+}
