@@ -4,7 +4,6 @@ class FeatureExtractorListener(CSharpParserListener):
 
     def __init__(self):
         self.total_nodes = 0
-        self.node_count = {}
         self.max_depth = 0
         self.current_depth = 0
         
@@ -26,14 +25,6 @@ class FeatureExtractorListener(CSharpParserListener):
         self.enums = 0
         self.delegates = 0
 
-        self.variable_names = set()
-        self.method_names = set()
-        self.method_lengths = []
-        self.class_names = set()
-        self.interface_names = set()
-        self.enum_names = set()
-        self.delegate_names = set()
-        self.distinct_tokens = {}
         
         self.control_structures_if = 0
         self.control_structures_switch = 0
@@ -69,15 +60,25 @@ class FeatureExtractorListener(CSharpParserListener):
         self.linq_queries_join = 0
         self.linq_queries_sum = 0
         self.linq_queries_count = 0
-        
-        self.method_return_types = set()
-        self.method_parameters = {}
-        
+                
         self.number_of_lambdas = 0
         self.number_of_getters = 0
         self.number_of_setters = 0
         self.number_of_tuples = 0
         self.number_of_namespaces = 0
+
+        # self.method_parameters = {}
+        self.method_parameters = []
+        self.variable_names = set()
+        self.method_return_types = set()
+        self.method_names = set()
+        self.method_lengths = []
+        self.class_names = set()
+        self.interface_names = set()
+        self.enum_names = set()
+        self.delegate_names = set()
+        # self.distinct_tokens = {}
+        self.node_count = {}
 
     def enterEveryRule(self, ctx):
         node_type = type(ctx).__name__
@@ -85,13 +86,13 @@ class FeatureExtractorListener(CSharpParserListener):
         self.current_depth += 1
         self.total_nodes += 1
         
-        try:
-            if ctx.start.text == "void":
-                pass
-            if ctx.start.text == "lambda":
-                pass
-        except:
-            pass
+        # try:
+        #     if ctx.start.text == "void":
+        #         pass
+        #     if ctx.start.text == "lambda":
+        #         pass
+        # except:
+        #     pass
          
         if self.current_depth > self.max_depth:
             self.max_depth = self.current_depth
@@ -150,7 +151,9 @@ class FeatureExtractorListener(CSharpParserListener):
                         
                         param_info.append((param_type, param_name))
                 
-                self.method_parameters[ctx.start.text] = param_info
+                # self.method_parameters[ctx.start.text] = param_info
+                self.method_parameters.append([ctx.start.text, param_info])
+                pass
             
         elif node_type == "Interface_definitionContext":
             self.interfaces += 1
@@ -203,9 +206,10 @@ class FeatureExtractorListener(CSharpParserListener):
             
         elif node_type == "Delegate_definitionContext":
             self.delegates += 1
-            name = ctx.start.text
+            name = ctx.children[2].start.text
             return_type = ctx.children[1].start.text
             self.delegate_names.add((name, return_type))
+            pass
         
         elif node_type == "All_member_modifierContext":
             modifier = ctx.start.text
@@ -297,7 +301,6 @@ class FeatureExtractorListener(CSharpParserListener):
     def get_features(self):
         return {
             "total_nodes": self.total_nodes,
-            "node_count": self.node_count,
             "max_depth": self.max_depth,
             "number_of_variables": self.variables,
             "number_of_constants": self.constants,
@@ -315,14 +318,7 @@ class FeatureExtractorListener(CSharpParserListener):
             "number_of_enums": self.enums,
             "number_of_delegates": self.delegates,
             "function_calls": self.function_calls,
-            "variable_names": list(self.variable_names),
-            "method_names": list(self.method_names),
-            "method_lengths": self.method_lengths,
-            "class_names": list(self.class_names),
-            "interface_names": list(self.interface_names),
-            "delegate_names": list(self.delegate_names),
             "enums_names":list(self.enum_names),
-            "distinct_tokens_count": self.distinct_tokens,
             "control_structures_if": self.control_structures_if,
             "control_structures_switch": self.control_structures_switch,
             "control_structures_for": self.control_structures_for,
@@ -345,8 +341,6 @@ class FeatureExtractorListener(CSharpParserListener):
             "modifier_extern": self.modifier_extern,
             "modifier_unsafe": self.modifier_unsafe,
             "modifier_async": self.modifier_async,
-            "method_return_types": self.method_return_types,
-            "method_parameters": self.method_parameters,
             "out_variables": self.out_variables,
             "linq_querie_select": self.linq_queries_select,
             "linq_queries_where": self.linq_queries_where,
@@ -361,7 +355,17 @@ class FeatureExtractorListener(CSharpParserListener):
             "number_of_getters": self.number_of_getters,
             "number_of_setters": self.number_of_setters,
             "number_of_tuples": self.number_of_tuples,
-            "number_of_namespaces": self.number_of_namespaces
+            "number_of_namespaces": self.number_of_namespaces,
+            "method_lengths": self.method_lengths,
+            "method_parameters": self.method_parameters,
+            "variable_names": list(self.variable_names),
+            "method_names": list(self.method_names),
+            "method_return_types": self.method_return_types,
+            "class_names": list(self.class_names),
+            "interface_names": list(self.interface_names),
+            "delegate_names": list(self.delegate_names),
+            # "distinct_tokens_count": self.distinct_tokens,
+            "node_count": self.node_count
         }
 
 

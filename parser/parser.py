@@ -34,8 +34,13 @@ def combine_features(all_features):
                             combined_features[key][sub_key] = sub_value
                         elif isinstance(sub_value, dict):
                             combined_features[key][sub_key] = {}
+                        elif isinstance(sub_value, tuple):
+                            combined_features[key][sub_key] = ()
 
                     if isinstance(sub_value, int):
+                        combined_features[key][sub_key] += sub_value
+                        
+                    if isinstance(sub_value, tuple):
                         combined_features[key][sub_key] += sub_value
 
                     elif isinstance(sub_value, dict):
@@ -54,6 +59,12 @@ def combine_features(all_features):
                     combined_features[key] = []
                 
                 combined_features[key] += value
+
+            elif isinstance(value, set):
+                if key not in combined_features:
+                    combined_features[key] = []
+                
+                combined_features[key] += list(value)
                     
             else:
                 if key not in combined_features:

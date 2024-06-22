@@ -6,12 +6,9 @@ from antlr4 import InputStream, CommonTokenStream
 from Python.CSharpLexer import CSharpLexer
 from Python.CSharpParser import CSharpParser
 from parser.parser import *
-import numpy as np
-from gensim.models import Word2Vec
 
 
-
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/wallE/'
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/domino/'
 
 DATA_FOLDER = f'{os.getcwd()}/data/'
 
