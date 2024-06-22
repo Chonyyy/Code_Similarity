@@ -38,3 +38,4 @@ pairs = generate_pairs(all_projects)
 # Guardar los pares en un archivo JSON
 with open('training_pairs.json', 'w') as f:
     json.dump(pairs, f, indent=4)
+    

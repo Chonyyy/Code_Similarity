@@ -1,0 +1,2074 @@
+{
+    "total_nodes": 150667,
+    "node_count": {
+        "Compilation_unitContext": 74,
+        "Namespace_member_declarationsContext": 69,
+        "Namespace_member_declarationContext": 428,
+        "Namespace_declarationContext": 67,
+        "TerminalNodeImpl": 26048,
+        "Qualified_identifierContext": 67,
+        "IdentifierContext": 8535,
+        "Namespace_bodyContext": 67,
+        "Type_declarationContext": 361,
+        "All_member_modifiersContext": 940,
+        "All_member_modifierContext": 1185,
+        "Class_definitionContext": 117,
+        "Class_bodyContext": 126,
+        "Class_member_declarationsContext": 124,
+        "Class_member_declarationContext": 693,
+        "Common_member_declarationContext": 693,
+        "Typed_member_declarationContext": 419,
+        "Type_Context": 2081,
+        "Base_typeContext": 2123,
+        "Class_typeContext": 1774,
+        "Namespace_or_type_nameContext": 1925,
+        "Field_declarationContext": 96,
+        "Variable_declaratorsContext": 96,
+        "Variable_declaratorContext": 96,
+        "Variable_initializerContext": 41,
+        "ExpressionContext": 4453,
+        "Non_assignment_expressionContext": 3528,
+        "Conditional_expressionContext": 3486,
+        "Null_coalescing_expressionContext": 3487,
+        "Conditional_or_expressionContext": 3487,
+        "Conditional_and_expressionContext": 3502,
+        "Inclusive_or_expressionContext": 3526,
+        "Exclusive_or_expressionContext": 3542,
+        "And_expressionContext": 3542,
+        "Equality_expressionContext": 3542,
+        "Relational_expressionContext": 3635,
+        "Shift_expressionContext": 3696,
+        "Additive_expressionContext": 3696,
+        "Multiplicative_expressionContext": 3807,
+        "Switch_expressionContext": 3894,
+        "Range_expressionContext": 3894,
+        "Unary_expressionContext": 4639,
+        "Primary_expressionContext": 4371,
+        "LiteralExpressionContext": 827,
+        "LiteralContext": 827,
+        "Method_declarationContext": 298,
+        "Method_member_nameContext": 298,
+        "Formal_parameter_listContext": 329,
+        "Fixed_parametersContext": 326,
+        "Fixed_parameterContext": 551,
+        "Arg_declarationContext": 601,
+        "Simple_typeContext": 405,
+        "Method_bodyContext": 219,
+        "BlockContext": 434,
+        "Statement_listContext": 479,
+        "StatementContext": 2381,
+        "Embedded_statementContext": 1748,
+        "IfStatementContext": 179,
+        "SimpleNameExpressionContext": 3073,
+        "ParenthesisExpressionsContext": 132,
+        "If_bodyContext": 209,
+        "ExpressionStatementContext": 1255,
+        "Member_accessContext": 1394,
+        "Method_invocationContext": 680,
+        "BaseAccessExpressionContext": 2,
+        "Argument_listContext": 648,
+        "ArgumentContext": 1176,
+        "AssignmentContext": 476,
+        "Assignment_operatorContext": 476,
+        "ObjectCreationExpressionContext": 227,
+        "Object_creation_expressionContext": 222,
+        "String_literalContext": 284,
+        "Boolean_literalContext": 86,
+        "Using_directivesContext": 42,
+        "UsingNamespaceDirectiveContext": 82,
+        "Class_baseContext": 89,
+        "Constructor_declarationContext": 89,
+        "BodyContext": 87,
+        "ErrorNodeImpl": 8094,
+        "Right_arrowContext": 178,
+        "Throwable_expressionContext": 236,
+        "Throw_expressionContext": 18,
+        "Cast_expressionContext": 208,
+        "Numeric_typeContext": 339,
+        "Floating_point_typeContext": 236,
+        "AttributesContext": 25,
+        "Attribute_sectionContext": 27,
+        "Attribute_listContext": 42,
+        "AttributeContext": 42,
+        "ThisReferenceExpressionContext": 49,
+        "IsTypeContext": 39,
+        "TupleExpressionContext": 30,
+        "Property_declarationContext": 120,
+        "Member_nameContext": 120,
+        "Accessor_declarationsContext": 109,
+        "Accessor_bodyContext": 156,
+        "Set_accessor_declarationContext": 47,
+        "Tuple_typeContext": 9,
+        "Tuple_elementContext": 16,
+        "Type_argument_listContext": 163,
+        "DeclarationStatementContext": 491,
+        "Local_variable_declarationContext": 434,
+        "Local_variable_typeContext": 460,
+        "Local_variable_declaratorContext": 434,
+        "Local_variable_initializerContext": 423,
+        "Lambda_expressionContext": 42,
+        "Anonymous_function_signatureContext": 42,
+        "Anonymous_function_bodyContext": 42,
+        "ReturnStatementContext": 241,
+        "ForeachStatementContext": 26,
+        "TheEmptyStatementContext": 29,
+        "Rank_specifierContext": 16,
+        "Array_initializerContext": 2,
+        "ContinueStatementContext": 4,
+        "Interface_definitionContext": 9,
+        "Integral_typeContext": 103,
+        "Type_parameter_listContext": 20,
+        "Type_parameterContext": 21,
+        "Type_parameter_constraints_clausesContext": 7,
+        "Type_parameter_constraints_clauseContext": 7,
+        "Type_parameter_constraintsContext": 7,
+        "Primary_constraintContext": 7,
+        "Secondary_constraintsContext": 4,
+        "Accessor_modifierContext": 36,
+        "Switch_expression_armsContext": 1,
+        "Switch_expression_armContext": 12,
+        "TypeofExpressionContext": 17,
+        "Unbound_type_nameContext": 17,
+        "Bracket_expressionContext": 34,
+        "Indexer_argumentContext": 34,
+        "ForStatementContext": 6,
+        "For_initializerContext": 6,
+        "For_iteratorContext": 6,
+        "Operator_declarationContext": 25,
+        "Overloadable_operatorContext": 25,
+        "Variant_type_parameter_listContext": 3,
+        "Variant_type_parameterContext": 3,
+        "Constructor_initializerContext": 4,
+        "MemberAccessExpressionContext": 13,
+        "Predefined_typeContext": 11,
+        "ThrowStatementContext": 21,
+        "YieldStatementContext": 7,
+        "WhileStatementContext": 17,
+        "Interpolated_regular_stringContext": 1,
+        "Interpolated_regular_string_partContext": 1,
+        "Global_attribute_sectionContext": 16,
+        "Global_attribute_targetContext": 16,
+        "Qualified_alias_memberContext": 18,
+        "Attribute_argumentContext": 29,
+        "Object_or_collection_initializerContext": 7,
+        "Collection_initializerContext": 5,
+        "Element_initializerContext": 33,
+        "Expression_listContext": 23,
+        "SwitchStatementContext": 10,
+        "Switch_sectionContext": 52,
+        "Switch_labelContext": 54,
+        "BreakStatementContext": 40,
+        "Enum_definitionContext": 2,
+        "Enum_bodyContext": 2,
+        "Enum_member_declarationContext": 66,
+        "TryStatementContext": 5,
+        "Catch_clausesContext": 5,
+        "Specific_catch_clauseContext": 4,
+        "Object_initializerContext": 2,
+        "Member_initializer_listContext": 2,
+        "Member_initializerContext": 2,
+        "Initializer_valueContext": 2,
+        "DoStatementContext": 5,
+        "Parameter_arrayContext": 3,
+        "Array_typeContext": 3,
+        "Local_function_declarationContext": 44,
+        "Local_function_headerContext": 44,
+        "Return_typeContext": 47,
+        "Local_function_bodyContext": 44,
+        "Delegate_definitionContext": 3,
+        "DefaultValueExpressionContext": 1,
+        "General_catch_clauseContext": 1
+    },
+    "max_depth": 3860,
+    "number_of_variables": 434,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 298,
+    "number_of_classes": 117,
+    "number_of_interfaces": 9,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 42,
+    "number_of_try_blocks": 5,
+    "number_of_lists": 21,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 2,
+    "number_of_delegates": 3,
+    "function_calls": 227,
+    "variable_names": [
+        [
+            "double",
+            "a1"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "double",
+            "c"
+        ],
+        [
+            "double",
+            "b"
+        ],
+        [
+            "double",
+            "a"
+        ],
+        [
+            "List",
+            "yi"
+        ],
+        [
+            "Equation",
+            "equation"
+        ],
+        [
+            "double",
+            "xc"
+        ],
+        [
+            "List",
+            "xi"
+        ],
+        [
+            "double",
+            "c1"
+        ],
+        [
+            "double",
+            "yc"
+        ],
+        [
+            "double",
+            "b1"
+        ],
+        [
+            "var",
+            "aloneX"
+        ],
+        [
+            "double",
+            "c2"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
+            "discriminant"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "double",
+            "a2"
+        ],
+        [
+            "double",
+            "theta"
+        ],
+        [
+            "SimpleCuadraticEquation",
+            "cuadratic"
+        ],
+        [
+            "ParameterConstrains",
+            "constrainsY"
+        ],
+        [
+            "double",
+            "b2"
+        ],
+        [
+            "List",
+            "results"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "var",
+            "thetaConstrain"
+        ],
+        [
+            "ParameterConstrains",
+            "constrainsX"
+        ],
+        [
+            "ParameterConstrains",
+            "thetaConstrain"
+        ],
+        [
+            "var",
+            "aloneY"
+        ],
+        [
+            "double",
+            "determinant"
+        ],
+        [
+            "string",
+            "line"
+        ],
+        [
+            "bool",
+            "isFigure"
+        ],
+        [
+            "var",
+            "currentScope"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "GSPoint",
+            "point2"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "GSNumber",
+            "division"
+        ],
+        [
+            "var",
+            "value"
+        ],
+        [
+            "GSPoint",
+            "point1"
+        ],
+        [
+            "int",
+            "newCount"
+        ],
+        [
+            "GSNumber",
+            "end"
+        ],
+        [
+            "GSNumber",
+            "start"
+        ],
+        [
+            "IEnumerable",
+            "newSequence"
+        ],
+        [
+            "IEnumerable",
+            "rightValues"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "double",
+            "limitY"
+        ],
+        [
+            "double",
+            "endAngle"
+        ],
+        [
+            "var",
+            "startPoint"
+        ],
+        [
+            "double",
+            "startAngle"
+        ],
+        [
+            "double",
+            "xc"
+        ],
+        [
+            "double",
+            "yc"
+        ],
+        [
+            "var",
+            "point1"
+        ],
+        [
+            "var",
+            "endPoint"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "var",
+            "point2"
+        ],
+        [
+            "var",
+            "center"
+        ],
+        [
+            "var",
+            "p1"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
+            "sweepAngle"
+        ],
+        [
+            "var",
+            "radius"
+        ],
+        [
+            "double",
+            "theta"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "Vector",
+            "movementVector"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "double",
+            "limitX"
+        ],
+        [
+            "ParameterConstrains",
+            "constrainsY"
+        ],
+        [
+            "ParameterConstrains",
+            "angleConstrain"
+        ],
+        [
+            "double",
+            "alpha"
+        ],
+        [
+            "double",
+            "limit"
+        ],
+        [
+            "ParameterConstrains",
+            "constrainsX"
+        ],
+        [
+            "var",
+            "p2"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "object",
+            "literal"
+        ],
+        [
+            "string",
+            "value"
+        ],
+        [
+            "char",
+            "c"
+        ],
+        [
+            "TokenType",
+            "type"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "List",
+            "statements"
+        ],
+        [
+            "Resolver",
+            "resolver"
+        ],
+        [
+            "Scanner",
+            "scanner"
+        ],
+        [
+            "TypeChecker",
+            "typeChecker"
+        ],
+        [
+            "Evaluator",
+            "evaluator"
+        ],
+        [
+            "string",
+            "full"
+        ],
+        [
+            "byte",
+            "bytes"
+        ],
+        [
+            "Parser",
+            "parser"
+        ],
+        [
+            "T",
+            "obj"
+        ],
+        [
+            "string",
+            "json"
+        ],
+        [
+            "List",
+            "arguments"
+        ],
+        [
+            "GSharpExpression",
+            "expression"
+        ],
+        [
+            "GSharpExpression",
+            "elseBranch"
+        ],
+        [
+            "GSharpExpression",
+            "body"
+        ],
+        [
+            "List",
+            "parameters"
+        ],
+        [
+            "Container",
+            "container"
+        ],
+        [
+            "bool",
+            "ellipsisBetween"
+        ],
+        [
+            "List",
+            "variableNames"
+        ],
+        [
+            "Token",
+            "oper"
+        ],
+        [
+            "Token",
+            "previous"
+        ],
+        [
+            "GSharpExpression",
+            "expressionToDraw"
+        ],
+        [
+            "Container",
+            "scopeContainer"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "statements"
+        ],
+        [
+            "GSharpExpression",
+            "expressionToPrint"
+        ],
+        [
+            "GSharpExpression",
+            "right"
+        ],
+        [
+            "GSharpExpression",
+            "leftBound"
+        ],
+        [
+            "string",
+            "label"
+        ],
+        [
+            "GSharpExpression",
+            "rightBound"
+        ],
+        [
+            "GSharpExpression",
+            "expr"
+        ],
+        [
+            "List",
+            "expressions"
+        ],
+        [
+            "GSharpExpression",
+            "thenBranch"
+        ],
+        [
+            "List",
+            "sequenceValues"
+        ],
+        [
+            "GSharpExpression",
+            "value"
+        ],
+        [
+            "string",
+            "libraryName"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "string",
+            "extension"
+        ],
+        [
+            "string",
+            "colorName"
+        ],
+        [
+            "GSharpExpression",
+            "condition"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "compareNumbersInfo"
+        ],
+        [
+            "ISequenciable",
+            "right"
+        ],
+        [
+            "GSNumber",
+            "left"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "bool",
+            "result"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureEqualNaturalInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureSumInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalTimesMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalLowerEqualMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalUnequalMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureGreaterNaturalInfo"
+        ],
+        [
+            "ISequenciable",
+            "left"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureUnequalNaturalInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalGreaterEqualMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "info"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureTimesNaturalInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "divideNumbersInfo"
+        ],
+        [
+            "GSNumber",
+            "right"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureGreaterEqualNaturalInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "multiplyNumbersInfo"
+        ],
+        [
+            "ISequenciable",
+            "result"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "numberSumInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "sequenceConcatInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalEqualMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalGreaterMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "divideMeasuresInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureLowerEqualNaturalInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "compareMeasuresInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureLowerNaturalInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalLowerMeasureInfo"
+        ],
+        [
+            "double",
+            "end"
+        ],
+        [
+            "List",
+            "expressions"
+        ],
+        [
+            "double",
+            "bound"
+        ],
+        [
+            "double",
+            "i"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "List",
+            "list"
+        ],
+        [
+            "double",
+            "start"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "GSharpExpression",
+            "leftBound"
+        ],
+        [
+            "UnaryOverloadInfo",
+            "info"
+        ],
+        [
+            "var",
+            "builder"
+        ],
+        [
+            "var",
+            "file"
+        ],
+        [
+            "string",
+            "path"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "var",
+            "app"
+        ],
+        [
+            "double",
+            "topLeftX"
+        ],
+        [
+            "string",
+            "s"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "float",
+            "verticalY2"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "double",
+            "verticalY"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "double",
+            "finalY1"
+        ],
+        [
+            "float",
+            "finalX"
+        ],
+        [
+            "float",
+            "verticalY1"
+        ],
+        [
+            "double",
+            "yMessage"
+        ],
+        [
+            "float",
+            "x1"
+        ],
+        [
+            "float",
+            "x2"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "double",
+            "endAngle"
+        ],
+        [
+            "float",
+            "y1"
+        ],
+        [
+            "double",
+            "startAngle"
+        ],
+        [
+            "double",
+            "xc"
+        ],
+        [
+            "double",
+            "yc"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "double",
+            "finalX1"
+        ],
+        [
+            "double",
+            "finalX2"
+        ],
+        [
+            "float",
+            "y2"
+        ],
+        [
+            "double",
+            "radius"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
+            "sweepAngle"
+        ],
+        [
+            "double",
+            "m"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "double",
+            "n"
+        ],
+        [
+            "Font",
+            "font"
+        ],
+        [
+            "float",
+            "radius"
+        ],
+        [
+            "double",
+            "xMessage"
+        ],
+        [
+            "float",
+            "x"
+        ],
+        [
+            "Brush",
+            "brush"
+        ],
+        [
+            "float",
+            "y"
+        ],
+        [
+            "double",
+            "finalY"
+        ],
+        [
+            "double",
+            "finalY2"
+        ],
+        [
+            "double",
+            "finalX"
+        ],
+        [
+            "double",
+            "topLeftY"
+        ],
+        [
+            "System",
+            "resources"
+        ],
+        [
+            "Color",
+            "originalColor"
+        ],
+        [
+            "int",
+            "originalIndex"
+        ],
+        [
+            "string",
+            "comments"
+        ],
+        [
+            "string",
+            "keywords"
+        ],
+        [
+            "Evaluator",
+            "evaluator"
+        ],
+        [
+            "MatchCollection",
+            "stringsMatch"
+        ],
+        [
+            "MatchCollection",
+            "variablesMatch"
+        ],
+        [
+            "DirectoryInfo",
+            "info"
+        ],
+        [
+            "PictureDrawer",
+            "drawer"
+        ],
+        [
+            "Resolver",
+            "resolver"
+        ],
+        [
+            "string",
+            "functions"
+        ],
+        [
+            "var",
+            "match"
+        ],
+        [
+            "MatchCollection",
+            "functionsMatch"
+        ],
+        [
+            "var",
+            "countcall"
+        ],
+        [
+            "MatchCollection",
+            "commentsMatch"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "List",
+            "statements"
+        ],
+        [
+            "TypeChecker",
+            "typeChecker"
+        ],
+        [
+            "string",
+            "numbers"
+        ],
+        [
+            "MatchCollection",
+            "tertiaryOperatorsMatch"
+        ],
+        [
+            "int",
+            "originalLength"
+        ],
+        [
+            "string",
+            "variables"
+        ],
+        [
+            "var",
+            "file"
+        ],
+        [
+            "MatchCollection",
+            "numbersMatch"
+        ],
+        [
+            "var",
+            "directory"
+        ],
+        [
+            "var",
+            "node"
+        ],
+        [
+            "string",
+            "strings"
+        ],
+        [
+            "Bitmap",
+            "image"
+        ],
+        [
+            "FileInfo",
+            "info"
+        ],
+        [
+            "string",
+            "tertiaryOperators"
+        ],
+        [
+            "MatchCollection",
+            "keywordsMatch"
+        ],
+        [
+            "global",
+            "temp"
+        ],
+        [
+            "string",
+            "path"
+        ]
+    ],
+    "method_names": [
+        "Dispose",
+        "InitializeComponent",
+        "DrawCircle",
+        "DrawLine",
+        "DrawRay",
+        "DrawSegment",
+        "DrawPoint",
+        "DrawArc",
+        "DrawString",
+        "DrawSequence",
+        "Main",
+        "FilterInRangeSolutions",
+        "SolveCircularLinearSystem",
+        "Solve",
+        "SolveLinearSystem",
+        "EvaluateEcuation",
+        "SubstituteVariable",
+        "IsInRange",
+        "SolveCircularSystem",
+        "AcceptAllConstrains",
+        "PrintErrors",
+        "Print",
+        "PrintError",
+        "DrawCircle",
+        "DrawLine",
+        "DrawRay",
+        "DrawSegment",
+        "SetColor",
+        "DrawEnumerable",
+        "ResetColor",
+        "GetRandomPoint",
+        "DrawPoint",
+        "DrawSequence",
+        "DrawArc",
+        "Draw",
+        "DrawString",
+        "Reset",
+        "SetIsFigureProperty",
+        "ConvertToType",
+        "ToString",
+        "AccessVariable",
+        "EndScope",
+        "BindValue",
+        "DefineFunction",
+        "DeclareVariable",
+        "BeginScope",
+        "DeclareFunction",
+        "DefineVariable",
+        "GetInstanceFromParameters",
+        "ToValueOfTruth",
+        "GetRandomInstance",
+        "ToString",
+        "GetInstanceFromParameters",
+        "GetRandomInstance",
+        "InfiniteRange",
+        "GetTail",
+        "GetRandomNumbers",
+        "GetSequence",
+        "FiniteRange",
+        "GetCount",
+        "AttachSequence",
+        "GetInstanceFromParameters",
+        "GetLineAngleRad",
+        "GetRandomPoint",
+        "Draw",
+        "GetRandomInstance",
+        "ToString",
+        "GetNormalized",
+        "_String",
+        "SkipLine",
+        "IsAlpha",
+        "Identifier",
+        "Match",
+        "IsAlphaNumeric",
+        "ScanToken",
+        "IsDigit",
+        "Substring",
+        "IsAtEnd",
+        "ScanTokens",
+        "PeekNext",
+        "AddToken",
+        "Peek",
+        "Advance",
+        "Number",
+        "RunFile",
+        "InitializeGSharpStandard",
+        "Scan",
+        "RunLibrary",
+        "RunLibraryFile",
+        "Run",
+        "ToString",
+        "SyntaxError",
+        "SemanticError",
+        "LexicalError",
+        "Report",
+        "DeserializeObject",
+        "SerializeObject",
+        "ParseImportStatement",
+        "ParseLogicalOr",
+        "Consume",
+        "InferType",
+        "ParseDeclaration",
+        "ParseExpression",
+        "ParseIfStatement",
+        "Synchronize",
+        "ParseFactor",
+        "ParseLogicalAnd",
+        "Parse",
+        "TryFindBefore",
+        "TryFind",
+        "Previous",
+        "ParsePrintStatement",
+        "Match",
+        "ParseReceiverStatement",
+        "Check",
+        "ParseComparison",
+        "IsAtEnd",
+        "ParseDrawStatement",
+        "ParseColorStatement",
+        "ParseLetStatement",
+        "Advance",
+        "ParseStatement",
+        "ParseConstantDeclaration",
+        "CheckAhead",
+        "ParseFunctionDeclaration",
+        "ParseExpressionStatement",
+        "ParseUnary",
+        "ParseTerm",
+        "Peek",
+        "ParsePrimary",
+        "ParseEquality",
+        "GetEnvironments",
+        "LoadLibrary",
+        "Accept",
+        "Accept",
+        "VisitColorStatent",
+        "VisitStatements",
+        "VisitDrawStatement",
+        "VisitFunctionDeclaration",
+        "VisitImportStatement",
+        "VisitRestoreStatement",
+        "VisitRecieverStatement",
+        "VisitPrintStatement",
+        "VisitExpressionStatement",
+        "VisitConstantDeclaration",
+        "GetArgumentsAmount",
+        "Accept",
+        "Evaluate",
+        "GetType",
+        "Accept",
+        "Accept",
+        "Accept",
+        "Accept",
+        "Accept",
+        "Accept",
+        "IsAnAcceptedOverload",
+        "GetLogic",
+        "GetArithmetic",
+        "VisitLiteralSequence",
+        "VisitLiteralNumber",
+        "VisitBinaryOperation",
+        "VisitLiteralString",
+        "VisitConstant",
+        "VisitLiteralUndefined",
+        "VisitLetIn",
+        "VisitUnaryOperation",
+        "VisitIfThenElse",
+        "VisitFunctionCall",
+        "InfiniteRange",
+        "GetTail",
+        "FiniteRange",
+        "ToGSharpObjectList",
+        "GetSequenceValue",
+        "ChoppSequence",
+        "ToGSharpObjectSequence",
+        "Accept",
+        "Accept",
+        "IsAnAcceptedOverload",
+        "GetLogic",
+        "GetArithmetic",
+        "Accept",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "CreateMauiApp",
+        "OnCounterClicked",
+        "DrawCircle",
+        "DrawLine",
+        "DrawRay",
+        "DrawEnumerable",
+        "DrawSegment",
+        "SetColor",
+        "ResetColor",
+        "PickFile",
+        "DrawPoint",
+        "Draw",
+        "DrawArc",
+        "DrawString",
+        "Reset",
+        "OpenFolder",
+        "DrawSequence",
+        "CreateMauiApp",
+        "Main",
+        "CreateMauiApp",
+        "CreateMauiApp",
+        "Main",
+        "CreateMauiApp",
+        "CreateMauiApp",
+        "Main",
+        "DrawCircle",
+        "DrawLine",
+        "DrawRay",
+        "DrawSegment",
+        "DrawEnumerable",
+        "SetColor",
+        "ResetColor",
+        "GetLineAngleDeg",
+        "DrawPoint",
+        "DrawArc",
+        "Reset",
+        "DrawString",
+        "WriteMessage",
+        "DrawSequence",
+        "Dispose",
+        "InitializeComponent",
+        "Test",
+        "treeView1_NodeMouseDoubleClick",
+        "Input_KeyDown",
+        "Entry_TextChanged",
+        "openToolStripMenuItem_Click",
+        "exitToolStripMenuItem_Click",
+        "Main",
+        "DrawCircle",
+        "DrawLine",
+        "DrawRay",
+        "Main",
+        "DrawEnumerable",
+        "DrawSegment",
+        "SetColor",
+        "ResetColor",
+        "DrawPoint",
+        "DrawArc",
+        "Reset",
+        "Print",
+        "DrawString",
+        "PrintError",
+        "DrawSequence"
+    ],
+    "method_lengths": [
+        8,
+        14,
+        1,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        7,
+        20,
+        20,
+        23,
+        39,
+        20,
+        11,
+        35,
+        1,
+        10,
+        1,
+        1,
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        10,
+        18,
+        1,
+        8,
+        1,
+        1,
+        11,
+        7,
+        9,
+        7,
+        11,
+        1,
+        1,
+        10,
+        1,
+        6,
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        10,
+        6,
+        1,
+        11,
+        8,
+        11,
+        5,
+        1,
+        1,
+        7,
+        6,
+        1,
+        6,
+        6,
+        1,
+        1,
+        9,
+        6,
+        6,
+        1,
+        1,
+        10,
+        6,
+        6,
+        1,
+        1,
+        9,
+        6,
+        6,
+        1,
+        1,
+        9,
+        8,
+        8,
+        1,
+        1,
+        25,
+        7,
+        6,
+        11,
+        78,
+        37,
+        4,
+        4,
+        13,
+        21,
+        8,
+        5,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        7,
+        9,
+        5,
+        41,
+        48,
+        15,
+        15,
+        4,
+        15,
+        7,
+        7,
+        7,
+        6,
+        11,
+        18,
+        6,
+        13,
+        25,
+        6,
+        6,
+        15,
+        11,
+        11,
+        99,
+        17,
+        23,
+        20,
+        26,
+        21,
+        11,
+        10,
+        12,
+        16,
+        16,
+        16,
+        20,
+        1,
+        1,
+        1,
+        13,
+        6,
+        13,
+        9,
+        10,
+        11,
+        5,
+        10,
+        20,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        15,
+        16,
+        4,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        10,
+        5,
+        7,
+        5,
+        10,
+        10,
+        7,
+        12,
+        5,
+        1,
+        6,
+        7,
+        4,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        32,
+        6,
+        5,
+        13,
+        3,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        5,
+        5,
+        1,
+        6,
+        1,
+        1,
+        5,
+        1,
+        1,
+        6,
+        6,
+        7,
+        23,
+        9,
+        27,
+        8,
+        31,
+        12,
+        5,
+        15,
+        8,
+        5,
+        5,
+        5,
+        8,
+        202,
+        51,
+        1,
+        21,
+        27,
+        74,
+        16,
+        7,
+        8,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "class_names": [
+        "Form1",
+        "Drawer",
+        "Form1",
+        "Program",
+        "Equation",
+        "ParameterConstrains",
+        "SimpleCuadraticEquation",
+        "EquationSolver",
+        "GSharpException",
+        "GSharpType",
+        "Context",
+        "Evaluator",
+        "Resolver",
+        "Measure",
+        "GSObject",
+        "GString",
+        "GSNumber",
+        "InfiniteIntegerSequence",
+        "GSharpSequence",
+        "GSequence",
+        "FiniteIntegerSequence",
+        "ArraySequence",
+        "Circle",
+        "Line",
+        "Arc",
+        "Segment",
+        "GSPoint",
+        "Ray",
+        "Vector",
+        "Scanner",
+        "GSharp",
+        "Token",
+        "ErrorHandler",
+        "Error",
+        "JsonHelper",
+        "Parser",
+        "ImportHandler",
+        "Container",
+        "Reciever",
+        "Import",
+        "DeclaredFunction",
+        "ConstantsDeclaration",
+        "FunctionDeclaration",
+        "Statement",
+        "ExpressionStatement",
+        "DrawStatement",
+        "ColorStatement",
+        "Restore",
+        "PrintStatement",
+        "FunctionCall",
+        "LiteralUndefined",
+        "LiteralString",
+        "IfThenElse",
+        "LetIn",
+        "Addition",
+        "GreaterEqualThan",
+        "Module",
+        "Power",
+        "BinaryOperation",
+        "Multiplication",
+        "Conjunction",
+        "Equal",
+        "Disjunction",
+        "LowerEqualThan",
+        "GreaterThan",
+        "Subtraction",
+        "Division",
+        "BinaryOverloadInfo",
+        "UnEqual",
+        "LowerThan",
+        "GSharpExpression",
+        "LiteralSequence",
+        "InfiniteRangeExpression",
+        "LiteralArrayExpression",
+        "FiniteRangeExpression",
+        "LiteralNumber",
+        "Negation",
+        "UnaryOverloadInfo",
+        "UnaryOperation",
+        "Positive",
+        "Negative",
+        "Constant",
+        "Grouping",
+        "CountFunction",
+        "RandomsFunction",
+        "MeasureFunction",
+        "ArcGetter",
+        "CircleGetter",
+        "RayGetter",
+        "PointGetter",
+        "LineGetter",
+        "SegmentGetter",
+        "MauiProgram",
+        "MainPage",
+        "AppShell",
+        "App",
+        "Folder",
+        "CanvasDrawer",
+        "DesktopMainViewModel",
+        "Figure",
+        "DesktopMainView",
+        "AppDelegate",
+        "Program",
+        "App",
+        "Program",
+        "MainApplication",
+        "MainActivity",
+        "AppDelegate",
+        "Program",
+        "PictureDrawer",
+        "Aplication",
+        "Aplication",
+        "Program",
+        "Resources",
+        "Program",
+        "ConsoleUI",
+        "DrawerDummie"
+    ],
+    "interface_names": [
+        "IWalleUI",
+        "IDrawer",
+        "IDrawable",
+        "IUserParameter",
+        "IRandomable",
+        "ISequenciable",
+        "IStatementVisitor",
+        "ICallable",
+        "IExpressionVisitor"
+    ],
+    "delegate_names": [
+        [
+            "delegate",
+            "GSObject"
+        ],
+        [
+            "delegate",
+            "GSharpType"
+        ],
+        [
+            "delegate",
+            "GSObject"
+        ]
+    ],
+    "enums_names": [
+        "TokenType",
+        "ErrorType"
+    ],
+    "distinct_tokens_count": {},
+    "control_structures_if": 179,
+    "control_structures_switch": 10,
+    "control_structures_for": 6,
+    "control_structures_while": 17,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 664,
+    "access_modifiers_private": 155,
+    "access_modifiers_protected": 8,
+    "access_modifiers_internal": 8,
+    "access_modifiers_static": 144,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 24,
+    "modifier_volatile": 0,
+    "modifier_virtual": 1,
+    "modifier_override": 46,
+    "modifier_new": 194,
+    "modifier_partial": 10,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 2,
+    "method_return_types": {
+        "Dispose": "void",
+        "InitializeComponent": "void",
+        "DrawArc": "void",
+        "DrawCircle": "void",
+        "DrawLine": "void",
+        "DrawPoint": "void",
+        "DrawRay": "void",
+        "DrawSegment": "void",
+        "DrawSequence": "void",
+        "DrawString": "void",
+        "Main": "void",
+        "Solve": "List",
+        "SolveCircularSystem": "IEnumerable",
+        "SolveLinearSystem": "List",
+        "SolveCircularLinearSystem": "List",
+        "SubstituteVariable": "SimpleCuadraticEquation",
+        "EvaluateEcuation": "double",
+        "FilterInRangeSolutions": "IEnumerable",
+        "IsInRange": "bool",
+        "AcceptAllConstrains": "bool",
+        "Print": "void",
+        "PrintError": "void",
+        "PrintErrors": "void",
+        "Reset": "void",
+        "SetColor": "void",
+        "ResetColor": "void",
+        "DrawEnumerable": "void",
+        "Draw": "void",
+        "GetRandomPoint": "GSPoint",
+        "SetIsFigureProperty": "void",
+        "ConvertToType": "Type",
+        "ToString": "string",
+        "AccessVariable": "Var",
+        "BeginScope": "void",
+        "EndScope": "void",
+        "DeclareVariable": "void",
+        "DefineVariable": "void",
+        "DeclareFunction": "void",
+        "DefineFunction": "void",
+        "BindValue": "void",
+        "GetRandomInstance": "Measure",
+        "GetInstanceFromParameters": "Measure",
+        "ToValueOfTruth": "GSNumber",
+        "GetCount": "int",
+        "GetSequence": "IEnumerable",
+        "AttachSequence": "ISequenciable",
+        "GetTail": "GSharpSequence",
+        "GetRandomNumbers": "GSharpSequence",
+        "FiniteRange": "IEnumerable",
+        "InfiniteRange": "IEnumerable",
+        "GetLineAngleRad": "double",
+        "GetNormalized": "Vector",
+        "ScanTokens": "List",
+        "ScanToken": "void",
+        "Identifier": "void",
+        "IsAlpha": "bool",
+        "IsAlphaNumeric": "bool",
+        "Number": "void",
+        "_String": "void",
+        "Match": "bool",
+        "Peek": "char",
+        "PeekNext": "char",
+        "IsDigit": "bool",
+        "IsAtEnd": "bool",
+        "Advance": "char",
+        "Substring": "string",
+        "AddToken": "void",
+        "SkipLine": "void",
+        "Scan": "List",
+        "RunFile": "void",
+        "RunLibraryFile": "Container",
+        "RunLibrary": "Container",
+        "Run": "void",
+        "InitializeGSharpStandard": "void",
+        "Report": "void",
+        "LexicalError": "void",
+        "SyntaxError": "void",
+        "SemanticError": "void",
+        "SerializeObject": "void",
+        "DeserializeObject": "T",
+        "Parse": "List",
+        "ParseDeclaration": "Statement",
+        "ParseConstantDeclaration": "Statement",
+        "ParseFunctionDeclaration": "Statement",
+        "ParseExpression": "GSharpExpression",
+        "ParseExpressionStatement": "Statement",
+        "ParseLetStatement": "GSharpExpression",
+        "ParseIfStatement": "GSharpExpression",
+        "ParseLogicalAnd": "GSharpExpression",
+        "ParsePrimary": "GSharpExpression",
+        "ParseUnary": "GSharpExpression",
+        "ParseFactor": "GSharpExpression",
+        "ParseTerm": "GSharpExpression",
+        "ParseComparison": "GSharpExpression",
+        "ParseEquality": "GSharpExpression",
+        "ParseLogicalOr": "GSharpExpression",
+        "ParseColorStatement": "Statement",
+        "ParseDrawStatement": "Statement",
+        "ParsePrintStatement": "Statement",
+        "ParseImportStatement": "Statement",
+        "ParseReceiverStatement": "Statement",
+        "ParseStatement": "Statement",
+        "Previous": "Token",
+        "Consume": "Token",
+        "CheckAhead": "bool",
+        "Check": "bool",
+        "TryFind": "bool",
+        "TryFindBefore": "bool",
+        "Synchronize": "void",
+        "InferType": "GTypeNames",
+        "GetEnvironments": "Container",
+        "LoadLibrary": "Container",
+        "Accept": "void",
+        "VisitStatements": "void",
+        "VisitExpressionStatement": "void",
+        "VisitFunctionDeclaration": "void",
+        "VisitConstantDeclaration": "void",
+        "VisitDrawStatement": "void",
+        "VisitColorStatent": "void",
+        "VisitRestoreStatement": "void",
+        "VisitRecieverStatement": "void",
+        "VisitPrintStatement": "void",
+        "VisitImportStatement": "void",
+        "GetArgumentsAmount": "int",
+        "Evaluate": "GSObject",
+        "GetType": "GSharpType",
+        "IsAnAcceptedOverload": "bool",
+        "GetArithmetic": "BinaryOverloadInfo",
+        "GetLogic": "BinaryOverloadInfo",
+        "VisitLetIn": "T",
+        "VisitIfThenElse": "T",
+        "VisitBinaryOperation": "T",
+        "VisitUnaryOperation": "T",
+        "VisitLiteralNumber": "T",
+        "VisitLiteralString": "T",
+        "VisitConstant": "T",
+        "VisitFunctionCall": "T",
+        "VisitLiteralSequence": "T",
+        "VisitLiteralUndefined": "T",
+        "GetSequenceValue": "GSequence",
+        "ToGSharpObjectSequence": "IEnumerable",
+        "ToGSharpObjectList": "List",
+        "ChoppSequence": "IEnumerable",
+        "CreateMauiApp": "MauiApp",
+        "OnCounterClicked": "void",
+        "OpenFolder": "void",
+        "PickFile": "Task",
+        "WriteMessage": "void",
+        "GetLineAngleDeg": "double",
+        "Test": "void",
+        "exitToolStripMenuItem_Click": "void",
+        "openToolStripMenuItem_Click": "void",
+        "treeView1_NodeMouseDoubleClick": "void",
+        "Entry_TextChanged": "void",
+        "Input_KeyDown": "void"
+    },
+    "method_parameters": {},
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 37,
+    "linq_queries_count": 0,
+    "library_call_console": 21,
+    "library_call_math": 31,
+    "number_of_lambdas": 42,
+    "number_of_getters": 109,
+    "number_of_setters": 47,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 67,
+    "project_name": "GeoWall-E",
+    "label": "original"
+}

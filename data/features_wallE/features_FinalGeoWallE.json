@@ -1,0 +1,1404 @@
+{
+    "total_nodes": 97099,
+    "node_count": {
+        "Compilation_unitContext": 51,
+        "Namespace_member_declarationsContext": 100,
+        "Namespace_member_declarationContext": 163,
+        "Namespace_declarationContext": 50,
+        "TerminalNodeImpl": 19199,
+        "Qualified_identifierContext": 50,
+        "IdentifierContext": 6145,
+        "Namespace_bodyContext": 50,
+        "Type_declarationContext": 113,
+        "All_member_modifiersContext": 530,
+        "All_member_modifierContext": 714,
+        "Class_definitionContext": 66,
+        "Class_bodyContext": 71,
+        "Class_member_declarationsContext": 71,
+        "Class_member_declarationContext": 468,
+        "Common_member_declarationContext": 468,
+        "Typed_member_declarationContext": 314,
+        "Type_Context": 1224,
+        "Base_typeContext": 1237,
+        "Class_typeContext": 1066,
+        "Namespace_or_type_nameContext": 1072,
+        "Field_declarationContext": 85,
+        "Variable_declaratorsContext": 86,
+        "Variable_declaratorContext": 86,
+        "Variable_initializerContext": 9,
+        "ExpressionContext": 2753,
+        "Non_assignment_expressionContext": 2338,
+        "Conditional_expressionContext": 2337,
+        "Null_coalescing_expressionContext": 2337,
+        "Conditional_or_expressionContext": 2337,
+        "Conditional_and_expressionContext": 2346,
+        "Inclusive_or_expressionContext": 2369,
+        "Exclusive_or_expressionContext": 2371,
+        "And_expressionContext": 2371,
+        "Equality_expressionContext": 2371,
+        "Relational_expressionContext": 2446,
+        "Shift_expressionContext": 2498,
+        "Additive_expressionContext": 2498,
+        "Multiplicative_expressionContext": 2665,
+        "Switch_expressionContext": 2732,
+        "Range_expressionContext": 2732,
+        "Unary_expressionContext": 3240,
+        "Primary_expressionContext": 3098,
+        "LiteralExpressionContext": 602,
+        "LiteralContext": 602,
+        "Method_declarationContext": 219,
+        "Method_member_nameContext": 219,
+        "Formal_parameter_listContext": 146,
+        "Fixed_parametersContext": 146,
+        "Fixed_parameterContext": 253,
+        "Arg_declarationContext": 267,
+        "Simple_typeContext": 212,
+        "Method_bodyContext": 180,
+        "BlockContext": 368,
+        "Statement_listContext": 348,
+        "StatementContext": 1097,
+        "Embedded_statementContext": 915,
+        "IfStatementContext": 103,
+        "SimpleNameExpressionContext": 1741,
+        "ParenthesisExpressionsContext": 146,
+        "If_bodyContext": 125,
+        "ExpressionStatementContext": 574,
+        "Member_accessContext": 1742,
+        "Method_invocationContext": 420,
+        "BaseAccessExpressionContext": 2,
+        "Argument_listContext": 440,
+        "ArgumentContext": 895,
+        "DeclarationStatementContext": 188,
+        "Local_variable_declarationContext": 184,
+        "Local_variable_typeContext": 222,
+        "Local_variable_declaratorContext": 184,
+        "Local_variable_initializerContext": 184,
+        "ObjectCreationExpressionContext": 220,
+        "Object_creation_expressionContext": 219,
+        "TypeofExpressionContext": 3,
+        "Unbound_type_nameContext": 3,
+        "AssignmentContext": 366,
+        "ThisReferenceExpressionContext": 351,
+        "Assignment_operatorContext": 366,
+        "Cast_expressionContext": 127,
+        "String_literalContext": 215,
+        "Numeric_typeContext": 187,
+        "Integral_typeContext": 63,
+        "Boolean_literalContext": 38,
+        "MemberAccessExpressionContext": 15,
+        "Qualified_alias_memberContext": 24,
+        "Using_directivesContext": 36,
+        "UsingNamespaceDirectiveContext": 80,
+        "Class_baseContext": 54,
+        "Constructor_declarationContext": 58,
+        "BodyContext": 60,
+        "Type_argument_listContext": 82,
+        "ReturnStatementContext": 146,
+        "TryStatementContext": 4,
+        "ForeachStatementContext": 38,
+        "IsTypeContext": 13,
+        "Catch_clausesContext": 4,
+        "Specific_catch_clauseContext": 2,
+        "Predefined_typeContext": 6,
+        "ForStatementContext": 6,
+        "For_initializerContext": 6,
+        "For_iteratorContext": 6,
+        "Bracket_expressionContext": 16,
+        "Indexer_argumentContext": 16,
+        "Lambda_expressionContext": 1,
+        "Anonymous_function_signatureContext": 1,
+        "Right_arrowContext": 62,
+        "Anonymous_function_bodyContext": 1,
+        "Throwable_expressionContext": 86,
+        "Floating_point_typeContext": 124,
+        "Tuple_typeContext": 15,
+        "Tuple_elementContext": 28,
+        "TupleExpressionContext": 18,
+        "SwitchStatementContext": 1,
+        "Switch_sectionContext": 9,
+        "Switch_labelContext": 9,
+        "AttributesContext": 12,
+        "Attribute_sectionContext": 15,
+        "Attribute_listContext": 27,
+        "AttributeContext": 27,
+        "Interface_definitionContext": 5,
+        "Property_declarationContext": 73,
+        "Member_nameContext": 73,
+        "Accessor_declarationsContext": 57,
+        "Accessor_bodyContext": 83,
+        "Set_accessor_declarationContext": 26,
+        "Accessor_modifierContext": 16,
+        "Interface_baseContext": 3,
+        "Interface_type_listContext": 3,
+        "General_catch_clauseContext": 2,
+        "ThrowStatementContext": 15,
+        "ErrorNodeImpl": 1098,
+        "Constructor_initializerContext": 23,
+        "ContinueStatementContext": 2,
+        "Event_declarationContext": 1,
+        "TheEmptyStatementContext": 1,
+        "Labeled_StatementContext": 1,
+        "Object_or_collection_initializerContext": 4,
+        "Collection_initializerContext": 4,
+        "Element_initializerContext": 65,
+        "Expression_listContext": 57,
+        "Rank_specifierContext": 2,
+        "YieldStatementContext": 31,
+        "WhileStatementContext": 1,
+        "Delegate_definitionContext": 1,
+        "Return_typeContext": 1,
+        "Enum_definitionContext": 3,
+        "Enum_bodyContext": 3,
+        "Enum_member_declarationContext": 67,
+        "Operator_declarationContext": 8,
+        "Overloadable_operatorContext": 8,
+        "Throw_expressionContext": 1,
+        "Attribute_argumentContext": 20,
+        "Global_attribute_sectionContext": 12,
+        "Global_attribute_targetContext": 12
+    },
+    "max_depth": 3527,
+    "number_of_variables": 184,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 219,
+    "number_of_classes": 66,
+    "number_of_interfaces": 5,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 36,
+    "number_of_try_blocks": 4,
+    "number_of_lists": 1,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 3,
+    "number_of_delegates": 1,
+    "function_calls": 220,
+    "variable_names": [
+        [
+            "System",
+            "resources"
+        ],
+        [
+            "System",
+            "resources"
+        ],
+        [
+            "string",
+            "path"
+        ],
+        [
+            "IFigure",
+            "traslate"
+        ],
+        [
+            "List",
+            "traslates"
+        ],
+        [
+            "(",
+            "vector2"
+        ],
+        [
+            "int",
+            "lines"
+        ],
+        [
+            "(",
+            "vector3"
+        ],
+        [
+            "SyntaxTree",
+            "syntax"
+        ],
+        [
+            "float",
+            "possitiveStart"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
+            "(",
+            "interceps"
+        ],
+        [
+            "string",
+            "codeToDebug"
+        ],
+        [
+            "Color",
+            "actualColor"
+        ],
+        [
+            "Arc",
+            "a1"
+        ],
+        [
+            "float",
+            "possitiveEnd"
+        ],
+        [
+            "Segment",
+            "l1"
+        ],
+        [
+            "StreamWriter",
+            "streamWriter"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "float",
+            "intercepUP"
+        ],
+        [
+            "var",
+            "test"
+        ],
+        [
+            "(",
+            "vector1"
+        ],
+        [
+            "float",
+            "startAngle"
+        ],
+        [
+            "float",
+            "endAngle"
+        ],
+        [
+            "float",
+            "angle"
+        ],
+        [
+            "FigureType",
+            "thisType"
+        ],
+        [
+            "Gsharp",
+            "p1"
+        ],
+        [
+            "Graphics",
+            "graphics"
+        ],
+        [
+            "float",
+            "sweepAngle"
+        ],
+        [
+            "string",
+            "import"
+        ],
+        [
+            "float",
+            "m"
+        ],
+        [
+            "float",
+            "n"
+        ],
+        [
+            "Line",
+            "l1"
+        ],
+        [
+            "Circle",
+            "c1"
+        ],
+        [
+            "Ray",
+            "l1"
+        ],
+        [
+            "string",
+            "code"
+        ],
+        [
+            "Process",
+            "process"
+        ],
+        [
+            "Work",
+            "work"
+        ],
+        [
+            "var",
+            "trueReturnType"
+        ],
+        [
+            "var",
+            "falseReturnType"
+        ],
+        [
+            "string",
+            "code"
+        ],
+        [
+            "var",
+            "parser"
+        ],
+        [
+            "var",
+            "lexer"
+        ],
+        [
+            "var",
+            "statementList"
+        ],
+        [
+            "string",
+            "output"
+        ],
+        [
+            "Sequence",
+            "values"
+        ],
+        [
+            "var",
+            "SequenceEnumerator"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "WalleType",
+            "returnType"
+        ],
+        [
+            "Sequence",
+            "sequence"
+        ],
+        [
+            "string",
+            "output"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "output"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "var",
+            "SequenceExp"
+        ],
+        [
+            "WalleType",
+            "operandType"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "Point",
+            "p2"
+        ],
+        [
+            "Point",
+            "p1"
+        ],
+        [
+            "var",
+            "leftType"
+        ],
+        [
+            "var",
+            "rightType"
+        ],
+        [
+            "double",
+            "first"
+        ],
+        [
+            "double",
+            "second"
+        ],
+        [
+            "WalleType",
+            "figures"
+        ],
+        [
+            "WalleType",
+            "expressionType"
+        ],
+        [
+            "double",
+            "h"
+        ],
+        [
+            "double",
+            "distanceCenters"
+        ],
+        [
+            "Point",
+            "newCenter"
+        ],
+        [
+            "double",
+            "d"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "Point",
+            "P"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "IEnumerable",
+            "points"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "double",
+            "x3"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "float",
+            "suposs"
+        ],
+        [
+            "Arc",
+            "arc"
+        ],
+        [
+            "double",
+            "y3"
+        ],
+        [
+            "double",
+            "a"
+        ],
+        [
+            "Circle",
+            "other"
+        ],
+        [
+            "Point",
+            "newFirst"
+        ],
+        [
+            "float",
+            "startAngle"
+        ],
+        [
+            "float",
+            "endAngle"
+        ],
+        [
+            "IEnumerable",
+            "pointsIntersec"
+        ],
+        [
+            "Ray",
+            "end"
+        ],
+        [
+            "Ray",
+            "current"
+        ],
+        [
+            "float",
+            "currentAngle"
+        ],
+        [
+            "Point",
+            "newOrigin"
+        ],
+        [
+            "Point",
+            "newSecond"
+        ],
+        [
+            "Ray",
+            "start"
+        ],
+        [
+            "Circle",
+            "aux"
+        ],
+        [
+            "float",
+            "m"
+        ],
+        [
+            "IEnumerable",
+            "points"
+        ],
+        [
+            "float",
+            "angle"
+        ],
+        [
+            "Point",
+            "newP2"
+        ],
+        [
+            "(",
+            "vector2"
+        ],
+        [
+            "Point",
+            "newP1"
+        ],
+        [
+            "(",
+            "vector"
+        ],
+        [
+            "Line",
+            "aux"
+        ],
+        [
+            "double",
+            "p"
+        ],
+        [
+            "IEnumerable",
+            "points"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "Point",
+            "p"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "(",
+            "vector2"
+        ],
+        [
+            "Point",
+            "newP1"
+        ],
+        [
+            "double",
+            "B"
+        ],
+        [
+            "double",
+            "nL"
+        ],
+        [
+            "Ray",
+            "r"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "Point",
+            "newP2"
+        ],
+        [
+            "float",
+            "newX"
+        ],
+        [
+            "Segment",
+            "s"
+        ],
+        [
+            "Line",
+            "l"
+        ],
+        [
+            "IEnumerable",
+            "pointsIntersect"
+        ],
+        [
+            "double",
+            "C"
+        ],
+        [
+            "double",
+            "m"
+        ],
+        [
+            "double",
+            "n"
+        ],
+        [
+            "Circle",
+            "c"
+        ],
+        [
+            "(",
+            "vector"
+        ],
+        [
+            "Line",
+            "rayLine"
+        ],
+        [
+            "double",
+            "D"
+        ],
+        [
+            "double",
+            "A"
+        ],
+        [
+            "double",
+            "mL"
+        ],
+        [
+            "float",
+            "X"
+        ],
+        [
+            "Arc",
+            "arc"
+        ],
+        [
+            "Line",
+            "segmentLine"
+        ],
+        [
+            "string",
+            "output"
+        ],
+        [
+            "Point",
+            "p1"
+        ],
+        [
+            "var",
+            "sequence"
+        ],
+        [
+            "Point",
+            "p2"
+        ],
+        [
+            "Measure",
+            "r"
+        ],
+        [
+            "Point",
+            "p3"
+        ],
+        [
+            "IFigure",
+            "fig1"
+        ],
+        [
+            "IFigure",
+            "fig2"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "Point",
+            "p"
+        ],
+        [
+            "Measure",
+            "m"
+        ],
+        [
+            "string",
+            "output"
+        ],
+        [
+            "var",
+            "classEnumerator"
+        ],
+        [
+            "WalleType",
+            "returnType"
+        ],
+        [
+            "var",
+            "classEnumerator"
+        ],
+        [
+            "WalleType",
+            "returnType"
+        ],
+        [
+            "global",
+            "temp"
+        ],
+        [
+            "object",
+            "obj"
+        ],
+        [
+            "Scope",
+            "scope"
+        ],
+        [
+            "SyntaxTree",
+            "syntax"
+        ],
+        [
+            "Parser",
+            "parser"
+        ],
+        [
+            "Lexer",
+            "lexer"
+        ]
+    ],
+    "method_names": [
+        "Dispose",
+        "InitializeComponent",
+        "Dispose",
+        "InitializeComponent",
+        "Left_Click",
+        "MyDrawRay",
+        "DebugButton_Click",
+        "Button2_Click",
+        "Up_Click",
+        "GetAngle",
+        "MyDrawCircle",
+        "TextBox1_KeyDown",
+        "Button1_Click",
+        "Traslation",
+        "GetIntersepts",
+        "Button3_Click",
+        "PictureBox1_Click",
+        "PictureBox4_Click",
+        "GetPendiente",
+        "MyDrawPoint",
+        "MyDrawLine",
+        "DrawFigure",
+        "MyDrawArc",
+        "GetColor",
+        "MyDrawSegment",
+        "NewProjectButton_Click",
+        "ExitButton_Click",
+        "ReportButton_Click",
+        "WallEInformation_Click",
+        "Main",
+        "GetScope",
+        "Execute",
+        "CheckSemantics",
+        "Run",
+        "Execute",
+        "ConvertToBool",
+        "Evaluate",
+        "CheckSemantics",
+        "GetScope",
+        "Execute",
+        "ToString",
+        "GetScope",
+        "Execute",
+        "CheckSemantics",
+        "ToString",
+        "ConvertToBool",
+        "Evaluate",
+        "CheckSemantics",
+        "GetScope",
+        "Execute",
+        "ToString",
+        "GetScope",
+        "Execute",
+        "CheckSemantics",
+        "ToString",
+        "GetScope",
+        "Execute",
+        "CheckSemantics",
+        "ToString",
+        "GetScope",
+        "Execute",
+        "CheckSemantics",
+        "ConvertToBool",
+        "Evaluate",
+        "CheckSemantics",
+        "GetScope",
+        "Execute",
+        "ToString",
+        "Run",
+        "CheckSemantics",
+        "GetScope",
+        "Run",
+        "Execute",
+        "ResetScope",
+        "ToString",
+        "Match",
+        "CheckSemantics",
+        "GetScope",
+        "Run",
+        "Execute",
+        "ResetScope",
+        "ConvertToBool",
+        "Evaluate",
+        "CheckSemantics",
+        "GetScope",
+        "Execute",
+        "ToString",
+        "ConvertToBool",
+        "Evaluate",
+        "ConvertToBool",
+        "ToString",
+        "GetScope",
+        "CheckSemantics",
+        "ConvertToBool",
+        "Evaluate",
+        "ConvertToBool",
+        "ToString",
+        "ToString",
+        "ConvertToBool",
+        "Evaluate",
+        "CheckSemantics",
+        "GetScope",
+        "ToString",
+        "ConvertToBool",
+        "Evaluate",
+        "CheckSemantics",
+        "GetScope",
+        "ToString",
+        "ConvertToBool",
+        "Evaluate",
+        "CheckSemantics",
+        "GetScope",
+        "ToString",
+        "GetScope",
+        "CheckSemantics",
+        "ConvertToBool",
+        "Evaluate",
+        "GetScope",
+        "CheckSemantics",
+        "ConvertToBool",
+        "Evaluate",
+        "GetScope",
+        "CheckSemantics",
+        "ConvertToBool",
+        "Evaluate",
+        "ConvertToBool",
+        "Evaluate",
+        "CheckSemantics",
+        "GetScope",
+        "ToString",
+        "Evaluate",
+        "Evaluate",
+        "CheckSemantics",
+        "Evaluate",
+        "GetKeyWordKind",
+        "LoadSystemFunctions",
+        "SearchFunction",
+        "RestoreColor",
+        "CompareExpressions",
+        "AddFunction",
+        "IsFigure",
+        "AddColor",
+        "Traslate",
+        "Intersect",
+        "GetFigureType",
+        "GetPoints",
+        "GetFigureType",
+        "GetPendiente",
+        "Traslate",
+        "GetPoints",
+        "Intersect",
+        "Intersect",
+        "Traslate",
+        "GetFigureType",
+        "GetPoints",
+        "GetFigureType",
+        "Traslate",
+        "GetPoints",
+        "DistanceToPoint",
+        "Intersect",
+        "GetFigureType",
+        "GetVector",
+        "Traslate",
+        "GetAngle",
+        "Intersect",
+        "GetPoints",
+        "GetPendiente",
+        "GetFigureType",
+        "GetPendiente",
+        "Traslate",
+        "GetPoints",
+        "Intersect",
+        "CreateVariableInstance",
+        "ToString",
+        "Circle",
+        "Line",
+        "Arc",
+        "Measure",
+        "Segment",
+        "Print",
+        "Ray",
+        "Count",
+        "Intersect",
+        "GetItemsType",
+        "Dispose",
+        "MoveNext",
+        "Reset",
+        "GetItemsType",
+        "Dispose",
+        "MoveNext",
+        "Reset",
+        "CompareTo",
+        "ToDouble",
+        "ToFloat",
+        "ToString",
+        "WorkWithCode"
+    ],
+    "method_lengths": [
+        8,
+        246,
+        8,
+        88,
+        31,
+        20,
+        13,
+        9,
+        50,
+        5,
+        5,
+        6,
+        11,
+        28,
+        27,
+        15,
+        4,
+        13,
+        14,
+        12,
+        4,
+        4,
+        4,
+        4,
+        11,
+        5,
+        4,
+        6,
+        6,
+        6,
+        1,
+        1,
+        8,
+        7,
+        7,
+        7,
+        1,
+        6,
+        12,
+        7,
+        1,
+        1,
+        1,
+        15,
+        1,
+        1,
+        1,
+        9,
+        8,
+        8,
+        1,
+        1,
+        8,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        1,
+        1,
+        5,
+        4,
+        1,
+        5,
+        28,
+        29,
+        4,
+        7,
+        25,
+        5,
+        1,
+        1,
+        1,
+        6,
+        8,
+        1,
+        9,
+        7,
+        9,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        7,
+        10,
+        6,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        10,
+        11,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        9,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        1,
+        1,
+        6,
+        1,
+        4,
+        1,
+        9,
+        1,
+        1,
+        1,
+        19,
+        1,
+        5,
+        18,
+        1,
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        8,
+        6,
+        8,
+        7,
+        9,
+        12,
+        7,
+        8,
+        8,
+        8,
+        10,
+        4,
+        13,
+        4,
+        5,
+        18,
+        14,
+        4,
+        51,
+        7,
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        7,
+        4,
+        21,
+        7,
+        4,
+        4,
+        4,
+        1,
+        4,
+        14,
+        4,
+        4,
+        4,
+        14,
+        8,
+        7,
+        9,
+        4,
+        4,
+        8,
+        7,
+        4,
+        8,
+        7,
+        98,
+        4,
+        4,
+        3,
+        14,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        9,
+        6,
+        13,
+        1,
+        6,
+        4,
+        13,
+        1,
+        6,
+        4,
+        6,
+        1,
+        1,
+        4,
+        19
+    ],
+    "class_names": [
+        "Work",
+        "Menu",
+        "Work",
+        "Menu",
+        "Program",
+        "SyntaxTree",
+        "ConditionalExpression",
+        "ImportStatement",
+        "LetInStatement",
+        "ColorStatement",
+        "RestoreStatement",
+        "AssigmentStatement",
+        "SimpleAssigmentStatement",
+        "MultiAssigmentStatement",
+        "DrawStatement",
+        "PredefinedFunction",
+        "DeclaredFunctionExpression",
+        "ExecutableFunction",
+        "FunctionCallExpression",
+        "UndefinedExpression",
+        "LiteralExpression",
+        "NumberLiteralExpression",
+        "TextLiteralExpression",
+        "SequenceExpression",
+        "VariableExpression",
+        "NegativeOperatorExpression",
+        "UnaryOperatorExpression",
+        "CircleExpression",
+        "PointExpression",
+        "LineExpression",
+        "BinaryOperatorExpression",
+        "EqualityExpression",
+        "ComparativeExpression",
+        "GreaterExpression",
+        "GreaterEqualsExpression",
+        "LessEqualsExpression",
+        "LessExpression",
+        "NotEqualityExpression",
+        "DivisionExpression",
+        "ArithmeticExpression",
+        "MultiplicativeExpression",
+        "RestExpression",
+        "SumExpression",
+        "LogicOperatorExpression",
+        "AndExpression",
+        "OrExpression",
+        "CompilatorTools",
+        "Circle",
+        "Arc",
+        "Point",
+        "Segment",
+        "Ray",
+        "Line",
+        "Scope",
+        "Token",
+        "SystemFunctionsPool",
+        "Sequence",
+        "Undefined",
+        "InRangeEnumerator",
+        "Sequence",
+        "Undefined",
+        "InRangeEnumerator",
+        "Measure",
+        "Settings",
+        "Resources",
+        "CallLogic"
+    ],
+    "interface_names": [
+        "INode",
+        "IStatement",
+        "IExpression",
+        "IFigure",
+        "ILine"
+    ],
+    "delegate_names": [
+        [
+            "delegate",
+            "object"
+        ]
+    ],
+    "enums_names": [
+        "WalleType",
+        "FigureType",
+        "TokenType"
+    ],
+    "distinct_tokens_count": {},
+    "control_structures_if": 103,
+    "control_structures_switch": 1,
+    "control_structures_for": 6,
+    "control_structures_while": 1,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 387,
+    "access_modifiers_private": 90,
+    "access_modifiers_protected": 12,
+    "access_modifiers_internal": 24,
+    "access_modifiers_static": 55,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 11,
+    "modifier_volatile": 0,
+    "modifier_virtual": 10,
+    "modifier_override": 54,
+    "modifier_new": 50,
+    "modifier_partial": 5,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "method_return_types": {
+        "Dispose": "void",
+        "InitializeComponent": "void",
+        "Button1_Click": "void",
+        "DebugButton_Click": "void",
+        "Button2_Click": "void",
+        "Button3_Click": "void",
+        "DrawFigure": "void",
+        "MyDrawPoint": "void",
+        "MyDrawCircle": "void",
+        "MyDrawSegment": "void",
+        "MyDrawLine": "void",
+        "MyDrawRay": "void",
+        "MyDrawArc": "void",
+        "GetColor": "Color",
+        "GetPendiente": "float",
+        "GetIntersepts": "(",
+        "GetAngle": "float",
+        "Traslation": "void",
+        "Up_Click": "void",
+        "Left_Click": "void",
+        "PictureBox1_Click": "void",
+        "PictureBox4_Click": "void",
+        "TextBox1_KeyDown": "void",
+        "NewProjectButton_Click": "void",
+        "ExitButton_Click": "void",
+        "WallEInformation_Click": "void",
+        "ReportButton_Click": "void",
+        "Main": "void",
+        "GetScope": "void",
+        "CheckSemantics": "void",
+        "Execute": "void",
+        "Run": "int",
+        "Evaluate": "object",
+        "ConvertToBool": "bool",
+        "ToString": "string",
+        "ResetScope": "void",
+        "Match": "bool",
+        "GetKeyWordKind": "TokenType",
+        "SearchFunction": "ExecutableFunction",
+        "AddFunction": "void",
+        "LoadSystemFunctions": "void",
+        "AddColor": "void",
+        "RestoreColor": "void",
+        "IsFigure": "bool",
+        "CompareExpressions": "int",
+        "GetFigureType": "FigureType",
+        "GetPoints": "IEnumerable",
+        "Intersect": "IEnumerable",
+        "Traslate": "IFigure",
+        "DistanceToPoint": "double",
+        "GetVector": "(",
+        "CreateVariableInstance": "void",
+        "Count": "object",
+        "Print": "object",
+        "Measure": "object",
+        "Line": "object",
+        "Segment": "object",
+        "Ray": "object",
+        "Circle": "object",
+        "Arc": "object",
+        "GetItemsType": "WalleType",
+        "MoveNext": "bool",
+        "Reset": "void",
+        "CompareTo": "int",
+        "ToDouble": "double",
+        "ToFloat": "float",
+        "WorkWithCode": "SyntaxTree"
+    },
+    "method_parameters": {},
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 19,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 37,
+    "number_of_lambdas": 1,
+    "number_of_getters": 57,
+    "number_of_setters": 26,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 50,
+    "project_name": "FinalGeoWallE",
+    "label": "original"
+}

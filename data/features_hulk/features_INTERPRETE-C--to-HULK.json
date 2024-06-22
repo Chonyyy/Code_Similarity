@@ -1,0 +1,636 @@
+{
+    "total_nodes": 38989,
+    "node_count": {
+        "Compilation_unitContext": 7,
+        "Using_directivesContext": 6,
+        "UsingNamespaceDirectiveContext": 35,
+        "TerminalNodeImpl": 6500,
+        "Namespace_or_type_nameContext": 291,
+        "IdentifierContext": 1871,
+        "Namespace_member_declarationsContext": 14,
+        "Namespace_member_declarationContext": 18,
+        "Namespace_declarationContext": 7,
+        "Qualified_identifierContext": 7,
+        "Namespace_bodyContext": 7,
+        "Type_declarationContext": 11,
+        "All_member_modifiersContext": 63,
+        "All_member_modifierContext": 64,
+        "Class_definitionContext": 7,
+        "Class_bodyContext": 7,
+        "Class_member_declarationsContext": 7,
+        "Class_member_declarationContext": 61,
+        "Common_member_declarationContext": 61,
+        "Typed_member_declarationContext": 43,
+        "Type_Context": 407,
+        "Base_typeContext": 428,
+        "Class_typeContext": 354,
+        "Type_argument_listContext": 46,
+        "Field_declarationContext": 13,
+        "Variable_declaratorsContext": 13,
+        "Variable_declaratorContext": 13,
+        "Constructor_declarationContext": 6,
+        "Formal_parameter_listContext": 21,
+        "Fixed_parametersContext": 21,
+        "Fixed_parameterContext": 34,
+        "Arg_declarationContext": 34,
+        "BodyContext": 6,
+        "BlockContext": 158,
+        "Statement_listContext": 212,
+        "StatementContext": 509,
+        "Embedded_statementContext": 421,
+        "ExpressionStatementContext": 164,
+        "ExpressionContext": 1117,
+        "AssignmentContext": 38,
+        "Unary_expressionContext": 1418,
+        "Primary_expressionContext": 1368,
+        "ThisReferenceExpressionContext": 3,
+        "Member_accessContext": 344,
+        "Assignment_operatorContext": 38,
+        "Non_assignment_expressionContext": 1105,
+        "Conditional_expressionContext": 1105,
+        "Null_coalescing_expressionContext": 1105,
+        "Conditional_or_expressionContext": 1105,
+        "Conditional_and_expressionContext": 1119,
+        "Inclusive_or_expressionContext": 1149,
+        "Exclusive_or_expressionContext": 1149,
+        "And_expressionContext": 1149,
+        "Equality_expressionContext": 1149,
+        "Relational_expressionContext": 1241,
+        "Shift_expressionContext": 1265,
+        "Additive_expressionContext": 1265,
+        "Multiplicative_expressionContext": 1323,
+        "Switch_expressionContext": 1330,
+        "Range_expressionContext": 1330,
+        "SimpleNameExpressionContext": 892,
+        "Property_declarationContext": 6,
+        "Member_nameContext": 6,
+        "Accessor_declarationsContext": 6,
+        "Accessor_bodyContext": 9,
+        "Set_accessor_declarationContext": 3,
+        "ObjectCreationExpressionContext": 105,
+        "Object_creation_expressionContext": 56,
+        "Enum_definitionContext": 1,
+        "Enum_bodyContext": 1,
+        "Enum_member_declarationContext": 24,
+        "Variable_initializerContext": 1,
+        "Object_or_collection_initializerContext": 49,
+        "Collection_initializerContext": 18,
+        "Element_initializerContext": 35,
+        "Expression_listContext": 4,
+        "LiteralExpressionContext": 351,
+        "LiteralContext": 351,
+        "String_literalContext": 222,
+        "Method_invocationContext": 234,
+        "Argument_listContext": 207,
+        "ArgumentContext": 311,
+        "Boolean_literalContext": 13,
+        "Method_declarationContext": 36,
+        "Method_member_nameContext": 36,
+        "Method_bodyContext": 36,
+        "SwitchStatementContext": 5,
+        "Switch_sectionContext": 54,
+        "Switch_labelContext": 64,
+        "Bracket_expressionContext": 121,
+        "Indexer_argumentContext": 121,
+        "BreakStatementContext": 10,
+        "ReturnStatementContext": 128,
+        "DeclarationStatementContext": 106,
+        "Local_variable_declarationContext": 106,
+        "Local_variable_typeContext": 111,
+        "Local_variable_declaratorContext": 106,
+        "Local_variable_initializerContext": 106,
+        "Cast_expressionContext": 46,
+        "Simple_typeContext": 73,
+        "Numeric_typeContext": 51,
+        "Floating_point_typeContext": 38,
+        "TheEmptyStatementContext": 1,
+        "IfStatementContext": 85,
+        "IsTypeContext": 21,
+        "If_bodyContext": 116,
+        "Interpolated_regular_stringContext": 2,
+        "Interpolated_regular_string_partContext": 2,
+        "ParenthesisExpressionsContext": 8,
+        "ThrowStatementContext": 6,
+        "Integral_typeContext": 13,
+        "ForStatementContext": 2,
+        "For_initializerContext": 2,
+        "For_iteratorContext": 2,
+        "ForeachStatementContext": 5,
+        "WhileStatementContext": 13,
+        "MemberAccessExpressionContext": 7,
+        "Predefined_typeContext": 7,
+        "ContinueStatementContext": 1,
+        "Tuple_typeContext": 2,
+        "Tuple_elementContext": 6,
+        "TupleExpressionContext": 2,
+        "Object_initializerContext": 31,
+        "Member_initializer_listContext": 30,
+        "Member_initializerContext": 57,
+        "Initializer_valueContext": 57,
+        "DoStatementContext": 2,
+        "ErrorNodeImpl": 76,
+        "AttributesContext": 2,
+        "Attribute_sectionContext": 3,
+        "Attribute_listContext": 2,
+        "AttributeContext": 2,
+        "TryStatementContext": 1,
+        "Catch_clausesContext": 1,
+        "Specific_catch_clauseContext": 1
+    },
+    "max_depth": 549,
+    "number_of_variables": 106,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 36,
+    "number_of_classes": 7,
+    "number_of_interfaces": 0,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 6,
+    "number_of_try_blocks": 1,
+    "number_of_lists": 2,
+    "number_of_dictionaries": 4,
+    "number_of_enums": 1,
+    "number_of_delegates": 0,
+    "function_calls": 105,
+    "variable_names": [
+        [
+            "Dictionary",
+            "Var"
+        ],
+        [
+            "string",
+            "type_right"
+        ],
+        [
+            "string",
+            "v1_type"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "dynamic",
+            "value"
+        ],
+        [
+            "object",
+            "value_base"
+        ],
+        [
+            "int",
+            "f_position"
+        ],
+        [
+            "object",
+            "value_print"
+        ],
+        [
+            "object",
+            "value_sin"
+        ],
+        [
+            "dynamic",
+            "result"
+        ],
+        [
+            "dynamic",
+            "left_or"
+        ],
+        [
+            "object",
+            "condition"
+        ],
+        [
+            "Function_B",
+            "function"
+        ],
+        [
+            "object",
+            "left_a"
+        ],
+        [
+            "object",
+            "left_st"
+        ],
+        [
+            "object",
+            "value_agrument"
+        ],
+        [
+            "object",
+            "value_cos"
+        ],
+        [
+            "object",
+            "right_and"
+        ],
+        [
+            "string",
+            "type_left"
+        ],
+        [
+            "dynamic",
+            "right_or"
+        ],
+        [
+            "Dictionary",
+            "Param"
+        ],
+        [
+            "object",
+            "left_b"
+        ],
+        [
+            "object",
+            "right_b"
+        ],
+        [
+            "object",
+            "value"
+        ],
+        [
+            "object",
+            "right_a"
+        ],
+        [
+            "Dictionary",
+            "Scope_actual"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Dictionary",
+            "Var_let_in"
+        ],
+        [
+            "object",
+            "right_st"
+        ],
+        [
+            "Node",
+            "param_f"
+        ],
+        [
+            "bool",
+            "is_found"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "object",
+            "left_and"
+        ],
+        [
+            "object",
+            "not"
+        ],
+        [
+            "string",
+            "s"
+        ],
+        [
+            "string",
+            "word"
+        ],
+        [
+            "int",
+            "dot_counter"
+        ],
+        [
+            "string",
+            "value"
+        ],
+        [
+            "(",
+            "s"
+        ],
+        [
+            "Token",
+            "currentToken"
+        ],
+        [
+            "string",
+            "number"
+        ],
+        [
+            "List",
+            "TS"
+        ],
+        [
+            "Node",
+            "parammeters"
+        ],
+        [
+            "Node",
+            "operations_else"
+        ],
+        [
+            "Node",
+            "param"
+        ],
+        [
+            "Node",
+            "value"
+        ],
+        [
+            "Node",
+            "operations_if"
+        ],
+        [
+            "dynamic",
+            "value"
+        ],
+        [
+            "Node",
+            "parammeter_name"
+        ],
+        [
+            "Node",
+            "valor2"
+        ],
+        [
+            "string",
+            "a"
+        ],
+        [
+            "Node",
+            "valor"
+        ],
+        [
+            "string",
+            "op"
+        ],
+        [
+            "Token",
+            "current_token"
+        ],
+        [
+            "Node",
+            "variable"
+        ],
+        [
+            "Node",
+            "name"
+        ],
+        [
+            "Node",
+            "conditional_if_else"
+        ],
+        [
+            "Node",
+            "expression"
+        ],
+        [
+            "Node",
+            "operation"
+        ],
+        [
+            "Node",
+            "node"
+        ],
+        [
+            "Node",
+            "operations"
+        ],
+        [
+            "Node",
+            "condition"
+        ],
+        [
+            "dynamic",
+            "f_name"
+        ],
+        [
+            "Node",
+            "function_name"
+        ],
+        [
+            "bool",
+            "comma"
+        ],
+        [
+            "Node",
+            "function"
+        ],
+        [
+            "Node",
+            "right"
+        ],
+        [
+            "Node",
+            "n"
+        ],
+        [
+            "Node",
+            "assigments"
+        ],
+        [
+            "Node",
+            "var"
+        ],
+        [
+            "Node",
+            "Tree"
+        ],
+        [
+            "string",
+            "msg"
+        ],
+        [
+            "string",
+            "s"
+        ],
+        [
+            "Lexer",
+            "T"
+        ],
+        [
+            "Node",
+            "N"
+        ],
+        [
+            "Parser",
+            "P"
+        ],
+        [
+            "Semantic_Analyzer",
+            "sa"
+        ],
+        [
+            "List",
+            "TS"
+        ]
+    ],
+    "method_names": [
+        "Save_Var",
+        "Expected",
+        "Read_Parser",
+        "Get_Var_Param",
+        "Evaluate",
+        "Type_Expected",
+        "Identify",
+        "Call_Function",
+        "Input_Error",
+        "Choice",
+        "Function_Exist",
+        "Int_Analyzer",
+        "Get_token",
+        "Get_Sequency",
+        "Skip_Space",
+        "Input_Error",
+        "String_Analyzer",
+        "Move_on",
+        "Own_Words",
+        "Read",
+        "Layer_4",
+        "Conditional",
+        "Layer_6",
+        "Exceptions_Missing",
+        "Layer_1",
+        "Layer_3",
+        "Parse",
+        "Global_Layer",
+        "Layer_5",
+        "Factor",
+        "Showing",
+        "Layer_2",
+        "Input_Error",
+        "Function",
+        "Assigment",
+        "Main"
+    ],
+    "method_lengths": [
+        5,
+        14,
+        200,
+        13,
+        35,
+        54,
+        14,
+        4,
+        21,
+        28,
+        7,
+        197,
+        36,
+        4,
+        12,
+        9,
+        19,
+        10,
+        16,
+        14,
+        6,
+        24,
+        31,
+        9,
+        12,
+        28,
+        12,
+        12,
+        12,
+        13,
+        13,
+        12,
+        138,
+        4,
+        13,
+        43
+    ],
+    "class_names": [
+        "Function_B",
+        "Node",
+        "Token",
+        "Semantic_Analyzer",
+        "Lexer",
+        "Parser",
+        "Program"
+    ],
+    "interface_names": [],
+    "delegate_names": [],
+    "enums_names": [
+        "TokenType"
+    ],
+    "distinct_tokens_count": {},
+    "control_structures_if": 85,
+    "control_structures_switch": 5,
+    "control_structures_for": 2,
+    "control_structures_while": 13,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 51,
+    "access_modifiers_private": 11,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 2,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 0,
+    "modifier_new": 20,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "method_return_types": {
+        "Read_Parser": "void",
+        "Choice": "void",
+        "Evaluate": "object",
+        "Get_Var_Param": "Dictionary",
+        "Save_Var": "void",
+        "Call_Function": "int",
+        "Function_Exist": "bool",
+        "Input_Error": "void",
+        "Type_Expected": "void",
+        "Expected": "void",
+        "Identify": "string",
+        "Get_token": "Token",
+        "Own_Words": "Token",
+        "Move_on": "void",
+        "Skip_Space": "void",
+        "Int_Analyzer": "double",
+        "String_Analyzer": "string",
+        "Read": "(",
+        "Get_Sequency": "List",
+        "Parse": "Node",
+        "Global_Layer": "Node",
+        "Assigment": "Node",
+        "Showing": "Node",
+        "Conditional": "Node",
+        "Function": "Node",
+        "Layer_6": "Node",
+        "Layer_5": "Node",
+        "Layer_4": "Node",
+        "Layer_3": "Node",
+        "Layer_2": "Node",
+        "Layer_1": "Node",
+        "Factor": "Node",
+        "Exceptions_Missing": "void",
+        "Main": "void"
+    },
+    "method_parameters": {},
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 30,
+    "linq_queries_count": 0,
+    "library_call_console": 5,
+    "library_call_math": 6,
+    "number_of_lambdas": 0,
+    "number_of_getters": 6,
+    "number_of_setters": 3,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 7,
+    "project_name": "INTERPRETE-C--to-HULK",
+    "label": "original"
+}

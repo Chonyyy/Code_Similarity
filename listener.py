@@ -70,7 +70,7 @@ class FeatureExtractorListener(CSharpParserListener):
         self.linq_queries_sum = 0
         self.linq_queries_count = 0
         
-        self.method_return_types = {}
+        self.method_return_types = set()
         self.method_parameters = {}
         
         self.number_of_lambdas = 0
@@ -118,8 +118,7 @@ class FeatureExtractorListener(CSharpParserListener):
             self.method_lengths.append(stop_line - start_line + 1)
             
             return_type = ctx.parentCtx.start.text
-            self.method_return_types[ctx.start.text] = return_type
-            
+            self.method_return_types.add((ctx.start.text,return_type))            
             # Obtener parámetros del método
             param_count = 0
             param_info = []
