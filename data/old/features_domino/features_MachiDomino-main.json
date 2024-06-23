@@ -1,0 +1,597 @@
+{
+    "total_nodes": 34962,
+    "node_count": {
+        "Compilation_unitContext": 21,
+        "Namespace_member_declarationsContext": 30,
+        "Namespace_member_declarationContext": 35,
+        "Namespace_declarationContext": 15,
+        "TerminalNodeImpl": 6238,
+        "Qualified_identifierContext": 15,
+        "IdentifierContext": 1918,
+        "Namespace_bodyContext": 15,
+        "Type_declarationContext": 20,
+        "All_member_modifiersContext": 86,
+        "All_member_modifierContext": 89,
+        "Interface_definitionContext": 6,
+        "Variant_type_parameter_listContext": 6,
+        "Variant_type_parameterContext": 6,
+        "Type_parameter_constraints_clausesContext": 19,
+        "Type_parameter_constraints_clauseContext": 19,
+        "Type_parameter_constraintsContext": 19,
+        "Primary_constraintContext": 19,
+        "Class_typeContext": 389,
+        "Namespace_or_type_nameContext": 449,
+        "Secondary_constraintsContext": 19,
+        "Type_argument_listContext": 223,
+        "Type_Context": 481,
+        "Base_typeContext": 481,
+        "Class_bodyContext": 20,
+        "Class_member_declarationsContext": 20,
+        "Class_member_declarationContext": 84,
+        "Common_member_declarationContext": 84,
+        "Method_declarationContext": 53,
+        "Method_member_nameContext": 53,
+        "Formal_parameter_listContext": 48,
+        "Fixed_parametersContext": 48,
+        "Fixed_parameterContext": 73,
+        "Arg_declarationContext": 73,
+        "Rank_specifierContext": 66,
+        "Method_bodyContext": 53,
+        "Typed_member_declarationContext": 54,
+        "Simple_typeContext": 120,
+        "Numeric_typeContext": 108,
+        "Integral_typeContext": 108,
+        "Property_declarationContext": 14,
+        "Member_nameContext": 14,
+        "Accessor_declarationsContext": 14,
+        "Accessor_bodyContext": 14,
+        "Using_directivesContext": 19,
+        "UsingNamespaceDirectiveContext": 32,
+        "Class_definitionContext": 14,
+        "BlockContext": 122,
+        "Statement_listContext": 122,
+        "StatementContext": 439,
+        "Embedded_statementContext": 429,
+        "ExpressionStatementContext": 247,
+        "ExpressionContext": 925,
+        "AssignmentContext": 72,
+        "Unary_expressionContext": 1036,
+        "Primary_expressionContext": 1020,
+        "SimpleNameExpressionContext": 757,
+        "Member_accessContext": 354,
+        "Assignment_operatorContext": 72,
+        "Non_assignment_expressionContext": 841,
+        "Conditional_expressionContext": 841,
+        "Null_coalescing_expressionContext": 841,
+        "Conditional_or_expressionContext": 841,
+        "Conditional_and_expressionContext": 859,
+        "Inclusive_or_expressionContext": 861,
+        "Exclusive_or_expressionContext": 861,
+        "And_expressionContext": 861,
+        "Equality_expressionContext": 861,
+        "Relational_expressionContext": 889,
+        "Shift_expressionContext": 931,
+        "Additive_expressionContext": 931,
+        "Multiplicative_expressionContext": 948,
+        "Switch_expressionContext": 948,
+        "Range_expressionContext": 948,
+        "DeclarationStatementContext": 60,
+        "Local_variable_declarationContext": 79,
+        "Local_variable_typeContext": 85,
+        "Local_variable_declaratorContext": 79,
+        "Local_variable_initializerContext": 79,
+        "ObjectCreationExpressionContext": 38,
+        "Object_creation_expressionContext": 34,
+        "Method_invocationContext": 264,
+        "Argument_listContext": 165,
+        "ArgumentContext": 198,
+        "IfStatementContext": 42,
+        "LiteralExpressionContext": 213,
+        "LiteralContext": 213,
+        "If_bodyContext": 42,
+        "Global_attribute_sectionContext": 16,
+        "Global_attribute_targetContext": 16,
+        "Attribute_listContext": 16,
+        "AttributeContext": 16,
+        "Qualified_alias_memberContext": 4,
+        "Attribute_argumentContext": 18,
+        "String_literalContext": 75,
+        "ErrorNodeImpl": 1953,
+        "Type_parameter_listContext": 13,
+        "Type_parameterContext": 13,
+        "Class_baseContext": 11,
+        "WhileStatementContext": 17,
+        "Boolean_literalContext": 18,
+        "ForStatementContext": 31,
+        "For_initializerContext": 31,
+        "For_iteratorContext": 31,
+        "ContinueStatementContext": 5,
+        "Bracket_expressionContext": 139,
+        "Indexer_argumentContext": 139,
+        "BreakStatementContext": 5,
+        "Constructor_declarationContext": 5,
+        "BodyContext": 5,
+        "ReturnStatementContext": 53,
+        "Field_declarationContext": 10,
+        "Variable_declaratorsContext": 10,
+        "Variable_declaratorContext": 10,
+        "MemberAccessExpressionContext": 11,
+        "Predefined_typeContext": 11,
+        "ForeachStatementContext": 6,
+        "Cast_expressionContext": 4,
+        "Object_or_collection_initializerContext": 3,
+        "Collection_initializerContext": 3,
+        "Element_initializerContext": 6,
+        "Expression_listContext": 1,
+        "ParenthesisExpressionsContext": 1,
+        "Interpolated_regular_stringContext": 1,
+        "Interpolated_regular_string_partContext": 1,
+        "Tuple_typeContext": 1,
+        "Tuple_elementContext": 1
+    },
+    "max_depth": 1401,
+    "number_of_variables": 79,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 53,
+    "number_of_classes": 14,
+    "number_of_interfaces": 6,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 19,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 12,
+    "number_of_dictionaries": 3,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 38,
+    "variable_names": [
+        [
+            "Menu",
+            "menu"
+        ],
+        [
+            "Clasico",
+            "clasico"
+        ],
+        [
+            "Banco",
+            "banco"
+        ],
+        [
+            "Longana",
+            "longana"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "contadorFin"
+        ],
+        [
+            "List",
+            "ganadores"
+        ],
+        [
+            "int",
+            "auxiliarMesa"
+        ],
+        [
+            "int",
+            "contadorSalida"
+        ],
+        [
+            "EL",
+            "GANADOR"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "contadorFin"
+        ],
+        [
+            "List",
+            "ganadores"
+        ],
+        [
+            "int",
+            "contadorSalida"
+        ],
+        [
+            "EL",
+            "GANADOR"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "T",
+            "cara1"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "T",
+            "cara2"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "jugada"
+        ],
+        [
+            "string",
+            "palabra"
+        ],
+        [
+            "T",
+            "izquierda"
+        ],
+        [
+            "string",
+            "decision"
+        ],
+        [
+            "T",
+            "derecha"
+        ],
+        [
+            "List",
+            "almacenValoresFichas"
+        ],
+        [
+            "T",
+            "cara1"
+        ],
+        [
+            "List",
+            "caras"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Dictionary",
+            "valorFichas"
+        ],
+        [
+            "List",
+            "auxiliar"
+        ],
+        [
+            "T",
+            "auxiliar"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "T",
+            "cara2"
+        ],
+        [
+            "Dictionary",
+            "valorCaras"
+        ],
+        [
+            "T",
+            "cara1"
+        ],
+        [
+            "T",
+            "cara2"
+        ],
+        [
+            "int",
+            "totalFichas"
+        ],
+        [
+            "string",
+            "palabra"
+        ],
+        [
+            "List",
+            "auxiliar"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "T",
+            "ficha"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "auxiliarRandom"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "valorMano"
+        ],
+        [
+            "Dictionary",
+            "valorElementos"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "List",
+            "ganadores"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "lista"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "pases"
+        ],
+        [
+            "List",
+            "ganadores"
+        ]
+    ],
+    "method_names": [
+        "Victoria",
+        "Juega",
+        "GeneraMano",
+        "Ganador",
+        "RecibeMano",
+        "Juego",
+        "GanadorCierre",
+        "GeneraFichas",
+        "JugadaValida",
+        "Fin",
+        "Main",
+        "VerJuego",
+        "Juego",
+        "Juego",
+        "OrdenaFicha",
+        "RecibeMano",
+        "Juega",
+        "Juega",
+        "OrdenaFicha",
+        "RecibeMano",
+        "CabeFicha",
+        "NoLleva",
+        "ConvierteFicha",
+        "Juega",
+        "OrdenaFicha",
+        "RecibeMano",
+        "Sumatoria",
+        "GetLlave",
+        "OrdenaMano",
+        "GanadorCierre",
+        "Fin",
+        "JugadaValida",
+        "Victoria",
+        "FlujoJuego",
+        "Presentacion",
+        "CantidadJugadores",
+        "ManoInicial",
+        "CriterioDeSalida",
+        "TipoJuego",
+        "Continuacion",
+        "GeneraFichas",
+        "IgualaArrays",
+        "GeneraMano",
+        "EliminaElementosRepetidos",
+        "Fin",
+        "Fin",
+        "MenorLista",
+        "Sumatoria",
+        "ConvierteAInt",
+        "Ganador",
+        "MenorLista",
+        "Ganador"
+    ],
+    "method_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        19,
+        4,
+        74,
+        64,
+        59,
+        4,
+        9,
+        4,
+        132,
+        18,
+        10,
+        9,
+        61,
+        4,
+        9,
+        38,
+        4,
+        9,
+        12,
+        7,
+        4,
+        10,
+        4,
+        72,
+        6,
+        6,
+        4,
+        4,
+        7,
+        3,
+        16,
+        20,
+        24,
+        10,
+        10,
+        10,
+        24,
+        9,
+        9,
+        12,
+        17,
+        12
+    ],
+    "class_names": [
+        "Program",
+        "Longana",
+        "Clasico",
+        "JugadorRandom",
+        "JugadorUsuario",
+        "JugadorBotaGorda",
+        "Reglas",
+        "Domino",
+        "Menu",
+        "Banco",
+        "FinClasico",
+        "FinPersonalizado",
+        "CierreClasico",
+        "CierreBonificado"
+    ],
+    "interface_names": [
+        "IGanadorCierre",
+        "IBanco",
+        "ITipoJuego",
+        "IReglas",
+        "IJugador",
+        "IFin"
+    ],
+    "delegate_names": [],
+    "enums_names": [],
+    "distinct_tokens_count": {},
+    "control_structures_if": 42,
+    "control_structures_switch": 0,
+    "control_structures_for": 31,
+    "control_structures_while": 17,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 59,
+    "access_modifiers_private": 25,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 5,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 0,
+    "modifier_new": 22,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "method_return_types": {
+        "Juega": "void",
+        "RecibeMano": "void",
+        "Victoria": "bool",
+        "Fin": "bool",
+        "JugadaValida": "bool",
+        "GanadorCierre": "List",
+        "GeneraFichas": "void",
+        "GeneraMano": "void",
+        "Ganador": "List",
+        "Juego": "void",
+        "Main": "void",
+        "VerJuego": "void",
+        "OrdenaFicha": "T",
+        "NoLleva": "bool",
+        "CabeFicha": "bool",
+        "OrdenaMano": "void",
+        "ConvierteFicha": "int",
+        "Sumatoria": "int",
+        "GetLlave": "T",
+        "FlujoJuego": "void",
+        "TipoJuego": "void",
+        "Presentacion": "void",
+        "CantidadJugadores": "void",
+        "ManoInicial": "void",
+        "Continuacion": "void",
+        "CriterioDeSalida": "void",
+        "EliminaElementosRepetidos": "List",
+        "IgualaArrays": "bool",
+        "ConvierteAInt": "List",
+        "MenorLista": "int"
+    },
+    "method_parameters": {},
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 43,
+    "linq_queries_count": 0,
+    "library_call_console": 31,
+    "library_call_math": 0,
+    "number_of_lambdas": 0,
+    "number_of_getters": 14,
+    "number_of_setters": 0,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 15,
+    "project_name": "MachiDomino-main",
+    "label": "original"
+}

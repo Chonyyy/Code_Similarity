@@ -1,5 +1,664 @@
 {
     "total_nodes": 30791,
+    "max_depth": 691,
+    "number_of_variables": 108,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 47,
+    "number_of_classes": 22,
+    "number_of_interfaces": 5,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 15,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 9,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 61,
+    "enums_names": [],
+    "control_structures_if": 45,
+    "control_structures_switch": 9,
+    "control_structures_for": 28,
+    "control_structures_while": 8,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 93,
+    "access_modifiers_private": 0,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 3,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 3,
+    "modifier_new": 15,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 42,
+    "linq_queries_count": 0,
+    "library_call_console": 15,
+    "library_call_math": 0,
+    "number_of_lambdas": 0,
+    "number_of_getters": 16,
+    "number_of_setters": 0,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 6,
+    "method_lengths": [
+        5,
+        5,
+        6,
+        4,
+        4,
+        4,
+        4,
+        1,
+        4,
+        4,
+        17,
+        36,
+        4,
+        17,
+        4,
+        36,
+        4,
+        4,
+        46,
+        45,
+        9,
+        9,
+        30,
+        1,
+        16,
+        15,
+        15,
+        15,
+        1,
+        20,
+        16,
+        1,
+        18,
+        21,
+        14,
+        1,
+        30,
+        56,
+        16,
+        50,
+        56,
+        43,
+        17,
+        17,
+        16,
+        4,
+        5
+    ],
+    "method_parameters": [
+        [
+            "Contains",
+            [
+                [
+                    "int",
+                    "value"
+                ]
+            ]
+        ],
+        [
+            "Play",
+            [
+                [
+                    "List<Token>",
+                    "field"
+                ]
+            ]
+        ],
+        [
+            "AssignToken",
+            [
+                [
+                    "Token",
+                    "token"
+                ]
+            ]
+        ],
+        [
+            "SortHand",
+            [
+                [
+                    "List<Token>",
+                    "hand"
+                ]
+            ]
+        ],
+        [
+            "Play",
+            [
+                [
+                    "List<Token>",
+                    "field"
+                ]
+            ]
+        ],
+        [
+            "AssignToken",
+            [
+                [
+                    "Token",
+                    "token"
+                ]
+            ]
+        ],
+        [
+            "SortHand",
+            [
+                [
+                    "List<Token>",
+                    "hand"
+                ]
+            ]
+        ],
+        [
+            "Play",
+            [
+                [
+                    "List<Token>",
+                    "field"
+                ]
+            ]
+        ],
+        [
+            "AssignToken",
+            [
+                [
+                    "Token",
+                    "token"
+                ]
+            ]
+        ],
+        [
+            "Play",
+            [
+                [
+                    "List<Token>",
+                    "field"
+                ]
+            ]
+        ],
+        [
+            "FancySelector",
+            [
+                [
+                    "string",
+                    "initialMessage"
+                ],
+                [
+                    "string[]",
+                    "states"
+                ]
+            ]
+        ],
+        [
+            "GetTurnOrder",
+            [
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "GetTurnOrder",
+            [
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "GetTurnOrder",
+            [
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "DistributeTokens",
+            [
+                [
+                    "List<Token>",
+                    "tokens"
+                ],
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "DistributeTokens",
+            [
+                [
+                    "List<Token>",
+                    "tokens"
+                ],
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "DistributeTokens",
+            [
+                [
+                    "List<Token>",
+                    "tokens"
+                ],
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "CreateStates",
+            [
+                [
+                    "List<Token>",
+                    "tokens"
+                ]
+            ]
+        ],
+        [
+            "CheckIfTheGameIsOver",
+            [
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "CheckIfTheGameIsOver",
+            [
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "CheckIfTheGameIsOver",
+            [
+                [
+                    "List<IPlayer>",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "Main",
+            [
+                [
+                    "string[]",
+                    "args"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "int",
+            "aux"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "aux"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Random",
+            "y"
+        ],
+        [
+            "int",
+            "indexToRemove"
+        ],
+        [
+            "Token",
+            "returner"
+        ],
+        [
+            "Token",
+            "temp"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "Random",
+            "x"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "handBeforePlay"
+        ],
+        [
+            "ConsoleKeyInfo",
+            "key"
+        ],
+        [
+            "string",
+            "ret"
+        ],
+        [
+            "int",
+            "stateSelector"
+        ],
+        [
+            "int",
+            "endGame"
+        ],
+        [
+            "Selector",
+            "selector"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "aux"
+        ],
+        [
+            "int",
+            "memory"
+        ],
+        [
+            "int",
+            "sum"
+        ],
+        [
+            "int",
+            "amount"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "maxAmountTokens"
+        ],
+        [
+            "Random",
+            "y"
+        ],
+        [
+            "string",
+            "status"
+        ],
+        [
+            "string",
+            "ret"
+        ],
+        [
+            "List",
+            "ret"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "Random",
+            "x"
+        ],
+        [
+            "string",
+            "retMessage"
+        ],
+        [
+            "string",
+            "x"
+        ],
+        [
+            "int",
+            "selectorValue"
+        ],
+        [
+            "string",
+            "messagee"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "string",
+            "z"
+        ],
+        [
+            "VisualInterface",
+            "x"
+        ],
+        [
+            "int",
+            "amountOfPlayers"
+        ],
+        [
+            "string",
+            "y"
+        ],
+        [
+            "bool",
+            "final"
+        ],
+        [
+            "int",
+            "selectroValue"
+        ]
+    ],
+    "method_names": [
+        "Higher",
+        "Contains",
+        "Rotate",
+        "Lower",
+        "ToString",
+        "TurnsPassed",
+        "AssignToken",
+        "SortHand",
+        "Play",
+        "PrintHand",
+        "TableStatus",
+        "Run",
+        "FancySelector",
+        "CreateStates",
+        "GetTurnOrder",
+        "DistributeTokens",
+        "CheckIfTheGameIsOver",
+        "GenerateTokens",
+        "InicializeGame",
+        "SelectGameEnder",
+        "Main",
+        "SelectTurnSelector",
+        "SelectTokenGenerator",
+        "PrintMessage",
+        "SelectPlayers",
+        "SelectTokenDistributor",
+        "RunVisual"
+    ],
+    "method_return_types": [
+        [
+            "Lower",
+            "int"
+        ],
+        [
+            "Rotate",
+            "void"
+        ],
+        [
+            "Contains",
+            "bool"
+        ],
+        [
+            "Higher",
+            "int"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "TurnsPassed",
+            "void"
+        ],
+        [
+            "SortHand",
+            "void"
+        ],
+        [
+            "AssignToken",
+            "void"
+        ],
+        [
+            "Play",
+            "Token"
+        ],
+        [
+            "TableStatus",
+            "string"
+        ],
+        [
+            "FancySelector",
+            "int"
+        ],
+        [
+            "PrintHand",
+            "string"
+        ],
+        [
+            "Run",
+            "string"
+        ],
+        [
+            "CreateStates",
+            "string"
+        ],
+        [
+            "DistributeTokens",
+            "void"
+        ],
+        [
+            "GenerateTokens",
+            "List"
+        ],
+        [
+            "GetTurnOrder",
+            "void"
+        ],
+        [
+            "CheckIfTheGameIsOver",
+            "int"
+        ],
+        [
+            "Main",
+            "void"
+        ],
+        [
+            "SelectTokenGenerator",
+            "void"
+        ],
+        [
+            "PrintMessage",
+            "string"
+        ],
+        [
+            "RunVisual",
+            "void"
+        ],
+        [
+            "SelectTurnSelector",
+            "void"
+        ],
+        [
+            "SelectGameEnder",
+            "void"
+        ],
+        [
+            "SelectTokenDistributor",
+            "void"
+        ],
+        [
+            "SelectPlayers",
+            "void"
+        ],
+        [
+            "InicializeGame",
+            "void"
+        ]
+    ],
+    "class_names": [
+        "InToken",
+        "AnimalToken",
+        "Animal",
+        "Token",
+        "HighScoreDropperPlayer",
+        "LowScoreDropperPlayer",
+        "RandomPlayer",
+        "Selector",
+        "Game",
+        "RadomTokenDistributor",
+        "DoubleNineInToken",
+        "ExpelEnd",
+        "DoubleSixAnimalToken",
+        "DoubleSixInToken",
+        "DoubleNineAnimalToken",
+        "GetRandomFirstPlayer",
+        "CommonEnd",
+        "SelectedTokenDistributor",
+        "GetAllPLayersRandom",
+        "Class1",
+        "Printer",
+        "VisualInterface"
+    ],
+    "interface_names": [
+        "IPlayer",
+        "TurnOrderSelector",
+        "TokensDistributor",
+        "GameEnder",
+        "TokenAmountGenerator"
+    ],
+    "delegate_names": [],
     "node_count": {
         "Compilation_unitContext": 17,
         "Using_directivesContext": 15,
@@ -122,370 +781,6 @@
         "Attribute_argumentContext": 34,
         "Variable_initializerContext": 3
     },
-    "max_depth": 691,
-    "number_of_variables": 108,
-    "number_of_constants": 0,
-    "out_variables": 0,
-    "ref_params": 0,
-    "number_of_methods": 47,
-    "number_of_classes": 22,
-    "number_of_interfaces": 5,
-    "number_of_abstract_classes": 0,
-    "number_of_sealed_classes": 0,
-    "import_statements": 15,
-    "number_of_try_blocks": 0,
-    "number_of_lists": 9,
-    "number_of_dictionaries": 0,
-    "number_of_enums": 0,
-    "number_of_delegates": 0,
-    "function_calls": 61,
-    "variable_names": [
-        [
-            "int",
-            "aux"
-        ],
-        [
-            "Token",
-            "returner"
-        ],
-        [
-            "Token",
-            "temp"
-        ],
-        [
-            "Random",
-            "y"
-        ],
-        [
-            "int",
-            "indexToRemove"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "aux"
-        ],
-        [
-            "Random",
-            "x"
-        ],
-        [
-            "int",
-            "endGame"
-        ],
-        [
-            "string",
-            "ret"
-        ],
-        [
-            "ConsoleKeyInfo",
-            "key"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "stateSelector"
-        ],
-        [
-            "string",
-            "handBeforePlay"
-        ],
-        [
-            "int",
-            "amount"
-        ],
-        [
-            "Selector",
-            "selector"
-        ],
-        [
-            "List",
-            "ret"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "Random",
-            "y"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "memory"
-        ],
-        [
-            "int",
-            "sum"
-        ],
-        [
-            "int",
-            "maxAmountTokens"
-        ],
-        [
-            "string",
-            "ret"
-        ],
-        [
-            "string",
-            "status"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "List",
-            "aux"
-        ],
-        [
-            "Random",
-            "x"
-        ],
-        [
-            "string",
-            "x"
-        ],
-        [
-            "string",
-            "z"
-        ],
-        [
-            "string",
-            "messagee"
-        ],
-        [
-            "int",
-            "amountOfPlayers"
-        ],
-        [
-            "int",
-            "selectroValue"
-        ],
-        [
-            "string",
-            "y"
-        ],
-        [
-            "int",
-            "selectorValue"
-        ],
-        [
-            "bool",
-            "final"
-        ],
-        [
-            "string",
-            "retMessage"
-        ],
-        [
-            "VisualInterface",
-            "x"
-        ],
-        [
-            "int",
-            "count"
-        ]
-    ],
-    "method_names": [
-        "Higher",
-        "Rotate",
-        "ToString",
-        "Lower",
-        "Contains",
-        "Play",
-        "SortHand",
-        "TurnsPassed",
-        "AssignToken",
-        "Run",
-        "PrintHand",
-        "TableStatus",
-        "FancySelector",
-        "GenerateTokens",
-        "GetTurnOrder",
-        "CheckIfTheGameIsOver",
-        "CreateStates",
-        "DistributeTokens",
-        "SelectTokenDistributor",
-        "SelectTokenGenerator",
-        "SelectTurnSelector",
-        "PrintMessage",
-        "SelectGameEnder",
-        "Main",
-        "SelectPlayers",
-        "InicializeGame",
-        "RunVisual"
-    ],
-    "method_lengths": [
-        5,
-        5,
-        6,
-        4,
-        4,
-        4,
-        4,
-        1,
-        4,
-        4,
-        17,
-        36,
-        4,
-        17,
-        4,
-        36,
-        4,
-        4,
-        46,
-        45,
-        9,
-        9,
-        30,
-        1,
-        16,
-        15,
-        15,
-        15,
-        1,
-        20,
-        16,
-        1,
-        18,
-        21,
-        14,
-        1,
-        30,
-        56,
-        16,
-        50,
-        56,
-        43,
-        17,
-        17,
-        16,
-        4,
-        5
-    ],
-    "class_names": [
-        "InToken",
-        "AnimalToken",
-        "Token",
-        "Animal",
-        "RandomPlayer",
-        "LowScoreDropperPlayer",
-        "HighScoreDropperPlayer",
-        "Selector",
-        "Game",
-        "GetAllPLayersRandom",
-        "CommonEnd",
-        "ExpelEnd",
-        "DoubleSixAnimalToken",
-        "SelectedTokenDistributor",
-        "DoubleSixInToken",
-        "RadomTokenDistributor",
-        "DoubleNineInToken",
-        "DoubleNineAnimalToken",
-        "GetRandomFirstPlayer",
-        "Class1",
-        "VisualInterface",
-        "Printer"
-    ],
-    "interface_names": [
-        "IPlayer",
-        "TokensDistributor",
-        "TokenAmountGenerator",
-        "TurnOrderSelector",
-        "GameEnder"
-    ],
-    "delegate_names": [],
-    "enums_names": [],
-    "distinct_tokens_count": {},
-    "control_structures_if": 45,
-    "control_structures_switch": 9,
-    "control_structures_for": 28,
-    "control_structures_while": 8,
-    "control_structures_dowhile": 0,
-    "access_modifiers_public": 93,
-    "access_modifiers_private": 0,
-    "access_modifiers_protected": 0,
-    "access_modifiers_internal": 0,
-    "access_modifiers_static": 3,
-    "access_modifiers_protected_internal": 0,
-    "access_modifiers_private_protected": 0,
-    "modifier_readonly": 0,
-    "modifier_volatile": 0,
-    "modifier_virtual": 0,
-    "modifier_override": 3,
-    "modifier_new": 15,
-    "modifier_partial": 0,
-    "modifier_extern": 0,
-    "modifier_unsafe": 0,
-    "modifier_async": 0,
-    "method_return_types": {
-        "Higher": "int",
-        "Lower": "int",
-        "Rotate": "void",
-        "Contains": "bool",
-        "ToString": "string",
-        "Play": "Token",
-        "TurnsPassed": "void",
-        "AssignToken": "void",
-        "SortHand": "void",
-        "FancySelector": "int",
-        "TableStatus": "string",
-        "PrintHand": "string",
-        "Run": "string",
-        "GenerateTokens": "List",
-        "GetTurnOrder": "void",
-        "DistributeTokens": "void",
-        "CreateStates": "string",
-        "CheckIfTheGameIsOver": "int",
-        "RunVisual": "void",
-        "InicializeGame": "void",
-        "SelectPlayers": "void",
-        "SelectTokenGenerator": "void",
-        "SelectTurnSelector": "void",
-        "SelectTokenDistributor": "void",
-        "SelectGameEnder": "void",
-        "PrintMessage": "string",
-        "Main": "void"
-    },
-    "method_parameters": {},
-    "linq_querie_select": 0,
-    "linq_queries_where": 0,
-    "linq_queries_orderBy": 0,
-    "linq_queries_groupBy": 0,
-    "linq_queries_join": 0,
-    "linq_queries_sum": 42,
-    "linq_queries_count": 0,
-    "library_call_console": 15,
-    "library_call_math": 0,
-    "number_of_lambdas": 0,
-    "number_of_getters": 16,
-    "number_of_setters": 0,
-    "number_of_tuples": 0,
-    "number_of_namespaces": 6,
     "project_name": "Proyecto-de-Pro-main",
     "label": "original"
 }

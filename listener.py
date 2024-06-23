@@ -72,7 +72,7 @@ class FeatureExtractorListener(CSharpParserListener):
         self.variable_names = set()
         self.method_return_types = set()
         self.method_names = set()
-        self.method_lengths = []
+        # self.method_lengths = []
         self.class_names = set()
         self.interface_names = set()
         self.enum_names = set()
@@ -114,9 +114,9 @@ class FeatureExtractorListener(CSharpParserListener):
         elif node_type == "Method_declarationContext": 
             self.methods += 1
             self.method_names.add(ctx.start.text)
-            start_line = ctx.start.line
-            stop_line = ctx.stop.line
-            self.method_lengths.append(stop_line - start_line + 1)
+            # start_line = ctx.start.line
+            # stop_line = ctx.stop.line
+            # self.method_lengths.append(stop_line - start_line + 1)
             
             return_type = ctx.parentCtx.start.text
             self.method_return_types.add((ctx.start.text,return_type))            
@@ -356,7 +356,7 @@ class FeatureExtractorListener(CSharpParserListener):
             "number_of_setters": self.number_of_setters,
             "number_of_tuples": self.number_of_tuples,
             "number_of_namespaces": self.number_of_namespaces,
-            "method_lengths": self.method_lengths,
+            # "method_lengths": self.method_lengths,
             "method_parameters": self.method_parameters,
             "variable_names": list(self.variable_names),
             "method_names": list(self.method_names),
