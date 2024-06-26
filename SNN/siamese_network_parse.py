@@ -39,23 +39,3 @@ pairs = generate_pairs(all_projects)
 with open('training_pairs.json', 'w') as f:
     json.dump(pairs, f, indent=4)
     
-
-# # Convertir a arrays NumPy
-# def dict_to_vector(d):
-#     # Convertir las características a un solo vector
-#     vector = []
-#     for key in sorted(d.keys()):
-#         value = d[key]
-#         if isinstance(value, list):
-#             vector.extend(value)
-#         else:
-#             vector.append(value)
-#     return np.array(vector)
-
-# data_a_vectors = np.array([dict_to_vector(pair['code_a']) for pair in data['pairs']])
-# data_b_vectors = np.array([dict_to_vector(pair['code_b']) for pair in data['pairs']])
-# labels = np.array([pair['label'] for pair in data['pairs']])
-
-# print("data_a_vectors shape:", data_a_vectors.shape)
-# print("data_b_vectors shape:", data_b_vectors.shape)
-# print("labels shape:", labels.shape)
