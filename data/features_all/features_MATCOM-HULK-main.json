@@ -1,0 +1,1113 @@
+{
+    "total_nodes": 68395,
+    "max_depth": 671,
+    "number_of_variables": 151,
+    "number_of_constants": 35,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 31,
+    "number_of_classes": 8,
+    "number_of_interfaces": 0,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 3,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 67,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 84,
+    "enums_names": [],
+    "control_structures_if": 260,
+    "control_structures_switch": 0,
+    "control_structures_for": 28,
+    "control_structures_while": 20,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 75,
+    "access_modifiers_private": 0,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 43,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 0,
+    "modifier_new": 60,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 90,
+    "linq_queries_count": 0,
+    "library_call_console": 2,
+    "library_call_math": 12,
+    "number_of_lambdas": 0,
+    "number_of_getters": 0,
+    "number_of_setters": 0,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 0,
+    "method_parameters": [
+        [
+            "Is_Function_on_List",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Is_Variable_on_Dict",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Remove_Function",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Get_Func",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Parser",
+            [
+                [
+                    "List<string>",
+                    "input"
+                ],
+                [
+                    "List<string>",
+                    "tokens"
+                ],
+                [
+                    "List<string>",
+                    "Undefined_variables"
+                ]
+            ]
+        ],
+        [
+            "Recursive_Parser",
+            [
+                [
+                    "List<string>",
+                    "input"
+                ],
+                [
+                    "List<string>",
+                    "tokens"
+                ],
+                [
+                    "int",
+                    "mark"
+                ]
+            ]
+        ],
+        [
+            "Boolean_Parser",
+            [
+                [
+                    "List<string>",
+                    "input"
+                ],
+                [
+                    "List<string>",
+                    "tokens"
+                ]
+            ]
+        ],
+        [
+            "Try_Solve_Binary",
+            [
+                [
+                    "string",
+                    "Left"
+                ],
+                [
+                    "string",
+                    "Right"
+                ],
+                [
+                    "string",
+                    "Operation"
+                ]
+            ]
+        ],
+        [
+            "Parsing",
+            [
+                [
+                    "List<(string,string)>",
+                    "splitted_input"
+                ]
+            ]
+        ],
+        [
+            "Tokens",
+            [
+                [
+                    "List<(string,string)>",
+                    "splitted_input"
+                ]
+            ]
+        ],
+        [
+            "Input",
+            [
+                [
+                    "List<(string,string)>",
+                    "splitted_input"
+                ]
+            ]
+        ],
+        [
+            "Function_Balance",
+            [
+                [
+                    "List<string>",
+                    "input"
+                ]
+            ]
+        ],
+        [
+            "EndLine_Balance",
+            [
+                [
+                    "List<string>",
+                    "input"
+                ]
+            ]
+        ],
+        [
+            "Let_In_Balance",
+            [
+                [
+                    "List<string>",
+                    "input"
+                ]
+            ]
+        ],
+        [
+            "Parenthesis_Balance",
+            [
+                [
+                    "List<string>",
+                    "input"
+                ]
+            ]
+        ],
+        [
+            "Conditional_Balance",
+            [
+                [
+                    "List<string>",
+                    "input"
+                ]
+            ]
+        ],
+        [
+            "Analyze",
+            [
+                [
+                    "List<(string,string)>",
+                    "splitted_input"
+                ]
+            ]
+        ],
+        [
+            "Recursive_Analyzer",
+            [
+                [
+                    "List<string>",
+                    "Expression"
+                ],
+                [
+                    "List<string>",
+                    "Expr_Tokens"
+                ]
+            ]
+        ],
+        [
+            "Variables_Contains",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Variables_Contains_on_Scope",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Get_Value",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Variables_Remove",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Var_Eval",
+            [
+                [
+                    "string",
+                    "value"
+                ]
+            ]
+        ],
+        [
+            "Solve_Binary",
+            [
+                [
+                    "List<string>",
+                    "Expression"
+                ],
+                [
+                    "List<string>",
+                    "Expr_Tokens"
+                ],
+                [
+                    "string",
+                    "Operation"
+                ],
+                [
+                    "int",
+                    "Op_position"
+                ]
+            ]
+        ],
+        [
+            "Frag",
+            [
+                [
+                    "List<string>",
+                    "Input"
+                ],
+                [
+                    "int",
+                    "init"
+                ],
+                [
+                    "int",
+                    "end"
+                ]
+            ]
+        ],
+        [
+            "Is_All_Par",
+            [
+                [
+                    "List<string>",
+                    "Input"
+                ]
+            ]
+        ],
+        [
+            "Process_Args",
+            [
+                [
+                    "List<string>",
+                    "Input"
+                ],
+                [
+                    "List<string>",
+                    "Tokens"
+                ]
+            ]
+        ],
+        [
+            "Token_Separator",
+            [
+                [
+                    "string",
+                    "input"
+                ]
+            ]
+        ],
+        [
+            "States_determinator",
+            [
+                [
+                    "string",
+                    "aux"
+                ],
+                [
+                    "List<string>",
+                    "states"
+                ],
+                [
+                    "char",
+                    "next_to"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "List",
+            "Remove"
+        ],
+        [
+            "List",
+            "Value"
+        ],
+        [
+            "List",
+            "if_corpus_input"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "string",
+            "else_result"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "else_corpus_input"
+        ],
+        [
+            "List",
+            "Let_List"
+        ],
+        [
+            "List",
+            "Parenthesis_Input"
+        ],
+        [
+            "List",
+            "Input_Left"
+        ],
+        [
+            "List",
+            "Bool_Op_position"
+        ],
+        [
+            "List",
+            "Let_Tokens_List"
+        ],
+        [
+            "List",
+            "Booleans"
+        ],
+        [
+            "List",
+            "Cond_tokens"
+        ],
+        [
+            "List",
+            "Current_Tokens_List"
+        ],
+        [
+            "List",
+            "Current_List"
+        ],
+        [
+            "List",
+            "if_corpus_tokens"
+        ],
+        [
+            "int",
+            "parenthesis_counter"
+        ],
+        [
+            "string",
+            "Result"
+        ],
+        [
+            "string",
+            "Right_Result"
+        ],
+        [
+            "bool",
+            "end"
+        ],
+        [
+            "List",
+            "Bool_Left"
+        ],
+        [
+            "List",
+            "Arg_function"
+        ],
+        [
+            "string",
+            "Bool_Op"
+        ],
+        [
+            "List",
+            "Input_Booleans"
+        ],
+        [
+            "int",
+            "else_counter"
+        ],
+        [
+            "List",
+            "Let"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "List",
+            "Let_Tokens"
+        ],
+        [
+            "List",
+            "Cond"
+        ],
+        [
+            "string",
+            "Left_Result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "Boolean"
+        ],
+        [
+            "string",
+            "if_result"
+        ],
+        [
+            "string",
+            "info"
+        ],
+        [
+            "string",
+            "parenthesis_result"
+        ],
+        [
+            "List",
+            "Input_Boolean"
+        ],
+        [
+            "List",
+            "Arg_function_token"
+        ],
+        [
+            "List",
+            "Parenthesis_tokens"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "List",
+            "Bool_Right"
+        ],
+        [
+            "List",
+            "else_corpus_tokens"
+        ],
+        [
+            "List",
+            "Defined_variables"
+        ],
+        [
+            "List",
+            "Input_Right"
+        ],
+        [
+            "List",
+            "Corpus"
+        ],
+        [
+            "bool",
+            "Del_func"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "Token_Corpus"
+        ],
+        [
+            "List",
+            "TK"
+        ],
+        [
+            "int",
+            "init"
+        ],
+        [
+            "int",
+            "end"
+        ],
+        [
+            "Function_type",
+            "function"
+        ],
+        [
+            "string",
+            "use"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "string",
+            "error"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "trash"
+        ],
+        [
+            "List",
+            "input"
+        ],
+        [
+            "int",
+            "counter"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "double",
+            "a"
+        ],
+        [
+            "int",
+            "actual_scope"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "List",
+            "If_event_tokens"
+        ],
+        [
+            "List",
+            "Let_List"
+        ],
+        [
+            "List",
+            "new_exp_tokens"
+        ],
+        [
+            "List",
+            "Token_Corpus"
+        ],
+        [
+            "List",
+            "Values"
+        ],
+        [
+            "List",
+            "Let_Tokens_List"
+        ],
+        [
+            "List",
+            "Current_Tokens_List"
+        ],
+        [
+            "List",
+            "If_event"
+        ],
+        [
+            "List",
+            "Current_List"
+        ],
+        [
+            "string",
+            "Result"
+        ],
+        [
+            "List",
+            "Corpus"
+        ],
+        [
+            "Function_type",
+            "function"
+        ],
+        [
+            "List",
+            "new_expression"
+        ],
+        [
+            "List",
+            "Remove"
+        ],
+        [
+            "List",
+            "Else_event"
+        ],
+        [
+            "int",
+            "last_sign"
+        ],
+        [
+            "List",
+            "Expr_Tokens"
+        ],
+        [
+            "string",
+            "R"
+        ],
+        [
+            "int",
+            "mark"
+        ],
+        [
+            "List",
+            "Arguments"
+        ],
+        [
+            "List",
+            "Args_Tokens"
+        ],
+        [
+            "List",
+            "Let"
+        ],
+        [
+            "List",
+            "R"
+        ],
+        [
+            "string",
+            "var_name"
+        ],
+        [
+            "List",
+            "Let_Tokens"
+        ],
+        [
+            "string",
+            "left"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "boolean_exp"
+        ],
+        [
+            "List",
+            "Else_event_tokens"
+        ],
+        [
+            "List",
+            "token_boolean_exp"
+        ],
+        [
+            "string",
+            "right"
+        ],
+        [
+            "List",
+            "Exp_Tk"
+        ],
+        [
+            "string",
+            "var_Value"
+        ],
+        [
+            "string",
+            "boolean"
+        ],
+        [
+            "int",
+            "par_counter"
+        ],
+        [
+            "List",
+            "Expression"
+        ],
+        [
+            "int",
+            "parentheses_count"
+        ],
+        [
+            "List",
+            "expressions"
+        ],
+        [
+            "List",
+            "token_exp"
+        ],
+        [
+            "List",
+            "Exp"
+        ],
+        [
+            "List",
+            "In_Expr_Tokens"
+        ],
+        [
+            "List",
+            "In_Expression"
+        ],
+        [
+            "List",
+            "states"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "char",
+            "next_to"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "bool",
+            "IsToken"
+        ],
+        [
+            "List",
+            "tokens"
+        ]
+    ],
+    "method_names": [
+        "Is_Variable_on_Dict",
+        "Get_Func",
+        "Is_Function_on_List",
+        "Remove_Function",
+        "Clean_Var",
+        "Parser",
+        "Recursive_Parser",
+        "Boolean_Parser",
+        "Try_Solve_Binary",
+        "Let_In_Balance",
+        "Parenthesis_Balance",
+        "Input",
+        "Parsing",
+        "Tokens",
+        "EndLine_Balance",
+        "Conditional_Balance",
+        "Function_Balance",
+        "Frag",
+        "Analyze",
+        "Variables_Remove",
+        "Process_Args",
+        "Recursive_Analyzer",
+        "Scope_Clean",
+        "Var_Eval",
+        "Variables_Contains_on_Scope",
+        "Get_Value",
+        "Solve_Binary",
+        "Variables_Contains",
+        "Is_All_Par",
+        "Token_Separator",
+        "States_determinator"
+    ],
+    "method_return_types": [
+        [
+            "Get_Func",
+            "Function_type"
+        ],
+        [
+            "Remove_Function",
+            "void"
+        ],
+        [
+            "Is_Variable_on_Dict",
+            "bool"
+        ],
+        [
+            "Is_Function_on_List",
+            "bool"
+        ],
+        [
+            "Clean_Var",
+            "void"
+        ],
+        [
+            "Parser",
+            "string"
+        ],
+        [
+            "Recursive_Parser",
+            "string"
+        ],
+        [
+            "Boolean_Parser",
+            "bool"
+        ],
+        [
+            "Try_Solve_Binary",
+            "string"
+        ],
+        [
+            "Function_Balance",
+            "string"
+        ],
+        [
+            "Input",
+            "List"
+        ],
+        [
+            "Parsing",
+            "string"
+        ],
+        [
+            "Tokens",
+            "List"
+        ],
+        [
+            "Parenthesis_Balance",
+            "string"
+        ],
+        [
+            "Let_In_Balance",
+            "string"
+        ],
+        [
+            "EndLine_Balance",
+            "string"
+        ],
+        [
+            "Conditional_Balance",
+            "string"
+        ],
+        [
+            "Solve_Binary",
+            "string"
+        ],
+        [
+            "Get_Value",
+            "string"
+        ],
+        [
+            "Recursive_Analyzer",
+            "string"
+        ],
+        [
+            "Variables_Remove",
+            "void"
+        ],
+        [
+            "Process_Args",
+            "List"
+        ],
+        [
+            "Is_All_Par",
+            "bool"
+        ],
+        [
+            "Variables_Contains",
+            "bool"
+        ],
+        [
+            "Scope_Clean",
+            "void"
+        ],
+        [
+            "Analyze",
+            "string"
+        ],
+        [
+            "Var_Eval",
+            "string"
+        ],
+        [
+            "Variables_Contains_on_Scope",
+            "bool"
+        ],
+        [
+            "Frag",
+            "List"
+        ],
+        [
+            "Token_Separator",
+            "List"
+        ],
+        [
+            "States_determinator",
+            "("
+        ]
+    ],
+    "class_names": [
+        "Token",
+        "Universal",
+        "Expression_Type",
+        "Function_Arguments",
+        "Function_type",
+        "Syntax_Analysis",
+        "Semantic",
+        "Lexical_Analysis"
+    ],
+    "interface_names": [],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 10,
+        "ErrorNodeImpl": 222,
+        "Using_directivesContext": 3,
+        "UsingNamespaceDirectiveContext": 4,
+        "TerminalNodeImpl": 11173,
+        "Namespace_or_type_nameContext": 233,
+        "IdentifierContext": 2993,
+        "Global_attribute_sectionContext": 7,
+        "Global_attribute_targetContext": 7,
+        "Attribute_listContext": 7,
+        "AttributeContext": 7,
+        "Attribute_argumentContext": 7,
+        "ExpressionContext": 1873,
+        "Non_assignment_expressionContext": 1819,
+        "Conditional_expressionContext": 1819,
+        "Null_coalescing_expressionContext": 1819,
+        "Conditional_or_expressionContext": 1819,
+        "Conditional_and_expressionContext": 1896,
+        "Inclusive_or_expressionContext": 2002,
+        "Exclusive_or_expressionContext": 2002,
+        "And_expressionContext": 2002,
+        "Equality_expressionContext": 2002,
+        "Relational_expressionContext": 2397,
+        "Shift_expressionContext": 2454,
+        "Additive_expressionContext": 2454,
+        "Multiplicative_expressionContext": 2641,
+        "Switch_expressionContext": 2644,
+        "Range_expressionContext": 2644,
+        "Unary_expressionContext": 2768,
+        "Primary_expressionContext": 2725,
+        "LiteralExpressionContext": 675,
+        "LiteralContext": 675,
+        "String_literalContext": 361,
+        "Qualified_alias_memberContext": 1,
+        "Namespace_member_declarationsContext": 7,
+        "Namespace_member_declarationContext": 8,
+        "Type_declarationContext": 8,
+        "All_member_modifiersContext": 91,
+        "All_member_modifierContext": 118,
+        "Class_definitionContext": 8,
+        "Class_bodyContext": 8,
+        "Class_member_declarationsContext": 8,
+        "Class_member_declarationContext": 83,
+        "Common_member_declarationContext": 83,
+        "Constant_declarationContext": 35,
+        "Type_Context": 639,
+        "Base_typeContext": 639,
+        "Class_typeContext": 532,
+        "Constant_declaratorsContext": 35,
+        "Constant_declaratorContext": 35,
+        "Simple_typeContext": 86,
+        "Numeric_typeContext": 76,
+        "Integral_typeContext": 74,
+        "Typed_member_declarationContext": 41,
+        "Type_argument_listContext": 206,
+        "Field_declarationContext": 14,
+        "Variable_declaratorsContext": 14,
+        "Variable_declaratorContext": 14,
+        "Variable_initializerContext": 7,
+        "ObjectCreationExpressionContext": 84,
+        "Object_creation_expressionContext": 80,
+        "Method_declarationContext": 31,
+        "Method_member_nameContext": 31,
+        "Formal_parameter_listContext": 31,
+        "Fixed_parametersContext": 31,
+        "Fixed_parameterContext": 49,
+        "Arg_declarationContext": 49,
+        "Method_bodyContext": 31,
+        "BlockContext": 388,
+        "Statement_listContext": 388,
+        "StatementContext": 897,
+        "Embedded_statementContext": 837,
+        "ForeachStatementContext": 15,
+        "Local_variable_typeContext": 166,
+        "SimpleNameExpressionContext": 1865,
+        "IfStatementContext": 260,
+        "Member_accessContext": 564,
+        "If_bodyContext": 298,
+        "ReturnStatementContext": 166,
+        "Boolean_literalContext": 38,
+        "Method_invocationContext": 338,
+        "Argument_listContext": 314,
+        "ArgumentContext": 465,
+        "ExpressionStatementContext": 285,
+        "AssignmentContext": 81,
+        "Assignment_operatorContext": 81,
+        "DeclarationStatementContext": 123,
+        "Local_variable_declarationContext": 151,
+        "Local_variable_declaratorContext": 151,
+        "Local_variable_initializerContext": 143,
+        "Object_or_collection_initializerContext": 4,
+        "Collection_initializerContext": 4,
+        "Element_initializerContext": 27,
+        "ForStatementContext": 28,
+        "For_initializerContext": 28,
+        "For_iteratorContext": 28,
+        "Bracket_expressionContext": 286,
+        "Indexer_argumentContext": 286,
+        "WhileStatementContext": 20,
+        "BreakStatementContext": 7,
+        "ParenthesisExpressionsContext": 47,
+        "Constructor_declarationContext": 3,
+        "BodyContext": 3,
+        "Tuple_typeContext": 21,
+        "Tuple_elementContext": 55,
+        "TupleExpressionContext": 27,
+        "Floating_point_typeContext": 2,
+        "MemberAccessExpressionContext": 27,
+        "Predefined_typeContext": 27
+    },
+    "project_name": "MATCOM-HULK-main",
+    "label": "original"
+}

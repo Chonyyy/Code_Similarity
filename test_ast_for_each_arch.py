@@ -9,9 +9,9 @@ from parser.parser import *
 from Word2Vec.word2vec import FeatureVectorizer
 
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/domino/'
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/All/'
 
-DATA_FOLDER = f'{os.getcwd()}/data/features_domino/'
+DATA_FOLDER = f'{os.getcwd()}/data/features_all/'
 
 DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect/'
 
