@@ -14,7 +14,7 @@ class FeatureVectorizer:
             self.features = json.load(f)
     
     def extract_string_lists(self):
-        variable_names = [item for sublist in self.features["variable_names"] for item in sublist]
+        variable_names = [item for sublist in self.features["variable_names"] for item in sublist] if self.features["variable_names"] else []
         delegate_names = [item for sublist in self.features["delegate_names"] for item in sublist]
         method_return_types = [item for sublist in self.features["method_return_types"] for item in sublist]
         method_names = self.features["method_names"]

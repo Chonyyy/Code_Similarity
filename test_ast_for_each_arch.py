@@ -60,7 +60,7 @@ for filename in os.listdir(DATA_FOLDER_VECT):
             datos_combinados.append(data)
 
 # Escribir todos los datos combinados en un nuevo archivo JSON
-merged_path = DATA_FOLDER = f'{os.getcwd()}/data/merged_features_domino.json'
+merged_path = DATA_FOLDER = f'{os.getcwd()}/data/merged_features.json'
 with open(merged_path, 'w', encoding='utf-8') as f:
     json.dump(datos_combinados, f, ensure_ascii=False, indent=4)
 

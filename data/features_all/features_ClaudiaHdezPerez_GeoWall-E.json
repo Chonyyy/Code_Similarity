@@ -1,0 +1,1200 @@
+{
+    "total_nodes": 57172,
+    "max_depth": 1788,
+    "number_of_variables": 61,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 53,
+    "number_of_classes": 34,
+    "number_of_interfaces": 0,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 30,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 2,
+    "number_of_dictionaries": 2,
+    "number_of_enums": 1,
+    "number_of_delegates": 0,
+    "function_calls": 119,
+    "enums_names": [
+        "SyntaxKind"
+    ],
+    "control_structures_if": 37,
+    "control_structures_switch": 0,
+    "control_structures_for": 4,
+    "control_structures_while": 1,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 283,
+    "access_modifiers_private": 69,
+    "access_modifiers_protected": 2,
+    "access_modifiers_internal": 11,
+    "access_modifiers_static": 92,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 6,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 102,
+    "modifier_new": 208,
+    "modifier_partial": 3,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 3,
+    "linq_queries_sum": 17,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 16,
+    "number_of_lambdas": 13,
+    "number_of_getters": 37,
+    "number_of_setters": 2,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 32,
+    "method_parameters": [
+        [
+            "BlendCompile",
+            [
+                [
+                    "string",
+                    "text"
+                ]
+            ]
+        ],
+        [
+            "GraphicWindow_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "MoreAbout_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Exit_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Dispose",
+            [
+                [
+                    "bool",
+                    "disposing"
+                ]
+            ]
+        ],
+        [
+            "Dispose",
+            [
+                [
+                    "bool",
+                    "disposing"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "PointInLine",
+            [
+                [
+                    "float",
+                    "m"
+                ],
+                [
+                    "float",
+                    "n"
+                ],
+                [
+                    "float",
+                    "x"
+                ]
+            ]
+        ],
+        [
+            "LineEquation",
+            [
+                [
+                    "Points",
+                    "p1"
+                ],
+                [
+                    "Points",
+                    "p2"
+                ]
+            ]
+        ],
+        [
+            "IntersectionCircle_Ray",
+            [
+                [
+                    "Points",
+                    "center"
+                ],
+                [
+                    "Points",
+                    "ray_end"
+                ],
+                [
+                    "float",
+                    "radio"
+                ],
+                [
+                    "float",
+                    "m"
+                ],
+                [
+                    "float",
+                    "n"
+                ]
+            ]
+        ],
+        [
+            "IsInSegment",
+            [
+                [
+                    "double",
+                    "x1"
+                ],
+                [
+                    "double",
+                    "x2"
+                ],
+                [
+                    "double",
+                    "x_point"
+                ]
+            ]
+        ],
+        [
+            "DistanceBetweenPoints",
+            [
+                [
+                    "Points",
+                    "p1"
+                ],
+                [
+                    "Points",
+                    "p2"
+                ]
+            ]
+        ],
+        [
+            "DistancePointLine",
+            [
+                [
+                    "Points",
+                    "point"
+                ],
+                [
+                    "Line",
+                    "line"
+                ]
+            ]
+        ],
+        [
+            "AngleBetweenVectors",
+            [
+                [
+                    "Points",
+                    "center"
+                ],
+                [
+                    "Points",
+                    "p1"
+                ],
+                [
+                    "Points",
+                    "p2"
+                ]
+            ]
+        ],
+        [
+            "GetAngleQuadrant",
+            [
+                [
+                    "Points",
+                    "center"
+                ],
+                [
+                    "float",
+                    "radio"
+                ],
+                [
+                    "Points",
+                    "point"
+                ]
+            ]
+        ],
+        [
+            "Intersect",
+            [
+                [
+                    "Figure",
+                    "figure"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Equals",
+            [
+                [
+                    "Measure?",
+                    "other"
+                ]
+            ]
+        ],
+        [
+            "Equals",
+            [
+                [
+                    "object?",
+                    "obj"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "RestOfSequence",
+            [
+                [
+                    "int",
+                    "startIndex"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "RestOfSequence",
+            [
+                [
+                    "int",
+                    "startIndex"
+                ]
+            ]
+        ],
+        [
+            "CreateInifniteSequence",
+            [
+                [
+                    "InfiniteSequence",
+                    "sequence"
+                ],
+                [
+                    "Dictionary<int,object>",
+                    "values"
+                ]
+            ]
+        ],
+        [
+            "CreateInifniteSequence",
+            [
+                [
+                    "InfiniteIntegerSequence",
+                    "sequence"
+                ],
+                [
+                    "Dictionary<int,object>",
+                    "values"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "RestOfSequence",
+            [
+                [
+                    "int",
+                    "startIndex"
+                ]
+            ]
+        ],
+        [
+            "RestOfSequence",
+            [
+                [
+                    "int",
+                    "startIndex"
+                ]
+            ]
+        ],
+        [
+            "Equals",
+            [
+                [
+                    "SequenceExpressionSyntax?",
+                    "other"
+                ]
+            ]
+        ],
+        [
+            "Equals",
+            [
+                [
+                    "object?",
+                    "obj"
+                ]
+            ]
+        ],
+        [
+            "GetInternalTypeOfSequence",
+            [
+                [
+                    "SequenceExpressionSyntax",
+                    "sequence"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "Check",
+            [
+                [
+                    "Scope",
+                    "scope"
+                ]
+            ]
+        ],
+        [
+            "SetError",
+            [
+                [
+                    "string",
+                    "type"
+                ],
+                [
+                    "string",
+                    "msg"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "Dictionary",
+            "constants"
+        ],
+        [
+            "Dictionary",
+            "functions"
+        ],
+        [
+            "var",
+            "checking"
+        ],
+        [
+            "Scope",
+            "global"
+        ],
+        [
+            "var",
+            "syntaxTree"
+        ],
+        [
+            "object",
+            "obj"
+        ],
+        [
+            "global",
+            "temp"
+        ],
+        [
+            "DialogResult",
+            "result1"
+        ],
+        [
+            "MessageBoxButtons",
+            "messageBoxButtons"
+        ],
+        [
+            "var",
+            "drawingWindow"
+        ],
+        [
+            "Process",
+            "process"
+        ],
+        [
+            "System",
+            "resources"
+        ],
+        [
+            "System",
+            "resources"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "double",
+            "a"
+        ],
+        [
+            "double",
+            "distance"
+        ],
+        [
+            "double",
+            "y_c"
+        ],
+        [
+            "double",
+            "D"
+        ],
+        [
+            "var",
+            "denominador"
+        ],
+        [
+            "float",
+            "scalarProduct"
+        ],
+        [
+            "double",
+            "x_1"
+        ],
+        [
+            "Points",
+            "up"
+        ],
+        [
+            "double",
+            "y_1"
+        ],
+        [
+            "float",
+            "distance_v1"
+        ],
+        [
+            "float",
+            "y_2"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "double",
+            "b"
+        ],
+        [
+            "(",
+            "v2"
+        ],
+        [
+            "Points",
+            "right"
+        ],
+        [
+            "float",
+            "distance_v2"
+        ],
+        [
+            "double",
+            "c"
+        ],
+        [
+            "double",
+            "razon"
+        ],
+        [
+            "float",
+            "angle"
+        ],
+        [
+            "double",
+            "y_2"
+        ],
+        [
+            "double",
+            "x_2"
+        ],
+        [
+            "var",
+            "errorRange"
+        ],
+        [
+            "(",
+            "v1"
+        ],
+        [
+            "double",
+            "x_c"
+        ],
+        [
+            "var",
+            "enumerador"
+        ],
+        [
+            "float",
+            "m"
+        ],
+        [
+            "float",
+            "n"
+        ],
+        [
+            "float",
+            "y_1"
+        ],
+        [
+            "string",
+            "operandType"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "elementType"
+        ],
+        [
+            "var",
+            "elements"
+        ],
+        [
+            "List",
+            "values"
+        ],
+        [
+            "List",
+            "elements"
+        ],
+        [
+            "string",
+            "type"
+        ],
+        [
+            "var",
+            "first"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "func"
+        ],
+        [
+            "string",
+            "type"
+        ],
+        [
+            "Func",
+            "func"
+        ],
+        [
+            "var",
+            "seqType"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "seqInternedType"
+        ]
+    ],
+    "method_names": [
+        "Reset",
+        "BlendCompile",
+        "Exit_Click",
+        "GraphicWindow_Click",
+        "MoreAbout_Click",
+        "InitializeComponent",
+        "Dispose",
+        "Main",
+        "InitializeComponent",
+        "Dispose",
+        "Evaluate",
+        "Check",
+        "Check",
+        "Check",
+        "IsInSegment",
+        "IntersectionCircle_Ray",
+        "GetAngleQuadrant",
+        "DistancePointLine",
+        "AngleBetweenVectors",
+        "PointInLine",
+        "DistanceBetweenPoints",
+        "LineEquation",
+        "Intersect",
+        "PointsInFigure",
+        "Evaluate",
+        "GetHashCode",
+        "Check",
+        "Equals",
+        "Check",
+        "Evaluate",
+        "Check",
+        "RestOfSequence",
+        "Evaluate",
+        "Check",
+        "CreateInifniteSequence",
+        "RestOfSequence",
+        "Evaluate",
+        "Check",
+        "RestOfSequence",
+        "GetInternalTypeOfSequence",
+        "GetHashCode",
+        "RestOfSequence",
+        "Equals",
+        "Evaluate",
+        "Check",
+        "Check",
+        "Reset",
+        "SetError"
+    ],
+    "method_return_types": [
+        [
+            "Reset",
+            "void"
+        ],
+        [
+            "BlendCompile",
+            "("
+        ],
+        [
+            "Exit_Click",
+            "void"
+        ],
+        [
+            "MoreAbout_Click",
+            "void"
+        ],
+        [
+            "GraphicWindow_Click",
+            "void"
+        ],
+        [
+            "InitializeComponent",
+            "void"
+        ],
+        [
+            "Dispose",
+            "void"
+        ],
+        [
+            "Main",
+            "void"
+        ],
+        [
+            "InitializeComponent",
+            "void"
+        ],
+        [
+            "Dispose",
+            "void"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "LineEquation",
+            "("
+        ],
+        [
+            "IntersectionCircle_Ray",
+            "Points"
+        ],
+        [
+            "AngleBetweenVectors",
+            "float"
+        ],
+        [
+            "DistancePointLine",
+            "float"
+        ],
+        [
+            "IsInSegment",
+            "bool"
+        ],
+        [
+            "DistanceBetweenPoints",
+            "float"
+        ],
+        [
+            "GetAngleQuadrant",
+            "int"
+        ],
+        [
+            "PointInLine",
+            "float"
+        ],
+        [
+            "Intersect",
+            "FiniteSequence"
+        ],
+        [
+            "PointsInFigure",
+            "SequenceExpressionSyntax"
+        ],
+        [
+            "GetHashCode",
+            "int"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "Equals",
+            "bool"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "RestOfSequence",
+            "SequenceExpressionSyntax"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "RestOfSequence",
+            "SequenceExpressionSyntax"
+        ],
+        [
+            "CreateInifniteSequence",
+            "object"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "RestOfSequence",
+            "SequenceExpressionSyntax"
+        ],
+        [
+            "GetInternalTypeOfSequence",
+            "string"
+        ],
+        [
+            "GetHashCode",
+            "int"
+        ],
+        [
+            "Equals",
+            "bool"
+        ],
+        [
+            "RestOfSequence",
+            "SequenceExpressionSyntax"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "Check",
+            "bool"
+        ],
+        [
+            "Reset",
+            "void"
+        ],
+        [
+            "SetError",
+            "void"
+        ]
+    ],
+    "class_names": [
+        "MethodsDrawing",
+        "Blender",
+        "Resources",
+        "OpenWindow",
+        "OpenWindow",
+        "Program",
+        "Form1",
+        "SyntaxToken",
+        "ExpressionSyntax",
+        "ErrorExpressionSyntax",
+        "MultipleAssignmentSyntax",
+        "Restore",
+        "Utilities",
+        "Draw",
+        "Circle",
+        "Figure",
+        "Segment",
+        "Points",
+        "Measure",
+        "Ray",
+        "Arc",
+        "Line",
+        "PlusOperation",
+        "FiniteSequence",
+        "InfiniteSequence",
+        "InfiniteIntegerSequence",
+        "SequenceExpressionSyntax",
+        "VoidExpressionSyntax",
+        "ImportExpressionSyntax",
+        "ScopeSupplies",
+        "Constant",
+        "Function",
+        "Scope",
+        "Error"
+    ],
+    "interface_names": [],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 38,
+        "Using_directivesContext": 30,
+        "UsingNamespaceDirectiveContext": 137,
+        "TerminalNodeImpl": 9318,
+        "Namespace_or_type_nameContext": 649,
+        "IdentifierContext": 2944,
+        "Namespace_member_declarationsContext": 37,
+        "Namespace_member_declarationContext": 446,
+        "Namespace_declarationContext": 32,
+        "Qualified_identifierContext": 32,
+        "Namespace_bodyContext": 32,
+        "Type_declarationContext": 414,
+        "All_member_modifiersContext": 566,
+        "All_member_modifierContext": 794,
+        "Class_definitionContext": 34,
+        "Class_bodyContext": 34,
+        "Class_member_declarationsContext": 34,
+        "Class_member_declarationContext": 234,
+        "Common_member_declarationContext": 234,
+        "Typed_member_declarationContext": 163,
+        "Type_Context": 560,
+        "Base_typeContext": 564,
+        "Class_typeContext": 445,
+        "Type_argument_listContext": 56,
+        "Field_declarationContext": 47,
+        "Variable_declaratorsContext": 47,
+        "Variable_declaratorContext": 47,
+        "Variable_initializerContext": 20,
+        "ExpressionContext": 1489,
+        "ErrorNodeImpl": 9738,
+        "Tuple_typeContext": 14,
+        "Tuple_elementContext": 25,
+        "AttributesContext": 100,
+        "Attribute_sectionContext": 137,
+        "Attribute_listContext": 83,
+        "AttributeContext": 83,
+        "Non_assignment_expressionContext": 1076,
+        "Conditional_expressionContext": 1063,
+        "Null_coalescing_expressionContext": 1063,
+        "Conditional_or_expressionContext": 1063,
+        "Conditional_and_expressionContext": 1064,
+        "Inclusive_or_expressionContext": 1073,
+        "Exclusive_or_expressionContext": 1082,
+        "And_expressionContext": 1082,
+        "Equality_expressionContext": 1082,
+        "Relational_expressionContext": 1106,
+        "Shift_expressionContext": 1118,
+        "Additive_expressionContext": 1118,
+        "Multiplicative_expressionContext": 1153,
+        "Switch_expressionContext": 1173,
+        "Range_expressionContext": 1173,
+        "Unary_expressionContext": 1553,
+        "Primary_expressionContext": 1520,
+        "LiteralExpressionContext": 419,
+        "LiteralContext": 419,
+        "String_literalContext": 153,
+        "Method_declarationContext": 53,
+        "Method_member_nameContext": 53,
+        "Method_bodyContext": 50,
+        "BlockContext": 94,
+        "Statement_listContext": 92,
+        "StatementContext": 661,
+        "Embedded_statementContext": 565,
+        "ExpressionStatementContext": 471,
+        "SimpleNameExpressionContext": 929,
+        "Member_accessContext": 600,
+        "Method_invocationContext": 126,
+        "Simple_typeContext": 108,
+        "Formal_parameter_listContext": 62,
+        "Fixed_parametersContext": 62,
+        "Fixed_parameterContext": 95,
+        "Arg_declarationContext": 95,
+        "DeclarationStatementContext": 72,
+        "Local_variable_declarationContext": 61,
+        "Local_variable_typeContext": 66,
+        "Local_variable_declaratorContext": 61,
+        "Local_variable_initializerContext": 61,
+        "Lambda_expressionContext": 13,
+        "Anonymous_function_signatureContext": 13,
+        "Right_arrowContext": 41,
+        "Anonymous_function_bodyContext": 13,
+        "TupleExpressionContext": 7,
+        "ArgumentContext": 363,
+        "IfStatementContext": 37,
+        "MemberAccessExpressionContext": 8,
+        "Predefined_typeContext": 6,
+        "Argument_listContext": 189,
+        "If_bodyContext": 41,
+        "ReturnStatementContext": 60,
+        "Throwable_expressionContext": 41,
+        "Boolean_literalContext": 57,
+        "ForeachStatementContext": 5,
+        "BreakStatementContext": 1,
+        "AssignmentContext": 347,
+        "Assignment_operatorContext": 347,
+        "Global_attribute_sectionContext": 18,
+        "Global_attribute_targetContext": 18,
+        "Qualified_alias_memberContext": 18,
+        "Attribute_argumentContext": 28,
+        "Constructor_declarationContext": 16,
+        "BodyContext": 16,
+        "Property_declarationContext": 58,
+        "Member_nameContext": 58,
+        "Accessor_declarationsContext": 37,
+        "Accessor_bodyContext": 39,
+        "ObjectCreationExpressionContext": 119,
+        "Object_creation_expressionContext": 119,
+        "TypeofExpressionContext": 3,
+        "Unbound_type_nameContext": 3,
+        "Set_accessor_declarationContext": 2,
+        "ParenthesisExpressionsContext": 29,
+        "Cast_expressionContext": 23,
+        "Class_baseContext": 20,
+        "ThisReferenceExpressionContext": 4,
+        "BaseAccessExpressionContext": 2,
+        "Enum_definitionContext": 1,
+        "Enum_bodyContext": 1,
+        "Enum_member_declarationContext": 63,
+        "Numeric_typeContext": 87,
+        "Integral_typeContext": 30,
+        "Interpolated_regular_stringContext": 2,
+        "Interpolated_regular_string_partContext": 2,
+        "Floating_point_typeContext": 57,
+        "Type_parameter_listContext": 1,
+        "Type_parameterContext": 1,
+        "Bracket_expressionContext": 19,
+        "Indexer_argumentContext": 19,
+        "Indexer_declarationContext": 4,
+        "ForStatementContext": 4,
+        "For_initializerContext": 4,
+        "For_iteratorContext": 4,
+        "IsTypeContext": 4,
+        "WhileStatementContext": 1,
+        "TheEmptyStatementContext": 1,
+        "UsingStaticDirectiveContext": 1
+    },
+    "project_name": "ClaudiaHdezPerez_GeoWall-E",
+    "label": "original"
+}
