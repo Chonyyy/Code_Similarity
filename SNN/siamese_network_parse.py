@@ -126,38 +126,3 @@ class PrepareDataSNN:
 if __name__ == "__main__":
     data = PrepareDataSNN()
     res = data.process()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Ruta al directorio que contiene los archivos JSON de los proyectos
-# projects_directory = "data/features_vect"
-
-# # Lista para almacenar todos los proyectos cargados
-# all_projects = []
-
-# # Cargar todos los proyectos desde los archivos JSON en el directorio
-# for filename in os.listdir(projects_directory):
-#     if filename.endswith(".json"):
-#         file_path = os.path.join(projects_directory, filename)
-#         projects = load_projects_from_json(file_path)
-#         all_projects.append(projects)
-
-# # Generar los pares de entrenamiento
-# pairs = generate_pairs(all_projects)
-
-
-# # Guardar los pares en un archivo JSON
-# with open('training_pairs.json', 'w') as f:
-#     json.dump(pairs, f, indent=4)
-    
