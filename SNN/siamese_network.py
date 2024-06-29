@@ -1,62 +1,59 @@
-import itertools
-import numpy as np
-import pandas as pd
-from sklearn.model_selection import train_test_split
+import tensorflow as tf
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Dense, Lambda, Subtract
+from tensorflow.keras.layers import Input, Dense, Lambda
 from tensorflow.keras.optimizers import Adam
 import tensorflow.keras.backend as K
-from siamese_network_parse import generate_pairs
-import json
+from siamese_network_parse import PrepareDataSNN
 
-json_file = "data/training_pairs_SNN/training_pairs.json"
+# Definir la arquitectura base
+def create_base_network(input_shape):
+    input = Input(shape=input_shape)
+    x = Dense(128, activation='relu')(input)
+    x = Dense(128, activation='relu')(x)
+    x = Dense(128, activation='relu')(x)
+    return Model(input, x)
 
-# Función para crear el modelo siamés
-def create_siamese_model(input_shape):
+# Definir la función de distancia
+def euclidean_distance(vects):
+    x, y = vects
+    sum_square = K.sum(K.square(x - y), axis=1, keepdims=True)
+    return K.sqrt(K.maximum(sum_square, K.epsilon()))
+
+# Crear el modelo de red siamesa
+def create_siamese_network(input_shape):
+    base_network = create_base_network(input_shape)
+
     input_a = Input(shape=input_shape)
     input_b = Input(shape=input_shape)
-    
-    dense_layer = Dense(128, activation='relu')
-    encoded_a = dense_layer(input_a)
-    encoded_b = dense_layer(input_b)
-    
-    distance = Lambda(lambda tensors: K.abs(tensors[0] - tensors[1]))([encoded_a, encoded_b])
-    
-    prediction = Dense(1, activation='sigmoid')(distance)
-    
-    model = Model(inputs=[input_a, input_b], outputs=prediction)
-    
+
+    # Obtener las representaciones de las dos ramas
+    processed_a = base_network(input_a)
+    processed_b = base_network(input_b)
+
+    # Calcular la distancia entre las dos salidas
+    distance = Lambda(euclidean_distance, output_shape=(1,))([processed_a, processed_b])
+
+    model = Model([input_a, input_b], distance)
     return model
 
-
-
-data = pd.read_json(json_file)
-    
-# Dividir en conjuntos de entrenamiento y prueba
-pairs_train, pairs_test = train_test_split(data, test_size=0.2, random_state=42)
-    
-# Definir forma de entrada
-input_shape = data.shape  # Ajusta según tus datos
-
-# Crear el modelo siamés
-model = create_siamese_model(input_shape)
-
-# Compilar el modelo
-model.compile(loss='binary_crossentropy', optimizer=Adam(lr=0.001), metrics=['accuracy'])
-
-# Preparar los datos para entrenamiento
-pairs_train_input = [np.array([pair["project_1"] for pair in pairs_train]), np.array([pair["project_2"] for pair in pairs_train])]
-labels_train = np.array([pair["similarity_flag"] for pair in pairs_train])
+# Definir la función de pérdida
+def contrastive_loss(y_true, y_pred):
+    margin = 1
+    square_pred = K.square(y_pred)
+    margin_square = K.square(K.maximum(margin - y_pred, 0))
+    return K.mean(y_true * square_pred + (1 - y_true) * margin_square)
 
 # Entrenar el modelo
-model.fit(pairs_train_input, labels_train, batch_size=32, epochs=10)
+def train_siamese_network(data_a, data_b, labels):
+    input_shape = (data_a.shape[1],)
+    model = create_siamese_network(input_shape)
 
-# Evaluar el modelo
-pairs_test_input = [np.array([pair["project_1"] for pair in pairs_test]), np.array([pair["project_2"] for pair in pairs_test])]
-labels_test = np.array([pair["similarity_flag"] for pair in pairs_test])
+    model.compile(loss=contrastive_loss, optimizer=Adam(learning_rate=0.001))
 
-loss, accuracy = model.evaluate(pairs_test_input, labels_test)
-print(f'Loss: {loss}, Accuracy: {accuracy}')
+    model.fit([data_a, data_b], labels, batch_size=128, epochs=20)
 
-# Guardar el modelo entrenado si se desea
-model.save('siamese_model.h5')
+# Ejecutar el entrenamiento
+if __name__ == "__main__":
+    data = PrepareDataSNN()
+    data_a, data_b, labels = data.process()
+    train_siamese_network(data_a, data_b, labels)
