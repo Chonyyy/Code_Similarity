@@ -1,18 +1,16 @@
 from antlr4 import *
 from antlr4.tree.Tree import ErrorNodeImpl
-import json, os, time
-from listener import FeatureExtractorListener, walk_tree
-from antlr4 import InputStream, CommonTokenStream
-from Python.CSharpLexer import CSharpLexer
-from Python.CSharpParser import CSharpParser
+import json, os
 from parser.parser import *
 from Word2Vec.word2vec import FeatureVectorizer
-
+import networkx as nx
+from node2vec import Node2Vec
+from collections import deque
 
 PROJECTS_FOLDER = f'{os.getcwd()}/Projects/All/'
 
 DATA_FOLDER = f'{os.getcwd()}/data/features_all/'
-
+                                                          
 DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect/'
 
 os.makedirs(DATA_FOLDER, exist_ok=True)
@@ -22,12 +20,12 @@ for f in os.scandir(PROJECTS_FOLDER):
         print(PROJECTS_FOLDER + f.name)
         
         output_json_path = os.path.join(DATA_FOLDER, f"features_{f.name}.json")
+        output_json_path_vect = f'data/features_vect/features_{f.name}.json'
         
         if os.path.exists(output_json_path):
-            # Crear una instancia
-            # fv = FeatureVectorizer(output_json_path)
-            # name = str.join("data/features_vect/",f'features_{f.name}.json')
-            # fv.vectorize_features_and_save(f"data/features_vect/features_{f.name}.json")
+            if not os.path.exists(output_json_path_vect):
+                fv = FeatureVectorizer(output_json_path)
+                fv.vectorize_features_and_save(output_json_path_vect)
             continue
         
         features = process_project(PROJECTS_FOLDER + f.name)
@@ -41,7 +39,7 @@ for f in os.scandir(PROJECTS_FOLDER):
         print("Archivo JSON guardado correctamente.")
         
         fv = FeatureVectorizer(output_json_path)
-        fv.vectorize_features_and_save(f'data/features_vect/features_{f.name}.json')
+        fv.vectorize_features_and_save(output_json_path_vect)
 
 
 # Lista para almacenar todos los datos de los archivos JSON
@@ -65,3 +63,27 @@ with open(merged_path, 'w', encoding='utf-8') as f:
     json.dump(datos_combinados, f, ensure_ascii=False, indent=4)
 
 print(f'Se han combinado {len(datos_combinados)} archivos JSON en {merged_path}')
+
+
+def bfs_tree(tree):
+    """
+    Realiza una búsqueda en amplitud (BFS) sobre el árbol de análisis sintáctico.
+    
+    param tree: El árbol de análisis sintáctico generado por ANTLR.
+    """
+    
+    queue = deque([tree])
+    
+    while queue:
+        # Sacar el primer nodo de la cola
+        current_node = queue.popleft()
+        
+        # Imprimir el tipo de nodo
+        # print(type(current_node).__name__)
+        
+        try:
+            print(current_node.symbol.text)
+        except:
+            for child in current_node.children:
+                    queue.append(child)
+

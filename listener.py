@@ -1,4 +1,6 @@
 from Python.CSharpParserListener import CSharpParserListener
+import numpy as np
+import pandas as pd
 
 class FeatureExtractorListener(CSharpParserListener):
 
@@ -114,9 +116,6 @@ class FeatureExtractorListener(CSharpParserListener):
         elif node_type == "Method_declarationContext": 
             self.methods += 1
             self.method_names.add(ctx.start.text)
-            # start_line = ctx.start.line
-            # stop_line = ctx.stop.line
-            # self.method_lengths.append(stop_line - start_line + 1)
             
             return_type = ctx.parentCtx.start.text
             self.method_return_types.add((ctx.start.text,return_type))            
@@ -209,7 +208,6 @@ class FeatureExtractorListener(CSharpParserListener):
             name = ctx.children[2].start.text
             return_type = ctx.children[1].start.text
             self.delegate_names.add((name, return_type))
-            pass
         
         elif node_type == "All_member_modifierContext":
             modifier = ctx.start.text
@@ -255,11 +253,6 @@ class FeatureExtractorListener(CSharpParserListener):
             if name == 'Count':
                 self.linq_queries_sum += 1
              
-        # Captura de tokens distintos y su conteo
-        # if hasattr(ctx, 'symbol'):
-        #     token_text = ctx.symbol.text
-        #     self.distinct_tokens[token_text] = self.distinct_tokens.get(token_text, 0) + 1
-
     def _count_modifiers(self, modifier):
         if modifier == 'new':
             self.modifier_new += 1
@@ -368,6 +361,39 @@ class FeatureExtractorListener(CSharpParserListener):
             "node_count": self.node_count
         }
 
+class FeatureDifferenceDF:
+    def __init__(self, df: pd.DataFrame):
+        self.df = df
+        self.differences = self.calculate_differences()
+
+    def calculate_differences(self):
+        attributes = [
+            'total_nodes', 'max_depth', 'current_depth', 'variables', 'constants', 
+            'out_variables', 'ref_params', 'methods', 'classes', 'interfaces', 
+            'abstract_classes', 'sealed_classes', 'import_statements', 'function_calls', 
+            'try_catch_blocks', 'lists', 'dicts', 'enums', 'delegates', 
+            'control_structures_if', 'control_structures_switch', 'control_structures_for', 
+            'control_structures_while', 'control_structures_dowhile', 'access_modifiers_public', 
+            'access_modifiers_private', 'access_modifiers_protected', 'access_modifiers_internal', 
+            'access_modifiers_static', 'access_modifiers_protected_internal', 
+            'access_modifiers_private_protected', 'modifier_readonly', 'modifier_volatile', 
+            'modifier_virtual', 'modifier_override', 'modifier_new', 'modifier_partial', 
+            'modifier_extern', 'modifier_unsafe', 'modifier_async', 'library_call_console', 
+            'library_call_math', 'linq_queries_select', 'linq_queries_where', 'linq_queries_orderBy', 
+            'linq_queries_groupBy', 'linq_queries_join', 'linq_queries_sum', 'linq_queries_count', 
+            'number_of_lambdas', 'number_of_getters', 'number_of_setters', 'number_of_tuples', 
+            'number_of_namespaces'
+        ]
+
+        fe1_values = self.df.loc[0, attributes].values
+        fe2_values = self.df.loc[1, attributes].values
+        
+        differences = np.array(fe1_values, dtype=int) - np.array(fe2_values, dtype=int)
+        return differences
+
+    def get_differences(self):
+        return self.differences
+
 
 def walk_tree(listener, node):
     if not node:
@@ -384,3 +410,28 @@ def walk_tree(listener, node):
 
     # Llamar al método de salida del listener
     listener.exitEveryRule(node)
+    
+def calculate_differences(self):
+    attributes = [
+        'total_nodes', 'max_depth', 'current_depth', 'variables', 'constants', 
+        'out_variables', 'ref_params', 'methods', 'classes', 'interfaces', 
+        'abstract_classes', 'sealed_classes', 'import_statements', 'function_calls', 
+        'try_catch_blocks', 'lists', 'dicts', 'enums', 'delegates', 
+        'control_structures_if', 'control_structures_switch', 'control_structures_for', 
+        'control_structures_while', 'control_structures_dowhile', 'access_modifiers_public', 
+        'access_modifiers_private', 'access_modifiers_protected', 'access_modifiers_internal', 
+        'access_modifiers_static', 'access_modifiers_protected_internal', 
+        'access_modifiers_private_protected', 'modifier_readonly', 'modifier_volatile', 
+        'modifier_virtual', 'modifier_override', 'modifier_new', 'modifier_partial', 
+        'modifier_extern', 'modifier_unsafe', 'modifier_async', 'library_call_console', 
+        'library_call_math', 'linq_queries_select', 'linq_queries_where', 'linq_queries_orderBy', 
+        'linq_queries_groupBy', 'linq_queries_join', 'linq_queries_sum', 'linq_queries_count', 
+        'number_of_lambdas', 'number_of_getters', 'number_of_setters', 'number_of_tuples', 
+        'number_of_namespaces'
+    ]
+
+    fe1_values = np.array([getattr(self.fe1, attr) for attr in attributes])
+    fe2_values = np.array([getattr(self.fe2, attr) for attr in attributes])
+    
+    differences = fe1_values - fe2_values
+    return differences
