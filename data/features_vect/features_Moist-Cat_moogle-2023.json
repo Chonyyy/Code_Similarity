@@ -173,7 +173,7 @@
         0.010869870893657207,
         0.059724535793066025
     ],
-    "delegate_names_vector": NaN,
+    "delegate_names_vector": [],
     "method_return_types_vector": [
         -0.03340798243880272,
         -0.06238985061645508
@@ -186,8 +186,8 @@
         -0.01335173286497593,
         0.09309592097997665
     ],
-    "interface_names_vector": NaN,
-    "enums_names_vector": NaN,
+    "interface_names_vector": [],
+    "enums_names_vector": [],
     "method_parameters_vector": [
         -0.09938648343086243,
         -0.060545191168785095,

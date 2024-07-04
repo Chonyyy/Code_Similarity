@@ -1,0 +1,1204 @@
+{
+    "total_nodes": 31511,
+    "max_depth": 1481,
+    "number_of_variables": 88,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 76,
+    "number_of_classes": 32,
+    "number_of_interfaces": 12,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 7,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 19,
+    "number_of_dictionaries": 4,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 72,
+    "enums_names": [],
+    "control_structures_if": 43,
+    "control_structures_switch": 0,
+    "control_structures_for": 29,
+    "control_structures_while": 0,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 141,
+    "access_modifiers_private": 6,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 9,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 2,
+    "modifier_new": 40,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 43,
+    "linq_queries_count": 0,
+    "library_call_console": 58,
+    "library_call_math": 0,
+    "number_of_lambdas": 9,
+    "number_of_getters": 18,
+    "number_of_setters": 7,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 20,
+    "method_parameters": [
+        [
+            "TokenToPlay",
+            [
+                [
+                    "List<Token>",
+                    "itIsOkPlayed"
+                ],
+                [
+                    "Player",
+                    "player"
+                ],
+                [
+                    "int",
+                    "nextPlayerCursor"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "IsEndGame",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "IsEndRound",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "IndexFirstPlayer",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "ToCalculateScore",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "ToDistribute",
+            [
+                [
+                    "List<Token>",
+                    "tokens"
+                ],
+                [
+                    "List<Player>",
+                    "players"
+                ],
+                [
+                    "int",
+                    "count"
+                ]
+            ]
+        ],
+        [
+            "IndexNextPlayer",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "IndexNextPlayer",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "IndexNextPlayer",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "Equals",
+            [
+                [
+                    "Token?",
+                    "other"
+                ]
+            ]
+        ],
+        [
+            "ScoreCalculate",
+            [
+                [
+                    "Func<int,int,bool>",
+                    "func"
+                ],
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "ValidTokensToPlay",
+            [
+                [
+                    "List<Token>",
+                    "hand"
+                ],
+                [
+                    "IActionModeratorToAdd",
+                    "actionModeratorToAdd"
+                ],
+                [
+                    "IActionModeratorToSub",
+                    "actionModeratorToSub"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "BasicTokensGenerator",
+            [
+                [
+                    "int",
+                    "start"
+                ],
+                [
+                    "int",
+                    "end"
+                ]
+            ]
+        ],
+        [
+            "ValuesToPlay",
+            [
+                [
+                    "List<Token>",
+                    "itIsOkPlayed"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "WinnerTokens",
+            [
+                [
+                    "List<Token>",
+                    "itIsOkPlayed"
+                ],
+                [
+                    "List<int>",
+                    "smartValuesToPlay"
+                ],
+                [
+                    "Player",
+                    "player"
+                ],
+                [
+                    "int",
+                    "cursor"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "IsEndGame",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "IsEndRound",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "IsEndGame",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "IsEndGame",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "TokenToPlay",
+            [
+                [
+                    "List<Token>",
+                    "itIsOkPlayed"
+                ],
+                [
+                    "Player",
+                    "player"
+                ],
+                [
+                    "int",
+                    "cursor"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "TokenToPlay",
+            [
+                [
+                    "List<Token>",
+                    "itIsOkPlayed"
+                ],
+                [
+                    "Player",
+                    "player"
+                ],
+                [
+                    "int",
+                    "cursor"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "TokenToPlay",
+            [
+                [
+                    "List<Token>",
+                    "itIsOkPlayed"
+                ],
+                [
+                    "Player",
+                    "player"
+                ],
+                [
+                    "int",
+                    "cursor"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "TokenToPlay",
+            [
+                [
+                    "List<Token>",
+                    "itIsOkPlayed"
+                ],
+                [
+                    "Player",
+                    "player"
+                ],
+                [
+                    "int",
+                    "cursor"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "TokenToPlay",
+            [
+                [
+                    "List<Token>",
+                    "itIsOkPlayed"
+                ],
+                [
+                    "Player",
+                    "player"
+                ],
+                [
+                    "int",
+                    "cursor"
+                ],
+                [
+                    "Table",
+                    "table"
+                ]
+            ]
+        ],
+        [
+            "Clone",
+            [
+                [
+                    "Dictionary<int,(int,int)>",
+                    "dictionary"
+                ]
+            ]
+        ],
+        [
+            "ToDistribute",
+            [
+                [
+                    "List<Token>",
+                    "tokens"
+                ],
+                [
+                    "List<Player>",
+                    "players"
+                ],
+                [
+                    "int",
+                    "count"
+                ]
+            ]
+        ],
+        [
+            "ToDistribute",
+            [
+                [
+                    "List<Token>",
+                    "tokens"
+                ],
+                [
+                    "List<Player>",
+                    "players"
+                ],
+                [
+                    "int",
+                    "count"
+                ]
+            ]
+        ],
+        [
+            "ToDistributeRandomForOne",
+            [
+                [
+                    "List<Token>",
+                    "tokens"
+                ],
+                [
+                    "Player",
+                    "player"
+                ],
+                [
+                    "int",
+                    "count"
+                ]
+            ]
+        ],
+        [
+            "IndexFirstPlayer",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "ToCalculateScore",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "ToCalculateScore",
+            [
+                [
+                    "Game",
+                    "game"
+                ]
+            ]
+        ],
+        [
+            "CreationOfPlayers",
+            [
+                [
+                    "int",
+                    "count"
+                ]
+            ]
+        ],
+        [
+            "Auxiliar_",
+            [
+                [
+                    "IStrategy",
+                    "strategy"
+                ]
+            ]
+        ],
+        [
+            "Main",
+            [
+                [
+                    "string[]",
+                    "args"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "ClassicStep",
+            "classicStep"
+        ],
+        [
+            "int",
+            "temp"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "smartTokens"
+        ],
+        [
+            "List",
+            "valuesToPlay"
+        ],
+        [
+            "List",
+            "total"
+        ],
+        [
+            "HashSet",
+            "okPlayed"
+        ],
+        [
+            "double",
+            "score"
+        ],
+        [
+            "List",
+            "tokensToAdd"
+        ],
+        [
+            "List",
+            "tokensToSub"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "TokensToAdd"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "winners"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "countPass"
+        ],
+        [
+            "List",
+            "values"
+        ],
+        [
+            "List",
+            "smartTokens"
+        ],
+        [
+            "Dictionary",
+            "statsAux"
+        ],
+        [
+            "List",
+            "valuesToPlay"
+        ],
+        [
+            "List",
+            "intelligentplays"
+        ],
+        [
+            "IStrategy",
+            "strategy"
+        ],
+        [
+            "double",
+            "min"
+        ],
+        [
+            "BotagordaStrategy",
+            "botagordaStrategy"
+        ],
+        [
+            "int",
+            "piecesNotGame"
+        ],
+        [
+            "double",
+            "probabilities"
+        ],
+        [
+            "int",
+            "indexAux"
+        ],
+        [
+            "List",
+            "smartValues"
+        ],
+        [
+            "Dictionary",
+            "clone"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Token",
+            "token"
+        ],
+        [
+            "ClassicDistributionTen",
+            "classicDistribution"
+        ],
+        [
+            "List",
+            "doubleTokens"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Dictionary",
+            "stats"
+        ],
+        [
+            "bool",
+            "isOkKey"
+        ],
+        [
+            "ItemToSelectForm",
+            "itemToSelectForm"
+        ],
+        [
+            "IForm",
+            "mainForm"
+        ],
+        [
+            "PlayerForm",
+            "playerForm"
+        ],
+        [
+            "string",
+            "key"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "key"
+        ],
+        [
+            "List",
+            "printeablesToPlay"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "ItemToSelectForm",
+            "distributionForm"
+        ],
+        [
+            "GameForm",
+            "gameForm"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "ConsoleKeyInfo",
+            "key"
+        ],
+        [
+            "MainForm",
+            "mainForm"
+        ],
+        [
+            "bool",
+            "isOkKey"
+        ],
+        [
+            "string",
+            "key"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "players"
+        ],
+        [
+            "GameForm",
+            "gameForm"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "bool",
+            "strategyIsSelected"
+        ],
+        [
+            "bool",
+            "arePlaying"
+        ],
+        [
+            "IStrategy",
+            "strategy"
+        ],
+        [
+            "string",
+            "key"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "MainForm",
+            "mainForm"
+        ],
+        [
+            "LogForm",
+            "logForm"
+        ],
+        [
+            "MainForm",
+            "mainForm"
+        ]
+    ],
+    "method_names": [
+        "ToDistribute",
+        "TokenToPlay",
+        "TokensToAddThatItIsOk",
+        "Generated",
+        "Print",
+        "TokensToSubThatItIsNotOk",
+        "ToCalculateScore",
+        "IsEndGame",
+        "IndexFirstPlayer",
+        "IndexNextPlayer",
+        "IsEndRound",
+        "Stats",
+        "Print",
+        "IndexNextPlayer",
+        "Equals",
+        "ToTurn",
+        "ToString",
+        "BasicTokensGenerator",
+        "ValuesToPlay",
+        "ScoreCalculate",
+        "ValidTokensToPlay",
+        "WinnerTokens",
+        "TokensToAddThatItIsOk",
+        "Print",
+        "TokensToSubThatItIsNotOk",
+        "IsEndRound",
+        "IsEndGame",
+        "Print",
+        "Clone",
+        "TokenToPlay",
+        "Print",
+        "ToDistribute",
+        "Print",
+        "ToDistributeRandomForOne",
+        "Generated",
+        "Stats",
+        "Print",
+        "IndexFirstPlayer",
+        "Print",
+        "ToCalculateScore",
+        "Print",
+        "Show",
+        "KeyIncorrect",
+        "Show",
+        "Show",
+        "CreationOfPlayers",
+        "Show",
+        "Show",
+        "Auxiliar_",
+        "Main"
+    ],
+    "method_return_types": [
+        [
+            "IsEndGame",
+            "("
+        ],
+        [
+            "TokensToSubThatItIsNotOk",
+            "List"
+        ],
+        [
+            "IndexFirstPlayer",
+            "int"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "TokensToAddThatItIsOk",
+            "List"
+        ],
+        [
+            "Stats",
+            "Dictionary"
+        ],
+        [
+            "IsEndRound",
+            "("
+        ],
+        [
+            "ToDistribute",
+            "void"
+        ],
+        [
+            "IndexNextPlayer",
+            "int"
+        ],
+        [
+            "TokenToPlay",
+            "Token"
+        ],
+        [
+            "ToCalculateScore",
+            "void"
+        ],
+        [
+            "Generated",
+            "List"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "IndexNextPlayer",
+            "int"
+        ],
+        [
+            "Equals",
+            "bool"
+        ],
+        [
+            "ToTurn",
+            "void"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "ScoreCalculate",
+            "void"
+        ],
+        [
+            "WinnerTokens",
+            "List"
+        ],
+        [
+            "ValidTokensToPlay",
+            "List"
+        ],
+        [
+            "ValuesToPlay",
+            "List"
+        ],
+        [
+            "BasicTokensGenerator",
+            "List"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "TokensToAddThatItIsOk",
+            "List"
+        ],
+        [
+            "TokensToSubThatItIsNotOk",
+            "List"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "IsEndRound",
+            "("
+        ],
+        [
+            "IsEndGame",
+            "("
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "TokenToPlay",
+            "Token"
+        ],
+        [
+            "Clone",
+            "Dictionary"
+        ],
+        [
+            "ToDistributeRandomForOne",
+            "void"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "ToDistribute",
+            "void"
+        ],
+        [
+            "Stats",
+            "Dictionary"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "Generated",
+            "List"
+        ],
+        [
+            "IndexFirstPlayer",
+            "int"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "ToCalculateScore",
+            "void"
+        ],
+        [
+            "Show",
+            "void"
+        ],
+        [
+            "Show",
+            "void"
+        ],
+        [
+            "KeyIncorrect",
+            "void"
+        ],
+        [
+            "Show",
+            "void"
+        ],
+        [
+            "Show",
+            "void"
+        ],
+        [
+            "CreationOfPlayers",
+            "List"
+        ],
+        [
+            "Show",
+            "void"
+        ],
+        [
+            "Auxiliar_",
+            "void"
+        ],
+        [
+            "Main",
+            "void"
+        ]
+    ],
+    "class_names": [
+        "ChangeDirectionWithPassStep",
+        "ClassicStep",
+        "Token",
+        "Auxiliar",
+        "ClassicActionToSub",
+        "DoubleWhiteActionToAdd",
+        "ClassicActionToAdd",
+        "TwicePassesEndGame",
+        "ChickenEndGame",
+        "ClassicEndGame",
+        "ClassicEndRound",
+        "Table",
+        "IntelligentBotagordaStrategy",
+        "RandomStrategy",
+        "IntelligentRandomStrategy",
+        "IntelligentStrategy",
+        "BotagordaStrategy",
+        "ObjectWithRandom",
+        "ClassicDistributionTen",
+        "DoublesToTrashDistribution",
+        "Generator_9_Variant",
+        "Generator_6_Variant",
+        "Game",
+        "FirstPlayerA",
+        "ScoreCalculatorA",
+        "ScoreCalculatorB",
+        "ItemToSelectForm",
+        "MainForm",
+        "LogForm",
+        "PlayerForm",
+        "GameForm",
+        "Program"
+    ],
+    "interface_names": [
+        "IEndGame",
+        "IScoreCalculator",
+        "IFirstPlayer",
+        "IDistribution",
+        "IEndRound",
+        "IStep",
+        "ITokensGenerator",
+        "IActionModeratorToSub",
+        "IActionModeratorToAdd",
+        "IStrategy",
+        "IPrinteable",
+        "IForm"
+    ],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 20,
+        "Namespace_member_declarationsContext": 26,
+        "Namespace_member_declarationContext": 119,
+        "Namespace_declarationContext": 20,
+        "TerminalNodeImpl": 5862,
+        "Qualified_identifierContext": 20,
+        "IdentifierContext": 1781,
+        "Namespace_bodyContext": 20,
+        "Type_declarationContext": 99,
+        "All_member_modifiersContext": 156,
+        "All_member_modifierContext": 165,
+        "Interface_definitionContext": 12,
+        "Interface_baseContext": 10,
+        "Interface_type_listContext": 10,
+        "Namespace_or_type_nameContext": 402,
+        "Class_bodyContext": 44,
+        "Class_member_declarationsContext": 44,
+        "Class_member_declarationContext": 104,
+        "Common_member_declarationContext": 104,
+        "Typed_member_declarationContext": 79,
+        "Type_Context": 485,
+        "Base_typeContext": 485,
+        "Class_typeContext": 355,
+        "Method_declarationContext": 76,
+        "Method_member_nameContext": 76,
+        "Formal_parameter_listContext": 39,
+        "Fixed_parametersContext": 39,
+        "Fixed_parameterContext": 79,
+        "Arg_declarationContext": 79,
+        "Type_argument_listContext": 94,
+        "Simple_typeContext": 130,
+        "Numeric_typeContext": 114,
+        "Integral_typeContext": 108,
+        "Method_bodyContext": 76,
+        "Tuple_typeContext": 25,
+        "Tuple_elementContext": 48,
+        "Using_directivesContext": 7,
+        "UsingNamespaceDirectiveContext": 32,
+        "Class_definitionContext": 32,
+        "Class_baseContext": 27,
+        "BlockContext": 117,
+        "Statement_listContext": 116,
+        "StatementContext": 318,
+        "Embedded_statementContext": 297,
+        "ReturnStatementContext": 59,
+        "ExpressionContext": 793,
+        "Non_assignment_expressionContext": 765,
+        "Conditional_expressionContext": 756,
+        "Null_coalescing_expressionContext": 756,
+        "Conditional_or_expressionContext": 756,
+        "Conditional_and_expressionContext": 761,
+        "Inclusive_or_expressionContext": 765,
+        "Exclusive_or_expressionContext": 765,
+        "And_expressionContext": 765,
+        "Equality_expressionContext": 765,
+        "Relational_expressionContext": 799,
+        "Shift_expressionContext": 836,
+        "Additive_expressionContext": 836,
+        "Multiplicative_expressionContext": 887,
+        "Switch_expressionContext": 892,
+        "Range_expressionContext": 892,
+        "Unary_expressionContext": 947,
+        "Primary_expressionContext": 934,
+        "ParenthesisExpressionsContext": 15,
+        "SimpleNameExpressionContext": 634,
+        "Member_accessContext": 374,
+        "LiteralExpressionContext": 185,
+        "LiteralContext": 185,
+        "String_literalContext": 61,
+        "Property_declarationContext": 18,
+        "Member_nameContext": 18,
+        "Accessor_declarationsContext": 18,
+        "Accessor_bodyContext": 25,
+        "Set_accessor_declarationContext": 7,
+        "Accessor_modifierContext": 5,
+        "Variable_initializerContext": 7,
+        "Boolean_literalContext": 18,
+        "IfStatementContext": 43,
+        "If_bodyContext": 57,
+        "DeclarationStatementContext": 59,
+        "Local_variable_declarationContext": 88,
+        "Local_variable_typeContext": 97,
+        "Local_variable_declaratorContext": 88,
+        "Local_variable_initializerContext": 88,
+        "ErrorNodeImpl": 955,
+        "ExpressionStatementContext": 164,
+        "Lambda_expressionContext": 9,
+        "Anonymous_function_signatureContext": 9,
+        "Right_arrowContext": 9,
+        "Anonymous_function_bodyContext": 9,
+        "Method_invocationContext": 155,
+        "Argument_listContext": 98,
+        "ArgumentContext": 202,
+        "Constructor_declarationContext": 7,
+        "BodyContext": 7,
+        "AssignmentContext": 42,
+        "Assignment_operatorContext": 42,
+        "ThisReferenceExpressionContext": 4,
+        "Floating_point_typeContext": 6,
+        "Rank_specifierContext": 22,
+        "ObjectCreationExpressionContext": 72,
+        "Expression_listContext": 2,
+        "ForStatementContext": 29,
+        "For_initializerContext": 29,
+        "For_iteratorContext": 29,
+        "Bracket_expressionContext": 102,
+        "Indexer_argumentContext": 102,
+        "Object_creation_expressionContext": 59,
+        "ForeachStatementContext": 9,
+        "BreakStatementContext": 4,
+        "TupleExpressionContext": 22,
+        "AttributesContext": 17,
+        "Attribute_sectionContext": 17,
+        "Attribute_listContext": 16,
+        "AttributeContext": 16,
+        "Struct_definitionContext": 3,
+        "MemberAccessExpressionContext": 2,
+        "Predefined_typeContext": 2,
+        "Cast_expressionContext": 10,
+        "Implicit_anonymous_function_parameter_listContext": 2,
+        "Throwable_expressionContext": 2,
+        "Field_declarationContext": 1,
+        "Variable_declaratorsContext": 1,
+        "Variable_declaratorContext": 1,
+        "Object_or_collection_initializerContext": 11,
+        "Collection_initializerContext": 11,
+        "Element_initializerContext": 30
+    },
+    "project_name": "YoanRene_Domino-Projec",
+    "label": "original"
+}

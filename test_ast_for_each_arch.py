@@ -24,13 +24,18 @@ for f in os.scandir(PROJECTS_FOLDER):
         
         if os.path.exists(output_json_path):
             if not os.path.exists(output_json_path_vect):
-                fv = FeatureVectorizer(output_json_path)
-                fv.vectorize_features_and_save(output_json_path_vect)
+                try:
+                    fv = FeatureVectorizer(output_json_path)
+                    fv.vectorize_features_and_save(output_json_path_vect)
+                except:
+                    print("ERRRROOOOOORRRRR WORD2VEC")
             continue
         
         features = process_project(PROJECTS_FOLDER + f.name)
         features['project_name'] = f.name
         features['label'] = "original"
+        
+        if 
         
         # Guardar los features en un archivo JSON
         with open(output_json_path, 'w', encoding='utf-8') as json_file:
@@ -38,9 +43,11 @@ for f in os.scandir(PROJECTS_FOLDER):
         
         print("Archivo JSON guardado correctamente.")
         
-        fv = FeatureVectorizer(output_json_path)
-        fv.vectorize_features_and_save(output_json_path_vect)
-
+        try:
+            fv = FeatureVectorizer(output_json_path)
+            fv.vectorize_features_and_save(output_json_path_vect)
+        except:
+            print("ERRRROOOOOORRRRR WORD2VEC")
 
 # Lista para almacenar todos los datos de los archivos JSON
 datos_combinados = []
