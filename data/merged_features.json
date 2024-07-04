@@ -209,7 +209,7 @@
             0.5479475259780884,
             0.27850764989852905
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.7637695670127869,
             0.19892250001430511
@@ -226,7 +226,7 @@
             0.2551644742488861,
             -0.02123364806175232
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.4889335632324219,
             0.12956602871418,
@@ -435,7 +435,7 @@
             0.19746948778629303,
             0.029736779630184174
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.07843688875436783,
             0.024868659675121307
@@ -448,8 +448,8 @@
             0.05528935045003891,
             0.01874825917184353
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.2532753646373749,
             0.24529285728931427,
@@ -656,7 +656,7 @@
             0.16440963745117188,
             0.2539491355419159
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.06414984166622162,
             0.030230693519115448
@@ -669,8 +669,8 @@
             0.21590669453144073,
             0.2077227234840393
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.056119296699762344,
             0.08102519065141678,
@@ -876,7 +876,7 @@
             0.01742510125041008,
             0.030773593112826347
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.08424723893404007,
             0.0629831850528717
@@ -889,7 +889,7 @@
             0.03721102327108383,
             -0.12216001003980637
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             -0.16064561903476715,
             0.13241229951381683
@@ -1073,7 +1073,7 @@
             0.12142301350831985,
             0.1499423086643219
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.07395903021097183,
             0.10701724141836166
@@ -1086,8 +1086,8 @@
             0.11260758340358734,
             0.0016329685458913445
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.0007514059543609619,
             0.009449630975723267,
@@ -1268,7 +1268,7 @@
             0.11669254302978516,
             0.09013642370700836
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.11269734799861908,
             0.10245902091264725
@@ -1281,8 +1281,8 @@
             -0.02824063040316105,
             0.20767328143119812
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.022108184173703194,
             -0.036084696650505066,
@@ -1471,7 +1471,7 @@
             0.009138175286352634,
             0.10986164957284927
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.06174619868397713,
             0.04478178918361664
@@ -1484,7 +1484,7 @@
             0.08266399055719376,
             -0.04416966065764427
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.39681339263916016,
             -0.2960564196109772
@@ -1701,7 +1701,7 @@
             0.13443879783153534,
             -0.32980263233184814
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.39003509283065796,
             -0.33566638827323914
@@ -1912,7 +1912,7 @@
             -0.029346317052841187,
             0.0388726070523262
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.023758605122566223,
             0.09220699965953827
@@ -1925,7 +1925,7 @@
             0.029346853494644165,
             -0.03211544081568718
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             -0.02635369636118412,
             0.01969940960407257
@@ -2110,7 +2110,7 @@
             0.08236101269721985,
             0.10190089792013168
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.08074965327978134,
             -0.10961578041315079
@@ -2123,8 +2123,8 @@
             0.0878998190164566,
             0.17939239740371704
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.06878768652677536,
             -0.003640373470261693,
@@ -2347,7 +2347,7 @@
             0.6742445230484009,
             0.49661967158317566
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.8267589211463928,
             0.43281474709510803
@@ -2546,7 +2546,7 @@
             0.015785308554768562,
             0.11705505847930908
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.03843085840344429,
             0.000536618463229388
@@ -2559,8 +2559,8 @@
             -0.07849640399217606,
             -0.04554496705532074
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.05677158385515213,
             -0.030202576890587807,
@@ -2740,7 +2740,7 @@
             0.16247621178627014,
             0.06597819179296494
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.24614661931991577,
             0.12985709309577942
@@ -2753,8 +2753,8 @@
             0.08701962232589722,
             -0.08709067851305008
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.09709904342889786,
             0.016685759648680687,
@@ -2923,7 +2923,7 @@
             0.03744806721806526,
             0.040622811764478683
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.03698063641786575,
             0.09049572050571442
@@ -2936,7 +2936,7 @@
             0.07637909054756165,
             -0.17074726521968842
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.4066559672355652,
             -0.29909661412239075
@@ -3136,7 +3136,7 @@
             0.061168596148490906,
             0.12814103066921234
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.0897631049156189,
             -0.06493566185235977
@@ -3149,8 +3149,8 @@
             -0.006852504797279835,
             0.12011788040399551
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.07862817496061325,
             -0.08685004711151123,
@@ -3332,7 +3332,7 @@
             0.009004245512187481,
             0.15544727444648743
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.04790326580405235,
             -0.035025276243686676
@@ -3345,8 +3345,8 @@
             0.16185297071933746,
             0.02167159877717495
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.049613602459430695,
             -0.06231282278895378,
@@ -3561,7 +3561,7 @@
             0.1510080248117447,
             0.14571627974510193
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.10756105929613113,
             0.13813582062721252,
@@ -3749,7 +3749,7 @@
             0.002154150977730751,
             0.08718164265155792
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.0023137121461331844,
             0.07621295750141144
@@ -3762,8 +3762,8 @@
             -0.1708574891090393,
             0.023513950407505035
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.07431383430957794,
             0.09585537016391754,
@@ -3954,7 +3954,7 @@
             0.10336381942033768,
             0.08544844388961792
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.01644706539809704,
             -0.023556459695100784
@@ -3967,8 +3967,8 @@
             0.09228119999170303,
             0.26696667075157166
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.0334453284740448,
             0.00431358115747571,
@@ -4163,7 +4163,7 @@
             0.1531907171010971,
             0.12103072553873062
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.13525910675525665,
             0.20793427526950836
@@ -4176,7 +4176,7 @@
             0.18222564458847046,
             0.19693921506404877
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             -0.3047921061515808,
             -0.07692189514636993
@@ -4385,7 +4385,7 @@
             0.04074040800333023,
             0.11485409736633301
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.024101821705698967,
             0.08361954241991043
@@ -4398,8 +4398,8 @@
             0.08182265609502792,
             -0.022854825481772423
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.02987729199230671,
             -0.010336254723370075,
@@ -4590,7 +4590,7 @@
             0.025148168206214905,
             0.03496897220611572
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.0750192329287529,
             -0.0025700414553284645
@@ -4607,7 +4607,7 @@
             0.0450873002409935,
             0.022875821217894554
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.013289406895637512,
             -0.022145412862300873,
@@ -4804,7 +4804,7 @@
             0.005123624112457037,
             0.016211386770009995
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.001229601795785129,
             0.06080998480319977
@@ -4817,7 +4817,7 @@
             0.0414532870054245,
             -0.03484563156962395
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             -0.21631814539432526,
             0.32413971424102783
@@ -5553,7 +5553,7 @@
             0.10133843123912811,
             0.11438187211751938
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.11464991420507431,
             0.05167528986930847
@@ -5776,7 +5776,7 @@
             0.03577212989330292,
             0.04471126198768616
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.03451084345579147,
             -0.007010525558143854
@@ -5789,7 +5789,7 @@
             0.06777338683605194,
             -0.003036254085600376
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             -0.17049001157283783,
             0.24282056093215942
@@ -5982,7 +5982,7 @@
             0.16372962296009064,
             -0.019962478429079056
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.04579581692814827,
             -0.016715137287974358
@@ -5999,7 +5999,7 @@
             0.15975216031074524,
             0.1907673329114914
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.02069881744682789,
             0.09343873709440231,
@@ -6182,7 +6182,7 @@
             0.10115555673837662,
             0.14841009676456451
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.14440934360027313,
             -0.022802507504820824
@@ -6195,8 +6195,8 @@
             -0.100346639752388,
             0.0809924453496933
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.03222469985485077,
             0.07003451138734818,
@@ -6394,7 +6394,7 @@
             -0.051731500774621964,
             0.09254825860261917
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.004182074684649706,
             -0.028470171615481377
@@ -6407,7 +6407,7 @@
             0.06341042369604111,
             0.002179753268137574
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             -0.37340298295021057,
             -0.04527658596634865
@@ -6634,7 +6634,7 @@
             0.04072102904319763,
             0.057039011269807816
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.17419613897800446,
             0.10286366194486618,
@@ -6858,7 +6858,7 @@
             0.31386587023735046,
             -0.13882660865783691
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.6003937721252441,
             -0.08673793822526932
@@ -7073,7 +7073,7 @@
             0.044264260679483414,
             0.05240194872021675
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.07161217927932739,
             -0.06993824243545532
@@ -7086,7 +7086,7 @@
             0.004465862642973661,
             0.03102278709411621
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.03752001002430916,
             -0.05374393239617348
@@ -7302,7 +7302,7 @@
             0.08334928005933762,
             -0.03187686577439308
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.14724227786064148,
             0.027508903294801712
@@ -7319,7 +7319,7 @@
             -0.08000141382217407,
             0.13126221299171448
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.11005013436079025,
             -0.014084652066230774,
@@ -7548,7 +7548,7 @@
             0.4356567859649658,
             0.09843377023935318
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.43368980288505554,
             0.10417620837688446,
@@ -7732,7 +7732,7 @@
             0.035057321190834045,
             0.07684291899204254
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.010275359265506268,
             -0.03512156382203102
@@ -7745,8 +7745,8 @@
             -0.025302689522504807,
             0.05770081281661987
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.1546759009361267,
             -0.017387181520462036,
@@ -7955,7 +7955,7 @@
             0.13972526788711548,
             0.1584847867488861
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.06361207365989685,
             0.14888104796409607
@@ -8164,7 +8164,7 @@
             0.1244574710726738,
             0.15095578134059906
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.04013977572321892,
             0.04415293037891388
@@ -8177,8 +8177,8 @@
             0.04838603362441063,
             0.02527914009988308
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.0157732293009758,
             0.0746743232011795,
@@ -8376,7 +8376,7 @@
             0.13522319495677948,
             0.16515910625457764
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.09590043127536774,
             0.06057785823941231
@@ -8393,7 +8393,7 @@
             0.1271394044160843,
             0.09365183115005493
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.11046013236045837,
             0.03485261648893356,
@@ -8592,7 +8592,7 @@
             0.06784657388925552,
             0.15150269865989685
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.07188630849123001,
             0.07631538808345795
@@ -8605,8 +8605,8 @@
             -0.08258287608623505,
             -0.06814517825841904
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.0022139123175293207,
             0.07386499643325806,
@@ -8790,7 +8790,7 @@
             0.16915829479694366,
             0.0883612260222435
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.12449576705694199,
             0.09896134585142136
@@ -8803,8 +8803,8 @@
             0.27065470814704895,
             0.03605300188064575
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.07329631596803665,
             0.11515523493289948,
@@ -9030,7 +9030,7 @@
             -0.055597659200429916,
             0.05914842709898949
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.07214437425136566,
             0.07470709085464478
@@ -9047,7 +9047,7 @@
             0.4848971962928772,
             0.2701040208339691
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.014758247882127762,
             -0.07712889462709427,
@@ -9256,7 +9256,7 @@
             0.19498693943023682,
             0.08876673877239227
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.18742533028125763,
             0.1547883003950119
@@ -9448,7 +9448,7 @@
             0.07805734872817993,
             0.1583193838596344
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.10442107170820236,
             -0.02029288560152054
@@ -9461,8 +9461,8 @@
             -0.1711205244064331,
             -0.19139516353607178
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.026262475177645683,
             0.012824678793549538,
@@ -9654,7 +9654,7 @@
             0.504092812538147,
             0.3000185191631317
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.5176451206207275,
             0.30562397837638855
@@ -9667,7 +9667,7 @@
             0.26538407802581787,
             0.1002180427312851
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.31142500042915344,
             0.3351910710334778
@@ -9877,7 +9877,7 @@
             0.019504938274621964,
             0.10293236374855042
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.0007945476099848747,
             0.0667291060090065
@@ -9890,7 +9890,7 @@
             -0.017309434711933136,
             -0.024327799677848816
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.42033088207244873,
             0.03370684012770653
@@ -10072,7 +10072,7 @@
             -0.10713932663202286,
             0.025175750255584717
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.07364628463983536,
             -0.050374239683151245
@@ -10085,8 +10085,8 @@
             0.24438554048538208,
             0.06129882484674454
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.03155770152807236,
             0.008092978037893772,
@@ -10269,7 +10269,7 @@
             -0.008441156707704067,
             0.12323246151208878
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.05082628130912781,
             -0.025891060009598732
@@ -10282,8 +10282,8 @@
             -0.018083594739437103,
             -0.056563954800367355
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.12023134529590607,
             -0.17148733139038086,
@@ -10450,7 +10450,7 @@
             0.2333863079547882,
             0.2491215467453003
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.12189050018787384,
             -0.02042631059885025
@@ -10463,8 +10463,8 @@
             0.11170633882284164,
             0.2694352865219116
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.026810577139258385,
             0.011840146966278553,
@@ -10673,7 +10673,7 @@
             -0.058031175285577774,
             -0.003270829329267144
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.008886878378689289,
             0.06251047551631927
@@ -10686,7 +10686,7 @@
             -0.058509461581707,
             0.037478283047676086
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.326253205537796,
             0.3613632321357727
@@ -10895,7 +10895,7 @@
             0.05814402922987938,
             0.03726382553577423
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.05224434286355972,
             0.04157361388206482
@@ -11128,7 +11128,7 @@
             0.0011181585723534226,
             0.0386587493121624
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.03699684515595436,
             0.14228428900241852
@@ -11141,7 +11141,7 @@
             0.026971811428666115,
             -0.0007508928538300097
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             -0.03466697782278061,
             0.14612151682376862
@@ -11364,7 +11364,7 @@
             0.5845513939857483,
             -0.4568226635456085
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.761970043182373,
             -0.46467697620391846
@@ -11573,7 +11573,7 @@
             0.1199864074587822,
             0.06495479494333267
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.07301010936498642,
             -0.0705522894859314
@@ -11586,8 +11586,8 @@
             0.04831419140100479,
             -0.0008737870375625789
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.154830664396286,
             0.015169582329690456,
@@ -11799,7 +11799,7 @@
             0.2581046223640442,
             0.19951172173023224
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.18747322261333466,
             0.11864128708839417
@@ -12027,7 +12027,7 @@
             0.37276965379714966,
             0.539461076259613
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.5536730885505676,
             0.719964861869812
@@ -12229,7 +12229,7 @@
             0.03282492607831955,
             0.05496860668063164
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.08116071671247482,
             -0.05678272247314453
@@ -12242,8 +12242,8 @@
             -0.04547187313437462,
             0.029088038951158524
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.2387460619211197,
             0.011843830347061157,
@@ -12429,7 +12429,7 @@
             0.08026840537786484,
             0.08394267410039902
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.10556774586439133,
             0.06087169051170349
@@ -12442,8 +12442,8 @@
             -0.2016647458076477,
             0.13877587020397186
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.03819733485579491,
             0.00519018666818738,
@@ -12630,7 +12630,7 @@
             -0.03286018967628479,
             -0.020031137391924858
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.12259593605995178,
             0.13489653170108795
@@ -12647,7 +12647,7 @@
             0.1260264366865158,
             0.043283235281705856
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.03495020046830177,
             0.20085306465625763,
@@ -12845,7 +12845,7 @@
             0.049865201115608215,
             0.12393590807914734
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.07140344381332397,
             0.049960944801568985
@@ -12858,8 +12858,8 @@
             -0.032966408878564835,
             0.06295470893383026
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.05042349174618721,
             0.10906926542520523,
@@ -13057,7 +13057,7 @@
             0.03057519532740116,
             0.12680640816688538
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.08486750721931458,
             0.24919860064983368
@@ -13074,7 +13074,7 @@
             0.14691518247127533,
             -0.03194282576441765
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.06267578899860382,
             0.09320730715990067,
@@ -13263,7 +13263,7 @@
             0.018900616094470024,
             0.007095853798091412
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.033602070063352585,
             0.04229514300823212
@@ -13276,7 +13276,7 @@
             0.09103596955537796,
             0.06433479487895966
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.353116512298584,
             0.05862225592136383
@@ -13503,7 +13503,7 @@
             0.32947760820388794,
             0.22631751000881195
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.41033050417900085,
             0.2688305377960205
@@ -13951,7 +13951,7 @@
             0.031093377619981766,
             0.21858923137187958
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.024032380431890488,
             0.17336536943912506
@@ -13964,8 +13964,8 @@
             0.25195538997650146,
             0.12741507589817047
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.04799392819404602,
             0.16034460067749023,
@@ -14165,7 +14165,7 @@
             0.17532028257846832,
             0.09939037263393402
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.07908377796411514,
             0.23631900548934937
@@ -14376,7 +14376,7 @@
             -0.0031422756146639585,
             0.042526423931121826
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.025946158915758133,
             0.06936262547969818
@@ -14389,7 +14389,7 @@
             0.050955187529325485,
             0.0723126232624054
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.5075283646583557,
             -0.20518827438354492
@@ -14571,7 +14571,7 @@
             0.05844945088028908,
             0.10997205972671509
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.04338623583316803,
             0.003976990934461355
@@ -14584,8 +14584,8 @@
             -0.28573185205459595,
             -0.37418651580810547
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.13592925667762756,
             -0.06617458909749985,
@@ -14765,7 +14765,7 @@
             -0.02012314461171627,
             0.03278527036309242
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.03335018828511238,
             0.11588754504919052
@@ -14778,8 +14778,8 @@
             0.01869969256222248,
             0.030065229162573814
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.009859359823167324,
             0.04970373213291168,
@@ -14982,7 +14982,7 @@
             0.03371342271566391,
             -0.010558875277638435
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.03415471687912941,
             0.08457215130329132
@@ -15200,7 +15200,7 @@
             0.1302940547466278,
             0.03316420316696167
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.1751987785100937,
             0.07009238749742508
@@ -15213,7 +15213,7 @@
             0.08535579591989517,
             0.055943913757801056
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.054816510528326035,
             0.22052964568138123
@@ -15401,7 +15401,7 @@
             0.012212344445288181,
             0.013759279623627663
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.08663072437047958,
             0.02678108774125576
@@ -15414,8 +15414,8 @@
             -0.0358157716691494,
             -0.1974463015794754
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.014235878363251686,
             -0.029225800186395645,
@@ -15627,7 +15627,7 @@
             0.32184508442878723,
             0.17812983691692352
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.42643114924430847,
             0.20321688055992126
@@ -15644,7 +15644,7 @@
             -0.01375261414796114,
             0.19334185123443604
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.2837406396865845,
             0.07330693304538727,
@@ -16086,7 +16086,7 @@
             0.024429604411125183,
             0.12838943302631378
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.023321064189076424,
             0.1506330370903015
@@ -16099,8 +16099,8 @@
             0.0761069804430008,
             0.11360746622085571
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.017580298706889153,
             0.041441909968853,
@@ -16308,7 +16308,7 @@
             0.060653965920209885,
             0.025302207097411156
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.09127719700336456,
             0.11770165711641312
@@ -16522,7 +16522,7 @@
             0.04081420972943306,
             0.04840974882245064
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.03725994750857353,
             0.021558720618486404
@@ -16535,8 +16535,8 @@
             0.1984115093946457,
             0.0684826672077179
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.013349178247153759,
             0.014895794913172722,
@@ -16750,7 +16750,7 @@
             0.8680870532989502,
             -0.044036027044057846
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.9949474930763245,
             -0.05816728621721268
@@ -16975,7 +16975,7 @@
             0.04139382019639015,
             0.08092457056045532
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.08134425431489944,
             0.038100361824035645
@@ -16988,8 +16988,8 @@
             0.09357360750436783,
             -0.12353886663913727
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.09957020729780197,
             0.0513116791844368,
@@ -17178,7 +17178,7 @@
             0.04968924820423126,
             0.22870904207229614
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.11671194434165955,
             0.03218040242791176
@@ -17191,8 +17191,8 @@
             0.13479271531105042,
             0.16415458917617798
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.004896164871752262,
             -0.03723903000354767,
@@ -17392,7 +17392,7 @@
             0.09045380353927612,
             0.19724877178668976
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.14745399355888367,
             0.1320001631975174
@@ -17602,7 +17602,7 @@
             0.01982634887099266,
             0.10882525891065598
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.02815612591803074,
             0.011924299411475658
@@ -17615,7 +17615,7 @@
             0.0564497672021389,
             0.011118460446596146
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             -0.08464213460683823,
             0.3391245901584625
@@ -17842,7 +17842,7 @@
             0.3627319931983948,
             0.02454262599349022
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.6325995922088623,
             0.13312925398349762
@@ -18052,7 +18052,7 @@
             0.045131616294384,
             0.10137458890676498
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.06172490119934082,
             -0.11027031391859055
@@ -18065,8 +18065,8 @@
             -0.06648184359073639,
             0.08179701119661331
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.054719582200050354,
             -0.08712293952703476,
@@ -18250,7 +18250,7 @@
             0.029176605865359306,
             0.1524495631456375
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.00719387037679553,
             0.009312013164162636
@@ -18263,8 +18263,8 @@
             0.15010231733322144,
             0.07653101533651352
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.027679480612277985,
             -0.02991080842912197,
@@ -18464,7 +18464,7 @@
             0.09424400329589844,
             0.12907516956329346
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.058549437671899796,
             0.0776231661438942
@@ -18477,8 +18477,8 @@
             -0.0055470154620707035,
             -0.002248686971142888
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.020637258887290955,
             0.10532358288764954,
@@ -18713,7 +18713,7 @@
             0.06705643236637115,
             -0.0804339349269867
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.14643116295337677,
             -0.25395268201828003
@@ -19171,7 +19171,7 @@
             0.04850761964917183,
             0.07978644222021103
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.05594369396567345,
             0.14925339818000793
@@ -19184,8 +19184,8 @@
             0.008389823138713837,
             0.01274852454662323
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.003428358817473054,
             0.13174964487552643,
@@ -19415,7 +19415,7 @@
             -0.07776008546352386,
             0.20413585007190704
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.3969966173171997,
             0.23086990416049957,
@@ -19596,7 +19596,7 @@
             0.04690945893526077,
             0.09801416844129562
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.1983829140663147,
             -0.07910850644111633
@@ -19609,8 +19609,8 @@
             0.27955132722854614,
             0.1522199958562851
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.23147793114185333,
             0.280693918466568,
@@ -19807,7 +19807,7 @@
             0.016418736428022385,
             0.06465713679790497
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.06068458780646324,
             0.07957678288221359
@@ -19820,8 +19820,8 @@
             0.09493956714868546,
             0.10022079199552536
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.18105539679527283,
             -0.10440375655889511,
@@ -20011,7 +20011,7 @@
             -0.014680257067084312,
             0.061829306185245514
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.04473823308944702,
             0.0547892265021801
@@ -20028,7 +20028,7 @@
             0.1621435284614563,
             -0.07514440268278122
         ],
-        "enums_names_vector": NaN,
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.006409003399312496,
             0.06072607636451721,
@@ -20235,7 +20235,7 @@
             0.1305730938911438,
             0.10656748712062836
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.09178721159696579,
             0.14353014528751373
@@ -20711,7 +20711,7 @@
             0.05006520450115204,
             0.1645486056804657
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.08397477120161057,
             -0.052218034863471985
@@ -20724,8 +20724,8 @@
             0.062044657766819,
             0.043852873146533966
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             -0.02874455414712429,
             -0.08642015606164932,
@@ -20904,7 +20904,7 @@
             0.02421005256474018,
             0.09768229722976685
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.0002714353031478822,
             0.09729939699172974
@@ -20917,8 +20917,8 @@
             0.0549505278468132,
             0.203985795378685
         ],
-        "interface_names_vector": NaN,
-        "enums_names_vector": NaN,
+        "interface_names_vector": [],
+        "enums_names_vector": [],
         "method_parameters_vector": [
             0.003221107879653573,
             -0.11623717844486237,
@@ -21125,7 +21125,7 @@
             0.049808308482170105,
             0.06640422344207764
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             -0.02380746230483055,
             0.004613449797034264
@@ -21138,7 +21138,7 @@
             0.12410730868577957,
             0.04361146315932274
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.34845420718193054,
             0.46498024463653564
@@ -21350,7 +21350,7 @@
             0.08422580361366272,
             0.02468723990023136
         ],
-        "delegate_names_vector": NaN,
+        "delegate_names_vector": [],
         "method_return_types_vector": [
             0.12167689204216003,
             0.02180824615061283
@@ -21363,7 +21363,7 @@
             0.07038092613220215,
             0.009763499721884727
         ],
-        "interface_names_vector": NaN,
+        "interface_names_vector": [],
         "enums_names_vector": [
             0.008755933493375778,
             0.335650235414505
