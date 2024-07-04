@@ -7,7 +7,7 @@ import networkx as nx
 from node2vec import Node2Vec
 from collections import deque
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/moogle/'
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/All/'
 
 DATA_FOLDER = f'{os.getcwd()}/data/features_all/'
                                                           
