@@ -1,0 +1,29 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {spanish}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Introducci\IeC {\'o}n}{1}{chapter*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.1}Motivaci\IeC {\'o}n}{1}{section.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.2}Problem\IeC {\'a}tica}{1}{section.0.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.3}Objetivos Generales}{2}{section.0.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.4}Objetivos Espec\IeC {\'\i }ficos}{2}{section.0.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Estado del Arte}{4}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Propuesta}{9}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Extraccion del AST}{9}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Extraccion de features}{10}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Preparacion del dataset}{13}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Detalles de Implementaci\IeC {\'o}n y Experimentos}{14}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Conclusiones}{15}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Recomendaciones}{16}{section*.13}
