@@ -32,7 +32,7 @@ Características Extraídas y su Importancia
         \item {\bf variables:} Número de variables locales.
         \item {\bf constants:} Número de constantes declaradas.
         \item {\bf variable\_names:} Conjunto de nombres de variables y sus tipos.
-        \item {\bf number\_of_tuples:} Número de variables de tipo tupla.
+        \item {\bf number\_of\_tuples:} Número de variables de tipo tupla.
         \item {\bf lists:} Número de listas declaradas.
         \item {\bf dicts:} Número de diccionarios declarados.
     \end{itemize}
@@ -41,8 +41,8 @@ Características Extraídas y su Importancia
     \item Declaraciones de Métodos y Clases:
     \begin{itemize}
         \item {\bf methods:} Número de métodos declarados.
-        \item {\bf method_names:} Conjunto de nombres de métodos.
-        \item {\bf method\_return_types:} Conjunto de tipos de retorno de métodos.
+        \item {\bf method\_names:} Conjunto de nombres de métodos.
+        \item {\bf method\_return\_types:} Conjunto de tipos de retorno de métodos.
         \item {\bf method\_parameters:} Lista de parámetros de métodos.
         \item {\bf classes:} Número de clases declaradas.
         \item {\bf class\_names:} Conjunto de nombres de clases.
@@ -60,7 +60,7 @@ Características Extraídas y su Importancia
         \item {\bf control\_structures\_for:} Número de bucles for.
         \item {\bf control\_structures\_while:} Número de bucles while.
         \item {\bf control\_structures\_dowhile:} Número de bucles do-while.
-        \item {\bf try\_catch_blocks:} Número de bloques try-catch.
+        \item {\bf try\_catch\_blocks:} Número de bloques try-catch.
     \end{itemize}
     Las estructuras de control son fundamentales para comprender el flujo del programa y su lógica. Un mayor número de estructuras de control indica una lógica más compleja y ramificada.
 
@@ -126,4 +126,21 @@ La extracción de características con FeatureExtractorListener permite capturar
 
 \section{Preparacion del dataset}
 
+Para preparar el dataset utilizado en el análisis de similitud de código, se requirió convertir los nombres de variables, métodos y otros identificadores en vectores de características numéricas. Este proceso se llevó a cabo utilizando la técnica de embeddings con Word2Vec. A continuación, se explica qué es Word2Vec, cómo funciona y por qué se eligió para esta tarea.\\
+
+\subsubsection{Uso de Word2Vec en la Preparación del Dataset}
+Word2Vec es una técnica de aprendizaje profundo que transforma palabras en vectores de números de alta dimensión, conocidos como embeddings. Los modelos Word2Vec se entrenan utilizando grandes corpus de texto y capturan relaciones semánticas entre las palabras.  \\
+
+En el contexto del análisis de similitud de código, los nombres de variables, métodos y otros identificadores en el código fuente juegan un papel crucial. Estos nombres pueden proporcionar información semántica valiosa sobre la funcionalidad y el propósito de diferentes partes del código. Por ejemplo, los identificadores que se usan de manera similar en diferentes contextos tendrán embeddings similares. Sin embargo, los identificadores en el código no están estructurados de manera que las máquinas puedan comprender fácilmente sus relaciones semánticas. Para abordar este desafío, se utilizó Word2Vec para convertir estos identificadores en embeddings. El proceso involucró los siguientes pasos:
+
+\begin{enumerate}
+	\item Extracción de Identificadores: Se extrajeron todos los nombres de variables, métodos, clases, interfaces, enumeraciones y delegados del código fuente utilizando la clase FeatureExtractorListener.
+	
+	\item Entrenamiento de Word2Vec: Se utilizó un corpus de identificadores extraídos de múltiples proyectos de C\# para entrenar el modelo Word2Vec. El modelo aprendió las relaciones semánticas entre los diferentes identificadores en el contexto del código.
+	
+	\item Conversión a Embeddings: Cada identificador extraído se convirtió en un vector de características numéricas utilizando el modelo Word2Vec entrenado. Luego se halla el promedio entre todos los vectores por feature correspondiente para asegurar que todos las caracteristicas de vectores tengan la misma dimension. Estos vectores capturan la semántica y el contexto de los identificadores en el código.
+	 
+\end{enumerate}
+
+\subsubsection{Algo}
 

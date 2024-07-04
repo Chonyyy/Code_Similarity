@@ -22,8 +22,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Preparacion del dataset}{13}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Detalles de Implementaci\IeC {\'o}n y Experimentos}{14}{chapter.3}
+\contentsline {subsubsection}{Uso de Word2Vec en la Preparaci\IeC {\'o}n del Dataset}{13}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusiones}{15}{section*.11}
+\contentsline {chapter}{\numberline {3}Detalles de Implementaci\IeC {\'o}n y Experimentos}{15}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Recomendaciones}{16}{section*.13}
+\contentsline {chapter}{Conclusiones}{16}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Recomendaciones}{17}{section*.15}
