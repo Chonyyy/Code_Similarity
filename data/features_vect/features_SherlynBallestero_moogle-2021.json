@@ -183,29 +183,30 @@
     },
     "project_name": "SherlynBallestero_moogle-2021",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.07979008555412292,
-        0.11532576382160187
+        0.049865201115608215,
+        0.12393590807914734
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        -0.019250113517045975,
-        0.02961672656238079
+        -0.07140344381332397,
+        0.049960944801568985
     ],
     "method_names_vector": [
-        0.014403760433197021,
-        0.015991387888789177
+        -0.036192238330841064,
+        0.07222694158554077
     ],
     "class_names_vector": [
-        -0.0008006304269656539,
-        0.040660567581653595
+        -0.032966408878564835,
+        0.06295470893383026
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.010013728402554989,
-        0.0023346124216914177,
-        0.021736185997724533,
-        -0.03811004012823105
+        -0.05042349174618721,
+        0.10906926542520523,
+        0.10244230180978775,
+        0.16084744036197662
     ]
 }

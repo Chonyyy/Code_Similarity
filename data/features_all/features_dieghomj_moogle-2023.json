@@ -254,8 +254,32 @@
     ],
     "variable_names": [
         [
+            "char",
+            "separator"
+        ],
+        [
             "int",
             "j"
+        ],
+        [
+            "double",
+            "max"
+        ],
+        [
+            "Vector",
+            "tf"
+        ],
+        [
+            "int",
+            "n"
+        ],
+        [
+            "int",
+            "costo"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "bool",
@@ -263,11 +287,11 @@
         ],
         [
             "int",
-            "d"
+            "wordIndex"
         ],
         [
-            "int",
-            "documents"
+            "Vector",
+            "result"
         ],
         [
             "Dictionary",
@@ -275,7 +299,23 @@
         ],
         [
             "string",
-            "words"
+            "title"
+        ],
+        [
+            "int",
+            "document"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "int",
+            "documents"
+        ],
+        [
+            "string",
+            "raw"
         ],
         [
             "bool",
@@ -283,11 +323,11 @@
         ],
         [
             "int",
-            "n"
+            "d"
         ],
         [
-            "string",
-            "raw"
+            "int",
+            "cnt"
         ],
         [
             "int",
@@ -298,56 +338,48 @@
             "A"
         ],
         [
-            "int",
-            "cnt"
+            "string",
+            "words"
+        ],
+        [
+            "Dictionary",
+            "vocabulary"
+        ],
+        [
+            "string",
+            "s"
+        ],
+        [
+            "bool",
+            "mk"
+        ],
+        [
+            "TimeSpan",
+            "ts"
         ],
         [
             "double",
-            "max"
+            "Scores"
         ],
         [
             "string",
-            "text"
-        ],
-        [
-            "Vector",
-            "result"
-        ],
-        [
-            "char",
-            "separator"
+            "word"
         ],
         [
             "int",
-            "costo"
-        ],
-        [
-            "int",
-            "wordIndex"
-        ],
-        [
-            "int",
-            "document"
-        ],
-        [
-            "string",
-            "title"
-        ],
-        [
-            "Vector",
-            "tf"
+            "NotRelevant"
         ],
         [
             "int",
             "i"
         ],
         [
-            "double",
-            "docMod"
+            "Matrix",
+            "TFIDF"
         ],
         [
-            "string",
-            "words"
+            "Vector",
+            "tfidf"
         ],
         [
             "int",
@@ -358,60 +390,28 @@
             "doc"
         ],
         [
-            "Dictionary",
-            "vocabulary"
-        ],
-        [
-            "Vector",
-            "idf"
-        ],
-        [
             "string",
-            "word"
-        ],
-        [
-            "double",
-            "mod"
-        ],
-        [
-            "TimeSpan",
-            "ts"
-        ],
-        [
-            "int",
-            "NotRelevant"
-        ],
-        [
-            "Vector",
-            "tfidf"
+            "suggestion"
         ],
         [
             "Stopwatch",
             "stopwatch"
         ],
         [
-            "Matrix",
-            "TFIDF"
+            "string",
+            "words"
         ],
         [
-            "string",
-            "s"
+            "Vector",
+            "idf"
         ],
         [
             "double",
-            "Scores"
+            "mod"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "suggestion"
-        ],
-        [
-            "bool",
-            "mk"
+            "double",
+            "docMod"
         ],
         [
             "Dictionary",
@@ -419,11 +419,11 @@
         ],
         [
             "string",
-            "snippet"
+            "s"
         ],
         [
-            "int",
-            "realIndex"
+            "string",
+            "t"
         ],
         [
             "int",
@@ -431,15 +431,7 @@
         ],
         [
             "string",
-            "temp_sugg"
-        ],
-        [
-            "string",
-            "t"
-        ],
-        [
-            "string",
-            "w"
+            "sugg"
         ],
         [
             "int",
@@ -450,20 +442,28 @@
             "rightSpace"
         ],
         [
-            "string",
-            "s"
+            "int",
+            "realIndex"
         ],
         [
             "string",
-            "text"
+            "temp_sugg"
         ],
         [
             "int",
-            "index"
+            "i"
         ],
         [
             "string",
-            "sugg"
+            "w"
+        ],
+        [
+            "int",
+            "edit_distance"
+        ],
+        [
+            "string",
+            "snippet"
         ],
         [
             "string",
@@ -471,31 +471,23 @@
         ],
         [
             "int",
-            "i"
+            "index"
         ],
         [
-            "int",
-            "edit_distance"
+            "string",
+            "text"
         ],
         [
             "int",
             "j"
         ],
         [
-            "double",
-            "mod"
+            "int",
+            "columns"
         ],
         [
             "double",
             "result"
-        ],
-        [
-            "double",
-            "max"
-        ],
-        [
-            "int",
-            "columns"
         ],
         [
             "int",
@@ -504,31 +496,39 @@
         [
             "int",
             "rows"
+        ],
+        [
+            "double",
+            "max"
+        ],
+        [
+            "double",
+            "mod"
         ]
     ],
     "method_names": [
         "Items",
-        "GetDocuments",
-        "NormalForm",
-        "CalculateTF",
-        "GetVocabulary",
-        "GetTitle",
-        "EditDistance",
         "GetWords",
-        "WordsInDoc",
-        "ComputeDocuments",
         "ReadText",
-        "Query",
+        "GetTitle",
+        "NormalForm",
+        "WordsInDoc",
+        "CalculateTF",
+        "ComputeDocuments",
+        "GetDocuments",
+        "EditDistance",
+        "GetVocabulary",
         "query",
-        "GetSubstring",
-        "FindWord",
+        "Query",
         "Suggestion",
+        "FindWord",
+        "GetSubstring",
         "Snippet",
         "Debug",
         "Max",
-        "Cosine",
         "Sort",
         "DotProduct",
+        "Cosine",
         "Module"
     ],
     "method_return_types": [
@@ -537,19 +537,31 @@
             "IEnumerable"
         ],
         [
+            "WordsInDoc",
+            "bool"
+        ],
+        [
+            "GetTitle",
+            "string"
+        ],
+        [
+            "CalculateTF",
+            "Vector"
+        ],
+        [
+            "EditDistance",
+            "int"
+        ],
+        [
+            "NormalForm",
+            "string"
+        ],
+        [
             "ComputeDocuments",
             "void"
         ],
         [
-            "GetDocuments",
-            "string"
-        ],
-        [
             "GetWords",
-            "string"
-        ],
-        [
-            "GetTitle",
             "string"
         ],
         [
@@ -557,51 +569,47 @@
             "Dictionary"
         ],
         [
-            "NormalForm",
-            "string"
-        ],
-        [
             "ReadText",
             "string"
         ],
         [
-            "WordsInDoc",
-            "bool"
-        ],
-        [
-            "EditDistance",
-            "int"
-        ],
-        [
-            "CalculateTF",
-            "Vector"
-        ],
-        [
-            "Query",
-            "SearchResult"
+            "GetDocuments",
+            "string"
         ],
         [
             "query",
             "the"
         ],
         [
-            "FindWord",
-            "int"
-        ],
-        [
-            "GetSubstring",
-            "string"
-        ],
-        [
-            "Snippet",
-            "string"
+            "Query",
+            "SearchResult"
         ],
         [
             "Suggestion",
             "string"
         ],
         [
+            "GetSubstring",
+            "string"
+        ],
+        [
+            "FindWord",
+            "int"
+        ],
+        [
+            "Snippet",
+            "string"
+        ],
+        [
             "Debug",
+            "void"
+        ],
+        [
+            "Cosine",
+            "double"
+        ],
+        [
+            "Sort",
             "void"
         ],
         [
@@ -611,14 +619,6 @@
         [
             "DotProduct",
             "double"
-        ],
-        [
-            "Cosine",
-            "double"
-        ],
-        [
-            "Sort",
-            "void"
         ],
         [
             "Max",
@@ -759,5 +759,6 @@
         "Array_typeContext": 1
     },
     "project_name": "dieghomj_moogle-2023",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

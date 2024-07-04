@@ -176,15 +176,15 @@
     "variable_names": [
         [
             "var",
-            "tree"
-        ],
-        [
-            "var",
             "evaluator"
         ],
         [
             "var",
             "lexer"
+        ],
+        [
+            "var",
+            "tree"
         ],
         [
             "var",
@@ -208,7 +208,7 @@
         ],
         [
             "var",
-            "currentToken"
+            "lexer"
         ],
         [
             "var",
@@ -216,29 +216,29 @@
         ],
         [
             "var",
-            "lexer"
+            "currentToken"
         ]
     ],
     "method_names": [
         "Main",
         "GetStandardLibraryFunctions",
-        "GetStandardLibraryVariables",
         "Sqrt",
+        "GetStandardLibraryVariables",
         "GetUnaryExpressionType",
-        "GetUnaryOperatorPrecedence",
         "GetBinaryOperatorPrecedence",
+        "GetUnaryOperatorPrecedence",
         "GetExpressionType",
         "Eval",
         "EvaluateExpression",
         "Evaluate",
         "Parse",
-        "BuildChildScope",
-        "AddVariable",
-        "GetValue",
         "Contains",
-        "MatchToken",
+        "BuildChildScope",
+        "GetValue",
+        "AddVariable",
         "TokenAhead",
-        "LookAhead"
+        "LookAhead",
+        "MatchToken"
     ],
     "method_return_types": [
         [
@@ -246,27 +246,27 @@
             "void"
         ],
         [
-            "GetStandardLibraryVariables",
-            "Scope"
+            "Sqrt",
+            "("
         ],
         [
             "GetStandardLibraryFunctions",
             "Dictionary"
         ],
         [
-            "Sqrt",
-            "("
+            "GetStandardLibraryVariables",
+            "Scope"
         ],
         [
             "GetUnaryExpressionType",
             "Type"
         ],
         [
-            "GetBinaryOperatorPrecedence",
+            "GetUnaryOperatorPrecedence",
             "int"
         ],
         [
-            "GetUnaryOperatorPrecedence",
+            "GetBinaryOperatorPrecedence",
             "int"
         ],
         [
@@ -290,20 +290,20 @@
             "ASTree"
         ],
         [
-            "Contains",
-            "bool"
+            "GetValue",
+            "object"
         ],
         [
             "BuildChildScope",
             "Scope"
         ],
         [
-            "GetValue",
-            "object"
-        ],
-        [
             "AddVariable",
             "void"
+        ],
+        [
+            "Contains",
+            "bool"
         ],
         [
             "MatchToken",
@@ -480,5 +480,6 @@
         "Throw_expressionContext": 1
     },
     "project_name": "LoLProM_Hulk",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

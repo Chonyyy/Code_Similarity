@@ -166,29 +166,30 @@
     },
     "project_name": "ErnestoAbreu_moogle",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.10103900730609894,
-        0.0994129478931427
+        0.08236101269721985,
+        0.10190089792013168
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        -0.07924004644155502,
-        -0.12268583476543427
+        -0.08074965327978134,
+        -0.10961578041315079
     ],
     "method_names_vector": [
-        0.026592906564474106,
-        -0.0893273577094078
+        0.022615347057580948,
+        -0.07750833034515381
     ],
     "class_names_vector": [
-        0.08859656751155853,
-        0.17320126295089722
+        0.0878998190164566,
+        0.17939239740371704
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.06606381386518478,
-        -0.013042847625911236,
-        -0.056870799511671066,
-        0.003964230418205261
+        -0.06878768652677536,
+        -0.003640373470261693,
+        0.00551845645532012,
+        0.12088882923126221
     ]
 }

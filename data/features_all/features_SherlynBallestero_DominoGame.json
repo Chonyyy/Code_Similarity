@@ -298,20 +298,8 @@
     ],
     "variable_names": [
         [
-            "bool",
-            "keepPlaying"
-        ],
-        [
-            "int",
-            "numberOfOptions"
-        ],
-        [
-            "LinkedList",
-            "table"
-        ],
-        [
-            "int",
-            "max"
+            "match",
+            "match"
         ],
         [
             "IPrinter",
@@ -326,8 +314,20 @@
             "a"
         ],
         [
-            "string",
-            "aux"
+            "GameInformation",
+            "gi"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "InformationForPlayer",
+            "info"
+        ],
+        [
+            "int",
+            "numberOfOptions"
         ],
         [
             "Player",
@@ -338,36 +338,60 @@
             "answer"
         ],
         [
-            "Referee",
-            "referee"
-        ],
-        [
-            "InformationForPlayer",
-            "info"
-        ],
-        [
-            "match",
-            "match"
-        ],
-        [
-            "GameInformation",
-            "gi"
-        ],
-        [
-            "int",
-            "index"
+            "bool",
+            "keepPlaying"
         ],
         [
             "int",
             "playercount"
         ],
         [
-            "Records",
-            "move"
+            "Referee",
+            "referee"
+        ],
+        [
+            "LinkedList",
+            "table"
+        ],
+        [
+            "int",
+            "max"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "int",
+            "max"
+        ],
+        [
+            "int",
+            "option"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "int",
+            "temp"
+        ],
+        [
+            "bool",
+            "mark"
         ],
         [
             "int",
             "cont"
+        ],
+        [
+            "Records",
+            "rd"
+        ],
+        [
+            "bool",
+            "sol"
         ],
         [
             "int",
@@ -375,15 +399,15 @@
         ],
         [
             "int",
-            "temp"
+            "answer"
         ],
         [
             "Records",
             "auxRecord"
         ],
         [
-            "bool",
-            "sol"
+            "Random",
+            "r1"
         ],
         [
             "int",
@@ -394,32 +418,8 @@
             "j"
         ],
         [
-            "bool",
-            "mark"
-        ],
-        [
             "Records",
-            "rd"
-        ],
-        [
-            "Random",
-            "r"
-        ],
-        [
-            "int",
-            "option"
-        ],
-        [
-            "Random",
-            "r1"
-        ],
-        [
-            "int",
-            "max"
-        ],
-        [
-            "int",
-            "answer"
+            "move"
         ],
         [
             "string",
@@ -427,23 +427,15 @@
         ],
         [
             "int",
-            "result"
-        ],
-        [
-            "int",
             "aux"
-        ],
-        [
-            "Dictionary",
-            "turnPass"
         ],
         [
             "Dictionary",
             "turnPlayed"
         ],
         [
-            "List",
-            "OPtions"
+            "int",
+            "result"
         ],
         [
             "Dictionary",
@@ -451,7 +443,15 @@
         ],
         [
             "List",
+            "matchedRec"
+        ],
+        [
+            "List",
             "records"
+        ],
+        [
+            "int",
+            "aux2"
         ],
         [
             "Dictionary",
@@ -462,88 +462,84 @@
             "t"
         ],
         [
-            "int",
-            "aux2"
+            "List",
+            "OPtions"
         ],
         [
-            "List",
-            "matchedRec"
+            "Dictionary",
+            "turnPass"
         ]
     ],
     "method_names": [
-        "Main",
-        "referee",
         "System",
+        "referee",
         "WaysToPLay1",
-        "GiveMeRecords",
-        "MarkData",
-        "Swap",
-        "Rearrange",
-        "RulesCheck",
+        "Main",
         "IsIn",
-        "PointsInGame",
-        "shuffledPoints",
+        "Rearrange",
+        "Swap",
+        "MarkData",
+        "GiveMeRecords",
+        "RulesCheck",
         "PlayTtt",
-        "ProvidedInformation",
+        "shuffledPoints",
+        "PointsInGame",
         "Play",
+        "ProvidedInformation",
         "HavesARecord"
     ],
     "method_return_types": [
         [
-            "System",
-            "ConsoleColor"
-        ],
-        [
             "Main",
             "void"
-        ],
-        [
-            "referee",
-            "ConsoleColor"
         ],
         [
             "WaysToPLay1",
             "void"
         ],
         [
-            "GiveMeRecords",
-            "jugada"
+            "System",
+            "ConsoleColor"
+        ],
+        [
+            "referee",
+            "ConsoleColor"
         ],
         [
             "Swap",
             "void"
         ],
         [
-            "Rearrange",
-            "void"
+            "RulesCheck",
+            "int"
         ],
         [
-            "MarkData",
-            "bool"
+            "Rearrange",
+            "void"
         ],
         [
             "IsIn",
             "bool"
         ],
         [
-            "RulesCheck",
-            "int"
+            "MarkData",
+            "bool"
         ],
         [
-            "PointsInGame",
-            "int"
-        ],
-        [
-            "shuffledPoints",
-            "int"
+            "GiveMeRecords",
+            "jugada"
         ],
         [
             "PlayTtt",
             "void"
         ],
         [
-            "ProvidedInformation",
-            "InformationForPlayer"
+            "shuffledPoints",
+            "int"
+        ],
+        [
+            "PointsInGame",
+            "int"
         ],
         [
             "HavesARecord",
@@ -552,16 +548,20 @@
         [
             "Play",
             "void"
+        ],
+        [
+            "ProvidedInformation",
+            "InformationForPlayer"
         ]
     ],
     "class_names": [
         "Program",
         "jugada",
         "Records",
+        "GreedyPlayer",
         "DataPlayer",
         "RandomPlayer",
         "ManualPlayer",
-        "GreedyPlayer",
         "Player",
         "InformationForPlayer",
         "GameInformation",
@@ -695,5 +695,6 @@
         "TupleExpressionContext": 7
     },
     "project_name": "SherlynBallestero_DominoGame",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

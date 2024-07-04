@@ -773,39 +773,11 @@
         ],
         [
             "int",
-            "puntos"
-        ],
-        [
-            "IPieces",
-            "g"
-        ],
-        [
-            "bool",
-            "mesacom"
-        ],
-        [
-            "int",
-            "max"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
             "j"
         ],
         [
-            "bool",
-            "Fichacom"
-        ],
-        [
             "int",
-            "mas"
-        ],
-        [
-            "List",
-            "posibles"
+            "mejor"
         ],
         [
             "Random",
@@ -813,11 +785,11 @@
         ],
         [
             "int",
-            "mejor"
+            "puntos"
         ],
         [
-            "int",
-            "v"
+            "List",
+            "posibles"
         ],
         [
             "T",
@@ -825,11 +797,43 @@
         ],
         [
             "int",
-            "ganador"
+            "v"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "bool",
+            "mesacom"
+        ],
+        [
+            "bool",
+            "Fichacom"
+        ],
+        [
+            "int",
+            "max"
+        ],
+        [
+            "int",
+            "mas"
+        ],
+        [
+            "IPieces",
+            "g"
         ],
         [
             "int",
             "y"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "int",
+            "ganador"
         ],
         [
             "int",
@@ -841,15 +845,67 @@
         ],
         [
             "int",
-            "m"
+            "max"
         ],
         [
-            "int",
-            "max"
+            "List",
+            "listextDer"
+        ],
+        [
+            "Dominoes",
+            "juego"
+        ],
+        [
+            "var",
+            "Moda"
+        ],
+        [
+            "string",
+            "letras"
+        ],
+        [
+            "Ruler",
+            "juez"
+        ],
+        [
+            "string",
+            "dom"
+        ],
+        [
+            "double",
+            "cantFich"
         ],
         [
             "IPieces",
             "g"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "string",
+            "cuatro"
+        ],
+        [
+            "string",
+            "tres"
+        ],
+        [
+            "string",
+            "emojis"
+        ],
+        [
+            "string",
+            "junto"
+        ],
+        [
+            "int",
+            "f"
+        ],
+        [
+            "string",
+            "uno"
         ],
         [
             "IPlayers",
@@ -857,19 +913,7 @@
         ],
         [
             "string",
-            "tres"
-        ],
-        [
-            "List",
-            "ListaG"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "letras"
+            "dos"
         ],
         [
             "List",
@@ -880,60 +924,28 @@
             "h"
         ],
         [
-            "string",
-            "junto"
-        ],
-        [
             "List",
-            "listextDer"
+            "ListaG"
         ],
         [
-            "string",
-            "dom"
-        ],
-        [
-            "string",
-            "cuatro"
+            "int",
+            "i"
         ],
         [
             "int",
             "j"
         ],
         [
-            "double",
-            "cantFich"
+            "Random",
+            "r"
         ],
         [
-            "Ruler",
-            "juez"
-        ],
-        [
-            "Dominoes",
-            "juego"
+            "bool",
+            "hubojugada"
         ],
         [
             "int",
-            "f"
-        ],
-        [
-            "string",
-            "dos"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "string",
-            "uno"
-        ],
-        [
-            "var",
-            "Moda"
-        ],
-        [
-            "string",
-            "emojis"
+            "m"
         ],
         [
             "int",
@@ -944,8 +956,8 @@
             "ganad"
         ],
         [
-            "bool",
-            "hubojugada"
+            "int",
+            "i"
         ],
         [
             "int",
@@ -957,7 +969,11 @@
         ],
         [
             "int",
-            "i"
+            "f"
+        ],
+        [
+            "int",
+            "u"
         ],
         [
             "Random",
@@ -965,11 +981,15 @@
         ],
         [
             "int",
-            "m"
+            "p"
         ],
         [
             "int",
-            "f"
+            "cant"
+        ],
+        [
+            "int",
+            "e"
         ],
         [
             "int",
@@ -981,31 +1001,11 @@
         ],
         [
             "int",
-            "e"
-        ],
-        [
-            "int",
-            "p"
-        ],
-        [
-            "Random",
-            "r"
-        ],
-        [
-            "int",
-            "cant"
-        ],
-        [
-            "int",
-            "u"
+            "a"
         ],
         [
             "int",
             "b"
-        ],
-        [
-            "int",
-            "a"
         ],
         [
             "System",
@@ -1029,80 +1029,76 @@
         ]
     ],
     "method_names": [
-        "AddLeft",
-        "Paint",
         "AddRight",
+        "Paint",
+        "AddLeft",
         "Posibilities",
         "Pase",
-        "Add",
         "ValidLast",
         "Strategy",
+        "Add",
         "ValidFirst",
+        "TrancoI",
         "Tranco",
         "WinnerCoditions",
-        "TrancoI",
         "AddValues",
+        "AddCooRy",
         "Pase",
-        "AddCooRx",
-        "AddRight",
-        "Addp",
-        "AddLeft",
-        "Conect",
-        "Add",
         "Repartir",
         "WinnerCoditions",
-        "Play",
-        "Paint",
-        "AddCooRy",
-        "Tranco",
-        "Rotar",
-        "ToString",
         "Strategy",
-        "RadioButton_Matrix",
+        "Tranco",
+        "AddRight",
+        "Paint",
+        "AddLeft",
+        "Add",
+        "Conect",
+        "Rotar",
+        "Addp",
+        "ToString",
+        "Play",
+        "AddCooRx",
         "RadioButtonInv_Click",
+        "Salir",
+        "Juegar",
+        "Todo",
+        "RadioButtonClas_Click",
+        "RadioButton_Num",
+        "Para_Move",
+        "Comenzar_Click",
+        "Salir1",
+        "ValidarText",
+        "Move_click",
+        "Jugadores",
+        "RadioButtonClass_Click",
         "RadioButtonKeep_Click",
         "RadioButtonCla_Click",
         "RadioButton_Letr",
-        "Comenzar_Click",
-        "Juegar",
-        "Move_click",
+        "RadioButton_Abstract",
+        "RadioButton_Matrix",
+        "Jugar_Click",
         "RadioButtonThi_Click",
+        "RadioButtonAll_Click",
         "RadioButtonHand_Click_1",
         "RadioButton_Emoj",
-        "RadioButton_Num",
-        "ValidarText",
-        "RadioButtonAll_Click",
-        "RadioButtonClass_Click",
-        "Jugar_Click",
-        "Todo",
-        "Para_Move",
-        "Salir",
-        "Jugadores",
-        "RadioButtonClas_Click",
-        "RadioButton_Abstract",
-        "Salir1",
         "Stat",
         "Finish",
-        "Repartir",
-        "Play",
         "Play",
         "Repartir",
-        "Conect",
+        "Play",
+        "Repartir",
         "ToString",
-        "InitializeComponent",
+        "Conect",
         "System",
         "InitializeComponent",
         "System",
-        "Main",
+        "InitializeComponent",
         "InitializeComponent",
         "Main",
-        "InitializeComponent"
+        "InitializeComponent",
+        "Main"
     ],
     "method_return_types": [
-        [
-            "AddRight",
-            "void"
-        ],
         [
             "Paint",
             "void"
@@ -1112,7 +1108,19 @@
             "void"
         ],
         [
+            "AddRight",
+            "void"
+        ],
+        [
             "Strategy",
+            "void"
+        ],
+        [
+            "ValidFirst",
+            "bool"
+        ],
+        [
+            "Pase",
             "void"
         ],
         [
@@ -1120,24 +1128,12 @@
             "List"
         ],
         [
-            "Pase",
-            "void"
-        ],
-        [
             "ValidLast",
-            "bool"
-        ],
-        [
-            "ValidFirst",
             "bool"
         ],
         [
             "Add",
             "void"
-        ],
-        [
-            "Tranco",
-            "int"
         ],
         [
             "WinnerCoditions",
@@ -1148,6 +1144,22 @@
             "int"
         ],
         [
+            "Tranco",
+            "int"
+        ],
+        [
+            "Addp",
+            "void"
+        ],
+        [
+            "Rotar",
+            "void"
+        ],
+        [
+            "AddValues",
+            "void"
+        ],
+        [
             "Strategy",
             "void"
         ],
@@ -1156,43 +1168,15 @@
             "int"
         ],
         [
-            "Conect",
-            "bool"
-        ],
-        [
-            "AddRight",
-            "void"
+            "ToString",
+            "string"
         ],
         [
             "AddCooRy",
             "void"
         ],
         [
-            "Pase",
-            "void"
-        ],
-        [
-            "AddValues",
-            "void"
-        ],
-        [
-            "Rotar",
-            "void"
-        ],
-        [
-            "WinnerCoditions",
-            "bool"
-        ],
-        [
-            "Play",
-            "void"
-        ],
-        [
-            "ToString",
-            "string"
-        ],
-        [
-            "AddCooRx",
+            "AddRight",
             "void"
         ],
         [
@@ -1200,7 +1184,31 @@
             "void"
         ],
         [
+            "Play",
+            "void"
+        ],
+        [
             "Paint",
+            "void"
+        ],
+        [
+            "Conect",
+            "bool"
+        ],
+        [
+            "Pase",
+            "void"
+        ],
+        [
+            "AddCooRx",
+            "void"
+        ],
+        [
+            "WinnerCoditions",
+            "bool"
+        ],
+        [
+            "Add",
             "void"
         ],
         [
@@ -1208,11 +1216,7 @@
             "void"
         ],
         [
-            "Addp",
-            "void"
-        ],
-        [
-            "Add",
+            "RadioButton_Matrix",
             "void"
         ],
         [
@@ -1220,71 +1224,7 @@
             "void"
         ],
         [
-            "RadioButton_Matrix",
-            "void"
-        ],
-        [
-            "RadioButtonAll_Click",
-            "void"
-        ],
-        [
-            "Todo",
-            "void"
-        ],
-        [
-            "RadioButtonCla_Click",
-            "void"
-        ],
-        [
-            "ValidarText",
-            "void"
-        ],
-        [
-            "Para_Move",
-            "void"
-        ],
-        [
-            "RadioButton_Num",
-            "void"
-        ],
-        [
-            "RadioButtonClass_Click",
-            "void"
-        ],
-        [
             "Juegar",
-            "void"
-        ],
-        [
-            "RadioButtonHand_Click_1",
-            "void"
-        ],
-        [
-            "RadioButton_Letr",
-            "void"
-        ],
-        [
-            "Salir1",
-            "void"
-        ],
-        [
-            "Move_click",
-            "void"
-        ],
-        [
-            "Jugar_Click",
-            "void"
-        ],
-        [
-            "Comenzar_Click",
-            "void"
-        ],
-        [
-            "RadioButtonClas_Click",
-            "void"
-        ],
-        [
-            "RadioButtonKeep_Click",
             "void"
         ],
         [
@@ -1296,7 +1236,67 @@
             "void"
         ],
         [
+            "RadioButton_Letr",
+            "void"
+        ],
+        [
+            "ValidarText",
+            "void"
+        ],
+        [
+            "Todo",
+            "void"
+        ],
+        [
+            "Comenzar_Click",
+            "void"
+        ],
+        [
+            "RadioButtonAll_Click",
+            "void"
+        ],
+        [
+            "RadioButtonClas_Click",
+            "void"
+        ],
+        [
+            "RadioButtonCla_Click",
+            "void"
+        ],
+        [
+            "RadioButton_Num",
+            "void"
+        ],
+        [
+            "Para_Move",
+            "void"
+        ],
+        [
             "RadioButtonThi_Click",
+            "void"
+        ],
+        [
+            "RadioButtonClass_Click",
+            "void"
+        ],
+        [
+            "RadioButtonHand_Click_1",
+            "void"
+        ],
+        [
+            "Jugar_Click",
+            "void"
+        ],
+        [
+            "Jugadores",
+            "void"
+        ],
+        [
+            "RadioButtonKeep_Click",
+            "void"
+        ],
+        [
+            "Move_click",
             "void"
         ],
         [
@@ -1304,7 +1304,7 @@
             "void"
         ],
         [
-            "Jugadores",
+            "Salir1",
             "void"
         ],
         [
@@ -1316,11 +1316,11 @@
             "void"
         ],
         [
-            "Repartir",
+            "Play",
             "void"
         ],
         [
-            "Play",
+            "Repartir",
             "void"
         ],
         [
@@ -1374,21 +1374,21 @@
     ],
     "class_names": [
         "MesaC",
-        "RandomPlayer",
-        "TrollPlayer",
         "LightPlayer",
+        "TrollPlayer",
         "Players",
+        "RandomPlayer",
         "BankPlayer",
-        "Pasado",
         "ClasicC",
         "Inverter",
+        "Pasado",
         "MainWindow",
         "Painter",
         "Dominoes",
         "Ruler",
-        "KeepPlaying",
         "Thief",
         "ClasicF",
+        "KeepPlaying",
         "ClasicR",
         "All",
         "Fichas",
@@ -1401,12 +1401,12 @@
         "Resources"
     ],
     "interface_names": [
-        "IPlayers",
-        "IRepartir",
-        "Mesa",
         "IPieces",
+        "IWin",
         "IPlay",
-        "IWin"
+        "Mesa",
+        "IRepartir",
+        "IPlayers"
     ],
     "delegate_names": [],
     "node_count": {
@@ -1553,5 +1553,6 @@
         "Unbound_type_nameContext": 1
     },
     "project_name": "MajimK_Proyecto-Programacion-Mad-Kev",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

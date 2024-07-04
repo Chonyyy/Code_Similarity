@@ -759,12 +759,12 @@
     ],
     "variable_names": [
         [
-            "int",
-            "i"
-        ],
-        [
             "Player",
             "player"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "List",
@@ -772,7 +772,7 @@
         ],
         [
             "int",
-            "j"
+            "min_value"
         ],
         [
             "int",
@@ -784,7 +784,11 @@
         ],
         [
             "int",
-            "min_value"
+            "random_"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "Random",
@@ -792,7 +796,7 @@
         ],
         [
             "int",
-            "random_"
+            "j"
         ],
         [
             "IPlayer",
@@ -800,35 +804,23 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
             "k"
         ],
         [
-            "Random",
-            "random1"
-        ],
-        [
-            "List",
-            "tokens"
+            "int",
+            "i"
         ],
         [
             "int",
             "j"
         ],
         [
-            "int",
-            "random_1"
+            "Random",
+            "random1"
         ],
         [
-            "Random",
-            "random"
+            "int",
+            "random_1"
         ],
         [
             "int",
@@ -836,15 +828,23 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "count"
         ],
         [
             "int",
-            "index"
+            "i"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "int",
+            "value"
         ],
         [
             "int",
@@ -852,7 +852,7 @@
         ],
         [
             "int",
-            "value"
+            "index"
         ],
         [
             "int",
@@ -867,6 +867,10 @@
             "index"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
             "List",
             "winners"
         ],
@@ -875,22 +879,6 @@
             "i"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "(",
-            "result"
-        ],
-        [
-            "Random",
-            "random"
-        ],
-        [
-            "int",
-            "random_"
-        ],
-        [
             "(",
             "board_"
         ],
@@ -899,18 +887,6 @@
             "moves"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "TokenDom",
-            "maxMove"
-        ],
-        [
-            "(",
-            "result"
-        ],
-        [
             "Random",
             "random"
         ],
@@ -919,12 +895,12 @@
             "random_"
         ],
         [
-            "Random",
-            "bi"
+            "int",
+            "i"
         ],
         [
             "(",
-            "board_"
+            "result"
         ],
         [
             "(",
@@ -932,19 +908,43 @@
         ],
         [
             "(",
-            "result_"
+            "board_"
+        ],
+        [
+            "Random",
+            "bi"
         ],
         [
             "List",
             "moves"
         ],
         [
+            "TokenDom",
+            "maxMove"
+        ],
+        [
+            "(",
+            "result_"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
             "int",
-            "bi_"
+            "random_"
         ],
         [
             "int",
             "i"
+        ],
+        [
+            "(",
+            "result"
+        ],
+        [
+            "int",
+            "bi_"
         ],
         [
             "int",
@@ -956,11 +956,19 @@
         ],
         [
             "int",
+            "min_value"
+        ],
+        [
+            "int",
             "value"
         ],
         [
             "int",
             "index"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "List",
@@ -972,7 +980,7 @@
         ],
         [
             "int",
-            "i"
+            "value"
         ],
         [
             "TokenDom",
@@ -980,19 +988,7 @@
         ],
         [
             "int",
-            "value"
-        ],
-        [
-            "List",
-            "winners"
-        ],
-        [
-            "int",
             "index"
-        ],
-        [
-            "int",
-            "min_value"
         ],
         [
             "int",
@@ -1003,8 +999,8 @@
             "i"
         ],
         [
-            "int",
-            "i"
+            "List",
+            "winners"
         ],
         [
             "Random",
@@ -1019,6 +1015,10 @@
             "random_"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
             "StartGameStandard",
             "startGame"
         ],
@@ -1027,12 +1027,12 @@
             "creating"
         ],
         [
-            "RulesStandard",
-            "rules"
-        ],
-        [
             "TurnsPLayersStandard",
             "turn"
+        ],
+        [
+            "RulesStandard",
+            "rules"
         ],
         [
             "(",
@@ -1040,23 +1040,15 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "k"
         ],
         [
             "int",
+            "i"
+        ],
+        [
+            "int",
             "actual"
-        ],
-        [
-            "TokenDom",
-            "maxMove"
-        ],
-        [
-            "(",
-            "result"
         ],
         [
             "(",
@@ -1067,102 +1059,110 @@
             "moves"
         ],
         [
+            "TokenDom",
+            "maxMove"
+        ],
+        [
             "int",
             "i"
+        ],
+        [
+            "(",
+            "result"
         ]
     ],
     "method_names": [
         "Main",
         "Dispose",
         "InitializeComponent",
+        "btnAdd_Click",
         "Form1_Load",
         "TotalPlayers_SelectedItemChanged",
-        "btnAdd_Click",
         "Main",
         "Winners",
         "GameOver",
-        "GetActuallyBoard",
         "GetRegistrer",
+        "GetActuallyBoard",
         "UpdateBoard",
         "InitializateBoard",
         "PlayerToMove",
         "ValidMove",
         "CanMove",
         "GetDirection",
-        "GetTurnsPlayers",
         "NextMove",
-        "Euristic",
-        "ToEquals",
-        "Play",
-        "GetHand",
-        "ToString",
-        "GetWinner",
-        "InitializePlayers",
-        "Tokens",
-        "Winners",
-        "DistributeTokens",
-        "ToEquals",
-        "GetToken",
-        "Value",
-        "Tokens",
-        "Winners",
-        "DistributeTokens",
         "GetTurnsPlayers",
+        "GetHand",
+        "ToEquals",
+        "Euristic",
+        "GetWinner",
+        "ToString",
+        "Play",
+        "InitializePlayers",
+        "DistributeTokens",
+        "Winners",
+        "Tokens",
+        "GetToken",
+        "ToEquals",
+        "Value",
+        "DistributeTokens",
+        "Winners",
+        "Tokens",
         "GetDirection",
         "NextMove",
-        "Winners",
-        "Tokens",
-        "EsDoble",
-        "DistributeTokens",
-        "DosDobles",
+        "GetTurnsPlayers",
         "TodosDobles",
-        "ValorMano",
+        "Tokens",
+        "Winners",
+        "DistributeTokens",
+        "EsDoble",
+        "DosDobles",
         "InitializateBoard",
+        "ValorMano",
         "PlayerToMove",
         "Winners",
         "InitializePlayers",
-        "Euristic",
+        "GetHand",
         "ToEquals",
+        "Euristic",
+        "GetWinner",
+        "ToString",
         "Play",
         "GetHand",
-        "ToString",
-        "GetWinner",
-        "Euristic",
         "ToEquals",
-        "Play",
-        "GetHand",
-        "ToString",
+        "Euristic",
         "GetWinner",
+        "ToString",
+        "Play",
         "GameOver",
         "ValidMove",
         "CanMove",
         "Winners",
         "Winners",
-        "ToEquals",
         "GetToken",
         "ToString",
+        "ToEquals",
         "Value",
         "InitializateBoard",
         "PlayerToMove",
         "StartGame",
+        "TurnPlayers",
         "DefineRules",
         "CreatingPlayers",
-        "TurnPlayers",
         "ValidMove",
         "CanMove",
         "GetDirection",
-        "GetTurnsPlayers",
         "NextMove",
-        "GetActuallyBoard",
+        "GetTurnsPlayers",
         "GetRegistrer",
+        "GetActuallyBoard",
         "UpdateBoard",
         "GameOver",
-        "Euristic",
-        "ToEquals",
-        "Play",
         "GetHand",
+        "ToEquals",
+        "Euristic",
+        "GetWinner",
         "ToString",
-        "GetWinner"
+        "Play"
     ],
     "method_return_types": [
         [
@@ -1170,11 +1170,15 @@
             "void"
         ],
         [
+            "Dispose",
+            "void"
+        ],
+        [
             "InitializeComponent",
             "void"
         ],
         [
-            "Dispose",
+            "btnAdd_Click",
             "void"
         ],
         [
@@ -1186,10 +1190,6 @@
             "void"
         ],
         [
-            "btnAdd_Click",
-            "void"
-        ],
-        [
             "Main",
             "void"
         ],
@@ -1202,16 +1202,16 @@
             "bool"
         ],
         [
-            "GetActuallyBoard",
-            "G"
+            "GetRegistrer",
+            "List"
         ],
         [
             "UpdateBoard",
             "void"
         ],
         [
-            "GetRegistrer",
-            "List"
+            "GetActuallyBoard",
+            "G"
         ],
         [
             "PlayerToMove",
@@ -1222,19 +1222,11 @@
             "IBoard"
         ],
         [
-            "ValidMove",
-            "bool"
-        ],
-        [
             "CanMove",
             "bool"
         ],
         [
-            "NextMove",
-            "void"
-        ],
-        [
-            "GetDirection",
+            "ValidMove",
             "bool"
         ],
         [
@@ -1242,11 +1234,23 @@
             "F"
         ],
         [
-            "GetHand",
-            "List"
+            "GetDirection",
+            "bool"
+        ],
+        [
+            "NextMove",
+            "void"
+        ],
+        [
+            "ToString",
+            "string"
         ],
         [
             "GetWinner",
+            "bool"
+        ],
+        [
+            "ToEquals",
             "bool"
         ],
         [
@@ -1258,12 +1262,8 @@
             "("
         ],
         [
-            "ToEquals",
-            "bool"
-        ],
-        [
-            "ToString",
-            "string"
+            "GetHand",
+            "List"
         ],
         [
             "InitializePlayers",
@@ -1274,60 +1274,56 @@
             "List"
         ],
         [
-            "DistributeTokens",
-            "void"
-        ],
-        [
             "Winners",
             "IPlayer"
         ],
         [
-            "GetToken",
-            "G"
-        ],
-        [
-            "ToEquals",
-            "bool"
+            "DistributeTokens",
+            "void"
         ],
         [
             "Value",
             "int"
         ],
         [
-            "Tokens",
-            "List"
+            "ToEquals",
+            "bool"
         ],
         [
-            "DistributeTokens",
-            "void"
+            "GetToken",
+            "G"
+        ],
+        [
+            "Tokens",
+            "List"
         ],
         [
             "Winners",
             "IPlayer"
         ],
         [
-            "NextMove",
+            "DistributeTokens",
             "void"
-        ],
-        [
-            "GetTurnsPlayers",
-            "List"
         ],
         [
             "GetDirection",
             "bool"
         ],
         [
-            "DosDobles",
-            "bool"
+            "GetTurnsPlayers",
+            "List"
         ],
         [
-            "TodosDobles",
-            "bool"
+            "NextMove",
+            "void"
         ],
         [
             "Tokens",
             "List"
+        ],
+        [
+            "Winners",
+            "IPlayer"
         ],
         [
             "DistributeTokens",
@@ -1338,16 +1334,20 @@
             "bool"
         ],
         [
-            "Winners",
-            "IPlayer"
+            "TodosDobles",
+            "bool"
         ],
         [
-            "PlayerToMove",
-            "void"
+            "DosDobles",
+            "bool"
         ],
         [
             "ValorMano",
             "int"
+        ],
+        [
+            "PlayerToMove",
+            "void"
         ],
         [
             "InitializateBoard",
@@ -1362,11 +1362,15 @@
             "IPlayer"
         ],
         [
-            "GetHand",
-            "List"
+            "ToString",
+            "string"
         ],
         [
             "GetWinner",
+            "bool"
+        ],
+        [
+            "ToEquals",
             "bool"
         ],
         [
@@ -1378,19 +1382,19 @@
             "("
         ],
         [
-            "ToEquals",
-            "bool"
+            "GetHand",
+            "List"
         ],
         [
             "ToString",
             "string"
         ],
         [
-            "GetHand",
-            "List"
+            "GetWinner",
+            "bool"
         ],
         [
-            "GetWinner",
+            "ToEquals",
             "bool"
         ],
         [
@@ -1402,23 +1406,19 @@
             "("
         ],
         [
-            "ToEquals",
-            "bool"
-        ],
-        [
-            "ToString",
-            "string"
+            "GetHand",
+            "List"
         ],
         [
             "GameOver",
             "bool"
         ],
         [
-            "ValidMove",
+            "CanMove",
             "bool"
         ],
         [
-            "CanMove",
+            "ValidMove",
             "bool"
         ],
         [
@@ -1434,16 +1434,16 @@
             "("
         ],
         [
-            "ToString",
-            "string"
+            "Value",
+            "int"
         ],
         [
             "ToEquals",
             "bool"
         ],
         [
-            "Value",
-            "int"
+            "ToString",
+            "string"
         ],
         [
             "PlayerToMove",
@@ -1454,43 +1454,39 @@
             "IBoard"
         ],
         [
-            "StartGame",
-            "IStartGame"
-        ],
-        [
-            "CreatingPlayers",
-            "ICreatingPlayers"
-        ],
-        [
             "TurnPlayers",
             "ITurnsPlayers"
+        ],
+        [
+            "StartGame",
+            "IStartGame"
         ],
         [
             "DefineRules",
             "IRules"
         ],
         [
-            "ValidMove",
-            "bool"
+            "CreatingPlayers",
+            "ICreatingPlayers"
         ],
         [
             "CanMove",
             "bool"
         ],
         [
-            "NextMove",
-            "void"
-        ],
-        [
-            "GetTurnsPlayers",
-            "List"
+            "ValidMove",
+            "bool"
         ],
         [
             "GetDirection",
             "bool"
         ],
         [
-            "UpdateBoard",
+            "GetTurnsPlayers",
+            "List"
+        ],
+        [
+            "NextMove",
             "void"
         ],
         [
@@ -1502,15 +1498,23 @@
             "("
         ],
         [
+            "UpdateBoard",
+            "void"
+        ],
+        [
             "GameOver",
             "bool"
         ],
         [
-            "GetHand",
-            "List"
+            "ToString",
+            "string"
         ],
         [
             "GetWinner",
+            "bool"
+        ],
+        [
+            "ToEquals",
             "bool"
         ],
         [
@@ -1522,12 +1526,8 @@
             "("
         ],
         [
-            "ToEquals",
-            "bool"
-        ],
-        [
-            "ToString",
-            "string"
+            "GetHand",
+            "List"
         ]
     ],
     "class_names": [
@@ -1711,5 +1711,6 @@
         "TheEmptyStatementContext": 1
     },
     "project_name": "GamboaHMA_Dominoes",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

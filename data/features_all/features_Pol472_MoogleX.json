@@ -175,8 +175,92 @@
             "searchItem"
         ],
         [
+            "double",
+            "valorA"
+        ],
+        [
+            "int",
+            "indicesDeTextos"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "searchItems"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
+            "double",
+            "FrecuenciaAbsoluta"
+        ],
+        [
+            "double",
+            "vectorScore"
+        ],
+        [
+            "double",
+            "valorB"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
+            "docs"
+        ],
+        [
+            "string",
+            "palabras"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "List",
+            "CambiodeBase"
+        ],
+        [
+            "double",
+            "temporal"
+        ],
+        [
+            "double",
+            "VectorQuery"
+        ],
+        [
+            "string",
+            "vector"
+        ],
+        [
+            "double",
+            "TheMatrix"
+        ],
+        [
+            "Query",
+            "objetoQuery"
+        ],
+        [
             "string",
             "terminosQuery"
+        ],
+        [
+            "string",
+            "palabra"
+        ],
+        [
+            "string",
+            "mejoresTitulos"
         ],
         [
             "Dictionary",
@@ -187,100 +271,16 @@
             "diccionario"
         ],
         [
-            "int",
-            "indicesDeTextos"
-        ],
-        [
-            "string",
-            "vector"
-        ],
-        [
-            "string",
-            "temporal"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "snippet"
-        ],
-        [
-            "double",
-            "valorA"
-        ],
-        [
-            "List",
-            "searchItems"
-        ],
-        [
-            "double",
-            "docs"
-        ],
-        [
-            "Query",
-            "objetoQuery"
-        ],
-        [
-            "string",
-            "palabras"
-        ],
-        [
             "string",
             "Sugerencia"
         ],
         [
-            "double",
-            "TheMatrix"
-        ],
-        [
-            "double",
-            "vectorScore"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
-            "CambiodeBase"
-        ],
-        [
-            "double",
-            "VectorQuery"
-        ],
-        [
             "string",
-            "palabra"
-        ],
-        [
-            "double",
             "temporal"
         ],
         [
             "double",
-            "FrecuenciaAbsoluta"
-        ],
-        [
-            "int",
-            "contador"
-        ],
-        [
-            "string",
-            "temp"
-        ],
-        [
-            "string",
-            "mejoresTitulos"
-        ],
-        [
-            "double",
             "Indicador"
-        ],
-        [
-            "double",
-            "valorB"
         ],
         [
             "var",
@@ -289,18 +289,18 @@
     ],
     "method_names": [
         "Items",
-        "Query",
         "Iniciar",
-        "NecesidadSugerencia",
-        "llenarDic",
-        "OrdenarQuery",
-        "ConstructorSugerencia",
-        "ObtenerSearchItems",
-        "Levenshtein",
+        "Query",
         "Sugerencia",
+        "Levenshtein",
+        "llenarDic",
         "Matriz",
-        "Intercambiar",
         "VectorQuerys",
+        "OrdenarQuery",
+        "NecesidadSugerencia",
+        "ObtenerSearchItems",
+        "ConstructorSugerencia",
+        "Intercambiar",
         "Snipet"
     ],
     "method_return_types": [
@@ -317,28 +317,20 @@
             "SearchResult"
         ],
         [
-            "Intercambiar",
-            "void"
-        ],
-        [
-            "Sugerencia",
-            "string"
-        ],
-        [
             "OrdenarQuery",
             "string"
-        ],
-        [
-            "Matriz",
-            "double"
         ],
         [
             "ObtenerSearchItems",
             "SearchItem"
         ],
         [
-            "llenarDic",
-            "Dictionary"
+            "Levenshtein",
+            "string"
+        ],
+        [
+            "Sugerencia",
+            "string"
         ],
         [
             "VectorQuerys",
@@ -349,12 +341,20 @@
             "bool"
         ],
         [
-            "Levenshtein",
-            "string"
+            "llenarDic",
+            "Dictionary"
+        ],
+        [
+            "Matriz",
+            "double"
         ],
         [
             "ConstructorSugerencia",
             "string"
+        ],
+        [
+            "Intercambiar",
+            "void"
         ],
         [
             "Snipet",
@@ -482,5 +482,6 @@
         "Predefined_typeContext": 1
     },
     "project_name": "Pol472_MoogleX",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

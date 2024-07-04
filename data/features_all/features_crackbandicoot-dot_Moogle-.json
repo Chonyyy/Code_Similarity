@@ -97,52 +97,44 @@
     ],
     "variable_names": [
         [
-            "List",
-            "results"
+            "Vector",
+            "docVecor"
         ],
         [
             "int",
-            "start"
+            "j"
         ],
         [
-            "string",
-            "words"
+            "int",
+            "PosScoresLength"
         ],
         [
-            "string",
-            "pattern"
-        ],
-        [
-            "SearchItem",
-            "items"
+            "double",
+            "result"
         ],
         [
             "int",
             "i"
         ],
         [
-            "Match",
-            "match"
-        ],
-        [
-            "string",
-            "text"
-        ],
-        [
-            "Vector",
-            "queryVector"
-        ],
-        [
-            "double",
-            "positiveScores"
+            "int",
+            "index"
         ],
         [
             "double",
             "scores"
         ],
         [
-            "string",
-            "ruta"
+            "Vector",
+            "queryVector"
+        ],
+        [
+            "List",
+            "results"
+        ],
+        [
+            "int",
+            "start"
         ],
         [
             "int",
@@ -153,41 +145,49 @@
             "userInp"
         ],
         [
-            "int",
-            "j"
+            "double",
+            "positiveScores"
         ],
         [
-            "Vector",
-            "docVecor"
+            "SearchItem",
+            "items"
         ],
         [
-            "int",
-            "index"
+            "string",
+            "text"
         ],
         [
             "string",
             "results"
         ],
         [
-            "double",
-            "result"
-        ],
-        [
-            "int",
-            "PosScoresLength"
+            "string",
+            "pattern"
         ],
         [
             "double",
             "doc"
+        ],
+        [
+            "string",
+            "ruta"
+        ],
+        [
+            "Match",
+            "match"
+        ],
+        [
+            "string",
+            "words"
         ]
     ],
     "method_names": [
         "Items",
-        "GetScores",
-        "ExtractText",
+        "initDocs",
         "GetResults",
-        "Query",
-        "initDocs"
+        "ExtractText",
+        "GetScores",
+        "Query"
     ],
     "method_return_types": [
         [
@@ -195,15 +195,15 @@
             "IEnumerable"
         ],
         [
-            "Query",
-            "SearchResult"
-        ],
-        [
-            "ExtractText",
-            "string"
+            "initDocs",
+            "void"
         ],
         [
             "GetResults",
+            "string"
+        ],
+        [
+            "ExtractText",
             "string"
         ],
         [
@@ -211,8 +211,8 @@
             "double"
         ],
         [
-            "initDocs",
-            "void"
+            "Query",
+            "SearchResult"
         ]
     ],
     "class_names": [
@@ -332,5 +332,6 @@
         "ForeachStatementContext": 1
     },
     "project_name": "crackbandicoot-dot_Moogle-",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

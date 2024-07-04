@@ -316,7 +316,35 @@
     "variable_names": [
         [
             "int",
+            "auxiliar"
+        ],
+        [
+            "int",
+            "l"
+        ],
+        [
+            "int",
+            "costo"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "cantletrascomun"
+        ],
+        [
+            "int",
+            "aux"
+        ],
+        [
+            "int",
             "k"
+        ],
+        [
+            "int",
+            "mat"
         ],
         [
             "int",
@@ -324,7 +352,7 @@
         ],
         [
             "int",
-            "aux"
+            "menor_distancia"
         ],
         [
             "string",
@@ -335,44 +363,36 @@
             "palabra_similar"
         ],
         [
-            "int",
-            "mat"
+            "string",
+            "d"
         ],
         [
-            "int",
-            "menor_distancia"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "auxiliar"
-        ],
-        [
-            "int",
-            "costo"
-        ],
-        [
-            "int",
-            "l"
-        ],
-        [
-            "int",
-            "cantletrascomun"
+            "string",
+            "c"
         ],
         [
             "Document",
             "b"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "int",
             "k"
         ],
         [
+            "Document",
+            "c"
+        ],
+        [
             "int",
             "j"
+        ],
+        [
+            "Document",
+            "d"
         ],
         [
             "string",
@@ -380,51 +400,11 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "Document",
-            "c"
-        ],
-        [
-            "Document",
-            "d"
-        ],
-        [
-            "string",
-            "c"
-        ],
-        [
-            "string",
-            "d"
-        ],
-        [
-            "List",
-            "palabras"
-        ],
-        [
-            "int",
-            "result"
-        ],
-        [
-            "string",
-            "result"
-        ],
-        [
-            "string",
-            "result2"
+            "item2"
         ],
         [
             "string",
             "aux"
-        ],
-        [
-            "HashSet",
-            "DeleteDuplicates"
-        ],
-        [
-            "int",
-            "item2"
         ],
         [
             "int",
@@ -439,31 +419,23 @@
             "item1"
         ],
         [
-            "float",
-            "IDF"
+            "List",
+            "palabras"
         ],
         [
-            "int",
-            "distance"
-        ],
-        [
-            "int",
-            "pos"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "Dictionary",
-            "dic"
+            "HashSet",
+            "DeleteDuplicates"
         ],
         [
             "string",
-            "palabras_query_sinrep"
+            "result"
         ],
         [
             "string",
+            "result2"
+        ],
+        [
+            "int",
             "result"
         ],
         [
@@ -471,24 +443,72 @@
             "resultado"
         ],
         [
-            "SearchItem",
-            "items"
+            "int",
+            "distance"
+        ],
+        [
+            "Dictionary",
+            "dic"
+        ],
+        [
+            "string",
+            "palabras_query"
+        ],
+        [
+            "string",
+            "palabras"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "float",
+            "IDF"
         ],
         [
             "float",
             "sqrt_document"
         ],
         [
-            "string",
-            "textaux"
+            "int",
+            "score0"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Document",
+            "documentos"
         ],
         [
             "bool",
             "ModificarSqrt_TFIDF_query"
         ],
         [
-            "Document",
-            "documentos"
+            "string",
+            "result"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
+            "string",
+            "palabras_query_sinrep"
+        ],
+        [
+            "string",
+            "textaux"
+        ],
+        [
+            "StreamReader",
+            "fileReader"
         ],
         [
             "int",
@@ -496,15 +516,7 @@
         ],
         [
             "int",
-            "score0"
-        ],
-        [
-            "string",
-            "palabras"
-        ],
-        [
-            "string",
-            "palabras_query"
+            "j"
         ],
         [
             "bool",
@@ -515,32 +527,36 @@
             "palabras"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
-            "float",
-            "result"
-        ],
-        [
             "HashSet",
             "DeleteDuplicates"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "string",
             "pal_dic"
         ],
         [
-            "StreamReader",
-            "fileReader"
+            "float",
+            "result"
+        ],
+        [
+            "string",
+            "Div_query"
+        ],
+        [
+            "string",
+            "word_operador_1"
+        ],
+        [
+            "string",
+            "aux"
         ],
         [
             "int",
-            "j"
+            "i"
+        ],
+        [
+            "Tuple",
+            "word_operador_4"
         ],
         [
             "int",
@@ -551,62 +567,46 @@
             "wordsquerysplit"
         ],
         [
-            "string",
-            "word_operador_1"
-        ],
-        [
-            "string",
-            "Div_query"
-        ],
-        [
-            "string",
-            "aux"
-        ],
-        [
             "int",
-            "count_operador"
-        ],
-        [
-            "int",
-            "i"
+            "j"
         ],
         [
             "string",
             "word_operador_2"
         ],
         [
-            "Tuple",
-            "word_operador_4"
+            "int",
+            "count_operador"
         ]
     ],
     "method_names": [
         "Items",
-        "LevenshteinDistance",
-        "PalabraSimilar",
-        "ConstSuggestion",
         "BuscarPalabra",
-        "MezclaDescendienteQuery",
+        "LevenshteinDistance",
+        "ConstSuggestion",
+        "PalabraSimilar",
+        "MezclaDescendiente",
         "Organiza",
         "MergeSort",
-        "MezclaDescendiente",
+        "MezclaDescendienteQuery",
+        "CleanWords",
         "ConstWord",
         "Words_Distance",
         "DeleteDuplicate",
-        "CleanWords",
         "ArrayWordsWithOperator",
         "CalcularScore",
-        "Query",
         "CrearSnippet",
+        "Query",
         "MultiplicarVectoresTfIdf",
-        "CargarArchivos",
         "CargarTF_IDF",
-        "CargarDiccionario",
-        "CrearVector",
-        "CargarDocumentos",
+        "CargarArchivos",
         "CargarTitulos",
+        "CargarDocumentos",
+        "CrearVector",
+        "CargarDiccionario",
+        "Operador1",
         "Operador2",
         "Operador4",
-        "Operador1",
         "Operador3"
     ],
     "method_return_types": [
@@ -615,19 +615,23 @@
             "IEnumerable"
         ],
         [
-            "ConstSuggestion",
-            "string"
-        ],
-        [
             "LevenshteinDistance",
             "int"
+        ],
+        [
+            "PalabraSimilar",
+            "string"
         ],
         [
             "BuscarPalabra",
             "string"
         ],
         [
-            "PalabraSimilar",
+            "ConstSuggestion",
+            "string"
+        ],
+        [
+            "Organiza",
             "string"
         ],
         [
@@ -635,19 +639,19 @@
             "string"
         ],
         [
-            "MergeSort",
-            "Document"
-        ],
-        [
-            "Organiza",
-            "string"
-        ],
-        [
             "MezclaDescendiente",
             "Document"
         ],
         [
+            "MergeSort",
+            "Document"
+        ],
+        [
             "CleanWords",
+            "string"
+        ],
+        [
+            "ArrayWordsWithOperator",
             "string"
         ],
         [
@@ -659,16 +663,8 @@
             "int"
         ],
         [
-            "ArrayWordsWithOperator",
-            "string"
-        ],
-        [
             "DeleteDuplicate",
             "string"
-        ],
-        [
-            "Query",
-            "SearchResult"
         ],
         [
             "CrearSnippet",
@@ -683,12 +679,8 @@
             "float"
         ],
         [
-            "CargarTitulos",
-            "void"
-        ],
-        [
-            "CargarDocumentos",
-            "void"
+            "Query",
+            "SearchResult"
         ],
         [
             "CargarTF_IDF",
@@ -699,12 +691,24 @@
             "void"
         ],
         [
-            "CargarDiccionario",
+            "CargarDocumentos",
             "void"
         ],
         [
             "CrearVector",
             "float"
+        ],
+        [
+            "CargarDiccionario",
+            "void"
+        ],
+        [
+            "CargarTitulos",
+            "void"
+        ],
+        [
+            "Operador4",
+            "void"
         ],
         [
             "Operador3",
@@ -716,10 +720,6 @@
         ],
         [
             "Operador2",
-            "void"
-        ],
-        [
-            "Operador4",
             "void"
         ]
     ],
@@ -848,5 +848,6 @@
         "Cast_expressionContext": 10
     },
     "project_name": "RodryJR_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

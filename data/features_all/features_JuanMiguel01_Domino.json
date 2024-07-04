@@ -1273,44 +1273,48 @@
     ],
     "variable_names": [
         [
-            "List",
-            "fichas"
-        ],
-        [
-            "Jugada",
-            "jugada"
+            "int",
+            "score"
         ],
         [
             "int",
             "mayorScore"
         ],
         [
-            "int",
-            "score"
+            "Jugada",
+            "jugada"
+        ],
+        [
+            "List",
+            "fichas"
         ],
         [
             "Ficha",
             "mayor"
         ],
         [
-            "List",
-            "data"
+            "Mano",
+            "mano"
         ],
         [
             "List",
             "aux"
         ],
         [
-            "var",
-            "ficha"
-        ],
-        [
-            "Mano",
-            "mano"
+            "List",
+            "data"
         ],
         [
             "int",
             "count"
+        ],
+        [
+            "var",
+            "ficha"
+        ],
+        [
+            "Ficha",
+            "ficha"
         ],
         [
             "Jugada",
@@ -1318,15 +1322,11 @@
         ],
         [
             "List",
-            "todas"
+            "posiblesJugadas"
         ],
         [
             "int",
             "posFicha"
-        ],
-        [
-            "Ficha",
-            "ficha"
         ],
         [
             "Random",
@@ -1334,11 +1334,15 @@
         ],
         [
             "List",
-            "posiblesJugadas"
+            "todas"
         ],
         [
             "Dictionary",
             "tabla"
+        ],
+        [
+            "int",
+            "cantJuegosGanados"
         ],
         [
             "int",
@@ -1349,10 +1353,6 @@
             "cantPtosContrario"
         ],
         [
-            "int",
-            "cantJuegosGanados"
-        ],
-        [
             "List",
             "posiblesJugadas"
         ],
@@ -1371,18 +1371,14 @@
         [
             "List",
             "posiblesJugadas"
-        ],
-        [
-            "int",
-            "j"
         ],
         [
             "List",
             "ganadores"
         ],
         [
-            "List",
-            "fichas"
+            "int",
+            "k"
         ],
         [
             "Ficha",
@@ -1390,35 +1386,43 @@
         ],
         [
             "List",
-            "result"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "int",
-            "n"
-        ],
-        [
-            "int",
-            "i"
+            "fichas"
         ],
         [
             "var",
             "ganadorActual"
         ],
         [
-            "JugadorBasico",
-            "next"
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "n"
         ],
         [
             "Mesa",
             "mesa"
         ],
         [
+            "JugadorBasico",
+            "next"
+        ],
+        [
             "var",
             "fichas"
+        ],
+        [
+            "int",
+            "contadorpases"
         ],
         [
             "Ficha",
@@ -1426,7 +1430,7 @@
         ],
         [
             "int",
-            "contadorsucesos"
+            "i"
         ],
         [
             "Ficha",
@@ -1438,11 +1442,7 @@
         ],
         [
             "int",
-            "contadorpases"
-        ],
-        [
-            "int",
-            "i"
+            "contadorsucesos"
         ],
         [
             "int",
@@ -1457,28 +1457,24 @@
             "timer1"
         ],
         [
-            "var",
-            "numeromayor"
-        ],
-        [
             "Bitmap",
             "img"
-        ],
-        [
-            "string",
-            "asignar"
-        ],
-        [
-            "string",
-            "multiplicarpor"
         ],
         [
             "frmIntroducirJugadores",
             "introducirJugadores"
         ],
         [
-            "Graphics",
-            "g"
+            "string",
+            "multiplicarpor"
+        ],
+        [
+            "var",
+            "numeromayor"
+        ],
+        [
+            "string",
+            "asignar"
         ],
         [
             "Bitmap",
@@ -1489,36 +1485,12 @@
             "objeto"
         ],
         [
+            "Font",
+            "fuente"
+        ],
+        [
             "FrmIntroducir",
             "seleccionar"
-        ],
-        [
-            "Font",
-            "fuente"
-        ],
-        [
-            "var",
-            "calculadorScore"
-        ],
-        [
-            "var",
-            "finalizador"
-        ],
-        [
-            "Bitmap",
-            "img"
-        ],
-        [
-            "frmJuego",
-            "pantallaJuego"
-        ],
-        [
-            "Font",
-            "fuente"
-        ],
-        [
-            "int",
-            "cantJugadores"
         ],
         [
             "Graphics",
@@ -1529,64 +1501,8 @@
             "FichasPorMano"
         ],
         [
-            "string",
-            "Equipo"
-        ],
-        [
-            "var",
-            "ctor"
-        ],
-        [
-            "var",
-            "reglas"
-        ],
-        [
-            "List",
-            "jugadores"
-        ],
-        [
-            "JugadorBasico",
-            "jugador"
-        ],
-        [
-            "Timer",
-            "timer1"
-        ],
-        [
-            "int",
-            "UltimNumero"
-        ],
-        [
-            "string",
-            "asignar"
-        ],
-        [
-            "frmIntroducirJugadores",
-            "nueva"
-        ],
-        [
             "var",
             "calculador"
-        ],
-        [
-            "var",
-            "o"
-        ],
-        [
-            "var",
-            "repartidor"
-        ],
-        [
-            "var",
-            "validador"
-        ],
-        [
-            "var",
-            "numeromayor"
-        ],
-        [
-            "var",
-            "param"
         ],
         [
             "var",
@@ -1594,7 +1510,67 @@
         ],
         [
             "var",
+            "finalizador"
+        ],
+        [
+            "var",
+            "repartidor"
+        ],
+        [
+            "var",
+            "reglas"
+        ],
+        [
+            "var",
             "types"
+        ],
+        [
+            "Timer",
+            "timer1"
+        ],
+        [
+            "JugadorBasico",
+            "jugador"
+        ],
+        [
+            "frmIntroducirJugadores",
+            "nueva"
+        ],
+        [
+            "frmJuego",
+            "pantallaJuego"
+        ],
+        [
+            "var",
+            "validador"
+        ],
+        [
+            "var",
+            "param"
+        ],
+        [
+            "Graphics",
+            "g"
+        ],
+        [
+            "string",
+            "asignar"
+        ],
+        [
+            "int",
+            "UltimNumero"
+        ],
+        [
+            "int",
+            "cantJugadores"
+        ],
+        [
+            "var",
+            "ctor"
+        ],
+        [
+            "var",
+            "o"
         ],
         [
             "var",
@@ -1602,7 +1578,27 @@
         ],
         [
             "var",
-            "numerofichas"
+            "numeromayor"
+        ],
+        [
+            "List",
+            "jugadores"
+        ],
+        [
+            "Bitmap",
+            "img"
+        ],
+        [
+            "var",
+            "calculadorScore"
+        ],
+        [
+            "Font",
+            "fuente"
+        ],
+        [
+            "string",
+            "Equipo"
         ],
         [
             "Timer",
@@ -1610,27 +1606,7 @@
         ],
         [
             "int",
-            "numeroMayorEnFicha"
-        ],
-        [
-            "int",
             "cantidadDeJugadores"
-        ],
-        [
-            "var",
-            "numeromayor"
-        ],
-        [
-            "Bitmap",
-            "img"
-        ],
-        [
-            "int",
-            "cantFichas"
-        ],
-        [
-            "frmSelectOptions",
-            "options"
         ],
         [
             "int",
@@ -1641,12 +1617,40 @@
             "cantJugadores"
         ],
         [
+            "Bitmap",
+            "img"
+        ],
+        [
+            "int",
+            "numeroMayorEnFicha"
+        ],
+        [
+            "var",
+            "numerofichas"
+        ],
+        [
             "string",
             "NumeroMayor"
         ],
         [
+            "var",
+            "numeromayor"
+        ],
+        [
+            "frmSelectOptions",
+            "options"
+        ],
+        [
+            "int",
+            "cantFichas"
+        ],
+        [
             "string",
             "cantFichasPorMano"
+        ],
+        [
+            "FrmInicio",
+            "inicio"
         ],
         [
             "FichaImagen",
@@ -1657,32 +1661,28 @@
             "img"
         ],
         [
-            "FrmInicio",
-            "inicio"
-        ],
-        [
-            "Graphics",
-            "g"
-        ],
-        [
             "Bitmap",
             "img"
-        ],
-        [
-            "Jugada",
-            "ultJugada"
         ],
         [
             "var",
             "juego"
         ],
         [
-            "FichaImagen",
-            "derecha"
-        ],
-        [
             "Font",
             "fuente"
+        ],
+        [
+            "Graphics",
+            "g"
+        ],
+        [
+            "Jugada",
+            "ultJugada"
+        ],
+        [
+            "FichaImagen",
+            "derecha"
         ],
         [
             "global",
@@ -1694,34 +1694,34 @@
         "Repartir",
         "Jugar",
         "IniciarTorneo",
-        "CalcularPuntos",
-        "EsValida",
-        "CalcularScore",
         "Repartir",
+        "CalcularPuntos",
         "SiguienteJugador",
         "GameOver",
-        "IsDouble",
-        "ToBackwardsString",
-        "ToString",
-        "TorneoGameOver",
-        "PosiblesJugadas",
-        "GetPosiblesJugadas",
-        "Lleva",
-        "Jugar",
-        "ToString",
-        "Jugar",
-        "Jugar",
-        "CalcularScore",
-        "TorneoGameOver",
-        "CalcularPuntos",
         "EsValida",
-        "NextPlayer",
+        "CalcularScore",
+        "ToString",
+        "ToBackwardsString",
+        "IsDouble",
+        "TorneoGameOver",
+        "Lleva",
+        "GetPosiblesJugadas",
+        "Jugar",
+        "ToString",
+        "PosiblesJugadas",
+        "Jugar",
+        "Jugar",
         "CalcularScore",
         "Repartir",
+        "CalcularPuntos",
+        "TorneoGameOver",
         "GameOver",
+        "EsValida",
+        "CalcularScore",
+        "NextPlayer",
         "Crear",
-        "Shuffle",
         "GetGanadores",
+        "Shuffle",
         "Jugar",
         "EsValida",
         "ReverseList",
@@ -1733,59 +1733,59 @@
         "ActualizarCaras",
         "Dispose",
         "InitializeComponent",
-        "IniciarReloj",
-        "rbnValidadorMultiplicarPor5_CheckedChanged",
         "txtMultiplicapor_TextChanged",
         "rbnValidadorParidad_CheckedChanged",
-        "btnSiguiente_Click",
         "AsignarPropiedades",
-        "frmSelectOptions_FormClosing",
+        "rbnValidadorMultiplicarPor5_CheckedChanged",
         "btnAtras_Click",
+        "btnSiguiente_Click",
+        "frmSelectOptions_FormClosing",
+        "IniciarReloj",
         "Dispose",
         "InitializeComponent",
         "Dispose",
         "InitializeComponent",
-        "FrmInicio_FormClosing",
         "btnIniciar_Click",
         "FrmInicio_Paint",
         "button1_Click",
-        "rbnJugadorBotaGorda_CheckedChanged",
-        "rbnJugadorComunista_CheckedChanged",
-        "IniciarReloj",
-        "CompletarTxtJ",
+        "FrmInicio_FormClosing",
         "frmIntroducirJugadores_Paint",
-        "ConvertirStringATipo",
-        "AsignarPropiedades",
-        "frmIntroducirJugadores_Load",
-        "frmIntroducirJugadores_FormClosing",
-        "rbnJugadorRandom_CheckedChanged",
-        "rbnJugadorInteligente_CheckedChanged",
-        "btnAtras_Click",
-        "btnSiguienteJugadoroSiguiente_Click",
         "txtEquipo_TextChanged",
-        "Dispose",
-        "InitializeComponent",
-        "lblAtras_Click",
-        "textBox1_TextChanged",
-        "lblSiguiente_Click",
+        "ConvertirStringATipo",
+        "rbnJugadorInteligente_CheckedChanged",
+        "CompletarTxtJ",
+        "AsignarPropiedades",
+        "rbnJugadorComunista_CheckedChanged",
+        "rbnJugadorBotaGorda_CheckedChanged",
+        "frmIntroducirJugadores_FormClosing",
+        "btnSiguienteJugadoroSiguiente_Click",
+        "btnAtras_Click",
+        "rbnJugadorRandom_CheckedChanged",
+        "frmIntroducirJugadores_Load",
         "IniciarReloj",
-        "FrmIntroducir_FormClosing",
-        "textBox3_TextChanged",
-        "FrmIntroducir_Load",
-        "textBox2_TextChanged",
-        "Informacion",
-        "salirToolStripMenuItem_Click",
-        "button1_Click",
-        "DibujarHorizontal",
-        "frmJuego_FormClosing",
-        "Execute",
-        "frmJuego_Paint",
         "Dispose",
         "InitializeComponent",
-        "GetWindowThreadProcessId",
+        "FrmIntroducir_Load",
+        "lblSiguiente_Click",
+        "textBox3_TextChanged",
+        "textBox1_TextChanged",
+        "FrmIntroducir_FormClosing",
+        "lblAtras_Click",
+        "IniciarReloj",
+        "textBox2_TextChanged",
+        "frmJuego_Paint",
+        "Informacion",
+        "DibujarHorizontal",
+        "Execute",
+        "salirToolStripMenuItem_Click",
+        "frmJuego_FormClosing",
+        "button1_Click",
+        "Dispose",
+        "InitializeComponent",
+        "Main",
         "GetForegroundWindow",
         "AllocConsole",
-        "Main",
+        "GetWindowThreadProcessId",
         "AttachConsole"
     ],
     "method_return_types": [
@@ -1806,11 +1806,15 @@
             "void"
         ],
         [
+            "CalcularScore",
+            "int"
+        ],
+        [
             "SiguienteJugador",
             "int"
         ],
         [
-            "CalcularScore",
+            "CalcularPuntos",
             "int"
         ],
         [
@@ -1818,27 +1822,23 @@
             "bool"
         ],
         [
-            "Repartir",
-            "void"
-        ],
-        [
-            "CalcularPuntos",
-            "int"
-        ],
-        [
             "GameOver",
             "bool"
+        ],
+        [
+            "Repartir",
+            "void"
         ],
         [
             "IsDouble",
             "bool"
         ],
         [
-            "ToBackwardsString",
+            "ToString",
             "string"
         ],
         [
-            "ToString",
+            "ToBackwardsString",
             "string"
         ],
         [
@@ -1846,8 +1846,8 @@
             "bool"
         ],
         [
-            "Lleva",
-            "bool"
+            "ToString",
+            "string"
         ],
         [
             "Jugar",
@@ -1858,14 +1858,14 @@
             "List"
         ],
         [
+            "Lleva",
+            "bool"
+        ],
+        [
             "PosiblesJugadas",
             "List"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
             "Jugar",
             "void"
         ],
@@ -1882,20 +1882,12 @@
             "int"
         ],
         [
-            "NextPlayer",
+            "CalcularPuntos",
             "int"
         ],
         [
             "EsValida",
             "bool"
-        ],
-        [
-            "Repartir",
-            "void"
-        ],
-        [
-            "CalcularPuntos",
-            "int"
         ],
         [
             "GameOver",
@@ -1906,16 +1898,24 @@
             "bool"
         ],
         [
+            "NextPlayer",
+            "int"
+        ],
+        [
+            "Repartir",
+            "void"
+        ],
+        [
             "GetGanadores",
+            "List"
+        ],
+        [
+            "Crear",
             "List"
         ],
         [
             "Shuffle",
             "void"
-        ],
-        [
-            "Crear",
-            "List"
         ],
         [
             "Jugar",
@@ -1954,11 +1954,19 @@
             "void"
         ],
         [
+            "Dispose",
+            "void"
+        ],
+        [
             "InitializeComponent",
             "void"
         ],
         [
-            "Dispose",
+            "txtMultiplicapor_TextChanged",
+            "void"
+        ],
+        [
+            "btnAtras_Click",
             "void"
         ],
         [
@@ -1966,8 +1974,12 @@
             "void"
         ],
         [
-            "IniciarReloj",
+            "frmSelectOptions_FormClosing",
             "void"
+        ],
+        [
+            "AsignarPropiedades",
+            "string"
         ],
         [
             "btnSiguiente_Click",
@@ -1978,23 +1990,7 @@
             "void"
         ],
         [
-            "frmSelectOptions_FormClosing",
-            "void"
-        ],
-        [
-            "btnAtras_Click",
-            "void"
-        ],
-        [
-            "txtMultiplicapor_TextChanged",
-            "void"
-        ],
-        [
-            "AsignarPropiedades",
-            "string"
-        ],
-        [
-            "InitializeComponent",
+            "IniciarReloj",
             "void"
         ],
         [
@@ -2010,15 +2006,7 @@
             "void"
         ],
         [
-            "FrmInicio_Paint",
-            "void"
-        ],
-        [
-            "button1_Click",
-            "void"
-        ],
-        [
-            "FrmInicio_FormClosing",
+            "InitializeComponent",
             "void"
         ],
         [
@@ -2026,11 +2014,23 @@
             "void"
         ],
         [
+            "button1_Click",
+            "void"
+        ],
+        [
+            "FrmInicio_Paint",
+            "void"
+        ],
+        [
+            "FrmInicio_FormClosing",
+            "void"
+        ],
+        [
             "txtEquipo_TextChanged",
             "void"
         ],
         [
-            "rbnJugadorComunista_CheckedChanged",
+            "frmIntroducirJugadores_FormClosing",
             "void"
         ],
         [
@@ -2038,15 +2038,11 @@
             "object"
         ],
         [
-            "IniciarReloj",
-            "void"
-        ],
-        [
             "frmIntroducirJugadores_Paint",
             "void"
         ],
         [
-            "rbnJugadorInteligente_CheckedChanged",
+            "frmIntroducirJugadores_Load",
             "void"
         ],
         [
@@ -2058,11 +2054,7 @@
             "void"
         ],
         [
-            "frmIntroducirJugadores_FormClosing",
-            "void"
-        ],
-        [
-            "frmIntroducirJugadores_Load",
+            "rbnJugadorComunista_CheckedChanged",
             "void"
         ],
         [
@@ -2074,6 +2066,10 @@
             "void"
         ],
         [
+            "rbnJugadorInteligente_CheckedChanged",
+            "void"
+        ],
+        [
             "AsignarPropiedades",
             "string"
         ],
@@ -2082,7 +2078,7 @@
             "void"
         ],
         [
-            "InitializeComponent",
+            "IniciarReloj",
             "void"
         ],
         [
@@ -2090,11 +2086,19 @@
             "void"
         ],
         [
-            "textBox1_TextChanged",
+            "InitializeComponent",
             "void"
         ],
         [
-            "IniciarReloj",
+            "FrmIntroducir_FormClosing",
+            "void"
+        ],
+        [
+            "lblSiguiente_Click",
+            "void"
+        ],
+        [
+            "FrmIntroducir_Load",
             "void"
         ],
         [
@@ -2106,27 +2110,15 @@
             "void"
         ],
         [
+            "textBox1_TextChanged",
+            "void"
+        ],
+        [
             "textBox3_TextChanged",
             "void"
         ],
         [
-            "lblSiguiente_Click",
-            "void"
-        ],
-        [
-            "FrmIntroducir_FormClosing",
-            "void"
-        ],
-        [
-            "FrmIntroducir_Load",
-            "void"
-        ],
-        [
-            "button1_Click",
-            "void"
-        ],
-        [
-            "frmJuego_Paint",
+            "IniciarReloj",
             "void"
         ],
         [
@@ -2134,11 +2126,7 @@
             "Task"
         ],
         [
-            "salirToolStripMenuItem_Click",
-            "void"
-        ],
-        [
-            "DibujarHorizontal",
+            "button1_Click",
             "void"
         ],
         [
@@ -2150,7 +2138,15 @@
             "void"
         ],
         [
-            "InitializeComponent",
+            "DibujarHorizontal",
+            "void"
+        ],
+        [
+            "frmJuego_Paint",
+            "void"
+        ],
+        [
+            "salirToolStripMenuItem_Click",
             "void"
         ],
         [
@@ -2158,8 +2154,12 @@
             "void"
         ],
         [
-            "AttachConsole",
-            "bool"
+            "InitializeComponent",
+            "void"
+        ],
+        [
+            "GetForegroundWindow",
+            "IntPtr"
         ],
         [
             "AllocConsole",
@@ -2170,8 +2170,8 @@
             "uint"
         ],
         [
-            "GetForegroundWindow",
-            "IntPtr"
+            "AttachConsole",
+            "bool"
         ],
         [
             "Main",
@@ -2180,41 +2180,41 @@
     ],
     "class_names": [
         "JugadorBotaGorda",
-        "Repartidor_SinDobles",
-        "Repartidor_Usual",
         "Repartidor_5Dobles",
+        "Repartidor_Usual",
+        "Repartidor_SinDobles",
         "JugadorRandom",
         "Torneo",
         "Reglas",
         "Ficha",
-        "TorneoGameOver_Usual",
         "TorneoGameOver_Pollona",
+        "TorneoGameOver_Usual",
         "JugadorBasico",
         "JugadorInteligente",
         "JugadorOrdenado",
-        "CalcularScore_DiferenciaModular",
         "CalcularScore_Multiplicar",
         "CalcularScore_Usual",
+        "CalcularScore_DiferenciaModular",
+        "Juez",
         "CreadorFichas",
         "Barajeador",
-        "Juez",
-        "JugadaArgs",
-        "Juego",
         "TerminadoArgs",
-        "Validador_Mult",
-        "Validador_Paridad",
+        "Juego",
+        "JugadaArgs",
         "Validador_Usual",
+        "Validador_Paridad",
+        "Validador_Mult",
         "Auxiliares",
-        "GameOver_Balanceado",
         "GameOver_Doble_Blanco",
+        "GameOver_Balanceado",
         "GameOver_Usual",
         "Jugada",
         "SiguienteJugador_InvierteOrden",
         "SiguienteJugador_Usual",
         "Mano",
-        "CalculaPuntos_X2",
         "CalculaPuntos_Pases",
         "CalculaPuntos_Usual",
+        "CalculaPuntos_X2",
         "Mesa",
         "frmSelectOptions",
         "frmSelectOptions",
@@ -2224,8 +2224,8 @@
         "frmIntroducirJugadores",
         "frmJuego",
         "FrmIntroducir",
-        "FichaImagen",
         "frmJuego",
+        "FichaImagen",
         "frmIntroducirJugadores",
         "ObjetoGlobal",
         "Program",
@@ -2233,13 +2233,13 @@
         "Resources"
     ],
     "interface_names": [
-        "ITorneoFinalizador",
-        "IFinalizador",
-        "IRepartidor",
+        "ISiguienteJugador",
         "ICalculadorScore",
+        "IRepartidor",
         "IValidador",
         "ICalculador",
-        "ISiguienteJugador"
+        "IFinalizador",
+        "ITorneoFinalizador"
     ],
     "delegate_names": [
         [
@@ -2393,5 +2393,6 @@
         "Attribute_sectionContext": 13
     },
     "project_name": "JuanMiguel01_Domino",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

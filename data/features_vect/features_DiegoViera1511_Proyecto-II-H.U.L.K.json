@@ -174,29 +174,30 @@
     },
     "project_name": "DiegoViera1511_Proyecto-II-H.U.L.K",
     "label": "original",
+    "project_type": "hulk",
     "variable_names_vector": [
-        0.16506066918373108,
-        0.14105643332004547
+        0.1244574710726738,
+        0.15095578134059906
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.031498562544584274,
-        -0.011681579053401947
+        -0.04013977572321892,
+        0.04415293037891388
     ],
     "method_names_vector": [
-        0.12274618446826935,
-        0.0386071652173996
+        0.0872238501906395,
+        0.0866241306066513
     ],
     "class_names_vector": [
-        0.15788593888282776,
-        0.003247639862820506
+        0.04838603362441063,
+        0.02527914009988308
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        0.0425536148250103,
-        0.023008275777101517,
-        0.14340533316135406,
-        0.09402238577604294
+        0.0157732293009758,
+        0.0746743232011795,
+        0.11031477153301239,
+        0.22433176636695862
     ]
 }

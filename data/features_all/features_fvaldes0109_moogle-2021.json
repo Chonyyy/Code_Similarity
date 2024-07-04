@@ -447,24 +447,8 @@
     ],
     "variable_names": [
         [
-            "string",
-            "words"
-        ],
-        [
             "List",
             "result"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "string",
-            "root"
-        ],
-        [
-            "StreamReader",
-            "reader"
         ],
         [
             "int",
@@ -475,24 +459,8 @@
             "crono"
         ],
         [
-            "var",
-            "rawLine"
-        ],
-        [
-            "string",
-            "files"
-        ],
-        [
-            "float",
-            "idf"
-        ],
-        [
-            "char",
-            "original"
-        ],
-        [
-            "float",
-            "tf"
+            "StringBuilder",
+            "temp"
         ],
         [
             "char",
@@ -503,20 +471,60 @@
             "i"
         ],
         [
-            "List",
-            "wordList"
+            "StreamReader",
+            "reader"
         ],
         [
-            "StringBuilder",
-            "temp"
+            "var",
+            "rawLine"
+        ],
+        [
+            "float",
+            "idf"
+        ],
+        [
+            "float",
+            "tf"
+        ],
+        [
+            "string",
+            "files"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "root"
+        ],
+        [
+            "char",
+            "original"
         ],
         [
             "string",
             "words"
         ],
         [
+            "List",
+            "wordList"
+        ],
+        [
+            "List",
+            "partialResults"
+        ],
+        [
+            "List",
+            "suggestedWords"
+        ],
+        [
             "ParsedInput",
             "parsedInput"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "SearchResult",
@@ -524,35 +532,11 @@
         ],
         [
             "List",
-            "suggestedWords"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
             "partials"
         ],
         [
-            "List",
-            "partialResults"
-        ],
-        [
-            "StringBuilder",
-            "dynamic"
-        ],
-        [
-            "StringBuilder",
-            "result"
-        ],
-        [
-            "char",
-            "temp"
-        ],
-        [
-            "bool",
-            "found"
+            "string",
+            "words"
         ],
         [
             "int",
@@ -563,52 +547,48 @@
             "c"
         ],
         [
-            "int",
-            "m"
+            "StringBuilder",
+            "result"
         ],
         [
             "int",
             "i"
         ],
         [
-            "int",
-            "pos"
+            "StringBuilder",
+            "dynamic"
+        ],
+        [
+            "bool",
+            "found"
         ],
         [
             "char",
             "charArray"
         ],
         [
+            "int",
+            "m"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
             "List",
             "positions"
+        ],
+        [
+            "char",
+            "temp"
         ],
         [
             "(",
             "multipliedWords"
         ],
         [
-            "List",
-            "lowerResults"
-        ],
-        [
-            "string",
-            "temp"
-        ],
-        [
-            "List",
-            "result"
-        ],
-        [
             "int",
-            "amount"
-        ],
-        [
-            "List",
-            "newResults"
-        ],
-        [
-            "string",
-            "docPath"
+            "lowLengthPos"
         ],
         [
             "bool",
@@ -616,43 +596,31 @@
         ],
         [
             "int",
-            "maxMult"
-        ],
-        [
-            "float",
-            "priority"
-        ],
-        [
-            "int",
-            "mid"
-        ],
-        [
-            "int",
-            "distance"
-        ],
-        [
-            "Occurrences",
-            "occurrences"
-        ],
-        [
-            "WordPositions",
-            "wordPositions"
-        ],
-        [
-            "var",
-            "sortedRelevances"
-        ],
-        [
-            "int",
-            "Id"
-        ],
-        [
-            "float",
-            "docScore"
+            "docID"
         ],
         [
             "List",
-            "closerWords"
+            "newResults"
+        ],
+        [
+            "int",
+            "maxMult"
+        ],
+        [
+            "List",
+            "rawSynonyms"
+        ],
+        [
+            "bool",
+            "achievedBest"
+        ],
+        [
+            "string",
+            "mandatoryWords"
+        ],
+        [
+            "int",
+            "diff1"
         ],
         [
             "string",
@@ -660,35 +628,7 @@
         ],
         [
             "int",
-            "size"
-        ],
-        [
-            "string",
-            "mandatoryWords"
-        ],
-        [
-            "bool",
-            "flag"
-        ],
-        [
-            "string",
-            "forbiddenWords"
-        ],
-        [
-            "int",
-            "lowLengthPos"
-        ],
-        [
-            "Dictionary",
-            "bestSuggestions"
-        ],
-        [
-            "var",
-            "suggestions"
-        ],
-        [
-            "List",
-            "rawSynonyms"
+            "currentLength"
         ],
         [
             "int",
@@ -696,7 +636,71 @@
         ],
         [
             "List",
+            "wordsToHighlight"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
+            "WordPositions",
+            "wordPositions"
+        ],
+        [
+            "string",
+            "docPath"
+        ],
+        [
+            "float",
+            "docScore"
+        ],
+        [
+            "int",
+            "Id"
+        ],
+        [
+            "List",
+            "suggestionsPriority"
+        ],
+        [
+            "List",
+            "closerWords"
+        ],
+        [
+            "int",
+            "distance"
+        ],
+        [
+            "List",
             "items"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "int",
+            "groupMult"
+        ],
+        [
+            "List",
+            "lowerResults"
+        ],
+        [
+            "float",
+            "priority"
+        ],
+        [
+            "Dictionary",
+            "bestSuggestions"
+        ],
+        [
+            "var",
+            "sortedRelevances"
         ],
         [
             "WordPositions",
@@ -704,43 +708,71 @@
         ],
         [
             "Dictionary",
-            "info"
-        ],
-        [
-            "List",
-            "filtered"
+            "relevances"
         ],
         [
             "List",
             "results"
         ],
         [
-            "Dictionary",
-            "relevances"
-        ],
-        [
             "List",
-            "wordsToHighlight"
+            "result"
         ],
         [
-            "string",
-            "snippet"
-        ],
-        [
-            "Dictionary",
-            "memo"
+            "var",
+            "suggestions"
         ],
         [
             "string",
             "title"
         ],
         [
-            "List",
-            "suggestionsPriority"
+            "int",
+            "amount"
         ],
         [
             "int",
-            "currentLength"
+            "mid"
+        ],
+        [
+            "Dictionary",
+            "memo"
+        ],
+        [
+            "Occurrences",
+            "occurrences"
+        ],
+        [
+            "List",
+            "suggestions"
+        ],
+        [
+            "bool",
+            "flag"
+        ],
+        [
+            "string",
+            "originalWords"
+        ],
+        [
+            "List",
+            "filtered"
+        ],
+        [
+            "int",
+            "size"
+        ],
+        [
+            "Dictionary",
+            "info"
+        ],
+        [
+            "string",
+            "forbiddenWords"
+        ],
+        [
+            "string",
+            "suggestions"
         ],
         [
             "string",
@@ -748,43 +780,19 @@
         ],
         [
             "List",
-            "suggestions"
-        ],
-        [
-            "string",
-            "suggestions"
-        ],
-        [
-            "int",
-            "groupMult"
+            "result"
         ],
         [
             "bool",
-            "achievedBest"
-        ],
-        [
-            "int",
-            "docID"
-        ],
-        [
-            "string",
-            "originalWords"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "diff1"
+            "inSequence"
         ],
         [
             "StringBuilder",
             "word"
         ],
         [
-            "List",
-            "result"
+            "int",
+            "i"
         ],
         [
             "int",
@@ -795,32 +803,24 @@
             "parse"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "bool",
-            "inSequence"
-        ],
-        [
-            "StreamWriter",
-            "writer"
-        ],
-        [
-            "string",
-            "jsonString"
+            "FileStream",
+            "file"
         ],
         [
             "StreamReader",
             "reader"
         ],
         [
-            "Dictionary",
-            "result"
+            "string",
+            "jsonString"
         ],
         [
-            "FileStream",
-            "file"
+            "StreamWriter",
+            "writer"
+        ],
+        [
+            "Dictionary",
+            "result"
         ],
         [
             "HashSet",
@@ -830,40 +830,40 @@
     "method_names": [
         "Insert",
         "Items",
-        "GetWords",
         "LoadSynonyms",
-        "Init",
+        "GetWords",
         "Query",
+        "Init",
         "AddWord",
         "WordsToString",
+        "Reverse",
+        "Find",
         "ParseAccents",
         "IsVowel",
-        "IsAlphaNum",
         "Distance",
         "EditDistance",
-        "Find",
-        "Reverse",
         "Substrings",
-        "GetSameRoot",
+        "IsAlphaNum",
         "GetOneWord",
+        "DocsFromPhrase",
         "GetSynonyms",
         "GetResults",
-        "GetLengthInDict",
-        "DocsFromPhrase",
-        "GenerateSuggestionString",
-        "FilterByOperators",
         "GetSuggestions",
-        "PushOperator",
-        "PushTilde",
+        "GetLengthInDict",
+        "FilterByOperators",
+        "GetSameRoot",
+        "GenerateSuggestionString",
         "TrimEnd",
-        "SaveDocs",
-        "SaveWords",
+        "PushTilde",
+        "PushOperator",
         "LoadDocs",
-        "LoadRoots",
-        "LoadWords",
+        "SaveWords",
+        "SaveDocs",
         "SaveRoots",
-        "Multiply",
-        "CountDocuments"
+        "LoadWords",
+        "LoadRoots",
+        "CountDocuments",
+        "Multiply"
     ],
     "method_return_types": [
         [
@@ -875,12 +875,12 @@
             "IEnumerable"
         ],
         [
-            "GetWords",
-            "List"
-        ],
-        [
             "LoadSynonyms",
             "void"
+        ],
+        [
+            "GetWords",
+            "List"
         ],
         [
             "Init",
@@ -895,8 +895,20 @@
             "void"
         ],
         [
+            "Reverse",
+            "string"
+        ],
+        [
             "WordsToString",
             "string"
+        ],
+        [
+            "EditDistance",
+            "int"
+        ],
+        [
+            "IsVowel",
+            "bool"
         ],
         [
             "IsAlphaNum",
@@ -907,35 +919,31 @@
             "string"
         ],
         [
-            "IsVowel",
-            "bool"
+            "Substrings",
+            "int"
         ],
         [
             "Distance",
             "int"
         ],
         [
-            "Reverse",
-            "string"
-        ],
-        [
             "Find",
             "int"
         ],
         [
-            "EditDistance",
-            "int"
-        ],
-        [
-            "Substrings",
-            "int"
-        ],
-        [
-            "GetSynonyms",
-            "List"
+            "GenerateSuggestionString",
+            "string"
         ],
         [
             "FilterByOperators",
+            "List"
+        ],
+        [
+            "GetSameRoot",
+            "List"
+        ],
+        [
+            "GetSynonyms",
             "List"
         ],
         [
@@ -943,28 +951,24 @@
             "List"
         ],
         [
-            "GetLengthInDict",
-            "int"
-        ],
-        [
-            "GetOneWord",
-            "List"
+            "GetResults",
+            "SearchResult"
         ],
         [
             "DocsFromPhrase",
             "List"
         ],
         [
-            "GetResults",
-            "SearchResult"
-        ],
-        [
-            "GenerateSuggestionString",
-            "string"
-        ],
-        [
-            "GetSameRoot",
+            "GetOneWord",
             "List"
+        ],
+        [
+            "GetLengthInDict",
+            "int"
+        ],
+        [
+            "PushTilde",
+            "void"
         ],
         [
             "TrimEnd",
@@ -975,23 +979,11 @@
             "void"
         ],
         [
-            "PushTilde",
-            "void"
-        ],
-        [
-            "LoadWords",
-            "Dictionary"
-        ],
-        [
             "LoadDocs",
             "Dictionary"
         ],
         [
-            "SaveRoots",
-            "void"
-        ],
-        [
-            "SaveWords",
+            "SaveDocs",
             "void"
         ],
         [
@@ -999,7 +991,15 @@
             "Dictionary"
         ],
         [
-            "SaveDocs",
+            "SaveRoots",
+            "void"
+        ],
+        [
+            "LoadWords",
+            "Dictionary"
+        ],
+        [
+            "SaveWords",
             "void"
         ],
         [
@@ -1158,5 +1158,6 @@
         "Switch_labelContext": 5
     },
     "project_name": "fvaldes0109_moogle-2021",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

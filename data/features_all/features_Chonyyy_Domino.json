@@ -233,23 +233,23 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
             "nPartida"
+        ],
+        [
+            "FICHA",
+            "FICHA"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "Juego",
             "j"
         ],
         [
-            "FICHA",
-            "FICHA"
+            "int",
+            "j"
         ],
         [
             "List",
@@ -260,16 +260,24 @@
             "jugadas"
         ],
         [
-            "JUGADOR",
-            "ganador"
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "Puntuacion"
         ],
         [
             "int",
             "minPuntuacion"
         ],
         [
+            "JUGADOR",
+            "ganador"
+        ],
+        [
             "int",
-            "Puntuacion"
+            "prox"
         ],
         [
             "int",
@@ -284,14 +292,6 @@
             "temp"
         ],
         [
-            "int",
-            "prox"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "bool",
             "nadie"
         ],
@@ -300,8 +300,12 @@
             "mask_extremos"
         ],
         [
-            "int",
-            "Siguiente_jugador"
+            "bool",
+            "mask"
+        ],
+        [
+            "Random",
+            "r"
         ],
         [
             "List",
@@ -309,11 +313,7 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "j"
+            "num"
         ],
         [
             "FICHA",
@@ -321,19 +321,15 @@
         ],
         [
             "int",
-            "num"
+            "Siguiente_jugador"
         ],
         [
             "int",
             "e"
         ],
         [
-            "bool",
-            "mask"
-        ],
-        [
-            "Random",
-            "r"
+            "int",
+            "i"
         ],
         [
             "FICHA",
@@ -353,23 +349,11 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "Random",
-            "r2"
-        ],
-        [
-            "FICHA",
-            "seleccionada"
+            "j"
         ],
         [
             "int",
-            "salida"
-        ],
-        [
-            "FICHA",
-            "mayor_Doble"
+            "i"
         ],
         [
             "List",
@@ -377,11 +361,23 @@
         ],
         [
             "int",
-            "suma"
+            "Equipo_par"
+        ],
+        [
+            "Random",
+            "r"
         ],
         [
             "int",
-            "n"
+            "suma"
+        ],
+        [
+            "FICHA",
+            "seleccionada"
+        ],
+        [
+            "int",
+            "num"
         ],
         [
             "int",
@@ -389,19 +385,7 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "SumaMax"
-        ],
-        [
-            "int",
-            "primero"
-        ],
-        [
-            "int",
-            "Equipo_par"
+            "salida"
         ],
         [
             "FICHA",
@@ -409,19 +393,7 @@
         ],
         [
             "int",
-            "num"
-        ],
-        [
-            "FICHA",
-            "F"
-        ],
-        [
-            "int",
-            "quien"
-        ],
-        [
-            "Random",
-            "r"
+            "primero"
         ],
         [
             "Random",
@@ -429,15 +401,47 @@
         ],
         [
             "int",
-            "fichaARepartir"
+            "SumaMax"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "quien"
+        ],
+        [
+            "Random",
+            "r2"
+        ],
+        [
+            "FICHA",
+            "mayor_Doble"
+        ],
+        [
+            "int",
+            "n"
+        ],
+        [
+            "FICHA",
+            "F"
         ],
         [
             "int",
             "f"
         ],
         [
+            "Random",
+            "r"
+        ],
+        [
             "int",
             "ficha_A_Repartir"
+        ],
+        [
+            "int",
+            "cant"
         ],
         [
             "int",
@@ -448,12 +452,8 @@
             "j"
         ],
         [
-            "Random",
-            "r"
-        ],
-        [
             "int",
-            "cant"
+            "fichaARepartir"
         ],
         [
             "bool",
@@ -461,55 +461,59 @@
         ]
     ],
     "method_names": [
-        "TirarFicha",
-        "TirarFichaEscogida",
-        "RecogerFicha",
         "Escoger",
+        "TirarFicha",
+        "RecogerFicha",
         "FichasQueLlevaElJugador",
+        "TirarFichaEscogida",
         "DevolverPuntos",
         "Mirar",
-        "Adicionar",
         "RepartirFichas",
+        "Adicionar",
         "DefinicionJuego",
         "MostrarFichas",
-        "EliminarFichaDeLaMesa",
         "Play",
         "CrearFichas",
-        "Siguiente",
+        "EliminarFichaDeLaMesa",
         "jugar",
+        "Siguiente",
         "Fin",
         "Ganador",
+        "Tipo",
+        "Final",
         "EquipoGanador",
         "Accion",
-        "Final",
-        "Tipo",
         "Inicio",
         "MostrarEstado",
         "Mostrar",
         "Extremos",
-        "ColocarFicha",
         "Rotar",
+        "ColocarFicha",
         "ProximoJugador",
         "Fin",
         "Escoger",
         "DefinicionJuego",
-        "SumaPuntos",
         "Final",
-        "Tipo",
-        "Accion",
         "EquipoGanador",
+        "Accion",
+        "SumaPuntos",
+        "Tipo",
         "QuienSaleDelEquipo",
         "Inicio",
         "DevolverPuntos",
         "Mirar",
-        "Adicionar",
         "RepartirFichas",
+        "Adicionar",
         "Fin"
     ],
     "method_return_types": [
         [
             "FichasQueLlevaElJugador",
             "List"
+        ],
+        [
+            "TirarFichaEscogida",
+            "FICHA"
         ],
         [
             "RecogerFicha",
@@ -520,20 +524,8 @@
             "void"
         ],
         [
-            "TirarFichaEscogida",
-            "FICHA"
-        ],
-        [
             "Escoger",
             "FICHA"
-        ],
-        [
-            "DevolverPuntos",
-            "int"
-        ],
-        [
-            "Adicionar",
-            "void"
         ],
         [
             "RepartirFichas",
@@ -544,11 +536,15 @@
             "void"
         ],
         [
-            "DefinicionJuego",
+            "DevolverPuntos",
+            "int"
+        ],
+        [
+            "Adicionar",
             "void"
         ],
         [
-            "MostrarFichas",
+            "DefinicionJuego",
             "void"
         ],
         [
@@ -564,6 +560,10 @@
             "void"
         ],
         [
+            "MostrarFichas",
+            "void"
+        ],
+        [
             "jugar",
             "void"
         ],
@@ -572,35 +572,31 @@
             "void"
         ],
         [
-            "Fin",
-            "bool"
-        ],
-        [
             "Ganador",
             "JUGADOR"
         ],
         [
-            "Tipo",
-            "string"
-        ],
-        [
-            "Accion",
-            "void"
-        ],
-        [
-            "EquipoGanador",
-            "int"
+            "Fin",
+            "bool"
         ],
         [
             "Final",
             "bool"
         ],
         [
-            "Inicio",
+            "Accion",
             "void"
         ],
         [
-            "Mostrar",
+            "Tipo",
+            "string"
+        ],
+        [
+            "EquipoGanador",
+            "int"
+        ],
+        [
+            "Inicio",
             "void"
         ],
         [
@@ -608,11 +604,15 @@
             "FICHA"
         ],
         [
-            "ColocarFicha",
+            "Rotar",
             "void"
         ],
         [
-            "Rotar",
+            "ProximoJugador",
+            "int"
+        ],
+        [
+            "Mostrar",
             "void"
         ],
         [
@@ -620,8 +620,8 @@
             "void"
         ],
         [
-            "ProximoJugador",
-            "int"
+            "ColocarFicha",
+            "void"
         ],
         [
             "Fin",
@@ -636,24 +636,24 @@
             "void"
         ],
         [
-            "Accion",
-            "void"
-        ],
-        [
             "SumaPuntos",
             "void"
         ],
         [
-            "Tipo",
-            "string"
+            "EquipoGanador",
+            "int"
+        ],
+        [
+            "Accion",
+            "void"
         ],
         [
             "Final",
             "bool"
         ],
         [
-            "EquipoGanador",
-            "int"
+            "Tipo",
+            "string"
         ],
         [
             "Inicio",
@@ -664,19 +664,19 @@
             "int"
         ],
         [
-            "DevolverPuntos",
-            "int"
+            "RepartirFichas",
+            "void"
         ],
         [
             "Mirar",
             "void"
         ],
         [
-            "Adicionar",
-            "void"
+            "DevolverPuntos",
+            "int"
         ],
         [
-            "RepartirFichas",
+            "Adicionar",
             "void"
         ],
         [
@@ -693,34 +693,34 @@
         "FinalPartida",
         "Partidas",
         "MESA",
-        "JuegoTrancado",
         "FinDoblePase",
-        "JugadorHumano",
+        "JuegoTrancado",
         "Tramposo",
         "BotaGorda",
         "Aleatorio",
+        "JugadorHumano",
         "configuracion",
         "AcumulacionDePuntos",
         "PorPartidas",
-        "FichaMasGrande",
         "SalidaAleatoria",
         "ParesNones",
+        "FichaMasGrande",
         "MayorDoble",
-        "PuntosDeLasFichas",
-        "Repartir99",
-        "PaseUsual",
-        "PuntosSimples",
         "Pausar",
-        "AdicionarFichaSiNoLleva",
-        "MirarSeguido",
+        "Repartir99",
         "Repartir66",
-        "JuegoTrancado",
-        "FinDoblePase"
+        "PuntosSimples",
+        "AdicionarFichaSiNoLleva",
+        "PaseUsual",
+        "MirarSeguido",
+        "PuntosDeLasFichas",
+        "FinDoblePase",
+        "JuegoTrancado"
     ],
     "interface_names": [
         "IMirar",
-        "IPases",
         "ISistemaDePuntaje",
+        "IPases",
         "IReparticion",
         "IFinJuego",
         "IInicioDelJuego"
@@ -845,5 +845,6 @@
         "ThisReferenceExpressionContext": 1
     },
     "project_name": "Chonyyy_Domino",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

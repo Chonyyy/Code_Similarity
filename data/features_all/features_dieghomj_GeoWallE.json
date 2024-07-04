@@ -72,31 +72,27 @@
             "length"
         ],
         [
-            "int",
-            "index"
-        ],
-        [
             "var",
             "text"
+        ],
+        [
+            "int",
+            "index"
         ]
     ],
     "method_names": [
-        "GetChildren",
         "ToString",
         "GetChildren",
+        "GetChildren",
         "Peek",
+        "ReadNumber",
         "Next",
         "Lex",
-        "ReadNumber",
+        "Reset",
         "Dispose",
-        "MoveNext",
-        "Reset"
+        "MoveNext"
     ],
     "method_return_types": [
-        [
-            "GetChildren",
-            "IEnumerable"
-        ],
         [
             "ToString",
             "string"
@@ -104,6 +100,14 @@
         [
             "GetChildren",
             "IEnumerable"
+        ],
+        [
+            "GetChildren",
+            "IEnumerable"
+        ],
+        [
+            "Next",
+            "void"
         ],
         [
             "Peek",
@@ -118,20 +122,16 @@
             "void"
         ],
         [
-            "Next",
-            "void"
-        ],
-        [
             "Reset",
-            "void"
-        ],
-        [
-            "Dispose",
             "void"
         ],
         [
             "MoveNext",
             "bool"
+        ],
+        [
+            "Dispose",
+            "void"
         ]
     ],
     "class_names": [
@@ -243,5 +243,6 @@
         "Boolean_literalContext": 4
     },
     "project_name": "dieghomj_GeoWallE",
-    "label": "original"
+    "label": "original",
+    "project_type": "wallE"
 }

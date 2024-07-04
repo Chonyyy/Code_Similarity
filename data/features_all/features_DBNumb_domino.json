@@ -399,36 +399,48 @@
     ],
     "variable_names": [
         [
-            "var",
-            "players"
+            "Winner",
+            "solowin"
         ],
         [
             "int",
             "maxs"
         ],
         [
-            "List",
-            "winners"
+            "int",
+            "i"
         ],
         [
-            "Winner",
-            "solowin"
+            "List",
+            "winners"
         ],
         [
             "int",
             "max"
         ],
         [
-            "int",
-            "i"
+            "var",
+            "players"
         ],
         [
             "int",
             "option"
         ],
         [
+            "Func",
+            "randomface"
+        ],
+        [
             "Token",
             "extremos"
+        ],
+        [
+            "Random",
+            "x"
+        ],
+        [
+            "List",
+            "result"
         ],
         [
             "var",
@@ -439,16 +451,16 @@
             "jugada"
         ],
         [
+            "int",
+            "x"
+        ],
+        [
             "List",
             "result"
         ],
         [
-            "Func",
-            "randomface"
-        ],
-        [
-            "Random",
-            "x"
+            "int",
+            "j"
         ],
         [
             "Winner",
@@ -459,52 +471,32 @@
             "x"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
             "List",
-            "result"
-        ],
-        [
-            "int",
-            "aux"
-        ],
-        [
-            "IComparable",
-            "result"
-        ],
-        [
-            "int",
-            "j"
+            "carasDiferentes"
         ],
         [
             "var",
             "temp"
         ],
         [
-            "Token",
-            "jugada"
+            "int",
+            "k"
         ],
         [
             "int",
-            "x"
-        ],
-        [
-            "int",
-            "repeticionesPorCara"
+            "aux"
         ],
         [
             "List",
             "aux"
         ],
         [
-            "int",
-            "l"
-        ],
-        [
             "IComparable",
             "data"
+        ],
+        [
+            "int",
+            "count"
         ],
         [
             "var",
@@ -512,54 +504,62 @@
         ],
         [
             "int",
-            "k"
-        ],
-        [
-            "List",
-            "carasDiferentes"
-        ],
-        [
-            "int",
             "i"
         ],
         [
+            "IComparable",
+            "result"
+        ],
+        [
             "int",
-            "count"
+            "l"
+        ],
+        [
+            "int",
+            "repeticionesPorCara"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Token",
+            "jugada"
         ]
     ],
     "method_names": [
         "GetWinners",
-        "GetPuntuation",
         "Compare",
         "ToString",
+        "GetPuntuation",
         "Print",
         "TryParser",
         "Main",
-        "GetPuntuation",
-        "Compare",
         "CanBeCompare",
+        "Compare",
+        "GetPuntuation",
         "CanbeMatch",
-        "Juega",
-        "Comp",
         "PosiblesJugadas",
-        "GetWinners",
+        "Comp",
+        "Juega",
         "NxtTurn",
+        "Apply",
         "AsignaFichaPlayer",
         "Over",
-        "Apply",
+        "GetWinners",
         "AsignaFichasAPlayers",
         "DrawWinner",
-        "CanBeCompare",
         "Compare",
-        "Print",
         "Getscore",
+        "CanBeCompare",
+        "Print",
+        "Apply",
         "GetPuntuation",
         "ToString",
-        "Apply",
         "CanbeMatch",
-        "GetData",
-        "Strategy",
         "GiveSortedHand",
+        "Strategy",
+        "GetData",
         "NxtTurn"
     ],
     "method_return_types": [
@@ -576,12 +576,12 @@
             "int"
         ],
         [
-            "Compare",
-            "int"
-        ],
-        [
             "ToString",
             "string"
+        ],
+        [
+            "Compare",
+            "int"
         ],
         [
             "TryParser",
@@ -592,15 +592,7 @@
             "void"
         ],
         [
-            "CanBeCompare",
-            "bool"
-        ],
-        [
             "GetPuntuation",
-            "int"
-        ],
-        [
-            "Compare",
             "int"
         ],
         [
@@ -608,24 +600,28 @@
             "bool"
         ],
         [
-            "Comp",
-            "Tuple"
+            "CanBeCompare",
+            "bool"
         ],
         [
-            "Juega",
-            "Tuple"
+            "Compare",
+            "int"
         ],
         [
             "PosiblesJugadas",
             "List"
         ],
         [
-            "NxtTurn",
-            "int"
+            "Juega",
+            "Tuple"
         ],
         [
-            "AsignaFichaPlayer",
-            "void"
+            "Comp",
+            "Tuple"
+        ],
+        [
+            "Apply",
+            "bool"
         ],
         [
             "Over",
@@ -636,8 +632,12 @@
             "Winner"
         ],
         [
-            "Apply",
-            "bool"
+            "NxtTurn",
+            "int"
+        ],
+        [
+            "AsignaFichaPlayer",
+            "void"
         ],
         [
             "DrawWinner",
@@ -648,19 +648,15 @@
             "void"
         ],
         [
-            "Getscore",
-            "void"
-        ],
-        [
             "Apply",
             "bool"
         ],
         [
-            "GetPuntuation",
-            "int"
+            "ToString",
+            "string"
         ],
         [
-            "Print",
+            "Getscore",
             "void"
         ],
         [
@@ -668,28 +664,32 @@
             "bool"
         ],
         [
-            "CanbeMatch",
-            "bool"
-        ],
-        [
             "Compare",
             "int"
         ],
         [
-            "ToString",
-            "string"
+            "Print",
+            "void"
+        ],
+        [
+            "GetPuntuation",
+            "int"
+        ],
+        [
+            "CanbeMatch",
+            "bool"
         ],
         [
             "Strategy",
             "Token"
         ],
         [
-            "GetData",
-            "IComparable"
-        ],
-        [
             "GiveSortedHand",
             "List"
+        ],
+        [
+            "GetData",
+            "IComparable"
         ],
         [
             "NxtTurn",
@@ -699,35 +699,35 @@
     "class_names": [
         "ScorePlayerWinner",
         "EmptyHandWinner",
-        "IntegerToken",
         "IntegerFace",
-        "Program",
+        "IntegerToken",
         "Utils",
+        "Program",
         "Player",
         "GameComponents",
         "Winner",
-        "DefaultTokeRule",
-        "Face",
-        "NoDoubleRule",
         "Token",
+        "NoDoubleRule",
+        "Face",
         "BoardToken",
+        "DefaultTokeRule",
+        "BGStrategy",
         "PDStrategy",
         "RandomStrategy",
-        "BGStrategy",
         "Team",
         "ClassicTurn",
         "ClockTurn"
     ],
     "interface_names": [
-        "IPuntuable",
-        "IFace",
-        "IComparable",
         "IDeck",
-        "ITurnRule",
+        "IFace",
+        "IPuntuable",
+        "IComparable",
         "IReglaDeSelección",
         "IWinnersRule",
-        "IGameBreak",
         "ITokenRule",
+        "ITurnRule",
+        "IGameBreak",
         "IStrategy"
     ],
     "delegate_names": [],
@@ -852,5 +852,6 @@
         "Accessor_modifierContext": 2
     },
     "project_name": "DBNumb_domino",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

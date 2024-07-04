@@ -163,29 +163,30 @@
     },
     "project_name": "crackbandicoot-dot_Moogle-",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.0387449786067009,
-        0.07967580854892731
+        0.05844945088028908,
+        0.10997205972671509
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.010081480257213116,
-        0.07756567746400833
+        -0.04338623583316803,
+        0.003976990934461355
     ],
     "method_names_vector": [
-        0.025544576346874237,
-        -0.0003154277801513672
+        -0.04553241655230522,
+        -0.024300778284668922
     ],
     "class_names_vector": [
-        -0.28705474734306335,
-        -0.3762212097644806
+        -0.28573185205459595,
+        -0.37418651580810547
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.13904353976249695,
-        -0.07323641330003738,
-        -0.061703719198703766,
-        -0.07672633975744247
+        -0.13592925667762756,
+        -0.06617458909749985,
+        -0.06342799216508865,
+        -0.06560634821653366
     ]
 }

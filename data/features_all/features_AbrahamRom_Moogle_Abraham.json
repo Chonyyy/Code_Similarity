@@ -72,5 +72,6 @@
         "ErrorNodeImpl": 3234
     },
     "project_name": "AbrahamRom_Moogle_Abraham",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

@@ -2979,6 +2979,14 @@
     ],
     "variable_names": [
         [
+            "var",
+            "draw_area"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
             "double",
             "x2"
         ],
@@ -2988,19 +2996,11 @@
         ],
         [
             "var",
-            "Center"
+            "trasVector"
         ],
         [
             "double",
             "y2"
-        ],
-        [
-            "var",
-            "x"
-        ],
-        [
-            "double",
-            "x1"
         ],
         [
             "double",
@@ -3008,15 +3008,15 @@
         ],
         [
             "var",
-            "trasVector"
+            "x"
         ],
         [
             "var",
-            "y"
+            "Center"
         ],
         [
-            "var",
-            "draw_area"
+            "double",
+            "x1"
         ],
         [
             "var",
@@ -3025,6 +3025,14 @@
         [
             "CodeHighlighter",
             "codeHighlighter"
+        ],
+        [
+            "bool",
+            "first"
+        ],
+        [
+            "var",
+            "answ"
         ],
         [
             "int",
@@ -3039,24 +3047,12 @@
             "answ"
         ],
         [
-            "bool",
-            "first"
-        ],
-        [
-            "var",
-            "answ"
-        ],
-        [
             "string",
             "ERROR"
         ],
         [
-            "var",
-            "scanner"
-        ],
-        [
-            "var",
-            "tokens"
+            "object",
+            "syntax"
         ],
         [
             "var",
@@ -3064,15 +3060,19 @@
         ],
         [
             "bool",
-            "hasParseErrors"
-        ],
-        [
-            "bool",
             "hasScanErrors"
         ],
         [
-            "object",
-            "syntax"
+            "var",
+            "tokens"
+        ],
+        [
+            "bool",
+            "hasParseErrors"
+        ],
+        [
+            "var",
+            "scanner"
         ],
         [
             "object",
@@ -3099,12 +3099,12 @@
             "where"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
             "var",
             "environment"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "GSharpEnvironment",
@@ -3113,6 +3113,10 @@
         [
             "int",
             "i"
+        ],
+        [
+            "var",
+            "scope"
         ],
         [
             "FunctionType",
@@ -3125,158 +3129,154 @@
         [
             "int",
             "i"
-        ],
-        [
-            "var",
-            "scope"
         ]
     ],
     "method_names": [
-        "_on_item_rect_changed",
-        "ResetTransform",
+        "Center_Transform",
         "ZoomIn",
-        "_Process",
         "_Input",
-        "Update_IDrawable_Window",
         "Move",
         "_Ready",
-        "Center_Transform",
+        "_on_item_rect_changed",
         "ZoomOut",
+        "ResetTransform",
+        "Update_IDrawable_Window",
+        "_Process",
         "_Ready",
         "_Process",
-        "Define",
         "GetAt",
         "AssignAt",
+        "Define",
         "IsStringType",
-        "GetStackTraceString",
         "GetStackTrace",
+        "GetStackTraceString",
         "ExecuteBlock",
         "Call",
         "Arity",
-        "GetImportTraceString",
         "GetImportTrace",
+        "GetImportTraceString",
         "TryGetObjectValue",
-        "VisitConstantStmt",
-        "VisitCallExpr",
-        "VisitWhileStmt",
-        "VisitAssignExpr",
-        "VisitLetInExpr",
         "VisitPrintStmt",
-        "Visit",
-        "VisitIntRangeExpr",
-        "VisitUnaryPrefixExpr",
-        "VisitIndexExpr",
-        "VisitVariableExpr",
-        "VisitLiteralExpr",
-        "VisitConditionalExpr",
-        "VisitGroupingExpr",
-        "VisitVarStmt",
-        "VisitRestoreStmt",
-        "VisitUnaryPostfixExpr",
-        "VisitReturnStmt",
-        "VisitUndefinedExpr",
-        "VisitLogicalExpr",
         "VisitImportStmt",
-        "VisitDrawStmt",
+        "VisitCallExpr",
+        "VisitVarStmt",
+        "Visit",
+        "VisitLetInExpr",
+        "VisitGroupingExpr",
+        "VisitLogicalExpr",
+        "VisitUnaryPrefixExpr",
+        "VisitBinaryExpr",
+        "VisitWhileStmt",
+        "VisitExpressionStmt",
+        "VisitVariableExpr",
+        "VisitConstantStmt",
         "VisitEmptyExpr",
         "VisitFunctionStmt",
-        "VisitBinaryExpr",
-        "VisitExpressionStmt",
-        "VisitBlockStmt",
+        "VisitIntRangeExpr",
+        "VisitReturnStmt",
+        "VisitDrawStmt",
+        "VisitUnaryPostfixExpr",
+        "VisitIndexExpr",
         "VisitColorStmt",
         "VisitSequenceExpr",
-        "SameTypeAs",
-        "OperateMeasure",
-        "OperateInfiniteStaticSequence",
-        "OperateString",
-        "OperateGeneratorSequence",
-        "GetTypeName",
-        "Equals",
-        "OperateUndefined",
-        "OperatePoint",
-        "GetTruthValue",
-        "OperateFiniteStaticSequence",
-        "OperateScalar",
-        "ToString",
-        "SameTypeAs",
-        "OperatePoint",
-        "OperateInfiniteStaticSequence",
-        "OperateString",
-        "OperateGeneratorSequence",
-        "GetTypeName",
-        "Equals",
-        "OperateUndefined",
-        "OperateMeasure",
-        "GetTruthValue",
-        "OperateFiniteStaticSequence",
-        "OperateScalar",
-        "ToString",
-        "ToString",
-        "OperatePoint",
-        "OperateMeasure",
-        "OperateScalar",
-        "SameTypeAs",
-        "IsDrawable",
-        "IsFigure",
-        "GetMostRestrictedOrError",
-        "ToString",
-        "SameTypeAs",
-        "Copy",
-        "IsDrawable",
-        "CannotOperate",
-        "IsFigure",
-        "GetMostRestrictedOrError",
-        "ToString",
-        "SameTypeAs",
-        "Copy",
-        "OperableUndefined",
-        "OperablePoint",
-        "IsDrawable",
-        "OperableSequence",
-        "IsFigure",
-        "OperableScalar",
-        "OperableMeasure",
-        "GetMostRestrictedOrError",
-        "ToString",
-        "SameTypeAs",
-        "Copy",
-        "OperableUndefined",
-        "OperablePoint",
-        "IsDrawable",
-        "OperableSequence",
-        "IsFigure",
-        "OperableScalar",
-        "OperableMeasure",
-        "GetMostRestrictedOrError",
-        "ToString",
-        "SameTypeAs",
-        "Copy",
-        "OperablePoint",
-        "IsDrawable",
-        "OperableSequence",
-        "IsFigure",
-        "OperableScalar",
-        "OperableMeasure",
-        "GetMostRestrictedOrError",
-        "ToString",
-        "ScanAndParse",
         "VisitUndefinedExpr",
-        "Accept",
-        "VisitUnaryPrefixExpr",
-        "VisitIndexExpr",
-        "VisitCallExpr",
-        "VisitLogicalExpr",
-        "VisitVariableExpr",
-        "VisitLiteralExpr",
+        "VisitBlockStmt",
+        "VisitRestoreStmt",
         "VisitConditionalExpr",
-        "VisitGroupingExpr",
+        "VisitLiteralExpr",
         "VisitAssignExpr",
-        "VisitEmptyExpr",
-        "VisitLetInExpr",
+        "OperateString",
+        "OperateFiniteStaticSequence",
+        "ToString",
+        "Equals",
+        "GetTypeName",
+        "OperateGeneratorSequence",
+        "OperateScalar",
+        "OperateUndefined",
+        "GetTruthValue",
+        "OperateInfiniteStaticSequence",
+        "SameTypeAs",
+        "OperateMeasure",
+        "OperatePoint",
+        "OperateString",
+        "OperateFiniteStaticSequence",
+        "ToString",
+        "Equals",
+        "GetTypeName",
+        "OperateGeneratorSequence",
+        "OperateScalar",
+        "OperateUndefined",
+        "GetTruthValue",
+        "OperateInfiniteStaticSequence",
+        "SameTypeAs",
+        "OperateMeasure",
+        "OperatePoint",
+        "ToString",
+        "OperateScalar",
+        "OperateMeasure",
+        "OperatePoint",
+        "IsFigure",
+        "ToString",
+        "IsDrawable",
+        "GetMostRestrictedOrError",
+        "SameTypeAs",
+        "IsFigure",
+        "CannotOperate",
+        "ToString",
+        "Copy",
+        "IsDrawable",
+        "GetMostRestrictedOrError",
+        "SameTypeAs",
+        "IsFigure",
+        "OperableSequence",
+        "ToString",
+        "OperablePoint",
+        "OperableUndefined",
+        "Copy",
+        "IsDrawable",
+        "OperableScalar",
+        "GetMostRestrictedOrError",
+        "OperableMeasure",
+        "SameTypeAs",
+        "IsFigure",
+        "OperableSequence",
+        "OperableUndefined",
+        "OperablePoint",
+        "ToString",
+        "Copy",
+        "IsDrawable",
+        "OperableScalar",
+        "GetMostRestrictedOrError",
+        "OperableMeasure",
+        "SameTypeAs",
+        "IsFigure",
+        "OperableSequence",
+        "ToString",
+        "OperablePoint",
+        "Copy",
+        "IsDrawable",
+        "OperableScalar",
+        "GetMostRestrictedOrError",
+        "OperableMeasure",
+        "SameTypeAs",
+        "ScanAndParse",
         "VisitBinaryExpr",
-        "VisitIntRangeExpr",
-        "VisitSequenceExpr",
+        "VisitGroupingExpr",
+        "Accept",
+        "VisitCallExpr",
+        "VisitUnaryPrefixExpr",
         "VisitUnaryPostfixExpr",
+        "VisitConditionalExpr",
+        "VisitVariableExpr",
+        "VisitLetInExpr",
+        "VisitEmptyExpr",
+        "VisitIntRangeExpr",
+        "VisitLiteralExpr",
+        "VisitIndexExpr",
+        "VisitAssignExpr",
+        "VisitLogicalExpr",
+        "VisitSequenceExpr",
+        "VisitUndefinedExpr",
         "Accept",
         "Accept",
         "Accept",
@@ -3300,26 +3300,26 @@
         "ToString",
         "Accept",
         "GetColor",
-        "UpdateFigureGenerationWindow",
         "Interpret",
+        "UpdateFigureGenerationWindow",
         "Accept",
         "Accept",
         "Accept",
         "Accept",
         "Accept",
-        "VisitReturnStmt",
-        "Accept",
-        "VisitConstantStmt",
-        "VisitImportStmt",
         "VisitDrawStmt",
+        "VisitBlockStmt",
         "VisitWhileStmt",
-        "VisitColorStmt",
-        "VisitVarStmt",
         "VisitRestoreStmt",
         "VisitPrintStmt",
-        "VisitFunctionStmt",
+        "VisitImportStmt",
+        "VisitVarStmt",
+        "Accept",
         "VisitExpressionStmt",
-        "VisitBlockStmt",
+        "VisitConstantStmt",
+        "VisitFunctionStmt",
+        "VisitColorStmt",
+        "VisitReturnStmt",
         "Accept",
         "Accept",
         "Accept",
@@ -3333,79 +3333,71 @@
         "ToString",
         "Call",
         "UnsupportedOperandTypes",
-        "Assign",
         "Ancestor",
         "GetAt",
         "AssignAt",
         "Define",
+        "Assign",
         "Get",
         "CreateBinding",
-        "GetLocalBinding",
+        "GetVariableOrFunctionBinding",
         "AddLocalExpr",
         "AddGlobalExpr",
-        "GetVariableOrFunctionBinding",
+        "GetLocalBinding",
         "CreateBinding",
         "ToString",
-        "GetLocalBinding",
         "AddLocalExpr",
-        "AddGlobalExpr",
         "GetVariableOrFunctionBinding",
-        "VisitConstantStmt",
-        "VisitCallExpr",
-        "Define",
-        "VisitWhileStmt",
-        "VisitAssignExpr",
-        "VisitLetInExpr",
-        "VisitPrintStmt",
-        "Declare",
-        "ResolveLocalOrGlobal",
-        "VisitIntRangeExpr",
-        "EndScope",
-        "VisitUnaryPrefixExpr",
-        "VisitIndexExpr",
-        "VisitVariableExpr",
-        "VisitLiteralExpr",
-        "ResolveLetIn",
-        "VisitConditionalExpr",
-        "VisitGroupingExpr",
-        "VisitVarStmt",
-        "VisitRestoreStmt",
-        "VisitSequenceExpr",
-        "VisitUnaryPostfixExpr",
-        "VisitReturnStmt",
-        "VisitUndefinedExpr",
-        "VisitLogicalExpr",
-        "VisitImportStmt",
-        "VisitDrawStmt",
+        "AddGlobalExpr",
+        "GetLocalBinding",
         "DefineFunction",
-        "VisitEmptyExpr",
-        "VisitFunctionStmt",
-        "VisitBinaryExpr",
-        "VisitExpressionStmt",
-        "VisitBlockStmt",
-        "ResolveFunction",
-        "ExecuteBlock",
-        "IsEmpty",
         "Resolve",
-        "VisitColorStmt",
+        "VisitPrintStmt",
+        "VisitImportStmt",
+        "VisitCallExpr",
+        "VisitVarStmt",
+        "Define",
+        "VisitLetInExpr",
+        "VisitGroupingExpr",
+        "VisitLogicalExpr",
+        "VisitUnaryPrefixExpr",
+        "VisitBinaryExpr",
+        "ExecuteBlock",
+        "VisitWhileStmt",
+        "VisitVariableExpr",
+        "VisitExpressionStmt",
+        "VisitEmptyExpr",
+        "VisitIntRangeExpr",
+        "VisitConstantStmt",
+        "VisitFunctionStmt",
+        "ResolveLetIn",
+        "Declare",
+        "VisitReturnStmt",
+        "VisitDrawStmt",
         "BeginScope",
+        "ResolveFunction",
+        "VisitUnaryPostfixExpr",
+        "VisitIndexExpr",
+        "VisitColorStmt",
+        "EndScope",
+        "VisitSequenceExpr",
+        "VisitUndefinedExpr",
+        "ResolveLocalOrGlobal",
+        "VisitBlockStmt",
+        "VisitRestoreStmt",
+        "IsEmpty",
+        "VisitConditionalExpr",
+        "VisitLiteralExpr",
+        "VisitAssignExpr",
         "CreateBinding"
     ],
     "method_return_types": [
         [
-            "_on_item_rect_changed",
+            "ResetTransform",
             "void"
         ],
         [
             "ZoomOut",
-            "void"
-        ],
-        [
-            "Center_Transform",
-            "void"
-        ],
-        [
-            "ZoomIn",
             "void"
         ],
         [
@@ -3417,7 +3409,11 @@
             "Key"
         ],
         [
-            "Update_IDrawable_Window",
+            "ZoomIn",
+            "void"
+        ],
+        [
+            "_Ready",
             "void"
         ],
         [
@@ -3425,7 +3421,15 @@
             "void"
         ],
         [
-            "ResetTransform",
+            "Update_IDrawable_Window",
+            "void"
+        ],
+        [
+            "_on_item_rect_changed",
+            "void"
+        ],
+        [
+            "Center_Transform",
             "void"
         ],
         [
@@ -3437,15 +3441,11 @@
             "void"
         ],
         [
-            "_Ready",
-            "void"
-        ],
-        [
             "_Process",
             "void"
         ],
         [
-            "AssignAt",
+            "Define",
             "void"
         ],
         [
@@ -3453,7 +3453,7 @@
             "GSObject"
         ],
         [
-            "Define",
+            "AssignAt",
             "void"
         ],
         [
@@ -3473,12 +3473,12 @@
             "void"
         ],
         [
-            "Arity",
-            "int"
-        ],
-        [
             "Call",
             "GSObject"
+        ],
+        [
+            "Arity",
+            "int"
         ],
         [
             "GetImportTrace",
@@ -3493,79 +3493,7 @@
             "TValue"
         ],
         [
-            "VisitIndexExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitPrintStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitVarStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitSequenceExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitConstantStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitCallExpr",
-            "VoidObject"
-        ],
-        [
-            "Visit",
-            "void"
-        ],
-        [
-            "VisitEmptyExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitLiteralExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitBinaryExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitUnaryPostfixExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitExpressionStmt",
-            "VoidObject"
-        ],
-        [
             "VisitGroupingExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitUndefinedExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitBlockStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitImportStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitDrawStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitFunctionStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitAssignExpr",
             "VoidObject"
         ],
         [
@@ -3573,23 +3501,23 @@
             "VoidObject"
         ],
         [
-            "VisitUnaryPrefixExpr",
+            "VisitConstantStmt",
             "VoidObject"
         ],
         [
-            "VisitVariableExpr",
+            "VisitUndefinedExpr",
             "VoidObject"
         ],
         [
-            "VisitRestoreStmt",
+            "Visit",
+            "void"
+        ],
+        [
+            "VisitPrintStmt",
             "VoidObject"
         ],
         [
-            "VisitLetInExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitConditionalExpr",
+            "VisitDrawStmt",
             "VoidObject"
         ],
         [
@@ -3601,7 +3529,75 @@
             "VoidObject"
         ],
         [
+            "VisitImportStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitIndexExpr",
+            "VoidObject"
+        ],
+        [
             "VisitLogicalExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitCallExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitUnaryPrefixExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitLiteralExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitConditionalExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitUnaryPostfixExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitBlockStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitFunctionStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitBinaryExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitRestoreStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitSequenceExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitVariableExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitAssignExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitEmptyExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitExpressionStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitLetInExpr",
             "VoidObject"
         ],
         [
@@ -3609,31 +3605,31 @@
             "VoidObject"
         ],
         [
-            "GetTruthValue",
-            "bool"
+            "VisitVarStmt",
+            "VoidObject"
+        ],
+        [
+            "OperateScalar",
+            "GSObject"
         ],
         [
             "ToString",
             "string"
         ],
         [
-            "OperateString",
+            "GetTruthValue",
+            "bool"
+        ],
+        [
+            "OperateGeneratorSequence",
             "GSObject"
         ],
         [
-            "OperateInfiniteStaticSequence",
-            "GSObject"
-        ],
-        [
-            "OperateUndefined",
-            "GSObject"
+            "SameTypeAs",
+            "bool"
         ],
         [
             "OperatePoint",
-            "GSObject"
-        ],
-        [
-            "OperateMeasure",
             "GSObject"
         ],
         [
@@ -3641,15 +3637,11 @@
             "bool"
         ],
         [
-            "SameTypeAs",
-            "bool"
+            "OperateInfiniteStaticSequence",
+            "GSObject"
         ],
         [
-            "GetTypeName",
-            "string"
-        ],
-        [
-            "OperateScalar",
+            "OperateMeasure",
             "GSObject"
         ],
         [
@@ -3657,35 +3649,39 @@
             "GSObject"
         ],
         [
-            "OperateGeneratorSequence",
-            "GSObject"
-        ],
-        [
-            "GetTruthValue",
-            "bool"
-        ],
-        [
-            "ToString",
-            "string"
-        ],
-        [
             "OperateString",
             "GSObject"
         ],
         [
-            "OperateInfiniteStaticSequence",
-            "GSObject"
+            "GetTypeName",
+            "string"
         ],
         [
             "OperateUndefined",
             "GSObject"
         ],
         [
-            "OperatePoint",
+            "OperateScalar",
             "GSObject"
         ],
         [
-            "OperateMeasure",
+            "ToString",
+            "string"
+        ],
+        [
+            "GetTruthValue",
+            "bool"
+        ],
+        [
+            "OperateGeneratorSequence",
+            "GSObject"
+        ],
+        [
+            "SameTypeAs",
+            "bool"
+        ],
+        [
+            "OperatePoint",
             "GSObject"
         ],
         [
@@ -3693,15 +3689,11 @@
             "bool"
         ],
         [
-            "SameTypeAs",
-            "bool"
+            "OperateMeasure",
+            "GSObject"
         ],
         [
-            "GetTypeName",
-            "string"
-        ],
-        [
-            "OperateScalar",
+            "OperateInfiniteStaticSequence",
             "GSObject"
         ],
         [
@@ -3709,12 +3701,24 @@
             "GSObject"
         ],
         [
-            "OperateGeneratorSequence",
+            "OperateString",
+            "GSObject"
+        ],
+        [
+            "GetTypeName",
+            "string"
+        ],
+        [
+            "OperateUndefined",
             "GSObject"
         ],
         [
             "ToString",
             "string"
+        ],
+        [
+            "OperateMeasure",
+            "GSObject"
         ],
         [
             "OperateScalar",
@@ -3725,20 +3729,8 @@
             "GSObject"
         ],
         [
-            "OperateMeasure",
-            "GSObject"
-        ],
-        [
-            "IsDrawable",
-            "bool"
-        ],
-        [
             "ToString",
             "string"
-        ],
-        [
-            "GetMostRestrictedOrError",
-            "GSType"
         ],
         [
             "SameTypeAs",
@@ -3749,6 +3741,10 @@
             "bool"
         ],
         [
+            "GetMostRestrictedOrError",
+            "GSType"
+        ],
+        [
             "IsDrawable",
             "bool"
         ],
@@ -3757,56 +3753,52 @@
             "string"
         ],
         [
-            "GetMostRestrictedOrError",
-            "GSType"
-        ],
-        [
-            "Copy",
-            "GSType"
-        ],
-        [
             "SameTypeAs",
             "bool"
+        ],
+        [
+            "IsFigure",
+            "bool"
+        ],
+        [
+            "GetMostRestrictedOrError",
+            "GSType"
         ],
         [
             "CannotOperate",
             "string"
         ],
         [
-            "IsFigure",
-            "bool"
-        ],
-        [
             "IsDrawable",
             "bool"
-        ],
-        [
-            "ToString",
-            "string"
-        ],
-        [
-            "OperableMeasure",
-            "("
-        ],
-        [
-            "GetMostRestrictedOrError",
-            "GSType"
-        ],
-        [
-            "OperableScalar",
-            "("
         ],
         [
             "Copy",
             "GSType"
         ],
         [
+            "ToString",
+            "string"
+        ],
+        [
             "SameTypeAs",
             "bool"
         ],
         [
-            "OperableSequence",
+            "OperableMeasure",
             "("
+        ],
+        [
+            "IsFigure",
+            "bool"
+        ],
+        [
+            "OperableScalar",
+            "("
+        ],
+        [
+            "GetMostRestrictedOrError",
+            "GSType"
         ],
         [
             "OperablePoint",
@@ -3817,12 +3809,16 @@
             "("
         ],
         [
-            "IsFigure",
+            "IsDrawable",
             "bool"
         ],
         [
-            "IsDrawable",
-            "bool"
+            "Copy",
+            "GSType"
+        ],
+        [
+            "OperableSequence",
+            "("
         ],
         [
             "ToString",
@@ -3833,47 +3829,59 @@
             "("
         ],
         [
-            "GetMostRestrictedOrError",
-            "GSType"
+            "SameTypeAs",
+            "bool"
+        ],
+        [
+            "IsFigure",
+            "bool"
         ],
         [
             "OperableScalar",
             "("
         ],
         [
-            "Copy",
-            "GSType"
-        ],
-        [
-            "SameTypeAs",
-            "bool"
-        ],
-        [
-            "OperableSequence",
-            "("
-        ],
-        [
             "OperablePoint",
             "("
+        ],
+        [
+            "GetMostRestrictedOrError",
+            "GSType"
         ],
         [
             "OperableUndefined",
             "("
         ],
         [
-            "IsFigure",
+            "IsDrawable",
             "bool"
         ],
         [
-            "IsDrawable",
-            "bool"
+            "Copy",
+            "GSType"
+        ],
+        [
+            "OperableSequence",
+            "("
         ],
         [
             "ToString",
             "string"
         ],
         [
+            "SameTypeAs",
+            "bool"
+        ],
+        [
             "OperableMeasure",
+            "("
+        ],
+        [
+            "IsFigure",
+            "bool"
+        ],
+        [
+            "OperableScalar",
             "("
         ],
         [
@@ -3881,43 +3889,27 @@
             "GSType"
         ],
         [
-            "OperableScalar",
+            "OperablePoint",
             "("
+        ],
+        [
+            "IsDrawable",
+            "bool"
         ],
         [
             "Copy",
             "GSType"
         ],
         [
-            "SameTypeAs",
-            "bool"
-        ],
-        [
             "OperableSequence",
             "("
-        ],
-        [
-            "OperablePoint",
-            "("
-        ],
-        [
-            "IsFigure",
-            "bool"
         ],
         [
             "ScanAndParse",
             "ScanAndParseResult"
         ],
         [
-            "VisitGroupingExpr",
-            "R"
-        ],
-        [
-            "VisitUndefinedExpr",
-            "R"
-        ],
-        [
-            "VisitCallExpr",
+            "VisitEmptyExpr",
             "R"
         ],
         [
@@ -3925,27 +3917,7 @@
             "R"
         ],
         [
-            "VisitUnaryPostfixExpr",
-            "R"
-        ],
-        [
-            "VisitIndexExpr",
-            "R"
-        ],
-        [
-            "Accept",
-            "R"
-        ],
-        [
-            "VisitAssignExpr",
-            "R"
-        ],
-        [
-            "VisitEmptyExpr",
-            "R"
-        ],
-        [
-            "VisitIntRangeExpr",
+            "VisitSequenceExpr",
             "R"
         ],
         [
@@ -3953,11 +3925,11 @@
             "R"
         ],
         [
-            "VisitLiteralExpr",
+            "VisitAssignExpr",
             "R"
         ],
         [
-            "VisitBinaryExpr",
+            "VisitLiteralExpr",
             "R"
         ],
         [
@@ -3965,7 +3937,15 @@
             "R"
         ],
         [
-            "VisitLetInExpr",
+            "Accept",
+            "R"
+        ],
+        [
+            "VisitGroupingExpr",
+            "R"
+        ],
+        [
+            "VisitIndexExpr",
             "R"
         ],
         [
@@ -3973,12 +3953,40 @@
             "R"
         ],
         [
-            "VisitSequenceExpr",
+            "VisitUnaryPostfixExpr",
+            "R"
+        ],
+        [
+            "VisitIntRangeExpr",
+            "R"
+        ],
+        [
+            "VisitLetInExpr",
+            "R"
+        ],
+        [
+            "VisitUndefinedExpr",
+            "R"
+        ],
+        [
+            "VisitBinaryExpr",
+            "R"
+        ],
+        [
+            "VisitCallExpr",
             "R"
         ],
         [
             "Accept",
             "R"
+        ],
+        [
+            "Accept",
+            "R"
+        ],
+        [
+            "ToString",
+            "string"
         ],
         [
             "Accept",
@@ -4013,18 +4021,6 @@
             "R"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
-            "Accept",
-            "R"
-        ],
-        [
-            "Accept",
-            "R"
-        ],
-        [
             "Accept",
             "R"
         ],
@@ -4065,8 +4061,8 @@
             "R"
         ],
         [
-            "GetColor",
-            "Colors"
+            "Accept",
+            "R"
         ],
         [
             "Interpret",
@@ -4077,8 +4073,8 @@
             "void"
         ],
         [
-            "Accept",
-            "R"
+            "GetColor",
+            "Colors"
         ],
         [
             "Accept",
@@ -4097,27 +4093,11 @@
             "R"
         ],
         [
-            "VisitConstantStmt",
+            "Accept",
             "R"
         ],
         [
             "VisitDrawStmt",
-            "R"
-        ],
-        [
-            "VisitColorStmt",
-            "R"
-        ],
-        [
-            "VisitFunctionStmt",
-            "R"
-        ],
-        [
-            "VisitImportStmt",
-            "R"
-        ],
-        [
-            "Accept",
             "R"
         ],
         [
@@ -4129,11 +4109,27 @@
             "R"
         ],
         [
-            "VisitWhileStmt",
+            "Accept",
+            "R"
+        ],
+        [
+            "VisitReturnStmt",
+            "R"
+        ],
+        [
+            "VisitImportStmt",
             "R"
         ],
         [
             "VisitRestoreStmt",
+            "R"
+        ],
+        [
+            "VisitColorStmt",
+            "R"
+        ],
+        [
+            "VisitWhileStmt",
             "R"
         ],
         [
@@ -4145,7 +4141,11 @@
             "R"
         ],
         [
-            "VisitReturnStmt",
+            "VisitFunctionStmt",
+            "R"
+        ],
+        [
+            "VisitConstantStmt",
             "R"
         ],
         [
@@ -4163,6 +4163,10 @@
         [
             "Accept",
             "R"
+        ],
+        [
+            "ToString",
+            "string"
         ],
         [
             "ToString",
@@ -4189,16 +4193,24 @@
             "string"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
             "Call",
             "GSObject"
         ],
         [
             "UnsupportedOperandTypes",
             "string"
+        ],
+        [
+            "AssignAt",
+            "void"
+        ],
+        [
+            "GetAt",
+            "GSObject"
+        ],
+        [
+            "Assign",
+            "void"
         ],
         [
             "Get",
@@ -4209,20 +4221,8 @@
             "void"
         ],
         [
-            "Assign",
-            "void"
-        ],
-        [
-            "AssignAt",
-            "void"
-        ],
-        [
             "Ancestor",
             "GSharpEnvironment"
-        ],
-        [
-            "GetAt",
-            "GSObject"
         ],
         [
             "CreateBinding",
@@ -4233,16 +4233,16 @@
             "Binding"
         ],
         [
-            "GetLocalBinding",
-            "bool"
-        ],
-        [
             "AddGlobalExpr",
             "void"
         ],
         [
             "AddLocalExpr",
             "void"
+        ],
+        [
+            "GetLocalBinding",
+            "bool"
         ],
         [
             "CreateBinding",
@@ -4269,35 +4269,7 @@
             "void"
         ],
         [
-            "VisitIndexExpr",
-            "VoidObject"
-        ],
-        [
-            "Define",
-            "void"
-        ],
-        [
-            "VisitPrintStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitVarStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitSequenceExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitConstantStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitCallExpr",
-            "VoidObject"
-        ],
-        [
-            "BeginScope",
+            "ResolveLocalOrGlobal",
             "void"
         ],
         [
@@ -4305,47 +4277,7 @@
             "void"
         ],
         [
-            "VisitEmptyExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitLiteralExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitBinaryExpr",
-            "VoidObject"
-        ],
-        [
-            "ResolveFunction",
-            "void"
-        ],
-        [
-            "VisitUnaryPostfixExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitExpressionStmt",
-            "VoidObject"
-        ],
-        [
             "VisitGroupingExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitUndefinedExpr",
-            "VoidObject"
-        ],
-        [
-            "VisitBlockStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitImportStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitDrawStmt",
             "VoidObject"
         ],
         [
@@ -4353,27 +4285,27 @@
             "void"
         ],
         [
-            "VisitFunctionStmt",
-            "VoidObject"
-        ],
-        [
-            "VisitAssignExpr",
-            "VoidObject"
-        ],
-        [
-            "ResolveLocalOrGlobal",
-            "void"
-        ],
-        [
-            "Resolve",
-            "void"
-        ],
-        [
             "VisitWhileStmt",
             "VoidObject"
         ],
         [
-            "VisitUnaryPrefixExpr",
+            "VisitConstantStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitUndefinedExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitPrintStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitDrawStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitReturnStmt",
             "VoidObject"
         ],
         [
@@ -4381,11 +4313,15 @@
             "VoidObject"
         ],
         [
-            "DefineFunction",
-            "void"
+            "VisitColorStmt",
+            "VoidObject"
         ],
         [
-            "VisitVariableExpr",
+            "VisitImportStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitIndexExpr",
             "VoidObject"
         ],
         [
@@ -4397,11 +4333,27 @@
             "bool"
         ],
         [
-            "VisitRestoreStmt",
+            "VisitLogicalExpr",
             "VoidObject"
         ],
         [
-            "VisitLetInExpr",
+            "VisitCallExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitUnaryPrefixExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitLiteralExpr",
+            "VoidObject"
+        ],
+        [
+            "BeginScope",
+            "void"
+        ],
+        [
+            "VisitUnaryPostfixExpr",
             "VoidObject"
         ],
         [
@@ -4409,19 +4361,67 @@
             "VoidObject"
         ],
         [
-            "VisitReturnStmt",
+            "DefineFunction",
+            "void"
+        ],
+        [
+            "Resolve",
+            "void"
+        ],
+        [
+            "VisitBlockStmt",
             "VoidObject"
         ],
         [
-            "VisitColorStmt",
+            "Define",
+            "void"
+        ],
+        [
+            "VisitFunctionStmt",
             "VoidObject"
         ],
         [
-            "VisitLogicalExpr",
+            "VisitBinaryExpr",
             "VoidObject"
+        ],
+        [
+            "VisitVariableExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitSequenceExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitRestoreStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitAssignExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitEmptyExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitExpressionStmt",
+            "VoidObject"
+        ],
+        [
+            "VisitLetInExpr",
+            "VoidObject"
+        ],
+        [
+            "ResolveFunction",
+            "void"
         ],
         [
             "VisitIntRangeExpr",
+            "VoidObject"
+        ],
+        [
+            "VisitVarStmt",
             "VoidObject"
         ],
         [
@@ -4453,8 +4453,8 @@
         "FigureType",
         "DrawableType",
         "ScanAndParseResult",
-        "Parser",
         "InternalParseError",
+        "Parser",
         "Expr",
         "Undefined",
         "Sequence",
@@ -4508,15 +4508,15 @@
         "NameResolver",
         "FunctionBinding",
         "VariableBindingFactory",
-        "Mod",
-        "Operator",
+        "Subst",
         "Mult",
         "Div",
-        "Add",
-        "Indexer",
-        "LessTh",
         "Power",
-        "Subst"
+        "Indexer",
+        "Operator",
+        "LessTh",
+        "Add",
+        "Mod"
     ],
     "interface_names": [
         "IEnvironment",
@@ -4536,7 +4536,7 @@
     ],
     "delegate_names": [
         [
-            "ValidationErrorHandler",
+            "ParseErrorHandler",
             "void"
         ],
         [
@@ -4552,7 +4552,7 @@
             "void"
         ],
         [
-            "ParseErrorHandler",
+            "ValidationErrorHandler",
             "void"
         ]
     ],
@@ -4720,5 +4720,6 @@
         "Element_initializerContext": 12
     },
     "project_name": "DHCub_Wall-E",
-    "label": "original"
+    "label": "original",
+    "project_type": "wallE"
 }

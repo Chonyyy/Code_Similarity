@@ -256,15 +256,47 @@
     "variable_names": [
         [
             "int",
-            "i"
+            "j"
         ],
         [
             "int",
-            "j"
+            "i"
         ],
         [
             "SearchItem",
             "temp"
+        ],
+        [
+            "string",
+            "jfiles"
+        ],
+        [
+            "HashSet",
+            "new_files"
+        ],
+        [
+            "Dictionary",
+            "docs_tfidf"
+        ],
+        [
+            "float",
+            "idf"
+        ],
+        [
+            "string",
+            "lword"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "int",
+            "tf"
+        ],
+        [
+            "string",
+            "filename"
         ],
         [
             "Tuple",
@@ -272,31 +304,7 @@
         ],
         [
             "Dictionary",
-            "docs_tfidf"
-        ],
-        [
-            "string",
-            "filename"
-        ],
-        [
-            "string",
-            "jfiles"
-        ],
-        [
-            "float",
-            "idf"
-        ],
-        [
-            "HashSet",
-            "new_files"
-        ],
-        [
-            "int",
-            "tf"
-        ],
-        [
-            "int",
-            "count"
+            "words"
         ],
         [
             "string",
@@ -304,51 +312,43 @@
         ],
         [
             "string",
-            "text"
-        ],
-        [
-            "string",
             "word"
         ],
         [
-            "HashSet",
-            "files"
-        ],
-        [
             "string",
-            "lword"
-        ],
-        [
-            "Dictionary",
-            "words"
+            "text"
         ],
         [
             "int",
             "N"
+        ],
+        [
+            "HashSet",
+            "files"
         ]
     ],
     "method_names": [
         "SortItems",
         "Items",
-        "GetFileWC",
-        "Add",
-        "UpdateWC",
-        "Vectorize",
+        "LoadNDictJSON",
         "GetHighlight",
-        "LoadFloaNtDictJSON",
+        "Add",
+        "GetKeys",
         "Save",
+        "_GetFiles",
+        "GetWords",
         "Load",
         "Get",
-        "GetWC",
         "UpdateTfIdf",
-        "GetFiles",
-        "LoadNDictJSON",
-        "GetKeys",
-        "GetWords",
-        "LoadHSJSON",
-        "SaveJSON",
         "LoadDictJSON",
-        "_GetFiles"
+        "GetFileWC",
+        "SaveJSON",
+        "GetFiles",
+        "LoadFloaNtDictJSON",
+        "Vectorize",
+        "GetWC",
+        "LoadHSJSON",
+        "UpdateWC"
     ],
     "method_return_types": [
         [
@@ -360,23 +360,23 @@
             "void"
         ],
         [
-            "GetWC",
-            "int"
-        ],
-        [
-            "GetKeys",
-            "List"
+            "LoadDictJSON",
+            "Dictionary"
         ],
         [
             "GetFileWC",
             "int"
         ],
         [
-            "Load",
-            "Dictionary"
+            "Save",
+            "void"
         ],
         [
-            "GetWords",
+            "LoadHSJSON",
+            "HashSet"
+        ],
+        [
+            "Load",
             "Dictionary"
         ],
         [
@@ -384,24 +384,12 @@
             "Dictionary"
         ],
         [
-            "LoadHSJSON",
-            "HashSet"
-        ],
-        [
-            "LoadDictJSON",
-            "Dictionary"
-        ],
-        [
-            "SaveJSON",
-            "void"
-        ],
-        [
-            "_GetFiles",
-            "HashSet"
-        ],
-        [
             "UpdateTfIdf",
             "Dictionary"
+        ],
+        [
+            "GetFiles",
+            "HashSet"
         ],
         [
             "Add",
@@ -412,36 +400,48 @@
             "void"
         ],
         [
+            "Get",
+            "List"
+        ],
+        [
+            "SaveJSON",
+            "void"
+        ],
+        [
             "UpdateWC",
             "void"
         ],
         [
-            "GetFiles",
-            "HashSet"
+            "GetKeys",
+            "List"
         ],
         [
             "LoadFloaNtDictJSON",
             "Dictionary"
         ],
         [
-            "Get",
-            "List"
+            "GetWC",
+            "int"
+        ],
+        [
+            "_GetFiles",
+            "HashSet"
+        ],
+        [
+            "GetWords",
+            "Dictionary"
         ],
         [
             "GetHighlight",
             "string"
-        ],
-        [
-            "Save",
-            "void"
         ]
     ],
     "class_names": [
         "SearchResult",
         "SearchItem",
         "Settings",
-        "Ranker",
-        "TopRanks"
+        "TopRanks",
+        "Ranker"
     ],
     "interface_names": [],
     "delegate_names": [],
@@ -561,5 +561,6 @@
         "BreakStatementContext": 1
     },
     "project_name": "Moist-Cat_moogle-2023",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

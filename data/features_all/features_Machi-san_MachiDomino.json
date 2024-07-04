@@ -589,14 +589,6 @@
     ],
     "variable_names": [
         [
-            "Menu",
-            "menu"
-        ],
-        [
-            "Banco",
-            "banco"
-        ],
-        [
             "Longana",
             "longana"
         ],
@@ -605,8 +597,12 @@
             "clasico"
         ],
         [
-            "int",
-            "j"
+            "Banco",
+            "banco"
+        ],
+        [
+            "Menu",
+            "menu"
         ],
         [
             "List",
@@ -619,24 +615,24 @@
         [
             "EL",
             "GANADOR"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "contadorFin"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "int",
             "auxiliarMesa"
         ],
         [
-            "int",
-            "contadorFin"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
             "List",
             "ganadores"
         ],
@@ -650,15 +646,11 @@
         ],
         [
             "int",
+            "i"
+        ],
+        [
+            "int",
             "contadorFin"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "int",
@@ -669,16 +661,16 @@
             "cara1"
         ],
         [
+            "int",
+            "j"
+        ],
+        [
             "T",
             "cara2"
         ],
         [
-            "T",
-            "derecha"
-        ],
-        [
-            "string",
-            "palabra"
+            "int",
+            "i"
         ],
         [
             "T",
@@ -690,67 +682,7 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "jugada"
-        ],
-        [
-            "Dictionary",
-            "valorCaras"
-        ],
-        [
-            "int",
-            "contador"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "T",
-            "auxiliar"
-        ],
-        [
-            "T",
-            "cara1"
-        ],
-        [
-            "List",
-            "almacenValoresFichas"
-        ],
-        [
-            "List",
-            "auxiliar"
-        ],
-        [
-            "T",
-            "cara2"
-        ],
-        [
-            "List",
-            "caras"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "Dictionary",
-            "valorFichas"
-        ],
-        [
-            "T",
-            "cara1"
-        ],
-        [
-            "T",
-            "cara2"
-        ],
-        [
-            "int",
-            "totalFichas"
         ],
         [
             "string",
@@ -758,35 +690,35 @@
         ],
         [
             "int",
-            "contador"
+            "i"
+        ],
+        [
+            "T",
+            "derecha"
+        ],
+        [
+            "Dictionary",
+            "valorFichas"
+        ],
+        [
+            "List",
+            "almacenValoresFichas"
+        ],
+        [
+            "T",
+            "cara1"
+        ],
+        [
+            "T",
+            "cara2"
         ],
         [
             "int",
-            "j"
+            "i"
         ],
         [
             "List",
             "auxiliar"
-        ],
-        [
-            "T",
-            "ficha"
-        ],
-        [
-            "Random",
-            "random"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "auxiliarRandom"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "int",
@@ -794,23 +726,99 @@
         ],
         [
             "Dictionary",
-            "valorElementos"
+            "valorCaras"
+        ],
+        [
+            "T",
+            "auxiliar"
+        ],
+        [
+            "List",
+            "caras"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "T",
+            "cara1"
+        ],
+        [
+            "T",
+            "cara2"
+        ],
+        [
+            "string",
+            "palabra"
+        ],
+        [
+            "int",
+            "totalFichas"
+        ],
+        [
+            "T",
+            "ficha"
+        ],
+        [
+            "List",
+            "auxiliar"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "auxiliarRandom"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "List",
             "ganadores"
         ],
         [
-            "List",
-            "valorMano"
+            "Dictionary",
+            "valorElementos"
         ],
         [
             "List",
             "lista"
         ],
         [
+            "List",
+            "valorMano"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
             "int",
             "i"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "List",
+            "ganadores"
         ],
         [
             "List",
@@ -819,91 +827,63 @@
         [
             "int",
             "i"
-        ],
-        [
-            "int",
-            "contador"
-        ],
-        [
-            "List",
-            "ganadores"
         ]
     ],
     "method_names": [
+        "Victoria",
+        "GeneraMano",
         "GeneraFichas",
         "Juega",
-        "Juego",
-        "Ganador",
-        "Victoria",
-        "Fin",
-        "GeneraMano",
+        "RecibeMano",
         "JugadaValida",
         "GanadorCierre",
-        "RecibeMano",
+        "Fin",
+        "Ganador",
+        "Juego",
         "VerJuego",
         "Main",
         "Juego",
         "Juego",
+        "RecibeMano",
         "Juega",
         "OrdenaFicha",
-        "RecibeMano",
+        "Juega",
+        "OrdenaFicha",
         "NoLleva",
-        "Juega",
-        "OrdenaFicha",
-        "CabeFicha",
         "RecibeMano",
-        "Juega",
+        "CabeFicha",
+        "ConvierteFicha",
         "OrdenaMano",
+        "Juega",
         "OrdenaFicha",
         "Sumatoria",
-        "GetLlave",
-        "ConvierteFicha",
         "RecibeMano",
-        "Fin",
-        "GanadorCierre",
+        "GetLlave",
         "Victoria",
+        "GanadorCierre",
+        "Fin",
         "JugadaValida",
         "FlujoJuego",
-        "Continuacion",
-        "CriterioDeSalida",
-        "ManoInicial",
-        "CantidadJugadores",
         "TipoJuego",
+        "ManoInicial",
+        "CriterioDeSalida",
+        "CantidadJugadores",
+        "Continuacion",
         "Presentacion",
+        "GeneraFichas",
         "IgualaArrays",
         "EliminaElementosRepetidos",
         "GeneraMano",
-        "GeneraFichas",
         "Fin",
         "Fin",
-        "MenorLista",
         "Ganador",
+        "MenorLista",
         "ConvierteAInt",
         "Sumatoria",
-        "MenorLista",
-        "Ganador"
+        "Ganador",
+        "MenorLista"
     ],
     "method_return_types": [
-        [
-            "GeneraMano",
-            "void"
-        ],
-        [
-            "Victoria",
-            "bool"
-        ],
-        [
-            "Ganador",
-            "List"
-        ],
-        [
-            "GeneraFichas",
-            "void"
-        ],
-        [
-            "Fin",
-            "bool"
-        ],
         [
             "Juega",
             "void"
@@ -913,16 +893,36 @@
             "void"
         ],
         [
-            "JugadaValida",
+            "Ganador",
+            "List"
+        ],
+        [
+            "Fin",
             "bool"
+        ],
+        [
+            "GanadorCierre",
+            "List"
+        ],
+        [
+            "GeneraFichas",
+            "void"
         ],
         [
             "Juego",
             "void"
         ],
         [
-            "GanadorCierre",
-            "List"
+            "JugadaValida",
+            "bool"
+        ],
+        [
+            "GeneraMano",
+            "void"
+        ],
+        [
+            "Victoria",
+            "bool"
         ],
         [
             "Main",
@@ -941,27 +941,11 @@
             "void"
         ],
         [
-            "Juega",
-            "void"
-        ],
-        [
             "RecibeMano",
             "void"
         ],
         [
-            "OrdenaFicha",
-            "T"
-        ],
-        [
-            "NoLleva",
-            "bool"
-        ],
-        [
             "Juega",
-            "void"
-        ],
-        [
-            "RecibeMano",
             "void"
         ],
         [
@@ -973,23 +957,31 @@
             "bool"
         ],
         [
-            "OrdenaMano",
+            "Juega",
             "void"
         ],
         [
-            "Juega",
-            "void"
+            "OrdenaFicha",
+            "T"
         ],
         [
             "RecibeMano",
             "void"
         ],
         [
+            "NoLleva",
+            "bool"
+        ],
+        [
             "ConvierteFicha",
             "int"
         ],
         [
-            "GetLlave",
+            "Juega",
+            "void"
+        ],
+        [
+            "OrdenaFicha",
             "T"
         ],
         [
@@ -997,15 +989,23 @@
             "int"
         ],
         [
-            "OrdenaFicha",
+            "RecibeMano",
+            "void"
+        ],
+        [
+            "OrdenaMano",
+            "void"
+        ],
+        [
+            "GetLlave",
             "T"
         ],
         [
-            "Fin",
+            "JugadaValida",
             "bool"
         ],
         [
-            "JugadaValida",
+            "Fin",
             "bool"
         ],
         [
@@ -1021,19 +1021,11 @@
             "void"
         ],
         [
-            "Presentacion",
-            "void"
-        ],
-        [
-            "ManoInicial",
-            "void"
-        ],
-        [
             "CriterioDeSalida",
             "void"
         ],
         [
-            "TipoJuego",
+            "ManoInicial",
             "void"
         ],
         [
@@ -1045,11 +1037,11 @@
             "void"
         ],
         [
-            "GeneraFichas",
+            "TipoJuego",
             "void"
         ],
         [
-            "GeneraMano",
+            "Presentacion",
             "void"
         ],
         [
@@ -1061,16 +1053,20 @@
             "List"
         ],
         [
-            "Fin",
-            "bool"
+            "GeneraMano",
+            "void"
+        ],
+        [
+            "GeneraFichas",
+            "void"
         ],
         [
             "Fin",
             "bool"
         ],
         [
-            "ConvierteAInt",
-            "List"
+            "Fin",
+            "bool"
         ],
         [
             "Sumatoria",
@@ -1083,6 +1079,10 @@
         [
             "MenorLista",
             "int"
+        ],
+        [
+            "ConvierteAInt",
+            "List"
         ],
         [
             "Ganador",
@@ -1110,12 +1110,12 @@
         "CierreBonificado"
     ],
     "interface_names": [
+        "IFin",
         "IGanadorCierre",
         "IReglas",
-        "IBanco",
-        "IFin",
         "IJugador",
-        "ITipoJuego"
+        "ITipoJuego",
+        "IBanco"
     ],
     "delegate_names": [],
     "node_count": {
@@ -1248,5 +1248,6 @@
         "Tuple_elementContext": 1
     },
     "project_name": "Machi-san_MachiDomino",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

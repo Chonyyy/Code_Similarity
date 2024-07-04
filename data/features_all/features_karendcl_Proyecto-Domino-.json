@@ -1870,16 +1870,16 @@
             "board"
         ],
         [
-            "var",
-            "r"
+            "int",
+            "valor"
         ],
         [
             "IChooseStrategyWrapped",
             "choose"
         ],
         [
-            "int",
-            "valor"
+            "var",
+            "r"
         ],
         [
             "IPlayerScore",
@@ -1890,6 +1890,18 @@
             "x"
         ],
         [
+            "ChampionStatus",
+            "championStatus"
+        ],
+        [
+            "Orders",
+            "c"
+        ],
+        [
+            "GameStatus",
+            "gameStatus"
+        ],
+        [
             "IGame",
             "game"
         ],
@@ -1898,44 +1910,32 @@
             "status"
         ],
         [
-            "Orders",
-            "c"
-        ],
-        [
-            "var",
-            "temp"
-        ],
-        [
-            "var",
-            "AllPlayer"
-        ],
-        [
-            "int",
-            "i"
+            "List",
+            "players"
         ],
         [
             "PlayerStats",
             "temp"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
             "double",
             "punctuation"
         ],
         [
-            "GameStatus",
-            "gameStatus"
+            "var",
+            "AllPlayer"
+        ],
+        [
+            "var",
+            "temp"
         ],
         [
             "List",
             "Strats"
-        ],
-        [
-            "ChampionStatus",
-            "championStatus"
-        ],
-        [
-            "List",
-            "players"
         ],
         [
             "List",
@@ -1946,19 +1946,15 @@
             "last"
         ],
         [
+            "int",
+            "x"
+        ],
+        [
             "double",
             "ofert"
         ],
         [
             "bool",
-            "x"
-        ],
-        [
-            "var",
-            "x"
-        ],
-        [
-            "int",
             "x"
         ],
         [
@@ -1968,6 +1964,10 @@
         [
             "Random",
             "random"
+        ],
+        [
+            "var",
+            "x"
         ],
         [
             "List",
@@ -1994,28 +1994,28 @@
             "cantWins"
         ],
         [
-            "double",
-            "cant"
+            "bool",
+            "Won"
         ],
         [
             "int",
             "x"
         ],
         [
-            "bool",
-            "Won"
-        ],
-        [
             "int",
             "count"
+        ],
+        [
+            "double",
+            "cant"
         ],
         [
             "Dictionary",
             "temp"
         ],
         [
-            "int",
-            "i"
+            "List",
+            "players"
         ],
         [
             "double",
@@ -2023,31 +2023,23 @@
         ],
         [
             "int",
-            "id"
+            "i"
         ],
         [
             "var",
             "PlayersScore"
         ],
         [
-            "List",
-            "players"
+            "int",
+            "id"
         ],
         [
-            "List",
-            "temp"
+            "int",
+            "x"
         ],
         [
-            "double",
-            "maxPotenci"
-        ],
-        [
-            "ITokenizable",
-            "temp2"
-        ],
-        [
-            "Token",
-            "token"
+            "(",
+            "x"
         ],
         [
             "double",
@@ -2055,55 +2047,55 @@
         ],
         [
             "List",
-            "result"
-        ],
-        [
-            "(",
-            "x"
-        ],
-        [
-            "int",
-            "x"
-        ],
-        [
-            "ITokenizable",
-            "temp1"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
             "PosiblesTokens"
         ],
         [
-            "Random",
-            "random"
-        ],
-        [
-            "EnergyGenerator",
-            "generator"
+            "List",
+            "temp"
         ],
         [
             "int",
             "index"
         ],
         [
+            "EnergyGenerator",
+            "generator"
+        ],
+        [
+            "Token",
+            "token"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "double",
+            "maxPotenci"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "ITokenizable",
+            "temp2"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "ITokenizable",
+            "temp1"
+        ],
+        [
             "var",
-            "temp"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "int",
-            "cantidadDisponible"
+            "index"
         ],
         [
             "var",
@@ -2111,23 +2103,31 @@
         ],
         [
             "var",
-            "index"
+            "Set"
         ],
         [
-            "var",
-            "Set"
+            "int",
+            "cantidadDisponible"
+        ],
+        [
+            "int",
+            "count"
         ],
         [
             "var",
             "temp"
         ],
         [
-            "int",
-            "x"
+            "var",
+            "temp"
         ],
         [
             "Random",
             "random"
+        ],
+        [
+            "int",
+            "x"
         ],
         [
             "int",
@@ -2142,20 +2142,36 @@
             "i"
         ],
         [
-            "PlayerStats",
-            "PlayerStats"
+            "Dictionary",
+            "PlayersHands"
         ],
         [
             "var",
-            "temp"
-        ],
-        [
-            "string",
-            "a"
+            "x"
         ],
         [
             "GamePlayerHand",
-            "hand"
+            "playerHand"
+        ],
+        [
+            "double",
+            "score"
+        ],
+        [
+            "GameStatus",
+            "status"
+        ],
+        [
+            "List",
+            "temp"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "Func",
+            "AddPTokenToBoard"
         ],
         [
             "IWatchPlayer",
@@ -2166,52 +2182,48 @@
             "Match"
         ],
         [
-            "int",
-            "index"
-        ],
-        [
             "var",
             "judge"
+        ],
+        [
+            "PlayerStats",
+            "PlayerStats"
         ],
         [
             "var",
             "playerNow"
         ],
         [
-            "Func",
-            "AddPTokenToBoard"
-        ],
-        [
-            "(",
-            "Player"
+            "IToken",
+            "Token1"
         ],
         [
             "bool",
             "control"
         ],
         [
-            "var",
-            "player"
+            "(",
+            "Player"
         ],
         [
             "List",
             "winners"
         ],
         [
-            "int",
-            "i"
+            "var",
+            "temp"
+        ],
+        [
+            "var",
+            "player"
         ],
         [
             "GamePlayerHand",
-            "hands"
+            "hand"
         ],
         [
-            "IToken",
-            "Token1"
-        ],
-        [
-            "List",
-            "temp"
+            "IChooseStrategyWrapped",
+            "valid"
         ],
         [
             "Func",
@@ -2219,51 +2231,35 @@
         ],
         [
             "GamePlayerHand",
-            "playerHand"
+            "hands"
         ],
         [
-            "Dictionary",
-            "PlayersHands"
+            "string",
+            "a"
         ],
         [
-            "double",
-            "score"
-        ],
-        [
-            "IChooseStrategyWrapped",
-            "valid"
-        ],
-        [
-            "var",
-            "x"
+            "int",
+            "i"
         ],
         [
             "int",
             "id"
         ],
         [
-            "GameStatus",
-            "status"
-        ],
-        [
             "bool",
             "x"
         ],
         [
-            "int",
-            "index"
-        ],
-        [
-            "(",
-            "d"
-        ],
-        [
-            "CorruptionPlayer",
+            "IChooseStrategyWrapped",
             "temp"
         ],
         [
             "int",
-            "i"
+            "x"
+        ],
+        [
+            "(",
+            "d"
         ],
         [
             "IToken",
@@ -2274,36 +2270,56 @@
             "score1"
         ],
         [
-            "IChooseStrategyWrapped",
-            "temp"
+            "double",
+            "score"
         ],
         [
             "List",
             "temp"
         ],
         [
-            "List",
-            "result"
-        ],
-        [
-            "IToken",
-            "last"
+            "int",
+            "index"
         ],
         [
             "IPlayerScore",
             "score"
         ],
         [
-            "double",
-            "score"
+            "IToken",
+            "last"
+        ],
+        [
+            "List",
+            "phand"
+        ],
+        [
+            "CorruptionPlayer",
+            "temp"
+        ],
+        [
+            "IPlayerScore",
+            "temp"
         ],
         [
             "IChooseStrategyWrapped",
             "valid"
         ],
         [
+            "bool",
+            "cant"
+        ],
+        [
             "double",
             "x"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "result"
         ],
         [
             "var",
@@ -2311,19 +2327,15 @@
         ],
         [
             "int",
-            "x"
+            "mid"
         ],
         [
-            "IPlayerScore",
-            "temp"
+            "double",
+            "sc"
         ],
         [
-            "List",
-            "phand"
-        ],
-        [
-            "bool",
-            "cant"
+            "double",
+            "max"
         ],
         [
             "List",
@@ -2334,24 +2346,8 @@
             "min"
         ],
         [
-            "int",
-            "mid"
-        ],
-        [
-            "double",
-            "max"
-        ],
-        [
-            "double",
-            "sc"
-        ],
-        [
             "ChooseSideWrapped",
             "back"
-        ],
-        [
-            "ChooseSideWrapped",
-            "front"
         ],
         [
             "var",
@@ -2360,6 +2356,10 @@
         [
             "ChooseSideWrapped",
             "choose"
+        ],
+        [
+            "ChooseSideWrapped",
+            "front"
         ],
         [
             "double",
@@ -2370,6 +2370,10 @@
             "countNegativePoints"
         ],
         [
+            "double",
+            "result"
+        ],
+        [
             "int",
             "score"
         ],
@@ -2378,8 +2382,8 @@
             "temp"
         ],
         [
-            "double",
-            "result"
+            "int",
+            "i"
         ],
         [
             "int",
@@ -2387,22 +2391,14 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "bool",
             "x"
         ],
         [
-            "IWinCondition",
-            "win"
-        ],
-        [
-            "IChampionJudge",
-            "judge"
-        ],
-        [
             "int",
+            "cantPartidas"
+        ],
+        [
+            "var",
             "x"
         ],
         [
@@ -2410,16 +2406,28 @@
             "stop"
         ],
         [
-            "IValidPlay",
-            "valid"
+            "IChampionJudge",
+            "judge"
+        ],
+        [
+            "bool",
+            "x"
+        ],
+        [
+            "(",
+            "games"
+        ],
+        [
+            "Type",
+            "a"
+        ],
+        [
+            "string",
+            "words"
         ],
         [
             "IGetScore",
             "score"
-        ],
-        [
-            "var",
-            "x"
         ],
         [
             "string",
@@ -2430,36 +2438,28 @@
             "msg"
         ],
         [
+            "List",
+            "players"
+        ],
+        [
             "int",
             "i"
-        ],
-        [
-            "Championship",
-            "champion"
-        ],
-        [
-            "(",
-            "games"
-        ],
-        [
-            "int",
-            "cantPartidas"
-        ],
-        [
-            "string",
-            "words"
-        ],
-        [
-            "Type",
-            "a"
         ],
         [
             "int",
             "r"
         ],
         [
-            "List",
-            "players"
+            "IValidPlay",
+            "valid"
+        ],
+        [
+            "Championship",
+            "champion"
+        ],
+        [
+            "IWinCondition",
+            "win"
         ],
         [
             "ChampionStart",
@@ -2481,173 +2481,173 @@
         "Clone",
         "AddTokenToBoard",
         "ToString",
-        "Winner",
-        "ValidPlay",
-        "MeetsCriteria",
         "Score",
+        "ValidPlay",
+        "Winner",
+        "MeetsCriteria",
         "ToString",
         "AddStrategy",
         "AddHand",
-        "ChooseSide",
         "ToString",
+        "ChooseSide",
         "Evaluate",
-        "Equals",
-        "LessScore",
-        "AddPlay",
-        "resetScore",
-        "AddScore",
+        "SetScore",
         "AddRange",
+        "resetScore",
+        "LessScore",
         "Clone",
-        "SetScore",
-        "Equals",
-        "LessScore",
-        "resetScore",
         "AddScore",
-        "AddRange",
-        "SetScore",
         "Equals",
-        "GetHashCode",
+        "AddPlay",
+        "SetScore",
+        "AddRange",
+        "resetScore",
+        "LessScore",
+        "AddScore",
+        "Equals",
+        "BestPlay",
         "AddStrategy",
+        "GetHashCode",
+        "Clone",
         "AddHand",
         "ChooseSide",
-        "Clone",
-        "BestPlay",
         "ToString",
+        "Equals",
         "ChooseSide",
         "Evaluate",
         "PullLastFinishGame",
         "AddGameStatus",
-        "PlayerStatistics",
-        "CreateAChampionStatus",
-        "ControlPlayers",
         "ChampionOver",
         "Continue",
         "Run",
+        "ControlPlayers",
+        "CreateAChampionStatus",
         "PrintGames",
+        "PlayerStatistics",
         "GameOver",
         "ChampionWinners",
-        "AddPlayers",
-        "ClonePlayers",
-        "GetNextPlayers",
         "CloneLastGame",
-        "AddFinishGame",
-        "PlayerScore",
-        "Winners",
-        "ValidPlay",
+        "AddPlayers",
+        "GetNextPlayers",
+        "ClonePlayers",
         "EndGame",
+        "PlayerScore",
         "Run",
+        "Winners",
+        "AddFinishGame",
         "MakeCorruption",
-        "AddPuntuation",
+        "ValidPlay",
         "ToString",
         "Equals",
+        "AddPuntuation",
+        "Clone",
         "GetTokens",
         "AddTokenToBoard",
         "ToString",
-        "Clone",
-        "GetScore",
-        "LessPlayerScore",
+        "Run",
         "CalculateScore",
         "GetPlayerScore",
-        "Run",
         "AddPlayerScore",
+        "LessPlayerScore",
+        "GetScore",
         "Continue",
         "Run",
-        "PlayerScore",
-        "AddFinishGame",
-        "Winners",
-        "ValidPlay",
         "EndGame",
+        "PlayerScore",
         "Run",
+        "Winners",
+        "AddFinishGame",
+        "ValidPlay",
         "Winner",
         "Run",
         "ValidPlay",
         "CheckCriteria",
+        "Organize",
         "score",
         "MeetsCriteria",
-        "Organize",
+        "CreateTokens",
+        "GetRandom",
         "GenerateITokenizable",
         "GetTokenizables",
-        "CreateTokens",
         "GetAName",
-        "GetRandom",
-        "Equals",
         "CloneTokens",
+        "Clone",
         "GetTokens",
         "GetHashCode",
-        "Clone",
+        "Equals",
         "Clone",
         "ToString",
         "SwapToken",
-        "Equals",
-        "PotencialNow",
         "CompareTo",
+        "PotencialNow",
         "Paint",
         "Clone",
         "ToString",
+        "Equals",
         "CreateTokens",
         "ToString",
         "SwapToken",
         "GetTokens",
         "Paint",
-        "Winner",
+        "EndGame",
         "PlayerScore",
-        "PlayersScores",
+        "Winner",
+        "AddTokenToBoard",
         "RunWatchPlayer",
         "ValidPlay",
-        "AddTokenToBoard",
-        "EndGame",
-        "ControlSide",
-        "Run",
+        "PlayersScores",
         "AddSide",
-        "Winner",
+        "Run",
+        "ControlSide",
         "PlayerScore",
-        "PlayerScores",
-        "PlayAGame",
+        "Winner",
         "Clone",
+        "PlayerScores",
         "ToString",
-        "SetActualPlayerHand",
-        "SetActualPlayer",
+        "PlayAGame",
         "AddWinners",
-        "Equals",
-        "ControlSide",
+        "SetActualPlayer",
+        "SetActualPlayerHand",
         "AddSide",
+        "Equals",
         "Run",
-        "Winner",
+        "ControlSide",
         "PlayerScore",
-        "PullAPlayerAndHand",
-        "Turno",
-        "PlayerScores",
-        "GetPlayerList",
-        "EndGameStatus",
-        "MatchHandAndPlayer",
-        "PlayAGame",
-        "Clone",
-        "Print",
-        "ToString",
         "AssingTokens",
         "Winner",
-        "PlayerScore",
-        "AddPlayerScoreStatus",
-        "ItsThePlayerHand",
-        "LessPlayerScore",
-        "MakeCorruption",
-        "PlayersScores",
-        "CheckHand",
-        "RunWatchPlayer",
-        "PlayFront",
-        "ValidPlay",
-        "AddTokenToBoard",
-        "EndGame",
+        "EndGameStatus",
+        "Print",
+        "GetPlayerList",
+        "PullAPlayerAndHand",
         "Clone",
+        "PlayerScores",
+        "ToString",
+        "MatchHandAndPlayer",
+        "Turno",
+        "PlayAGame",
+        "EndGame",
+        "PlayerScore",
+        "PlayFront",
+        "Winner",
+        "CheckHand",
         "PlayerMeetsStopCriteria",
         "AddPlayerScore",
+        "ItsThePlayerHand",
+        "Clone",
+        "RunWatchPlayer",
+        "AddTokenToBoard",
         "PlayBack",
+        "ValidPlay",
+        "AddPlayerScoreStatus",
+        "MakeCorruption",
+        "LessPlayerScore",
+        "PlayersScores",
         "Winner",
+        "ValidPlayBack",
         "FirstPlay",
+        "ToString",
         "ValidPlay",
         "Match",
-        "ValidPlayBack",
-        "ToString",
         "ValidPlayFront",
         "MeetsCriteria",
         "Score",
@@ -2656,30 +2656,26 @@
         "IntermediarioBool",
         "Run",
         "IntermediarioInt",
-        "ChooseBool",
-        "ChooseInt",
+        "ChooseValidChampion",
         "ChooseChampionGetScore",
+        "Run",
+        "ChooseWinCondition",
+        "ChooseInt",
         "ChooseStopChampion",
         "CantPartidas",
-        "ChooseChampionJudge",
-        "ChooseWinCondition",
-        "ChooseEnum",
-        "Run",
-        "ChooseValidChampion",
         "Intermediario",
-        "IntermediarioEnum",
-        "ChampionPlayers",
-        "CreateAChampion",
         "IntermediarioInt",
+        "IntermediarioEnum",
         "IntermediarioBool",
+        "ChampionPlayers",
+        "ChooseEnum",
+        "ChooseBool",
+        "ChooseChampionJudge",
+        "CreateAChampion",
         "TypesofEverything",
         "Main"
     ],
     "method_return_types": [
-        [
-            "Clone",
-            "T1"
-        ],
         [
             "Clone",
             "T"
@@ -2689,43 +2685,47 @@
             "Object"
         ],
         [
-            "Corrupt",
-            "bool"
+            "Clone",
+            "T1"
         ],
         [
-            "Clone",
-            "IBoard"
+            "Corrupt",
+            "bool"
         ],
         [
             "AddTokenToBoard",
             "void"
         ],
         [
-            "ToString",
-            "string"
+            "Clone",
+            "IBoard"
         ],
         [
-            "Score",
-            "double"
+            "ToString",
+            "string"
         ],
         [
             "Winner",
             "List"
         ],
         [
-            "MeetsCriteria",
-            "bool"
-        ],
-        [
             "ValidPlay",
             "TCriterio"
         ],
         [
-            "AddStrategy",
-            "void"
+            "Score",
+            "double"
+        ],
+        [
+            "MeetsCriteria",
+            "bool"
         ],
         [
             "AddHand",
+            "void"
+        ],
+        [
+            "AddStrategy",
             "void"
         ],
         [
@@ -2749,39 +2749,39 @@
             "void"
         ],
         [
-            "AddPlay",
-            "IPlayerScore"
+            "AddRange",
+            "bool"
         ],
         [
-            "Equals",
-            "bool"
+            "AddPlay",
+            "IPlayerScore"
         ],
         [
             "resetScore",
             "void"
         ],
         [
-            "SetScore",
-            "void"
-        ],
-        [
             "AddScore",
             "void"
-        ],
-        [
-            "AddRange",
-            "bool"
         ],
         [
             "Clone",
             "IPlayerScore"
         ],
         [
+            "Equals",
+            "bool"
+        ],
+        [
+            "SetScore",
+            "void"
+        ],
+        [
             "LessScore",
             "void"
         ],
         [
-            "Equals",
+            "AddRange",
             "bool"
         ],
         [
@@ -2789,16 +2789,28 @@
             "void"
         ],
         [
-            "SetScore",
-            "void"
-        ],
-        [
             "AddScore",
             "void"
         ],
         [
-            "AddRange",
+            "Equals",
             "bool"
+        ],
+        [
+            "SetScore",
+            "void"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "AddHand",
+            "void"
+        ],
+        [
+            "ChooseSide",
+            "int"
         ],
         [
             "Clone",
@@ -2809,28 +2821,16 @@
             "bool"
         ],
         [
-            "AddHand",
-            "void"
+            "BestPlay",
+            "IToken"
         ],
         [
             "GetHashCode",
             "int"
         ],
         [
-            "BestPlay",
-            "IToken"
-        ],
-        [
             "AddStrategy",
             "void"
-        ],
-        [
-            "ChooseSide",
-            "int"
-        ],
-        [
-            "ToString",
-            "string"
         ],
         [
             "ChooseSide",
@@ -2849,23 +2849,7 @@
             "GameStatus"
         ],
         [
-            "GameOver",
-            "void"
-        ],
-        [
-            "Continue",
-            "bool"
-        ],
-        [
-            "PlayerStatistics",
-            "void"
-        ],
-        [
-            "CreateAChampionStatus",
-            "ChampionStatus"
-        ],
-        [
-            "ChampionOver",
+            "Run",
             "void"
         ],
         [
@@ -2873,11 +2857,15 @@
             "void"
         ],
         [
-            "ChampionWinners",
-            "List"
+            "Continue",
+            "bool"
         ],
         [
-            "Run",
+            "ChampionOver",
+            "void"
+        ],
+        [
+            "PlayerStatistics",
             "void"
         ],
         [
@@ -2885,8 +2873,16 @@
             "List"
         ],
         [
-            "AddPlayers",
+            "GameOver",
             "void"
+        ],
+        [
+            "ChampionWinners",
+            "List"
+        ],
+        [
+            "CreateAChampionStatus",
+            "ChampionStatus"
         ],
         [
             "GetNextPlayers",
@@ -2901,16 +2897,24 @@
             "bool"
         ],
         [
-            "PlayerScore",
-            "double"
+            "AddPlayers",
+            "void"
         ],
         [
             "AddFinishGame",
             "void"
         ],
         [
-            "MakeCorruption",
+            "Run",
+            "void"
+        ],
+        [
+            "ValidPlay",
             "bool"
+        ],
+        [
+            "PlayerScore",
+            "double"
         ],
         [
             "Winners",
@@ -2921,12 +2925,12 @@
             "bool"
         ],
         [
-            "Run",
-            "void"
+            "MakeCorruption",
+            "bool"
         ],
         [
-            "ValidPlay",
-            "bool"
+            "AddPuntuation",
+            "void"
         ],
         [
             "Equals",
@@ -2937,7 +2941,7 @@
             "string"
         ],
         [
-            "AddPuntuation",
+            "AddTokenToBoard",
             "void"
         ],
         [
@@ -2945,40 +2949,36 @@
             "IBoard"
         ],
         [
-            "GetTokens",
-            "List"
-        ],
-        [
-            "AddTokenToBoard",
-            "void"
-        ],
-        [
             "ToString",
             "string"
         ],
         [
-            "AddPlayerScore",
-            "void"
-        ],
-        [
-            "GetScore",
-            "double"
-        ],
-        [
-            "CalculateScore",
-            "void"
+            "GetTokens",
+            "List"
         ],
         [
             "Run",
             "void"
         ],
         [
-            "LessPlayerScore",
+            "CalculateScore",
             "void"
         ],
         [
             "GetPlayerScore",
             "List"
+        ],
+        [
+            "GetScore",
+            "double"
+        ],
+        [
+            "AddPlayerScore",
+            "void"
+        ],
+        [
+            "LessPlayerScore",
+            "void"
         ],
         [
             "Continue",
@@ -2989,20 +2989,8 @@
             "void"
         ],
         [
-            "PlayerScore",
-            "double"
-        ],
-        [
             "AddFinishGame",
             "void"
-        ],
-        [
-            "Winners",
-            "List"
-        ],
-        [
-            "EndGame",
-            "bool"
         ],
         [
             "Run",
@@ -3010,6 +2998,18 @@
         ],
         [
             "ValidPlay",
+            "bool"
+        ],
+        [
+            "PlayerScore",
+            "double"
+        ],
+        [
+            "Winners",
+            "List"
+        ],
+        [
+            "EndGame",
             "bool"
         ],
         [
@@ -3033,16 +3033,16 @@
             "Dictionary"
         ],
         [
-            "CheckCriteria",
-            "bool"
-        ],
-        [
             "MeetsCriteria",
             "bool"
         ],
         [
-            "GetTokenizables",
-            "("
+            "CheckCriteria",
+            "bool"
+        ],
+        [
+            "GetAName",
+            "string"
         ],
         [
             "GenerateITokenizable",
@@ -3057,12 +3057,20 @@
             "ITokenizable"
         ],
         [
-            "GetAName",
-            "string"
+            "GetTokenizables",
+            "("
+        ],
+        [
+            "GetTokens",
+            "HashSet"
         ],
         [
             "Equals",
             "bool"
+        ],
+        [
+            "Clone",
+            "ITokensManager"
         ],
         [
             "CloneTokens",
@@ -3073,18 +3081,6 @@
             "int"
         ],
         [
-            "GetTokens",
-            "HashSet"
-        ],
-        [
-            "Clone",
-            "ITokensManager"
-        ],
-        [
-            "Clone",
-            "IToken"
-        ],
-        [
             "SwapToken",
             "void"
         ],
@@ -3093,20 +3089,12 @@
             "string"
         ],
         [
-            "Paint",
-            "string"
+            "Clone",
+            "IToken"
         ],
         [
             "CompareTo",
             "int"
-        ],
-        [
-            "Equals",
-            "bool"
-        ],
-        [
-            "Clone",
-            "ITokenizable"
         ],
         [
             "ToString",
@@ -3115,6 +3103,18 @@
         [
             "PotencialNow",
             "double"
+        ],
+        [
+            "Paint",
+            "string"
+        ],
+        [
+            "Equals",
+            "bool"
+        ],
+        [
+            "Clone",
+            "ITokenizable"
         ],
         [
             "CreateTokens",
@@ -3137,32 +3137,32 @@
             "string"
         ],
         [
-            "Winner",
-            "List"
-        ],
-        [
-            "PlayersScores",
-            "List"
-        ],
-        [
-            "AddTokenToBoard",
-            "bool"
-        ],
-        [
-            "RunWatchPlayer",
-            "IWatchPlayer"
-        ],
-        [
             "ValidPlay",
             "IChooseStrategyWrapped"
+        ],
+        [
+            "PlayerScore",
+            "double"
         ],
         [
             "EndGame",
             "bool"
         ],
         [
-            "PlayerScore",
-            "double"
+            "AddTokenToBoard",
+            "bool"
+        ],
+        [
+            "Winner",
+            "List"
+        ],
+        [
+            "RunWatchPlayer",
+            "IWatchPlayer"
+        ],
+        [
+            "PlayersScores",
+            "List"
         ],
         [
             "AddSide",
@@ -3177,16 +3177,12 @@
             "("
         ],
         [
-            "PlayerScores",
-            "List"
-        ],
-        [
-            "Winner",
-            "List"
-        ],
-        [
             "PlayAGame",
             "TStatus"
+        ],
+        [
+            "PlayerScore",
+            "double"
         ],
         [
             "ToString",
@@ -3197,12 +3193,12 @@
             "IGame"
         ],
         [
-            "PlayerScore",
-            "double"
+            "PlayerScores",
+            "List"
         ],
         [
-            "SetActualPlayerHand",
-            "GamePlayerHand"
+            "Winner",
+            "List"
         ],
         [
             "SetActualPlayer",
@@ -3213,52 +3209,28 @@
             "void"
         ],
         [
-            "Equals",
-            "bool"
+            "SetActualPlayerHand",
+            "GamePlayerHand"
         ],
         [
             "AddSide",
             "void"
         ],
         [
-            "ControlSide",
-            "("
-        ],
-        [
             "Run",
             "void"
         ],
         [
-            "EndGameStatus",
-            "GameStatus"
+            "Equals",
+            "bool"
         ],
         [
-            "PlayerScores",
-            "List"
+            "ControlSide",
+            "("
         ],
         [
-            "Winner",
-            "List"
-        ],
-        [
-            "GetPlayerList",
-            "List"
-        ],
-        [
-            "MatchHandAndPlayer",
-            "List"
-        ],
-        [
-            "Clone",
-            "IGame"
-        ],
-        [
-            "PlayAGame",
-            "GameStatus"
-        ],
-        [
-            "AssingTokens",
-            "void"
+            "PlayerScore",
+            "double"
         ],
         [
             "ToString",
@@ -3273,31 +3245,59 @@
             "IToken"
         ],
         [
-            "Print",
-            "void"
+            "PlayerScores",
+            "List"
         ],
         [
-            "PlayerScore",
-            "double"
+            "Clone",
+            "IGame"
         ],
         [
-            "AddPlayerScore",
-            "void"
+            "EndGameStatus",
+            "GameStatus"
         ],
         [
             "Winner",
             "List"
         ],
         [
-            "PlayersScores",
+            "MatchHandAndPlayer",
             "List"
+        ],
+        [
+            "AssingTokens",
+            "void"
+        ],
+        [
+            "Print",
+            "void"
+        ],
+        [
+            "GetPlayerList",
+            "List"
+        ],
+        [
+            "PlayAGame",
+            "GameStatus"
+        ],
+        [
+            "ValidPlay",
+            "IChooseStrategyWrapped"
         ],
         [
             "PlayFront",
             "void"
         ],
         [
-            "MakeCorruption",
+            "PlayerMeetsStopCriteria",
+            "bool"
+        ],
+        [
+            "PlayerScore",
+            "double"
+        ],
+        [
+            "EndGame",
             "bool"
         ],
         [
@@ -3305,16 +3305,16 @@
             "bool"
         ],
         [
-            "RunWatchPlayer",
-            "IWatchPlayer"
-        ],
-        [
-            "PlayBack",
+            "AddPlayerScoreStatus",
             "void"
         ],
         [
-            "ValidPlay",
-            "IChooseStrategyWrapped"
+            "Winner",
+            "List"
+        ],
+        [
+            "RunWatchPlayer",
+            "IWatchPlayer"
         ],
         [
             "ItsThePlayerHand",
@@ -3325,19 +3325,7 @@
             "IJudgeGame"
         ],
         [
-            "PlayerMeetsStopCriteria",
-            "bool"
-        ],
-        [
-            "EndGame",
-            "bool"
-        ],
-        [
-            "AddPlayerScoreStatus",
-            "void"
-        ],
-        [
-            "CheckHand",
+            "MakeCorruption",
             "bool"
         ],
         [
@@ -3345,16 +3333,28 @@
             "void"
         ],
         [
-            "PlayerScore",
-            "double"
+            "PlayBack",
+            "void"
+        ],
+        [
+            "AddPlayerScore",
+            "void"
+        ],
+        [
+            "CheckHand",
+            "bool"
+        ],
+        [
+            "PlayersScores",
+            "List"
         ],
         [
             "Winner",
             "List"
         ],
         [
-            "ValidPlayFront",
-            "ChooseSideWrapped"
+            "ValidPlay",
+            "IChooseStrategyWrapped"
         ],
         [
             "ToString",
@@ -3365,8 +3365,8 @@
             "bool"
         ],
         [
-            "ValidPlay",
-            "IChooseStrategyWrapped"
+            "ValidPlayFront",
+            "ChooseSideWrapped"
         ],
         [
             "Match",
@@ -3381,12 +3381,12 @@
             "bool"
         ],
         [
-            "Score",
-            "double"
-        ],
-        [
             "ItsDouble",
             "bool"
+        ],
+        [
+            "Score",
+            "double"
         ],
         [
             "IntResponses",
@@ -3397,11 +3397,39 @@
             "void"
         ],
         [
+            "IntermediarioBool",
+            "bool"
+        ],
+        [
             "IntermediarioInt",
             "int"
         ],
         [
+            "ChooseWinCondition",
+            "IWinCondition"
+        ],
+        [
+            "ChooseStopChampion",
+            "IStopGame"
+        ],
+        [
+            "Intermediario",
+            "void"
+        ],
+        [
+            "Run",
+            "bool"
+        ],
+        [
             "IntermediarioBool",
+            "bool"
+        ],
+        [
+            "ChooseEnum",
+            "bool"
+        ],
+        [
+            "ChooseBool",
             "bool"
         ],
         [
@@ -3409,24 +3437,20 @@
             "bool"
         ],
         [
-            "ChooseValidChampion",
-            "IValidPlay"
-        ],
-        [
-            "ChooseStopChampion",
-            "IStopGame"
+            "CreateAChampion",
+            "Championship"
         ],
         [
             "ChampionPlayers",
             "List"
         ],
         [
-            "Run",
-            "bool"
+            "ChooseChampionGetScore",
+            "IGetScore"
         ],
         [
-            "ChooseChampionJudge",
-            "IChampionJudge"
+            "ChooseValidChampion",
+            "IValidPlay"
         ],
         [
             "IntermediarioInt",
@@ -3437,36 +3461,12 @@
             "int"
         ],
         [
-            "ChooseWinCondition",
-            "IWinCondition"
-        ],
-        [
-            "CreateAChampion",
-            "Championship"
-        ],
-        [
-            "ChooseBool",
-            "bool"
-        ],
-        [
-            "ChooseEnum",
-            "bool"
-        ],
-        [
-            "Intermediario",
-            "void"
-        ],
-        [
-            "ChooseChampionGetScore",
-            "IGetScore"
-        ],
-        [
-            "IntermediarioBool",
-            "bool"
-        ],
-        [
             "ChooseInt",
             "int"
+        ],
+        [
+            "ChooseChampionJudge",
+            "IChampionJudge"
         ],
         [
             "TypesofEverything",
@@ -3487,18 +3487,18 @@
         "ChampionStatus",
         "Championship",
         "PlayersCoach",
-        "ChampionJudge",
         "CorruptionChampionJugde",
+        "ChampionJudge",
         "PlayerStats",
         "Board",
         "CalculateChampionScore",
         "WinChampion",
-        "ValidChampionPerdidasConsecutivas",
         "ValidChampionPorcientoPerdidas",
+        "ValidChampionPerdidasConsecutivas",
         "StopChampionPerPoints",
         "StopChampionPerHaveAWinner",
-        "Fichas_Enteros",
         "Fichas_Termoelectricas",
+        "Fichas_Enteros",
         "TokensManager",
         "IEquatablePorCaras",
         "Token",
@@ -3508,23 +3508,23 @@
         "GamePlayerHand",
         "WatchPlayer",
         "GameStatus",
-        "ChooseSideWrapped",
         "ChooseStrategyWrapped",
+        "ChooseSideWrapped",
         "Game",
-        "Judge",
         "CorruptionJugde",
+        "Judge",
+        "MaxScore",
         "MinScore",
         "MiddleScore",
-        "MaxScore",
         "ValidPlayClass",
         "ClassicPlay",
         "SmallerValidPlay",
         "BiggerValidPlay",
-        "Classic",
         "CertainScore",
-        "Double",
+        "Classic",
         "ScoreChampionNormal",
         "ClassicScore",
+        "Double",
         "observador",
         "Events",
         "ChampionStart",
@@ -3536,10 +3536,10 @@
         "ICloneable",
         "ICorruptible",
         "IBoard",
-        "IValidPlay",
         "IWinCondition",
-        "IStopGame",
         "IGetScore",
+        "IValidPlay",
+        "IStopGame",
         "IPlayerScore",
         "IPlayer",
         "IPlayerStrategy",
@@ -3550,8 +3550,8 @@
         "ITokensManager",
         "ITokenizable",
         "IJudgeGame",
-        "IChooseSideWrapped",
         "IChooseStrategyWrapped",
+        "IChooseSideWrapped",
         "IWatchPlayer",
         "IGame"
     ],
@@ -3707,5 +3707,6 @@
         "Specific_catch_clauseContext": 1
     },
     "project_name": "karendcl_Proyecto-Domino-",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

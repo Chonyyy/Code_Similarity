@@ -179,29 +179,30 @@
     },
     "project_name": "SherlynBallestero_DominoGame",
     "label": "original",
+    "project_type": "domino",
     "variable_names_vector": [
-        0.013421919196844101,
-        -0.0031710301991552114
+        0.04081420972943306,
+        0.04840974882245064
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        -0.09477175772190094,
-        0.04801538586616516
+        -0.03725994750857353,
+        0.021558720618486404
     ],
     "method_names_vector": [
-        -0.03355417773127556,
-        -0.004041703417897224
+        -0.043863747268915176,
+        0.024852992966771126
     ],
     "class_names_vector": [
-        0.15254761278629303,
-        0.09653104096651077
+        0.1984115093946457,
+        0.0684826672077179
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        0.05930172652006149,
-        -0.01748475804924965,
-        0.174950510263443,
-        0.22278258204460144
+        0.013349178247153759,
+        0.014895794913172722,
+        0.11045458912849426,
+        0.1535656750202179
     ]
 }

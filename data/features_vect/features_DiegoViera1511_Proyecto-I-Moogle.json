@@ -178,29 +178,30 @@
     },
     "project_name": "DiegoViera1511_Proyecto-I-Moogle",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.0880272388458252,
-        0.05411149188876152
+        0.024429604411125183,
+        0.12838943302631378
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.03793796896934509,
-        0.08573208004236221
+        0.023321064189076424,
+        0.1506330370903015
     ],
     "method_names_vector": [
-        -0.012107981368899345,
-        0.03710538521409035
+        -0.013544396497309208,
+        0.023257479071617126
     ],
     "class_names_vector": [
-        0.05809900164604187,
-        0.014761045575141907
+        0.0761069804430008,
+        0.11360746622085571
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.02380423992872238,
-        0.05801728367805481,
-        0.22025048732757568,
-        0.3717723488807678
+        -0.017580298706889153,
+        0.041441909968853,
+        0.2596055269241333,
+        0.3699313700199127
     ]
 }

@@ -88,32 +88,28 @@
     ],
     "variable_names": [
         [
-            "Dictionary",
-            "Snippet"
-        ],
-        [
             "int",
-            "j"
-        ],
-        [
-            "float",
-            "Idf"
-        ],
-        [
-            "Dictionary",
-            "iDF"
+            "num_rep"
         ],
         [
             "char",
             "separador"
         ],
         [
+            "Dictionary",
+            "Content"
+        ],
+        [
             "int",
-            "num_rep"
+            "i"
         ],
         [
             "Dictionary",
-            "Content"
+            "TfxIDf"
+        ],
+        [
+            "int",
+            "k"
         ],
         [
             "Dictionary",
@@ -124,28 +120,20 @@
             "files"
         ],
         [
+            "int",
+            "j"
+        ],
+        [
             "Dictionary",
-            "TfxIDf"
+            "Snippet"
         ],
         [
-            "int",
-            "i"
+            "float",
+            "Idf"
         ],
         [
-            "int",
-            "k"
-        ],
-        [
-            "List",
-            "aux"
-        ],
-        [
-            "int",
-            "op_index"
-        ],
-        [
-            "int",
-            "startIndex"
+            "Dictionary",
+            "iDF"
         ],
         [
             "int",
@@ -153,11 +141,11 @@
         ],
         [
             "int",
-            "i"
+            "op_index"
         ],
         [
-            "Dictionary",
-            "words_with_operators"
+            "int",
+            "finalIndex"
         ],
         [
             "int",
@@ -169,17 +157,29 @@
         ],
         [
             "int",
-            "finalIndex"
+            "i"
+        ],
+        [
+            "Dictionary",
+            "words_with_operators"
+        ],
+        [
+            "List",
+            "aux"
+        ],
+        [
+            "int",
+            "startIndex"
         ]
     ],
     "method_names": [
         "Items",
-        "TermFrecuency",
-        "Calc_IDF",
         "Splitear",
+        "Calc_IDF",
+        "TermFrecuency",
+        "Normalizar",
         "TermFrecuency_InverseDocFrecuency",
         "InverseDocFrecuency",
-        "Normalizar",
         "Snippet",
         "Words_with_Operator"
     ],
@@ -189,19 +189,15 @@
             "IEnumerable"
         ],
         [
-            "TermFrecuency_InverseDocFrecuency",
+            "Snippet",
             "void"
-        ],
-        [
-            "Splitear",
-            "string"
         ],
         [
             "InverseDocFrecuency",
             "void"
         ],
         [
-            "TermFrecuency",
+            "Normalizar",
             "void"
         ],
         [
@@ -209,12 +205,16 @@
             "float"
         ],
         [
-            "Normalizar",
+            "TermFrecuency_InverseDocFrecuency",
             "void"
         ],
         [
-            "Snippet",
+            "TermFrecuency",
             "void"
+        ],
+        [
+            "Splitear",
+            "string"
         ],
         [
             "Words_with_Operator",
@@ -343,5 +343,6 @@
         "WhileStatementContext": 2
     },
     "project_name": "Shanik7003_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

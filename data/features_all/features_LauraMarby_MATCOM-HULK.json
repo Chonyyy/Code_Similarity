@@ -386,8 +386,8 @@
             "Remove"
         ],
         [
-            "List",
-            "else_corpus_input"
+            "int",
+            "else_counter"
         ],
         [
             "List",
@@ -395,7 +395,67 @@
         ],
         [
             "List",
+            "Let_Tokens"
+        ],
+        [
+            "string",
+            "Bool_Op"
+        ],
+        [
+            "string",
+            "Result"
+        ],
+        [
+            "List",
+            "Bool_Left"
+        ],
+        [
+            "List",
+            "Input_Left"
+        ],
+        [
+            "List",
+            "Bool_Right"
+        ],
+        [
+            "List",
+            "Let_List"
+        ],
+        [
+            "List",
+            "else_corpus_input"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "string",
+            "if_result"
+        ],
+        [
+            "List",
+            "Current_List"
+        ],
+        [
+            "int",
+            "parenthesis_counter"
+        ],
+        [
+            "List",
             "Boolean"
+        ],
+        [
+            "List",
+            "if_corpus_input"
+        ],
+        [
+            "List",
+            "Input_Booleans"
         ],
         [
             "List",
@@ -403,11 +463,83 @@
         ],
         [
             "List",
+            "Input_Right"
+        ],
+        [
+            "List",
+            "else_corpus_tokens"
+        ],
+        [
+            "List",
+            "Defined_variables"
+        ],
+        [
+            "string",
+            "else_result"
+        ],
+        [
+            "string",
+            "Left_Result"
+        ],
+        [
+            "List",
+            "Arg_function_token"
+        ],
+        [
+            "string",
+            "info"
+        ],
+        [
+            "List",
+            "Cond"
+        ],
+        [
+            "List",
+            "Let_Tokens_List"
+        ],
+        [
+            "string",
+            "Right_Result"
+        ],
+        [
+            "List",
+            "Cond_tokens"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "List",
+            "Value"
+        ],
+        [
+            "List",
             "Booleans"
         ],
         [
             "List",
-            "Input_Left"
+            "Arg_function"
+        ],
+        [
+            "List",
+            "Let"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "bool",
+            "end"
+        ],
+        [
+            "List",
+            "Parenthesis_tokens"
         ],
         [
             "string",
@@ -419,147 +551,23 @@
         ],
         [
             "List",
-            "else_corpus_tokens"
-        ],
-        [
-            "string",
-            "Left_Result"
-        ],
-        [
-            "List",
-            "Arg_function_token"
-        ],
-        [
-            "List",
-            "Let_Tokens_List"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "List",
-            "Parenthesis_tokens"
-        ],
-        [
-            "int",
-            "parenthesis_counter"
-        ],
-        [
-            "List",
-            "Bool_Right"
-        ],
-        [
-            "string",
-            "result"
-        ],
-        [
-            "List",
-            "Input_Right"
-        ],
-        [
-            "List",
-            "Defined_variables"
-        ],
-        [
-            "string",
-            "Right_Result"
-        ],
-        [
-            "List",
-            "Let_List"
-        ],
-        [
-            "List",
-            "Let"
-        ],
-        [
-            "List",
-            "Let_Tokens"
-        ],
-        [
-            "List",
-            "if_corpus_input"
-        ],
-        [
-            "string",
-            "Bool_Op"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "string",
-            "Result"
-        ],
-        [
-            "bool",
-            "end"
-        ],
-        [
-            "List",
-            "Value"
-        ],
-        [
-            "List",
-            "Bool_Left"
-        ],
-        [
-            "List",
-            "Current_List"
+            "Input_Boolean"
         ],
         [
             "List",
             "if_corpus_tokens"
         ],
         [
-            "string",
-            "info"
-        ],
-        [
             "List",
-            "Input_Booleans"
-        ],
-        [
-            "List",
-            "Input_Boolean"
-        ],
-        [
-            "List",
-            "Arg_function"
-        ],
-        [
-            "string",
-            "else_result"
-        ],
-        [
-            "List",
-            "Cond_tokens"
-        ],
-        [
-            "List",
-            "Cond"
-        ],
-        [
-            "string",
-            "if_result"
-        ],
-        [
-            "int",
-            "else_counter"
+            "Corpus"
         ],
         [
             "bool",
             "Del_func"
+        ],
+        [
+            "List",
+            "TK"
         ],
         [
             "int",
@@ -571,19 +579,15 @@
         ],
         [
             "List",
-            "TK"
-        ],
-        [
-            "List",
             "Token_Corpus"
-        ],
-        [
-            "List",
-            "Corpus"
         ],
         [
             "int",
             "init"
+        ],
+        [
+            "int",
+            "count"
         ],
         [
             "List",
@@ -598,28 +602,24 @@
             "i"
         ],
         [
-            "List",
-            "tokens"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
             "string",
             "error"
-        ],
-        [
-            "string",
-            "use"
         ],
         [
             "string",
             "trash"
         ],
         [
+            "string",
+            "use"
+        ],
+        [
             "Function_type",
             "function"
+        ],
+        [
+            "List",
+            "tokens"
         ],
         [
             "double",
@@ -627,35 +627,11 @@
         ],
         [
             "List",
-            "Current_Tokens_List"
+            "Else_event_tokens"
         ],
         [
             "List",
-            "Exp"
-        ],
-        [
-            "List",
-            "new_exp_tokens"
-        ],
-        [
-            "List",
-            "Remove"
-        ],
-        [
-            "List",
-            "Token_Corpus"
-        ],
-        [
-            "int",
-            "parentheses_count"
-        ],
-        [
-            "string",
-            "R"
-        ],
-        [
-            "int",
-            "actual_scope"
+            "expressions"
         ],
         [
             "List",
@@ -663,75 +639,7 @@
         ],
         [
             "List",
-            "Let_Tokens_List"
-        ],
-        [
-            "List",
-            "Arguments"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "var_name"
-        ],
-        [
-            "string",
-            "var_Value"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "List",
-            "Else_event"
-        ],
-        [
-            "List",
-            "If_event"
-        ],
-        [
-            "List",
-            "token_exp"
-        ],
-        [
-            "List",
-            "Args_Tokens"
-        ],
-        [
-            "int",
-            "par_counter"
-        ],
-        [
-            "List",
-            "Corpus"
-        ],
-        [
-            "string",
-            "right"
-        ],
-        [
-            "List",
-            "R"
-        ],
-        [
-            "List",
-            "Let_List"
-        ],
-        [
-            "int",
-            "mark"
-        ],
-        [
-            "List",
-            "Let"
-        ],
-        [
-            "List",
-            "Expr_Tokens"
+            "In_Expression"
         ],
         [
             "List",
@@ -739,7 +647,7 @@
         ],
         [
             "List",
-            "new_expression"
+            "Remove"
         ],
         [
             "string",
@@ -747,15 +655,35 @@
         ],
         [
             "List",
-            "boolean_exp"
+            "Expr_Tokens"
         ],
         [
             "List",
-            "Values"
+            "If_event"
         ],
         [
             "List",
-            "expressions"
+            "new_expression"
+        ],
+        [
+            "int",
+            "actual_scope"
+        ],
+        [
+            "Function_type",
+            "function"
+        ],
+        [
+            "List",
+            "Let_List"
+        ],
+        [
+            "List",
+            "Exp"
+        ],
+        [
+            "int",
+            "mark"
         ],
         [
             "List",
@@ -767,27 +695,11 @@
         ],
         [
             "List",
-            "token_boolean_exp"
+            "Arguments"
         ],
         [
             "List",
-            "Expression"
-        ],
-        [
-            "List",
-            "If_event_tokens"
-        ],
-        [
-            "List",
-            "In_Expression"
-        ],
-        [
-            "int",
-            "last_sign"
-        ],
-        [
-            "List",
-            "In_Expr_Tokens"
+            "token_exp"
         ],
         [
             "string",
@@ -795,15 +707,83 @@
         ],
         [
             "List",
-            "Else_event_tokens"
+            "Values"
         ],
         [
-            "Function_type",
-            "function"
+            "List",
+            "Current_Tokens_List"
         ],
         [
             "string",
-            "aux"
+            "var_name"
+        ],
+        [
+            "List",
+            "Token_Corpus"
+        ],
+        [
+            "List",
+            "If_event_tokens"
+        ],
+        [
+            "List",
+            "Else_event"
+        ],
+        [
+            "List",
+            "boolean_exp"
+        ],
+        [
+            "string",
+            "right"
+        ],
+        [
+            "int",
+            "parentheses_count"
+        ],
+        [
+            "List",
+            "Let_Tokens_List"
+        ],
+        [
+            "List",
+            "token_boolean_exp"
+        ],
+        [
+            "List",
+            "Corpus"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "List",
+            "In_Expr_Tokens"
+        ],
+        [
+            "string",
+            "var_Value"
+        ],
+        [
+            "int",
+            "last_sign"
+        ],
+        [
+            "int",
+            "par_counter"
+        ],
+        [
+            "List",
+            "Args_Tokens"
+        ],
+        [
+            "List",
+            "Let"
+        ],
+        [
+            "string",
+            "R"
         ],
         [
             "int",
@@ -811,59 +791,75 @@
         ],
         [
             "List",
-            "tokens"
+            "R"
         ],
         [
             "List",
-            "states"
+            "Expression"
+        ],
+        [
+            "List",
+            "new_exp_tokens"
+        ],
+        [
+            "char",
+            "next_to"
         ],
         [
             "bool",
             "IsToken"
         ],
         [
-            "char",
-            "next_to"
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "List",
+            "states"
+        ],
+        [
+            "List",
+            "tokens"
         ]
     ],
     "method_names": [
-        "Remove_Function",
+        "Get_Func",
         "Clean_Var",
         "Is_Function_on_List",
         "Is_Variable_on_Dict",
-        "Get_Func",
-        "Parser",
+        "Remove_Function",
         "Boolean_Parser",
         "Recursive_Parser",
+        "Parser",
         "Try_Solve_Binary",
-        "EndLine_Balance",
-        "Input",
-        "Conditional_Balance",
         "Tokens",
-        "Let_In_Balance",
+        "Input",
         "Parenthesis_Balance",
         "Function_Balance",
         "Parsing",
-        "Analyze",
-        "Recursive_Analyzer",
-        "Variables_Contains_on_Scope",
-        "Solve_Binary",
-        "Get_Value",
+        "Let_In_Balance",
+        "Conditional_Balance",
+        "EndLine_Balance",
         "Process_Args",
-        "Variables_Contains",
-        "Is_All_Par",
-        "Frag",
-        "Var_Eval",
+        "Solve_Binary",
         "Scope_Clean",
+        "Get_Value",
+        "Var_Eval",
+        "Frag",
         "Variables_Remove",
-        "Token_Separator",
-        "States_determinator"
+        "Recursive_Analyzer",
+        "Is_All_Par",
+        "Variables_Contains",
+        "Analyze",
+        "Variables_Contains_on_Scope",
+        "States_determinator",
+        "Token_Separator"
     ],
     "method_return_types": [
-        [
-            "Clean_Var",
-            "void"
-        ],
         [
             "Get_Func",
             "Function_type"
@@ -873,23 +869,19 @@
             "bool"
         ],
         [
-            "Is_Function_on_List",
-            "bool"
-        ],
-        [
             "Remove_Function",
             "void"
         ],
         [
-            "Parser",
-            "string"
+            "Clean_Var",
+            "void"
         ],
         [
-            "Boolean_Parser",
+            "Is_Function_on_List",
             "bool"
         ],
         [
-            "Recursive_Parser",
+            "Parser",
             "string"
         ],
         [
@@ -897,8 +889,32 @@
             "string"
         ],
         [
+            "Recursive_Parser",
+            "string"
+        ],
+        [
+            "Boolean_Parser",
+            "bool"
+        ],
+        [
+            "Function_Balance",
+            "string"
+        ],
+        [
             "Input",
             "List"
+        ],
+        [
+            "Conditional_Balance",
+            "string"
+        ],
+        [
+            "Parsing",
+            "string"
+        ],
+        [
+            "Let_In_Balance",
+            "string"
         ],
         [
             "Parenthesis_Balance",
@@ -913,32 +929,8 @@
             "string"
         ],
         [
-            "Parsing",
-            "string"
-        ],
-        [
-            "Let_In_Balance",
-            "string"
-        ],
-        [
-            "Conditional_Balance",
-            "string"
-        ],
-        [
-            "Function_Balance",
-            "string"
-        ],
-        [
-            "Get_Value",
-            "string"
-        ],
-        [
-            "Solve_Binary",
-            "string"
-        ],
-        [
-            "Recursive_Analyzer",
-            "string"
+            "Frag",
+            "List"
         ],
         [
             "Variables_Remove",
@@ -949,19 +941,31 @@
             "string"
         ],
         [
+            "Get_Value",
+            "string"
+        ],
+        [
+            "Variables_Contains",
+            "bool"
+        ],
+        [
+            "Is_All_Par",
+            "bool"
+        ],
+        [
             "Process_Args",
             "List"
         ],
         [
+            "Analyze",
+            "string"
+        ],
+        [
+            "Recursive_Analyzer",
+            "string"
+        ],
+        [
             "Variables_Contains_on_Scope",
-            "bool"
-        ],
-        [
-            "Frag",
-            "List"
-        ],
-        [
-            "Variables_Contains",
             "bool"
         ],
         [
@@ -969,12 +973,8 @@
             "void"
         ],
         [
-            "Analyze",
+            "Solve_Binary",
             "string"
-        ],
-        [
-            "Is_All_Par",
-            "bool"
         ],
         [
             "Token_Separator",
@@ -1109,5 +1109,6 @@
         "Predefined_typeContext": 27
     },
     "project_name": "LauraMarby_MATCOM-HULK",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

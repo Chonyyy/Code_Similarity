@@ -96,23 +96,7 @@
     "variable_names": [
         [
             "var",
-            "Arbol"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "var",
             "resultado"
-        ],
-        [
-            "var",
-            "e"
-        ],
-        [
-            "string",
-            "mensaje"
         ],
         [
             "string",
@@ -120,15 +104,23 @@
         ],
         [
             "var",
+            "e"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "Arbol"
+        ],
+        [
+            "var",
             "Parser"
         ],
         [
             "string",
-            "fragmento"
-        ],
-        [
-            "int",
-            "final"
+            "mensaje"
         ],
         [
             "int",
@@ -139,22 +131,30 @@
             "inicio"
         ],
         [
+            "string",
+            "fragmento"
+        ],
+        [
+            "int",
+            "final"
+        ],
+        [
             "var",
             "Analizador"
         ],
         [
-            "Token",
-            "token"
-        ],
-        [
             "var",
             "tokens"
+        ],
+        [
+            "Token",
+            "token"
         ]
     ],
     "method_names": [
         "Main",
-        "Proximo_Token",
         "Tomar",
+        "Proximo_Token",
         "Siguiente",
         "Tipo",
         "Evaluar",
@@ -170,12 +170,12 @@
             "Token"
         ],
         [
-            "Tomar",
-            "char"
-        ],
-        [
             "Siguiente",
             "void"
+        ],
+        [
+            "Tomar",
+            "char"
         ],
         [
             "Tipo",
@@ -350,5 +350,6 @@
         "ThrowStatementContext": 2
     },
     "project_name": "abelponce03_Hulk",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

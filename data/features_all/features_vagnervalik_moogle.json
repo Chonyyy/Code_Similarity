@@ -130,11 +130,7 @@
     "variable_names": [
         [
             "List",
-            "wrds"
-        ],
-        [
-            "string",
-            "Files"
+            "AllWords"
         ],
         [
             "int",
@@ -142,7 +138,15 @@
         ],
         [
             "string",
-            "Words"
+            "fileNames"
+        ],
+        [
+            "string",
+            "Files"
+        ],
+        [
+            "string",
+            "AllFiles"
         ],
         [
             "int",
@@ -150,23 +154,43 @@
         ],
         [
             "string",
-            "AllFiles"
-        ],
-        [
-            "string",
-            "fileNames"
-        ],
-        [
-            "List",
-            "AllWords"
+            "Words"
         ],
         [
             "string",
             "words"
         ],
         [
+            "List",
+            "wrds"
+        ],
+        [
+            "string",
+            "W"
+        ],
+        [
             "float",
             "tfidf"
+        ],
+        [
+            "List",
+            "matches"
+        ],
+        [
+            "List",
+            "relevance"
+        ],
+        [
+            "float",
+            "actual"
+        ],
+        [
+            "float",
+            "count"
+        ],
+        [
+            "int",
+            "val"
         ],
         [
             "int",
@@ -174,71 +198,47 @@
         ],
         [
             "float",
-            "tf"
-        ],
-        [
-            "float",
-            "actual"
-        ],
-        [
-            "List",
-            "matches"
-        ],
-        [
-            "int",
-            "val"
-        ],
-        [
-            "float",
-            "query"
-        ],
-        [
-            "List",
-            "relevance"
-        ],
-        [
-            "var",
-            "x"
-        ],
-        [
-            "float",
             "f"
         ],
         [
             "float",
-            "count"
+            "tf"
         ],
         [
             "string",
             "m"
         ],
         [
-            "string",
-            "W"
+            "float",
+            "query"
+        ],
+        [
+            "var",
+            "x"
         ]
     ],
     "method_names": [
         "Items",
-        "GetAllText",
-        "NumOfWords",
-        "Vocabulary",
         "LoadDataBase",
-        "Get",
-        "Count",
-        "GetAddresses",
-        "GetAllWords",
         "FileNames",
         "GetWords",
+        "NumOfWords",
+        "Get",
+        "GetAllWords",
+        "GetAllText",
         "GetFileNames",
-        "GetTf",
-        "GetVal",
+        "GetAddresses",
+        "Vocabulary",
         "Count",
-        "Size",
+        "GetWords",
         "Multiply",
         "Vectorize",
         "GetQueryVector",
+        "GetTf",
         "GetIdf",
-        "GetWords"
+        "Size",
+        "Count",
+        "GetVal"
     ],
     "method_return_types": [
         [
@@ -250,7 +250,23 @@
             "string"
         ],
         [
+            "LoadDataBase",
+            "string"
+        ],
+        [
+            "GetFileNames",
+            "string"
+        ],
+        [
             "Vocabulary",
+            "string"
+        ],
+        [
+            "NumOfWords",
+            "int"
+        ],
+        [
+            "GetAllWords",
             "string"
         ],
         [
@@ -262,43 +278,35 @@
             "string"
         ],
         [
-            "NumOfWords",
-            "int"
-        ],
-        [
-            "Count",
-            "int"
+            "Get",
+            "string"
         ],
         [
             "FileNames",
             "string"
         ],
         [
-            "GetFileNames",
-            "string"
-        ],
-        [
-            "GetAllWords",
-            "string"
-        ],
-        [
-            "Get",
-            "string"
-        ],
-        [
-            "LoadDataBase",
-            "string"
-        ],
-        [
-            "Size",
+            "Count",
             "int"
+        ],
+        [
+            "Multiply",
+            "("
+        ],
+        [
+            "GetIdf",
+            "float"
         ],
         [
             "GetTf",
             "float"
         ],
         [
-            "Multiply",
+            "GetVal",
+            "float"
+        ],
+        [
+            "Vectorize",
             "("
         ],
         [
@@ -314,16 +322,8 @@
             "int"
         ],
         [
-            "Vectorize",
-            "("
-        ],
-        [
-            "GetIdf",
-            "float"
-        ],
-        [
-            "GetVal",
-            "float"
+            "Size",
+            "int"
         ]
     ],
     "class_names": [
@@ -450,5 +450,6 @@
         "Interpolated_regular_string_partContext": 1
     },
     "project_name": "vagnervalik_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

@@ -133,11 +133,7 @@
         ],
         [
             "var",
-            "original_Record"
-        ],
-        [
-            "var",
-            "call"
+            "callRecord"
         ],
         [
             "var",
@@ -145,11 +141,7 @@
         ],
         [
             "var",
-            "callRecord"
-        ],
-        [
-            "var",
-            "argument"
+            "original_Record"
         ],
         [
             "int",
@@ -157,15 +149,15 @@
         ],
         [
             "var",
+            "argument"
+        ],
+        [
+            "var",
+            "call"
+        ],
+        [
+            "var",
             "name"
-        ],
-        [
-            "var",
-            "function_name"
-        ],
-        [
-            "var",
-            "function_Symbol"
         ],
         [
             "var",
@@ -181,15 +173,15 @@
         ],
         [
             "var",
+            "function_name"
+        ],
+        [
+            "var",
+            "function_Symbol"
+        ],
+        [
+            "var",
             "inPos"
-        ],
-        [
-            "var",
-            "statement_Node"
-        ],
-        [
-            "var",
-            "declarations_Node"
         ],
         [
             "var",
@@ -200,34 +192,42 @@
             "BeginPos"
         ],
         [
-            "Parser",
-            "parser"
+            "var",
+            "declarations_Node"
         ],
         [
             "var",
-            "output"
-        ],
-        [
-            "Lexer",
-            "lexer"
-        ],
-        [
-            "var",
-            "analyzer"
+            "statement_Node"
         ],
         [
             "string",
             "prog"
         ],
         [
+            "var",
+            "output"
+        ],
+        [
             "Command_Node",
             "tree"
+        ],
+        [
+            "Lexer",
+            "lexer"
+        ],
+        [
+            "Parser",
+            "parser"
+        ],
+        [
+            "var",
+            "analyzer"
         ]
     ],
     "method_names": [
         "Define",
-        "Lookup",
         "ToString",
+        "Lookup",
         "getBuiltins",
         "Lookup",
         "Store",
@@ -235,16 +235,20 @@
         "Evaluate",
         "Define_Function",
         "RevertToGlobal",
-        "advance",
-        "jumpSpaces",
-        "getNextToken",
         "peek",
-        "statement",
-        "Get_Command_AST",
+        "advance",
+        "getNextToken",
+        "jumpSpaces",
         "let_in_statement",
+        "Get_Command_AST",
+        "statement",
         "Main"
     ],
     "method_return_types": [
+        [
+            "Define",
+            "void"
+        ],
         [
             "Lookup",
             "Symbol"
@@ -252,10 +256,6 @@
         [
             "ToString",
             "string"
-        ],
-        [
-            "Define",
-            "void"
         ],
         [
             "Lookup",
@@ -270,11 +270,11 @@
             "Dictionary"
         ],
         [
-            "Evaluate",
+            "eval",
             "object"
         ],
         [
-            "eval",
+            "Evaluate",
             "object"
         ],
         [
@@ -286,6 +286,14 @@
             "void"
         ],
         [
+            "jumpSpaces",
+            "void"
+        ],
+        [
+            "peek",
+            "char"
+        ],
+        [
             "getNextToken",
             "void"
         ],
@@ -294,12 +302,8 @@
             "void"
         ],
         [
-            "jumpSpaces",
-            "void"
-        ],
-        [
-            "peek",
-            "char"
+            "Get_Command_AST",
+            "Command_Node"
         ],
         [
             "let_in_statement",
@@ -310,34 +314,30 @@
             "AST_Treenode"
         ],
         [
-            "Get_Command_AST",
-            "Command_Node"
-        ],
-        [
             "Main",
             "void"
         ]
     ],
     "class_names": [
-        "Function_Symbol",
-        "Context",
-        "Variable_Symbol",
-        "SimpleType",
         "Symbol",
+        "Function_Symbol",
+        "Variable_Symbol",
+        "Context",
+        "SimpleType",
         "Activation_Record",
         "Interpreter",
-        "Let_In_Node",
-        "BinOp_Node",
-        "Function_Declaration_Node",
-        "STRING_Node",
-        "AST_Treenode",
         "If_Else_Node",
-        "NUMBER_Node",
-        "BOOLEAN_Node",
-        "Variable_Node",
         "Command_Node",
+        "Let_In_Node",
+        "Function_Declaration_Node",
         "UnOp_Node",
+        "BinOp_Node",
+        "NUMBER_Node",
+        "Variable_Node",
+        "AST_Treenode",
+        "BOOLEAN_Node",
         "Function_Call_Node",
+        "STRING_Node",
         "Variable_Declaration_Node",
         "Semantic_Analizer",
         "Token",
@@ -476,5 +476,6 @@
         "Attribute_argumentContext": 18
     },
     "project_name": "DHCub_Mini-HULK",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

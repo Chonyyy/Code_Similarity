@@ -145,27 +145,7 @@
     "variable_names": [
         [
             "int",
-            "j"
-        ],
-        [
-            "double",
-            "sol"
-        ],
-        [
-            "int",
-            "temparreglo"
-        ],
-        [
-            "int",
             "tempmatriz"
-        ],
-        [
-            "int",
-            "c"
-        ],
-        [
-            "int",
-            "resultado"
         ],
         [
             "int",
@@ -173,7 +153,27 @@
         ],
         [
             "int",
+            "resultado"
+        ],
+        [
+            "int",
+            "c"
+        ],
+        [
+            "double",
+            "sol"
+        ],
+        [
+            "int",
             "i"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "int",
@@ -181,17 +181,17 @@
         ],
         [
             "int",
-            "k"
+            "temparreglo"
         ]
     ],
     "method_names": [
         "Items",
         "Query",
-        "Rotar",
         "RemoveAllColumnas",
+        "Rotar",
+        "EliminaColumnaMatriz",
         "Multiplicar",
         "EliminaCeldas",
-        "EliminaColumnaMatriz",
         "Sumar"
     ],
     "method_return_types": [
@@ -204,7 +204,15 @@
             "SearchResult"
         ],
         [
-            "Multiplicar",
+            "RemoveAllColumnas",
+            "int"
+        ],
+        [
+            "Rotar",
+            "double"
+        ],
+        [
+            "Sumar",
             "double"
         ],
         [
@@ -212,16 +220,8 @@
             "int"
         ],
         [
-            "Sumar",
+            "Multiplicar",
             "double"
-        ],
-        [
-            "Rotar",
-            "double"
-        ],
-        [
-            "RemoveAllColumnas",
-            "int"
         ],
         [
             "EliminaColumnaMatriz",
@@ -346,5 +346,6 @@
         "ParenthesisExpressionsContext": 11
     },
     "project_name": "Javi111003_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

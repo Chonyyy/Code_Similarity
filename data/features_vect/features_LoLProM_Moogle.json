@@ -171,29 +171,30 @@
     },
     "project_name": "LoLProM_Moogle",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.03636310622096062,
-        0.06884665042161942
+        0.08026840537786484,
+        0.08394267410039902
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.04017016664147377,
-        0.10174626857042313
+        0.10556774586439133,
+        0.06087169051170349
     ],
     "method_names_vector": [
-        0.03942853957414627,
-        0.06966668367385864
+        0.05830793455243111,
+        0.03364577889442444
     ],
     "class_names_vector": [
-        0.1387816220521927,
-        0.14966626465320587
+        -0.2016647458076477,
+        0.13877587020397186
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        0.08964648842811584,
-        0.08751894533634186,
-        0.0457911491394043,
-        0.06778901070356369
+        0.03819733485579491,
+        0.00519018666818738,
+        0.15547077357769012,
+        0.2096499800682068
     ]
 }

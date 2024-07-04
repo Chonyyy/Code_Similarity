@@ -136,42 +136,6 @@
         ],
         [
             "string",
-            "content"
-        ],
-        [
-            "string",
-            "words"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "Dictionary",
-            "iDF"
-        ],
-        [
-            "char",
-            "separators"
-        ],
-        [
-            "int",
-            "TxtQuant"
-        ],
-        [
-            "Stopwatch",
-            "crono"
-        ],
-        [
-            "Dictionary",
-            "TXTcontent"
-        ],
-        [
-            "int",
-            "totalTXTs"
-        ],
-        [
-            "string",
             "actualWords"
         ],
         [
@@ -179,68 +143,68 @@
             "filesAdresses"
         ],
         [
-            "int",
-            "t"
-        ],
-        [
-            "double",
-            "TFs"
-        ],
-        [
             "double",
             "tfArray"
+        ],
+        [
+            "Dictionary",
+            "TXTcontent"
+        ],
+        [
+            "Stopwatch",
+            "crono"
+        ],
+        [
+            "int",
+            "t"
         ],
         [
             "int",
             "i"
         ],
         [
+            "char",
+            "separators"
+        ],
+        [
+            "Dictionary",
+            "iDF"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "totalTXTs"
+        ],
+        [
+            "string",
+            "content"
+        ],
+        [
+            "double",
+            "TFs"
+        ],
+        [
             "Dictionary",
             "TXTsContent"
         ],
         [
-            "double",
-            "TXTvectorLength"
-        ],
-        [
-            "var",
-            "results"
+            "string",
+            "words"
         ],
         [
             "int",
-            "count"
-        ],
-        [
-            "SearchItem",
-            "emptySearch"
-        ],
-        [
-            "(",
-            "nonPresent"
+            "TxtQuant"
         ],
         [
             "string",
             "queryWords"
         ],
         [
-            "double",
-            "queryTF"
-        ],
-        [
-            "SearchItem",
-            "items"
-        ],
-        [
             "string",
             "filesAdresses"
-        ],
-        [
-            "var",
-            "sortedMatches"
-        ],
-        [
-            "(",
-            "Match"
         ],
         [
             "double",
@@ -251,24 +215,56 @@
             "i"
         ],
         [
+            "double",
+            "queryTF"
+        ],
+        [
+            "SearchItem",
+            "emptySearch"
+        ],
+        [
+            "double",
+            "TXTvectorLength"
+        ],
+        [
             "int",
-            "validMatches"
+            "count"
+        ],
+        [
+            "var",
+            "results"
+        ],
+        [
+            "(",
+            "nonPresent"
+        ],
+        [
+            "(",
+            "Match"
+        ],
+        [
+            "SearchItem",
+            "items"
         ],
         [
             "double",
             "queryiDF"
         ],
         [
-            "List",
-            "words"
+            "int",
+            "validMatches"
+        ],
+        [
+            "var",
+            "sortedMatches"
         ],
         [
             "string",
-            "word"
+            "affectedWords"
         ],
         [
-            "(",
-            "nonPresent"
+            "List",
+            "words"
         ],
         [
             "int",
@@ -279,20 +275,24 @@
             "c"
         ],
         [
+            "(",
+            "nonPresent"
+        ],
+        [
             "string",
-            "affectedWords"
+            "word"
         ]
     ],
     "method_names": [
         "Main",
         "Items",
+        "iDF",
         "LoadTexts",
         "TF",
-        "iDF",
         "SplitInWords",
         "Query",
-        "OperatorAffects",
-        "nonPresent"
+        "nonPresent",
+        "OperatorAffects"
     ],
     "method_return_types": [
         [
@@ -304,20 +304,20 @@
             "IEnumerable"
         ],
         [
-            "iDF",
-            "Dictionary"
-        ],
-        [
-            "TF",
-            "Dictionary"
-        ],
-        [
             "LoadTexts",
             "Dictionary"
         ],
         [
             "SplitInWords",
             "string"
+        ],
+        [
+            "TF",
+            "Dictionary"
+        ],
+        [
+            "iDF",
+            "Dictionary"
         ],
         [
             "Query",
@@ -464,5 +464,6 @@
         "Boolean_literalContext": 2
     },
     "project_name": "frankperez-github_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

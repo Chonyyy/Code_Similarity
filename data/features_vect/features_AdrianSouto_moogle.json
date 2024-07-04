@@ -164,29 +164,30 @@
     },
     "project_name": "AdrianSouto_moogle",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.02374338172376156,
-        0.07019083201885223
+        0.02421005256474018,
+        0.09768229722976685
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        -0.030512182042002678,
-        0.0838458389043808
+        -0.0002714353031478822,
+        0.09729939699172974
     ],
     "method_names_vector": [
-        -0.018298758193850517,
-        -0.043303702026605606
+        0.006919849198311567,
+        -0.04077497497200966
     ],
     "class_names_vector": [
-        0.10595335811376572,
-        0.22643859684467316
+        0.0549505278468132,
+        0.203985795378685
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.02163323387503624,
-        -0.10084798187017441,
-        0.00846789963543415,
-        0.11001402139663696
+        0.003221107879653573,
+        -0.11623717844486237,
+        0.03885301575064659,
+        0.12449407577514648
     ]
 }

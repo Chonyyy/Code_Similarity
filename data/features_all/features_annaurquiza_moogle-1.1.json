@@ -190,5 +190,6 @@
         "Variable_initializerContext": 3
     },
     "project_name": "annaurquiza_moogle-1.1",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

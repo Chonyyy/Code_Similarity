@@ -251,10 +251,6 @@
     "variable_names": [
         [
             "Regex",
-            "AllTokens"
-        ],
-        [
-            "Regex",
             "ValidTokens"
         ],
         [
@@ -262,16 +258,20 @@
             "AllTok"
         ],
         [
+            "Regex",
+            "AllTokens"
+        ],
+        [
             "Expression",
             "FalseExpression"
         ],
         [
             "Expression",
-            "TrueExpression"
+            "BoolExpression"
         ],
         [
             "Expression",
-            "BoolExpression"
+            "TrueExpression"
         ],
         [
             "bool",
@@ -282,12 +282,12 @@
             "right"
         ],
         [
-            "double",
-            "n"
-        ],
-        [
             "Random",
             "r"
+        ],
+        [
+            "Expression",
+            "e"
         ],
         [
             "double",
@@ -295,35 +295,31 @@
         ],
         [
             "double",
+            "n"
+        ],
+        [
+            "double",
             "result"
-        ],
-        [
-            "Expression",
-            "e"
-        ],
-        [
-            "string",
-            "functionName"
         ],
         [
             "List",
             "FunctionExpression"
         ],
         [
-            "int",
-            "OriginalIndex"
+            "string",
+            "functionName"
         ],
         [
             "Expression",
-            "F_errors"
+            "parameter"
         ],
         [
             "Dictionary",
             "OriginalValues"
         ],
         [
-            "List",
-            "OriginalsTokens"
+            "int",
+            "OriginalIndex"
         ],
         [
             "int",
@@ -334,8 +330,12 @@
             "PrintExpression"
         ],
         [
+            "List",
+            "OriginalsTokens"
+        ],
+        [
             "Expression",
-            "parameter"
+            "F_errors"
         ],
         [
             "Expression",
@@ -343,39 +343,11 @@
         ],
         [
             "Expression",
-            "result"
-        ],
-        [
-            "bool",
-            "isIdfunction"
-        ],
-        [
-            "Expression",
-            "exp"
+            "letIn"
         ],
         [
             "string",
             "result"
-        ],
-        [
-            "Expression",
-            "f"
-        ],
-        [
-            "Expression",
-            "c"
-        ],
-        [
-            "Expression",
-            "l"
-        ],
-        [
-            "Expression",
-            "M"
-        ],
-        [
-            "string",
-            "s"
         ],
         [
             "Expression",
@@ -383,7 +355,7 @@
         ],
         [
             "Expression",
-            "ifelse"
+            "c"
         ],
         [
             "Expression",
@@ -395,19 +367,47 @@
         ],
         [
             "Expression",
-            "letIn"
+            "M"
+        ],
+        [
+            "Expression",
+            "f"
+        ],
+        [
+            "Expression",
+            "l"
+        ],
+        [
+            "Expression",
+            "exp"
+        ],
+        [
+            "Expression",
+            "result"
+        ],
+        [
+            "Expression",
+            "ifelse"
+        ],
+        [
+            "bool",
+            "isIdfunction"
         ],
         [
             "string",
-            "NameValue"
+            "s"
+        ],
+        [
+            "Expression",
+            "Value"
         ],
         [
             "string",
             "name"
         ],
         [
-            "Expression",
-            "Value"
+            "string",
+            "NameValue"
         ],
         [
             "string",
@@ -420,39 +420,39 @@
     ],
     "method_names": [
         "Restart",
-        "IsID",
-        "GetInvalidToken",
         "IsString",
-        "Tokenizer",
-        "IsBool",
         "IsNumber",
+        "IsBool",
+        "GetInvalidToken",
+        "Tokenizer",
         "KindOfToken",
+        "IsID",
         "PrintError",
         "Evaluate",
-        "Greater",
         "Or",
         "LessOrEqual",
-        "GreaterOrEqual",
-        "Evaluate",
         "Different",
         "And",
+        "GreaterOrEqual",
         "Equals",
+        "Greater",
         "Less",
+        "Evaluate",
         "cos",
-        "sqrt",
-        "Evaluate",
-        "rand",
-        "sin",
-        "PI",
-        "E",
-        "log",
         "exp",
+        "rand",
+        "PI",
+        "sqrt",
+        "E",
+        "sin",
+        "log",
         "Evaluate",
         "Evaluate",
-        "Current",
-        "Next",
+        "Evaluate",
         "IsFunctionName",
+        "Current",
         "Evaluate",
+        "Next",
         "Evaluate",
         "Main"
     ],
@@ -474,16 +474,16 @@
             "bool"
         ],
         [
+            "Tokenizer",
+            "void"
+        ],
+        [
             "Restart",
             "void"
         ],
         [
             "IsBool",
             "bool"
-        ],
-        [
-            "Tokenizer",
-            "void"
         ],
         [
             "KindOfToken",
@@ -502,11 +502,11 @@
             "string"
         ],
         [
-            "Equals",
+            "LessOrEqual",
             "string"
         ],
         [
-            "And",
+            "Or",
             "string"
         ],
         [
@@ -514,7 +514,11 @@
             "string"
         ],
         [
-            "LessOrEqual",
+            "Evaluate",
+            "void"
+        ],
+        [
+            "GreaterOrEqual",
             "string"
         ],
         [
@@ -522,47 +526,15 @@
             "string"
         ],
         [
-            "Evaluate",
-            "void"
-        ],
-        [
-            "Or",
+            "And",
             "string"
         ],
         [
-            "GreaterOrEqual",
+            "Equals",
             "string"
-        ],
-        [
-            "rand",
-            "void"
-        ],
-        [
-            "sin",
-            "void"
-        ],
-        [
-            "exp",
-            "void"
-        ],
-        [
-            "PI",
-            "void"
         ],
         [
             "E",
-            "void"
-        ],
-        [
-            "log",
-            "void"
-        ],
-        [
-            "Evaluate",
-            "void"
-        ],
-        [
-            "sqrt",
             "void"
         ],
         [
@@ -570,7 +542,31 @@
             "void"
         ],
         [
+            "log",
+            "void"
+        ],
+        [
+            "sin",
+            "void"
+        ],
+        [
+            "rand",
+            "void"
+        ],
+        [
+            "exp",
+            "void"
+        ],
+        [
             "Evaluate",
+            "void"
+        ],
+        [
+            "PI",
+            "void"
+        ],
+        [
+            "sqrt",
             "void"
         ],
         [
@@ -579,6 +575,10 @@
         ],
         [
             "Evaluate",
+            "void"
+        ],
+        [
+            "Next",
             "void"
         ],
         [
@@ -586,7 +586,7 @@
             "bool"
         ],
         [
-            "Next",
+            "Evaluate",
             "void"
         ],
         [
@@ -604,18 +604,18 @@
     ],
     "class_names": [
         "Lexer",
-        "SyntaxError",
-        "SystemErrors",
         "LexicalError",
+        "SystemErrors",
+        "SyntaxError",
         "IfElse",
-        "CompareOperations",
         "BoolOperator",
+        "CompareOperations",
         "TrigoMathicsExpressions",
         "FunctionDeclaration",
         "FunctionCall",
         "Print",
-        "BinaryExpressions",
         "Expression",
+        "BinaryExpressions",
         "Atom",
         "HulkExpression",
         "Let_in",
@@ -744,5 +744,6 @@
         "Attribute_argumentContext": 9
     },
     "project_name": "theleywin_2ndProject-Hulk",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

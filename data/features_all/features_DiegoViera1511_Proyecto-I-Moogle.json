@@ -294,6 +294,10 @@
     ],
     "variable_names": [
         [
+            "(",
+            "best_word"
+        ],
+        [
             "int",
             "i"
         ],
@@ -310,10 +314,6 @@
             "result"
         ],
         [
-            "(",
-            "best_word"
-        ],
-        [
             "string",
             "text"
         ],
@@ -323,15 +323,11 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "cost"
         ],
         [
-            "int",
-            "j"
+            "List",
+            "resultwords"
         ],
         [
             "int",
@@ -339,27 +335,11 @@
         ],
         [
             "int",
-            "f"
+            "costo"
         ],
         [
             "int",
-            "tempCost"
-        ],
-        [
-            "int",
-            "result"
-        ],
-        [
-            "int",
-            "m"
-        ],
-        [
-            "string",
-            "result"
-        ],
-        [
-            "string",
-            "SuggWord"
+            "i"
         ],
         [
             "bool",
@@ -367,11 +347,35 @@
         ],
         [
             "int",
-            "costo"
+            "f"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "SuggWord"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "int",
+            "tempCost"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "int",
+            "result"
         ],
         [
             "List",
-            "resultwords"
+            "words"
         ],
         [
             "int",
@@ -394,22 +398,6 @@
             "words"
         ],
         [
-            "List",
-            "words"
-        ],
-        [
-            "SearchItem",
-            "items"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "suggestion"
-        ],
-        [
             "Dictionary",
             "VectorQuery"
         ],
@@ -423,31 +411,19 @@
         ],
         [
             "int",
-            "rg"
-        ],
-        [
-            "int",
-            "b"
-        ],
-        [
-            "int",
             "i"
         ],
         [
-            "double",
-            "result"
+            "string",
+            "suggestion"
         ],
         [
-            "int",
-            "count"
+            "SearchItem",
+            "items"
         ],
         [
             "int",
             "d"
-        ],
-        [
-            "int",
-            "k"
         ],
         [
             "double",
@@ -455,11 +431,27 @@
         ],
         [
             "int",
-            "j"
+            "rg"
         ],
         [
             "int",
             "c"
+        ],
+        [
+            "List",
+            "values"
+        ],
+        [
+            "double",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "k"
         ],
         [
             "int",
@@ -467,15 +459,19 @@
         ],
         [
             "int",
-            "result"
+            "j"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "int",
+            "b"
         ],
         [
             "int",
             "a"
-        ],
-        [
-            "List",
-            "values"
         ],
         [
             "int",
@@ -483,11 +479,15 @@
         ],
         [
             "int",
-            "i"
+            "result"
         ],
         [
             "Dictionary",
             "vectorquery"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "List",
@@ -498,12 +498,20 @@
             "tempMinDistance"
         ],
         [
-            "int",
-            "i"
+            "List",
+            "result"
+        ],
+        [
+            "List",
+            "words"
         ],
         [
             "List",
             "matches"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "int",
@@ -514,23 +522,15 @@
             "WordIndexs"
         ],
         [
-            "string",
-            "temp"
-        ],
-        [
             "double",
             "minDistance"
         ],
         [
-            "List",
-            "result"
+            "string",
+            "temp"
         ],
         [
             "string",
-            "words"
-        ],
-        [
-            "List",
             "words"
         ],
         [
@@ -538,28 +538,8 @@
             "WordsPositions"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "NoWords"
-        ],
-        [
             "double",
             "MultiplicacionDeVectores"
-        ],
-        [
-            "float",
-            "score"
-        ],
-        [
-            "int",
-            "ScoreTxtLength"
-        ],
-        [
-            "Dictionary",
-            "queryTfIdf"
         ],
         [
             "List",
@@ -570,6 +550,18 @@
             "ModuloVectorQuery"
         ],
         [
+            "int",
+            "ScoreTxtLength"
+        ],
+        [
+            "(",
+            "x"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
             "List",
             "ImportantWords"
         ],
@@ -578,32 +570,40 @@
             "ModuloVectorDoc"
         ],
         [
-            "(",
-            "x"
+            "Dictionary",
+            "queryTfIdf"
+        ],
+        [
+            "List",
+            "NoWords"
+        ],
+        [
+            "float",
+            "score"
         ]
     ],
     "method_names": [
         "Items",
-        "snippet",
         "BestWord",
-        "Suggestion",
+        "snippet",
         "LevenshteinDistance",
-        "Separar_palabras",
+        "Suggestion",
         "GetValues",
+        "Separar_palabras",
         "Query",
-        "Product",
+        "PrintMatrix",
         "Transpuesta",
         "Determinante2",
-        "PrintMatrix",
+        "Menor",
+        "Product",
         "Suma",
         "Determinante",
-        "Menor",
         "MultEscalar",
         "Calcular_Tf_Idf_query",
         "ClosedWords",
+        "ImportantWord",
         "DontShowWord",
         "Priority",
-        "ImportantWord",
         "Calcular_Similitud_Coseno",
         "ScoreTop"
     ],
@@ -613,20 +613,20 @@
             "IEnumerable"
         ],
         [
+            "BestWord",
+            "string"
+        ],
+        [
             "snippet",
             "string"
         ],
         [
-            "BestWord",
+            "Suggestion",
             "string"
         ],
         [
             "LevenshteinDistance",
             "int"
-        ],
-        [
-            "Suggestion",
-            "string"
         ],
         [
             "GetValues",
@@ -641,15 +641,11 @@
             "SearchResult"
         ],
         [
-            "PrintMatrix",
-            "void"
-        ],
-        [
-            "Transpuesta",
-            "int"
-        ],
-        [
             "Determinante",
+            "double"
+        ],
+        [
+            "Determinante2",
             "double"
         ],
         [
@@ -657,19 +653,23 @@
             "int"
         ],
         [
-            "Product",
-            "int"
+            "PrintMatrix",
+            "void"
         ],
         [
-            "Determinante2",
-            "double"
+            "MultEscalar",
+            "int"
         ],
         [
             "Menor",
             "double"
         ],
         [
-            "MultEscalar",
+            "Product",
+            "int"
+        ],
+        [
+            "Transpuesta",
             "int"
         ],
         [
@@ -677,11 +677,11 @@
             "Dictionary"
         ],
         [
-            "DontShowWord",
-            "List"
+            "Priority",
+            "void"
         ],
         [
-            "ImportantWord",
+            "DontShowWord",
             "List"
         ],
         [
@@ -689,16 +689,16 @@
             "double"
         ],
         [
-            "Priority",
-            "void"
-        ],
-        [
-            "ScoreTop",
+            "ImportantWord",
             "List"
         ],
         [
             "Calcular_Similitud_Coseno",
             "double"
+        ],
+        [
+            "ScoreTop",
+            "List"
         ]
     ],
     "class_names": [
@@ -840,5 +840,6 @@
         "Cast_expressionContext": 2
     },
     "project_name": "DiegoViera1511_Proyecto-I-Moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

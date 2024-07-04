@@ -883,7 +883,7 @@
     "variable_names": [
         [
             "int",
-            "i"
+            "TableNum"
         ],
         [
             "int",
@@ -891,7 +891,7 @@
         ],
         [
             "int",
-            "TableNum"
+            "i"
         ],
         [
             "int",
@@ -914,12 +914,12 @@
             "i"
         ],
         [
-            "int",
-            "index"
-        ],
-        [
             "Move",
             "MovesValidas"
+        ],
+        [
+            "int",
+            "index"
         ],
         [
             "List",
@@ -931,59 +931,19 @@
         ],
         [
             "int",
-            "value"
-        ],
-        [
-            "int",
-            "total"
-        ],
-        [
-            "int",
             "NumTokens"
-        ],
-        [
-            "Token",
-            "misetaux"
         ],
         [
             "int",
             "x"
-        ],
-        [
-            "int",
-            "guide"
-        ],
-        [
-            "var",
-            "y"
-        ],
-        [
-            "Token",
-            "Token"
         ],
         [
             "TokensCreator",
             "creator"
         ],
         [
-            "Random",
-            "random"
-        ],
-        [
-            "int",
-            "NecessaryTokens"
-        ],
-        [
-            "int",
-            "values"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "var",
-            "x"
+            "y"
         ],
         [
             "int",
@@ -991,7 +951,43 @@
         ],
         [
             "int",
+            "value"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "int",
+            "total"
+        ],
+        [
+            "int",
+            "NecessaryTokens"
+        ],
+        [
+            "int",
+            "guide"
+        ],
+        [
+            "Token",
+            "misetaux"
+        ],
+        [
+            "int",
             "i"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "values"
+        ],
+        [
+            "Token",
+            "Token"
         ],
         [
             "int",
@@ -1010,12 +1006,16 @@
             "TokenActual"
         ],
         [
-            "List",
-            "P_Result"
+            "int",
+            "i"
         ],
         [
             "List",
-            "P_ValorateToken"
+            "P_ValidateMove"
+        ],
+        [
+            "List",
+            "P_Result"
         ],
         [
             "BaseState",
@@ -1023,11 +1023,11 @@
         ],
         [
             "List",
-            "P_GameFinisher"
+            "P_ValorateToken"
         ],
         [
             "List",
-            "P_ValidateMove"
+            "P_GameFinisher"
         ],
         [
             "ControladorDeDesarrollo",
@@ -1038,32 +1038,24 @@
             "P_Order"
         ],
         [
-            "int",
-            "rand"
+            "Random",
+            "r"
         ],
         [
             "int",
             "i"
         ],
         [
-            "Random",
-            "r"
-        ],
-        [
             "int",
             "x"
         ],
         [
-            "bool",
-            "end"
+            "int",
+            "rand"
         ],
         [
             "Move",
             "actual"
-        ],
-        [
-            "GameRecord",
-            "Record"
         ],
         [
             "int",
@@ -1074,28 +1066,20 @@
             "validas"
         ],
         [
+            "GameRecord",
+            "Record"
+        ],
+        [
+            "bool",
+            "end"
+        ],
+        [
             "Player",
             "temp"
         ],
         [
-            "Dictionary",
-            "Puntuations"
-        ],
-        [
             "int",
             "keys"
-        ],
-        [
-            "Player",
-            "win"
-        ],
-        [
-            "int",
-            "points"
-        ],
-        [
-            "int",
-            "teams"
         ],
         [
             "int",
@@ -1106,11 +1090,23 @@
             "result"
         ],
         [
-            "char",
-            "i"
+            "Dictionary",
+            "Puntuations"
         ],
         [
             "int",
+            "teams"
+        ],
+        [
+            "Player",
+            "win"
+        ],
+        [
+            "int",
+            "points"
+        ],
+        [
+            "char",
             "i"
         ],
         [
@@ -1122,84 +1118,84 @@
             "players"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
             "global",
             "temp"
         ]
     ],
     "method_names": [
-        "Description",
         "Validate",
         "Name",
         "Description",
-        "Name",
+        "Description",
         "Condition",
+        "Name",
         "ToString",
-        "RestablecerNoLLevaCompleto",
+        "NoLLevaDetectado",
         "NoOneHas",
         "RestablecerNoLLeva",
+        "RestablecerNoLLevaCompleto",
         "ReseatNoHaveFaces",
-        "NoLLevaDetectado",
         "Dispose",
         "InitializeComponent",
-        "ValidarPrimeraMove",
         "GetAll",
-        "Actualizar",
+        "ValidarPrimeraMove",
         "Description",
         "Next",
+        "Actualizar",
         "Name",
-        "PlusTeam_Click",
         "Siguiente_Click",
-        "PlusIA_Click",
-        "Incluir_Click",
-        "Less_Click",
+        "PlusTeam_Click",
         "Plus_Click",
+        "PlusIA_Click",
+        "Less_Click",
         "Opciones",
-        "Description",
+        "Incluir_Click",
         "Name",
-        "NoCanPlayNum",
-        "Take",
+        "Description",
         "ValoratePlayer",
-        "PrintPlayerHand",
-        "PrintTokens",
         "PrintNumTokens",
-        "PrepararJugadores",
         "ValidateSttings",
-        "ConvertToInt",
-        "Mezclar",
+        "PrepararJugadores",
+        "PrintPlayerHand",
         "PrintAll",
-        "Description",
+        "Take",
+        "ConvertToInt",
+        "PrintTokens",
+        "NoCanPlayNum",
+        "Mezclar",
         "Valorate",
-        "MCD",
         "Name",
+        "MCD",
+        "Description",
         "MoveValue",
         "SetDeTokens",
-        "GetOrder",
-        "GetResult",
-        "Get",
         "BuildProgramedRules",
-        "GetGameFinisher",
         "GetValidateMove",
         "GetValorateToken",
-        "Description",
-        "Name",
+        "Get",
+        "GetGameFinisher",
+        "GetOrder",
+        "GetResult",
         "ModificateMoveScore",
-        "Registro",
-        "Actualizar",
-        "Single",
+        "Name",
         "Description",
+        "Actualizar",
+        "Registro",
+        "Single",
         "Name",
         "Winner",
+        "Description",
         "Upper",
-        "CreatePlayer",
         "Create",
+        "CreatePlayer",
         "CreateRandom",
         "Main"
     ],
     "method_return_types": [
-        [
-            "Description",
-            "string"
-        ],
         [
             "Validate",
             "bool"
@@ -1209,10 +1205,6 @@
             "string"
         ],
         [
-            "Condition",
-            "bool"
-        ],
-        [
             "Description",
             "string"
         ],
@@ -1221,11 +1213,27 @@
             "string"
         ],
         [
+            "Description",
+            "string"
+        ],
+        [
+            "Condition",
+            "bool"
+        ],
+        [
             "ToString",
             "string"
         ],
         [
             "RestablecerNoLLevaCompleto",
+            "void"
+        ],
+        [
+            "NoOneHas",
+            "bool"
+        ],
+        [
+            "RestablecerNoLLeva",
             "void"
         ],
         [
@@ -1237,19 +1245,11 @@
             "void"
         ],
         [
-            "RestablecerNoLLeva",
+            "Dispose",
             "void"
-        ],
-        [
-            "NoOneHas",
-            "bool"
         ],
         [
             "InitializeComponent",
-            "void"
-        ],
-        [
-            "Dispose",
             "void"
         ],
         [
@@ -1277,22 +1277,6 @@
             "string"
         ],
         [
-            "Plus_Click",
-            "void"
-        ],
-        [
-            "PlusTeam_Click",
-            "void"
-        ],
-        [
-            "Less_Click",
-            "void"
-        ],
-        [
-            "Opciones",
-            "void"
-        ],
-        [
             "Siguiente_Click",
             "void"
         ],
@@ -1301,32 +1285,44 @@
             "void"
         ],
         [
+            "Plus_Click",
+            "void"
+        ],
+        [
+            "Less_Click",
+            "void"
+        ],
+        [
             "PlusIA_Click",
             "void"
         ],
         [
-            "Description",
-            "string"
+            "Opciones",
+            "void"
+        ],
+        [
+            "PlusTeam_Click",
+            "void"
         ],
         [
             "Name",
             "string"
         ],
         [
-            "Mezclar",
-            "List"
-        ],
-        [
-            "PrintPlayerHand",
-            "void"
+            "Description",
+            "string"
         ],
         [
             "Take",
             "Token"
         ],
         [
-            "ConvertToInt",
+            "NoCanPlayNum",
             "int"
+        ],
+        [
+            "PrintAll",
+            "void"
         ],
         [
             "ValidateSttings",
@@ -1337,7 +1333,7 @@
             "int"
         ],
         [
-            "PrintAll",
+            "PrintNumTokens",
             "void"
         ],
         [
@@ -1345,32 +1341,36 @@
             "void"
         ],
         [
-            "PrintNumTokens",
-            "void"
+            "ConvertToInt",
+            "int"
         ],
         [
-            "NoCanPlayNum",
-            "int"
+            "PrintPlayerHand",
+            "void"
         ],
         [
             "PrintTokens",
             "void"
         ],
         [
-            "MCD",
-            "int"
-        ],
-        [
-            "Valorate",
-            "int"
+            "Mezclar",
+            "List"
         ],
         [
             "Description",
             "string"
         ],
         [
+            "MCD",
+            "int"
+        ],
+        [
             "Name",
             "string"
+        ],
+        [
+            "Valorate",
+            "int"
         ],
         [
             "MoveValue",
@@ -1381,15 +1381,23 @@
             "void"
         ],
         [
-            "BuildProgramedRules",
-            "ProgramedRules"
-        ],
-        [
             "GetOrder",
             "List"
         ],
         [
-            "GetGameFinisher",
+            "BuildProgramedRules",
+            "ProgramedRules"
+        ],
+        [
+            "GetResult",
+            "List"
+        ],
+        [
+            "GetValorateToken",
+            "List"
+        ],
+        [
+            "GetValidateMove",
             "List"
         ],
         [
@@ -1397,15 +1405,7 @@
             "GameRules"
         ],
         [
-            "GetValorateToken",
-            "List"
-        ],
-        [
-            "GetResult",
-            "List"
-        ],
-        [
-            "GetValidateMove",
+            "GetGameFinisher",
             "List"
         ],
         [
@@ -1421,20 +1421,16 @@
             "void"
         ],
         [
-            "Actualizar",
-            "void"
-        ],
-        [
             "Registro",
             "HEAD"
         ],
         [
-            "Single",
-            "GameRecord"
+            "Actualizar",
+            "void"
         ],
         [
-            "Description",
-            "string"
+            "Single",
+            "GameRecord"
         ],
         [
             "Winner",
@@ -1442,6 +1438,10 @@
         ],
         [
             "Name",
+            "string"
+        ],
+        [
+            "Description",
             "string"
         ],
         [
@@ -1453,7 +1453,7 @@
             "IDescribable"
         ],
         [
-            "Create",
+            "CreatePlayer",
             "Player"
         ],
         [
@@ -1461,7 +1461,7 @@
             "Player"
         ],
         [
-            "CreatePlayer",
+            "Create",
             "Player"
         ],
         [
@@ -1473,10 +1473,10 @@
         "ValidadorNormal",
         "ValidadorEscalera",
         "GameRules",
-        "PlayerCounter",
+        "PlayerRandom",
         "Player",
         "PlayerGreedy",
-        "PlayerRandom",
+        "PlayerCounter",
         "NormalFinisher",
         "OneTimePassFinisher",
         "Token",
@@ -1494,14 +1494,14 @@
         "Move",
         "TokensCreator",
         "GetGameRules",
-        "HaveStrategy",
-        "RandomStrategy",
         "GreedyStrategy",
         "PrioritizeDoubleStrategy",
+        "HaveStrategy",
+        "RandomStrategy",
         "BaseState",
         "Game",
-        "TeamPuntuation",
         "IndividualPuntuation",
+        "TeamPuntuation",
         "ProgramedRules",
         "PlayerCreator",
         "Program",
@@ -1662,5 +1662,6 @@
         "Unbound_type_nameContext": 1
     },
     "project_name": "LuciferEvil01_Domino-Projec",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

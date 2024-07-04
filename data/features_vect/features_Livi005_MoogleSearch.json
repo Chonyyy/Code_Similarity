@@ -173,29 +173,30 @@
     },
     "project_name": "Livi005_MoogleSearch",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.02922225371003151,
-        0.0334208607673645
+        0.002154150977730751,
+        0.08718164265155792
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.04745824635028839,
-        0.05209369212388992
+        -0.0023137121461331844,
+        0.07621295750141144
     ],
     "method_names_vector": [
-        0.08079573512077332,
-        0.05640821531414986
+        0.06224871054291725,
+        0.0976807028055191
     ],
     "class_names_vector": [
-        0.05074072629213333,
-        0.05162101984024048
+        -0.1708574891090393,
+        0.023513950407505035
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        0.05269560590386391,
-        0.07518314570188522,
-        0.11843723803758621,
-        0.22746248543262482
+        0.07431383430957794,
+        0.09585537016391754,
+        0.04886190965771675,
+        0.27493104338645935
     ]
 }

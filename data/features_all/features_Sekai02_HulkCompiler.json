@@ -353,92 +353,100 @@
     ],
     "variable_names": [
         [
-            "Parser",
-            "parser"
-        ],
-        [
-            "Expression",
-            "Ast"
+            "byte",
+            "bytes"
         ],
         [
             "List",
             "lines"
         ],
         [
-            "Evaluate",
-            "evaluate"
+            "object",
+            "output"
         ],
         [
             "string",
             "line"
         ],
         [
-            "byte",
-            "bytes"
+            "Parser",
+            "parser"
         ],
         [
-            "Scanner",
-            "scanner"
-        ],
-        [
-            "object",
-            "output"
+            "Evaluate",
+            "evaluate"
         ],
         [
             "List",
             "tokens"
         ],
         [
-            "TokenType",
-            "type"
+            "Scanner",
+            "scanner"
         ],
         [
-            "Error",
-            "err"
-        ],
-        [
-            "object",
-            "literal"
+            "Expression",
+            "Ast"
         ],
         [
             "string",
             "text"
         ],
         [
-            "char",
-            "c"
+            "Error",
+            "err"
         ],
         [
             "string",
             "value"
         ],
         [
-            "Random",
-            "rnd"
+            "object",
+            "literal"
         ],
         [
-            "string",
-            "rightS"
+            "char",
+            "c"
         ],
         [
-            "Dictionary",
-            "variable"
-        ],
-        [
-            "int",
-            "cnt"
+            "TokenType",
+            "type"
         ],
         [
             "string",
             "leftS"
         ],
         [
-            "List",
-            "args"
+            "Random",
+            "rnd"
+        ],
+        [
+            "Dictionary",
+            "variable"
         ],
         [
             "Function",
             "newFunction"
+        ],
+        [
+            "int",
+            "cnt"
+        ],
+        [
+            "List",
+            "args"
+        ],
+        [
+            "string",
+            "rightS"
+        ],
+        [
+            "Expression",
+            "ifstmt"
+        ],
+        [
+            "Expression",
+            "unary"
         ],
         [
             "Expression",
@@ -446,7 +454,7 @@
         ],
         [
             "Expression",
-            "unary"
+            "call"
         ],
         [
             "Expression",
@@ -458,22 +466,6 @@
         ],
         [
             "Expression",
-            "call"
-        ],
-        [
-            "Expression",
-            "ifstmt"
-        ],
-        [
-            "Expression",
-            "ifBody"
-        ],
-        [
-            "Expression",
-            "right"
-        ],
-        [
-            "Expression",
             "condition"
         ],
         [
@@ -481,8 +473,16 @@
             "token"
         ],
         [
+            "string",
+            "identifier"
+        ],
+        [
             "Expression",
-            "elseBody"
+            "expr"
+        ],
+        [
+            "Expression",
+            "argument"
         ],
         [
             "List",
@@ -494,15 +494,11 @@
         ],
         [
             "Expression",
-            "argument"
+            "elseBody"
         ],
         [
             "List",
             "assigns"
-        ],
-        [
-            "string",
-            "delete"
         ],
         [
             "Expression",
@@ -510,74 +506,82 @@
         ],
         [
             "string",
-            "identifier"
+            "delete"
         ],
         [
             "Expression",
-            "expr"
+            "ifBody"
+        ],
+        [
+            "Expression",
+            "right"
         ]
     ],
     "method_names": [
+        "RunFile",
         "RunMultiLine",
         "Run",
-        "RunFile",
         "RunPrompt",
-        "ScanTokens",
-        "Match",
-        "AddToken",
-        "Identifier",
-        "PeekNext",
-        "IsAlphaNumeric",
-        "IsAlpha",
-        "ScanToken",
-        "IsDigit",
-        "Substring",
         "Number",
         "Advance",
         "String",
+        "Substring",
+        "IsAlphaNumeric",
+        "IsAlpha",
+        "IsDigit",
+        "PeekNext",
+        "ScanTokens",
+        "ScanToken",
         "IsAtEnd",
+        "Match",
+        "AddToken",
         "Peek",
-        "copy",
+        "Identifier",
         "Eval",
+        "copy",
         "ToString",
-        "Run",
         "GetValue",
-        "Init",
-        "Add",
+        "Run",
         "Contains",
-        "Erase",
+        "Init",
         "Get",
-        "SyntaxError",
-        "SemanticError",
+        "Erase",
+        "Add",
         "LexicalError",
         "Report",
-        "OperandsAreBool",
-        "OperandsAreNumbers",
+        "SemanticError",
+        "SyntaxError",
+        "IsEqual",
         "OperandIsBool",
         "OperandIsNumber",
-        "IsEqual",
-        "Unary",
-        "Primary",
-        "GetToken",
-        "Parse",
-        "Consume",
-        "GetLexeme",
-        "Comparison",
-        "Assign",
-        "Concatenation",
-        "Match",
-        "Factor",
-        "Logical",
-        "Term",
+        "OperandsAreBool",
+        "OperandsAreNumbers",
         "Advance",
-        "Power",
-        "Equality",
-        "Statement",
-        "GetType",
+        "GetLexeme",
+        "GetToken",
+        "Assign",
+        "Logical",
         "ParseExpression",
+        "Comparison",
+        "Term",
+        "Consume",
+        "Equality",
+        "GetType",
+        "Factor",
+        "Statement",
+        "Primary",
+        "Match",
+        "Power",
+        "Unary",
+        "Parse",
+        "Concatenation",
         "Main"
     ],
     "method_return_types": [
+        [
+            "Run",
+            "void"
+        ],
         [
             "RunPrompt",
             "void"
@@ -591,27 +595,15 @@
             "void"
         ],
         [
-            "Run",
+            "String",
             "void"
-        ],
-        [
-            "Number",
-            "void"
-        ],
-        [
-            "AddToken",
-            "void"
-        ],
-        [
-            "IsAtEnd",
-            "bool"
         ],
         [
             "IsAlphaNumeric",
             "bool"
         ],
         [
-            "IsAlpha",
+            "Match",
             "bool"
         ],
         [
@@ -619,27 +611,11 @@
             "string"
         ],
         [
-            "Identifier",
-            "void"
-        ],
-        [
-            "Match",
+            "IsAlpha",
             "bool"
         ],
         [
-            "String",
-            "void"
-        ],
-        [
-            "IsDigit",
-            "bool"
-        ],
-        [
-            "PeekNext",
-            "char"
-        ],
-        [
-            "ScanToken",
+            "Number",
             "void"
         ],
         [
@@ -647,12 +623,36 @@
             "List"
         ],
         [
+            "Peek",
+            "char"
+        ],
+        [
+            "PeekNext",
+            "char"
+        ],
+        [
+            "IsAtEnd",
+            "bool"
+        ],
+        [
+            "IsDigit",
+            "bool"
+        ],
+        [
             "Advance",
             "char"
         ],
         [
-            "Peek",
-            "char"
+            "ScanToken",
+            "void"
+        ],
+        [
+            "AddToken",
+            "void"
+        ],
+        [
+            "Identifier",
+            "void"
         ],
         [
             "copy",
@@ -675,19 +675,11 @@
             "object"
         ],
         [
-            "Contains",
-            "bool"
+            "Add",
+            "void"
         ],
         [
             "Init",
-            "void"
-        ],
-        [
-            "Erase",
-            "void"
-        ],
-        [
-            "Add",
             "void"
         ],
         [
@@ -695,11 +687,19 @@
             "Expression"
         ],
         [
-            "SemanticError",
+            "Contains",
+            "bool"
+        ],
+        [
+            "Erase",
             "void"
         ],
         [
             "LexicalError",
+            "void"
+        ],
+        [
+            "SemanticError",
             "void"
         ],
         [
@@ -711,11 +711,11 @@
             "void"
         ],
         [
-            "IsEqual",
+            "OperandIsNumber",
             "bool"
         ],
         [
-            "OperandIsBool",
+            "IsEqual",
             "bool"
         ],
         [
@@ -723,79 +723,15 @@
             "bool"
         ],
         [
+            "OperandIsBool",
+            "bool"
+        ],
+        [
             "OperandsAreNumbers",
             "bool"
         ],
         [
-            "OperandIsNumber",
-            "bool"
-        ],
-        [
-            "Term",
-            "Expression"
-        ],
-        [
-            "Advance",
-            "int"
-        ],
-        [
-            "Parse",
-            "Expression"
-        ],
-        [
-            "Statement",
-            "Expression"
-        ],
-        [
             "Unary",
-            "Expression"
-        ],
-        [
-            "Power",
-            "Expression"
-        ],
-        [
-            "Logical",
-            "Expression"
-        ],
-        [
-            "Factor",
-            "Expression"
-        ],
-        [
-            "GetToken",
-            "Token"
-        ],
-        [
-            "GetType",
-            "TokenType"
-        ],
-        [
-            "Equality",
-            "Expression"
-        ],
-        [
-            "GetLexeme",
-            "string"
-        ],
-        [
-            "Comparison",
-            "Expression"
-        ],
-        [
-            "Concatenation",
-            "Expression"
-        ],
-        [
-            "Consume",
-            "int"
-        ],
-        [
-            "ParseExpression",
-            "Expression"
-        ],
-        [
-            "Primary",
             "Expression"
         ],
         [
@@ -803,8 +739,72 @@
             "bool"
         ],
         [
+            "Factor",
+            "Expression"
+        ],
+        [
+            "Advance",
+            "int"
+        ],
+        [
+            "Power",
+            "Expression"
+        ],
+        [
+            "Comparison",
+            "Expression"
+        ],
+        [
+            "Term",
+            "Expression"
+        ],
+        [
+            "Consume",
+            "int"
+        ],
+        [
+            "GetToken",
+            "Token"
+        ],
+        [
+            "Parse",
+            "Expression"
+        ],
+        [
+            "GetLexeme",
+            "string"
+        ],
+        [
+            "Concatenation",
+            "Expression"
+        ],
+        [
+            "Statement",
+            "Expression"
+        ],
+        [
+            "Primary",
+            "Expression"
+        ],
+        [
             "Assign",
             "List"
+        ],
+        [
+            "Equality",
+            "Expression"
+        ],
+        [
+            "Logical",
+            "Expression"
+        ],
+        [
+            "GetType",
+            "TokenType"
+        ],
+        [
+            "ParseExpression",
+            "Expression"
         ],
         [
             "Main",
@@ -815,16 +815,16 @@
         "HULK",
         "Scanner",
         "Assign",
-        "IfStatement",
-        "Function",
         "Unary",
-        "Call",
-        "Binary",
-        "Expression",
-        "Variable",
-        "Literal",
-        "Grouping",
         "LetStatement",
+        "Function",
+        "Variable",
+        "IfStatement",
+        "Literal",
+        "Binary",
+        "Grouping",
+        "Expression",
+        "Call",
         "Token",
         "Evaluate",
         "Functions",
@@ -958,5 +958,6 @@
         "ErrorNodeImpl": 110
     },
     "project_name": "Sekai02_HulkCompiler",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

@@ -489,15 +489,15 @@
     "variable_names": [
         [
             "HulkTypes",
+            "ifType"
+        ],
+        [
+            "HulkTypes",
             "elseType"
         ],
         [
             "bool",
             "condition"
-        ],
-        [
-            "HulkTypes",
-            "ifType"
         ],
         [
             "var",
@@ -516,8 +516,16 @@
             "enteredType"
         ],
         [
+            "int",
+            "start"
+        ],
+        [
             "MatchCollection",
             "collection"
+        ],
+        [
+            "List",
+            "result"
         ],
         [
             "int",
@@ -528,64 +536,52 @@
             "j"
         ],
         [
-            "List",
-            "result"
-        ],
-        [
-            "string",
-            "instruction"
-        ],
-        [
             "int",
             "parenthesisCount"
         ],
         [
             "int",
-            "start"
+            "result"
         ],
         [
             "string",
-            "tokens"
+            "instruction"
         ],
         [
             "Regex",
             "pattern"
         ],
         [
-            "int",
-            "result"
+            "string",
+            "tokens"
         ],
         [
             "Random",
             "random"
         ],
         [
-            "string",
-            "s"
+            "List",
+            "Instructions"
         ],
         [
             "int",
             "i"
-        ],
-        [
-            "HulkExpression",
-            "exp"
-        ],
-        [
-            "List",
-            "Instructions"
         ],
         [
             "string",
             "instruction"
         ],
         [
-            "string",
-            "messageEnd"
+            "HulkExpression",
+            "exp"
         ],
         [
-            "int",
-            "i"
+            "string",
+            "s"
+        ],
+        [
+            "string",
+            "messageEnd"
         ],
         [
             "HulkExpression",
@@ -593,19 +589,23 @@
         ],
         [
             "List",
-            "left"
+            "Vars"
         ],
         [
             "Variable",
             "var"
         ],
         [
-            "HulkExpression",
-            "expr"
+            "List",
+            "left"
         ],
         [
-            "List",
-            "Vars"
+            "int",
+            "i"
+        ],
+        [
+            "HulkExpression",
+            "expr"
         ],
         [
             "HulkExpression",
@@ -616,12 +616,12 @@
             "result"
         ],
         [
-            "string",
-            "output"
-        ],
-        [
             "Kompiler",
             "kompiler"
+        ],
+        [
+            "string",
+            "output"
         ],
         [
             "MainWindow",
@@ -632,20 +632,20 @@
             "i"
         ],
         [
-            "string",
-            "args"
-        ],
-        [
             "var",
             "lastFunc"
         ],
         [
             "string",
-            "argument"
+            "args"
         ],
         [
             "var",
             "funcNames"
+        ],
+        [
+            "string",
+            "argument"
         ],
         [
             "Dictionary",
@@ -672,20 +672,20 @@
             "i"
         ],
         [
-            "string",
-            "args"
-        ],
-        [
             "var",
             "lastFunc"
         ],
         [
             "string",
-            "argument"
+            "args"
         ],
         [
             "var",
             "funcNames"
+        ],
+        [
+            "string",
+            "argument"
         ],
         [
             "Dictionary",
@@ -696,20 +696,20 @@
             "i"
         ],
         [
-            "string",
-            "args"
-        ],
-        [
             "var",
             "lastFunc"
         ],
         [
             "string",
-            "argument"
+            "args"
         ],
         [
             "var",
             "funcNames"
+        ],
+        [
+            "string",
+            "argument"
         ],
         [
             "Dictionary",
@@ -725,50 +725,50 @@
         ]
     ],
     "method_names": [
+        "CheckType",
         "GetValue",
         "Result",
         "CheckType",
         "GetValue",
-        "CheckType",
         "CheckValue",
         "CheckArgs",
         "GetValue",
         "CheckType",
         "GetNameLimit",
-        "GetTokens",
-        "GetInstructions",
-        "GoToNextParenthesis",
-        "GoToPreviousParenthesis",
         "GetCommaSeparatedTokens",
+        "GoToPreviousParenthesis",
+        "GetInstructions",
+        "GetTokens",
+        "GoToNextParenthesis",
+        "CheckType",
         "GetValue",
         "Evaluate",
-        "CheckType",
-        "Clear",
         "Compile",
+        "Clear",
         "ParseInner",
-        "TryAsignment",
         "Parse",
+        "TryAsignment",
         "ParseInternal",
         "IsCorrectName",
         "AllCorrectNames",
         "Main",
         "pictureBox1_Click",
         "PrintOutput",
-        "Run_Click",
         "GetLastFunctionName",
-        "Dispose",
+        "Run_Click",
         "InitializeComponent",
+        "Dispose",
         "Main",
-        "Dispose",
         "InitializeComponent",
+        "Dispose",
         "CreateMauiApp",
         "OnInputEntryCompleted",
         "PrintOutput",
         "GetLastFunctionName",
         "PrintOutput",
         "GetLastFunctionName",
-        "Button_Clicked",
         "OnInputEntryCompleted",
+        "Button_Clicked",
         "OnInputEntryCompleted",
         "CreateMauiApp",
         "Main",
@@ -785,11 +785,11 @@
             "HulkTypes"
         ],
         [
-            "GetValue",
+            "Result",
             "object"
         ],
         [
-            "Result",
+            "GetValue",
             "object"
         ],
         [
@@ -799,22 +799,34 @@
         [
             "GetValue",
             "object"
+        ],
+        [
+            "CheckType",
+            "HulkTypes"
+        ],
+        [
+            "CheckArgs",
+            "void"
         ],
         [
             "CheckValue",
             "void"
         ],
         [
-            "CheckType",
-            "HulkTypes"
-        ],
-        [
             "GetValue",
             "object"
         ],
         [
-            "CheckArgs",
-            "void"
+            "GetCommaSeparatedTokens",
+            "List"
+        ],
+        [
+            "GoToPreviousParenthesis",
+            "int"
+        ],
+        [
+            "GetInstructions",
+            "List"
         ],
         [
             "GetNameLimit",
@@ -829,27 +841,15 @@
             "string"
         ],
         [
-            "GetCommaSeparatedTokens",
-            "List"
-        ],
-        [
-            "GetInstructions",
-            "List"
-        ],
-        [
-            "GoToPreviousParenthesis",
-            "int"
-        ],
-        [
             "CheckType",
             "HulkTypes"
         ],
         [
-            "GetValue",
+            "Evaluate",
             "object"
         ],
         [
-            "Evaluate",
+            "GetValue",
             "object"
         ],
         [
@@ -861,19 +861,19 @@
             "void"
         ],
         [
-            "ParseInner",
-            "HulkExpression"
-        ],
-        [
-            "Parse",
-            "HulkExpression"
-        ],
-        [
             "ParseInternal",
             "HulkExpression"
         ],
         [
             "TryAsignment",
+            "HulkExpression"
+        ],
+        [
+            "ParseInner",
+            "HulkExpression"
+        ],
+        [
+            "Parse",
             "HulkExpression"
         ],
         [
@@ -893,16 +893,16 @@
             "void"
         ],
         [
-            "PrintOutput",
-            "void"
-        ],
-        [
             "Run_Click",
             "void"
         ],
         [
             "GetLastFunctionName",
             "string"
+        ],
+        [
+            "PrintOutput",
+            "void"
         ],
         [
             "Dispose",
@@ -933,10 +933,6 @@
             "void"
         ],
         [
-            "PrintOutput",
-            "void"
-        ],
-        [
             "GetLastFunctionName",
             "string"
         ],
@@ -947,6 +943,14 @@
         [
             "GetLastFunctionName",
             "string"
+        ],
+        [
+            "PrintOutput",
+            "void"
+        ],
+        [
+            "OnInputEntryCompleted",
+            "void"
         ],
         [
             "Button_Clicked",
@@ -957,10 +961,6 @@
             "void"
         ],
         [
-            "OnInputEntryCompleted",
-            "void"
-        ],
-        [
             "CreateMauiApp",
             "MauiApp"
         ],
@@ -973,12 +973,12 @@
             "MauiApp"
         ],
         [
-            "Main",
-            "void"
-        ],
-        [
             "CreateMauiApp",
             "MauiApp"
+        ],
+        [
+            "Main",
+            "void"
         ],
         [
             "CreateMauiApp",
@@ -995,23 +995,23 @@
     ],
     "class_names": [
         "HulkMemory",
-        "LetInStatement",
         "IfElseStatement",
+        "LetInStatement",
         "BinaryFunction",
-        "Asignment",
-        "Variable",
         "FunctionCall",
+        "Variable",
         "PrintFunc",
+        "Asignment",
         "Tokenizer",
-        "Sine",
         "Rand",
+        "ERaised",
         "UnaryFunction",
         "Cosine",
         "Negative",
         "SquaredRoot",
-        "Positive",
-        "ERaised",
+        "Sine",
         "Negation",
+        "Positive",
         "Kompiler",
         "InstrucctionError",
         "HulkException",
@@ -1204,5 +1204,6 @@
         "Attribute_argumentContext": 11
     },
     "project_name": "CfM47_project_HULK",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

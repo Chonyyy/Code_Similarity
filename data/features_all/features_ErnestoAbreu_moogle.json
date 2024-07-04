@@ -120,7 +120,7 @@
         ],
         [
             "int",
-            "j"
+            "k"
         ],
         [
             "Matrix",
@@ -128,23 +128,19 @@
         ],
         [
             "int",
-            "k"
+            "j"
         ],
         [
             "Matrix",
             "C"
         ],
         [
+            "List",
+            "wordsList"
+        ],
+        [
             "char",
             "separator"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "wordsList"
         ],
         [
             "Dictionary",
@@ -152,27 +148,31 @@
         ],
         [
             "int",
+            "i"
+        ],
+        [
+            "int",
             "k"
-        ],
-        [
-            "string",
-            "words"
-        ],
-        [
-            "List",
-            "wordsList"
         ],
         [
             "string",
             "newWord"
         ],
         [
-            "float",
-            "dot_product"
+            "string",
+            "wordsList"
+        ],
+        [
+            "string",
+            "words"
         ],
         [
             "float",
             "module"
+        ],
+        [
+            "float",
+            "dot_product"
         ],
         [
             "int",
@@ -181,13 +181,13 @@
     ],
     "method_names": [
         "Items",
-        "Transpose",
         "debug",
-        "GetWords",
+        "Transpose",
         "Normalize",
-        "WordsList",
+        "GetWords",
         "IsLetter",
         "DocumentsNameList",
+        "WordsList",
         "Dot_Product",
         "Module"
     ],
@@ -197,11 +197,11 @@
             "IEnumerable"
         ],
         [
-            "Transpose",
+            "debug",
             "void"
         ],
         [
-            "debug",
+            "Transpose",
             "void"
         ],
         [
@@ -209,12 +209,12 @@
             "string"
         ],
         [
-            "IsLetter",
-            "bool"
-        ],
-        [
             "DocumentsNameList",
             "string"
+        ],
+        [
+            "IsLetter",
+            "bool"
         ],
         [
             "GetWords",
@@ -225,11 +225,11 @@
             "string"
         ],
         [
-            "Module",
+            "Dot_Product",
             "float"
         ],
         [
-            "Dot_Product",
+            "Module",
             "float"
         ]
     ],
@@ -355,5 +355,6 @@
         "Cast_expressionContext": 1
     },
     "project_name": "ErnestoAbreu_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

@@ -174,29 +174,30 @@
     },
     "project_name": "melisapo_moogle",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.07677952945232391,
-        0.017400294542312622
+        0.031093377619981766,
+        0.21858923137187958
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.14861519634723663,
-        0.11599384248256683
+        0.024032380431890488,
+        0.17336536943912506
     ],
     "method_names_vector": [
-        0.01173574011772871,
-        0.07691974192857742
+        -0.020354172214865685,
+        0.13010920584201813
     ],
     "class_names_vector": [
-        0.015816565603017807,
-        0.049387942999601364
+        0.25195538997650146,
+        0.12741507589817047
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        0.0108366459608078,
-        0.0560423769056797,
-        0.19627633690834045,
-        0.1340464949607849
+        -0.04799392819404602,
+        0.16034460067749023,
+        0.27164068818092346,
+        0.21809269487857819
     ]
 }

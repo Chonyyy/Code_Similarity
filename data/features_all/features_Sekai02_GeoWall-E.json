@@ -2123,100 +2123,12 @@
     ],
     "variable_names": [
         [
-            "Equation",
-            "equation"
-        ],
-        [
-            "var",
-            "aloneX"
-        ],
-        [
-            "double",
-            "c2"
-        ],
-        [
             "double",
             "a2"
         ],
         [
             "double",
-            "a1"
-        ],
-        [
-            "double",
-            "x1"
-        ],
-        [
-            "double",
-            "x"
-        ],
-        [
-            "List",
-            "xi"
-        ],
-        [
-            "double",
-            "c"
-        ],
-        [
-            "SimpleCuadraticEquation",
-            "cuadratic"
-        ],
-        [
-            "double",
-            "y"
-        ],
-        [
-            "double",
-            "a"
-        ],
-        [
-            "List",
-            "results"
-        ],
-        [
-            "List",
-            "result"
-        ],
-        [
-            "double",
-            "theta"
-        ],
-        [
-            "List",
-            "yi"
-        ],
-        [
-            "ParameterConstrains",
-            "thetaConstrain"
-        ],
-        [
-            "double",
             "x2"
-        ],
-        [
-            "ParameterConstrains",
-            "constrainsX"
-        ],
-        [
-            "double",
-            "c1"
-        ],
-        [
-            "var",
-            "aloneY"
-        ],
-        [
-            "var",
-            "thetaConstrain"
-        ],
-        [
-            "double",
-            "xc"
-        ],
-        [
-            "double",
-            "b2"
         ],
         [
             "double",
@@ -2224,19 +2136,107 @@
         ],
         [
             "double",
-            "yc"
+            "c1"
         ],
         [
             "double",
-            "determinant"
+            "x"
+        ],
+        [
+            "double",
+            "b2"
+        ],
+        [
+            "double",
+            "theta"
         ],
         [
             "double",
             "b"
         ],
         [
+            "List",
+            "xi"
+        ],
+        [
             "ParameterConstrains",
             "constrainsY"
+        ],
+        [
+            "double",
+            "a"
+        ],
+        [
+            "var",
+            "aloneY"
+        ],
+        [
+            "double",
+            "c2"
+        ],
+        [
+            "double",
+            "yc"
+        ],
+        [
+            "ParameterConstrains",
+            "thetaConstrain"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "Equation",
+            "equation"
+        ],
+        [
+            "List",
+            "yi"
+        ],
+        [
+            "double",
+            "xc"
+        ],
+        [
+            "double",
+            "determinant"
+        ],
+        [
+            "List",
+            "results"
+        ],
+        [
+            "SimpleCuadraticEquation",
+            "cuadratic"
+        ],
+        [
+            "ParameterConstrains",
+            "constrainsX"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "var",
+            "thetaConstrain"
+        ],
+        [
+            "var",
+            "aloneX"
+        ],
+        [
+            "double",
+            "c"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "double",
+            "a1"
         ],
         [
             "double",
@@ -2251,20 +2251,36 @@
             "isFigure"
         ],
         [
+            "var",
+            "currentScope"
+        ],
+        [
             "int",
             "i"
         ],
         [
-            "var",
-            "currentScope"
+            "double",
+            "x2"
+        ],
+        [
+            "GSPoint",
+            "point2"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "double",
+            "y1"
         ],
         [
             "GSNumber",
             "division"
         ],
         [
-            "double",
-            "x2"
+            "GSPoint",
+            "point1"
         ],
         [
             "var",
@@ -2275,36 +2291,16 @@
             "x1"
         ],
         [
-            "double",
-            "y2"
-        ],
-        [
-            "GSPoint",
-            "point2"
-        ],
-        [
-            "GSPoint",
-            "point1"
-        ],
-        [
-            "double",
-            "y1"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "IEnumerable",
             "newSequence"
         ],
         [
-            "GSNumber",
-            "end"
+            "int",
+            "newCount"
         ],
         [
             "int",
-            "newCount"
+            "i"
         ],
         [
             "GSNumber",
@@ -2315,8 +2311,8 @@
             "rightValues"
         ],
         [
-            "double",
-            "limitX"
+            "GSNumber",
+            "end"
         ],
         [
             "var",
@@ -2324,67 +2320,11 @@
         ],
         [
             "double",
-            "endAngle"
-        ],
-        [
-            "double",
-            "alpha"
-        ],
-        [
-            "double",
-            "y1"
-        ],
-        [
-            "var",
-            "center"
-        ],
-        [
-            "ParameterConstrains",
-            "angleConstrain"
-        ],
-        [
-            "var",
-            "endPoint"
-        ],
-        [
-            "double",
-            "angle"
-        ],
-        [
-            "double",
-            "x1"
-        ],
-        [
-            "double",
-            "x"
-        ],
-        [
-            "double",
-            "y2"
-        ],
-        [
-            "double",
-            "startAngle"
-        ],
-        [
-            "double",
-            "y"
-        ],
-        [
-            "var",
-            "p2"
+            "x2"
         ],
         [
             "var",
             "radius"
-        ],
-        [
-            "Random",
-            "random"
-        ],
-        [
-            "double",
-            "theta"
         ],
         [
             "var",
@@ -2392,7 +2332,7 @@
         ],
         [
             "double",
-            "x2"
+            "x"
         ],
         [
             "var",
@@ -2400,35 +2340,23 @@
         ],
         [
             "double",
-            "limit"
-        ],
-        [
-            "ParameterConstrains",
-            "constrainsX"
-        ],
-        [
-            "Vector",
-            "movementVector"
+            "alpha"
         ],
         [
             "double",
-            "limitY"
-        ],
-        [
-            "var",
-            "y"
-        ],
-        [
-            "double",
-            "xc"
-        ],
-        [
-            "double",
-            "yc"
+            "theta"
         ],
         [
             "var",
             "startPoint"
+        ],
+        [
+            "ParameterConstrains",
+            "constrainsY"
+        ],
+        [
+            "Random",
+            "random"
         ],
         [
             "var",
@@ -2436,11 +2364,83 @@
         ],
         [
             "double",
-            "sweepAngle"
+            "startAngle"
         ],
         [
             "ParameterConstrains",
-            "constrainsY"
+            "angleConstrain"
+        ],
+        [
+            "var",
+            "center"
+        ],
+        [
+            "double",
+            "yc"
+        ],
+        [
+            "double",
+            "sweepAngle"
+        ],
+        [
+            "Vector",
+            "movementVector"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "xc"
+        ],
+        [
+            "double",
+            "limit"
+        ],
+        [
+            "var",
+            "p2"
+        ],
+        [
+            "ParameterConstrains",
+            "constrainsX"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "double",
+            "limitX"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "double",
+            "endAngle"
+        ],
+        [
+            "var",
+            "endPoint"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "double",
+            "limitY"
         ],
         [
             "double",
@@ -2455,52 +2455,52 @@
             "c"
         ],
         [
-            "string",
-            "text"
+            "TokenType",
+            "type"
         ],
         [
             "object",
             "literal"
         ],
         [
-            "TokenType",
-            "type"
-        ],
-        [
             "string",
             "value"
         ],
         [
-            "List",
-            "statements"
+            "string",
+            "text"
         ],
         [
             "string",
             "full"
         ],
         [
-            "Scanner",
-            "scanner"
+            "byte",
+            "bytes"
+        ],
+        [
+            "List",
+            "statements"
         ],
         [
             "List",
             "tokens"
         ],
         [
-            "byte",
-            "bytes"
-        ],
-        [
-            "Evaluator",
-            "evaluator"
+            "Resolver",
+            "resolver"
         ],
         [
             "TypeChecker",
             "typeChecker"
         ],
         [
-            "Resolver",
-            "resolver"
+            "Scanner",
+            "scanner"
+        ],
+        [
+            "Evaluator",
+            "evaluator"
         ],
         [
             "Parser",
@@ -2516,103 +2516,15 @@
         ],
         [
             "List",
-            "statements"
-        ],
-        [
-            "string",
-            "label"
-        ],
-        [
-            "GSharpExpression",
-            "body"
-        ],
-        [
-            "Container",
-            "container"
-        ],
-        [
-            "List",
-            "arguments"
-        ],
-        [
-            "List",
-            "variableNames"
-        ],
-        [
-            "GSharpExpression",
-            "right"
-        ],
-        [
-            "List",
             "expressions"
-        ],
-        [
-            "bool",
-            "ellipsisBetween"
-        ],
-        [
-            "GSharpExpression",
-            "rightBound"
-        ],
-        [
-            "List",
-            "parameters"
-        ],
-        [
-            "GSharpExpression",
-            "elseBranch"
-        ],
-        [
-            "GSharpExpression",
-            "condition"
-        ],
-        [
-            "Token",
-            "oper"
-        ],
-        [
-            "GSharpExpression",
-            "thenBranch"
-        ],
-        [
-            "GSharpExpression",
-            "expression"
-        ],
-        [
-            "GSharpExpression",
-            "expr"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "GSharpExpression",
-            "expressionToDraw"
-        ],
-        [
-            "string",
-            "libraryName"
-        ],
-        [
-            "GSharpExpression",
-            "expressionToPrint"
         ],
         [
             "GSharpExpression",
             "value"
         ],
         [
-            "GSharpExpression",
-            "leftBound"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "Token",
-            "previous"
+            "List",
+            "variableNames"
         ],
         [
             "Container",
@@ -2620,7 +2532,71 @@
         ],
         [
             "string",
+            "label"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "GSharpExpression",
+            "body"
+        ],
+        [
+            "GSharpExpression",
+            "elseBranch"
+        ],
+        [
+            "GSharpExpression",
+            "expressionToDraw"
+        ],
+        [
+            "Container",
+            "container"
+        ],
+        [
+            "List",
+            "sequenceValues"
+        ],
+        [
+            "List",
+            "statements"
+        ],
+        [
+            "GSharpExpression",
+            "expressionToPrint"
+        ],
+        [
+            "Token",
+            "previous"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "GSharpExpression",
+            "expr"
+        ],
+        [
+            "bool",
+            "ellipsisBetween"
+        ],
+        [
+            "GSharpExpression",
+            "expression"
+        ],
+        [
+            "GSharpExpression",
+            "rightBound"
+        ],
+        [
+            "string",
             "colorName"
+        ],
+        [
+            "GSharpExpression",
+            "condition"
         ],
         [
             "string",
@@ -2628,83 +2604,35 @@
         ],
         [
             "List",
-            "sequenceValues"
+            "parameters"
         ],
         [
-            "BinaryOverloadInfo",
-            "compareMeasuresInfo"
+            "string",
+            "libraryName"
         ],
         [
-            "BinaryOverloadInfo",
-            "naturalLowerEqualMeasureInfo"
+            "Token",
+            "oper"
         ],
         [
-            "BinaryOverloadInfo",
-            "naturalGreaterMeasureInfo"
+            "GSharpExpression",
+            "right"
         ],
         [
-            "BinaryOverloadInfo",
-            "measureUnequalNaturalInfo"
+            "GSharpExpression",
+            "thenBranch"
         ],
         [
-            "BinaryOverloadInfo",
-            "divideNumbersInfo"
+            "GSharpExpression",
+            "leftBound"
         ],
         [
-            "BinaryOverloadInfo",
-            "numberSumInfo"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "naturalEqualMeasureInfo"
+            "List",
+            "arguments"
         ],
         [
             "GSNumber",
             "left"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "info"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "measureEqualNaturalInfo"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "naturalTimesMeasureInfo"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "naturalUnequalMeasureInfo"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "measureSumInfo"
-        ],
-        [
-            "ISequenciable",
-            "right"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "measureGreaterEqualNaturalInfo"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "multiplyNumbersInfo"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "divideMeasuresInfo"
-        ],
-        [
-            "var",
-            "result"
-        ],
-        [
-            "BinaryOverloadInfo",
-            "naturalLowerMeasureInfo"
         ],
         [
             "BinaryOverloadInfo",
@@ -2712,19 +2640,59 @@
         ],
         [
             "BinaryOverloadInfo",
-            "compareNumbersInfo"
+            "naturalGreaterMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "numberSumInfo"
+        ],
+        [
+            "ISequenciable",
+            "left"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "divideNumbersInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureUnequalNaturalInfo"
         ],
         [
             "BinaryOverloadInfo",
             "measureLowerNaturalInfo"
         ],
         [
-            "bool",
-            "result"
+            "BinaryOverloadInfo",
+            "multiplyNumbersInfo"
         ],
         [
-            "ISequenciable",
-            "result"
+            "BinaryOverloadInfo",
+            "compareMeasuresInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureSumInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "divideMeasuresInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalUnequalMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalTimesMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureTimesNaturalInfo"
         ],
         [
             "GSNumber",
@@ -2732,27 +2700,59 @@
         ],
         [
             "BinaryOverloadInfo",
-            "measureTimesNaturalInfo"
+            "compareNumbersInfo"
         ],
         [
             "BinaryOverloadInfo",
-            "measureGreaterNaturalInfo"
+            "naturalLowerMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "naturalLowerEqualMeasureInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "info"
+        ],
+        [
+            "ISequenciable",
+            "right"
         ],
         [
             "BinaryOverloadInfo",
             "measureLowerEqualNaturalInfo"
         ],
         [
+            "ISequenciable",
+            "result"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureGreaterEqualNaturalInfo"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureGreaterNaturalInfo"
+        ],
+        [
+            "bool",
+            "result"
+        ],
+        [
+            "BinaryOverloadInfo",
+            "measureEqualNaturalInfo"
+        ],
+        [
             "BinaryOverloadInfo",
             "naturalGreaterEqualMeasureInfo"
         ],
         [
-            "ISequenciable",
-            "left"
+            "BinaryOverloadInfo",
+            "naturalEqualMeasureInfo"
         ],
         [
-            "double",
-            "end"
+            "List",
+            "list"
         ],
         [
             "List",
@@ -2760,10 +2760,18 @@
         ],
         [
             "double",
-            "start"
+            "end"
         ],
         [
             "int",
+            "count"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
             "i"
         ],
         [
@@ -2772,19 +2780,11 @@
         ],
         [
             "double",
-            "i"
-        ],
-        [
-            "double",
             "bound"
         ],
         [
-            "int",
-            "count"
-        ],
-        [
-            "List",
-            "list"
+            "double",
+            "start"
         ],
         [
             "UnaryOverloadInfo",
@@ -2795,20 +2795,40 @@
             "builder"
         ],
         [
-            "var",
-            "result"
+            "string",
+            "path"
         ],
         [
             "var",
             "file"
         ],
         [
-            "string",
-            "path"
+            "var",
+            "result"
         ],
         [
             "var",
             "app"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "float",
+            "y1"
+        ],
+        [
+            "float",
+            "y2"
+        ],
+        [
+            "double",
+            "verticalY"
+        ],
+        [
+            "double",
+            "finalX2"
         ],
         [
             "Font",
@@ -2816,98 +2836,10 @@
         ],
         [
             "double",
-            "topLeftX"
-        ],
-        [
-            "double",
-            "topLeftY"
-        ],
-        [
-            "double",
-            "finalY2"
-        ],
-        [
-            "float",
-            "x2"
-        ],
-        [
-            "double",
-            "radius"
-        ],
-        [
-            "double",
-            "xMessage"
-        ],
-        [
-            "double",
-            "endAngle"
-        ],
-        [
-            "double",
-            "finalX1"
-        ],
-        [
-            "double",
-            "y1"
-        ],
-        [
-            "double",
-            "finalX2"
-        ],
-        [
-            "double",
-            "angle"
-        ],
-        [
-            "double",
-            "yMessage"
-        ],
-        [
-            "float",
-            "finalX"
-        ],
-        [
-            "double",
-            "x1"
-        ],
-        [
-            "double",
             "x"
         ],
         [
             "double",
-            "y2"
-        ],
-        [
-            "double",
-            "startAngle"
-        ],
-        [
-            "Brush",
-            "brush"
-        ],
-        [
-            "double",
-            "y"
-        ],
-        [
-            "string",
-            "s"
-        ],
-        [
-            "double",
-            "x2"
-        ],
-        [
-            "float",
-            "verticalY2"
-        ],
-        [
-            "double",
-            "n"
-        ],
-        [
-            "float",
             "radius"
         ],
         [
@@ -2916,23 +2848,15 @@
         ],
         [
             "float",
-            "verticalY1"
+            "x2"
         ],
         [
             "double",
-            "xc"
-        ],
-        [
-            "float",
-            "y1"
+            "finalX1"
         ],
         [
             "double",
-            "yc"
-        ],
-        [
-            "double",
-            "finalX"
+            "finalY1"
         ],
         [
             "double",
@@ -2940,15 +2864,23 @@
         ],
         [
             "float",
+            "radius"
+        ],
+        [
+            "double",
+            "startAngle"
+        ],
+        [
+            "float",
             "x"
         ],
         [
-            "float",
-            "y2"
+            "Brush",
+            "brush"
         ],
         [
-            "float",
-            "x1"
+            "double",
+            "yc"
         ],
         [
             "double",
@@ -2956,7 +2888,71 @@
         ],
         [
             "double",
-            "verticalY"
+            "n"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "finalY2"
+        ],
+        [
+            "double",
+            "xc"
+        ],
+        [
+            "double",
+            "xMessage"
+        ],
+        [
+            "float",
+            "x1"
+        ],
+        [
+            "double",
+            "topLeftX"
+        ],
+        [
+            "double",
+            "finalX"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "float",
+            "verticalY2"
+        ],
+        [
+            "float",
+            "verticalY1"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "double",
+            "endAngle"
+        ],
+        [
+            "float",
+            "finalX"
+        ],
+        [
+            "string",
+            "s"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "double",
+            "y2"
         ],
         [
             "float",
@@ -2964,59 +2960,39 @@
         ],
         [
             "double",
-            "finalY1"
+            "yMessage"
+        ],
+        [
+            "double",
+            "topLeftY"
         ],
         [
             "System",
             "resources"
         ],
         [
-            "string",
-            "functions"
-        ],
-        [
-            "List",
-            "statements"
-        ],
-        [
-            "MatchCollection",
-            "tertiaryOperatorsMatch"
-        ],
-        [
-            "FileInfo",
-            "info"
-        ],
-        [
-            "Bitmap",
-            "image"
-        ],
-        [
-            "var",
-            "countcall"
-        ],
-        [
-            "string",
-            "strings"
-        ],
-        [
-            "string",
-            "variables"
-        ],
-        [
-            "string",
-            "numbers"
-        ],
-        [
-            "DirectoryInfo",
-            "info"
-        ],
-        [
             "var",
             "match"
         ],
         [
-            "var",
-            "directory"
+            "MatchCollection",
+            "functionsMatch"
+        ],
+        [
+            "string",
+            "keywords"
+        ],
+        [
+            "PictureDrawer",
+            "drawer"
+        ],
+        [
+            "int",
+            "originalIndex"
+        ],
+        [
+            "List",
+            "statements"
         ],
         [
             "Color",
@@ -3024,23 +3000,19 @@
         ],
         [
             "string",
-            "keywords"
+            "tertiaryOperators"
         ],
         [
-            "Evaluator",
-            "evaluator"
+            "var",
+            "directory"
         ],
         [
-            "int",
-            "originalIndex"
+            "var",
+            "node"
         ],
         [
-            "MatchCollection",
-            "stringsMatch"
-        ],
-        [
-            "Resolver",
-            "resolver"
+            "string",
+            "strings"
         ],
         [
             "MatchCollection",
@@ -3048,51 +3020,79 @@
         ],
         [
             "var",
-            "count"
+            "countcall"
         ],
         [
-            "var",
-            "node"
+            "Resolver",
+            "resolver"
         ],
         [
             "MatchCollection",
-            "keywordsMatch"
+            "tertiaryOperatorsMatch"
+        ],
+        [
+            "string",
+            "numbers"
         ],
         [
             "int",
             "originalLength"
         ],
         [
-            "string",
-            "comments"
-        ],
-        [
-            "MatchCollection",
-            "functionsMatch"
-        ],
-        [
-            "var",
-            "file"
-        ],
-        [
-            "PictureDrawer",
-            "drawer"
+            "Evaluator",
+            "evaluator"
         ],
         [
             "MatchCollection",
             "numbersMatch"
         ],
         [
-            "string",
-            "tertiaryOperators"
+            "DirectoryInfo",
+            "info"
+        ],
+        [
+            "FileInfo",
+            "info"
+        ],
+        [
+            "MatchCollection",
+            "keywordsMatch"
+        ],
+        [
+            "MatchCollection",
+            "stringsMatch"
         ],
         [
             "TypeChecker",
             "typeChecker"
         ],
         [
+            "var",
+            "count"
+        ],
+        [
+            "var",
+            "file"
+        ],
+        [
+            "string",
+            "variables"
+        ],
+        [
             "MatchCollection",
             "commentsMatch"
+        ],
+        [
+            "Bitmap",
+            "image"
+        ],
+        [
+            "string",
+            "functions"
+        ],
+        [
+            "string",
+            "comments"
         ],
         [
             "global",
@@ -3104,269 +3104,261 @@
         ]
     ],
     "method_names": [
-        "Dispose",
         "InitializeComponent",
-        "DrawArc",
-        "DrawSegment",
-        "DrawRay",
-        "DrawLine",
-        "DrawPoint",
+        "Dispose",
         "DrawCircle",
-        "DrawSequence",
         "DrawString",
+        "DrawSequence",
+        "DrawArc",
+        "DrawPoint",
+        "DrawLine",
+        "DrawRay",
+        "DrawSegment",
         "Main",
-        "SolveCircularSystem",
-        "EvaluateEcuation",
-        "FilterInRangeSolutions",
-        "Solve",
-        "SolveLinearSystem",
-        "SubstituteVariable",
-        "AcceptAllConstrains",
         "IsInRange",
         "SolveCircularLinearSystem",
-        "PrintError",
+        "FilterInRangeSolutions",
+        "SubstituteVariable",
+        "EvaluateEcuation",
+        "SolveCircularSystem",
+        "SolveLinearSystem",
+        "AcceptAllConstrains",
+        "Solve",
         "PrintErrors",
         "Print",
-        "DrawSegment",
-        "DrawArc",
-        "SetColor",
-        "DrawRay",
-        "Reset",
-        "DrawLine",
-        "DrawEnumerable",
-        "DrawPoint",
+        "PrintError",
         "DrawCircle",
-        "DrawString",
         "GetRandomPoint",
+        "DrawString",
         "DrawSequence",
-        "Draw",
+        "SetColor",
+        "DrawArc",
         "ResetColor",
+        "DrawLine",
+        "DrawPoint",
+        "Reset",
+        "Draw",
+        "DrawEnumerable",
+        "DrawRay",
+        "DrawSegment",
+        "ToString",
         "SetIsFigureProperty",
         "ConvertToType",
-        "ToString",
         "AccessVariable",
-        "DefineVariable",
-        "DefineFunction",
-        "BindValue",
         "DeclareVariable",
+        "DefineFunction",
+        "DefineVariable",
         "BeginScope",
-        "EndScope",
+        "BindValue",
         "DeclareFunction",
-        "GetRandomInstance",
+        "EndScope",
         "ToValueOfTruth",
+        "GetRandomInstance",
+        "GetInstanceFromParameters",
         "ToString",
         "GetInstanceFromParameters",
-        "GetInstanceFromParameters",
         "GetRandomInstance",
-        "GetTail",
-        "GetSequence",
-        "GetRandomNumbers",
-        "FiniteRange",
-        "AttachSequence",
         "InfiniteRange",
         "GetCount",
-        "GetRandomInstance",
-        "GetLineAngleRad",
+        "GetTail",
+        "AttachSequence",
+        "FiniteRange",
+        "GetSequence",
+        "GetRandomNumbers",
         "GetRandomPoint",
+        "GetLineAngleRad",
         "ToString",
         "Draw",
+        "GetRandomInstance",
         "GetInstanceFromParameters",
         "GetNormalized",
-        "IsAtEnd",
-        "_String",
-        "Peek",
         "IsDigit",
-        "Match",
+        "_String",
         "Identifier",
-        "AddToken",
-        "SkipLine",
         "Number",
-        "PeekNext",
+        "ScanTokens",
+        "Match",
+        "IsAtEnd",
         "Advance",
         "Substring",
-        "IsAlphaNumeric",
-        "ScanToken",
-        "ScanTokens",
+        "SkipLine",
         "IsAlpha",
-        "Run",
-        "Scan",
-        "InitializeGSharpStandard",
-        "RunLibraryFile",
+        "PeekNext",
+        "IsAlphaNumeric",
+        "Peek",
+        "AddToken",
+        "ScanToken",
         "RunLibrary",
+        "Scan",
+        "Run",
         "RunFile",
+        "RunLibraryFile",
+        "InitializeGSharpStandard",
         "ToString",
         "LexicalError",
-        "Report",
         "SemanticError",
         "SyntaxError",
+        "Report",
         "SerializeObject",
         "DeserializeObject",
-        "IsAtEnd",
-        "Parse",
-        "ParseEquality",
-        "ParsePrimary",
-        "ParsePrintStatement",
-        "ParseExpression",
-        "ParseIfStatement",
-        "Advance",
-        "ParseLogicalOr",
-        "ParseReceiverStatement",
-        "TryFindBefore",
-        "TryFind",
-        "ParseDeclaration",
-        "Match",
-        "ParseImportStatement",
-        "ParseStatement",
-        "ParseDrawStatement",
-        "ParseColorStatement",
-        "Peek",
         "ParseConstantDeclaration",
-        "ParseExpressionStatement",
-        "ParseFunctionDeclaration",
+        "Parse",
+        "ParseLetStatement",
+        "ParseColorStatement",
+        "ParseEquality",
+        "Peek",
+        "Check",
+        "ParseImportStatement",
+        "TryFind",
+        "ParseUnary",
+        "ParsePrintStatement",
+        "ParseTerm",
         "ParseComparison",
-        "InferType",
-        "ParseFactor",
+        "Advance",
         "Synchronize",
         "CheckAhead",
-        "ParseTerm",
+        "ParseStatement",
+        "ParseExpressionStatement",
+        "ParseLogicalOr",
+        "ParseExpression",
+        "ParseDrawStatement",
         "Previous",
+        "InferType",
+        "Match",
         "ParseLogicalAnd",
+        "ParsePrimary",
+        "TryFindBefore",
+        "ParseIfStatement",
+        "ParseDeclaration",
         "Consume",
-        "Check",
-        "ParseUnary",
-        "ParseLetStatement",
-        "GetEnvironments",
+        "ParseReceiverStatement",
+        "IsAtEnd",
+        "ParseFactor",
+        "ParseFunctionDeclaration",
         "LoadLibrary",
+        "GetEnvironments",
         "Accept",
         "Accept",
-        "VisitRecieverStatement",
-        "VisitStatements",
-        "VisitColorStatent",
-        "VisitConstantDeclaration",
-        "VisitRestoreStatement",
-        "VisitPrintStatement",
-        "VisitExpressionStatement",
         "VisitImportStatement",
+        "VisitColorStatent",
+        "VisitPrintStatement",
         "VisitFunctionDeclaration",
+        "VisitConstantDeclaration",
+        "VisitStatements",
         "VisitDrawStatement",
+        "VisitExpressionStatement",
+        "VisitRecieverStatement",
+        "VisitRestoreStatement",
         "Accept",
+        "GetType",
         "GetArgumentsAmount",
         "Evaluate",
-        "GetType",
         "Accept",
         "Accept",
         "Accept",
         "Accept",
         "Accept",
-        "IsAnAcceptedOverload",
         "Accept",
         "GetLogic",
         "GetArithmetic",
-        "VisitLiteralUndefined",
-        "VisitIfThenElse",
-        "VisitLiteralSequence",
+        "IsAnAcceptedOverload",
+        "VisitUnaryOperation",
         "VisitBinaryOperation",
         "VisitLetIn",
+        "VisitLiteralNumber",
+        "VisitLiteralSequence",
+        "VisitLiteralUndefined",
+        "VisitFunctionCall",
+        "VisitIfThenElse",
         "VisitLiteralString",
         "VisitConstant",
-        "VisitFunctionCall",
-        "VisitUnaryOperation",
-        "VisitLiteralNumber",
-        "GetTail",
-        "FiniteRange",
-        "InfiniteRange",
-        "Accept",
-        "ToGSharpObjectSequence",
-        "ToGSharpObjectList",
-        "ChoppSequence",
         "GetSequenceValue",
-        "IsAnAcceptedOverload",
+        "ToGSharpObjectList",
+        "Accept",
+        "InfiniteRange",
+        "GetTail",
+        "ChoppSequence",
+        "FiniteRange",
+        "ToGSharpObjectSequence",
         "Accept",
         "GetLogic",
         "GetArithmetic",
+        "IsAnAcceptedOverload",
         "Accept",
         "Evaluate",
         "Evaluate",
         "Evaluate",
         "CreateMauiApp",
         "OnCounterClicked",
-        "DrawArc",
-        "DrawSegment",
-        "ResetColor",
+        "DrawCircle",
+        "DrawString",
         "PickFile",
-        "DrawRay",
-        "SetColor",
-        "Reset",
-        "DrawLine",
-        "DrawEnumerable",
-        "DrawPoint",
-        "DrawCircle",
         "DrawSequence",
-        "OpenFolder",
+        "SetColor",
+        "DrawArc",
+        "ResetColor",
+        "DrawLine",
+        "DrawPoint",
         "Draw",
-        "DrawString",
-        "CreateMauiApp",
-        "Main",
-        "CreateMauiApp",
-        "Main",
-        "CreateMauiApp",
-        "CreateMauiApp",
-        "CreateMauiApp",
-        "Main",
-        "DrawArc",
-        "DrawSegment",
-        "ResetColor",
+        "Reset",
+        "DrawEnumerable",
         "DrawRay",
-        "SetColor",
+        "DrawSegment",
+        "OpenFolder",
+        "CreateMauiApp",
+        "Main",
+        "CreateMauiApp",
+        "CreateMauiApp",
+        "Main",
+        "CreateMauiApp",
+        "CreateMauiApp",
+        "Main",
+        "DrawCircle",
         "GetLineAngleDeg",
-        "Reset",
-        "DrawLine",
-        "DrawEnumerable",
-        "DrawPoint",
-        "DrawCircle",
-        "DrawSequence",
-        "WriteMessage",
         "DrawString",
-        "Dispose",
-        "InitializeComponent",
-        "treeView1_NodeMouseDoubleClick",
-        "Entry_TextChanged",
-        "Test",
-        "Input_KeyDown",
-        "openToolStripMenuItem_Click",
-        "exitToolStripMenuItem_Click",
-        "Main",
-        "DrawArc",
-        "DrawSegment",
-        "Print",
-        "ResetColor",
-        "DrawRay",
-        "SetColor",
-        "PrintError",
-        "Reset",
-        "DrawLine",
-        "DrawEnumerable",
-        "DrawPoint",
-        "DrawCircle",
-        "Main",
+        "WriteMessage",
         "DrawSequence",
-        "DrawString"
+        "SetColor",
+        "DrawArc",
+        "ResetColor",
+        "DrawLine",
+        "DrawPoint",
+        "Reset",
+        "DrawEnumerable",
+        "DrawRay",
+        "DrawSegment",
+        "InitializeComponent",
+        "Dispose",
+        "openToolStripMenuItem_Click",
+        "Entry_TextChanged",
+        "Input_KeyDown",
+        "Test",
+        "exitToolStripMenuItem_Click",
+        "treeView1_NodeMouseDoubleClick",
+        "Main",
+        "DrawCircle",
+        "DrawString",
+        "DrawSequence",
+        "PrintError",
+        "SetColor",
+        "DrawArc",
+        "ResetColor",
+        "DrawLine",
+        "DrawPoint",
+        "Reset",
+        "Print",
+        "DrawEnumerable",
+        "DrawRay",
+        "DrawSegment",
+        "Main"
     ],
     "method_return_types": [
-        [
-            "Dispose",
-            "void"
-        ],
         [
             "InitializeComponent",
             "void"
         ],
         [
-            "DrawSequence",
-            "void"
-        ],
-        [
-            "DrawString",
+            "Dispose",
             "void"
         ],
         [
@@ -3374,15 +3366,7 @@
             "void"
         ],
         [
-            "DrawPoint",
-            "void"
-        ],
-        [
             "DrawSegment",
-            "void"
-        ],
-        [
-            "DrawLine",
             "void"
         ],
         [
@@ -3390,7 +3374,23 @@
             "void"
         ],
         [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawPoint",
+            "void"
+        ],
+        [
+            "DrawSequence",
+            "void"
+        ],
+        [
             "DrawArc",
+            "void"
+        ],
+        [
+            "DrawString",
             "void"
         ],
         [
@@ -3398,12 +3398,16 @@
             "void"
         ],
         [
-            "SubstituteVariable",
-            "SimpleCuadraticEquation"
-        ],
-        [
             "Solve",
             "List"
+        ],
+        [
+            "IsInRange",
+            "bool"
+        ],
+        [
+            "SubstituteVariable",
+            "SimpleCuadraticEquation"
         ],
         [
             "AcceptAllConstrains",
@@ -3418,20 +3422,16 @@
             "IEnumerable"
         ],
         [
-            "IsInRange",
-            "bool"
-        ],
-        [
-            "SolveCircularLinearSystem",
-            "List"
+            "EvaluateEcuation",
+            "double"
         ],
         [
             "SolveLinearSystem",
             "List"
         ],
         [
-            "EvaluateEcuation",
-            "double"
+            "SolveCircularLinearSystem",
+            "List"
         ],
         [
             "PrintErrors",
@@ -3446,15 +3446,7 @@
             "void"
         ],
         [
-            "SetColor",
-            "void"
-        ],
-        [
-            "DrawSequence",
-            "void"
-        ],
-        [
-            "DrawString",
+            "Reset",
             "void"
         ],
         [
@@ -3462,31 +3454,7 @@
             "void"
         ],
         [
-            "DrawPoint",
-            "void"
-        ],
-        [
-            "ResetColor",
-            "void"
-        ],
-        [
             "DrawSegment",
-            "void"
-        ],
-        [
-            "Draw",
-            "void"
-        ],
-        [
-            "GetRandomPoint",
-            "GSPoint"
-        ],
-        [
-            "DrawLine",
-            "void"
-        ],
-        [
-            "DrawCircle",
             "void"
         ],
         [
@@ -3494,7 +3462,31 @@
             "void"
         ],
         [
-            "Reset",
+            "GetRandomPoint",
+            "GSPoint"
+        ],
+        [
+            "SetColor",
+            "void"
+        ],
+        [
+            "DrawCircle",
+            "void"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawPoint",
+            "void"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "DrawSequence",
             "void"
         ],
         [
@@ -3502,23 +3494,31 @@
             "void"
         ],
         [
-            "ToString",
-            "string"
+            "ResetColor",
+            "void"
         ],
         [
-            "ConvertToType",
-            "Type"
+            "DrawString",
+            "void"
+        ],
+        [
+            "ToString",
+            "string"
         ],
         [
             "SetIsFigureProperty",
             "void"
         ],
         [
+            "ConvertToType",
+            "Type"
+        ],
+        [
             "AccessVariable",
             "Var"
         ],
         [
-            "BindValue",
+            "EndScope",
             "void"
         ],
         [
@@ -3526,7 +3526,7 @@
             "void"
         ],
         [
-            "DefineVariable",
+            "DeclareFunction",
             "void"
         ],
         [
@@ -3538,11 +3538,11 @@
             "void"
         ],
         [
-            "DeclareFunction",
+            "BindValue",
             "void"
         ],
         [
-            "EndScope",
+            "DefineVariable",
             "void"
         ],
         [
@@ -3550,24 +3550,24 @@
             "GSNumber"
         ],
         [
-            "GetInstanceFromParameters",
-            "Measure"
-        ],
-        [
-            "GetInstanceFromParameters",
-            "GSObject"
-        ],
-        [
             "ToString",
             "string"
         ],
         [
-            "GetRandomInstance",
+            "GetInstanceFromParameters",
+            "GSObject"
+        ],
+        [
+            "GetInstanceFromParameters",
             "Measure"
         ],
         [
             "GetRandomInstance",
             "GSObject"
+        ],
+        [
+            "GetRandomInstance",
+            "Measure"
         ],
         [
             "GetInstanceFromParameters",
@@ -3576,14 +3576,30 @@
         [
             "GetRandomInstance",
             "T"
+        ],
+        [
+            "AttachSequence",
+            "ISequenciable"
+        ],
+        [
+            "InfiniteRange",
+            "IEnumerable"
+        ],
+        [
+            "GetCount",
+            "int"
         ],
         [
             "GetTail",
             "GSharpSequence"
         ],
         [
-            "AttachSequence",
-            "ISequenciable"
+            "GetSequence",
+            "IEnumerable"
+        ],
+        [
+            "GetRandomNumbers",
+            "GSharpSequence"
         ],
         [
             "GetTail",
@@ -3594,56 +3610,8 @@
             "IEnumerable"
         ],
         [
-            "GetSequence",
-            "IEnumerable"
-        ],
-        [
-            "InfiniteRange",
-            "IEnumerable"
-        ],
-        [
-            "GetRandomNumbers",
-            "GSharpSequence"
-        ],
-        [
-            "GetCount",
-            "int"
-        ],
-        [
             "GetInstanceFromParameters",
-            "Line"
-        ],
-        [
-            "GetInstanceFromParameters",
-            "GSPoint"
-        ],
-        [
-            "GetRandomInstance",
             "Circle"
-        ],
-        [
-            "GetRandomInstance",
-            "Line"
-        ],
-        [
-            "GetRandomInstance",
-            "GSPoint"
-        ],
-        [
-            "GetInstanceFromParameters",
-            "Segment"
-        ],
-        [
-            "GetInstanceFromParameters",
-            "Ray"
-        ],
-        [
-            "GetLineAngleRad",
-            "double"
-        ],
-        [
-            "GetInstanceFromParameters",
-            "Arc"
         ],
         [
             "GetRandomPoint",
@@ -3654,32 +3622,60 @@
             "string"
         ],
         [
-            "Draw",
-            "void"
+            "GetRandomInstance",
+            "Line"
         ],
         [
             "GetRandomInstance",
-            "Segment"
-        ],
-        [
-            "GetRandomInstance",
-            "Ray"
+            "Circle"
         ],
         [
             "GetInstanceFromParameters",
-            "Circle"
+            "Arc"
+        ],
+        [
+            "GetInstanceFromParameters",
+            "Segment"
+        ],
+        [
+            "Draw",
+            "void"
         ],
         [
             "GetRandomInstance",
             "Arc"
         ],
         [
-            "GetNormalized",
-            "Vector"
+            "GetLineAngleRad",
+            "double"
         ],
         [
-            "Advance",
-            "char"
+            "GetInstanceFromParameters",
+            "Line"
+        ],
+        [
+            "GetRandomInstance",
+            "Segment"
+        ],
+        [
+            "GetInstanceFromParameters",
+            "Ray"
+        ],
+        [
+            "GetInstanceFromParameters",
+            "GSPoint"
+        ],
+        [
+            "GetRandomInstance",
+            "Ray"
+        ],
+        [
+            "GetRandomInstance",
+            "GSPoint"
+        ],
+        [
+            "GetNormalized",
+            "Vector"
         ],
         [
             "IsAlphaNumeric",
@@ -3690,28 +3686,24 @@
             "bool"
         ],
         [
-            "Number",
-            "void"
+            "PeekNext",
+            "char"
+        ],
+        [
+            "IsAtEnd",
+            "bool"
+        ],
+        [
+            "Substring",
+            "string"
         ],
         [
             "ScanTokens",
             "List"
         ],
         [
-            "SkipLine",
+            "_String",
             "void"
-        ],
-        [
-            "Identifier",
-            "void"
-        ],
-        [
-            "PeekNext",
-            "char"
-        ],
-        [
-            "IsDigit",
-            "bool"
         ],
         [
             "Peek",
@@ -3722,36 +3714,48 @@
             "void"
         ],
         [
-            "Match",
+            "Number",
+            "void"
+        ],
+        [
+            "IsDigit",
             "bool"
         ],
         [
-            "Substring",
-            "string"
+            "Identifier",
+            "void"
         ],
         [
             "ScanToken",
             "void"
         ],
         [
-            "IsAtEnd",
+            "SkipLine",
+            "void"
+        ],
+        [
+            "Advance",
+            "char"
+        ],
+        [
+            "Match",
             "bool"
         ],
         [
-            "_String",
-            "void"
+            "RunLibrary",
+            "Container"
         ],
         [
             "Scan",
             "List"
         ],
         [
-            "InitializeGSharpStandard",
-            "void"
-        ],
-        [
             "RunLibraryFile",
             "Container"
+        ],
+        [
+            "InitializeGSharpStandard",
+            "void"
         ],
         [
             "Run",
@@ -3762,15 +3766,15 @@
             "void"
         ],
         [
-            "RunLibrary",
-            "Container"
-        ],
-        [
             "ToString",
             "string"
         ],
         [
             "SemanticError",
+            "void"
+        ],
+        [
+            "LexicalError",
             "void"
         ],
         [
@@ -3782,96 +3786,48 @@
             "void"
         ],
         [
-            "LexicalError",
-            "void"
+            "DeserializeObject",
+            "T"
         ],
         [
             "SerializeObject",
             "void"
         ],
         [
-            "DeserializeObject",
-            "T"
-        ],
-        [
-            "ParseFunctionDeclaration",
-            "Statement"
-        ],
-        [
-            "TryFind",
-            "bool"
-        ],
-        [
-            "ParseFactor",
-            "GSharpExpression"
-        ],
-        [
-            "ParseLogicalAnd",
-            "GSharpExpression"
-        ],
-        [
-            "ParseExpression",
-            "GSharpExpression"
-        ],
-        [
-            "Parse",
-            "List"
-        ],
-        [
-            "ParseDrawStatement",
-            "Statement"
-        ],
-        [
-            "ParseUnary",
-            "GSharpExpression"
-        ],
-        [
-            "ParseStatement",
-            "Statement"
-        ],
-        [
-            "Check",
-            "bool"
-        ],
-        [
             "Synchronize",
             "void"
-        ],
-        [
-            "ParseConstantDeclaration",
-            "Statement"
-        ],
-        [
-            "ParseLogicalOr",
-            "GSharpExpression"
-        ],
-        [
-            "IsAtEnd",
-            "bool"
-        ],
-        [
-            "ParseTerm",
-            "GSharpExpression"
-        ],
-        [
-            "Consume",
-            "Token"
-        ],
-        [
-            "Previous",
-            "Token"
         ],
         [
             "InferType",
             "GTypeNames"
         ],
         [
-            "Match",
+            "IsAtEnd",
             "bool"
         ],
         [
-            "CheckAhead",
+            "Check",
             "bool"
+        ],
+        [
+            "ParsePrimary",
+            "GSharpExpression"
+        ],
+        [
+            "ParseFactor",
+            "GSharpExpression"
+        ],
+        [
+            "Peek",
+            "Token"
+        ],
+        [
+            "Parse",
+            "List"
+        ],
+        [
+            "Advance",
+            "Token"
         ],
         [
             "ParseImportStatement",
@@ -3882,39 +3838,15 @@
             "Statement"
         ],
         [
-            "ParsePrintStatement",
-            "Statement"
-        ],
-        [
-            "ParseReceiverStatement",
-            "Statement"
-        ],
-        [
-            "ParseComparison",
+            "ParseLogicalOr",
             "GSharpExpression"
-        ],
-        [
-            "ParsePrimary",
-            "GSharpExpression"
-        ],
-        [
-            "Peek",
-            "Token"
         ],
         [
             "ParseColorStatement",
             "Statement"
         ],
         [
-            "TryFindBefore",
-            "bool"
-        ],
-        [
-            "ParseDeclaration",
-            "Statement"
-        ],
-        [
-            "ParseEquality",
+            "ParseTerm",
             "GSharpExpression"
         ],
         [
@@ -3922,55 +3854,95 @@
             "GSharpExpression"
         ],
         [
+            "CheckAhead",
+            "bool"
+        ],
+        [
+            "ParseEquality",
+            "GSharpExpression"
+        ],
+        [
+            "ParseDeclaration",
+            "Statement"
+        ],
+        [
+            "ParsePrintStatement",
+            "Statement"
+        ],
+        [
+            "ParseUnary",
+            "GSharpExpression"
+        ],
+        [
+            "ParseFunctionDeclaration",
+            "Statement"
+        ],
+        [
+            "ParseStatement",
+            "Statement"
+        ],
+        [
+            "Consume",
+            "Token"
+        ],
+        [
+            "ParseConstantDeclaration",
+            "Statement"
+        ],
+        [
+            "TryFindBefore",
+            "bool"
+        ],
+        [
+            "ParseDrawStatement",
+            "Statement"
+        ],
+        [
+            "ParseLogicalAnd",
+            "GSharpExpression"
+        ],
+        [
+            "Previous",
+            "Token"
+        ],
+        [
+            "ParseReceiverStatement",
+            "Statement"
+        ],
+        [
+            "TryFind",
+            "bool"
+        ],
+        [
+            "ParseComparison",
+            "GSharpExpression"
+        ],
+        [
             "ParseIfStatement",
             "GSharpExpression"
         ],
         [
-            "Advance",
-            "Token"
+            "ParseExpression",
+            "GSharpExpression"
         ],
         [
-            "LoadLibrary",
-            "Container"
+            "Match",
+            "bool"
         ],
         [
             "GetEnvironments",
             "Container"
         ],
         [
-            "Accept",
-            "void"
+            "LoadLibrary",
+            "Container"
         ],
         [
             "Accept",
             "void"
         ],
         [
-            "VisitPrintStatement",
-            "void"
-        ],
-        [
-            "VisitConstantDeclaration",
-            "void"
-        ],
-        [
-            "VisitRecieverStatement",
-            "void"
-        ],
-        [
-            "VisitRestoreStatement",
-            "void"
-        ],
-        [
-            "VisitDrawStatement",
-            "void"
-        ],
-        [
-            "VisitExpressionStatement",
-            "void"
-        ],
-        [
-            "VisitImportStatement",
+            "Accept",
             "void"
         ],
         [
@@ -3978,12 +3950,48 @@
             "void"
         ],
         [
-            "VisitFunctionDeclaration",
+            "VisitDrawStatement",
+            "void"
+        ],
+        [
+            "VisitRecieverStatement",
+            "void"
+        ],
+        [
+            "VisitImportStatement",
+            "void"
+        ],
+        [
+            "VisitPrintStatement",
             "void"
         ],
         [
             "VisitColorStatent",
             "void"
+        ],
+        [
+            "VisitRestoreStatement",
+            "void"
+        ],
+        [
+            "VisitConstantDeclaration",
+            "void"
+        ],
+        [
+            "VisitExpressionStatement",
+            "void"
+        ],
+        [
+            "VisitFunctionDeclaration",
+            "void"
+        ],
+        [
+            "GetArgumentsAmount",
+            "int"
+        ],
+        [
+            "GetType",
+            "GSharpType"
         ],
         [
             "Evaluate",
@@ -3994,14 +4002,6 @@
             "void"
         ],
         [
-            "GetType",
-            "GSharpType"
-        ],
-        [
-            "GetArgumentsAmount",
-            "int"
-        ],
-        [
             "Accept",
             "void"
         ],
@@ -4016,14 +4016,6 @@
         [
             "Accept",
             "T"
-        ],
-        [
-            "Accept",
-            "T"
-        ],
-        [
-            "GetArithmetic",
-            "BinaryOverloadInfo"
         ],
         [
             "Accept",
@@ -4034,31 +4026,27 @@
             "BinaryOverloadInfo"
         ],
         [
+            "Accept",
+            "T"
+        ],
+        [
             "IsAnAcceptedOverload",
             "bool"
+        ],
+        [
+            "GetArithmetic",
+            "BinaryOverloadInfo"
+        ],
+        [
+            "VisitLiteralNumber",
+            "T"
         ],
         [
             "VisitBinaryOperation",
             "T"
         ],
         [
-            "VisitIfThenElse",
-            "T"
-        ],
-        [
-            "VisitConstant",
-            "T"
-        ],
-        [
-            "VisitLiteralSequence",
-            "T"
-        ],
-        [
             "VisitLetIn",
-            "T"
-        ],
-        [
-            "VisitFunctionCall",
             "T"
         ],
         [
@@ -4070,15 +4058,27 @@
             "T"
         ],
         [
+            "VisitLiteralSequence",
+            "T"
+        ],
+        [
+            "VisitConstant",
+            "T"
+        ],
+        [
             "VisitLiteralUndefined",
             "T"
         ],
         [
-            "VisitLiteralNumber",
+            "VisitIfThenElse",
             "T"
         ],
         [
-            "FiniteRange",
+            "VisitFunctionCall",
+            "T"
+        ],
+        [
+            "InfiniteRange",
             "IEnumerable"
         ],
         [
@@ -4086,44 +4086,44 @@
             "List"
         ],
         [
-            "GetTail",
-            "LiteralSequence"
-        ],
-        [
-            "ChoppSequence",
-            "IEnumerable"
-        ],
-        [
-            "Accept",
-            "T"
-        ],
-        [
             "ToGSharpObjectSequence",
             "IEnumerable"
         ],
         [
-            "InfiniteRange",
-            "IEnumerable"
+            "GetTail",
+            "LiteralSequence"
+        ],
+        [
+            "Accept",
+            "T"
         ],
         [
             "GetSequenceValue",
             "GSequence"
         ],
         [
-            "Accept",
-            "T"
+            "ChoppSequence",
+            "IEnumerable"
         ],
         [
-            "GetArithmetic",
-            "UnaryOverloadInfo"
+            "FiniteRange",
+            "IEnumerable"
         ],
         [
             "GetLogic",
             "UnaryOverloadInfo"
         ],
         [
+            "Accept",
+            "T"
+        ],
+        [
             "IsAnAcceptedOverload",
             "bool"
+        ],
+        [
+            "GetArithmetic",
+            "UnaryOverloadInfo"
         ],
         [
             "Accept",
@@ -4150,19 +4150,7 @@
             "void"
         ],
         [
-            "DrawSequence",
-            "void"
-        ],
-        [
-            "OpenFolder",
-            "void"
-        ],
-        [
-            "SetColor",
-            "void"
-        ],
-        [
-            "DrawString",
+            "Reset",
             "void"
         ],
         [
@@ -4170,15 +4158,27 @@
             "void"
         ],
         [
-            "DrawPoint",
-            "void"
-        ],
-        [
-            "ResetColor",
-            "void"
-        ],
-        [
             "DrawSegment",
+            "void"
+        ],
+        [
+            "DrawEnumerable",
+            "void"
+        ],
+        [
+            "SetColor",
+            "void"
+        ],
+        [
+            "DrawCircle",
+            "void"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawPoint",
             "void"
         ],
         [
@@ -4190,75 +4190,11 @@
             "Task"
         ],
         [
-            "DrawLine",
-            "void"
-        ],
-        [
-            "DrawCircle",
-            "void"
-        ],
-        [
-            "DrawEnumerable",
-            "void"
-        ],
-        [
-            "Reset",
-            "void"
-        ],
-        [
-            "DrawArc",
-            "void"
-        ],
-        [
-            "CreateMauiApp",
-            "MauiApp"
-        ],
-        [
-            "Main",
-            "void"
-        ],
-        [
-            "CreateMauiApp",
-            "MauiApp"
-        ],
-        [
-            "Main",
-            "void"
-        ],
-        [
-            "CreateMauiApp",
-            "MauiApp"
-        ],
-        [
-            "CreateMauiApp",
-            "MauiApp"
-        ],
-        [
-            "CreateMauiApp",
-            "MauiApp"
-        ],
-        [
-            "Main",
-            "void"
-        ],
-        [
             "DrawSequence",
             "void"
         ],
         [
-            "SetColor",
-            "void"
-        ],
-        [
-            "DrawString",
-            "void"
-        ],
-        [
-            "DrawRay",
-            "void"
-        ],
-        [
-            "DrawPoint",
+            "DrawArc",
             "void"
         ],
         [
@@ -4266,27 +4202,43 @@
             "void"
         ],
         [
-            "DrawSegment",
+            "DrawString",
             "void"
         ],
         [
-            "GetLineAngleDeg",
-            "double"
-        ],
-        [
-            "DrawLine",
+            "OpenFolder",
             "void"
         ],
         [
-            "WriteMessage",
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "Main",
             "void"
         ],
         [
-            "DrawCircle",
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "Main",
             "void"
         ],
         [
-            "DrawEnumerable",
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "Main",
             "void"
         ],
         [
@@ -4294,11 +4246,55 @@
             "void"
         ],
         [
+            "DrawRay",
+            "void"
+        ],
+        [
+            "DrawSegment",
+            "void"
+        ],
+        [
+            "DrawEnumerable",
+            "void"
+        ],
+        [
+            "SetColor",
+            "void"
+        ],
+        [
+            "DrawCircle",
+            "void"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawPoint",
+            "void"
+        ],
+        [
+            "GetLineAngleDeg",
+            "double"
+        ],
+        [
+            "DrawSequence",
+            "void"
+        ],
+        [
             "DrawArc",
             "void"
         ],
         [
-            "Dispose",
+            "WriteMessage",
+            "void"
+        ],
+        [
+            "ResetColor",
+            "void"
+        ],
+        [
+            "DrawString",
             "void"
         ],
         [
@@ -4306,7 +4302,7 @@
             "void"
         ],
         [
-            "openToolStripMenuItem_Click",
+            "Dispose",
             "void"
         ],
         [
@@ -4318,7 +4314,7 @@
             "void"
         ],
         [
-            "Input_KeyDown",
+            "Entry_TextChanged",
             "void"
         ],
         [
@@ -4326,63 +4322,15 @@
             "void"
         ],
         [
-            "Entry_TextChanged",
+            "openToolStripMenuItem_Click",
+            "void"
+        ],
+        [
+            "Input_KeyDown",
             "void"
         ],
         [
             "Main",
-            "void"
-        ],
-        [
-            "DrawSequence",
-            "void"
-        ],
-        [
-            "Print",
-            "void"
-        ],
-        [
-            "SetColor",
-            "void"
-        ],
-        [
-            "DrawString",
-            "void"
-        ],
-        [
-            "PrintError",
-            "void"
-        ],
-        [
-            "DrawRay",
-            "void"
-        ],
-        [
-            "DrawPoint",
-            "void"
-        ],
-        [
-            "ResetColor",
-            "void"
-        ],
-        [
-            "DrawSegment",
-            "void"
-        ],
-        [
-            "Main",
-            "void"
-        ],
-        [
-            "DrawLine",
-            "void"
-        ],
-        [
-            "DrawCircle",
-            "void"
-        ],
-        [
-            "DrawEnumerable",
             "void"
         ],
         [
@@ -4390,39 +4338,91 @@
             "void"
         ],
         [
+            "DrawRay",
+            "void"
+        ],
+        [
+            "DrawSegment",
+            "void"
+        ],
+        [
+            "DrawEnumerable",
+            "void"
+        ],
+        [
+            "PrintError",
+            "void"
+        ],
+        [
+            "DrawCircle",
+            "void"
+        ],
+        [
+            "SetColor",
+            "void"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawPoint",
+            "void"
+        ],
+        [
+            "DrawSequence",
+            "void"
+        ],
+        [
             "DrawArc",
+            "void"
+        ],
+        [
+            "Print",
+            "void"
+        ],
+        [
+            "ResetColor",
+            "void"
+        ],
+        [
+            "DrawString",
+            "void"
+        ],
+        [
+            "Main",
             "void"
         ]
     ],
     "class_names": [
         "Form1",
-        "Drawer",
         "Form1",
+        "Drawer",
         "Program",
-        "SimpleCuadraticEquation",
         "ParameterConstrains",
-        "EquationSolver",
         "Equation",
+        "EquationSolver",
+        "SimpleCuadraticEquation",
         "GSharpException",
         "GSharpType",
         "Context",
         "Evaluator",
         "Resolver",
-        "GString",
-        "Measure",
         "GSNumber",
+        "Measure",
+        "GString",
         "GSObject",
+        "ArraySequence",
         "GSequence",
         "GSharpSequence",
         "FiniteIntegerSequence",
-        "ArraySequence",
         "InfiniteIntegerSequence",
+        "Line",
+        "Ray",
         "Circle",
         "Arc",
-        "Line",
-        "Segment",
         "GSPoint",
-        "Ray",
+        "Segment",
         "Vector",
         "Scanner",
         "GSharp",
@@ -4436,65 +4436,65 @@
         "Reciever",
         "Import",
         "DeclaredFunction",
-        "FunctionDeclaration",
         "ConstantsDeclaration",
+        "FunctionDeclaration",
         "Statement",
-        "DrawStatement",
-        "ExpressionStatement",
-        "Restore",
-        "ColorStatement",
         "PrintStatement",
+        "ColorStatement",
+        "DrawStatement",
+        "Restore",
+        "ExpressionStatement",
         "FunctionCall",
         "LiteralUndefined",
         "LiteralString",
         "IfThenElse",
         "LetIn",
-        "UnEqual",
-        "BinaryOperation",
-        "Subtraction",
-        "Division",
-        "Addition",
-        "Module",
         "Conjunction",
-        "Multiplication",
-        "Power",
-        "GreaterThan",
         "BinaryOverloadInfo",
+        "Subtraction",
+        "Addition",
+        "Power",
         "GreaterEqualThan",
-        "Disjunction",
-        "LowerEqualThan",
+        "Division",
         "LowerThan",
+        "Module",
         "Equal",
+        "BinaryOperation",
+        "Multiplication",
+        "Disjunction",
+        "UnEqual",
+        "LowerEqualThan",
+        "GreaterThan",
         "GSharpExpression",
+        "LiteralSequence",
         "LiteralArrayExpression",
         "InfiniteRangeExpression",
         "FiniteRangeExpression",
-        "LiteralSequence",
         "LiteralNumber",
-        "UnaryOverloadInfo",
-        "Negative",
+        "UnaryOperation",
         "Positive",
         "Negation",
-        "UnaryOperation",
+        "Negative",
+        "UnaryOverloadInfo",
         "Constant",
         "Grouping",
-        "RandomsFunction",
         "CountFunction",
+        "RandomsFunction",
         "MeasureFunction",
+        "ArcGetter",
         "RayGetter",
-        "LineGetter",
         "PointGetter",
         "SegmentGetter",
         "CircleGetter",
-        "ArcGetter",
+        "LineGetter",
         "MauiProgram",
         "MainPage",
         "AppShell",
         "App",
         "Folder",
         "Figure",
-        "DesktopMainViewModel",
         "CanvasDrawer",
+        "DesktopMainViewModel",
         "DesktopMainView",
         "AppDelegate",
         "Program",
@@ -4510,8 +4510,8 @@
         "Program",
         "Resources",
         "DrawerDummie",
-        "Program",
-        "ConsoleUI"
+        "ConsoleUI",
+        "Program"
     ],
     "interface_names": [
         "IWalleUI",
@@ -4526,12 +4526,12 @@
     ],
     "delegate_names": [
         [
-            "TypeGetter",
-            "GSharpType"
-        ],
-        [
             "BinaryFunc",
             "GSObject"
+        ],
+        [
+            "TypeGetter",
+            "GSharpType"
         ],
         [
             "UnaryFunc",
@@ -4718,5 +4718,6 @@
         "General_catch_clauseContext": 1
     },
     "project_name": "Sekai02_GeoWall-E",
-    "label": "original"
+    "label": "original",
+    "project_type": "wallE"
 }

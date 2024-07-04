@@ -168,29 +168,30 @@
     },
     "project_name": "LuisSilva5948_Moogle",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.04756898805499077,
-        0.016407620161771774
+        0.10115555673837662,
+        0.14841009676456451
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.11404690891504288,
-        0.22744610905647278
+        -0.14440934360027313,
+        -0.022802507504820824
     ],
     "method_names_vector": [
-        -0.070944644510746,
-        0.09793201833963394
+        0.04398553445935249,
+        0.10327672958374023
     ],
     "class_names_vector": [
-        0.08025010675191879,
-        0.05262906849384308
+        -0.100346639752388,
+        0.0809924453496933
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.10545949637889862,
-        -0.07336676120758057,
-        0.29632580280303955,
-        0.3815095126628876
+        0.03222469985485077,
+        0.07003451138734818,
+        0.17764708399772644,
+        0.47073736786842346
     ]
 }

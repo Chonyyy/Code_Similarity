@@ -174,29 +174,30 @@
     },
     "project_name": "theleywin_2ndProject-Hulk",
     "label": "original",
+    "project_type": "hulk",
     "variable_names_vector": [
-        0.04350665211677551,
-        0.17824290692806244
+        0.04968924820423126,
+        0.22870904207229614
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        -0.0989721417427063,
-        0.003825737861916423
+        -0.11671194434165955,
+        0.03218040242791176
     ],
     "method_names_vector": [
-        0.08683450520038605,
-        0.09415721148252487
+        0.06665492057800293,
+        0.08519818633794785
     ],
     "class_names_vector": [
-        0.06847292184829712,
-        0.09954311698675156
+        0.13479271531105042,
+        0.16415458917617798
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.0018115920247510076,
-        -0.0596044696867466,
-        -0.007294453214854002,
-        0.08148085325956345
+        -0.004896164871752262,
+        -0.03723903000354767,
+        -0.013461875729262829,
+        0.13912202417850494
     ]
 }

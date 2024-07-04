@@ -546,39 +546,19 @@
         ],
         [
             "var",
-            "rest"
-        ],
-        [
-            "var",
-            "getSnippet"
-        ],
-        [
-            "string",
-            "GetSnippet"
+            "TSize"
         ],
         [
             "var",
             "snippet"
         ],
         [
-            "var",
-            "WSize"
-        ],
-        [
-            "var",
-            "y"
-        ],
-        [
-            "var",
-            "text"
-        ],
-        [
-            "var",
-            "TSize"
-        ],
-        [
             "double",
             "BestRelevance"
+        ],
+        [
+            "var",
+            "bestWord"
         ],
         [
             "string",
@@ -586,7 +566,19 @@
         ],
         [
             "var",
-            "SizeLS"
+            "WSize"
+        ],
+        [
+            "var",
+            "SizeTS"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "var",
+            "ListDocument"
         ],
         [
             "var",
@@ -594,7 +586,11 @@
         ],
         [
             "var",
-            "SizeRS"
+            "text"
+        ],
+        [
+            "var",
+            "i"
         ],
         [
             "var",
@@ -602,7 +598,19 @@
         ],
         [
             "var",
+            "rest"
+        ],
+        [
+            "var",
             "D"
+        ],
+        [
+            "var",
+            "SizeRS"
+        ],
+        [
+            "string",
+            "GetSnippet"
         ],
         [
             "var",
@@ -614,31 +622,39 @@
         ],
         [
             "var",
-            "ListDocument"
+            "getSnippet"
         ],
         [
             "var",
-            "i"
+            "SizeLS"
         ],
         [
-            "var",
-            "SizeTS"
+            "List",
+            "TrashWord"
         ],
         [
-            "var",
-            "bestWord"
+            "Dictionary",
+            "TWords"
         ],
         [
-            "var",
-            "TotalOcurrence"
+            "StreamReader",
+            "listword"
         ],
         [
             "Dictionary",
             "Documents"
         ],
         [
-            "var",
-            "TotalDocument"
+            "string",
+            "ListDocument"
+        ],
+        [
+            "double",
+            "Rate"
+        ],
+        [
+            "string",
+            "Content"
         ],
         [
             "int",
@@ -657,80 +673,32 @@
             "k"
         ],
         [
-            "StreamReader",
-            "listword"
-        ],
-        [
             "int",
             "j"
-        ],
-        [
-            "String",
-            "ListDocument"
-        ],
-        [
-            "bool",
-            "isletter"
-        ],
-        [
-            "double",
-            "Rate"
-        ],
-        [
-            "string",
-            "ListDocument"
-        ],
-        [
-            "List",
-            "TrashWord"
-        ],
-        [
-            "string",
-            "Content"
-        ],
-        [
-            "Dictionary",
-            "TWords"
         ],
         [
             "Dictionary",
             "Words"
         ],
         [
-            "int",
-            "y"
+            "String",
+            "ListDocument"
         ],
         [
             "var",
-            "word"
+            "TotalOcurrence"
         ],
         [
-            "int",
-            "i"
+            "var",
+            "TotalDocument"
+        ],
+        [
+            "bool",
+            "isletter"
         ],
         [
             "var",
             "Suggest"
-        ],
-        [
-            "int",
-            "Memory"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "z"
-        ],
-        [
-            "var",
-            "changeWord"
-        ],
-        [
-            "var",
-            "IsLetter"
         ],
         [
             "var",
@@ -738,23 +706,47 @@
         ],
         [
             "var",
-            "Distance"
+            "IsLetter"
         ],
         [
             "int",
-            "x"
+            "y"
+        ],
+        [
+            "int",
+            "z"
         ],
         [
             "int",
             "Change"
         ],
         [
-            "var",
-            "Query"
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "x"
         ],
         [
             "var",
-            "Snippets"
+            "Distance"
+        ],
+        [
+            "var",
+            "word"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "Memory"
+        ],
+        [
+            "var",
+            "changeWord"
         ],
         [
             "var",
@@ -762,11 +754,11 @@
         ],
         [
             "var",
-            "TWords"
+            "Operators"
         ],
         [
             "var",
-            "Documents"
+            "Snippets"
         ],
         [
             "var",
@@ -774,7 +766,11 @@
         ],
         [
             "var",
-            "items"
+            "Query"
+        ],
+        [
+            "var",
+            "Tupla3"
         ],
         [
             "var",
@@ -782,7 +778,7 @@
         ],
         [
             "var",
-            "Operators"
+            "items"
         ],
         [
             "var",
@@ -794,15 +790,35 @@
         ],
         [
             "var",
-            "Tupla3"
+            "TWords"
+        ],
+        [
+            "var",
+            "Documents"
+        ],
+        [
+            "var",
+            "signo1"
+        ],
+        [
+            "double",
+            "promedy"
+        ],
+        [
+            "var",
+            "change"
         ],
         [
             "int",
             "i"
         ],
         [
-            "var",
-            "signo1"
+            "MetaData",
+            "WordInfo"
+        ],
+        [
+            "int",
+            "x"
         ],
         [
             "var",
@@ -810,11 +826,7 @@
         ],
         [
             "var",
-            "ScoreRanking"
-        ],
-        [
-            "MetaData",
-            "WordInfo"
+            "Switch"
         ],
         [
             "var",
@@ -825,24 +837,12 @@
             "promedy"
         ],
         [
-            "var",
-            "Switch"
-        ],
-        [
             "double",
             "V"
         ],
         [
             "var",
-            "change"
-        ],
-        [
-            "double",
-            "promedy"
-        ],
-        [
-            "int",
-            "x"
+            "ScoreRanking"
         ],
         [
             "int",
@@ -853,24 +853,28 @@
             "Operators"
         ],
         [
-            "string",
-            "words"
+            "bool",
+            "IsLetter"
         ],
         [
             "Dictionary",
             "Query"
         ],
         [
-            "bool",
-            "IsLetter"
-        ],
-        [
-            "List",
-            "support"
+            "string",
+            "words"
         ],
         [
             "var",
-            "k"
+            "ocurrence"
+        ],
+        [
+            "int",
+            "order"
+        ],
+        [
+            "string",
+            "word"
         ],
         [
             "var",
@@ -878,23 +882,47 @@
         ],
         [
             "var",
+            "pos"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "Q"
+        ],
+        [
+            "int",
+            "counter"
+        ],
+        [
+            "var",
+            "distance"
+        ],
+        [
+            "string",
+            "Words"
+        ],
+        [
+            "string",
+            "SubQuery"
+        ],
+        [
+            "var",
             "DQuery"
         ],
         [
             "var",
-            "t"
-        ],
-        [
-            "Dictionary",
-            "DistanceWords"
+            "x"
         ],
         [
             "var",
-            "word2pos"
+            "Word1pos"
         ],
         [
-            "List",
-            "DuoWords"
+            "var",
+            "lowDistance"
         ],
         [
             "var",
@@ -905,84 +933,44 @@
             "vueltas"
         ],
         [
-            "int",
-            "i"
+            "var",
+            "word2pos"
         ],
         [
             "int",
             "rate"
         ],
         [
-            "int",
-            "counter"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "string",
-            "SubQuery"
-        ],
-        [
-            "int",
-            "order"
-        ],
-        [
             "var",
-            "pos"
+            "t"
         ],
         [
             "char",
             "C"
         ],
         [
-            "var",
-            "x"
+            "List",
+            "support"
+        ],
+        [
+            "List",
+            "DuoWords"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "Dictionary",
+            "DistanceWords"
         ],
         [
             "var",
-            "lowDistance"
-        ],
-        [
-            "var",
-            "distance"
-        ],
-        [
-            "var",
-            "ocurrence"
-        ],
-        [
-            "var",
-            "Word1pos"
-        ],
-        [
-            "string",
-            "Words"
+            "k"
         ],
         [
             "bool",
             "isletter"
-        ],
-        [
-            "int",
-            "Q"
-        ],
-        [
-            "string",
-            "word"
-        ],
-        [
-            "var",
-            "signo3"
-        ],
-        [
-            "var",
-            "TotalDocument"
-        ],
-        [
-            "var",
-            "signo2"
         ],
         [
             "var",
@@ -990,19 +978,27 @@
         ],
         [
             "var",
-            "y"
+            "signo2"
         ],
         [
-            "var",
-            "S"
+            "double",
+            "TF"
         ],
         [
             "double",
             "TotalOcurrence"
         ],
         [
-            "var",
-            "TotalWords"
+            "double",
+            "TotalDocument"
+        ],
+        [
+            "double",
+            "ocurrence"
+        ],
+        [
+            "Dictionary",
+            "Score"
         ],
         [
             "double",
@@ -1013,12 +1009,8 @@
             "Sumatory3"
         ],
         [
-            "double",
-            "IDF"
-        ],
-        [
-            "Dictionary",
-            "Score"
+            "var",
+            "S"
         ],
         [
             "double",
@@ -1026,19 +1018,27 @@
         ],
         [
             "double",
-            "ocurrence"
+            "IDF"
         ],
         [
-            "double",
-            "TotalDocument"
+            "var",
+            "y"
         ],
         [
             "double",
             "Weight"
         ],
         [
-            "double",
-            "TF"
+            "var",
+            "TotalDocument"
+        ],
+        [
+            "var",
+            "signo3"
+        ],
+        [
+            "var",
+            "TotalWords"
         ],
         [
             "var",
@@ -1048,35 +1048,35 @@
     "method_names": [
         "Items",
         "Getitems",
-        "GSnippet",
-        "GetSnippet",
         "BestWord",
-        "Loader",
-        "PoorRelevance",
+        "GetSnippet",
+        "GSnippet",
         "LoaderDocument",
+        "PoorRelevance",
+        "Loader",
         "MakeSuggest",
+        "suggestion",
         "DiferentWord",
         "LD",
-        "suggestion",
         "Query",
-        "Filter",
-        "Promedy",
         "List",
+        "ReviseQuery",
         "Change",
         "ScoreRanking",
-        "ReviseQuery",
+        "Promedy",
+        "Filter",
         "QDocument",
         "SearchParticularWords",
+        "IncreaseScore",
+        "SearchWord",
         "DecreaseScore",
         "IncreaseRelevance",
-        "SearchWord",
         "NearbyWords",
-        "IncreaseScore",
-        "Filter",
         "DWeight",
-        "score",
+        "DWeight1",
         "QWeight",
-        "DWeight1"
+        "Filter",
+        "score"
     ],
     "method_return_types": [
         [
@@ -1100,24 +1100,20 @@
             "string"
         ],
         [
-            "PoorRelevance",
-            "void"
+            "Loader",
+            "("
         ],
         [
             "LoaderDocument",
             "string"
         ],
         [
-            "Loader",
-            "("
+            "PoorRelevance",
+            "void"
         ],
         [
             "DiferentWord",
             "void"
-        ],
-        [
-            "suggestion",
-            "("
         ],
         [
             "LD",
@@ -1128,20 +1124,20 @@
             "void"
         ],
         [
+            "suggestion",
+            "("
+        ],
+        [
             "Query",
             "SearchResult"
         ],
         [
-            "Promedy",
-            "double"
+            "Filter",
+            "void"
         ],
         [
             "Change",
             "Dictionary"
-        ],
-        [
-            "Filter",
-            "void"
         ],
         [
             "ReviseQuery",
@@ -1149,6 +1145,10 @@
         ],
         [
             "List",
+            "double"
+        ],
+        [
+            "Promedy",
             "double"
         ],
         [
@@ -1160,20 +1160,12 @@
             "("
         ],
         [
-            "DecreaseScore",
-            "void"
-        ],
-        [
             "NearbyWords",
             "void"
         ],
         [
             "SearchWord",
             "string"
-        ],
-        [
-            "SearchParticularWords",
-            "List"
         ],
         [
             "IncreaseScore",
@@ -1184,16 +1176,16 @@
             "void"
         ],
         [
-            "score",
-            "Dictionary"
+            "SearchParticularWords",
+            "List"
+        ],
+        [
+            "DecreaseScore",
+            "void"
         ],
         [
             "Filter",
             "void"
-        ],
-        [
-            "QWeight",
-            "double"
         ],
         [
             "DWeight",
@@ -1202,6 +1194,14 @@
         [
             "DWeight1",
             "double"
+        ],
+        [
+            "QWeight",
+            "double"
+        ],
+        [
+            "score",
+            "Dictionary"
         ]
     ],
     "class_names": [
@@ -1341,5 +1341,6 @@
         "DoStatementContext": 1
     },
     "project_name": "melisapo_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

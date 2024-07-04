@@ -344,12 +344,16 @@
     ],
     "variable_names": [
         [
+            "Expression",
+            "literal"
+        ],
+        [
             "double",
             "result"
         ],
         [
             "Expression",
-            "literal"
+            "booleanExpression"
         ],
         [
             "Expression",
@@ -360,28 +364,20 @@
             "trueExp"
         ],
         [
-            "Expression",
-            "booleanExpression"
+            "string",
+            "functionId"
         ],
         [
-            "List",
-            "functionExpression"
+            "Expression",
+            "parameter"
         ],
         [
             "Expression",
             "printExp"
         ],
         [
-            "int",
-            "originalIndex"
-        ],
-        [
-            "Dictionary",
-            "Original_values"
-        ],
-        [
             "List",
-            "originalsTokens"
+            "functionExpression"
         ],
         [
             "Expression",
@@ -392,20 +388,24 @@
             "i"
         ],
         [
-            "Expression",
-            "parameter"
+            "List",
+            "originalsTokens"
         ],
         [
-            "string",
-            "functionId"
+            "int",
+            "originalIndex"
         ],
         [
-            "double",
-            "n"
+            "Dictionary",
+            "Original_values"
         ],
         [
             "Random",
             "r"
+        ],
+        [
+            "Expression",
+            "e"
         ],
         [
             "double",
@@ -413,11 +413,11 @@
         ],
         [
             "double",
-            "result"
+            "n"
         ],
         [
-            "Expression",
-            "e"
+            "double",
+            "result"
         ],
         [
             "Expression",
@@ -425,39 +425,7 @@
         ],
         [
             "Expression",
-            "boolean"
-        ],
-        [
-            "Expression",
-            "result"
-        ],
-        [
-            "bool",
-            "isIdfunction"
-        ],
-        [
-            "Expression",
-            "exp"
-        ],
-        [
-            "Expression",
-            "f"
-        ],
-        [
-            "Expression",
-            "c"
-        ],
-        [
-            "Expression",
-            "l"
-        ],
-        [
-            "Expression",
-            "M"
-        ],
-        [
-            "string",
-            "s"
+            "letIn"
         ],
         [
             "Expression",
@@ -465,7 +433,7 @@
         ],
         [
             "Expression",
-            "ifelse"
+            "c"
         ],
         [
             "Expression",
@@ -477,19 +445,51 @@
         ],
         [
             "Expression",
-            "letIn"
+            "M"
         ],
         [
-            "Regex",
-            "AllTokens"
+            "Expression",
+            "f"
+        ],
+        [
+            "Expression",
+            "l"
+        ],
+        [
+            "Expression",
+            "exp"
+        ],
+        [
+            "Expression",
+            "result"
+        ],
+        [
+            "Expression",
+            "ifelse"
+        ],
+        [
+            "bool",
+            "isIdfunction"
+        ],
+        [
+            "Expression",
+            "boolean"
+        ],
+        [
+            "string",
+            "s"
+        ],
+        [
+            "List",
+            "t"
         ],
         [
             "Regex",
             "GoodTokens"
         ],
         [
-            "List",
-            "t"
+            "Regex",
+            "AllTokens"
         ],
         [
             "bool",
@@ -505,11 +505,11 @@
         ],
         [
             "string",
-            "idValue"
+            "id"
         ],
         [
             "string",
-            "id"
+            "idValue"
         ],
         [
             "string",
@@ -522,45 +522,45 @@
     ],
     "method_names": [
         "PrintError",
-        "Evaluate",
         "Pow",
         "Multiply",
         "Subtract",
-        "Division",
         "Sum",
         "Modulo",
+        "Division",
+        "Evaluate",
         "Evaluate",
         "Evaluate",
         "cos",
-        "sqrt",
-        "Evaluate",
-        "rand",
-        "sin",
-        "PI",
-        "E",
-        "log",
         "exp",
-        "ActualToken",
-        "Next",
+        "rand",
+        "PI",
+        "sqrt",
+        "E",
+        "sin",
+        "log",
+        "Evaluate",
         "CatchArgumentTypeError",
+        "ActualToken",
         "Evaluate",
-        "Restart",
-        "IsID",
-        "GetIncorrectToken",
-        "TokenizeInput",
-        "IsString",
+        "Next",
         "TokenType",
+        "Restart",
+        "TokenizeInput",
         "IsBoolean",
+        "IsString",
         "IsNumber",
+        "GetIncorrectToken",
+        "IsID",
         "Or",
-        "LessThanOrEqual",
-        "Evaluate",
-        "And",
         "LessThan",
-        "GreaterThanOrEqual",
-        "Equals",
-        "Inequality",
         "GreaterThan",
+        "LessThanOrEqual",
+        "And",
+        "Equals",
+        "GreaterThanOrEqual",
+        "Inequality",
+        "Evaluate",
         "Evaluate",
         "Main"
     ],
@@ -570,7 +570,11 @@
             "void"
         ],
         [
-            "Division",
+            "Subtract",
+            "string"
+        ],
+        [
+            "Multiply",
             "string"
         ],
         [
@@ -578,15 +582,7 @@
             "string"
         ],
         [
-            "Subtract",
-            "string"
-        ],
-        [
             "Modulo",
-            "string"
-        ],
-        [
-            "Multiply",
             "string"
         ],
         [
@@ -598,27 +594,15 @@
             "string"
         ],
         [
-            "Evaluate",
-            "void"
+            "Division",
+            "string"
         ],
         [
             "Evaluate",
             "void"
         ],
         [
-            "rand",
-            "void"
-        ],
-        [
-            "sin",
-            "void"
-        ],
-        [
-            "exp",
-            "void"
-        ],
-        [
-            "PI",
+            "Evaluate",
             "void"
         ],
         [
@@ -626,23 +610,35 @@
             "void"
         ],
         [
-            "log",
-            "void"
-        ],
-        [
-            "Evaluate",
-            "void"
-        ],
-        [
-            "sqrt",
-            "void"
-        ],
-        [
             "cos",
             "void"
         ],
         [
+            "log",
+            "void"
+        ],
+        [
+            "sin",
+            "void"
+        ],
+        [
+            "rand",
+            "void"
+        ],
+        [
+            "exp",
+            "void"
+        ],
+        [
             "Evaluate",
+            "void"
+        ],
+        [
+            "PI",
+            "void"
+        ],
+        [
+            "sqrt",
             "void"
         ],
         [
@@ -658,11 +654,19 @@
             "string"
         ],
         [
+            "Evaluate",
+            "void"
+        ],
+        [
             "IsNumber",
             "bool"
         ],
         [
             "IsID",
+            "bool"
+        ],
+        [
+            "IsString",
             "bool"
         ],
         [
@@ -686,35 +690,7 @@
             "string"
         ],
         [
-            "IsString",
-            "bool"
-        ],
-        [
-            "Equals",
-            "string"
-        ],
-        [
-            "And",
-            "string"
-        ],
-        [
-            "Inequality",
-            "string"
-        ],
-        [
-            "LessThan",
-            "string"
-        ],
-        [
-            "GreaterThan",
-            "string"
-        ],
-        [
-            "LessThanOrEqual",
-            "string"
-        ],
-        [
-            "GreaterThanOrEqual",
+            "Or",
             "string"
         ],
         [
@@ -722,7 +698,31 @@
             "void"
         ],
         [
-            "Or",
+            "GreaterThan",
+            "string"
+        ],
+        [
+            "LessThan",
+            "string"
+        ],
+        [
+            "Inequality",
+            "string"
+        ],
+        [
+            "And",
+            "string"
+        ],
+        [
+            "LessThanOrEqual",
+            "string"
+        ],
+        [
+            "Equals",
+            "string"
+        ],
+        [
+            "GreaterThanOrEqual",
             "string"
         ],
         [
@@ -735,20 +735,20 @@
         ]
     ],
     "class_names": [
-        "SyntaxError",
-        "HulkErrors",
         "LexicalError",
-        "SumExpression",
+        "HulkErrors",
+        "SyntaxError",
         "PowerExpression",
+        "SumExpression",
         "MultiplyExpression",
         "Conditional",
         "FunctionDeclaration",
-        "Function",
         "Print",
+        "Function",
         "MathExpressions",
         "Expression",
-        "Binary_Exrpessions",
         "Atom",
+        "Binary_Exrpessions",
         "HulkExpression",
         "Lexer",
         "BooleanOperator",
@@ -879,5 +879,6 @@
         "Attribute_argumentContext": 18
     },
     "project_name": "DiegoViera1511_Proyecto-II-H.U.L.K",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

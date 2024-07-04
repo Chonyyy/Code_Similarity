@@ -114,140 +114,24 @@
     ],
     "variable_names": [
         [
-            "Dictionary",
-            "fakenameVsTFIDF"
-        ],
-        [
-            "double",
-            "tf"
-        ],
-        [
-            "Dictionary",
-            "fakenameVsTF"
+            "int",
+            "contador"
         ],
         [
             "string",
             "Documento"
         ],
         [
-            "string",
-            "snipet"
-        ],
-        [
             "Dictionary",
-            "Name_Words_TF"
-        ],
-        [
-            "Dictionary",
-            "Snippet"
-        ],
-        [
-            "double",
-            "tfidf"
-        ],
-        [
-            "Dictionary",
-            "Query_IDF"
-        ],
-        [
-            "var",
-            "items"
-        ],
-        [
-            "string",
-            "PalabrasTemp"
-        ],
-        [
-            "HashSet",
-            "uniqueWords"
-        ],
-        [
-            "double",
-            "count"
-        ],
-        [
-            "double",
-            "idf"
-        ],
-        [
-            "Dictionary",
-            "Name_Words_TFIDF"
-        ],
-        [
-            "Dictionary",
-            "Results"
-        ],
-        [
-            "int",
-            "documentLength"
-        ],
-        [
-            "Dictionary",
-            "MultTFIDF"
-        ],
-        [
-            "Dictionary",
-            "WordsvsIDF"
-        ],
-        [
-            "Dictionary",
-            "Query_TF"
-        ],
-        [
-            "string",
-            "words"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "double",
-            "totalDocuments"
-        ],
-        [
-            "Dictionary",
-            "wordCounts"
-        ],
-        [
-            "Stopwatch",
-            "crono"
-        ],
-        [
-            "float",
-            "time"
-        ],
-        [
-            "double",
-            "sum2"
-        ],
-        [
-            "double",
-            "DocumentosDodeExiste"
-        ],
-        [
-            "string",
-            "snipetvar"
-        ],
-        [
-            "int",
-            "contador"
-        ],
-        [
-            "Dictionary",
-            "fakenameVsIDF"
-        ],
-        [
-            "string",
-            "unrepeatedwords"
+            "Query_TFIDF"
         ],
         [
             "Dictionary",
             "nameVsTF"
         ],
         [
-            "string",
-            "PalabrasNoRepetidasTemp"
+            "var",
+            "items"
         ],
         [
             "Dictionary",
@@ -255,35 +139,31 @@
         ],
         [
             "Dictionary",
-            "CosSimilitud"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "Dictionary",
-            "Query_TFIDF"
-        ],
-        [
-            "double",
-            "cantidad_total_documentos"
-        ],
-        [
-            "Dictionary",
-            "Documents_Similitude"
-        ],
-        [
-            "Dictionary",
-            "Documents_SimilitudeCos"
+            "WordsvsTF"
         ],
         [
             "Dictionary",
             "Similitud"
         ],
         [
-            "double",
-            "sum1"
+            "Dictionary",
+            "Name_Words_TFIDF"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "PalabrasNoRepetidasTemp"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "Dictionary",
+            "wordCounts"
         ],
         [
             "Dictionary",
@@ -291,91 +171,167 @@
         ],
         [
             "Dictionary",
-            "wordIDFs"
-        ],
-        [
-            "Dictionary",
-            "WordsvsTFIDF"
-        ],
-        [
-            "Dictionary",
-            "Name_Words_IDF"
-        ],
-        [
-            "Dictionary",
-            "WordsvsTF"
-        ],
-        [
-            "double",
-            "sum"
-        ],
-        [
-            "int",
-            "x"
-        ],
-        [
-            "TF_IDF",
-            "objeto2"
+            "Snippet"
         ],
         [
             "string",
-            "suggestion"
+            "unrepeatedwords"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "SearchItem",
-            "items2"
-        ],
-        [
-            "int",
-            "Distancias"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "n"
-        ],
-        [
-            "string",
-            "mypath"
+            "float",
+            "time"
         ],
         [
             "int",
             "index"
         ],
         [
-            "int",
-            "min"
+            "HashSet",
+            "uniqueWords"
+        ],
+        [
+            "Dictionary",
+            "WordsvsTFIDF"
+        ],
+        [
+            "double",
+            "idf"
+        ],
+        [
+            "string",
+            "snipet"
+        ],
+        [
+            "Dictionary",
+            "Documents_SimilitudeCos"
+        ],
+        [
+            "Dictionary",
+            "MultTFIDF"
+        ],
+        [
+            "Dictionary",
+            "wordIDFs"
+        ],
+        [
+            "Dictionary",
+            "fakenameVsIDF"
+        ],
+        [
+            "Dictionary",
+            "Documents_Similitude"
+        ],
+        [
+            "double",
+            "sum"
+        ],
+        [
+            "Dictionary",
+            "Name_Words_IDF"
+        ],
+        [
+            "double",
+            "count"
+        ],
+        [
+            "string",
+            "PalabrasTemp"
+        ],
+        [
+            "double",
+            "cantidad_total_documentos"
+        ],
+        [
+            "Dictionary",
+            "fakenameVsTF"
+        ],
+        [
+            "Dictionary",
+            "CosSimilitud"
+        ],
+        [
+            "double",
+            "tfidf"
+        ],
+        [
+            "Stopwatch",
+            "crono"
+        ],
+        [
+            "Dictionary",
+            "Query_IDF"
+        ],
+        [
+            "double",
+            "sum1"
+        ],
+        [
+            "Dictionary",
+            "fakenameVsTFIDF"
+        ],
+        [
+            "string",
+            "snipetvar"
+        ],
+        [
+            "double",
+            "sum2"
+        ],
+        [
+            "Dictionary",
+            "Query_TF"
+        ],
+        [
+            "double",
+            "DocumentosDodeExiste"
         ],
         [
             "int",
-            "m"
-        ],
-        [
-            "SearchItem",
-            "items4"
+            "documentLength"
         ],
         [
             "Dictionary",
             "Results"
         ],
         [
-            "int",
-            "dp"
+            "double",
+            "totalDocuments"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "double",
+            "tf"
+        ],
+        [
+            "Dictionary",
+            "WordsvsIDF"
+        ],
+        [
+            "Dictionary",
+            "Name_Words_TF"
+        ],
+        [
+            "string",
+            "mypath"
         ],
         [
             "var",
             "ResultadosOrdenados"
         ],
         [
-            "string",
-            "tempath"
+            "int",
+            "n"
+        ],
+        [
+            "TF_IDF",
+            "objeto2"
+        ],
+        [
+            "int",
+            "min"
         ],
         [
             "List",
@@ -387,15 +343,63 @@
         ],
         [
             "string",
-            "Words"
+            "suggestion"
+        ],
+        [
+            "SearchItem",
+            "items4"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "tempath"
+        ],
+        [
+            "int",
+            "dp"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "Dictionary",
+            "Results"
+        ],
+        [
+            "SearchItem",
+            "items2"
+        ],
+        [
+            "int",
+            "Distancias"
+        ],
+        [
+            "string",
+            "mypath"
+        ],
+        [
+            "string",
+            "TextVar"
+        ],
+        [
+            "string",
+            "fakewords"
         ],
         [
             "Stopwatch",
             "crono"
         ],
         [
-            "string",
-            "mypath"
+            "int",
+            "i"
         ],
         [
             "char",
@@ -407,69 +411,41 @@
         ],
         [
             "string",
-            "TextVar"
-        ],
-        [
-            "string",
-            "fakewords"
-        ],
-        [
-            "string",
             "tempath"
         ],
         [
             "string",
             "UnrepeatedWords"
+        ],
+        [
+            "string",
+            "Words"
         ]
     ],
     "method_names": [
+        "TFIDF",
         "QueryTreatment",
         "CosSimilitude",
-        "Counter",
-        "TFIDF",
-        "TF",
-        "QueryTFIDF",
         "WhereExist",
+        "Counter",
+        "TF",
         "MultTFIDF",
         "IDF",
+        "QueryTFIDF",
         "Items",
         "Query",
         "Cargar",
-        "GetPaths",
         "FakeData",
-        "GetTexts",
-        "GetNames",
-        "CleanWords",
         "GetWords",
+        "CleanWords",
+        "GetNames",
+        "GetPaths",
+        "GetTexts",
         "GetAllData"
     ],
     "method_return_types": [
         [
-            "TF",
-            "void"
-        ],
-        [
             "IDF",
-            "void"
-        ],
-        [
-            "WhereExist",
-            "double"
-        ],
-        [
-            "MultTFIDF",
-            "Dictionary"
-        ],
-        [
-            "CosSimilitude",
-            "void"
-        ],
-        [
-            "QueryTreatment",
-            "string"
-        ],
-        [
-            "QueryTFIDF",
             "void"
         ],
         [
@@ -477,40 +453,48 @@
             "double"
         ],
         [
+            "TF",
+            "void"
+        ],
+        [
+            "CosSimilitude",
+            "void"
+        ],
+        [
+            "MultTFIDF",
+            "Dictionary"
+        ],
+        [
             "TFIDF",
             "void"
+        ],
+        [
+            "WhereExist",
+            "double"
+        ],
+        [
+            "QueryTFIDF",
+            "void"
+        ],
+        [
+            "QueryTreatment",
+            "string"
         ],
         [
             "Items",
             "IEnumerable"
         ],
         [
-            "Cargar",
-            "Dictionary"
-        ],
-        [
             "Query",
             "SearchResult"
         ],
         [
-            "GetTexts",
-            "String"
-        ],
-        [
-            "FakeData",
-            "void"
-        ],
-        [
-            "GetNames",
-            "String"
+            "Cargar",
+            "Dictionary"
         ],
         [
             "GetAllData",
             "string"
-        ],
-        [
-            "CleanWords",
-            "String"
         ],
         [
             "GetWords",
@@ -518,6 +502,22 @@
         ],
         [
             "GetPaths",
+            "String"
+        ],
+        [
+            "GetTexts",
+            "String"
+        ],
+        [
+            "GetNames",
+            "String"
+        ],
+        [
+            "FakeData",
+            "void"
+        ],
+        [
+            "CleanWords",
             "String"
         ]
     ],
@@ -666,5 +666,6 @@
         "Element_initializerContext": 10
     },
     "project_name": "dnielpy2_Moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

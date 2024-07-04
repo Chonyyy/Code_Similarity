@@ -299,6 +299,22 @@
     ],
     "variable_names": [
         [
+            "string",
+            "parent"
+        ],
+        [
+            "string",
+            "fileContent"
+        ],
+        [
+            "Dictionary",
+            "sinonimos"
+        ],
+        [
+            "string",
+            "path"
+        ],
+        [
             "List",
             "names"
         ],
@@ -307,28 +323,16 @@
             "DictionaryForPositions"
         ],
         [
-            "Dictionary",
-            "sinonimos"
+            "string",
+            "answer"
         ],
         [
-            "string",
-            "fileContent"
-        ],
-        [
-            "string",
-            "parent"
-        ],
-        [
-            "string",
-            "path"
+            "int",
+            "n"
         ],
         [
             "string",
             "aux"
-        ],
-        [
-            "double",
-            "v1"
         ],
         [
             "int",
@@ -339,8 +343,8 @@
             "max"
         ],
         [
-            "double",
-            "v2"
+            "Suggestion",
+            "sgt"
         ],
         [
             "int",
@@ -348,11 +352,7 @@
         ],
         [
             "double",
-            "posdif"
-        ],
-        [
-            "Suggestion",
-            "sgt"
+            "v1"
         ],
         [
             "int",
@@ -363,24 +363,44 @@
             "dp"
         ],
         [
-            "int",
-            "n"
-        ],
-        [
             "double",
-            "tot"
+            "v2"
         ],
         [
             "string",
             "words"
         ],
         [
-            "string",
-            "answer"
+            "double",
+            "posdif"
+        ],
+        [
+            "double",
+            "tot"
+        ],
+        [
+            "List",
+            "a"
+        ],
+        [
+            "double",
+            "b"
+        ],
+        [
+            "Symbol",
+            "symbol"
+        ],
+        [
+            "List",
+            "scoresSyn"
         ],
         [
             "string",
             "DocumentsInOrder"
+        ],
+        [
+            "List",
+            "items"
         ],
         [
             "SearchItem",
@@ -391,116 +411,44 @@
             "i"
         ],
         [
-            "string",
-            "snippet"
-        ],
-        [
-            "List",
-            "scores"
-        ],
-        [
-            "List",
-            "lst"
-        ],
-        [
-            "Dictionary",
-            "Doc"
-        ],
-        [
             "Suggestion",
             "sgt"
-        ],
-        [
-            "List",
-            "items"
-        ],
-        [
-            "string",
-            "suggestion"
-        ],
-        [
-            "double",
-            "b"
-        ],
-        [
-            "string",
-            "tempcad"
-        ],
-        [
-            "List",
-            "scoresSyn"
         ],
         [
             "string",
             "newQuery"
         ],
         [
-            "List",
-            "a"
+            "string",
+            "snippet"
+        ],
+        [
+            "string",
+            "tempcad"
         ],
         [
             "string",
             "QuerySyn"
         ],
         [
-            "Symbol",
-            "symbol"
-        ],
-        [
             "string",
-            "aux"
-        ],
-        [
-            "(",
-            "b"
-        ],
-        [
-            "Operator",
-            "Op"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "Suggestion",
-            "sg"
-        ],
-        [
-            "List",
-            "Closeness"
-        ],
-        [
-            "string",
-            "no"
-        ],
-        [
-            "Symbol",
-            "answer"
-        ],
-        [
-            "List",
-            "answer"
-        ],
-        [
-            "Suggestion",
-            "sg2"
+            "suggestion"
         ],
         [
             "Dictionary",
-            "asterisks"
+            "Doc"
+        ],
+        [
+            "List",
+            "lst"
+        ],
+        [
+            "List",
+            "scores"
         ],
         [
             "string",
             "yes"
-        ],
-        [
-            "bool",
-            "marks"
-        ],
-        [
-            "string",
-            "aux2"
         ],
         [
             "(",
@@ -508,7 +456,47 @@
         ],
         [
             "string",
+            "no"
+        ],
+        [
+            "Dictionary",
+            "asterisks"
+        ],
+        [
+            "Suggestion",
+            "sg"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "bool",
+            "marks"
+        ],
+        [
+            "Symbol",
+            "answer"
+        ],
+        [
+            "Operator",
+            "Op"
+        ],
+        [
+            "Suggestion",
+            "sg2"
+        ],
+        [
+            "string",
+            "ttt1"
+        ],
+        [
+            "string",
             "ttt2"
+        ],
+        [
+            "List",
+            "answer"
         ],
         [
             "string",
@@ -516,71 +504,23 @@
         ],
         [
             "string",
-            "ttt1"
-        ],
-        [
-            "double",
-            "cosin"
-        ],
-        [
-            "Dictionary",
-            "mp"
-        ],
-        [
-            "List",
-            "BanDocuments"
-        ],
-        [
-            "string",
-            "words"
-        ],
-        [
-            "Vector",
-            "vectors"
+            "aux2"
         ],
         [
             "int",
             "i"
         ],
         [
-            "double",
-            "mdt"
+            "(",
+            "b"
         ],
         [
-            "int",
-            "ind"
+            "List",
+            "Closeness"
         ],
         [
-            "Vector",
-            "queryVector"
-        ],
-        [
-            "double",
-            "tfidf"
-        ],
-        [
-            "double",
-            "FoundT"
-        ],
-        [
-            "string",
-            "filesName"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "double",
-            "index"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "double",
-            "idf"
+            "Dictionary",
+            "mp"
         ],
         [
             "double",
@@ -588,15 +528,31 @@
         ],
         [
             "double",
-            "auxDouble"
+            "cosin"
         ],
         [
-            "bool",
-            "flag"
+            "int",
+            "j"
+        ],
+        [
+            "double",
+            "FoundT"
         ],
         [
             "List",
             "lst"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "answer"
+        ],
+        [
+            "double",
+            "auxDouble"
         ],
         [
             "List",
@@ -604,11 +560,75 @@
         ],
         [
             "double",
-            "NomberOfDocuments"
+            "index"
+        ],
+        [
+            "double",
+            "idf"
+        ],
+        [
+            "double",
+            "mdt"
+        ],
+        [
+            "Vector",
+            "queryVector"
         ],
         [
             "List",
-            "answer"
+            "BanDocuments"
+        ],
+        [
+            "string",
+            "filesName"
+        ],
+        [
+            "double",
+            "NomberOfDocuments"
+        ],
+        [
+            "bool",
+            "flag"
+        ],
+        [
+            "double",
+            "tfidf"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "Vector",
+            "vectors"
+        ],
+        [
+            "int",
+            "ind"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "string",
+            "s1"
+        ],
+        [
+            "int",
+            "last"
+        ],
+        [
+            "List",
+            "Pos"
+        ],
+        [
+            "int",
+            "L"
+        ],
+        [
+            "StringBuilder",
+            "word"
         ],
         [
             "int",
@@ -619,48 +639,24 @@
             "vect"
         ],
         [
-            "int",
-            "L"
-        ],
-        [
             "string",
             "s2"
-        ],
-        [
-            "StringBuilder",
-            "word"
-        ],
-        [
-            "List",
-            "Pos"
-        ],
-        [
-            "string",
-            "s1"
         ],
         [
             "int",
             "R"
         ],
         [
-            "int",
-            "last"
-        ],
-        [
-            "int",
-            "i"
+            "double",
+            "answer"
         ],
         [
             "string",
             "line"
         ],
         [
-            "StreamReader",
-            "str"
-        ],
-        [
-            "double",
-            "answer"
+            "int",
+            "i"
         ],
         [
             "string",
@@ -669,30 +665,34 @@
         [
             "string",
             "words"
+        ],
+        [
+            "StreamReader",
+            "str"
         ]
     ],
     "method_names": [
         "Items",
-        "TekeDictionaryPosition",
-        "TakeFileNames",
+        "SaveFileNames",
         "TekeDictionarySyn",
         "SaveDictionaryPosition",
-        "SaveFileNames",
-        "SimilarityInWords",
+        "TakeFileNames",
+        "TekeDictionaryPosition",
         "suggestionForQuery",
-        "Init",
+        "SimilarityInWords",
         "Query",
-        "BanDocuments",
+        "Init",
         "GetSymbol",
-        "MV",
+        "BanDocuments",
         "IDF",
-        "FindFistLeft",
+        "MV",
         "CompareWords",
-        "FindFistRight",
-        "GetWordsAndPositionsFromString",
         "GetCharPositions",
-        "SplitPhraseInWords",
+        "FindFistRight",
+        "FindFistLeft",
+        "GetWordsAndPositionsFromString",
         "fillWithZeros",
+        "SplitPhraseInWords",
         "Find",
         "FindInArray"
     ],
@@ -700,6 +700,10 @@
         [
             "Items",
             "IEnumerable"
+        ],
+        [
+            "TakeFileNames",
+            "List"
         ],
         [
             "SaveDictionaryPosition",
@@ -714,20 +718,16 @@
             "Dictionary"
         ],
         [
-            "TakeFileNames",
-            "List"
-        ],
-        [
             "TekeDictionaryPosition",
             "Dictionary"
         ],
         [
-            "suggestionForQuery",
-            "string"
-        ],
-        [
             "SimilarityInWords",
             "double"
+        ],
+        [
+            "suggestionForQuery",
+            "string"
         ],
         [
             "Init",
@@ -738,19 +738,23 @@
             "SearchResult"
         ],
         [
+            "GetSymbol",
+            "Symbol"
+        ],
+        [
             "BanDocuments",
             "List"
         ],
         [
-            "GetSymbol",
-            "Symbol"
+            "MV",
+            "List"
         ],
         [
             "IDF",
             "double"
         ],
         [
-            "MV",
+            "GetCharPositions",
             "List"
         ],
         [
@@ -770,11 +774,7 @@
             "List"
         ],
         [
-            "GetCharPositions",
-            "List"
-        ],
-        [
-            "Find",
+            "FindInArray",
             "bool"
         ],
         [
@@ -782,7 +782,7 @@
             "double"
         ],
         [
-            "FindInArray",
+            "Find",
             "bool"
         ],
         [
@@ -934,5 +934,6 @@
         "Attribute_argumentContext": 1
     },
     "project_name": "SherlynBallestero_moogle-2021",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

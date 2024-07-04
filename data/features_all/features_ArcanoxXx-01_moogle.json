@@ -219,14 +219,6 @@
     ],
     "variable_names": [
         [
-            "int",
-            "j"
-        ],
-        [
-            "double",
-            "suma"
-        ],
-        [
             "double",
             "producto"
         ],
@@ -235,24 +227,56 @@
             "i"
         ],
         [
-            "double",
-            "Producto"
-        ],
-        [
             "int",
             "k"
         ],
         [
-            "int",
-            "i"
+            "double",
+            "suma"
         ],
         [
             "int",
             "j"
         ],
         [
+            "double",
+            "Producto"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Query",
+            "entrada"
+        ],
+        [
+            "float",
+            "NormaA"
+        ],
+        [
+            "SearchItem",
+            "sugerencia"
+        ],
+        [
             "float",
             "contador"
+        ],
+        [
+            "List",
+            "list"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "SearchItem",
+            "A"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "string",
@@ -267,14 +291,6 @@
             "titulo"
         ],
         [
-            "Query",
-            "entrada"
-        ],
-        [
-            "SearchItem",
-            "sugerencia"
-        ],
-        [
             "float",
             "NormaB"
         ],
@@ -283,24 +299,16 @@
             "score"
         ],
         [
-            "List",
-            "list"
+            "char",
+            "ignorar"
         ],
         [
-            "SearchItem",
-            "A"
+            "string",
+            "TodasLAsPalabras"
         ],
         [
             "int",
             "i"
-        ],
-        [
-            "float",
-            "NormaA"
-        ],
-        [
-            "string",
-            "NuevaPalabra"
         ],
         [
             "int",
@@ -308,19 +316,11 @@
         ],
         [
             "string",
-            "TodasLasPalabrasConCaracteres"
-        ],
-        [
-            "char",
-            "ignorar"
-        ],
-        [
-            "int",
-            "i"
+            "NuevaPalabra"
         ],
         [
             "string",
-            "TodasLAsPalabras"
+            "TodasLasPalabrasConCaracteres"
         ],
         [
             "char",
@@ -338,27 +338,27 @@
     "method_names": [
         "Items",
         "Suma",
-        "ProductoPorEscalar",
         "Producto",
+        "ProductoPorEscalar",
         "LlenarPalabras",
         "LlenarTF_IDF",
+        "Snippet",
+        "LlenarIDF",
         "ConstruirDocumentos",
-        "CalcularScore",
         "ComprobarTienenQueEstar",
+        "CalcularScore",
+        "SonIguales",
         "Agregar",
         "ComprobarNoPuedenEstar",
         "Query",
-        "Snippet",
-        "SonIguales",
-        "LlenarIDF",
         "CrearTF_IDF",
-        "DividirYMantenerCaracteres",
         "LlenarTienenQueEstarYNoPuedenEstar",
-        "Dividir",
+        "DividirYMantenerCaracteres",
         "LlenarPalabras",
-        "CorregirPalabra",
-        "ObtenerArchivos",
         "Dividir",
+        "CorregirPalabra",
+        "Dividir",
+        "ObtenerArchivos",
         "ObtenerTextos"
     ],
     "method_return_types": [
@@ -371,32 +371,28 @@
             "Matriz"
         ],
         [
-            "Suma",
-            "Matriz"
-        ],
-        [
             "Producto",
             "Matriz"
         ],
         [
-            "LlenarPalabras",
-            "void"
+            "Suma",
+            "Matriz"
         ],
         [
             "LlenarTF_IDF",
             "void"
         ],
         [
-            "Query",
-            "SearchResult"
+            "LlenarPalabras",
+            "void"
         ],
         [
-            "Snippet",
-            "string"
+            "ConstruirDocumentos",
+            "void"
         ],
         [
-            "ComprobarNoPuedenEstar",
-            "bool"
+            "Agregar",
+            "void"
         ],
         [
             "CrearTF_IDF",
@@ -407,36 +403,28 @@
             "bool"
         ],
         [
-            "ComprobarTienenQueEstar",
-            "bool"
-        ],
-        [
-            "Agregar",
-            "void"
-        ],
-        [
-            "CalcularScore",
-            "float"
+            "Snippet",
+            "string"
         ],
         [
             "LlenarIDF",
             "void"
         ],
         [
-            "ConstruirDocumentos",
-            "void"
+            "ComprobarTienenQueEstar",
+            "bool"
         ],
         [
-            "LlenarPalabras",
-            "void"
+            "ComprobarNoPuedenEstar",
+            "bool"
         ],
         [
-            "CorregirPalabra",
-            "string"
+            "Query",
+            "SearchResult"
         ],
         [
-            "Dividir",
-            "string"
+            "CalcularScore",
+            "float"
         ],
         [
             "LlenarTienenQueEstarYNoPuedenEstar",
@@ -447,8 +435,16 @@
             "string"
         ],
         [
+            "CorregirPalabra",
+            "string"
+        ],
+        [
             "Dividir",
             "string"
+        ],
+        [
+            "LlenarPalabras",
+            "void"
         ],
         [
             "ObtenerArchivos",
@@ -457,6 +453,10 @@
         [
             "ObtenerTextos",
             "void"
+        ],
+        [
+            "Dividir",
+            "string"
         ]
     ],
     "class_names": [
@@ -591,5 +591,6 @@
         "Constant_declaratorContext": 1
     },
     "project_name": "ArcanoxXx-01_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

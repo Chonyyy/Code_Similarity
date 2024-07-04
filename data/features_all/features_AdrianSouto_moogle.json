@@ -150,6 +150,18 @@
     ],
     "variable_names": [
         [
+            "Dictionary",
+            "queryOrdered"
+        ],
+        [
+            "double",
+            "score"
+        ],
+        [
+            "Vector",
+            "queryVector"
+        ],
+        [
             "List",
             "words"
         ],
@@ -158,12 +170,12 @@
             "result"
         ],
         [
-            "string",
-            "snippet"
+            "int",
+            "maxTFIDFPos"
         ],
         [
-            "Vector",
-            "queryVector"
+            "string",
+            "snippet"
         ],
         [
             "int",
@@ -174,24 +186,16 @@
             "items"
         ],
         [
-            "double",
-            "score"
-        ],
-        [
             "string",
             "text"
         ],
         [
-            "int",
-            "maxTFIDFPos"
-        ],
-        [
-            "Dictionary",
-            "queryOrdered"
-        ],
-        [
             "List",
             "listWords"
+        ],
+        [
+            "string",
+            "files"
         ],
         [
             "string",
@@ -200,10 +204,6 @@
         [
             "Vector",
             "v"
-        ],
-        [
-            "string",
-            "files"
         ],
         [
             "string",
@@ -219,6 +219,10 @@
         ],
         [
             "double",
+            "sum"
+        ],
+        [
+            "double",
             "norma"
         ],
         [
@@ -227,11 +231,7 @@
         ],
         [
             "double",
-            "sum"
-        ],
-        [
-            "char",
-            "specialChars"
+            "idf"
         ],
         [
             "int",
@@ -242,23 +242,23 @@
             "cont"
         ],
         [
-            "double",
-            "idf"
+            "char",
+            "specialChars"
         ]
     ],
     "method_names": [
         "Items",
-        "Query",
         "Search",
+        "Query",
         "Add",
         "GetData",
-        "NormaVector",
-        "ProdEscalar",
         "GetName",
         "CountWords",
+        "NormaVector",
+        "ProdEscalar",
         "MakeList",
-        "CalculateTF",
         "NextDot",
+        "CalculateTF",
         "CalculateIDF",
         "PrevDot"
     ],
@@ -284,14 +284,6 @@
             "void"
         ],
         [
-            "GetName",
-            "string"
-        ],
-        [
-            "NormaVector",
-            "double"
-        ],
-        [
             "CountWords",
             "void"
         ],
@@ -300,15 +292,15 @@
             "double"
         ],
         [
-            "MakeList",
-            "List"
+            "GetName",
+            "string"
+        ],
+        [
+            "NormaVector",
+            "double"
         ],
         [
             "NextDot",
-            "int"
-        ],
-        [
-            "PrevDot",
             "int"
         ],
         [
@@ -318,6 +310,14 @@
         [
             "CalculateIDF",
             "double"
+        ],
+        [
+            "MakeList",
+            "List"
+        ],
+        [
+            "PrevDot",
+            "int"
         ]
     ],
     "class_names": [
@@ -442,5 +442,6 @@
         "Array_initializerContext": 1
     },
     "project_name": "AdrianSouto_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

@@ -699,36 +699,16 @@
     ],
     "variable_names": [
         [
+            "int",
+            "aux"
+        ],
+        [
             "List",
             "copy"
         ],
         [
             "int",
-            "aux"
-        ],
-        [
-            "var",
-            "aux"
-        ],
-        [
-            "List",
-            "clon"
-        ],
-        [
-            "int",
             "min"
-        ],
-        [
-            "int",
-            "a"
-        ],
-        [
-            "int",
-            "devolver"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "int",
@@ -743,16 +723,32 @@
             "i"
         ],
         [
-            "double",
+            "int",
+            "a"
+        ],
+        [
+            "var",
             "aux"
+        ],
+        [
+            "List",
+            "clon"
+        ],
+        [
+            "int",
+            "devolver"
+        ],
+        [
+            "List",
+            "list"
         ],
         [
             "int",
             "j"
         ],
         [
-            "List",
-            "list"
+            "double",
+            "aux"
         ],
         [
             "int",
@@ -764,11 +760,11 @@
         ],
         [
             "int",
-            "aux"
+            "i"
         ],
         [
             "int",
-            "j"
+            "aux"
         ],
         [
             "Random",
@@ -783,12 +779,20 @@
             "i"
         ],
         [
+            "int",
+            "j"
+        ],
+        [
             "var",
             "a"
         ],
         [
+            "List",
+            "list"
+        ],
+        [
             "var",
-            "newTablero"
+            "root"
         ],
         [
             "var",
@@ -796,15 +800,19 @@
         ],
         [
             "var",
-            "root"
+            "newTablero"
         ],
         [
-            "List",
-            "list"
+            "var",
+            "newMoves"
         ],
         [
             "Random",
             "r"
+        ],
+        [
+            "int",
+            "peso"
         ],
         [
             "Dictionary",
@@ -812,19 +820,11 @@
         ],
         [
             "int",
-            "peso"
+            "i"
         ],
         [
             "int",
             "devolver"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "var",
-            "newMoves"
         ],
         [
             "var",
@@ -836,11 +836,11 @@
         ],
         [
             "int",
-            "aux"
+            "turnos"
         ],
         [
             "int",
-            "turnos"
+            "aux"
         ],
         [
             "Random",
@@ -851,46 +851,46 @@
             "count"
         ],
         [
-            "var",
-            "newMano"
-        ],
-        [
             "int",
             "peso"
+        ],
+        [
+            "var",
+            "newMano"
         ]
     ],
     "method_names": [
         "OnGet",
         "GetForecastAsync",
-        "DecidirGanador",
         "Ordena",
+        "DecidirGanador",
         "EsPrimo",
         "Generamazo",
         "SacarJugadas",
-        "matchea",
         "PuedeSalir",
         "Jugabilidad",
+        "matchea",
         "Reparte",
         "RunTurn",
         "Run",
         "RecibeParametros",
         "ToString",
         "Juega",
-        "Pintar",
         "Clone",
-        "GetEnumerator",
         "IEnumerable",
+        "Pintar",
+        "GetEnumerator",
         "Estrategiarandom",
-        "Botagordas",
         "NoPasarse",
+        "Botagordas",
         "RunTurn",
-        "Run",
         "EfectuarJugada",
+        "Run",
         "Condicion",
         "Turno",
+        "Clone",
         "Add",
-        "Remove",
-        "Clone"
+        "Remove"
     ],
     "method_return_types": [
         [
@@ -910,44 +910,44 @@
             "int"
         ],
         [
-            "EsPrimo",
-            "bool"
-        ],
-        [
             "Generamazo",
             "List"
         ],
         [
-            "Jugabilidad",
-            "void"
+            "EsPrimo",
+            "bool"
         ],
         [
             "matchea",
             "bool"
         ],
         [
-            "PuedeSalir",
-            "bool"
+            "Jugabilidad",
+            "void"
         ],
         [
             "SacarJugadas",
             "List"
         ],
         [
+            "PuedeSalir",
+            "bool"
+        ],
+        [
             "Reparte",
             "List"
         ],
         [
-            "RunTurn",
-            "bool"
+            "RecibeParametros",
+            "void"
         ],
         [
             "Run",
             "void"
         ],
         [
-            "RecibeParametros",
-            "void"
+            "RunTurn",
+            "bool"
         ],
         [
             "ToString",
@@ -962,23 +962,23 @@
             "IEnumerator"
         ],
         [
-            "IEnumerable",
-            "IEnumerator"
+            "Pintar",
+            "IEnumerable"
         ],
         [
             "Clone",
             "Nodo"
         ],
         [
-            "Pintar",
-            "IEnumerable"
+            "IEnumerable",
+            "IEnumerator"
         ],
         [
             "Clone",
             "Tablero"
         ],
         [
-            "Botagordas",
+            "Estrategiarandom",
             "int"
         ],
         [
@@ -986,12 +986,8 @@
             "int"
         ],
         [
-            "Estrategiarandom",
+            "Botagordas",
             "int"
-        ],
-        [
-            "RunTurn",
-            "bool"
         ],
         [
             "Run",
@@ -1000,6 +996,10 @@
         [
             "EfectuarJugada",
             "void"
+        ],
+        [
+            "RunTurn",
+            "bool"
         ],
         [
             "Condicion",
@@ -1014,12 +1014,12 @@
             "void"
         ],
         [
-            "Clone",
-            "Mano"
-        ],
-        [
             "Add",
             "void"
+        ],
+        [
+            "Clone",
+            "Mano"
         ]
     ],
     "class_names": [
@@ -1040,17 +1040,17 @@
         "Ficha",
         "Player",
         "Class1",
-        "Nodo",
         "Tablero",
+        "Nodo",
         "Movimiento",
         "Estrategias",
         "Referee",
-        "EndconditionPorPuntos50",
-        "EndconditionPorPases3",
         "EndconditionClasico",
+        "EndconditionPorPases3",
+        "EndconditionPorPuntos50",
+        "TurnerRandom",
         "TurnerClasico",
         "TurnerContrario",
-        "TurnerRandom",
         "Mano"
     ],
     "interface_names": [
@@ -1201,5 +1201,6 @@
         "Return_typeContext": 1
     },
     "project_name": "Nuebe29_Un-Domino-con-los-Panas",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

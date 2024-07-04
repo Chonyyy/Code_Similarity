@@ -18,9 +18,9 @@
     "number_of_delegates": 1,
     "function_calls": 59,
     "enums_names": [
-        "VersionDomioes",
+        "TypePlayer",
         "TypeGame",
-        "TypePlayer"
+        "VersionDomioes"
     ],
     "control_structures_if": 42,
     "control_structures_switch": 2,
@@ -533,35 +533,47 @@
     "variable_names": [
         [
             "List",
-            "Randomized"
-        ],
-        [
-            "List",
             "ValidMoves"
-        ],
-        [
-            "Random",
-            "RDM"
         ],
         [
             "Chip",
             "BestRanked"
         ],
         [
-            "int",
-            "PlayerHandScore"
+            "Random",
+            "RDM"
+        ],
+        [
+            "List",
+            "Randomized"
         ],
         [
             "int",
             "HandScore"
         ],
         [
+            "int",
+            "PlayerHandScore"
+        ],
+        [
             "List",
             "chips"
         ],
         [
+            "bool",
+            "isFinal"
+        ],
+        [
+            "List",
+            "playerWin"
+        ],
+        [
             "List",
             "Chips"
+        ],
+        [
+            "List",
+            "playersWinners"
         ],
         [
             "int",
@@ -572,20 +584,8 @@
             "j"
         ],
         [
-            "List",
-            "playerWin"
-        ],
-        [
             "bool",
-            "isFinal"
-        ],
-        [
-            "List",
-            "playersWinners"
-        ],
-        [
-            "bool",
-            "isNumeric"
+            "ValidMoveRight"
         ],
         [
             "int",
@@ -596,20 +596,16 @@
             "versionDominoes"
         ],
         [
-            "int",
-            "selectCountChip"
-        ],
-        [
-            "bool",
-            "IsValidMove"
+            "string",
+            "banner"
         ],
         [
             "Chip",
             "move"
         ],
         [
-            "bool",
-            "ValidMoveRight"
+            "int",
+            "maxNumChip"
         ],
         [
             "VersionDomioes",
@@ -617,15 +613,67 @@
         ],
         [
             "int",
-            "select"
+            "selectCountChip"
+        ],
+        [
+            "bool",
+            "ValidMoveLeft"
         ],
         [
             "int",
-            "maxNumChip"
+            "countPlayer"
+        ],
+        [
+            "int",
+            "position"
+        ],
+        [
+            "int",
+            "countLinkedValues"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "TypePlayer",
+            "player"
+        ],
+        [
+            "ConsoleKey",
+            "key"
+        ],
+        [
+            "bool",
+            "IsValidMove"
+        ],
+        [
+            "bool",
+            "isNumeric"
+        ],
+        [
+            "ICollection",
+            "typesGames"
+        ],
+        [
+            "List",
+            "Table"
         ],
         [
             "int",
             "selectGameType"
+        ],
+        [
+            "float",
+            "onechunk"
+        ],
+        [
+            "int",
+            "select"
+        ],
+        [
+            "bool",
+            "canPlay"
         ],
         [
             "int",
@@ -633,55 +681,7 @@
         ],
         [
             "int",
-            "countLinkedValues"
-        ],
-        [
-            "int",
-            "position"
-        ],
-        [
-            "float",
-            "onechunk"
-        ],
-        [
-            "bool",
-            "ValidMoveLeft"
-        ],
-        [
-            "string",
-            "banner"
-        ],
-        [
-            "int",
-            "countPlayer"
-        ],
-        [
-            "List",
-            "Table"
-        ],
-        [
-            "ICollection",
-            "typesGames"
-        ],
-        [
-            "TypePlayer",
-            "player"
-        ],
-        [
-            "int",
             "pos"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "bool",
-            "canPlay"
-        ],
-        [
-            "ConsoleKey",
-            "key"
         ],
         [
             "ControllerGame",
@@ -689,33 +689,33 @@
         ]
     ],
     "method_names": [
-        "ChipScore",
         "ValidMove",
         "GetBestRankedChip",
         "ChipScore",
-        "IsWinner",
+        "ChipScore",
         "IsFinal",
         "HandScore",
-        "IsFinal",
-        "TakeChip",
-        "TakeHandChip",
-        "PlayChip",
-        "CanPlay",
-        "GetValidPlay",
-        "NextPlay",
-        "GetHand",
-        "GetChipInPos",
-        "AddChip",
-        "GetBoard",
-        "Rank",
-        "Equals",
-        "CompareTo",
         "IsWinner",
         "IsFinal",
-        "IsTie",
+        "GetChipInPos",
+        "PlayChip",
+        "CanPlay",
+        "GetHand",
+        "TakeChip",
+        "NextPlay",
+        "GetValidPlay",
+        "TakeHandChip",
+        "AddChip",
+        "GetBoard",
+        "CompareTo",
+        "Equals",
+        "Rank",
+        "IsTurnToPlay",
+        "IsFinal",
+        "IsWinner",
         "PlayIsValid",
         "GenerateChips",
-        "IsTurnToPlay",
+        "IsTie",
         "ValidMove",
         "EndGame",
         "CurrentTurn",
@@ -724,16 +724,16 @@
         "IsWinner",
         "Rank",
         "IsFinal",
+        "Customitation",
         "VersionChips",
+        "PrintGame",
+        "PrintTable",
+        "AskNextPlay",
+        "Front",
+        "BarProgress",
+        "PrintSelect",
         "AddPlayer",
         "PrintHand",
-        "Front",
-        "Customitation",
-        "PrintGame",
-        "PrintSelect",
-        "AskNextPlay",
-        "BarProgress",
-        "PrintTable",
         "Main"
     ],
     "method_return_types": [
@@ -742,7 +742,15 @@
             "Chip"
         ],
         [
+            "ChipScore",
+            "int"
+        ],
+        [
             "ValidMove",
+            "bool"
+        ],
+        [
+            "IsWinner",
             "bool"
         ],
         [
@@ -754,19 +762,27 @@
             "int"
         ],
         [
-            "IsWinner",
+            "IsFinal",
             "bool"
-        ],
-        [
-            "ChipScore",
-            "int"
         ],
         [
             "IsFinal",
             "bool"
         ],
         [
-            "IsFinal",
+            "NextPlay",
+            "bool"
+        ],
+        [
+            "TakeChip",
+            "void"
+        ],
+        [
+            "TakeHandChip",
+            "void"
+        ],
+        [
+            "CanPlay",
             "bool"
         ],
         [
@@ -778,28 +794,12 @@
             "Chip"
         ],
         [
-            "TakeHandChip",
-            "void"
-        ],
-        [
-            "NextPlay",
-            "bool"
-        ],
-        [
             "GetHand",
             "List"
         ],
         [
-            "CanPlay",
-            "bool"
-        ],
-        [
             "GetValidPlay",
             "List"
-        ],
-        [
-            "TakeChip",
-            "void"
         ],
         [
             "AddChip",
@@ -810,6 +810,10 @@
             "List"
         ],
         [
+            "CompareTo",
+            "int"
+        ],
+        [
             "Equals",
             "bool"
         ],
@@ -818,20 +822,20 @@
             "int"
         ],
         [
-            "CompareTo",
-            "int"
+            "IsTurnToPlay",
+            "bool"
         ],
         [
-            "IsTurnToPlay",
+            "PlayIsValid",
+            "bool"
+        ],
+        [
+            "IsFinal",
             "bool"
         ],
         [
             "GenerateChips",
             "List"
-        ],
-        [
-            "PlayIsValid",
-            "bool"
         ],
         [
             "IsWinner",
@@ -842,12 +846,16 @@
             "bool"
         ],
         [
-            "IsFinal",
+            "ValidMove",
             "bool"
         ],
         [
-            "ValidMove",
+            "EndGame",
             "bool"
+        ],
+        [
+            "HandOutChips",
+            "void"
         ],
         [
             "CurrentTurn",
@@ -856,14 +864,6 @@
         [
             "ChangeValidCurrentPlayer",
             "void"
-        ],
-        [
-            "HandOutChips",
-            "void"
-        ],
-        [
-            "EndGame",
-            "bool"
         ],
         [
             "IsWinner",
@@ -878,27 +878,15 @@
             "bool"
         ],
         [
-            "PrintHand",
+            "Front",
             "void"
-        ],
-        [
-            "Customitation",
-            "("
-        ],
-        [
-            "AskNextPlay",
-            "bool"
         ],
         [
             "AddPlayer",
             "void"
         ],
         [
-            "BarProgress",
-            "void"
-        ],
-        [
-            "PrintGame",
+            "PrintHand",
             "void"
         ],
         [
@@ -906,16 +894,28 @@
             "void"
         ],
         [
-            "PrintSelect",
-            "int"
+            "Customitation",
+            "("
         ],
         [
             "VersionChips",
             "int"
         ],
         [
-            "Front",
+            "PrintGame",
             "void"
+        ],
+        [
+            "BarProgress",
+            "void"
+        ],
+        [
+            "AskNextPlay",
+            "bool"
+        ],
+        [
+            "PrintSelect",
+            "int"
         ],
         [
             "Main",
@@ -923,12 +923,12 @@
         ]
     ],
     "class_names": [
-        "BotaGordaStategies",
-        "AlmostCleverStrategies",
-        "HumanStrategies",
         "RandomStrategies",
-        "PlayAllChips",
+        "BotaGordaStategies",
+        "HumanStrategies",
+        "AlmostCleverStrategies",
         "WinnerByPuntos",
+        "PlayAllChips",
         "WinnerByChips",
         "IsLocked",
         "Player",
@@ -1109,5 +1109,6 @@
         "Array_initializerContext": 2
     },
     "project_name": "davidalba2001_Second_Project_Dominoes",
-    "label": "original"
+    "label": "original",
+    "project_type": "domino"
 }

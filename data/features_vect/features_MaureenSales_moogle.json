@@ -165,29 +165,30 @@
     },
     "project_name": "MaureenSales_moogle",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        -0.05170385167002678,
-        -0.008001330308616161
+        -0.02012314461171627,
+        0.03278527036309242
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.022842608392238617,
-        0.10568701475858688
+        0.03335018828511238,
+        0.11588754504919052
     ],
     "method_names_vector": [
-        -0.04053081199526787,
-        0.05924519523978233
+        -0.010464895516633987,
+        0.03160768374800682
     ],
     "class_names_vector": [
-        0.1878545731306076,
-        0.07774089276790619
+        0.01869969256222248,
+        0.030065229162573814
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.049299079924821854,
-        0.045891840010881424,
-        0.21088077127933502,
-        0.25761502981185913
+        -0.009859359823167324,
+        0.04970373213291168,
+        0.2749597132205963,
+        0.34100019931793213
     ]
 }

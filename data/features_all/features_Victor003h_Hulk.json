@@ -121,47 +121,23 @@
     "variable_names": [
         [
             "var",
-            "tree"
+            "resul"
         ],
         [
             "var",
             "code"
         ],
         [
-            "Parser",
-            "parser"
-        ],
-        [
-            "var",
-            "resul"
-        ],
-        [
             "int",
             "i"
         ],
         [
-            "List",
-            "token_list"
+            "var",
+            "tree"
         ],
         [
-            "Token",
-            "nuevo"
-        ],
-        [
-            "double",
-            "number"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "cont"
-        ],
-        [
-            "string",
-            "aux"
+            "Parser",
+            "parser"
         ],
         [
             "int",
@@ -169,39 +145,63 @@
         ],
         [
             "string",
-            "dato"
+            "result"
         ],
         [
             "string",
-            "result"
+            "dato"
+        ],
+        [
+            "List",
+            "token_list"
+        ],
+        [
+            "double",
+            "number"
         ],
         [
             "Error",
             "error"
         ],
         [
+            "int",
+            "cont"
+        ],
+        [
             "bool",
             "aux"
         ],
         [
-            "double",
-            "x"
+            "Token",
+            "nuevo"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "Token",
             "word"
         ],
         [
+            "double",
+            "x"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
             "int",
-            "i"
+            "j"
         ]
     ],
     "method_names": [
         "Main",
-        "Scanner",
-        "CheckWord",
         "IsNumber",
+        "CheckWord",
         "IsLiteral",
+        "Scanner",
         "RerservedWord"
     ],
     "method_return_types": [
@@ -210,24 +210,24 @@
             "void"
         ],
         [
-            "IsLiteral",
-            "string"
+            "IsNumber",
+            "double"
         ],
         [
             "Scanner",
             "List"
         ],
         [
-            "IsNumber",
-            "double"
+            "RerservedWord",
+            "Token"
         ],
         [
             "CheckWord",
             "int"
         ],
         [
-            "RerservedWord",
-            "Token"
+            "IsLiteral",
+            "string"
         ]
     ],
     "class_names": [
@@ -362,5 +362,6 @@
         "ThisReferenceExpressionContext": 5
     },
     "project_name": "Victor003h_Hulk",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

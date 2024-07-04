@@ -165,29 +165,30 @@
     },
     "project_name": "LauraMarby_MATCOM-HULK",
     "label": "original",
+    "project_type": "hulk",
     "variable_names_vector": [
-        0.08205007761716843,
-        0.001845100661739707
+        0.16247621178627014,
+        0.06597819179296494
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.20683157444000244,
-        0.13038957118988037
+        0.24614661931991577,
+        0.12985709309577942
     ],
     "method_names_vector": [
-        0.07000264525413513,
-        0.01086410041898489
+        0.11352453380823135,
+        0.022779157385230064
     ],
     "class_names_vector": [
-        0.05018921196460724,
-        -0.11243174970149994
+        0.08701962232589722,
+        -0.08709067851305008
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        0.043937455862760544,
-        0.02302948199212551,
-        0.41904693841934204,
-        0.3738812804222107
+        0.09709904342889786,
+        0.016685759648680687,
+        0.5123273134231567,
+        0.4172408878803253
     ]
 }

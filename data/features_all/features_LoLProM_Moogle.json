@@ -225,6 +225,14 @@
     "variable_names": [
         [
             "int",
+            "indexTerm"
+        ],
+        [
+            "string",
+            "term"
+        ],
+        [
+            "int",
             "i"
         ],
         [
@@ -232,24 +240,20 @@
             "count"
         ],
         [
-            "var",
-            "matches"
-        ],
-        [
             "Dictionary",
             "termsFreq"
         ],
         [
-            "string",
-            "term"
+            "double",
+            "vect"
         ],
         [
             "string",
             "terms"
         ],
         [
-            "double",
-            "vect"
+            "var",
+            "matches"
         ],
         [
             "double",
@@ -264,28 +268,88 @@
             "tf"
         ],
         [
+            "string",
+            "queryTerms"
+        ],
+        [
+            "double",
+            "levenshteinDistance"
+        ],
+        [
+            "double",
+            "best"
+        ],
+        [
+            "double",
+            "tfIdf"
+        ],
+        [
             "int",
-            "indexTerm"
+            "indexVect"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "searchItems"
+        ],
+        [
+            "string",
+            "suggestion"
+        ],
+        [
+            "Document",
+            "docs"
         ],
         [
             "double",
             "leftValue"
         ],
         [
-            "int",
-            "d"
+            "string",
+            "temp"
         ],
         [
             "double",
-            "docVector"
+            "dotProduct"
+        ],
+        [
+            "string",
+            "documentPaths"
+        ],
+        [
+            "double",
+            "cosSimilarityVector"
         ],
         [
             "double",
             "queryVector"
         ],
         [
+            "int",
+            "n"
+        ],
+        [
+            "int",
+            "costo"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
             "double",
-            "porcentaje"
+            "docNorm"
+        ],
+        [
+            "double",
+            "rigthValue"
+        ],
+        [
+            "string",
+            "terms"
         ],
         [
             "string",
@@ -296,12 +360,8 @@
             "searchItems"
         ],
         [
-            "List",
-            "suggestions"
-        ],
-        [
-            "int",
-            "i"
+            "double",
+            "queryNorm"
         ],
         [
             "int",
@@ -309,95 +369,19 @@
         ],
         [
             "double",
-            "docNorm"
-        ],
-        [
-            "double",
-            "queryNorm"
-        ],
-        [
-            "List",
-            "searchItems"
-        ],
-        [
-            "double",
-            "tfIdf"
-        ],
-        [
-            "double",
             "norm"
-        ],
-        [
-            "string",
-            "suggestion"
-        ],
-        [
-            "int",
-            "m"
-        ],
-        [
-            "string",
-            "terms"
-        ],
-        [
-            "string",
-            "documentPaths"
-        ],
-        [
-            "double",
-            "best"
-        ],
-        [
-            "double",
-            "levenshteinDistance"
-        ],
-        [
-            "int",
-            "n"
-        ],
-        [
-            "string",
-            "queryTerms"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "double",
-            "dotProduct"
-        ],
-        [
-            "int",
-            "indexVect"
-        ],
-        [
-            "int",
-            "costo"
-        ],
-        [
-            "double",
-            "rigthValue"
-        ],
-        [
-            "double",
-            "cosSimilarityVector"
         ],
         [
             "Dictionary",
             "docsFrequencyAndIndex"
         ],
         [
-            "string",
-            "temp"
+            "List",
+            "suggestions"
         ],
         [
             "Query",
             "queryDoc"
-        ],
-        [
-            "Document",
-            "docs"
         ],
         [
             "double",
@@ -405,23 +389,39 @@
         ],
         [
             "int",
-            "count"
+            "d"
+        ],
+        [
+            "double",
+            "porcentaje"
+        ],
+        [
+            "double",
+            "docVector"
+        ],
+        [
+            "int",
+            "m"
         ],
         [
             "var",
-            "matches"
+            "eliminate"
+        ],
+        [
+            "string",
+            "term"
+        ],
+        [
+            "int",
+            "count"
         ],
         [
             "Dictionary",
             "termsFreq"
         ],
         [
-            "var",
-            "importance"
-        ],
-        [
-            "string",
-            "term"
+            "double",
+            "vect"
         ],
         [
             "var",
@@ -432,12 +432,8 @@
             "terms"
         ],
         [
-            "double",
-            "vect"
-        ],
-        [
             "var",
-            "eliminate"
+            "matches"
         ],
         [
             "double",
@@ -446,29 +442,33 @@
         [
             "double",
             "tf"
+        ],
+        [
+            "var",
+            "importance"
         ]
     ],
     "method_names": [
         "Items",
-        "Query",
         "Initialize",
-        "GetSnipet",
+        "Query",
         "GetVector",
         "GetTerms",
         "GetTermsFrequency",
-        "GetCosSimilarityVector",
-        "GetCosSimilarity",
-        "GetNorm",
-        "GetTFIDFMatrix",
-        "GetDocuments",
-        "Query",
-        "GetSuggestions",
-        "LevenshteinDistance",
-        "GetSuggestion",
-        "NeedSuggestion",
+        "GetSnipet",
+        "SortQueryTerms",
         "GetDocsFrecuencyAndIndex",
         "GetSearchItems",
-        "SortQueryTerms",
+        "GetSuggestion",
+        "LevenshteinDistance",
+        "GetSuggestions",
+        "GetCosSimilarity",
+        "GetNorm",
+        "GetCosSimilarityVector",
+        "NeedSuggestion",
+        "GetDocuments",
+        "GetTFIDFMatrix",
+        "Query",
         "GetVector",
         "GetTerms",
         "GetTermsFrequency"
@@ -487,8 +487,8 @@
             "SearchResult"
         ],
         [
-            "GetSnipet",
-            "string"
+            "GetVector",
+            "double"
         ],
         [
             "GetTerms",
@@ -499,20 +499,40 @@
             "Dictionary"
         ],
         [
-            "GetVector",
+            "GetSnipet",
+            "string"
+        ],
+        [
+            "GetSuggestion",
+            "string"
+        ],
+        [
+            "SortQueryTerms",
+            "string"
+        ],
+        [
+            "GetCosSimilarityVector",
+            "double"
+        ],
+        [
+            "NeedSuggestion",
+            "bool"
+        ],
+        [
+            "GetDocuments",
+            "Document"
+        ],
+        [
+            "LevenshteinDistance",
+            "int"
+        ],
+        [
+            "GetCosSimilarity",
             "double"
         ],
         [
             "GetNorm",
             "double"
-        ],
-        [
-            "GetSearchItems",
-            "SearchItem"
-        ],
-        [
-            "LevenshteinDistance",
-            "int"
         ],
         [
             "Query",
@@ -523,27 +543,7 @@
             "Dictionary"
         ],
         [
-            "GetCosSimilarityVector",
-            "double"
-        ],
-        [
-            "GetCosSimilarity",
-            "double"
-        ],
-        [
-            "NeedSuggestion",
-            "bool"
-        ],
-        [
-            "SortQueryTerms",
-            "string"
-        ],
-        [
             "GetSuggestions",
-            "string"
-        ],
-        [
-            "GetSuggestion",
             "string"
         ],
         [
@@ -551,8 +551,12 @@
             "double"
         ],
         [
-            "GetDocuments",
-            "Document"
+            "GetSearchItems",
+            "SearchItem"
+        ],
+        [
+            "GetVector",
+            "double"
         ],
         [
             "GetTerms",
@@ -561,10 +565,6 @@
         [
             "GetTermsFrequency",
             "Dictionary"
-        ],
-        [
-            "GetVector",
-            "double"
         ]
     ],
     "class_names": [
@@ -695,5 +695,6 @@
         "ContinueStatementContext": 1
     },
     "project_name": "LoLProM_Moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

@@ -175,29 +175,30 @@
     },
     "project_name": "frankperez-github_moogle",
     "label": "original",
+    "project_type": "moogle",
     "variable_names_vector": [
-        0.06849715858697891,
-        0.09598706662654877
+        0.045131616294384,
+        0.10137458890676498
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        -0.09882674366235733,
-        -0.07976213842630386
+        -0.06172490119934082,
+        -0.11027031391859055
     ],
     "method_names_vector": [
-        -0.08761612325906754,
-        -0.0071618203073740005
+        0.04521853104233742,
+        -0.06157307326793671
     ],
     "class_names_vector": [
-        0.11255678534507751,
-        0.15299499034881592
+        -0.06648184359073639,
+        0.08179701119661331
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        -0.04196746647357941,
-        -0.010516759008169174,
-        -0.030415574088692665,
-        -0.061600442975759506
+        0.054719582200050354,
+        -0.08712293952703476,
+        0.003122558118775487,
+        0.0004827473312616348
     ]
 }

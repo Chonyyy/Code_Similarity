@@ -548,8 +548,16 @@
     ],
     "variable_names": [
         [
+            "Scope",
+            "global"
+        ],
+        [
             "Dictionary",
             "constants"
+        ],
+        [
+            "var",
+            "syntaxTree"
         ],
         [
             "Dictionary",
@@ -558,14 +566,6 @@
         [
             "var",
             "checking"
-        ],
-        [
-            "Scope",
-            "global"
-        ],
-        [
-            "var",
-            "syntaxTree"
         ],
         [
             "object",
@@ -605,51 +605,11 @@
         ],
         [
             "double",
-            "a"
-        ],
-        [
-            "double",
-            "distance"
-        ],
-        [
-            "double",
-            "y_c"
-        ],
-        [
-            "double",
             "D"
-        ],
-        [
-            "var",
-            "denominador"
-        ],
-        [
-            "float",
-            "scalarProduct"
-        ],
-        [
-            "double",
-            "x_1"
-        ],
-        [
-            "Points",
-            "up"
-        ],
-        [
-            "double",
-            "y_1"
         ],
         [
             "float",
             "distance_v1"
-        ],
-        [
-            "float",
-            "y_2"
-        ],
-        [
-            "var",
-            "result"
         ],
         [
             "double",
@@ -660,48 +620,28 @@
             "v2"
         ],
         [
-            "Points",
-            "right"
-        ],
-        [
-            "float",
-            "distance_v2"
-        ],
-        [
             "double",
-            "c"
-        ],
-        [
-            "double",
-            "razon"
-        ],
-        [
-            "float",
-            "angle"
-        ],
-        [
-            "double",
-            "y_2"
-        ],
-        [
-            "double",
-            "x_2"
+            "a"
         ],
         [
             "var",
-            "errorRange"
+            "result"
         ],
         [
-            "(",
-            "v1"
+            "float",
+            "scalarProduct"
+        ],
+        [
+            "double",
+            "y_c"
         ],
         [
             "double",
             "x_c"
         ],
         [
-            "var",
-            "enumerador"
+            "Points",
+            "right"
         ],
         [
             "float",
@@ -709,27 +649,75 @@
         ],
         [
             "float",
+            "distance_v2"
+        ],
+        [
+            "(",
+            "v1"
+        ],
+        [
+            "float",
             "n"
+        ],
+        [
+            "var",
+            "denominador"
+        ],
+        [
+            "double",
+            "distance"
+        ],
+        [
+            "double",
+            "x_2"
+        ],
+        [
+            "Points",
+            "up"
+        ],
+        [
+            "double",
+            "razon"
+        ],
+        [
+            "double",
+            "y_2"
+        ],
+        [
+            "double",
+            "y_1"
+        ],
+        [
+            "var",
+            "errorRange"
+        ],
+        [
+            "double",
+            "c"
+        ],
+        [
+            "float",
+            "y_2"
+        ],
+        [
+            "double",
+            "x_1"
+        ],
+        [
+            "var",
+            "enumerador"
         ],
         [
             "float",
             "y_1"
         ],
         [
+            "float",
+            "angle"
+        ],
+        [
             "string",
             "operandType"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "var",
-            "elementType"
-        ],
-        [
-            "var",
-            "elements"
         ],
         [
             "List",
@@ -744,8 +732,28 @@
             "type"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "elementType"
+        ],
+        [
+            "var",
+            "elements"
+        ],
+        [
+            "Func",
+            "func"
+        ],
+        [
             "var",
             "first"
+        ],
+        [
+            "string",
+            "type"
         ],
         [
             "int",
@@ -756,12 +764,8 @@
             "func"
         ],
         [
-            "string",
-            "type"
-        ],
-        [
-            "Func",
-            "func"
+            "var",
+            "seqInternedType"
         ],
         [
             "var",
@@ -770,58 +774,54 @@
         [
             "int",
             "i"
-        ],
-        [
-            "var",
-            "seqInternedType"
         ]
     ],
     "method_names": [
         "Reset",
         "BlendCompile",
-        "Exit_Click",
-        "GraphicWindow_Click",
         "MoreAbout_Click",
+        "GraphicWindow_Click",
+        "Exit_Click",
         "InitializeComponent",
         "Dispose",
         "Main",
         "InitializeComponent",
         "Dispose",
+        "Check",
         "Evaluate",
         "Check",
         "Check",
-        "Check",
-        "IsInSegment",
         "IntersectionCircle_Ray",
-        "GetAngleQuadrant",
-        "DistancePointLine",
-        "AngleBetweenVectors",
-        "PointInLine",
-        "DistanceBetweenPoints",
         "LineEquation",
+        "AngleBetweenVectors",
+        "DistanceBetweenPoints",
+        "DistancePointLine",
+        "IsInSegment",
+        "PointInLine",
+        "GetAngleQuadrant",
         "Intersect",
         "PointsInFigure",
-        "Evaluate",
         "GetHashCode",
         "Check",
         "Equals",
-        "Check",
         "Evaluate",
+        "Check",
         "Check",
         "RestOfSequence",
         "Evaluate",
-        "Check",
         "CreateInifniteSequence",
+        "Check",
         "RestOfSequence",
         "Evaluate",
         "Check",
         "RestOfSequence",
-        "GetInternalTypeOfSequence",
+        "Evaluate",
         "GetHashCode",
+        "GetInternalTypeOfSequence",
         "RestOfSequence",
         "Equals",
-        "Evaluate",
         "Check",
+        "Evaluate",
         "Check",
         "Reset",
         "SetError"
@@ -840,11 +840,11 @@
             "void"
         ],
         [
-            "MoreAbout_Click",
+            "GraphicWindow_Click",
             "void"
         ],
         [
-            "GraphicWindow_Click",
+            "MoreAbout_Click",
             "void"
         ],
         [
@@ -884,8 +884,24 @@
             "bool"
         ],
         [
-            "LineEquation",
-            "("
+            "PointInLine",
+            "float"
+        ],
+        [
+            "IsInSegment",
+            "bool"
+        ],
+        [
+            "GetAngleQuadrant",
+            "int"
+        ],
+        [
+            "DistanceBetweenPoints",
+            "float"
+        ],
+        [
+            "DistancePointLine",
+            "float"
         ],
         [
             "IntersectionCircle_Ray",
@@ -896,36 +912,16 @@
             "float"
         ],
         [
-            "DistancePointLine",
-            "float"
-        ],
-        [
-            "IsInSegment",
-            "bool"
-        ],
-        [
-            "DistanceBetweenPoints",
-            "float"
-        ],
-        [
-            "GetAngleQuadrant",
-            "int"
-        ],
-        [
-            "PointInLine",
-            "float"
-        ],
-        [
-            "Intersect",
-            "FiniteSequence"
+            "LineEquation",
+            "("
         ],
         [
             "PointsInFigure",
             "SequenceExpressionSyntax"
         ],
         [
-            "GetHashCode",
-            "int"
+            "Intersect",
+            "FiniteSequence"
         ],
         [
             "Evaluate",
@@ -940,6 +936,10 @@
             "bool"
         ],
         [
+            "GetHashCode",
+            "int"
+        ],
+        [
             "Check",
             "bool"
         ],
@@ -956,28 +956,32 @@
             "SequenceExpressionSyntax"
         ],
         [
-            "Evaluate",
-            "object"
-        ],
-        [
             "Check",
             "bool"
         ],
         [
-            "RestOfSequence",
-            "SequenceExpressionSyntax"
+            "Evaluate",
+            "object"
         ],
         [
             "CreateInifniteSequence",
             "object"
         ],
         [
-            "Evaluate",
-            "object"
+            "RestOfSequence",
+            "SequenceExpressionSyntax"
         ],
         [
             "Check",
             "bool"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "RestOfSequence",
+            "SequenceExpressionSyntax"
         ],
         [
             "RestOfSequence",
@@ -988,24 +992,20 @@
             "string"
         ],
         [
-            "GetHashCode",
-            "int"
-        ],
-        [
             "Equals",
             "bool"
         ],
         [
-            "RestOfSequence",
-            "SequenceExpressionSyntax"
-        ],
-        [
-            "Evaluate",
-            "object"
+            "GetHashCode",
+            "int"
         ],
         [
             "Check",
             "bool"
+        ],
+        [
+            "Evaluate",
+            "object"
         ],
         [
             "Check",
@@ -1029,8 +1029,8 @@
         "Program",
         "Form1",
         "SyntaxToken",
-        "ExpressionSyntax",
         "ErrorExpressionSyntax",
+        "ExpressionSyntax",
         "MultipleAssignmentSyntax",
         "Restore",
         "Utilities",
@@ -1051,9 +1051,9 @@
         "VoidExpressionSyntax",
         "ImportExpressionSyntax",
         "ScopeSupplies",
-        "Constant",
-        "Function",
         "Scope",
+        "Function",
+        "Constant",
         "Error"
     ],
     "interface_names": [],
@@ -1196,5 +1196,6 @@
         "UsingStaticDirectiveContext": 1
     },
     "project_name": "ClaudiaHdezPerez_GeoWall-E",
-    "label": "original"
+    "label": "original",
+    "project_type": "wallE"
 }

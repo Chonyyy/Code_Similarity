@@ -180,32 +180,36 @@
     ],
     "variable_names": [
         [
-            "int",
-            "start"
-        ],
-        [
             "TokenType",
             "type"
-        ],
-        [
-            "int",
-            "p"
-        ],
-        [
-            "string",
-            "value"
         ],
         [
             "int",
             "i"
         ],
         [
-            "Node",
-            "left"
+            "int",
+            "p"
+        ],
+        [
+            "int",
+            "start"
+        ],
+        [
+            "string",
+            "value"
+        ],
+        [
+            "Token",
+            "color"
         ],
         [
             "Node",
-            "operand"
+            "body"
+        ],
+        [
+            "Node",
+            "elseBranch"
         ],
         [
             "Token",
@@ -213,82 +217,14 @@
         ],
         [
             "Node",
-            "elseBranch"
-        ],
-        [
-            "string",
-            "nameToken"
-        ],
-        [
-            "string",
-            "figLabel"
-        ],
-        [
-            "List",
-            "declarations"
-        ],
-        [
-            "Node",
-            "value"
-        ],
-        [
-            "Token",
-            "color"
-        ],
-        [
-            "Node",
-            "thenBranch"
-        ],
-        [
-            "Token",
-            "tokenName"
+            "left"
         ],
         [
             "List",
             "nodes"
         ],
         [
-            "List",
-            "parameters"
-        ],
-        [
-            "Node",
-            "condition"
-        ],
-        [
             "SequencDeclarationNode",
-            "seq"
-        ],
-        [
-            "Node",
-            "inner"
-        ],
-        [
-            "string",
-            "funcName"
-        ],
-        [
-            "Node",
-            "toDraw"
-        ],
-        [
-            "Node",
-            "right"
-        ],
-        [
-            "Token",
-            "token"
-        ],
-        [
-            "List",
-            "parametersNodes"
-        ],
-        [
-            "Node",
-            "body"
-        ],
-        [
-            "Sequence",
             "seq"
         ],
         [
@@ -296,12 +232,84 @@
             "exp"
         ],
         [
+            "string",
+            "figLabel"
+        ],
+        [
+            "string",
+            "nameToken"
+        ],
+        [
+            "Token",
+            "tokenName"
+        ],
+        [
+            "string",
+            "funcName"
+        ],
+        [
+            "Node",
+            "condition"
+        ],
+        [
+            "Node",
+            "toDraw"
+        ],
+        [
+            "List",
+            "parameters"
+        ],
+        [
+            "Node",
+            "thenBranch"
+        ],
+        [
+            "Node",
+            "right"
+        ],
+        [
+            "List",
+            "parametersNodes"
+        ],
+        [
+            "List",
+            "declarations"
+        ],
+        [
+            "Node",
+            "inner"
+        ],
+        [
+            "Sequence",
+            "seq"
+        ],
+        [
+            "Token",
+            "token"
+        ],
+        [
+            "Node",
+            "operand"
+        ],
+        [
+            "Node",
+            "value"
+        ],
+        [
+            "Compiler",
+            "state"
+        ],
+        [
+            "float",
+            "toDrawPoints"
+        ],
+        [
             "double",
-            "p21"
+            "p1"
         ],
         [
             "Line",
-            "toDraw"
+            "toDraw2"
         ],
         [
             "Godot",
@@ -309,124 +317,120 @@
         ],
         [
             "double",
-            "point"
-        ],
-        [
-            "Compiler",
-            "state"
-        ],
-        [
-            "Line",
-            "toDraw2"
-        ],
-        [
-            "float",
-            "toDrawPoints"
-        ],
-        [
-            "Compiler",
-            "fig"
-        ],
-        [
-            "var",
-            "terna"
-        ],
-        [
-            "string",
-            "label"
+            "p11"
         ],
         [
             "double",
-            "p1"
-        ],
-        [
-            "Sprite2D",
-            "sprite"
-        ],
-        [
-            "Line2D",
-            "line2D2"
+            "point"
         ],
         [
             "var",
             "planeSprites"
         ],
         [
+            "string",
+            "label"
+        ],
+        [
             "int",
             "i"
+        ],
+        [
+            "Line",
+            "toDraw"
+        ],
+        [
+            "Compiler",
+            "fig"
+        ],
+        [
+            "double",
+            "p2"
         ],
         [
             "Line2D",
             "line2D"
         ],
         [
-            "double",
-            "p11"
+            "Line2D",
+            "line2D2"
+        ],
+        [
+            "Sprite2D",
+            "sprite"
+        ],
+        [
+            "var",
+            "terna"
         ],
         [
             "double",
-            "p2"
+            "p21"
         ]
     ],
     "method_names": [
-        "ReadFile",
         "Clone",
+        "ReadFile",
         "Evaluate",
-        "HasMoreTokens",
-        "Tokenize",
-        "IsThereAnEqual",
-        "PeekNext",
-        "Peek",
-        "ReadString",
-        "NextToken",
         "ReadIdentifier",
         "ReadNumber",
+        "ReadString",
+        "PeekNext",
+        "HasMoreTokens",
+        "Tokenize",
+        "Peek",
+        "IsThereAnEqual",
+        "NextToken",
         "ToString",
         "Add",
-        "GetValue",
-        "GetCode",
+        "IsRepresentable",
         "Clone",
         "GetObject",
-        "IsRepresentable",
-        "PointExpression",
-        "LineExpression",
-        "ConstantCall",
-        "FunctionDeclaration",
-        "Last",
-        "ColorExpression",
-        "GetParameters",
+        "GetValue",
+        "GetCode",
         "CircleExpression",
-        "DrawExpression",
-        "RestoreExpression",
-        "Parse",
-        "AdditiveExpression",
-        "PeekNext",
-        "Peek",
-        "PrimaryExpression",
-        "ConstantDeclaration",
-        "ArcExpression",
-        "LetInExpression",
-        "Expression",
-        "IdentifierExpression",
-        "SequencDeclarationExpression",
-        "SegmetnExpresion",
-        "RayExpression",
-        "Statement",
-        "FunctionCall",
-        "MultiplicativeExpression",
         "LogicExpression",
-        "Import",
-        "IfElseExpression",
-        "ExpectToken",
+        "SequencDeclarationExpression",
+        "PointExpression",
+        "ConstantCall",
+        "Last",
+        "Expression",
+        "PeekNext",
+        "Parse",
+        "FunctionCall",
+        "ArcExpression",
+        "ColorExpression",
         "SequenceExpression",
+        "Peek",
+        "IdentifierExpression",
+        "RestoreExpression",
+        "LineExpression",
+        "MultiplicativeExpression",
+        "FunctionDeclaration",
+        "RayExpression",
+        "IfElseExpression",
+        "ConstantDeclaration",
+        "SegmetnExpresion",
+        "Import",
+        "LetInExpression",
+        "GetParameters",
+        "Statement",
+        "ExpectToken",
+        "DrawExpression",
+        "AdditiveExpression",
+        "PrimaryExpression",
+        "_Ready",
         "TextChanger",
         "_Process",
-        "_Ready",
-        "EnableF5Press",
         "_Process",
-        "_Ready"
+        "_Ready",
+        "EnableF5Press"
     ],
     "method_return_types": [
+        [
+            "Evaluate",
+            "Node"
+        ],
         [
             "ReadFile",
             "string"
@@ -434,34 +438,6 @@
         [
             "Clone",
             "object"
-        ],
-        [
-            "Evaluate",
-            "Node"
-        ],
-        [
-            "ReadString",
-            "Token"
-        ],
-        [
-            "Peek",
-            "Token"
-        ],
-        [
-            "ReadIdentifier",
-            "Token"
-        ],
-        [
-            "PeekNext",
-            "Token"
-        ],
-        [
-            "HasMoreTokens",
-            "bool"
-        ],
-        [
-            "Tokenize",
-            "IEnumerable"
         ],
         [
             "NextToken",
@@ -476,6 +452,30 @@
             "bool"
         ],
         [
+            "Tokenize",
+            "IEnumerable"
+        ],
+        [
+            "Peek",
+            "Token"
+        ],
+        [
+            "ReadString",
+            "Token"
+        ],
+        [
+            "ReadIdentifier",
+            "Token"
+        ],
+        [
+            "HasMoreTokens",
+            "bool"
+        ],
+        [
+            "PeekNext",
+            "Token"
+        ],
+        [
             "ToString",
             "string"
         ],
@@ -484,15 +484,11 @@
             "void"
         ],
         [
-            "GetCode",
-            "int"
-        ],
-        [
-            "IsRepresentable",
-            "bool"
-        ],
-        [
             "GetValue",
+            "Object"
+        ],
+        [
+            "GetObject",
             "Object"
         ],
         [
@@ -500,115 +496,15 @@
             "object"
         ],
         [
-            "GetObject",
-            "Object"
+            "IsRepresentable",
+            "bool"
         ],
         [
-            "Peek",
-            "Token"
-        ],
-        [
-            "DrawExpression",
-            "Node"
-        ],
-        [
-            "ArcExpression",
-            "Node"
-        ],
-        [
-            "SequencDeclarationExpression",
-            "Node"
-        ],
-        [
-            "Last",
-            "Node"
-        ],
-        [
-            "CircleExpression",
-            "Node"
-        ],
-        [
-            "PrimaryExpression",
-            "Node"
-        ],
-        [
-            "RayExpression",
-            "Node"
-        ],
-        [
-            "GetParameters",
-            "List"
-        ],
-        [
-            "SegmetnExpresion",
-            "Node"
-        ],
-        [
-            "SequenceExpression",
-            "Node"
-        ],
-        [
-            "PointExpression",
-            "Node"
-        ],
-        [
-            "Expression",
-            "Node"
-        ],
-        [
-            "Statement",
-            "Node"
-        ],
-        [
-            "ConstantCall",
-            "Node"
-        ],
-        [
-            "IdentifierExpression",
-            "Node"
-        ],
-        [
-            "LetInExpression",
-            "Node"
-        ],
-        [
-            "PeekNext",
-            "Token"
-        ],
-        [
-            "ConstantDeclaration",
-            "Node"
-        ],
-        [
-            "ExpectToken",
-            "Token"
-        ],
-        [
-            "MultiplicativeExpression",
-            "Node"
-        ],
-        [
-            "FunctionDeclaration",
-            "Node"
-        ],
-        [
-            "IfElseExpression",
-            "Node"
-        ],
-        [
-            "Import",
-            "Node"
-        ],
-        [
-            "LogicExpression",
-            "Node"
+            "GetCode",
+            "int"
         ],
         [
             "LineExpression",
-            "Node"
-        ],
-        [
-            "Parse",
             "Node"
         ],
         [
@@ -616,11 +512,47 @@
             "Node"
         ],
         [
-            "FunctionCall",
+            "LetInExpression",
             "Node"
         ],
         [
-            "AdditiveExpression",
+            "ArcExpression",
+            "Node"
+        ],
+        [
+            "FunctionDeclaration",
+            "Node"
+        ],
+        [
+            "Peek",
+            "Token"
+        ],
+        [
+            "Import",
+            "Node"
+        ],
+        [
+            "RayExpression",
+            "Node"
+        ],
+        [
+            "SequenceExpression",
+            "Node"
+        ],
+        [
+            "ConstantDeclaration",
+            "Node"
+        ],
+        [
+            "PrimaryExpression",
+            "Node"
+        ],
+        [
+            "MultiplicativeExpression",
+            "Node"
+        ],
+        [
+            "CircleExpression",
             "Node"
         ],
         [
@@ -628,8 +560,72 @@
             "Node"
         ],
         [
-            "_Process",
-            "void"
+            "ExpectToken",
+            "Token"
+        ],
+        [
+            "LogicExpression",
+            "Node"
+        ],
+        [
+            "SegmetnExpresion",
+            "Node"
+        ],
+        [
+            "PointExpression",
+            "Node"
+        ],
+        [
+            "GetParameters",
+            "List"
+        ],
+        [
+            "Expression",
+            "Node"
+        ],
+        [
+            "AdditiveExpression",
+            "Node"
+        ],
+        [
+            "DrawExpression",
+            "Node"
+        ],
+        [
+            "Statement",
+            "Node"
+        ],
+        [
+            "FunctionCall",
+            "Node"
+        ],
+        [
+            "Parse",
+            "Node"
+        ],
+        [
+            "PeekNext",
+            "Token"
+        ],
+        [
+            "Last",
+            "Node"
+        ],
+        [
+            "IdentifierExpression",
+            "Node"
+        ],
+        [
+            "IfElseExpression",
+            "Node"
+        ],
+        [
+            "ConstantCall",
+            "Node"
+        ],
+        [
+            "SequencDeclarationExpression",
+            "Node"
         ],
         [
             "_Ready",
@@ -650,23 +646,27 @@
         [
             "EnableF5Press",
             "void"
+        ],
+        [
+            "_Process",
+            "void"
         ]
     ],
     "class_names": [
         "Node",
-        "RestoreNode",
-        "SequencDeclarationNode",
         "ImportNode",
-        "Token",
-        "TokenList",
+        "SequencDeclarationNode",
+        "RestoreNode",
         "Lexer",
+        "Token",
         "Tokenizer",
+        "TokenList",
         "Error",
         "Operations",
-        "State",
         "Terna",
-        "Object",
+        "State",
         "Color",
+        "Object",
         "Parser",
         "OutputConsole",
         "CodeEditorScript"
@@ -814,5 +814,6 @@
         "TupleExpressionContext": 2
     },
     "project_name": "MatRacSD_GeoWallE",
-    "label": "original"
+    "label": "original",
+    "project_type": "wallE"
 }

@@ -118,34 +118,6 @@
             "cantidad"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "suggest"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "aux"
-        ],
-        [
-            "int",
-            "y"
-        ],
-        [
-            "int",
-            "Levenshtein"
-        ],
-        [
-            "int",
-            "x"
-        ],
-        [
             "char",
             "charword"
         ],
@@ -154,20 +126,48 @@
             "distance"
         ],
         [
-            "char",
-            "charword2"
+            "string",
+            "suggest"
+        ],
+        [
+            "int",
+            "y"
         ],
         [
             "int",
             "i"
         ],
         [
-            "Suggestion",
-            "suggestion"
+            "int",
+            "aux"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "char",
+            "charword2"
+        ],
+        [
+            "int",
+            "Levenshtein"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "Search",
             "search"
+        ],
+        [
+            "Suggestion",
+            "suggestion"
         ],
         [
             "int",
@@ -178,44 +178,16 @@
             "items"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "HighestTFIDF"
-        ],
-        [
-            "int",
-            "indexoperator"
-        ],
-        [
-            "List",
-            "StemmerQuery"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "string",
-            "result"
-        ],
-        [
-            "List",
-            "OperatorExist"
+            "bool",
+            "aux"
         ],
         [
             "SearchSnippet",
             "searchSnippet"
         ],
         [
-            "double",
-            "max"
-        ],
-        [
-            "int",
-            "aux"
+            "List",
+            "OperatorImportance"
         ],
         [
             "int",
@@ -226,24 +198,52 @@
             "end"
         ],
         [
-            "float",
-            "score"
-        ],
-        [
-            "bool",
-            "aux"
+            "List",
+            "StemmerQuery"
         ],
         [
             "List",
-            "OperatorImportance"
+            "OperatorExist"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "double",
             "cantidad"
         ],
         [
+            "int",
+            "aux"
+        ],
+        [
+            "int",
+            "indexoperator"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
             "EnglishPorter2Stemmer",
             "stemming"
+        ],
+        [
+            "double",
+            "max"
+        ],
+        [
+            "string",
+            "HighestTFIDF"
+        ],
+        [
+            "float",
+            "score"
         ],
         [
             "string",
@@ -256,8 +256,8 @@
     ],
     "method_names": [
         "Items",
-        "SuggestWord",
         "Levenshtein",
+        "SuggestWord",
         "Query",
         "WordsAround",
         "Stemming",
@@ -269,23 +269,23 @@
             "IEnumerable"
         ],
         [
-            "Levenshtein",
-            "int"
-        ],
-        [
             "SuggestWord",
             "string"
+        ],
+        [
+            "Levenshtein",
+            "int"
         ],
         [
             "Query",
             "SearchResult"
         ],
         [
-            "WordsAround",
+            "Stemming",
             "string"
         ],
         [
-            "Stemming",
+            "WordsAround",
             "string"
         ],
         [
@@ -421,5 +421,6 @@
         "Boolean_literalContext": 1
     },
     "project_name": "Edward-24_Moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

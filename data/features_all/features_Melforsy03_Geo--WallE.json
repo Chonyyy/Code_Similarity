@@ -546,43 +546,19 @@
     "variable_names": [
         [
             "token",
-            "auxiliar"
-        ],
-        [
-            "bool",
-            "error"
-        ],
-        [
-            "Identificador",
-            "objeto"
-        ],
-        [
-            "Function",
-            "objeto"
-        ],
-        [
-            "IfElseNode",
-            "objeto"
-        ],
-        [
-            "bool",
-            "check"
-        ],
-        [
-            "bool",
-            "expresion_let"
-        ],
-        [
-            "bool",
-            "check1"
+            "auxiliar2"
         ],
         [
             "bool",
             "cuerpo"
         ],
         [
-            "bool",
-            "variablesL"
+            "FunctionNode",
+            "objeto"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "bool",
@@ -593,28 +569,52 @@
             "objeto"
         ],
         [
+            "Identificador",
+            "objeto"
+        ],
+        [
             "OperatorNode",
             "objeto"
         ],
         [
-            "tokenBul",
-            "objeto"
-        ],
-        [
-            "token",
-            "evaluado"
+            "Function",
+            "actual"
         ],
         [
             "bool",
             "expresion"
         ],
         [
-            "TokenNumero",
+            "bool",
+            "error"
+        ],
+        [
+            "bool",
+            "variablesL"
+        ],
+        [
+            "bool",
+            "then"
+        ],
+        [
+            "tokenBul",
             "objeto"
         ],
         [
-            "FunctionNode",
+            "bool",
+            "expresion_in"
+        ],
+        [
+            "bool",
+            "check"
+        ],
+        [
+            "tokenLiteral",
             "objeto"
+        ],
+        [
+            "bool",
+            "expresion_let"
         ],
         [
             "bool",
@@ -625,40 +625,36 @@
             "objeto"
         ],
         [
-            "tokenLiteral",
+            "TokenNumero",
             "objeto"
         ],
         [
             "bool",
-            "expresion_in"
+            "check1"
         ],
         [
             "Function",
             "auxiliar"
         ],
         [
-            "TokenSecuencia",
-            "clone"
-        ],
-        [
-            "bool",
-            "then"
+            "token",
+            "evaluado"
         ],
         [
             "token",
-            "auxiliar2"
-        ],
-        [
-            "int",
-            "i"
+            "auxiliar"
         ],
         [
             "Function",
-            "actual"
+            "objeto"
         ],
         [
-            "int",
-            "j"
+            "IfElseNode",
+            "objeto"
+        ],
+        [
+            "TokenSecuencia",
+            "clone"
         ],
         [
             "char",
@@ -669,40 +665,48 @@
             "currentToken"
         ],
         [
+            "List",
+            "tokens"
+        ],
+        [
             "int",
             "i"
         ],
         [
-            "List",
-            "tokens"
+            "int",
+            "j"
         ],
         [
             "List",
             "errors"
         ],
         [
-            "List",
-            "m"
-        ],
-        [
             "Geometrico",
             "arbol"
+        ],
+        [
+            "List",
+            "m"
         ],
         [
             "int",
             "i"
         ],
         [
+            "OperatorNode",
+            "operatorNode"
+        ],
+        [
+            "int",
+            "bucle"
+        ],
+        [
             "token",
             "rightNode"
         ],
         [
-            "string",
-            "ValorDelToken"
-        ],
-        [
             "token",
-            "auxiliar"
+            "node"
         ],
         [
             "tokenBul",
@@ -710,19 +714,11 @@
         ],
         [
             "token",
-            "leftNode"
+            "rigthNode"
         ],
         [
             "token",
-            "node"
-        ],
-        [
-            "FunctionNode",
-            "operatorNode"
-        ],
-        [
-            "OperatorNode",
-            "operatorNode"
+            "leftNode"
         ],
         [
             "string",
@@ -730,11 +726,47 @@
         ],
         [
             "token",
-            "rigthNode"
+            "auxiliar"
+        ],
+        [
+            "FunctionNode",
+            "operatorNode"
+        ],
+        [
+            "string",
+            "ValorDelToken"
         ],
         [
             "int",
-            "bucle"
+            "count1"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "Function",
+            "auxiliar"
+        ],
+        [
+            "bool",
+            "chek"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "bool",
+            "sinError"
+        ],
+        [
+            "List",
+            "FuncionesGuardadas"
+        ],
+        [
+            "bool",
+            "Sobrecarga"
         ],
         [
             "int",
@@ -745,52 +777,80 @@
             "count"
         ],
         [
-            "int",
-            "count1"
-        ],
-        [
             "bool",
             "correctos"
         ],
         [
-            "bool",
-            "chek"
+            "double",
+            "mayor"
         ],
         [
-            "Function",
-            "auxiliar"
+            "Arco",
+            "clone"
         ],
         [
-            "List",
-            "FuncionesGuardadas"
-        ],
-        [
-            "bool",
-            "sinError"
+            "double",
+            "x"
         ],
         [
             "int",
             "i"
         ],
         [
-            "bool",
-            "Sobrecarga"
+            "TokenNumero",
+            "medida"
         ],
         [
-            "int",
-            "k"
+            "Circunferencia",
+            "clone"
+        ],
+        [
+            "bool",
+            "puntos"
+        ],
+        [
+            "double",
+            "menos"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "TokenNumero",
+            "med"
+        ],
+        [
+            "FuncionPointsDos",
+            "clone"
+        ],
+        [
+            "TokenNumero",
+            "equis"
+        ],
+        [
+            "Point",
+            "clone"
+        ],
+        [
+            "double",
+            "radio"
+        ],
+        [
+            "double",
+            "pendiente_m"
         ],
         [
             "double",
             "y"
         ],
         [
-            "List",
-            "result"
-        ],
-        [
             "double",
             "d"
+        ],
+        [
+            "FuncionPointsDos",
+            "clon"
         ],
         [
             "TokenNumero",
@@ -798,155 +858,63 @@
         ],
         [
             "double",
-            "menos"
-        ],
-        [
-            "double",
-            "x"
-        ],
-        [
-            "double",
             "angulo"
         ],
         [
-            "FuncionPointsDos",
-            "clone"
-        ],
-        [
-            "double",
-            "mayor"
-        ],
-        [
-            "TokenNumero",
-            "equis"
-        ],
-        [
-            "bool",
-            "puntos"
-        ],
-        [
-            "TokenNumero",
-            "med"
-        ],
-        [
-            "double",
-            "radio"
-        ],
-        [
-            "FuncionPointsDos",
-            "clon"
-        ],
-        [
-            "Arco",
-            "clone"
-        ],
-        [
-            "Circunferencia",
-            "clone"
-        ],
-        [
-            "TokenNumero",
-            "medida"
-        ],
-        [
-            "Random",
-            "random"
-        ],
-        [
-            "Point",
-            "clone"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "double",
-            "pendiente_m"
+            "List",
+            "result"
         ],
         [
             "bool",
             "coordenadas"
         ],
         [
+            "IEnumerable",
+            "tokensA"
+        ],
+        [
             "token",
-            "auxiliar"
+            "auxiliar2"
         ],
         [
-            "List",
-            "evaluados"
-        ],
-        [
-            "int",
-            "indiceAleatorio"
-        ],
-        [
-            "List",
-            "importaciones"
-        ],
-        [
-            "IfElseNode",
-            "IfElse"
-        ],
-        [
-            "int",
-            "posibleVacio"
+            "token",
+            "temporal"
         ],
         [
             "TokenSecuencia",
-            "auxiliar"
+            "secuencia"
         ],
         [
             "TokenSecuencia",
             "secuencial"
         ],
         [
-            "Geometrico",
-            "alfa"
+            "TokenNumero",
+            "count"
         ],
         [
             "string",
             "contenido"
         ],
         [
-            "Random",
-            "ran"
+            "int",
+            "i"
         ],
         [
-            "Identificador",
-            "nodo"
+            "IEnumerable",
+            "tokensB"
         ],
         [
-            "TokenNumero",
-            "count"
-        ],
-        [
-            "FunctionNode",
-            "funcion"
-        ],
-        [
-            "LetIn",
-            "let"
-        ],
-        [
-            "string",
-            "rutaDelArchivo"
+            "Geometrico",
+            "alfa"
         ],
         [
             "token",
-            "condicion"
-        ],
-        [
-            "List",
-            "componentes"
-        ],
-        [
-            "Random",
-            "rnd"
+            "secuencia"
         ],
         [
             "token",
-            "Else"
+            "drawFuncion"
         ],
         [
             "Function",
@@ -957,28 +925,8 @@
             "then"
         ],
         [
-            "int",
-            "contador"
-        ],
-        [
-            "IEnumerable",
-            "tokensB"
-        ],
-        [
-            "token",
-            "secuencia"
-        ],
-        [
-            "token",
-            "temporal"
-        ],
-        [
-            "IEnumerable",
-            "tokensA"
-        ],
-        [
-            "TokenSecuencia",
-            "secuencia"
+            "IfElseNode",
+            "IfElse"
         ],
         [
             "string",
@@ -986,85 +934,169 @@
         ],
         [
             "token",
-            "fig"
+            "condicion"
         ],
         [
-            "token",
-            "drawFuncion"
+            "LetIn",
+            "let"
         ],
         [
-            "token",
-            "auxiliar2"
+            "List",
+            "componentes"
+        ],
+        [
+            "Random",
+            "ran"
+        ],
+        [
+            "List",
+            "evaluados"
+        ],
+        [
+            "Random",
+            "rnd"
         ],
         [
             "int",
-            "i"
+            "posibleVacio"
+        ],
+        [
+            "string",
+            "rutaDelArchivo"
+        ],
+        [
+            "TokenSecuencia",
+            "auxiliar"
+        ],
+        [
+            "token",
+            "Else"
+        ],
+        [
+            "Identificador",
+            "nodo"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "token",
+            "auxiliar"
+        ],
+        [
+            "List",
+            "importaciones"
+        ],
+        [
+            "FunctionNode",
+            "funcion"
+        ],
+        [
+            "int",
+            "indiceAleatorio"
+        ],
+        [
+            "token",
+            "fig"
         ]
     ],
     "method_names": [
+        "CambioDevariable2",
         "Clone",
         "Evaluar",
-        "CambioDevariable",
         "CheckSemantic",
-        "CambioDevariable2",
         "CambioDPadre",
+        "CambioDevariable",
         "inferencia",
-        "TokenizeString",
+        "IsKeyword",
         "Isfunction",
         "IsComando",
         "colores",
-        "IsPunctuation",
-        "IsKeyword",
-        "IsOperator",
         "errores",
+        "TokenizeString",
+        "IsPunctuation",
+        "IsOperator",
         "Main",
         "Parser",
-        "ParseFactor",
-        "Expresiones",
-        "ParseTerm",
         "ParseExpression",
-        "Evaluate",
+        "ParseTerm",
+        "Expresiones",
+        "ParseFactor",
         "Valido",
         "InferenciaSobrecarga",
-        "CheckSemantic",
         "ErroresVariablesLocales",
-        "Puntos_Arco",
-        "Clone",
-        "Puntos_Recta",
-        "Puntos_Ciscunferencia",
-        "Evaluar",
         "CheckSemantic",
+        "Evaluate",
         "Puntos_Rayo",
+        "Puntos_Arco",
+        "Puntos_Ciscunferencia",
+        "Clone",
+        "Evaluar",
         "CalculoMedida",
-        "TipoSecuencia",
-        "ComandosDIntercepcion",
-        "CalculoSecuencia",
-        "ParserIFelse",
-        "Import",
+        "CheckSemantic",
+        "Puntos_Recta",
         "Count",
-        "randoms",
-        "Figura",
-        "aumentoContador",
-        "DrawFunction",
-        "ValorNombreFigura",
-        "Letin",
-        "FuncionesGeo",
-        "Identificadores",
-        "SecuenciaFinita",
         "TiposFigura",
-        "LineSecuenceTipo",
+        "aumentoContador",
+        "SecuenciaFinita",
+        "DrawFunction",
+        "FuncionesGeo",
         "LineSecuence",
-        "Isfunction",
-        "Identificador",
-        "Tipos",
-        "ParseFunction",
         "Samples",
-        "IsOperator"
+        "Figura",
+        "TipoSecuencia",
+        "IsOperator",
+        "ValorNombreFigura",
+        "Isfunction",
+        "LineSecuenceTipo",
+        "Tipos",
+        "randoms",
+        "Import",
+        "CalculoSecuencia",
+        "Identificador",
+        "Letin",
+        "ComandosDIntercepcion",
+        "ParseFunction",
+        "ParserIFelse",
+        "Identificadores"
     ],
     "method_return_types": [
         [
+            "CambioDPadre",
+            "List"
+        ],
+        [
+            "Clone",
+            "LetIn"
+        ],
+        [
+            "Clone",
+            "Print"
+        ],
+        [
+            "Clone",
+            "TokenSecuencia"
+        ],
+        [
+            "Evaluar",
+            "Underfine"
+        ],
+        [
             "Clone",
             "Underfine"
+        ],
+        [
+            "Evaluar",
+            "TokenNumero"
+        ],
+        [
+            "CambioDevariable",
+            "token"
+        ],
+        [
+            "Clone",
+            "object"
         ],
         [
             "Clone",
@@ -1076,47 +1108,35 @@
         ],
         [
             "Clone",
-            "object"
-        ],
-        [
-            "Clone",
             "FunctionNode"
-        ],
-        [
-            "Clone",
-            "Identificador"
         ],
         [
             "CheckSemantic",
             "bool"
         ],
         [
-            "Clone",
-            "OperatorNode"
-        ],
-        [
-            "CambioDevariable",
-            "token"
+            "inferencia",
+            "void"
         ],
         [
             "Clone",
-            "TokenSecuencia"
-        ],
-        [
-            "CambioDPadre",
-            "List"
-        ],
-        [
-            "Evaluar",
-            "Underfine"
-        ],
-        [
-            "Evaluar",
-            "TokenNumero"
+            "Identificador"
         ],
         [
             "CambioDevariable2",
             "List"
+        ],
+        [
+            "Clone",
+            "tokenLiteral"
+        ],
+        [
+            "Evaluar",
+            "token"
+        ],
+        [
+            "Clone",
+            "OperatorNode"
         ],
         [
             "Clone",
@@ -1127,35 +1147,27 @@
             "Function"
         ],
         [
-            "Clone",
-            "tokenLiteral"
+            "IsPunctuation",
+            "bool"
         ],
         [
-            "inferencia",
-            "void"
-        ],
-        [
-            "Clone",
-            "Print"
-        ],
-        [
-            "Clone",
-            "LetIn"
-        ],
-        [
-            "Evaluar",
-            "token"
-        ],
-        [
-            "TokenizeString",
-            "List"
+            "IsKeyword",
+            "bool"
         ],
         [
             "colores",
             "bool"
         ],
         [
-            "IsPunctuation",
+            "TokenizeString",
+            "List"
+        ],
+        [
+            "Isfunction",
+            "bool"
+        ],
+        [
+            "errores",
             "bool"
         ],
         [
@@ -1167,23 +1179,15 @@
             "bool"
         ],
         [
-            "Isfunction",
-            "bool"
-        ],
-        [
-            "IsKeyword",
-            "bool"
-        ],
-        [
-            "errores",
-            "bool"
-        ],
-        [
             "Main",
             "void"
         ],
         [
-            "ParseExpression",
+            "ParseTerm",
+            "token"
+        ],
+        [
+            "Parser",
             "token"
         ],
         [
@@ -1195,24 +1199,8 @@
             "token"
         ],
         [
-            "ParseTerm",
+            "ParseExpression",
             "token"
-        ],
-        [
-            "Parser",
-            "token"
-        ],
-        [
-            "Valido",
-            "Function"
-        ],
-        [
-            "InferenciaSobrecarga",
-            "void"
-        ],
-        [
-            "ErroresVariablesLocales",
-            "void"
         ],
         [
             "Evaluate",
@@ -1223,24 +1211,20 @@
             "bool"
         ],
         [
-            "Clone",
-            "FuncionPointsDos"
+            "Valido",
+            "Function"
         ],
         [
-            "Evaluar",
-            "Circunferencia"
+            "ErroresVariablesLocales",
+            "void"
         ],
         [
-            "Puntos_Rayo",
-            "List"
+            "InferenciaSobrecarga",
+            "void"
         ],
         [
-            "Clone",
-            "Point"
-        ],
-        [
-            "Evaluar",
-            "Point"
+            "CheckSemantic",
+            "bool"
         ],
         [
             "CalculoMedida",
@@ -1248,50 +1232,54 @@
         ],
         [
             "Clone",
-            "Circunferencia"
+            "Arco"
         ],
         [
             "Clone",
-            "Arco"
+            "Circunferencia"
         ],
         [
             "Evaluar",
-            "Arco"
+            "token"
         ],
         [
-            "Puntos_Ciscunferencia",
-            "void"
+            "Puntos_Rayo",
+            "List"
+        ],
+        [
+            "Evaluar",
+            "Point"
         ],
         [
             "Puntos_Arco",
             "List"
         ],
         [
+            "Clone",
+            "Point"
+        ],
+        [
+            "Evaluar",
+            "Circunferencia"
+        ],
+        [
             "Puntos_Recta",
             "List"
         ],
         [
-            "CheckSemantic",
-            "bool"
+            "Puntos_Ciscunferencia",
+            "void"
         ],
         [
             "Evaluar",
-            "token"
+            "Arco"
         ],
         [
-            "Identificador",
-            "token"
+            "Clone",
+            "FuncionPointsDos"
         ],
         [
-            "Isfunction",
-            "bool"
-        ],
-        [
-            "aumentoContador",
-            "bool"
-        ],
-        [
-            "LineSecuence",
+            "SecuenciaFinita",
             "token"
         ],
         [
@@ -1299,15 +1287,19 @@
             "TokenNumero"
         ],
         [
-            "Samples",
-            "TokenSecuencia"
-        ],
-        [
-            "IsOperator",
+            "Tipos",
             "bool"
         ],
         [
-            "FuncionesGeo",
+            "LineSecuenceTipo",
+            "bool"
+        ],
+        [
+            "aumentoContador",
+            "bool"
+        ],
+        [
+            "ComandosDIntercepcion",
             "token"
         ],
         [
@@ -1315,11 +1307,15 @@
             "void"
         ],
         [
-            "Tipos",
-            "bool"
+            "Identificador",
+            "token"
         ],
         [
-            "TipoSecuencia",
+            "Samples",
+            "TokenSecuencia"
+        ],
+        [
+            "TiposFigura",
             "bool"
         ],
         [
@@ -1327,7 +1323,27 @@
             "token"
         ],
         [
-            "SecuenciaFinita",
+            "FuncionesGeo",
+            "token"
+        ],
+        [
+            "Isfunction",
+            "bool"
+        ],
+        [
+            "ValorNombreFigura",
+            "TokenTypes"
+        ],
+        [
+            "randoms",
+            "IEnumerable"
+        ],
+        [
+            "IsOperator",
+            "bool"
+        ],
+        [
+            "DrawFunction",
             "token"
         ],
         [
@@ -1335,7 +1351,7 @@
             "token"
         ],
         [
-            "LineSecuenceTipo",
+            "TipoSecuencia",
             "bool"
         ],
         [
@@ -1347,61 +1363,45 @@
             "token"
         ],
         [
-            "ValorNombreFigura",
-            "TokenTypes"
-        ],
-        [
             "Identificadores",
             "token"
         ],
         [
-            "ComandosDIntercepcion",
+            "LineSecuence",
             "token"
-        ],
-        [
-            "randoms",
-            "IEnumerable"
         ],
         [
             "CalculoSecuencia",
             "token"
-        ],
-        [
-            "TiposFigura",
-            "bool"
-        ],
-        [
-            "DrawFunction",
-            "token"
         ]
     ],
     "class_names": [
+        "TokenNumero",
         "Function",
-        "IfElseNode",
+        "FunctionNode",
         "tokenBul",
+        "LetIn",
+        "IfElseNode",
         "Identificador",
         "OperatorNode",
-        "LetIn",
         "Underfine",
-        "token",
-        "TokenNumero",
-        "TokenSecuencia",
-        "FunctionNode",
-        "tokenLiteral",
         "Print",
+        "tokenLiteral",
+        "TokenSecuencia",
+        "token",
         "Tokenizar",
         "ConexionPinturaLogica",
         "Geometrico",
         "Geometrico",
-        "FuncionPointsDos",
-        "Arco",
-        "Circunferencia",
-        "Segment",
         "Line",
-        "Measure",
-        "Point",
-        "Figura",
         "Ray",
+        "Figura",
+        "Arco",
+        "Point",
+        "Measure",
+        "Segment",
+        "Circunferencia",
+        "FuncionPointsDos",
         "Errors",
         "Geometrico"
     ],
@@ -1541,5 +1541,6 @@
         "Attribute_argumentContext": 9
     },
     "project_name": "Melforsy03_Geo--WallE",
-    "label": "original"
+    "label": "original",
+    "project_type": "wallE"
 }

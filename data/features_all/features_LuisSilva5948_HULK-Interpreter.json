@@ -99,24 +99,24 @@
             "newScope"
         ],
         [
-            "Parser",
-            "parser"
-        ],
-        [
-            "Expression",
-            "AST"
+            "Evaluator",
+            "evaluator"
         ],
         [
             "Lexer",
             "lexer"
         ],
         [
+            "Expression",
+            "AST"
+        ],
+        [
             "object",
             "result"
         ],
         [
-            "Evaluator",
-            "evaluator"
+            "Parser",
+            "parser"
         ],
         [
             "List",
@@ -127,16 +127,12 @@
             "c"
         ],
         [
+            "Expression",
+            "condition"
+        ],
+        [
             "Token",
             "id"
-        ],
-        [
-            "Expression",
-            "AST"
-        ],
-        [
-            "Expression",
-            "elseBranch"
         ],
         [
             "List",
@@ -144,7 +140,15 @@
         ],
         [
             "Expression",
-            "right"
+            "value"
+        ],
+        [
+            "Token",
+            "Operator"
+        ],
+        [
+            "Expression",
+            "AST"
         ],
         [
             "Expression",
@@ -152,80 +156,76 @@
         ],
         [
             "Expression",
-            "condition"
-        ],
-        [
-            "Expression",
-            "value"
-        ],
-        [
-            "Expression",
             "expression"
         ],
         [
-            "Token",
-            "Operator"
+            "Expression",
+            "right"
         ],
         [
-            "Interpreter",
-            "interpreter"
+            "Expression",
+            "elseBranch"
         ],
         [
             "string",
             "line"
+        ],
+        [
+            "Interpreter",
+            "interpreter"
         ]
     ],
     "method_names": [
-        "CurrentScope",
         "PopScope",
-        "Evaluate",
+        "CurrentScope",
         "PushScope",
-        "AddFunction",
+        "Evaluate",
         "Initialize",
+        "AddFunction",
         "ToString",
         "Run",
         "Report",
-        "ScanToken",
         "ScanTokens",
-        "Equality",
-        "Comparison",
-        "IfElseStatement",
-        "Factor",
+        "ScanToken",
         "Logical",
+        "Equality",
+        "Power",
         "Unary",
-        "Concatenation",
-        "Term",
-        "Expression",
-        "Primary",
+        "IfElseStatement",
+        "Comparison",
         "LetInExpression",
         "Parse",
+        "Term",
+        "Factor",
+        "Primary",
+        "Concatenation",
         "Literal",
-        "Power",
+        "Expression",
         "Main"
     ],
     "method_return_types": [
         [
-            "PushScope",
-            "void"
-        ],
-        [
             "CurrentScope",
             "Dictionary"
-        ],
-        [
-            "Evaluate",
-            "object"
         ],
         [
             "PopScope",
             "void"
         ],
         [
-            "Initialize",
+            "Evaluate",
+            "object"
+        ],
+        [
+            "PushScope",
             "void"
         ],
         [
             "AddFunction",
+            "void"
+        ],
+        [
+            "Initialize",
             "void"
         ],
         [
@@ -241,39 +241,15 @@
             "string"
         ],
         [
-            "ScanToken",
-            "void"
-        ],
-        [
             "ScanTokens",
             "List"
         ],
         [
-            "LetInExpression",
-            "Expression"
-        ],
-        [
-            "IfElseStatement",
-            "Expression"
+            "ScanToken",
+            "void"
         ],
         [
             "Expression",
-            "Expression"
-        ],
-        [
-            "Equality",
-            "Expression"
-        ],
-        [
-            "Term",
-            "Expression"
-        ],
-        [
-            "Primary",
-            "Expression"
-        ],
-        [
-            "Comparison",
             "Expression"
         ],
         [
@@ -281,11 +257,7 @@
             "Expression"
         ],
         [
-            "Parse",
-            "Expression"
-        ],
-        [
-            "Power",
+            "Term",
             "Expression"
         ],
         [
@@ -293,11 +265,39 @@
             "Expression"
         ],
         [
+            "Parse",
+            "Expression"
+        ],
+        [
             "Factor",
             "Expression"
         ],
         [
+            "Primary",
+            "Expression"
+        ],
+        [
+            "Equality",
+            "Expression"
+        ],
+        [
             "Logical",
+            "Expression"
+        ],
+        [
+            "LetInExpression",
+            "Expression"
+        ],
+        [
+            "Power",
+            "Expression"
+        ],
+        [
+            "IfElseStatement",
+            "Expression"
+        ],
+        [
+            "Comparison",
             "Expression"
         ],
         [
@@ -312,17 +312,17 @@
     "class_names": [
         "Evaluator",
         "Memory",
-        "IfElseStatement",
         "VariableExpression",
+        "FunctionDeclaration",
+        "IfElseStatement",
+        "LetInExpression",
+        "BinaryExpression",
+        "GroupingExpression",
         "AssignExpression",
         "LiteralExpression",
-        "FunctionDeclaration",
-        "FunctionCall",
-        "Expression",
-        "LetInExpression",
         "UnaryExpression",
-        "GroupingExpression",
-        "BinaryExpression",
+        "Expression",
+        "FunctionCall",
         "Token",
         "Interpreter",
         "Error",
@@ -455,5 +455,6 @@
         "Boolean_literalContext": 1
     },
     "project_name": "LuisSilva5948_HULK-Interpreter",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

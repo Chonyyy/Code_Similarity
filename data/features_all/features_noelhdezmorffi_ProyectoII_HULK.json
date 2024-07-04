@@ -227,24 +227,24 @@
             "d"
         ],
         [
-            "TokenReader",
-            "stream"
-        ],
-        [
             "string",
             "text"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "var",
             "unkOp"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
             "string",
             "value"
+        ],
+        [
+            "TokenReader",
+            "stream"
         ],
         [
             "List",
@@ -257,25 +257,25 @@
     ],
     "method_names": [
         "ToString",
+        "ReadWhiteSpace",
+        "ReadNumber",
+        "ReadAny",
         "ReadUntil",
         "ContinuesWith",
-        "Match",
-        "ReadNumber",
-        "ReadWhiteSpace",
-        "ValidIdCharacter",
         "GetTokens",
-        "ReadAny",
+        "ValidIdCharacter",
+        "Match",
+        "Peek",
+        "MatchSymbol",
         "ReadID",
         "MatchText",
-        "MatchSymbol",
-        "Peek",
-        "MoveNext",
-        "IEnumerable",
-        "GetEnumerator",
         "LookAhead",
         "CanLookAhead",
+        "IEnumerable",
+        "MoveBack",
+        "GetEnumerator",
         "Next",
-        "MoveBack"
+        "MoveNext"
     ],
     "method_return_types": [
         [
@@ -287,27 +287,7 @@
             "IEnumerable"
         ],
         [
-            "ValidIdCharacter",
-            "bool"
-        ],
-        [
-            "ReadWhiteSpace",
-            "bool"
-        ],
-        [
-            "MatchSymbol",
-            "bool"
-        ],
-        [
             "ReadID",
-            "bool"
-        ],
-        [
-            "ReadNumber",
-            "bool"
-        ],
-        [
-            "ContinuesWith",
             "bool"
         ],
         [
@@ -319,8 +299,28 @@
             "bool"
         ],
         [
+            "MatchSymbol",
+            "bool"
+        ],
+        [
+            "ReadWhiteSpace",
+            "bool"
+        ],
+        [
             "Peek",
             "char"
+        ],
+        [
+            "ContinuesWith",
+            "bool"
+        ],
+        [
+            "ReadNumber",
+            "bool"
+        ],
+        [
+            "ValidIdCharacter",
+            "bool"
         ],
         [
             "ReadAny",
@@ -331,22 +331,6 @@
             "bool"
         ],
         [
-            "GetEnumerator",
-            "IEnumerator"
-        ],
-        [
-            "MoveNext",
-            "void"
-        ],
-        [
-            "MoveBack",
-            "void"
-        ],
-        [
-            "LookAhead",
-            "Token"
-        ],
-        [
             "Next",
             "bool"
         ],
@@ -355,16 +339,32 @@
             "IEnumerator"
         ],
         [
+            "MoveBack",
+            "void"
+        ],
+        [
+            "MoveNext",
+            "void"
+        ],
+        [
             "CanLookAhead",
             "bool"
+        ],
+        [
+            "GetEnumerator",
+            "IEnumerator"
+        ],
+        [
+            "LookAhead",
+            "Token"
         ]
     ],
     "class_names": [
         "Expression",
         "Token",
         "TokenValues",
-        "TokenReader",
         "LexicalAnalyzer",
+        "TokenReader",
         "Lexer",
         "TokenStream",
         "Parser",
@@ -507,5 +507,6 @@
         "YieldStatementContext": 1
     },
     "project_name": "noelhdezmorffi_ProyectoII_HULK",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

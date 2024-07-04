@@ -242,6 +242,18 @@
     "variable_names": [
         [
             "var",
+            "expresion"
+        ],
+        [
+            "List",
+            "alfa"
+        ],
+        [
+            "var",
+            "semantic_expresion"
+        ],
+        [
+            "var",
             "line"
         ],
         [
@@ -249,24 +261,8 @@
             "amarillo"
         ],
         [
-            "List",
-            "alfa"
-        ],
-        [
             "ConsoleColor",
             "magenta"
-        ],
-        [
-            "var",
-            "variables"
-        ],
-        [
-            "var",
-            "semantic_expresion"
-        ],
-        [
-            "ConsoleColor",
-            "rojoFuerte"
         ],
         [
             "ConsoleColor",
@@ -274,23 +270,35 @@
         ],
         [
             "var",
-            "expresion"
+            "syntaxTree"
         ],
         [
             "Servidor",
             "previous"
         ],
         [
-            "var",
-            "syntaxTree"
+            "ConsoleColor",
+            "rojoFuerte"
         ],
         [
-            "Semantic_Ambito",
-            "parent"
+            "var",
+            "variables"
+        ],
+        [
+            "string",
+            "name"
         ],
         [
             "List",
             "variables"
+        ],
+        [
+            "var",
+            "expresion"
+        ],
+        [
+            "var",
+            "condicion"
         ],
         [
             "Semantic_Parser",
@@ -298,7 +306,23 @@
         ],
         [
             "var",
-            "condicion"
+            "parentAmbito"
+        ],
+        [
+            "var",
+            "cuerpoElse"
+        ],
+        [
+            "Semantic_Ambito",
+            "parent"
+        ],
+        [
+            "var",
+            "cuerpoIf"
+        ],
+        [
+            "List",
+            "errores"
         ],
         [
             "List",
@@ -306,7 +330,11 @@
         ],
         [
             "var",
-            "cuerpoIf"
+            "result"
+        ],
+        [
+            "var",
+            "stack"
         ],
         [
             "var",
@@ -317,52 +345,24 @@
             "variable"
         ],
         [
-            "var",
-            "expresion"
-        ],
-        [
-            "var",
-            "parentAmbito"
-        ],
-        [
-            "List",
-            "errores"
-        ],
-        [
-            "var",
-            "result"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "var",
-            "cuerpoElse"
-        ],
-        [
-            "var",
-            "stack"
+            "object",
+            "valorResultado"
         ],
         [
             "IEnumerable",
             "errores"
         ],
         [
-            "var",
-            "ambitoGlobal"
-        ],
-        [
             "Evaluator",
             "resultado"
         ],
         [
-            "object",
-            "valorResultado"
+            "var",
+            "semantic_Funcion"
         ],
         [
             "var",
-            "semantic_Funcion"
+            "ambitoGlobal"
         ],
         [
             "var",
@@ -376,11 +376,11 @@
     "method_names": [
         "Main",
         "ImprimeError",
-        "ConectaExpresion",
+        "ConectaIfDeclaracion",
         "ConectaExpresionCondicion",
         "CreaAmbitoPadre",
+        "ConectaExpresion",
         "ConectaVariableDeclaracion",
-        "ConectaIfDeclaracion",
         "ConectaAmbitoGlobal",
         "Try_DeclararVariable",
         "GetDeclaredVariables",
@@ -397,15 +397,15 @@
     ],
     "method_return_types": [
         [
-            "ImprimeError",
-            "void"
-        ],
-        [
             "Main",
             "void"
         ],
         [
-            "ConectaExpresionCondicion",
+            "ImprimeError",
+            "void"
+        ],
+        [
+            "ConectaIfDeclaracion",
             "Semantic_Expresion"
         ],
         [
@@ -413,11 +413,11 @@
             "Semantic_Ambito"
         ],
         [
-            "ConectaIfDeclaracion",
+            "ConectaExpresion",
             "Semantic_Expresion"
         ],
         [
-            "ConectaExpresion",
+            "ConectaVariableDeclaracion",
             "Semantic_Expresion"
         ],
         [
@@ -425,11 +425,11 @@
             "Semantic_GlobalAmbito"
         ],
         [
-            "ConectaVariableDeclaracion",
+            "ConectaExpresionCondicion",
             "Semantic_Expresion"
         ],
         [
-            "Try_AsignarVariable",
+            "Try_DeclararVariable",
             "bool"
         ],
         [
@@ -437,7 +437,7 @@
             "List"
         ],
         [
-            "Try_DeclararVariable",
+            "Try_AsignarVariable",
             "bool"
         ],
         [
@@ -469,32 +469,32 @@
             "SyntaxTree"
         ],
         [
-            "Take",
-            "char"
-        ],
-        [
             "NextToken",
             "Token"
+        ],
+        [
+            "Take",
+            "char"
         ]
     ],
     "class_names": [
         "Program",
         "Semantic_Parser",
         "Semantic_Ambito",
+        "Semantic_Declaracion",
         "Semantic_VariableDeclaracion",
+        "Semantic_IF_Declaracion",
         "Semantic_PrintExpresion",
         "Semantic_DeclaracionExpresion",
         "Semantic_FuncionDeclaracion",
-        "Semantic_IF_Declaracion",
-        "Semantic_Declaracion",
-        "Semantic_SenExpresion",
-        "Semantic_SqrtExpresion",
-        "Semantic_CosExpresion",
         "Semantic_LogExpresion",
+        "Semantic_CosExpresion",
+        "Semantic_SqrtExpresion",
+        "Semantic_SenExpresion",
         "Semantic_BinaryOperador",
         "Semantic_BinaryExpresion",
-        "Semantic_Expresion",
         "Semantic_Nodo",
+        "Semantic_Expresion",
         "Semantic_UnaryExpresion",
         "Semantic_UnaryOperador",
         "Semantic_FuncionCall",
@@ -507,18 +507,18 @@
         "AsignacionVariableExpresion",
         "Token",
         "IDExpresion",
-        "VariableSymbol",
         "FuncionSymbol",
-        "ElseDeclaracion",
-        "DeclaracionNodo",
+        "VariableSymbol",
         "IFDeclaracionExpresion",
+        "ElseDeclaracion",
         "DeclaracionExpresion",
+        "DeclaracionNodo",
         "BinaryExpresion",
         "Expresion",
         "PrintExpresion",
         "LiteralExpresion",
-        "FuncionCallExpresion",
         "FuncionDeclaracion",
+        "FuncionCallExpresion",
         "UnaryExpresion",
         "ParentesisExpresion",
         "Error",
@@ -657,5 +657,6 @@
         "AttributeContext": 8
     },
     "project_name": "Pol472_HULK",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

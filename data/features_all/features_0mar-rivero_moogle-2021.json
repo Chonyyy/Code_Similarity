@@ -386,27 +386,11 @@
         ],
         [
             "var",
-            "indexDictionary"
-        ],
-        [
-            "var",
             "words"
         ],
         [
             "var",
-            "possible"
-        ],
-        [
-            "var",
-            "deleting"
-        ],
-        [
-            "var",
-            "i"
-        ],
-        [
-            "var",
-            "matrix"
+            "indexDictionary"
         ],
         [
             "var",
@@ -414,23 +398,7 @@
         ],
         [
             "var",
-            "inserting"
-        ],
-        [
-            "var",
-            "col"
-        ],
-        [
-            "var",
-            "row"
-        ],
-        [
-            "var",
-            "b"
-        ],
-        [
-            "var",
-            "replacing"
+            "a"
         ],
         [
             "var",
@@ -438,11 +406,15 @@
         ],
         [
             "var",
-            "a"
+            "replacing"
         ],
         [
             "var",
-            "min"
+            "b"
+        ],
+        [
+            "var",
+            "row"
         ],
         [
             "var",
@@ -450,15 +422,43 @@
         ],
         [
             "var",
+            "min"
+        ],
+        [
+            "var",
+            "matrix"
+        ],
+        [
+            "var",
+            "inserting"
+        ],
+        [
+            "var",
+            "deleting"
+        ],
+        [
+            "var",
             "mask"
         ],
         [
             "var",
-            "outPut"
+            "i"
+        ],
+        [
+            "var",
+            "col"
+        ],
+        [
+            "var",
+            "possible"
         ],
         [
             "var",
             "bestWord"
+        ],
+        [
+            "var",
+            "outPut"
         ],
         [
             "var",
@@ -475,43 +475,59 @@
     ],
     "method_names": [
         "Items",
-        "GetDocuments",
         "ProcessCorpus",
+        "Proximity",
+        "MostRepeatedWordOccurrences",
         "LoadStemmerDictionary",
         "LoadIndexes",
-        "MostRepeatedWordOccurrences",
-        "Proximity",
+        "GetDocuments",
         "Snippet",
-        "LevenshteinFactor",
-        "LevenshteinDistance",
         "SusCost",
-        "Put",
         "InCost",
+        "LevenshteinFactor",
         "Levenshteable",
+        "Put",
+        "LevenshteinDistance",
         "Syn",
+        "Suggestion",
         "Query",
         "Suggestion",
         "Similarity",
         "Query",
-        "Suggestion",
         "WordRelevance",
-        "ProcessQuery",
-        "CalculateIdf",
-        "CalculateTf",
         "Freq",
         "CalculateWq",
-        "Norm",
-        "CalculateIdf",
-        "ProcessTFxIdf",
-        "ProcessNorms",
+        "ProcessQuery",
         "CalculateTf",
+        "CalculateIdf",
+        "Freq",
         "CalculateW",
-        "Freq"
+        "ProcessTFxIdf",
+        "Norm",
+        "CalculateTf",
+        "CalculateIdf",
+        "ProcessNorms"
     ],
     "method_return_types": [
         [
             "Items",
             "IEnumerable"
+        ],
+        [
+            "MostRepeatedWordOccurrences",
+            "int"
+        ],
+        [
+            "LoadStemmerDictionary",
+            "Dictionary"
+        ],
+        [
+            "Proximity",
+            "int"
+        ],
+        [
+            "ProcessCorpus",
+            "void"
         ],
         [
             "LoadIndexes",
@@ -522,24 +538,24 @@
             "string"
         ],
         [
-            "LoadStemmerDictionary",
-            "Dictionary"
-        ],
-        [
             "GetDocuments",
             "ICollection"
         ],
         [
-            "ProcessCorpus",
-            "void"
+            "Put",
+            "bool"
         ],
         [
-            "MostRepeatedWordOccurrences",
-            "int"
+            "InCost",
+            "double"
         ],
         [
-            "Proximity",
-            "int"
+            "Levenshteable",
+            "bool"
+        ],
+        [
+            "SusCost",
+            "double"
         ],
         [
             "LevenshteinFactor",
@@ -550,24 +566,12 @@
             "double"
         ],
         [
-            "InCost",
-            "double"
-        ],
-        [
-            "SusCost",
-            "double"
-        ],
-        [
-            "Put",
-            "bool"
-        ],
-        [
-            "Levenshteable",
-            "bool"
-        ],
-        [
             "Syn",
             "bool"
+        ],
+        [
+            "Suggestion",
+            "string"
         ],
         [
             "Query",
@@ -576,10 +580,6 @@
         [
             "Suggestion",
             "string"
-        ],
-        [
-            "Similarity",
-            "double"
         ],
         [
             "WordRelevance",
@@ -590,8 +590,16 @@
             "IEnumerable"
         ],
         [
-            "Suggestion",
-            "string"
+            "Similarity",
+            "double"
+        ],
+        [
+            "CalculateTf",
+            "double"
+        ],
+        [
+            "CalculateIdf",
+            "double"
         ],
         [
             "Freq",
@@ -602,12 +610,12 @@
             "double"
         ],
         [
-            "CalculateTf",
-            "double"
-        ],
-        [
             "ProcessQuery",
             "Dictionary"
+        ],
+        [
+            "CalculateTf",
+            "double"
         ],
         [
             "CalculateIdf",
@@ -618,15 +626,11 @@
             "double"
         ],
         [
-            "CalculateTf",
-            "double"
+            "ProcessTFxIdf",
+            "Dictionary"
         ],
         [
             "CalculateW",
-            "double"
-        ],
-        [
-            "CalculateIdf",
             "double"
         ],
         [
@@ -636,10 +640,6 @@
         [
             "Freq",
             "int"
-        ],
-        [
-            "ProcessTFxIdf",
-            "Dictionary"
         ]
     ],
     "class_names": [
@@ -797,5 +797,6 @@
         "YieldStatementContext": 1
     },
     "project_name": "0mar-rivero_moogle-2021",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

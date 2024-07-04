@@ -130,10 +130,6 @@
             "firstClosedAfter"
         ],
         [
-            "string",
-            "token"
-        ],
-        [
             "bool",
             "isPlainText"
         ],
@@ -142,8 +138,8 @@
             "lastOpen"
         ],
         [
-            "UserFunction",
-            "f"
+            "string",
+            "token"
         ],
         [
             "MyExpression",
@@ -151,79 +147,31 @@
         ],
         [
             "MyExpression",
-            "vTree"
-        ],
-        [
-            "List",
-            "paramTokens"
-        ],
-        [
-            "List",
-            "list"
-        ],
-        [
-            "MyExpression",
-            "right"
-        ],
-        [
-            "List",
-            "funBody"
-        ],
-        [
-            "string",
-            "vName"
-        ],
-        [
-            "List",
-            "t2"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "varNames"
-        ],
-        [
-            "List",
-            "paramExpressions"
+            "left"
         ],
         [
             "Token",
             "currentOp"
         ],
         [
-            "string",
-            "varName"
-        ],
-        [
-            "MyExpression",
-            "e"
-        ],
-        [
-            "MyExpression",
-            "left"
-        ],
-        [
-            "Variable",
-            "v"
-        ],
-        [
-            "int",
-            "parentCount"
-        ],
-        [
-            "string",
-            "coditionResult"
-        ],
-        [
             "Context",
             "c"
         ],
         [
+            "MyExpression",
+            "vTree"
+        ],
+        [
             "List",
-            "funParams"
+            "t1"
+        ],
+        [
+            "UserFunction",
+            "f"
+        ],
+        [
+            "MyExpression",
+            "right"
         ],
         [
             "string",
@@ -231,50 +179,102 @@
         ],
         [
             "List",
-            "t1"
+            "funBody"
         ],
         [
-            "Parser",
-            "p"
+            "List",
+            "funParams"
+        ],
+        [
+            "string",
+            "vName"
+        ],
+        [
+            "List",
+            "varNames"
+        ],
+        [
+            "MyExpression",
+            "e"
+        ],
+        [
+            "Variable",
+            "v"
+        ],
+        [
+            "string",
+            "varName"
+        ],
+        [
+            "List",
+            "list"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "coditionResult"
+        ],
+        [
+            "List",
+            "t2"
+        ],
+        [
+            "int",
+            "parentCount"
+        ],
+        [
+            "List",
+            "paramTokens"
+        ],
+        [
+            "List",
+            "paramExpressions"
+        ],
+        [
+            "string",
+            "input"
         ],
         [
             "bool",
             "check"
         ],
         [
-            "string",
-            "input"
+            "Parser",
+            "p"
         ]
     ],
     "method_names": [
-        "Evaluate",
         "ToString",
         "Evaluate",
         "Evaluate",
         "ToString",
         "Evaluate",
         "ToString",
+        "Evaluate",
         "ClasificarToken",
         "GetTokens",
-        "ApplyLexer",
         "IsBalanced",
-        "FindVar",
+        "ApplyLexer",
         "AddVar",
-        "ParseFunDeclaration",
-        "ParseTerm",
-        "Parse",
-        "GetFunDeclParams",
+        "FindVar",
+        "ParseSum",
         "ParseAndOr",
         "ParseMult",
-        "ParseVarDeclaration",
         "Concat",
+        "Parse",
+        "ParseVarDeclaration",
         "Compare",
+        "GetFunDeclParams",
         "GetParams",
-        "ParsePow",
-        "ParseSum",
-        "ParseIfDeclaration",
-        "Evaluate",
         "SolveParenthesis",
+        "ParseIfDeclaration",
+        "ParseFunDeclaration",
+        "ParseTerm",
+        "ParsePow",
+        "Evaluate",
         "Main"
     ],
     "method_return_types": [
@@ -307,35 +307,43 @@
             "string"
         ],
         [
-            "GetTokens",
-            "List"
-        ],
-        [
             "ClasificarToken",
             "Token"
-        ],
-        [
-            "IsBalanced",
-            "bool"
         ],
         [
             "ApplyLexer",
             "void"
         ],
         [
-            "AddVar",
-            "void"
+            "GetTokens",
+            "List"
+        ],
+        [
+            "IsBalanced",
+            "bool"
         ],
         [
             "FindVar",
             "Variable"
         ],
         [
+            "AddVar",
+            "void"
+        ],
+        [
             "GetFunDeclParams",
             "List"
         ],
         [
-            "ParseIfDeclaration",
+            "ParseAndOr",
+            "MyExpression"
+        ],
+        [
+            "Concat",
+            "MyExpression"
+        ],
+        [
+            "ParseMult",
             "MyExpression"
         ],
         [
@@ -347,31 +355,23 @@
             "MyExpression"
         ],
         [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "Parse",
-            "MyExpression"
-        ],
-        [
             "ParseFunDeclaration",
             "void"
         ],
         [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "ParseIfDeclaration",
+            "MyExpression"
+        ],
+        [
+            "ParseVarDeclaration",
+            "MyExpression"
+        ],
+        [
             "SolveParenthesis",
-            "MyExpression"
-        ],
-        [
-            "ParseAndOr",
-            "MyExpression"
-        ],
-        [
-            "ParsePow",
-            "MyExpression"
-        ],
-        [
-            "ParseMult",
             "MyExpression"
         ],
         [
@@ -379,15 +379,15 @@
             "MyExpression"
         ],
         [
+            "ParsePow",
+            "MyExpression"
+        ],
+        [
+            "Parse",
+            "MyExpression"
+        ],
+        [
             "ParseSum",
-            "MyExpression"
-        ],
-        [
-            "Concat",
-            "MyExpression"
-        ],
-        [
-            "ParseVarDeclaration",
             "MyExpression"
         ],
         [
@@ -398,8 +398,8 @@
     "class_names": [
         "BinaryMyExpression",
         "SyntaxException",
-        "LexicalException",
         "MyException",
+        "LexicalException",
         "SemanticException",
         "UnaryExpression",
         "Variable",
@@ -407,28 +407,28 @@
         "PredFunction",
         "UserFunction",
         "MyExpression",
-        "MenorQ",
-        "Bool",
-        "Concat",
-        "Number",
-        "NegativeNumber",
-        "And",
-        "Division",
-        "Log",
-        "Cos",
-        "Sin",
-        "Product",
-        "Resto",
-        "Sqrt",
-        "Addition",
-        "Or",
-        "Power",
-        "Compare",
-        "Subtraction",
-        "Text",
         "Print",
-        "Different",
+        "Resto",
+        "Bool",
+        "Number",
+        "Concat",
+        "MenorQ",
+        "Compare",
+        "Sqrt",
+        "Log",
+        "Or",
         "MayorQ",
+        "Different",
+        "Subtraction",
+        "And",
+        "Addition",
+        "Sin",
+        "Text",
+        "Product",
+        "Power",
+        "Cos",
+        "NegativeNumber",
+        "Division",
         "MyFunction",
         "Lexer",
         "Context",
@@ -575,5 +575,6 @@
         "Attribute_argumentContext": 9
     },
     "project_name": "fabio2k3_HULK",
-    "label": "original"
+    "label": "original",
+    "project_type": "hulk"
 }

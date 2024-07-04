@@ -211,5 +211,6 @@
         "Variable_initializerContext": 1
     },
     "project_name": "eblabrada_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

@@ -388,12 +388,32 @@
     ],
     "variable_names": [
         [
-            "string",
-            "recorte"
+            "char",
+            "separador"
+        ],
+        [
+            "List",
+            "lista"
         ],
         [
             "List",
             "result"
+        ],
+        [
+            "string",
+            "directorio"
+        ],
+        [
+            "string",
+            "texto1"
+        ],
+        [
+            "int",
+            "val"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "int",
@@ -401,31 +421,11 @@
         ],
         [
             "List",
-            "lista"
-        ],
-        [
-            "char",
-            "separador"
+            "txt"
         ],
         [
             "int",
             "posicion"
-        ],
-        [
-            "int",
-            "val"
-        ],
-        [
-            "string",
-            "textoSeparadoNOnormalizado"
-        ],
-        [
-            "string",
-            "texto1"
-        ],
-        [
-            "string",
-            "directorio"
         ],
         [
             "StreamReader",
@@ -433,19 +433,15 @@
         ],
         [
             "string",
+            "recorte"
+        ],
+        [
+            "string",
             "titulos"
         ],
         [
-            "List",
-            "txt"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "textos"
+            "string",
+            "textoSeparadoNOnormalizado"
         ],
         [
             "string",
@@ -453,35 +449,11 @@
         ],
         [
             "List",
-            "exc"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "bool",
-            "b"
-        ],
-        [
-            "List",
-            "aster"
+            "textos"
         ],
         [
             "string",
             "palabra"
-        ],
-        [
-            "string",
-            "palabra2"
-        ],
-        [
-            "List",
-            "pico"
-        ],
-        [
-            "List",
-            "Repeticion"
         ],
         [
             "int",
@@ -489,27 +461,27 @@
         ],
         [
             "List",
-            "ene"
+            "aster"
         ],
         [
             "int",
             "i"
         ],
         [
+            "List",
+            "Repeticion"
+        ],
+        [
             "int",
             "k"
         ],
         [
-            "List",
-            "quary"
+            "int",
+            "j"
         ],
         [
             "List",
-            "exc"
-        ],
-        [
-            "SearchItem",
-            "busqueda"
+            "pico"
         ],
         [
             "bool",
@@ -517,19 +489,19 @@
         ],
         [
             "List",
-            "aster"
+            "exc"
+        ],
+        [
+            "string",
+            "palabra2"
         ],
         [
             "List",
-            "quary1"
+            "ene"
         ],
         [
-            "List",
-            "txt1"
-        ],
-        [
-            "List",
-            "txt2"
+            "SearchItem",
+            "busqueda"
         ],
         [
             "(",
@@ -537,15 +509,55 @@
         ],
         [
             "List",
-            "pico"
+            "txt1"
+        ],
+        [
+            "List",
+            "quary"
+        ],
+        [
+            "List",
+            "semejantes"
+        ],
+        [
+            "List",
+            "aster"
         ],
         [
             "float",
             "f"
         ],
         [
+            "List",
+            "quary1"
+        ],
+        [
+            "List",
+            "resultado"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
             "float",
             "idf"
+        ],
+        [
+            "List",
+            "pico"
+        ],
+        [
+            "bool",
+            "b"
+        ],
+        [
+            "List",
+            "ene"
+        ],
+        [
+            "string",
+            "suggestion"
         ],
         [
             "SearchItem",
@@ -553,43 +565,31 @@
         ],
         [
             "List",
-            "resultado"
+            "exc"
         ],
         [
             "List",
-            "ene"
+            "txt2"
         ],
         [
             "int",
-            "i"
+            "frecuencia_idf"
         ],
         [
-            "string",
-            "suggestion"
-        ],
-        [
-            "List",
-            "semejantes"
-        ],
-        [
-            "float",
-            "Tf"
-        ],
-        [
-            "float",
-            "Tf_IDF"
+            "int",
+            "frecuencia_tf"
         ],
         [
             "int",
             "suma_ene"
         ],
         [
-            "int",
-            "j"
+            "string",
+            "txt"
         ],
         [
-            "int",
-            "frecuencia_tf"
+            "string",
+            "tit"
         ],
         [
             "float",
@@ -597,31 +597,31 @@
         ],
         [
             "int",
-            "frecuencia_idf"
-        ],
-        [
-            "float",
-            "temp"
-        ],
-        [
-            "string",
-            "tit"
+            "i"
         ],
         [
             "int",
-            "menor"
+            "k"
         ],
         [
             "float",
             "IDF"
         ],
         [
-            "string",
-            "txt"
+            "float",
+            "Tf"
         ],
         [
             "int",
-            "i"
+            "j"
+        ],
+        [
+            "float",
+            "Tf_IDF"
+        ],
+        [
+            "float",
+            "temp"
         ],
         [
             "string",
@@ -629,43 +629,11 @@
         ],
         [
             "int",
-            "k"
-        ],
-        [
-            "string",
-            "buscar"
-        ],
-        [
-            "int",
-            "menor_distancia"
-        ],
-        [
-            "int",
-            "distancia"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "string",
-            "temp"
+            "menor"
         ],
         [
             "int",
             "numero"
-        ],
-        [
-            "bool",
-            "b"
-        ],
-        [
-            "int",
-            "menor"
-        ],
-        [
-            "bool",
-            "esta"
         ],
         [
             "string",
@@ -676,16 +644,36 @@
             "i"
         ],
         [
-            "List",
-            "semejante"
-        ],
-        [
             "int",
             "j"
         ],
         [
             "string",
-            "sugerir"
+            "buscar"
+        ],
+        [
+            "bool",
+            "b"
+        ],
+        [
+            "bool",
+            "esta"
+        ],
+        [
+            "int",
+            "menor_distancia"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
+            "int",
+            "distancia"
+        ],
+        [
+            "int",
+            "menor"
         ],
         [
             "string",
@@ -693,15 +681,11 @@
         ],
         [
             "int",
-            "f"
-        ],
-        [
-            "int",
             "c"
         ],
         [
-            "int",
-            "cambios"
+            "List",
+            "semejante"
         ],
         [
             "int",
@@ -710,19 +694,35 @@
         [
             "int",
             "i"
+        ],
+        [
+            "int",
+            "cambios"
+        ],
+        [
+            "int",
+            "f"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "sugerir"
         ]
     ],
     "method_names": [
         "Items",
-        "CreateDictionary",
-        "Separar",
-        "Leer",
-        "Recorte_de_textos",
-        "Normalizar",
-        "Hazlo_todo",
         "Procesar",
-        "Operadores",
+        "Normalizar",
+        "CreateDictionary",
+        "Leer",
+        "Separar",
+        "Recorte_de_textos",
+        "Hazlo_todo",
         "Dame_una_palabra",
+        "Operadores",
         "Dame_una_palabra2",
         "Repeticion_de_palabras",
         "Resultado",
@@ -730,13 +730,13 @@
         "OrdenarPalabrasQuery",
         "Resultado",
         "Ordenar",
+        "Menor_distancia",
+        "Multiplicar",
         "Distancia",
         "Mascara",
-        "Multiplicar",
-        "Menor_distancia",
-        "Palabras_semejantes",
         "Levenshtein",
         "Menor",
+        "Palabras_semejantes",
         "Sugerir"
     ],
     "method_return_types": [
@@ -745,35 +745,31 @@
             "IEnumerable"
         ],
         [
-            "Recorte_de_textos",
+            "Separar",
             "string"
-        ],
-        [
-            "Normalizar",
-            "string"
-        ],
-        [
-            "CreateDictionary",
-            "List"
         ],
         [
             "Leer",
             "("
         ],
         [
-            "Separar",
-            "string"
-        ],
-        [
             "Procesar",
             "List"
+        ],
+        [
+            "Recorte_de_textos",
+            "string"
         ],
         [
             "Hazlo_todo",
             "List"
         ],
         [
-            "Dame_una_palabra2",
+            "CreateDictionary",
+            "List"
+        ],
+        [
+            "Normalizar",
             "string"
         ],
         [
@@ -789,15 +785,19 @@
             "List"
         ],
         [
-            "Query",
-            "SearchResult"
+            "Dame_una_palabra2",
+            "string"
         ],
         [
             "Resultado",
             "SearchItem"
         ],
         [
-            "Ordenar",
+            "Query",
+            "SearchResult"
+        ],
+        [
+            "OrdenarPalabrasQuery",
             "void"
         ],
         [
@@ -805,15 +805,15 @@
             "("
         ],
         [
-            "OrdenarPalabrasQuery",
+            "Ordenar",
             "void"
         ],
         [
-            "Multiplicar",
-            "int"
+            "Mascara",
+            "bool"
         ],
         [
-            "Menor_distancia",
+            "Multiplicar",
             "int"
         ],
         [
@@ -821,24 +821,24 @@
             "int"
         ],
         [
-            "Mascara",
-            "bool"
+            "Menor_distancia",
+            "int"
         ],
         [
-            "Sugerir",
-            "string"
+            "Menor",
+            "void"
         ],
         [
             "Palabras_semejantes",
             "List"
         ],
         [
-            "Levenshtein",
-            "int"
+            "Sugerir",
+            "string"
         ],
         [
-            "Menor",
-            "void"
+            "Levenshtein",
+            "int"
         ]
     ],
     "class_names": [
@@ -974,5 +974,6 @@
         "ForeachStatementContext": 1
     },
     "project_name": "Livi005_MoogleSearch",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

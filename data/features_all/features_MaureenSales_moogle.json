@@ -313,6 +313,14 @@
     ],
     "variable_names": [
         [
+            "double",
+            "producto_escalar"
+        ],
+        [
+            "double",
+            "producto"
+        ],
+        [
             "int",
             "i"
         ],
@@ -321,36 +329,28 @@
             "k"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
             "double",
             "suma"
         ],
         [
-            "double",
-            "producto"
-        ],
-        [
-            "double",
-            "producto_escalar"
-        ],
-        [
-            "string",
-            "part_query"
+            "int",
+            "j"
         ],
         [
             "int",
-            "startIndex"
-        ],
-        [
-            "int",
-            "i"
+            "space"
         ],
         [
             "int",
             "first"
+        ],
+        [
+            "int",
+            "count_ast"
+        ],
+        [
+            "List",
+            "yes"
         ],
         [
             "List",
@@ -358,7 +358,7 @@
         ],
         [
             "int",
-            "endIndex"
+            "i"
         ],
         [
             "Dictionary",
@@ -366,35 +366,19 @@
         ],
         [
             "int",
-            "count_ast"
+            "endIndex"
         ],
         [
             "int",
-            "space"
+            "startIndex"
         ],
         [
-            "List",
-            "yes"
+            "string",
+            "part_query"
         ],
         [
             "string",
             "word"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "double",
-            "result"
-        ],
-        [
-            "string",
-            "roots"
         ],
         [
             "double",
@@ -402,75 +386,51 @@
         ],
         [
             "double",
-            "norm"
-        ],
-        [
-            "char",
-            "sg"
-        ],
-        [
-            "List",
-            "not"
-        ],
-        [
-            "double",
-            "numerator"
-        ],
-        [
-            "List",
-            "need"
-        ],
-        [
-            "double",
-            "denominator"
-        ],
-        [
-            "double",
             "result"
-        ],
-        [
-            "double",
-            "query_vector"
-        ],
-        [
-            "Dictionary",
-            "tf"
         ],
         [
             "int",
             "i"
         ],
         [
-            "double",
-            "tfs"
+            "int",
+            "j"
         ],
         [
-            "double",
-            "documents"
+            "string",
+            "roots"
         ],
         [
-            "var",
-            "t"
+            "List",
+            "not"
         ],
         [
-            "double",
-            "scores"
+            "List",
+            "need"
+        ],
+        [
+            "Dictionary",
+            "tf"
+        ],
+        [
+            "char",
+            "sg"
         ],
         [
             "int",
             "j"
         ],
         [
+            "List",
+            "items"
+        ],
+        [
             "double",
-            "v"
+            "result"
         ],
         [
-            "string",
-            "snippet"
-        ],
-        [
-            "string",
-            "Query"
+            "int",
+            "i"
         ],
         [
             "StreamReader",
@@ -478,7 +438,11 @@
         ],
         [
             "double",
-            "idfs"
+            "tfs"
+        ],
+        [
+            "string",
+            "snippet"
         ],
         [
             "Dictionary",
@@ -486,15 +450,55 @@
         ],
         [
             "string",
+            "Query"
+        ],
+        [
+            "string",
             "query_tokenize"
         ],
         [
-            "List",
-            "items"
+            "double",
+            "query_vector"
+        ],
+        [
+            "double",
+            "scores"
+        ],
+        [
+            "double",
+            "v"
+        ],
+        [
+            "double",
+            "idfs"
+        ],
+        [
+            "double",
+            "norm"
+        ],
+        [
+            "var",
+            "t"
+        ],
+        [
+            "double",
+            "documents"
+        ],
+        [
+            "double",
+            "numerator"
+        ],
+        [
+            "double",
+            "denominator"
         ],
         [
             "int",
             "i"
+        ],
+        [
+            "StreamReader",
+            "reader"
         ],
         [
             "char",
@@ -503,10 +507,6 @@
         [
             "int",
             "last_apparicion"
-        ],
-        [
-            "StreamReader",
-            "reader"
         ],
         [
             "string",
@@ -522,52 +522,60 @@
         ],
         [
             "string",
-            "result"
+            "documents_root"
         ],
         [
             "int",
             "j"
         ],
         [
-            "string",
-            "documents_root"
-        ],
-        [
             "SearchItem",
             "temp"
+        ],
+        [
+            "string",
+            "result"
         ]
     ],
     "method_names": [
-        "Multiplicable",
+        "Producto",
         "IgualOrden",
         "Suma",
         "Producto_Escalar",
-        "Producto",
+        "Multiplicable",
         "Items",
-        "WordsPriority",
-        "WordsNot",
         "RemoveWords",
-        "NeedWords",
+        "WordsNot",
         "WordsYes",
+        "WordsPriority",
+        "NeedWords",
         "TFS",
         "IDFS",
-        "TokenizeQuery",
         "Snippet",
-        "QueryTf",
-        "Build_Documents_Vectors",
-        "Query_Norm",
+        "TokenizeQuery",
         "Vectorial_Model",
+        "QueryTf",
+        "Query_Norm",
         "Query",
+        "Build_Documents_Vectors",
         "Query",
-        "Sort",
+        "LoadDocuments",
         "EnumerateFiles",
         "TokenizeWord",
-        "LoadDocuments"
+        "Sort"
     ],
     "method_return_types": [
         [
             "Producto_Escalar",
             "MatrizOps"
+        ],
+        [
+            "Suma",
+            "MatrizOps"
+        ],
+        [
+            "Multiplicable",
+            "bool"
         ],
         [
             "IgualOrden",
@@ -578,20 +586,12 @@
             "MatrizOps"
         ],
         [
-            "Multiplicable",
-            "bool"
-        ],
-        [
-            "Suma",
-            "MatrizOps"
-        ],
-        [
             "Items",
             "IEnumerable"
         ],
         [
-            "WordsYes",
-            "List"
+            "WordsPriority",
+            "Dictionary"
         ],
         [
             "NeedWords",
@@ -602,19 +602,19 @@
             "double"
         ],
         [
-            "WordsPriority",
-            "Dictionary"
-        ],
-        [
             "WordsNot",
             "List"
         ],
         [
-            "IDFS",
-            "double"
+            "WordsYes",
+            "List"
         ],
         [
             "TFS",
+            "double"
+        ],
+        [
+            "IDFS",
             "double"
         ],
         [
@@ -622,23 +622,7 @@
             "string"
         ],
         [
-            "QueryTf",
-            "double"
-        ],
-        [
-            "Snippet",
-            "string"
-        ],
-        [
             "Query_Norm",
-            "double"
-        ],
-        [
-            "Query",
-            "SearchResult"
-        ],
-        [
-            "Vectorial_Model",
             "double"
         ],
         [
@@ -646,23 +630,39 @@
             "double"
         ],
         [
+            "Snippet",
+            "string"
+        ],
+        [
+            "Vectorial_Model",
+            "double"
+        ],
+        [
+            "QueryTf",
+            "double"
+        ],
+        [
             "Query",
             "SearchResult"
         ],
         [
-            "Sort",
-            "SearchItem"
+            "Query",
+            "SearchResult"
         ],
         [
             "LoadDocuments",
             "Engine"
         ],
         [
-            "EnumerateFiles",
+            "TokenizeWord",
             "string"
         ],
         [
-            "TokenizeWord",
+            "Sort",
+            "SearchItem"
+        ],
+        [
+            "EnumerateFiles",
             "string"
         ]
     ],
@@ -791,5 +791,6 @@
         "Variable_initializerContext": 15
     },
     "project_name": "MaureenSales_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }

@@ -194,29 +194,30 @@
     },
     "project_name": "Ramonconda_HulkProjec",
     "label": "original",
+    "project_type": "hulk",
     "variable_names_vector": [
-        0.29003021121025085,
-        -0.05636569485068321
+        0.19746948778629303,
+        0.029736779630184174
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
-        0.231141597032547,
-        -0.08117811381816864
+        0.07843688875436783,
+        0.024868659675121307
     ],
     "method_names_vector": [
-        0.18955948948860168,
-        0.031225629150867462
+        0.12501779198646545,
+        0.10545693337917328
     ],
     "class_names_vector": [
-        0.10217276215553284,
-        -0.0748477578163147
+        0.05528935045003891,
+        0.01874825917184353
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
-        0.3349960148334503,
-        0.1640416383743286,
-        0.5040188431739807,
-        0.09563048928976059
+        0.2532753646373749,
+        0.24529285728931427,
+        0.3637409806251526,
+        0.22898651659488678
     ]
 }

@@ -270,100 +270,12 @@
     ],
     "variable_names": [
         [
-            "double",
-            "tf"
-        ],
-        [
-            "Dictionary",
-            "Documents_with_Title"
-        ],
-        [
-            "Dictionary",
-            "Title_Of_Each_Document"
-        ],
-        [
-            "double",
-            "valor_vectores"
-        ],
-        [
-            "List",
-            "Query_TF"
-        ],
-        [
-            "double",
-            "count"
-        ],
-        [
-            "string",
-            "Document_Split_Into_Sentences"
-        ],
-        [
             "string",
             "document"
         ],
         [
-            "SearchItem",
-            "Preresult"
-        ],
-        [
-            "string",
-            "title"
-        ],
-        [
-            "var",
-            "Dictionary_IDF"
-        ],
-        [
-            "double",
-            "result"
-        ],
-        [
-            "List",
-            "Snippet_TF_IDF"
-        ],
-        [
-            "List",
-            "result"
-        ],
-        [
-            "var",
-            "idf"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "var",
-            "Idf"
-        ],
-        [
-            "double",
-            "Result"
-        ],
-        [
-            "List",
-            "Matrix_Result"
-        ],
-        [
-            "double",
-            "Cantidad_Documentos_Por_Palabras"
-        ],
-        [
-            "double",
-            "Cantidad_Documentos"
-        ],
-        [
             "int",
             "j"
-        ],
-        [
-            "string",
-            "Actual_document"
-        ],
-        [
-            "double",
-            "Tf"
         ],
         [
             "double",
@@ -371,7 +283,47 @@
         ],
         [
             "List",
-            "Query_IDF"
+            "Query_TF"
+        ],
+        [
+            "double",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
+            "Cantidad_Documentos_Por_Palabras"
+        ],
+        [
+            "double",
+            "Result"
+        ],
+        [
+            "Dictionary",
+            "Title_Of_Each_Document"
+        ],
+        [
+            "List",
+            "Snippet"
+        ],
+        [
+            "Dictionary",
+            "Documents_with_Title"
+        ],
+        [
+            "SearchItem",
+            "Preresult"
+        ],
+        [
+            "string",
+            "Document_Split_Into_Sentences"
+        ],
+        [
+            "var",
+            "idf"
         ],
         [
             "double",
@@ -379,123 +331,63 @@
         ],
         [
             "List",
-            "Snippet"
+            "result"
+        ],
+        [
+            "double",
+            "valor_vectores"
+        ],
+        [
+            "double",
+            "Cantidad_Documentos"
+        ],
+        [
+            "var",
+            "Idf"
+        ],
+        [
+            "string",
+            "title"
         ],
         [
             "int",
             "count"
         ],
         [
-            "string",
-            "Address"
-        ],
-        [
-            "Dictionary",
-            "Pre_Snippet_Score"
-        ],
-        [
-            "Dictionary",
-            "Title_Of_Each_Document"
-        ],
-        [
-            "double",
-            "score"
-        ],
-        [
-            "List",
-            "TF_Query"
-        ],
-        [
-            "int",
-            "p"
-        ],
-        [
-            "List",
-            "Finalist"
-        ],
-        [
-            "List",
-            "IDF_Query"
-        ],
-        [
-            "string",
-            "Documents_Address"
-        ],
-        [
             "List",
             "Snippet_TF_IDF"
         ],
         [
-            "Dictionary",
-            "Dictionary_PreScore"
-        ],
-        [
-            "int",
-            "m"
-        ],
-        [
-            "Dictionary",
-            "Dictionary_Score"
+            "double",
+            "count"
         ],
         [
             "List",
-            "Return_Documents"
-        ],
-        [
-            "List",
-            "Vocabulary"
-        ],
-        [
-            "string",
-            "Documents"
-        ],
-        [
-            "List",
-            "Score_Docs"
-        ],
-        [
-            "SearchItem",
-            "Almost_Last"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "k"
+            "Matrix_Result"
         ],
         [
             "var",
-            "Dictionary_IDF_Words"
-        ],
-        [
-            "List",
-            "matrix_TF_IDF"
+            "Dictionary_IDF"
         ],
         [
             "string",
-            "Title"
-        ],
-        [
-            "double",
-            "Score_Snippet"
-        ],
-        [
-            "Dictionary",
-            "Score_Snippet_Oficial"
+            "Actual_document"
         ],
         [
             "List",
-            "All_Documents"
+            "Query_IDF"
         ],
         [
-            "Dictionary",
-            "Documents_Title_Deliver"
+            "double",
+            "Tf"
+        ],
+        [
+            "double",
+            "tf"
         ],
         [
             "int",
-            "j"
+            "p"
         ],
         [
             "double",
@@ -503,11 +395,19 @@
         ],
         [
             "List",
-            "Score_Snippet_List"
+            "Return_Documents"
         ],
         [
-            "double",
-            "Norm_Query"
+            "string",
+            "titles"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Dictionary",
+            "Score_Snippet_Oficial"
         ],
         [
             "List",
@@ -515,19 +415,91 @@
         ],
         [
             "List",
-            "Snippet"
+            "IDF_Query"
+        ],
+        [
+            "List",
+            "TF_Query"
+        ],
+        [
+            "var",
+            "Dictionary_IDF_Words"
         ],
         [
             "int",
-            "h"
+            "i"
+        ],
+        [
+            "Dictionary",
+            "Dictionary_Score"
+        ],
+        [
+            "List",
+            "Finalist"
+        ],
+        [
+            "SearchItem",
+            "Almost_Last"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "Dictionary",
+            "Title_Of_Each_Document"
+        ],
+        [
+            "List",
+            "Score_Docs"
+        ],
+        [
+            "double",
+            "Score_Snippet"
+        ],
+        [
+            "string",
+            "Documents_Address"
+        ],
+        [
+            "List",
+            "Snippet"
+        ],
+        [
+            "List",
+            "TF_IDF_Query"
+        ],
+        [
+            "List",
+            "matrix_TF_IDF"
+        ],
+        [
+            "double",
+            "Norm_Query"
+        ],
+        [
+            "string",
+            "Title"
         ],
         [
             "double",
             "Norm"
         ],
         [
-            "string",
-            "snippet"
+            "List",
+            "Score_Snippet_List"
+        ],
+        [
+            "List",
+            "Snippet_TF_IDF"
+        ],
+        [
+            "double",
+            "Norm_Snippet"
+        ],
+        [
+            "List",
+            "Vocabulary"
         ],
         [
             "SearchItem",
@@ -535,35 +507,63 @@
         ],
         [
             "double",
-            "Norm_Snippet"
+            "score"
+        ],
+        [
+            "Dictionary",
+            "Dictionary_PreScore"
         ],
         [
             "string",
-            "titles"
+            "Documents"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "string",
+            "Address"
+        ],
+        [
+            "int",
+            "h"
+        ],
+        [
+            "Dictionary",
+            "Pre_Snippet_Score"
+        ],
+        [
+            "Dictionary",
+            "Documents_Title_Deliver"
         ],
         [
             "List",
-            "TF_IDF_Query"
+            "All_Documents"
         ]
     ],
     "method_names": [
         "Items",
+        "Inverse_Document_Frencuency",
+        "Snippet_TF_IDF",
+        "IDF_Query",
+        "Matrix_Snippet",
+        "Normalize_Text",
+        "Documents_with_Title",
+        "Vector_Magnitude",
         "Convert_To_Diccionary_IDF",
+        "Matrix_TF_IDF",
+        "TF_Query",
+        "Cosine_Similarity",
+        "Title_Of_Each_Document",
+        "Term_Frequency",
         "Result",
         "Count_Documents_By_Word",
-        "Matrix_Snippet",
-        "Vector_Magnitude",
-        "Cosine_Similarity",
-        "TF_Query",
-        "IDF_Query",
         "Count_Of_Documents",
-        "Matrix_TF_IDF",
-        "Documents_with_Title",
-        "Inverse_Document_Frencuency",
-        "Term_Frequency",
-        "Title_Of_Each_Document",
-        "Snippet_TF_IDF",
-        "Normalize_Text",
         "Query"
     ],
     "method_return_types": [
@@ -572,20 +572,12 @@
             "IEnumerable"
         ],
         [
-            "Vector_Magnitude",
-            "double"
-        ],
-        [
-            "Term_Frequency",
-            "double"
-        ],
-        [
-            "Documents_with_Title",
+            "Title_Of_Each_Document",
             "Dictionary"
         ],
         [
-            "Convert_To_Diccionary_IDF",
-            "Dictionary"
+            "TF_Query",
+            "List"
         ],
         [
             "IDF_Query",
@@ -596,35 +588,31 @@
             "void"
         ],
         [
-            "Inverse_Document_Frencuency",
-            "double"
-        ],
-        [
-            "Matrix_TF_IDF",
+            "Matrix_Snippet",
             "List"
         ],
         [
-            "TF_Query",
-            "List"
-        ],
-        [
-            "Snippet_TF_IDF",
-            "List"
+            "Documents_with_Title",
+            "Dictionary"
         ],
         [
             "Cosine_Similarity",
             "double"
         ],
         [
-            "Title_Of_Each_Document",
-            "Dictionary"
+            "Inverse_Document_Frencuency",
+            "double"
         ],
         [
             "Result",
             "SearchItem"
         ],
         [
-            "Count_Of_Documents",
+            "Snippet_TF_IDF",
+            "List"
+        ],
+        [
+            "Term_Frequency",
             "double"
         ],
         [
@@ -632,8 +620,20 @@
             "double"
         ],
         [
-            "Matrix_Snippet",
+            "Convert_To_Diccionary_IDF",
+            "Dictionary"
+        ],
+        [
+            "Vector_Magnitude",
+            "double"
+        ],
+        [
+            "Matrix_TF_IDF",
             "List"
+        ],
+        [
+            "Count_Of_Documents",
+            "double"
         ],
         [
             "Query",
@@ -761,5 +761,6 @@
         "TheEmptyStatementContext": 1
     },
     "project_name": "Gelita04_moogle",
-    "label": "original"
+    "label": "original",
+    "project_type": "moogle"
 }
