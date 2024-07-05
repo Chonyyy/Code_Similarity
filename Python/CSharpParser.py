@@ -725,8 +725,8 @@ def serializedATN():
         1556,5,130,0,0,1556,205,1,0,0,0,1557,1558,5,43,0,0,1558,1559,3,172,
         86,0,1559,207,1,0,0,0,1560,1563,3,174,87,0,1561,1563,3,28,14,0,1562,
         1560,1,0,0,0,1562,1561,1,0,0,0,1563,209,1,0,0,0,1564,1565,5,65,0,
-        0,1565,1566,3,212,106,0,1566,1568,3,214,107,0,1567,1569,5,134,0,
-        0,1568,1567,1,0,0,0,1568,1569,1,0,0,0,1569,211,1,0,0,0,1570,1575,
+        0,1565,1568,3,212,106,0,1566,1569,5,134,0,0,1567,1569,3,214,107,
+        0,1568,1566,1,0,0,0,1568,1567,1,0,0,0,1569,211,1,0,0,0,1570,1575,
         3,436,218,0,1571,1572,5,131,0,0,1572,1574,3,436,218,0,1573,1571,
         1,0,0,0,1574,1577,1,0,0,0,1575,1573,1,0,0,0,1575,1576,1,0,0,0,1576,
         213,1,0,0,0,1577,1575,1,0,0,0,1578,1580,5,125,0,0,1579,1581,3,216,
@@ -10064,8 +10064,7 @@ class CSharpParser ( CSharpParserBase ):
                     self.state = 1437
                     self.local_variable_declarator()
                     self.state = 1438
-                    # if not  this.IsLocalVariableDeclaration() :
-                    if not  self.local_variable_declaration() :
+                    if not self.local_variable_declaration() :
                         from antlr4.error.Errors import FailedPredicateException
                         raise FailedPredicateException(self, " this.IsLocalVariableDeclaration() ")
                     self.state = 1444
@@ -10087,9 +10086,8 @@ class CSharpParser ( CSharpParserBase ):
 
         except RecognitionException as re:
             localctx.exception = re
-            self._errHandler.reportError(self, re) 
-            self._errHandler.recover(self, re) #TODO Arreglar este error(no existe self._errHandler )
-            self.err
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
         finally:
             self.exitRule()
         return localctx
@@ -11202,16 +11200,16 @@ class CSharpParser ( CSharpParserBase ):
         def NAMESPACE(self):
             return self.getToken(CSharpParser.NAMESPACE, 0)
 
-        def namespace_body(self):
-            return self.getTypedRuleContext(CSharpParser.Namespace_bodyContext,0)
-
-
         def qualified_identifier(self):
             return self.getTypedRuleContext(CSharpParser.Qualified_identifierContext,0)
 
 
         def SEMICOLON(self):
             return self.getToken(CSharpParser.SEMICOLON, 0)
+
+        def namespace_body(self):
+            return self.getTypedRuleContext(CSharpParser.Namespace_bodyContext,0)
+
 
         def getRuleIndex(self):
             return CSharpParser.RULE_namespace_declaration
@@ -11231,22 +11229,25 @@ class CSharpParser ( CSharpParserBase ):
 
         localctx = CSharpParser.Namespace_declarationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 210, self.RULE_namespace_declaration)
-        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 1564
             self.match(CSharpParser.NAMESPACE)
             self.state = 1565
             localctx.qi = self.qualified_identifier()
-            self.state = 1566
-            self.namespace_body()
             self.state = 1568
             self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==134:
-                self.state = 1567
+            token = self._input.LA(1)
+            if token in [134]:
+                self.state = 1566
                 self.match(CSharpParser.SEMICOLON)
-
+                pass
+            elif token in [125]:
+                self.state = 1567
+                self.namespace_body()
+                pass
+            else:
+                raise NoViableAltException(self)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -20420,7 +20421,7 @@ class CSharpParser ( CSharpParserBase ):
             self.state = 2646
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 3750091428249852928) != 0) or ((((_la - 64)) & ~0x3f) == 0 and ((1 << (_la - 64)) & 1904629023639713) != 0)):
-                self._errHandler.recoverInline(self) # TODO arreglar el _errHandler
+                self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
                 self.consume()
@@ -20449,9 +20450,7 @@ class CSharpParser ( CSharpParserBase ):
 
     def local_variable_declaration_sempred(self, localctx:Local_variable_declarationContext, predIndex:int):
             if predIndex == 0:
-                # return  this.IsLocalVariableDeclaration() 
                 return self.local_variable_declaration()
-         
 
     def right_arrow_sempred(self, localctx:Right_arrowContext, predIndex:int):
             if predIndex == 1:
@@ -20467,7 +20466,6 @@ class CSharpParser ( CSharpParserBase ):
             if predIndex == 3:
                 return (0 if localctx.first is None else localctx.first.tokenIndex) + 1 == (0 if localctx.second is None else localctx.second.tokenIndex)
          
-
 
 
 

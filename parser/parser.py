@@ -4,8 +4,16 @@ from listener import FeatureExtractorListener, walk_tree
 from antlr4 import CommonTokenStream
 from Python.CSharpLexer import CSharpLexer
 from Python.CSharpParser import CSharpParser
-import networkx as nx
-from node2vec import Node2Vec
+from antlr4 import FileStream, BailErrorStrategy
+from antlr4.error.ErrorListener import ErrorListener
+
+class MyErrorListener(ErrorListener):
+    def __init__(self):
+        super(MyErrorListener, self).__init__()
+        self.errors = []
+
+    def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
+        self.errors.append(f"Error at line {line}, column {column}: {msg}")
 
 def extract_features_from_file(file_path):
     input_stream = FileStream(file_path, encoding='utf-8')
@@ -13,9 +21,20 @@ def extract_features_from_file(file_path):
     tokens = CommonTokenStream(lexer)
     parser = CSharpParser(tokens)
 
-    # Agrega tu listener de errores personalizado aquí si es necesario
+    # Attach the custom error listener to the parser
+    error_listener = MyErrorListener()
+    parser.removeErrorListeners()
+    parser.addErrorListener(error_listener)
 
     tree = parser.compilation_unit()
+    
+    if error_listener.errors:
+        print("Syntax errors found:")
+        for error in error_listener.errors:
+            print(error)
+    else:
+        print("Parsing completed without syntax errors.")
+        
     extractor = FeatureExtractorListener()
     walk_tree(extractor, tree)
     return extractor.get_features()

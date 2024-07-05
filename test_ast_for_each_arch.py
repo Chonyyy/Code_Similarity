@@ -38,6 +38,8 @@ for f in os.scandir(PROJECTS_FOLDER):
         features['project_name'] = f.name
         features['label'] = "original"
         
+        
+        
         if folder_name == "moogle":
             features['project_type'] = "moogle"
         elif folder_name == "wallE":
