@@ -1,24 +1,21 @@
-\chapter{Propuesta}\label{chapter:proposal}
+\chapter{Propuesta de solución}\label{chapter:proposal}
 
 La implementacion  de este trabajo esta dividida en dos partes fundamentales: Extraccion del AST y trabajo con machine learning.
 
-- Extraccion del AST: En esta parte se utiliza la herramienta ANTLR de C# para crear el ast de los proyectos. Luego de este ast se extraen los features para su posterior uso.
+- Extraccion del AST: En esta parte se utiliza la herramienta ANTLR de C\# para crear el ast de los proyectos. Luego de este ast se extraen los features para su posterior uso.
 
 - Trabajo con machine learning: Se utiliza el modelo ---------- para determinar la semejanza entre 2 proyectos.
 
 
 \section{Extraccion del AST}
 
-ANTLR (Another Tool for Language Recognition) es una poderosa herramienta que se utiliza para generar analizadores léxicos y sintácticos a partir de gramáticas definidas por el usuario. Es ampliamente utilizada en la compilación y el procesamiento de lenguajes, ya que permite transformar el código fuente en estructuras de datos que pueden ser fácilmente manipuladas. En este caso, ANTLR se emplea para extraer Árboles de Sintaxis Abstracta (AST) a partir del código fuente de programas escritos en C#. \\
+ANTLR (Another Tool for Language Recognition) es una poderosa herramienta que se utiliza para generar analizadores léxicos y sintácticos a partir de gramáticas definidas por el usuario. Es ampliamente utilizada en la compilación y el procesamiento de lenguajes, ya que permite transformar el código fuente en estructuras de datos que pueden ser fácilmente manipuladas. En este caso, ANTLR se emplea para extraer Árboles de Sintaxis Abstracta (AST) a partir del código fuente de programas escritos en C\#. Fue necesario hacer ligeras modificaciones sobre la gramática, pues ANTLR tenia una gramatica desactualizada. \\
 
 Una vez que se ha generado el AST, se puede manipular y analizar utilizando las estructuras de datos proporcionadas por ANTLR. Por ejemplo, se pueden recorrer los nodos del árbol, extraer información específica o transformar el AST para diferentes propósitos, en este caso se utilizó el listener proporcionado por ANTLR para recorrer el árbol y extraer los featurues. \\
 
 \section{Extraccion de features}
 
-En el análisis de similitud de código y detección de patrones, es crucial extraer características relevantes que capturen la estructura y el comportamiento del código. Para este propósito, se implementó una clase denominada {\bf FeatureExtractorListener}, que extiende la funcionalidad de ANTLR para analizar el código fuente en C#. A continuación, se presenta una descripción detallada del proceso de extracción de características y la importancia de cada característica extraída. \\
-
-Características Extraídas y su Importancia
-
+En el análisis de similitud de código y detección de patrones, es crucial extraer características relevantes que capturen la estructura y el comportamiento del código. Para este propósito, se implementó una clase denominada {\bf FeatureExtractorListener}, que extiende la funcionalidad de ANTLR para analizar el código fuente en C\#. A continuación, se presenta una descripción detallada del proceso de extracción de características y la importancia de cada característica extraída. \\
 
 \begin{enumerate}
 	\item Estructura del AST:
@@ -138,9 +135,31 @@ En el contexto del análisis de similitud de código, los nombres de variables, 
 	
 	\item Entrenamiento de Word2Vec: Se utilizó un corpus de identificadores extraídos de múltiples proyectos de C\# para entrenar el modelo Word2Vec. El modelo aprendió las relaciones semánticas entre los diferentes identificadores en el contexto del código.
 	
-	\item Conversión a Embeddings: Cada identificador extraído se convirtió en un vector de características numéricas utilizando el modelo Word2Vec entrenado. Luego se halla el promedio entre todos los vectores por feature correspondiente para asegurar que todos las caracteristicas de vectores tengan la misma dimension. Estos vectores capturan la semántica y el contexto de los identificadores en el código.
+	\item Conversión a Embeddings: Cada identificador extraído se convirtió en un vector de características numéricas utilizando el modelo Word2Vec entrenado. Luego se halla el promedio entre todos los vectores por feature correspondiente para asegurar que todos las caracteristicas de vectores tengan la misma dimensión. Estos vectores capturan la semántica y el contexto de los identificadores en el código.
 	 
 \end{enumerate}
 
-\subsubsection{Algo}
+\subsubsection{Nuevo dataset}
+Para maximizar la cantidad de datos disponibles y reflejar de manera efectiva la similitud entre proyectos, se creó un nuevo dataset que contiene todos los pares posibles (2 a 2) de proyectos del conjunto de datos original. En este proceso, para cada par de proyectos, se calcula y almacena la diferencia entre sus vectores correspondientes.
+
+Este enfoque tiene varias ventajas significativas:
+
+\begin{itemize}
+	\item {\bf Incremento en la Cantidad de Datos:} Generar todos los pares posibles de proyectos incrementa exponencialmente el número de instancias en el dataset, proporcionando una base de datos más rica y diversa para entrenar modelos de aprendizaje automático.
+
+	\item {\bf Captura de Relaciones Detalladas:} Al almacenar la diferencia entre los vectores de cada par de proyectos, se capturan las distancias y relaciones específicas entre todos los proyectos. Esto permite que el modelo de machine learning pueda aprender las sutilezas de las similitudes y diferencias entre distintos proyectos.
+	
+	\item {\bf Mejora en la Precisión del Modelo:} Con un mayor volumen de datos y la inclusión de las distancias entre pares, se espera que el modelo tenga un mejor desempeño en la tarea de detección de similitudes. La precisión del modelo se ve beneficiada al disponer de más ejemplos que reflejan una amplia gama de variaciones y similitudes.
+	
+	\item {\bf Refinamiento de las Métricas de Similitud:} Este método permite que se utilicen métricas de similitud más refinadas y precisas, ya que cada par de proyectos se compara de manera detallada. 
+
+\end{itemize}
+
+En resumen, la creación de este nuevo dataset con todos los pares posibles y sus diferencias vectoriales no solo aumenta la cantidad de datos disponibles, sino que también enriquece la información sobre las relaciones entre proyectos, mejorando así la capacidad del modelo para detectar similitudes de manera precisa y eficiente.  
+
+\subsubsection{Algo mas sobre la preparacion del dataset}
+
+
+\section{Clustering}
+
 

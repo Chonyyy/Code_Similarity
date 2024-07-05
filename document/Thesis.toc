@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Estado del Arte}{4}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Propuesta}{9}{chapter.2}
+\contentsline {chapter}{\numberline {2}Propuesta de soluci\IeC {\'o}n}{9}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Extraccion del AST}{9}{section.2.1}
 \defcounter {refsection}{0}\relax 
@@ -24,8 +24,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Uso de Word2Vec en la Preparaci\IeC {\'o}n del Dataset}{13}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Detalles de Implementaci\IeC {\'o}n y Experimentos}{15}{chapter.3}
+\contentsline {subsubsection}{Nuevo dataset}{14}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusiones}{16}{section*.13}
+\contentsline {subsubsection}{Algo mas sobre la preparacion del dataset}{15}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Recomendaciones}{17}{section*.15}
+\contentsline {section}{\numberline {2.4}Clustering}{15}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Detalles de Implementaci\IeC {\'o}n y Experimentos}{16}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Conclusiones}{17}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Recomendaciones}{18}{section*.16}

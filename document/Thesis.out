@@ -4,10 +4,11 @@
 \BOOKMARK [1][-]{section.0.3}{Objetivos Generales}{chapter*.4}% 4
 \BOOKMARK [1][-]{section.0.4}{Objetivos Espec\355ficos}{chapter*.4}% 5
 \BOOKMARK [0][-]{chapter.1}{Estado del Arte}{}% 6
-\BOOKMARK [0][-]{chapter.2}{Propuesta}{}% 7
+\BOOKMARK [0][-]{chapter.2}{Propuesta de soluci\363n}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Extraccion del AST}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{Extraccion de features}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Preparacion del dataset}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Detalles de Implementaci\363n y Experimentos}{}% 11
-\BOOKMARK [0][-]{section*.13}{Conclusiones}{}% 12
-\BOOKMARK [0][-]{section*.15}{Recomendaciones}{}% 13
+\BOOKMARK [1][-]{section.2.4}{Clustering}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Detalles de Implementaci\363n y Experimentos}{}% 12
+\BOOKMARK [0][-]{section*.14}{Conclusiones}{}% 13
+\BOOKMARK [0][-]{section*.16}{Recomendaciones}{}% 14
