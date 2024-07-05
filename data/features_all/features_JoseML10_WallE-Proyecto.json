@@ -1,5 +1,5 @@
 {
-    "total_nodes": 71791,
+    "total_nodes": 71945,
     "max_depth": 1715,
     "number_of_variables": 139,
     "number_of_constants": 0,
@@ -26,18 +26,18 @@
     "control_structures_for": 3,
     "control_structures_while": 15,
     "control_structures_dowhile": 0,
-    "access_modifiers_public": 336,
-    "access_modifiers_private": 33,
+    "access_modifiers_public": 346,
+    "access_modifiers_private": 34,
     "access_modifiers_protected": 1,
     "access_modifiers_internal": 6,
-    "access_modifiers_static": 11,
+    "access_modifiers_static": 12,
     "access_modifiers_protected_internal": 0,
     "access_modifiers_private_protected": 0,
     "modifier_readonly": 0,
     "modifier_volatile": 0,
-    "modifier_virtual": 1,
+    "modifier_virtual": 3,
     "modifier_override": 53,
-    "modifier_new": 46,
+    "modifier_new": 71,
     "modifier_partial": 4,
     "modifier_extern": 0,
     "modifier_unsafe": 0,
@@ -490,11 +490,11 @@
     "variable_names": [
         [
             "Point",
-            "punto3"
+            "punto1"
         ],
         [
             "Point",
-            "punto1"
+            "punto2"
         ],
         [
             "Vector2",
@@ -502,79 +502,67 @@
         ],
         [
             "Point",
-            "punto2"
+            "punto3"
         ],
         [
             "Circle",
             "circle"
         ],
         [
-            "Linea",
-            "line"
-        ],
-        [
-            "var",
-            "g"
-        ],
-        [
-            "AnalizadorSintáctico",
-            "sintaxis"
-        ],
-        [
-            "AnalizadorLéxico",
-            "lex"
-        ],
-        [
-            "List",
-            "tokens"
+            "string",
+            "hola"
         ],
         [
             "Entorno",
             "entorno"
         ],
         [
-            "List",
-            "instruccions"
-        ],
-        [
-            "string",
-            "valoringresado"
+            "var",
+            "g"
         ],
         [
             "System",
             "punto1"
         ],
         [
-            "System",
-            "punto2"
+            "AnalizadorSintáctico",
+            "sintaxis"
+        ],
+        [
+            "string",
+            "valoringresado"
         ],
         [
             "Pen",
             "p"
         ],
         [
-            "string",
-            "hola"
+            "Linea",
+            "line"
         ],
         [
-            "char",
-            "caracterActual"
+            "List",
+            "tokens"
         ],
         [
-            "string",
-            "_caracterActual"
+            "System",
+            "punto2"
         ],
         [
-            "StringBuilder",
-            "cadena"
-        ],
-        [
-            "string",
-            "codigo"
+            "List",
+            "instruccions"
         ],
         [
             "AnalizadorLéxico",
             "lex"
+        ],
+        [
+            "string",
+            "numero"
+        ],
+        [
+            "StringBuilder",
+            "cadena"
         ],
         [
             "List",
@@ -582,43 +570,67 @@
         ],
         [
             "string",
-            "numero"
+            "codigo"
         ],
         [
             "string",
             "palabra"
         ],
         [
+            "string",
+            "_caracterActual"
+        ],
+        [
+            "char",
+            "caracterActual"
+        ],
+        [
+            "AnalizadorLéxico",
+            "lex"
+        ],
+        [
             "Point",
             "p3"
-        ],
-        [
-            "List",
-            "variables"
-        ],
-        [
-            "Point",
-            "p1"
-        ],
-        [
-            "string",
-            "id"
         ],
         [
             "Instruccion",
             "ElseExpression"
         ],
         [
+            "List",
+            "parameters"
+        ],
+        [
+            "Instruccion",
+            "body"
+        ],
+        [
             "Figura",
             "f2"
+        ],
+        [
+            "string",
+            "id"
         ],
         [
             "double",
             "m"
         ],
         [
+            "Instruccion",
+            "values"
+        ],
+        [
             "List",
-            "parameters"
+            "variables"
+        ],
+        [
+            "string",
+            "FunctionName"
+        ],
+        [
+            "Figura",
+            "f1"
         ],
         [
             "Instruccion",
@@ -629,14 +641,6 @@
             "ThenExpression"
         ],
         [
-            "string",
-            "FunctionName"
-        ],
-        [
-            "Instruccion",
-            "body"
-        ],
-        [
             "Point",
             "p2"
         ],
@@ -645,12 +649,8 @@
             "nodo"
         ],
         [
-            "Instruccion",
-            "values"
-        ],
-        [
-            "Figura",
-            "f1"
+            "Point",
+            "p1"
         ],
         [
             "Point",
@@ -661,20 +661,20 @@
             "punto2"
         ],
         [
-            "var",
-            "tipo"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "Instruccion",
             "condition"
         ],
         [
             "var",
             "resto"
+        ],
+        [
+            "var",
+            "tipo"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "var",
@@ -689,16 +689,16 @@
             "centro"
         ],
         [
+            "float",
+            "angulo1"
+        ],
+        [
+            "Point",
+            "punto5"
+        ],
+        [
             "Point",
             "punto3"
-        ],
-        [
-            "float",
-            "angulo2"
-        ],
-        [
-            "int",
-            "radio"
         ],
         [
             "float",
@@ -710,19 +710,19 @@
         ],
         [
             "Point",
-            "punto5"
+            "punto2"
         ],
         [
             "Vector2",
             "direccion"
         ],
         [
-            "Point",
-            "punto2"
+            "float",
+            "angulo2"
         ],
         [
-            "float",
-            "angulo1"
+            "int",
+            "radio"
         ],
         [
             "Vector2",
@@ -733,6 +733,26 @@
             "temp"
         ],
         [
+            "string",
+            "numero"
+        ],
+        [
+            "StringBuilder",
+            "cadena"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "string",
+            "palabra"
+        ],
+        [
             "char",
             "caracterActual"
         ],
@@ -741,68 +761,32 @@
             "_caracterActual"
         ],
         [
-            "StringBuilder",
-            "cadena"
-        ],
-        [
-            "List",
-            "tokens"
-        ],
-        [
-            "string",
-            "numero"
-        ],
-        [
-            "string",
-            "palabra"
-        ],
-        [
-            "string",
-            "aux"
-        ],
-        [
             "Point",
             "p3"
-        ],
-        [
-            "List",
-            "nombres"
-        ],
-        [
-            "Instruccion",
-            "asignation"
-        ],
-        [
-            "List",
-            "SecuencesId"
-        ],
-        [
-            "Point",
-            "p2"
-        ],
-        [
-            "Instruccion",
-            "line"
         ],
         [
             "Instruccion",
             "ElseExpression"
         ],
         [
-            "Point",
-            "p1"
-        ],
-        [
             "string",
             "id"
+        ],
+        [
+            "Token",
+            "valor"
         ],
         [
             "double",
             "m"
         ],
         [
-            "int",
-            "value"
+            "List",
+            "nombres"
+        ],
+        [
+            "List",
+            "SecuencesId"
         ],
         [
             "Instruccion",
@@ -810,11 +794,19 @@
         ],
         [
             "Instruccion",
+            "line"
+        ],
+        [
+            "Instruccion",
             "ThenExpression"
         ],
         [
-            "Token",
-            "valor"
+            "Point",
+            "p2"
+        ],
+        [
+            "Instruccion",
+            "asignation"
         ],
         [
             "Instruccion",
@@ -825,48 +817,16 @@
             "nodo"
         ],
         [
-            "var",
-            "cirlce"
-        ],
-        [
-            "var",
-            "tipo"
-        ],
-        [
-            "var",
-            "secuence"
-        ],
-        [
-            "var",
-            "ray"
-        ],
-        [
-            "var",
-            "point"
-        ],
-        [
-            "Random",
-            "r"
-        ],
-        [
-            "var",
-            "segment"
+            "int",
+            "value"
         ],
         [
             "Point",
             "p1"
         ],
         [
-            "int",
-            "x"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "var",
-            "resto"
+            "secuence"
         ],
         [
             "Instruccion",
@@ -874,91 +834,131 @@
         ],
         [
             "var",
-            "valores"
+            "resto"
         ],
         [
-            "Coord",
-            "cor"
+            "var",
+            "tipo"
+        ],
+        [
+            "int",
+            "x"
         ],
         [
             "var",
             "line"
         ],
         [
+            "var",
+            "cirlce"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "segment"
+        ],
+        [
+            "Coord",
+            "cor"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "var",
+            "ray"
+        ],
+        [
             "Point",
             "p2"
         ],
         [
+            "var",
+            "valores"
+        ],
+        [
+            "var",
+            "point"
+        ],
+        [
             "int",
             "y"
+        ],
+        [
+            "Point",
+            "p1"
         ]
     ],
     "method_names": [
         "Dibujar",
         "Dibujar",
-        "DibujarFiguras",
-        "ObtenerValorCajaTexto",
         "Compilar",
-        "InitializeComponent",
-        "DrawButton_Click",
         "CompileButton_Click",
+        "DibujarFiguras",
+        "InitializeComponent",
+        "ObtenerValorCajaTexto",
+        "DrawButton_Click",
         "ObtenerTokens",
         "Main",
-        "InitializeComponent",
         "Dispose",
-        "AnalizeLineSecuence",
-        "Analize",
-        "AnalizeLine",
-        "AnalizeIntersectFunction",
-        "AnalizeFunction",
-        "AnalizeRayFunction",
-        "AnalizeIdentificador",
-        "AnalizeRay",
-        "AnalizeSegment",
-        "AnalizeArcFunction",
-        "AnalizeLineFunction",
+        "InitializeComponent",
         "AnalizeSegmentFunction",
-        "AnalizarIfElse",
+        "AnalizeCircleFunction",
+        "AnalizeLine",
+        "AnalizeIdentificador",
+        "AnalizeCircle",
         "AnalizeExpresion",
+        "AnalizeMeasureFunction",
+        "AnalizeFunction",
+        "Analize",
+        "AnalizarIfElse",
+        "AnalizeLineSecuence",
+        "AnalizeRayFunction",
+        "AnalizeSegment",
+        "AnalizeRay",
+        "AnalizeIntersectFunction",
+        "AnalizeLineFunction",
+        "AnalizePoint",
+        "AnalizeArcFunction",
         "AnalizePointSecuence",
         "siguienteToken",
-        "AnalizeCircleFunction",
-        "AnalizeCircle",
-        "AnalizePoint",
-        "AnalizeMeasureFunction",
         "Dibujar",
         "DefinirVariable",
-        "Evaluar",
         "BuscarVariable",
+        "Evaluar",
         "Dibujar",
         "Dibujar",
         "Dibujar",
         "ObtenerTokens",
-        "Analize",
+        "AnalizeSegmentFunction",
+        "AnalizeDraw",
+        "AnalizeCircleFunction",
+        "AnalizeNumber",
         "AnalizeLine",
         "AnalizeIdentifier",
-        "ParseInstructions",
-        "AnalizeRayFunction",
-        "AnalizeRay",
-        "AnalizeNumber",
-        "AnalizeSegment",
-        "AnalizeSecuence",
-        "AnalizeArcFunction",
-        "AnalizeLineFunction",
-        "AnalizeAsignation",
-        "AnalizeSegmentFunction",
-        "NextToken",
-        "AnalizarIfElse",
-        "AnalizeExpresion",
-        "siguienteToken",
-        "AnalizeDraw",
         "AnalizeCircle",
+        "AnalizeExpresion",
+        "AnalizeSecuence",
+        "Analize",
+        "AnalizarIfElse",
+        "AnalizeRayFunction",
+        "AnalizeAsignation",
+        "AnalizeSegment",
+        "AnalizeRay",
+        "AnalizeLineFunction",
         "AnalizePoint",
-        "AnalizeCircleFunction",
-        "DefinirVariable",
-        "DefinirFuncion",
+        "NextToken",
+        "AnalizeArcFunction",
+        "ParseInstructions",
+        "siguienteToken",
+        "Evaluate",
         "BuscarVariable",
-        "Evaluate"
+        "DefinirFuncion",
+        "DefinirVariable"
     ],
     "method_return_types": [
         [
@@ -970,20 +970,12 @@
             "void"
         ],
         [
-            "CompileButton_Click",
-            "void"
-        ],
-        [
-            "DrawButton_Click",
-            "void"
-        ],
-        [
-            "ObtenerValorCajaTexto",
-            "string"
-        ],
-        [
             "Compilar",
             "List"
+        ],
+        [
+            "CompileButton_Click",
+            "void"
         ],
         [
             "DibujarFiguras",
@@ -991,6 +983,14 @@
         ],
         [
             "InitializeComponent",
+            "void"
+        ],
+        [
+            "ObtenerValorCajaTexto",
+            "string"
+        ],
+        [
+            "DrawButton_Click",
             "void"
         ],
         [
@@ -1010,80 +1010,80 @@
             "void"
         ],
         [
-            "AnalizeLineSecuence",
-            "LineSecuence"
-        ],
-        [
-            "AnalizeCircleFunction",
-            "CircleFunction"
-        ],
-        [
-            "AnalizeMeasureFunction",
-            "MeasureFunction"
+            "AnalizeSegment",
+            "Segment"
         ],
         [
             "AnalizeLine",
             "Line"
         ],
         [
-            "AnalizePointSecuence",
-            "PointSecuence"
-        ],
-        [
-            "AnalizeIdentificador",
-            "DeclaracionIdentificador"
-        ],
-        [
-            "AnalizePoint",
-            "Point"
+            "AnalizeMeasureFunction",
+            "MeasureFunction"
         ],
         [
             "AnalizeSegmentFunction",
             "SegmentFunction"
         ],
         [
-            "AnalizeExpresion",
-            "Instruccion"
-        ],
-        [
-            "AnalizeCircle",
-            "Circle"
+            "AnalizeFunction",
+            "FunctionDeclaration"
         ],
         [
             "Analize",
             "Instruccion"
         ],
         [
-            "AnalizeSegment",
-            "Segment"
+            "AnalizeIdentificador",
+            "DeclaracionIdentificador"
         ],
         [
-            "siguienteToken",
-            "void"
+            "AnalizeLineSecuence",
+            "LineSecuence"
+        ],
+        [
+            "AnalizePoint",
+            "Point"
         ],
         [
             "AnalizarIfElse",
             "IfElseExpression"
         ],
         [
+            "AnalizeRayFunction",
+            "RayFunction"
+        ],
+        [
+            "AnalizeCircleFunction",
+            "CircleFunction"
+        ],
+        [
             "AnalizeArcFunction",
             "ArcFunction"
         ],
         [
-            "AnalizeIntersectFunction",
-            "IntersectFunction"
+            "AnalizePointSecuence",
+            "PointSecuence"
         ],
         [
-            "AnalizeFunction",
-            "FunctionDeclaration"
+            "siguienteToken",
+            "void"
+        ],
+        [
+            "AnalizeCircle",
+            "Circle"
+        ],
+        [
+            "AnalizeExpresion",
+            "Instruccion"
         ],
         [
             "AnalizeLineFunction",
             "FunctionLine"
         ],
         [
-            "AnalizeRayFunction",
-            "RayFunction"
+            "AnalizeIntersectFunction",
+            "IntersectFunction"
         ],
         [
             "AnalizeRay",
@@ -1094,12 +1094,12 @@
             "void"
         ],
         [
-            "Evaluar",
-            "object"
-        ],
-        [
             "DefinirVariable",
             "void"
+        ],
+        [
+            "Evaluar",
+            "object"
         ],
         [
             "BuscarVariable",
@@ -1122,47 +1122,7 @@
             "List"
         ],
         [
-            "AnalizeCircleFunction",
-            "CircleFunction"
-        ],
-        [
-            "AnalizeLine",
-            "Line"
-        ],
-        [
             "AnalizeAsignation",
-            "Instruccion"
-        ],
-        [
-            "AnalizeIdentifier",
-            "Instruccion"
-        ],
-        [
-            "AnalizePoint",
-            "Point"
-        ],
-        [
-            "ParseInstructions",
-            "List"
-        ],
-        [
-            "AnalizeSegmentFunction",
-            "SegmentFunction"
-        ],
-        [
-            "AnalizeExpresion",
-            "Instruccion"
-        ],
-        [
-            "AnalizeCircle",
-            "Circle"
-        ],
-        [
-            "AnalizeNumber",
-            "Instruccion"
-        ],
-        [
-            "Analize",
             "Instruccion"
         ],
         [
@@ -1170,27 +1130,67 @@
             "Segment"
         ],
         [
-            "NextToken",
-            "Token"
+            "AnalizeLine",
+            "Line"
         ],
         [
-            "siguienteToken",
-            "void"
+            "AnalizeNumber",
+            "Instruccion"
         ],
         [
-            "AnalizarIfElse",
-            "IfElseExpression"
+            "AnalizeSegmentFunction",
+            "SegmentFunction"
         ],
         [
-            "AnalizeArcFunction",
-            "ArcFunction"
+            "AnalizeIdentifier",
+            "Instruccion"
         ],
         [
             "AnalizeSecuence",
             "Instruccion"
         ],
         [
+            "Analize",
+            "Instruccion"
+        ],
+        [
+            "AnalizePoint",
+            "Point"
+        ],
+        [
+            "AnalizarIfElse",
+            "IfElseExpression"
+        ],
+        [
+            "AnalizeRayFunction",
+            "RayFunction"
+        ],
+        [
+            "AnalizeCircleFunction",
+            "CircleFunction"
+        ],
+        [
+            "ParseInstructions",
+            "List"
+        ],
+        [
             "AnalizeDraw",
+            "Instruccion"
+        ],
+        [
+            "AnalizeArcFunction",
+            "ArcFunction"
+        ],
+        [
+            "siguienteToken",
+            "void"
+        ],
+        [
+            "AnalizeCircle",
+            "Circle"
+        ],
+        [
+            "AnalizeExpresion",
             "Instruccion"
         ],
         [
@@ -1198,16 +1198,12 @@
             "FunctionLine"
         ],
         [
-            "AnalizeRayFunction",
-            "RayFunction"
+            "NextToken",
+            "Token"
         ],
         [
             "AnalizeRay",
             "Ray"
-        ],
-        [
-            "Evaluate",
-            "object"
         ],
         [
             "DefinirFuncion",
@@ -1216,6 +1212,10 @@
         [
             "DefinirVariable",
             "void"
+        ],
+        [
+            "Evaluate",
+            "object"
         ],
         [
             "BuscarVariable",
@@ -1228,38 +1228,38 @@
         "Semirrecta",
         "Formulario",
         "Token",
-        "Program",
         "AnalizadorLéxico",
+        "Program",
         "Form1",
         "Form1",
         "AnalizadorSintáctico",
         "Segmento",
-        "Line",
-        "DeclaracionIdentificador",
-        "RayFunction",
-        "Variable",
-        "Instruccion",
-        "Ray",
-        "LineSecuence",
-        "Samples",
-        "Draw",
-        "Entorno",
-        "Segment",
-        "Figura",
-        "FunctionDeclaration",
-        "MeasureFunction",
-        "Point",
         "FunctionLine",
-        "Circle",
+        "PointsFunction",
+        "IntersectFunction",
+        "RayFunction",
+        "DeclaracionIdentificador",
         "CircleFunction",
         "IfElseExpression",
-        "IntersectFunction",
-        "SegmentFunction",
+        "FunctionDeclaration",
+        "Ray",
+        "Variable",
+        "Segment",
+        "Line",
         "Secuence",
         "PointSecuence",
+        "Circle",
+        "MeasureFunction",
+        "Entorno",
         "ArcFunction",
+        "Point",
+        "Figura",
+        "LineSecuence",
         "Funcion",
-        "PointsFunction",
+        "SegmentFunction",
+        "Draw",
+        "Instruccion",
+        "Samples",
         "Punto",
         "Arco",
         "Linea",
@@ -1269,37 +1269,37 @@
         "Token",
         "AnalizadorLéxico",
         "AnalizadorSintáctico",
-        "Line",
-        "DeclaracionIdentificador",
-        "Number",
-        "SecuenceFigure",
-        "RayFunction",
-        "Variable",
-        "Instruccion",
-        "Ray",
-        "LineSecuence",
-        "Samples",
-        "Draw",
-        "Entorno",
-        "Figura",
-        "Segment",
-        "FunctionDeclaration",
-        "MeasureFunction",
-        "Point",
         "FunctionLine",
-        "Circle",
+        "PointsFunction",
+        "IntersectFunction",
+        "RayFunction",
+        "Number",
+        "FunctionDeclaration",
         "CircleFunction",
         "IfElseExpression",
-        "AnalizeAsignation",
-        "IntersectFunction",
-        "SegmentFunction",
+        "DeclaracionIdentificador",
+        "Ray",
+        "Variable",
+        "Segment",
+        "Line",
         "Secuence",
         "PointSecuence",
+        "Circle",
+        "MeasureFunction",
+        "Entorno",
         "ArcFunction",
-        "Funcion",
+        "Point",
         "Coord",
+        "SecuenceFigure",
+        "Figura",
+        "AnalizeAsignation",
+        "LineSecuence",
+        "Funcion",
+        "SegmentFunction",
         "Identifier",
-        "PointsFunction"
+        "Draw",
+        "Instruccion",
+        "Samples"
     ],
     "interface_names": [],
     "delegate_names": [],
@@ -1307,17 +1307,17 @@
         "Compilation_unitContext": 27,
         "Using_directivesContext": 21,
         "UsingNamespaceDirectiveContext": 122,
-        "TerminalNodeImpl": 12759,
-        "Namespace_or_type_nameContext": 963,
-        "IdentifierContext": 3929,
+        "TerminalNodeImpl": 12801,
+        "Namespace_or_type_nameContext": 964,
+        "IdentifierContext": 3930,
         "Namespace_member_declarationsContext": 41,
-        "Namespace_member_declarationContext": 100,
+        "Namespace_member_declarationContext": 137,
         "Namespace_declarationContext": 22,
         "Qualified_identifierContext": 22,
-        "Namespace_bodyContext": 22,
-        "Type_declarationContext": 78,
-        "All_member_modifiersContext": 378,
-        "All_member_modifierContext": 494,
+        "Namespace_bodyContext": 19,
+        "Type_declarationContext": 115,
+        "All_member_modifiersContext": 415,
+        "All_member_modifierContext": 533,
         "Class_definitionContext": 77,
         "Class_baseContext": 54,
         "Class_typeContext": 835,
@@ -1397,11 +1397,13 @@
         "Boolean_literalContext": 5,
         "ReturnStatementContext": 87,
         "ForeachStatementContext": 6,
-        "ErrorNodeImpl": 6733,
+        "ErrorNodeImpl": 6692,
         "Tuple_typeContext": 1,
         "Tuple_elementContext": 1,
-        "AttributesContext": 6,
-        "Attribute_sectionContext": 9,
+        "AttributesContext": 7,
+        "Attribute_sectionContext": 10,
+        "Attribute_listContext": 36,
+        "AttributeContext": 36,
         "Enum_definitionContext": 2,
         "Enum_bodyContext": 2,
         "Enum_member_declarationContext": 63,
@@ -1437,8 +1439,6 @@
         "BreakStatementContext": 6,
         "Global_attribute_sectionContext": 27,
         "Global_attribute_targetContext": 27,
-        "Attribute_listContext": 35,
-        "AttributeContext": 35,
         "Qualified_alias_memberContext": 21,
         "Attribute_argumentContext": 38
     },

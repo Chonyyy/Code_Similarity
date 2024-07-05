@@ -1,5 +1,5 @@
 {
-    "total_nodes": 41928,
+    "total_nodes": 41921,
     "max_depth": 652,
     "number_of_variables": 180,
     "number_of_constants": 0,
@@ -501,19 +501,11 @@
     "variable_names": [
         [
             "string",
-            "part2"
-        ],
-        [
-            "string",
-            "aux"
-        ],
-        [
-            "string",
-            "line"
+            "temp"
         ],
         [
             "int",
-            "i"
+            "k"
         ],
         [
             "StreamReader",
@@ -521,15 +513,11 @@
         ],
         [
             "int",
-            "k"
+            "i"
         ],
         [
             "string",
-            "words"
-        ],
-        [
-            "string",
-            "part1"
+            "aux"
         ],
         [
             "int",
@@ -537,7 +525,15 @@
         ],
         [
             "string",
-            "temp"
+            "part1"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "string",
+            "line"
         ],
         [
             "string",
@@ -545,67 +541,11 @@
         ],
         [
             "string",
-            "longerword"
-        ],
-        [
-            "int",
-            "part1"
-        ],
-        [
-            "string",
-            "shorterword"
-        ],
-        [
-            "int",
-            "min_distance"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "StreamReader",
-            "reader"
-        ],
-        [
-            "bool",
-            "matched"
-        ],
-        [
-            "string",
-            "Query"
-        ],
-        [
-            "string",
-            "Part2"
-        ],
-        [
-            "int",
             "part2"
-        ],
-        [
-            "float",
-            "result"
-        ],
-        [
-            "float",
-            "coincidence"
-        ],
-        [
-            "int",
-            "position"
         ],
         [
             "int",
             "count"
-        ],
-        [
-            "string",
-            "content"
-        ],
-        [
-            "string",
-            "result"
         ],
         [
             "string",
@@ -616,8 +556,60 @@
             "active"
         ],
         [
+            "float",
+            "max_index_coincidence"
+        ],
+        [
+            "float",
+            "result"
+        ],
+        [
+            "int",
+            "min_distance"
+        ],
+        [
+            "string",
+            "Part2"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "int",
+            "part2"
+        ],
+        [
+            "string",
+            "shorterword"
+        ],
+        [
+            "int",
+            "part1"
+        ],
+        [
+            "int",
+            "position"
+        ],
+        [
+            "string",
+            "content"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "StreamReader",
+            "reader"
+        ],
+        [
             "string",
             "Part1"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "int",
@@ -625,47 +617,23 @@
         ],
         [
             "string",
-            "words"
+            "longerword"
+        ],
+        [
+            "bool",
+            "matched"
+        ],
+        [
+            "string",
+            "Query"
         ],
         [
             "float",
-            "max_index_coincidence"
+            "coincidence"
         ],
         [
-            "bool",
-            "active"
-        ],
-        [
-            "string",
-            "part2"
-        ],
-        [
-            "char",
-            "operators"
-        ],
-        [
-            "bool",
-            "next_position"
-        ],
-        [
-            "bool",
-            "Is"
-        ],
-        [
-            "int",
-            "position"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "part1"
-        ],
-        [
-            "string",
-            "oper"
+            "SearchResult",
+            "result"
         ],
         [
             "int",
@@ -673,91 +641,71 @@
         ],
         [
             "string",
-            "words"
-        ],
-        [
-            "string",
-            "Operators"
-        ],
-        [
-            "SearchResult",
             "result"
         ],
         [
-            "string",
-            "new_query"
-        ],
-        [
-            "string",
-            "result"
-        ],
-        [
-            "string",
-            "Query"
+            "int",
+            "i"
         ],
         [
             "int",
             "diference"
         ],
         [
+            "string",
+            "new_query"
+        ],
+        [
+            "bool",
+            "active"
+        ],
+        [
+            "string",
+            "oper"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "string",
+            "part1"
+        ],
+        [
+            "bool",
+            "Is"
+        ],
+        [
             "char",
             "init"
         ],
         [
+            "int",
+            "position"
+        ],
+        [
             "string",
-            "Word"
+            "Operators"
         ],
         [
             "bool",
-            "nulo"
+            "next_position"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
-            "float",
-            "tf"
+            "char",
+            "operators"
         ],
         [
             "string",
-            "Root"
+            "Query"
         ],
         [
             "string",
-            "suggestion"
-        ],
-        [
-            "int",
-            "file_position"
+            "part2"
         ],
         [
             "float",
-            "query_square"
-        ],
-        [
-            "int",
-            "parent_index"
-        ],
-        [
-            "string",
-            "parent"
-        ],
-        [
-            "float",
-            "tf_idf"
-        ],
-        [
-            "int",
-            "distance"
-        ],
-        [
-            "List",
-            "items"
-        ],
-        [
-            "int",
-            "i"
+            "idfs"
         ],
         [
             "float",
@@ -765,39 +713,39 @@
         ],
         [
             "int",
-            "docs_with_word"
-        ],
-        [
-            "int",
-            "position1"
-        ],
-        [
-            "string",
-            "snippet"
+            "count"
         ],
         [
             "float",
-            "vector"
-        ],
-        [
-            "int",
-            "position2"
-        ],
-        [
-            "SearchItem",
-            "temp"
+            "query_square"
         ],
         [
             "float",
-            "max"
+            "tf_idf"
         ],
         [
-            "SearchItem",
-            "Items"
+            "int",
+            "parent_index"
+        ],
+        [
+            "float",
+            "tf"
+        ],
+        [
+            "bool",
+            "nulo"
+        ],
+        [
+            "int",
+            "k"
         ],
         [
             "string",
-            "Words_Copy"
+            "sinonumous"
+        ],
+        [
+            "float",
+            "sum"
         ],
         [
             "float",
@@ -808,44 +756,36 @@
             "result"
         ],
         [
-            "float",
-            "query_tf_idf"
+            "int",
+            "distance"
         ],
         [
-            "float",
-            "tfs"
+            "string",
+            "words"
         ],
         [
             "int",
-            "position"
+            "j"
+        ],
+        [
+            "SearchItem",
+            "temp"
         ],
         [
             "int",
             "max_parent_index"
         ],
         [
+            "float",
+            "max"
+        ],
+        [
             "int",
-            "count"
+            "file_position"
         ],
         [
             "string",
-            "title"
-        ],
-        [
-            "float",
-            "scores"
-        ],
-        [
-            "SearchItem",
-            "items"
-        ],
-        [
-            "float",
-            "idfs"
-        ],
-        [
-            "float",
-            "sum"
+            "Words_Copy"
         ],
         [
             "SearchItem",
@@ -853,47 +793,75 @@
         ],
         [
             "int",
-            "k"
+            "docs_with_word"
         ],
         [
             "string",
-            "words"
-        ],
-        [
-            "string",
-            "sinonumous"
-        ],
-        [
-            "bool",
-            "aux"
+            "parent"
         ],
         [
             "int",
-            "result"
+            "position2"
         ],
         [
-            "char",
-            "guide"
+            "float",
+            "scores"
+        ],
+        [
+            "int",
+            "position"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
+            "float",
+            "vector"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "float",
+            "tfs"
+        ],
+        [
+            "List",
+            "items"
+        ],
+        [
+            "string",
+            "suggestion"
+        ],
+        [
+            "string",
+            "Word"
         ],
         [
             "int",
             "i"
         ],
         [
-            "int",
-            "count"
+            "float",
+            "query_tf_idf"
         ],
         [
             "int",
-            "j"
-        ],
-        [
-            "int",
-            "pos_b"
+            "position1"
         ],
         [
             "string",
-            "result"
+            "title"
+        ],
+        [
+            "string",
+            "Root"
+        ],
+        [
+            "SearchItem",
+            "Items"
         ],
         [
             "List",
@@ -901,101 +869,97 @@
         ],
         [
             "int",
-            "pos"
+            "result"
+        ],
+        [
+            "int",
+            "count"
         ],
         [
             "string",
-            "FileLocation"
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "pos_b"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "float",
+            "result"
+        ],
+        [
+            "bool",
+            "aux"
         ],
         [
             "int",
             "temp"
         ],
         [
-            "float",
-            "result"
+            "int",
+            "j"
+        ],
+        [
+            "char",
+            "guide"
+        ],
+        [
+            "string",
+            "FileLocation"
         ]
     ],
     "method_names": [
         "Items",
-        "FilePosition",
-        "IsInFile",
         "FragmentWithWords",
-        "MaxFreqFiles",
-        "FilesWithWord",
-        "MinDistance",
-        "SearchInFolder",
-        "MaxIndexCoincidence",
         "Partition",
         "MaxIndexCoincidences",
-        "File",
+        "IsInFile",
+        "MaxFreqFiles",
+        "MaxIndexCoincidence",
         "WordsImportant",
-        "SetValidQuery",
-        "SetQueryWithOperators",
+        "SearchInFolder",
+        "MinDistance",
+        "File",
+        "FilesWithWord",
+        "FilePosition",
         "ExtractOperators",
+        "SetQueryWithOperators",
         "WordsExtractor",
+        "SetValidQuery",
         "Query",
-        "TF_IDF_With_Operators",
-        "IDFS",
+        "Query_TFS_IDFS",
+        "Query_tf_idf",
         "TFS",
-        "Query",
-        "Init",
+        "SearchParentIn",
         "ParentIndex",
         "Sort",
-        "Query_tf_idf",
-        "SearchParentIn",
         "Scores",
-        "Query_TFS_IDFS",
-        "IndexOf",
-        "Contains",
-        "DeleteDuplicated",
-        "Merge",
-        "Max",
+        "Query",
+        "TF_IDF_With_Operators",
+        "Init",
+        "IDFS",
+        "Transform",
         "IsNull",
+        "Merge",
         "EnumerateFiles",
         "ClearSpaces",
-        "Transform"
+        "Max",
+        "DeleteDuplicated",
+        "IndexOf",
+        "Contains"
     ],
     "method_return_types": [
         [
             "Items",
             "IEnumerable"
-        ],
-        [
-            "WordsImportant",
-            "string"
-        ],
-        [
-            "Partition",
-            "string"
-        ],
-        [
-            "MaxIndexCoincidence",
-            "float"
-        ],
-        [
-            "FilePosition",
-            "int"
-        ],
-        [
-            "FilesWithWord",
-            "int"
-        ],
-        [
-            "IsInFile",
-            "bool"
-        ],
-        [
-            "FragmentWithWords",
-            "string"
-        ],
-        [
-            "MaxFreqFiles",
-            "void"
-        ],
-        [
-            "MaxIndexCoincidences",
-            "float"
         ],
         [
             "SearchInFolder",
@@ -1006,11 +970,43 @@
             "string"
         ],
         [
+            "FilePosition",
+            "int"
+        ],
+        [
+            "FilesWithWord",
+            "int"
+        ],
+        [
+            "Partition",
+            "string"
+        ],
+        [
+            "FragmentWithWords",
+            "string"
+        ],
+        [
             "MinDistance",
             "int"
         ],
         [
-            "ExtractOperators",
+            "MaxIndexCoincidence",
+            "float"
+        ],
+        [
+            "IsInFile",
+            "bool"
+        ],
+        [
+            "MaxFreqFiles",
+            "void"
+        ],
+        [
+            "MaxIndexCoincidences",
+            "float"
+        ],
+        [
+            "WordsImportant",
             "string"
         ],
         [
@@ -1022,6 +1018,10 @@
             "string"
         ],
         [
+            "ExtractOperators",
+            "string"
+        ],
+        [
             "Query",
             "SearchResult"
         ],
@@ -1030,15 +1030,19 @@
             "string"
         ],
         [
-            "TF_IDF_With_Operators",
+            "ParentIndex",
+            "int"
+        ],
+        [
+            "IDFS",
             "float"
         ],
         [
-            "SearchParentIn",
-            "string"
+            "TFS",
+            "float"
         ],
         [
-            "Query_tf_idf",
+            "TF_IDF_With_Operators",
             "float"
         ],
         [
@@ -1046,31 +1050,55 @@
             "float"
         ],
         [
-            "ParentIndex",
-            "int"
+            "Query",
+            "SearchResult"
+        ],
+        [
+            "SearchParentIn",
+            "string"
         ],
         [
             "Sort",
             "SearchItem"
         ],
         [
-            "TFS",
-            "float"
-        ],
-        [
             "Init",
             "void"
         ],
         [
-            "IDFS",
+            "Query_tf_idf",
             "float"
         ],
         [
-            "Query",
-            "SearchResult"
+            "Scores",
+            "float"
         ],
         [
-            "Scores",
+            "ClearSpaces",
+            "string"
+        ],
+        [
+            "IsNull",
+            "bool"
+        ],
+        [
+            "DeleteDuplicated",
+            "string"
+        ],
+        [
+            "Merge",
+            "int"
+        ],
+        [
+            "EnumerateFiles",
+            "string"
+        ],
+        [
+            "Contains",
+            "bool"
+        ],
+        [
+            "Max",
             "float"
         ],
         [
@@ -1078,35 +1106,7 @@
             "int"
         ],
         [
-            "ClearSpaces",
-            "string"
-        ],
-        [
-            "Max",
-            "float"
-        ],
-        [
-            "IsNull",
-            "bool"
-        ],
-        [
-            "Merge",
-            "int"
-        ],
-        [
-            "Contains",
-            "bool"
-        ],
-        [
             "Transform",
-            "string"
-        ],
-        [
-            "EnumerateFiles",
-            "string"
-        ],
-        [
-            "DeleteDuplicated",
             "string"
         ]
     ],
@@ -1133,7 +1133,6 @@
         "Namespace_member_declarationContext": 14,
         "Namespace_declarationContext": 7,
         "Qualified_identifierContext": 7,
-        "Namespace_bodyContext": 7,
         "Type_declarationContext": 7,
         "All_member_modifiersContext": 60,
         "All_member_modifierContext": 77,

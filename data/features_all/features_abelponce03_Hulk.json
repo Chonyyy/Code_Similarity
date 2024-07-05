@@ -1,5 +1,5 @@
 {
-    "total_nodes": 17270,
+    "total_nodes": 17244,
     "max_depth": 1191,
     "number_of_variables": 16,
     "number_of_constants": 0,
@@ -96,11 +96,19 @@
     "variable_names": [
         [
             "var",
-            "resultado"
+            "Parser"
         ],
         [
             "string",
             "Entrada"
+        ],
+        [
+            "var",
+            "resultado"
+        ],
+        [
+            "string",
+            "mensaje"
         ],
         [
             "var",
@@ -115,32 +123,20 @@
             "Arbol"
         ],
         [
-            "var",
-            "Parser"
-        ],
-        [
-            "string",
-            "mensaje"
-        ],
-        [
             "int",
-            "index"
+            "final"
         ],
         [
             "int",
             "inicio"
         ],
         [
+            "int",
+            "index"
+        ],
+        [
             "string",
             "fragmento"
-        ],
-        [
-            "int",
-            "final"
-        ],
-        [
-            "var",
-            "Analizador"
         ],
         [
             "var",
@@ -149,25 +145,25 @@
         [
             "Token",
             "token"
+        ],
+        [
+            "var",
+            "Analizador"
         ]
     ],
     "method_names": [
         "Main",
-        "Tomar",
-        "Proximo_Token",
         "Siguiente",
+        "Proximo_Token",
+        "Tomar",
         "Tipo",
-        "Evaluar",
-        "Evaluar_Expresion"
+        "Evaluar_Expresion",
+        "Evaluar"
     ],
     "method_return_types": [
         [
             "Main",
             "void"
-        ],
-        [
-            "Proximo_Token",
-            "Token"
         ],
         [
             "Siguiente",
@@ -176,6 +172,10 @@
         [
             "Tomar",
             "char"
+        ],
+        [
+            "Proximo_Token",
+            "Token"
         ],
         [
             "Tipo",
@@ -231,7 +231,7 @@
         "Namespace_member_declarationContext": 98,
         "Namespace_declarationContext": 27,
         "Qualified_identifierContext": 27,
-        "Namespace_bodyContext": 27,
+        "Namespace_bodyContext": 1,
         "Type_declarationContext": 71,
         "Class_definitionContext": 26,
         "Class_bodyContext": 26,

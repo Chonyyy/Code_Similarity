@@ -1,5 +1,5 @@
 {
-    "total_nodes": 134945,
+    "total_nodes": 134895,
     "max_depth": 3130,
     "number_of_variables": 154,
     "number_of_constants": 0,
@@ -1329,16 +1329,48 @@
     ],
     "variable_names": [
         [
+            "ComboBox",
+            "comboBox"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "maxNumberOfPiecesFaces"
+        ],
+        [
+            "TextBox",
+            "textBox"
+        ],
+        [
+            "Button",
+            "button"
+        ],
+        [
+            "int",
+            "posx"
+        ],
+        [
             "DominoPlayer",
             "PlayersToPlay"
         ],
         [
-            "ClassicDominoPiece",
-            "pieces"
-        ],
-        [
             "VisualClassicDominoPiece",
             "Piece"
+        ],
+        [
+            "Label",
+            "Strategie"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "int",
+            "tops_left"
         ],
         [
             "IDominoPiece",
@@ -1346,19 +1378,27 @@
         ],
         [
             "int",
+            "tops_right"
+        ],
+        [
+            "int",
             "increment"
         ],
         [
-            "int",
-            "posx"
+            "ClassicDominoPiece",
+            "pieces"
         ],
         [
-            "int",
-            "maxNumberOfPiecesFaces"
+            "string",
+            "winners"
+        ],
+        [
+            "ComboBox",
+            "SelectMode"
         ],
         [
             "Label",
-            "Strategie"
+            "Select"
         ],
         [
             "Label",
@@ -1369,52 +1409,12 @@
             "number_of_pieces"
         ],
         [
-            "Button",
-            "button"
-        ],
-        [
-            "TextBox",
-            "textBox"
-        ],
-        [
-            "ComboBox",
-            "SelectMode"
-        ],
-        [
-            "ComboBox",
-            "comboBox"
-        ],
-        [
-            "int",
-            "tops_left"
-        ],
-        [
             "int",
             "posy"
         ],
         [
             "int",
-            "tops_right"
-        ],
-        [
-            "Label",
-            "Select"
-        ],
-        [
-            "int",
             "numberOfPiecesByPlayer"
-        ],
-        [
-            "string",
-            "winners"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "pos"
         ],
         [
             "Bitmap",
@@ -1429,20 +1429,52 @@
             "piece"
         ],
         [
-            "int",
-            "player"
+            "ClassicDominoTree",
+            "a"
         ],
         [
             "ClassicDominoTree",
-            "LeftTree"
+            "pieceToPlay_other"
         ],
         [
             "int",
-            "topPlayed"
+            "i"
         ],
         [
-            "List",
-            "ValidsPieces"
+            "ClassicDominoTree",
+            "state"
+        ],
+        [
+            "int",
+            "aux"
+        ],
+        [
+            "IDominoPiece",
+            "Pieces"
+        ],
+        [
+            "IDominoPlayer",
+            "p"
+        ],
+        [
+            "IDominoPiece",
+            "PiecesInGame"
+        ],
+        [
+            "IDominoPiece",
+            "pieces"
+        ],
+        [
+            "Node",
+            "LeftRoot"
+        ],
+        [
+            "Dictionary",
+            "PiecesByTypes"
+        ],
+        [
+            "Node",
+            "RightRoot"
         ],
         [
             "Dictionary",
@@ -1453,100 +1485,68 @@
             "piece_pos"
         ],
         [
-            "IDominoPlayer",
-            "p"
-        ],
-        [
-            "Node",
-            "LeftRoot"
-        ],
-        [
-            "int",
-            "aux"
-        ],
-        [
-            "IDominoPiece",
-            "result"
-        ],
-        [
-            "ClassicDominoTree",
-            "RightTree"
-        ],
-        [
-            "Queue",
-            "Leafs"
-        ],
-        [
-            "IDominoPiece",
-            "piece"
-        ],
-        [
-            "ClassicDominoTree",
-            "a"
-        ],
-        [
-            "ClassicDominoTree",
-            "pieceToPlay_other"
-        ],
-        [
-            "int",
-            "topToPlay"
-        ],
-        [
-            "Dictionary",
-            "PiecesRemains"
-        ],
-        [
-            "IDominoPiece",
-            "Pieces"
-        ],
-        [
-            "List",
-            "states"
-        ],
-        [
-            "ClassicDominoTree",
-            "pieceToPlay"
-        ],
-        [
             "List",
             "GoodPieces"
         ],
         [
             "int",
-            "Sum"
+            "topPlayed"
         ],
         [
             "int",
             "topLeft"
         ],
         [
-            "IDominoPiece",
-            "temp"
-        ],
-        [
-            "Dictionary",
-            "PiecesByTypes"
+            "ClassicDominoTree",
+            "LeftTree"
         ],
         [
             "int",
             "topRight"
         ],
         [
+            "Dictionary",
+            "PiecesRemains"
+        ],
+        [
+            "ClassicDominoTree",
+            "RightTree"
+        ],
+        [
+            "int",
+            "topToPlay"
+        ],
+        [
+            "int",
+            "player"
+        ],
+        [
+            "ClassicDominoTree",
+            "pieceToPlay"
+        ],
+        [
             "int",
             "sum"
         ],
         [
-            "Node",
-            "RightRoot"
-        ],
-        [
-            "ClassicDominoTree",
-            "state"
-        ],
-        [
             "int",
-            "i"
+            "Sum"
+        ],
+        [
+            "List",
+            "states"
+        ],
+        [
+            "Queue",
+            "Leafs"
+        ],
+        [
+            "List",
+            "ValidsPieces"
+        ],
+        [
+            "IDominoPiece",
+            "temp"
         ],
         [
             "int",
@@ -1554,11 +1554,15 @@
         ],
         [
             "IDominoPiece",
-            "pieces"
+            "result"
         ],
         [
             "IDominoPiece",
-            "PiecesInGame"
+            "piece"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "IDominoPiece",
@@ -1573,20 +1577,16 @@
             "i"
         ],
         [
-            "List",
-            "aux"
-        ],
-        [
             "IDominoPiece",
             "result"
         ],
         [
-            "int",
-            "j"
+            "List",
+            "aux"
         ],
         [
             "int",
-            "i"
+            "j"
         ],
         [
             "int",
@@ -1613,24 +1613,24 @@
             "Pieces"
         ],
         [
-            "int",
-            "player"
-        ],
-        [
             "Random",
             "random"
         ],
         [
-            "int",
-            "result"
+            "bool",
+            "found"
         ],
         [
             "int",
             "i"
         ],
         [
-            "bool",
-            "found"
+            "int",
+            "player"
+        ],
+        [
+            "int",
+            "result"
         ],
         [
             "int",
@@ -1641,24 +1641,12 @@
             "result"
         ],
         [
-            "ClassicDominoPiece",
-            "left"
-        ],
-        [
-            "ClassicDominoPiece",
-            "right"
-        ],
-        [
             "List",
             "Result"
         ],
         [
             "ClassicDominoPiece",
-            "leftPiece"
-        ],
-        [
-            "ClassicDominoPiece",
-            "rightPiece"
+            "right"
         ],
         [
             "int",
@@ -1666,19 +1654,19 @@
         ],
         [
             "ClassicDominoPiece",
+            "leftPiece"
+        ],
+        [
+            "ClassicDominoPiece",
             "result"
         ],
         [
-            "int",
-            "i"
+            "ClassicDominoPiece",
+            "rightPiece"
         ],
         [
-            "IDominoPiece",
-            "pieceToPlay"
-        ],
-        [
-            "T",
-            "newtop"
+            "ClassicDominoPiece",
+            "left"
         ],
         [
             "int",
@@ -1689,24 +1677,40 @@
             "piecesByPlayer"
         ],
         [
-            "int",
-            "count"
+            "T",
+            "newtop"
         ],
         [
             "int",
-            "wins"
+            "i"
         ],
         [
             "List",
             "ValidsPieces"
         ],
         [
+            "bool",
+            "IsLeaf"
+        ],
+        [
+            "IDominoPiece",
+            "pieceToPlay"
+        ],
+        [
+            "int",
+            "wins"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
             "Node",
             "node"
         ],
         [
-            "bool",
-            "IsLeaf"
+            "int",
+            "i"
         ],
         [
             "int",
@@ -1718,11 +1722,15 @@
         ],
         [
             "int",
-            "player"
+            "best"
         ],
         [
             "int",
-            "best"
+            "player"
+        ],
+        [
+            "List",
+            "winners"
         ],
         [
             "int",
@@ -1733,20 +1741,8 @@
             "Points"
         ],
         [
-            "int",
-            "smallest"
-        ],
-        [
             "IDominoPlayer",
             "winner"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "winners"
         ],
         [
             "int",
@@ -1754,15 +1750,23 @@
         ],
         [
             "int",
-            "count"
+            "smallest"
         ],
         [
             "int",
             "i"
         ],
         [
+            "int",
+            "count"
+        ],
+        [
             "IDominoPiece",
             "pieces"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "DominoMovement",
@@ -1773,69 +1777,65 @@
             "piecePlayed"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
             "DominoMovement",
             "movement"
         ],
         [
-            "ClassicDominoState",
-            "state"
+            "int",
+            "i"
         ],
         [
             "int",
             "pos"
         ],
         [
-            "int",
-            "i"
+            "ClassicDominoState",
+            "state"
         ]
     ],
     "method_names": [
         "Dispose",
         "InitializeComponent",
-        "GameStartButton_Click",
-        "PiecesTypes_SelectedValueChanged",
-        "StartButton_Click",
-        "PiecesByPlayer_TextChanged",
-        "Paint_Pieces",
-        "Players_Destroyer",
         "Max_NumberOfPiecesFaces_TextChanged",
         "Adjust_Players",
-        "PlayersCreator_Click",
+        "PiecesTypes_SelectedValueChanged",
+        "Paint_Pieces",
+        "StartButton_Click",
         "StepButton_Click",
-        "SetSelecter",
-        "Update",
+        "Players_Destroyer",
+        "PiecesByPlayer_TextChanged",
+        "PlayersCreator_Click",
+        "GameStartButton_Click",
         "Start",
         "Restart",
+        "Update",
+        "SetSelecter",
         "SetStrategy",
         "Paint",
         "SetRotation",
-        "SetRotation180",
-        "SetRotation0",
         "SetRotation270",
-        "Paint",
-        "SetRotation",
+        "SetRotation180",
         "SetRotation90",
+        "SetRotation",
+        "Paint",
+        "SetRotation0",
         "Show",
         "AddPiece",
         "AddPieceToRightInTurn1",
         "AddPiece",
-        "AddPieceToLeftBeforeTurn1",
-        "AddPieceToRightInTurn2",
-        "AddPieceToLeftInTurn1",
-        "Show",
-        "AddPieceToLeftInTurn2",
-        "AddPieceToRightBeforeTurn1",
-        "AddPieceToLeftAfterTurn1",
-        "AddPieceToRightAfterTurn2",
-        "AddPieceToLeftAfterTurn2",
         "AddPieceToRightAfterTurn1",
+        "AddPieceToLeftInTurn2",
+        "AddPieceToLeftInTurn1",
+        "AddPieceToRightInTurn2",
+        "AddPieceToRightAfterTurn2",
+        "AddPieceToLeftAfterTurn1",
+        "AddPieceToLeftBeforeTurn1",
+        "Show",
+        "AddPieceToRightBeforeTurn1",
+        "AddPieceToLeftAfterTurn2",
         "Main",
-        "ExecuteStrategy",
         "PieceToPlay",
+        "ExecuteStrategy",
         "Select",
         "SetSelecter",
         "SetGameOver",
@@ -1844,9 +1844,9 @@
         "SetControler",
         "ChangePlayer",
         "AddPiece",
-        "FatherOf",
         "LinkPieceTo",
         "OwnerOf",
+        "FatherOf",
         "PiecesLinkedOf",
         "SetPlayers",
         "ExecuteStrategy",
@@ -1854,93 +1854,93 @@
         "NextPlayer",
         "SetUpdater",
         "Update",
-        "Compare",
-        "SetComparer",
-        "Sort",
-        "FirstMovement",
-        "Update",
         "Start",
-        "SetSorter",
-        "SortPieces",
-        "ShowPieces",
-        "GameOver",
         "SetSorterPieces",
-        "SetPlayers",
-        "NextPlayer",
-        "ClassicCompare",
-        "GetCurrentPlayers",
-        "FirstMovement",
         "Update",
-        "GetPlayers",
-        "SetGameStarter",
-        "SetUpdater",
-        "SetJudger",
-        "Start",
+        "SortPieces",
+        "NextPlayer",
+        "FirstMovement",
+        "Compare",
         "ShowPieces",
         "GameOver",
-        "SetWinnerComputer",
-        "SetGameOver",
-        "SetControler",
         "SetPlayers",
+        "SetSorter",
+        "Sort",
+        "SetComparer",
+        "ClassicCompare",
+        "SetUpdater",
+        "Update",
+        "SetControler",
+        "FirstMovement",
         "NextPlayer",
+        "GetPlayers",
+        "SetJudger",
+        "GetCurrentPlayers",
+        "ShowPieces",
+        "SetGameStarter",
+        "GameOver",
+        "SetPlayers",
+        "SetGameOver",
+        "SetWinnerComputer",
         "SetStarter",
+        "Start",
         "SelectPiece",
-        "ClassicDoubleNineStarter",
         "ClassicDoubleSixStarter",
+        "ClassicDoubleNineStarter",
         "ToString",
         "SetComparer",
         "ChangePlayer",
         "AddPiece",
-        "RightPiece",
         "MatchHead",
-        "Contains",
         "LeftPiece",
+        "RightPiece",
         "ToString",
+        "Contains",
         "Equals",
-        "SetGameStarter",
         "FirstMovement",
+        "SetGameStarter",
         "Grow",
-        "Sort",
         "SetSorter",
-        "FatherOf",
-        "LinkPieceTo",
+        "Sort",
         "OwnerOf",
+        "LinkPieceTo",
+        "FatherOf",
         "PiecesLinkedOf",
         "NormalControler",
+        "SixMultipleControler",
         "NoPairSumControler",
         "PairSumControler",
-        "SixMultipleControler",
         "Play",
         "SetPlayMode",
         "Contains",
         "MatchHead",
         "ClassicStaticSortPieces",
+        "JudgerJose",
         "Max",
         "ClassicNextPlayer",
         "JudgerRuner",
-        "JudgerJose",
         "WinnerComputer",
-        "WinnerComputerPieces",
         "Min",
         "ClassicWinnerComputer",
+        "WinnerComputerPieces",
         "ClassicGameOver",
         "GameOvererByJump",
-        "Start",
         "SetStarter",
-        "Select",
-        "SetSelecter",
+        "Start",
         "Play",
         "SetPlayMode",
-        "ContainsDouble",
+        "Select",
+        "SetSelecter",
         "IsDouble",
+        "ContainsDouble",
         "ShowPieces",
         "SetWinnerComputer",
         "SelectPiece",
         "ClassicUpdate",
         "ClassicDoubleNineStarter",
         "ClassicDoubleSixGameStarter",
-        "SetSorterPieces",
-        "SortPieces"
+        "SortPieces",
+        "SetSorterPieces"
     ],
     "method_return_types": [
         [
@@ -1952,27 +1952,11 @@
             "void"
         ],
         [
-            "PiecesTypes_SelectedValueChanged",
-            "void"
-        ],
-        [
-            "Players_Destroyer",
-            "void"
-        ],
-        [
-            "Adjust_Players",
-            "void"
-        ],
-        [
-            "Max_NumberOfPiecesFaces_TextChanged",
-            "void"
-        ],
-        [
             "GameStartButton_Click",
             "void"
         ],
         [
-            "StartButton_Click",
+            "PlayersCreator_Click",
             "void"
         ],
         [
@@ -1984,15 +1968,27 @@
             "void"
         ],
         [
+            "PiecesTypes_SelectedValueChanged",
+            "void"
+        ],
+        [
+            "StartButton_Click",
+            "void"
+        ],
+        [
+            "Adjust_Players",
+            "void"
+        ],
+        [
+            "Players_Destroyer",
+            "void"
+        ],
+        [
+            "Max_NumberOfPiecesFaces_TextChanged",
+            "void"
+        ],
+        [
             "Paint_Pieces",
-            "void"
-        ],
-        [
-            "PlayersCreator_Click",
-            "void"
-        ],
-        [
-            "SetSelecter",
             "void"
         ],
         [
@@ -2000,7 +1996,7 @@
             "void"
         ],
         [
-            "Restart",
+            "Update",
             "void"
         ],
         [
@@ -2008,7 +2004,11 @@
             "void"
         ],
         [
-            "Update",
+            "SetSelecter",
+            "void"
+        ],
+        [
+            "Restart",
             "void"
         ],
         [
@@ -2017,26 +2017,6 @@
         ],
         [
             "SetRotation",
-            "void"
-        ],
-        [
-            "SetRotation0",
-            "void"
-        ],
-        [
-            "SetRotation180",
-            "void"
-        ],
-        [
-            "SetRotation90",
-            "void"
-        ],
-        [
-            "SetRotation",
-            "void"
-        ],
-        [
-            "Paint",
             "void"
         ],
         [
@@ -2044,23 +2024,31 @@
             "void"
         ],
         [
+            "SetRotation90",
+            "void"
+        ],
+        [
+            "SetRotation180",
+            "void"
+        ],
+        [
+            "Paint",
+            "void"
+        ],
+        [
+            "SetRotation0",
+            "void"
+        ],
+        [
+            "SetRotation",
+            "void"
+        ],
+        [
             "AddPiece",
             "void"
         ],
         [
             "Show",
-            "void"
-        ],
-        [
-            "AddPiece",
-            "void"
-        ],
-        [
-            "AddPieceToRightInTurn2",
-            "void"
-        ],
-        [
-            "AddPieceToLeftAfterTurn2",
             "void"
         ],
         [
@@ -2068,19 +2056,19 @@
             "void"
         ],
         [
-            "Show",
-            "void"
-        ],
-        [
-            "AddPieceToRightAfterTurn1",
-            "void"
-        ],
-        [
             "AddPieceToRightAfterTurn2",
             "void"
         ],
         [
-            "AddPieceToLeftBeforeTurn1",
+            "Show",
+            "void"
+        ],
+        [
+            "AddPieceToLeftInTurn1",
+            "void"
+        ],
+        [
+            "AddPieceToRightAfterTurn1",
             "void"
         ],
         [
@@ -2092,7 +2080,15 @@
             "void"
         ],
         [
-            "AddPieceToLeftInTurn1",
+            "AddPieceToLeftBeforeTurn1",
+            "void"
+        ],
+        [
+            "AddPieceToRightInTurn2",
+            "void"
+        ],
+        [
+            "AddPiece",
             "void"
         ],
         [
@@ -2100,24 +2096,28 @@
             "void"
         ],
         [
-            "Main",
+            "AddPieceToLeftAfterTurn2",
             "void"
         ],
         [
-            "PieceToPlay",
-            "ClassicDominoTree"
+            "Main",
+            "void"
         ],
         [
             "ExecuteStrategy",
             "DominoMovement"
         ],
         [
-            "SetSelecter",
-            "void"
+            "PieceToPlay",
+            "ClassicDominoTree"
         ],
         [
             "Select",
             "IDominoPiece"
+        ],
+        [
+            "SetSelecter",
+            "void"
         ],
         [
             "GameOver",
@@ -2144,8 +2144,8 @@
             "void"
         ],
         [
-            "OwnerOf",
-            "string"
+            "FatherOf",
+            "IDominoPiece"
         ],
         [
             "PiecesLinkedOf",
@@ -2156,8 +2156,8 @@
             "void"
         ],
         [
-            "FatherOf",
-            "IDominoPiece"
+            "OwnerOf",
+            "string"
         ],
         [
             "SetPlayers",
@@ -2176,11 +2176,43 @@
             "void"
         ],
         [
+            "SetUpdater",
+            "void"
+        ],
+        [
             "Update",
             "void"
         ],
         [
-            "SetUpdater",
+            "SetPlayers",
+            "void"
+        ],
+        [
+            "GameOver",
+            "bool"
+        ],
+        [
+            "NextPlayer",
+            "void"
+        ],
+        [
+            "SetSorterPieces",
+            "void"
+        ],
+        [
+            "Start",
+            "void"
+        ],
+        [
+            "Update",
+            "void"
+        ],
+        [
+            "Compare",
+            "int"
+        ],
+        [
+            "SetSorter",
             "void"
         ],
         [
@@ -2192,15 +2224,7 @@
             "IDominoPiece"
         ],
         [
-            "SetSorter",
-            "void"
-        ],
-        [
-            "Start",
-            "void"
-        ],
-        [
-            "NextPlayer",
+            "SortPieces",
             "void"
         ],
         [
@@ -2208,31 +2232,7 @@
             "IDominoPiece"
         ],
         [
-            "SetPlayers",
-            "void"
-        ],
-        [
-            "SetSorterPieces",
-            "void"
-        ],
-        [
             "FirstMovement",
-            "void"
-        ],
-        [
-            "SortPieces",
-            "void"
-        ],
-        [
-            "GameOver",
-            "bool"
-        ],
-        [
-            "Compare",
-            "int"
-        ],
-        [
-            "Update",
             "void"
         ],
         [
@@ -2240,35 +2240,19 @@
             "int"
         ],
         [
-            "SetControler",
+            "SetPlayers",
             "void"
-        ],
-        [
-            "ShowPieces",
-            "IDominoPiece"
         ],
         [
             "SetGameOver",
             "void"
         ],
         [
-            "Start",
+            "SetJudger",
             "void"
         ],
         [
-            "GetPlayers",
-            "IDominoPlayer"
-        ],
-        [
-            "NextPlayer",
-            "void"
-        ],
-        [
-            "SetWinnerComputer",
-            "void"
-        ],
-        [
-            "SetUpdater",
+            "SetControler",
             "void"
         ],
         [
@@ -2276,15 +2260,7 @@
             "IDominoPlayer"
         ],
         [
-            "SetStarter",
-            "void"
-        ],
-        [
-            "SetPlayers",
-            "void"
-        ],
-        [
-            "FirstMovement",
+            "SetWinnerComputer",
             "void"
         ],
         [
@@ -2292,7 +2268,19 @@
             "bool"
         ],
         [
+            "NextPlayer",
+            "void"
+        ],
+        [
+            "Start",
+            "void"
+        ],
+        [
             "Update",
+            "void"
+        ],
+        [
+            "SetUpdater",
             "void"
         ],
         [
@@ -2300,7 +2288,19 @@
             "void"
         ],
         [
-            "SetJudger",
+            "GetPlayers",
+            "IDominoPlayer"
+        ],
+        [
+            "ShowPieces",
+            "IDominoPiece"
+        ],
+        [
+            "SetStarter",
+            "void"
+        ],
+        [
+            "FirstMovement",
             "void"
         ],
         [
@@ -2332,19 +2332,15 @@
             "void"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
-            "LeftPiece",
+            "RightPiece",
             "ClassicDominoPiece"
         ],
         [
-            "MatchHead",
-            "void"
+            "Contains",
+            "bool"
         ],
         [
-            "RightPiece",
+            "LeftPiece",
             "ClassicDominoPiece"
         ],
         [
@@ -2352,15 +2348,19 @@
             "bool"
         ],
         [
-            "Contains",
-            "bool"
+            "ToString",
+            "string"
         ],
         [
-            "FirstMovement",
+            "MatchHead",
             "void"
         ],
         [
             "SetGameStarter",
+            "void"
+        ],
+        [
+            "FirstMovement",
             "void"
         ],
         [
@@ -2376,24 +2376,20 @@
             "void"
         ],
         [
-            "OwnerOf",
-            "string"
+            "LinkPieceTo",
+            "void"
         ],
         [
             "PiecesLinkedOf",
             "IDominoPiece"
         ],
         [
-            "LinkPieceTo",
-            "void"
-        ],
-        [
             "FatherOf",
             "IDominoPiece"
         ],
         [
-            "SixMultipleControler",
-            "bool"
+            "OwnerOf",
+            "string"
         ],
         [
             "NormalControler",
@@ -2404,15 +2400,23 @@
             "bool"
         ],
         [
+            "SixMultipleControler",
+            "bool"
+        ],
+        [
             "PairSumControler",
             "bool"
+        ],
+        [
+            "SetPlayMode",
+            "void"
         ],
         [
             "Play",
             "DominoMovement"
         ],
         [
-            "SetPlayMode",
+            "MatchHead",
             "void"
         ],
         [
@@ -2420,12 +2424,12 @@
             "bool"
         ],
         [
-            "MatchHead",
+            "ClassicStaticSortPieces",
             "void"
         ],
         [
-            "ClassicStaticSortPieces",
-            "void"
+            "ClassicNextPlayer",
+            "int"
         ],
         [
             "Max",
@@ -2440,8 +2444,12 @@
             "int"
         ],
         [
-            "ClassicNextPlayer",
-            "int"
+            "WinnerComputer",
+            "IDominoPlayer"
+        ],
+        [
+            "WinnerComputerPieces",
+            "IDominoPlayer"
         ],
         [
             "Min",
@@ -2452,19 +2460,11 @@
             "IDominoPlayer"
         ],
         [
-            "WinnerComputerPieces",
-            "IDominoPlayer"
-        ],
-        [
-            "WinnerComputer",
-            "IDominoPlayer"
-        ],
-        [
-            "ClassicGameOver",
+            "GameOvererByJump",
             "bool"
         ],
         [
-            "GameOvererByJump",
+            "ClassicGameOver",
             "bool"
         ],
         [
@@ -2476,7 +2476,7 @@
             "void"
         ],
         [
-            "SetSelecter",
+            "SetPlayMode",
             "void"
         ],
         [
@@ -2484,12 +2484,12 @@
             "DominoMovement"
         ],
         [
-            "SetPlayMode",
-            "void"
-        ],
-        [
             "Select",
             "IDominoPiece"
+        ],
+        [
+            "SetSelecter",
+            "void"
         ],
         [
             "ContainsDouble",
@@ -2516,19 +2516,19 @@
             "DominoMovement"
         ],
         [
-            "ClassicDoubleNineStarter",
-            "ClassicDominoState"
-        ],
-        [
             "ClassicDoubleSixGameStarter",
             "ClassicDominoState"
         ],
         [
-            "SetSorterPieces",
-            "void"
+            "ClassicDoubleNineStarter",
+            "ClassicDominoState"
         ],
         [
             "SortPieces",
+            "void"
+        ],
+        [
+            "SetSorterPieces",
             "void"
         ]
     ],
@@ -2541,21 +2541,21 @@
         "Program",
         "CrouchedDownClassicDominoPlayerStrategy",
         "SimulatorPlayerStrategy",
-        "ClassicDominoThrowFatStrategy",
-        "ClassicDoubleSixAliHeuristicStrategy",
         "ClassicDominoRandomStrategy",
+        "ClassicDoubleSixAliHeuristicStrategy",
+        "ClassicDominoThrowFatStrategy",
         "Sorters",
         "ClassicDomino",
         "Comparers",
         "Domino",
-        "ThrowFatSelecter",
         "RandomSelecter",
+        "ThrowFatSelecter",
         "Starters",
         "DominoMovement",
         "ClassicDominoState",
         "ClassicDominoPiece",
-        "ClassicDominoTree",
         "Node",
+        "ClassicDominoTree",
         "SimplePiecesRelator",
         "Controlers",
         "PiecesSorters",
@@ -2578,8 +2578,8 @@
         "IDominoState",
         "IPiecesRelator",
         "IDomino",
-        "IDominoPiecesSorter",
         "IDominoSorterPieces",
+        "IDominoPiecesSorter",
         "IStrategy",
         "INextPlayerSelector",
         "IJudgeSelector",
@@ -2587,10 +2587,10 @@
         "IUpdater",
         "IDominoPlayer",
         "IComparerSelector",
-        "IGameModesSelector",
         "IGame",
-        "IPiecesSorter",
+        "IGameModesSelector",
         "ISorterSelector",
+        "IPiecesSorter",
         "IPlayer",
         "IPLayModeSelector",
         "IDominoPiece",
@@ -2611,7 +2611,6 @@
         "TerminalNodeImpl": 24685,
         "Qualified_identifierContext": 50,
         "IdentifierContext": 6770,
-        "Namespace_bodyContext": 50,
         "Type_declarationContext": 66,
         "All_member_modifiersContext": 362,
         "All_member_modifierContext": 443,

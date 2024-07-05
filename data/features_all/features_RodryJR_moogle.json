@@ -1,5 +1,5 @@
 {
-    "total_nodes": 33435,
+    "total_nodes": 33426,
     "max_depth": 859,
     "number_of_variables": 109,
     "number_of_constants": 0,
@@ -320,7 +320,11 @@
         ],
         [
             "int",
-            "l"
+            "k"
+        ],
+        [
+            "string",
+            "result"
         ],
         [
             "int",
@@ -328,23 +332,11 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "cantletrascomun"
-        ],
-        [
-            "int",
             "aux"
         ],
         [
             "int",
-            "k"
-        ],
-        [
-            "int",
-            "mat"
+            "i"
         ],
         [
             "int",
@@ -355,8 +347,16 @@
             "menor_distancia"
         ],
         [
-            "string",
-            "result"
+            "int",
+            "cantletrascomun"
+        ],
+        [
+            "int",
+            "l"
+        ],
+        [
+            "int",
+            "mat"
         ],
         [
             "List",
@@ -364,19 +364,7 @@
         ],
         [
             "string",
-            "d"
-        ],
-        [
-            "string",
-            "c"
-        ],
-        [
-            "Document",
             "b"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "int",
@@ -384,7 +372,19 @@
         ],
         [
             "Document",
+            "b"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
             "c"
+        ],
+        [
+            "string",
+            "d"
         ],
         [
             "int",
@@ -392,23 +392,15 @@
         ],
         [
             "Document",
-            "d"
+            "c"
         ],
         [
-            "string",
-            "b"
+            "Document",
+            "d"
         ],
         [
             "int",
             "item2"
-        ],
-        [
-            "string",
-            "aux"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "int",
@@ -416,71 +408,91 @@
         ],
         [
             "int",
-            "item1"
-        ],
-        [
-            "List",
-            "palabras"
-        ],
-        [
-            "HashSet",
-            "DeleteDuplicates"
-        ],
-        [
-            "string",
             "result"
         ],
         [
             "string",
-            "result2"
-        ],
-        [
-            "int",
             "result"
-        ],
-        [
-            "float",
-            "resultado"
-        ],
-        [
-            "int",
-            "distance"
-        ],
-        [
-            "Dictionary",
-            "dic"
-        ],
-        [
-            "string",
-            "palabras_query"
-        ],
-        [
-            "string",
-            "palabras"
         ],
         [
             "int",
             "i"
         ],
         [
-            "float",
-            "IDF"
+            "string",
+            "aux"
         ],
         [
-            "float",
-            "sqrt_document"
+            "int",
+            "item1"
+        ],
+        [
+            "string",
+            "result2"
+        ],
+        [
+            "HashSet",
+            "DeleteDuplicates"
+        ],
+        [
+            "List",
+            "palabras"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
+            "Document",
+            "documentos"
         ],
         [
             "int",
             "score0"
         ],
         [
+            "float",
+            "resultado"
+        ],
+        [
+            "float",
+            "sqrt_document"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "Dictionary",
+            "dic"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "textaux"
+        ],
+        [
+            "float",
+            "IDF"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "int",
+            "distance"
+        ],
+        [
             "int",
             "j"
         ],
         [
-            "Document",
-            "documentos"
+            "string",
+            "palabras_query"
         ],
         [
             "bool",
@@ -488,23 +500,15 @@
         ],
         [
             "string",
-            "result"
-        ],
-        [
-            "int",
-            "pos"
-        ],
-        [
-            "SearchItem",
-            "items"
+            "palabras"
         ],
         [
             "string",
             "palabras_query_sinrep"
         ],
         [
-            "string",
-            "textaux"
+            "bool",
+            "map"
         ],
         [
             "StreamReader",
@@ -515,22 +519,6 @@
             "i"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
-            "bool",
-            "map"
-        ],
-        [
-            "List",
-            "palabras"
-        ],
-        [
-            "HashSet",
-            "DeleteDuplicates"
-        ],
-        [
             "string",
             "pal_dic"
         ],
@@ -539,24 +527,16 @@
             "result"
         ],
         [
-            "string",
-            "Div_query"
-        ],
-        [
-            "string",
-            "word_operador_1"
-        ],
-        [
-            "string",
-            "aux"
+            "HashSet",
+            "DeleteDuplicates"
         ],
         [
             "int",
-            "i"
+            "j"
         ],
         [
-            "Tuple",
-            "word_operador_4"
+            "List",
+            "palabras"
         ],
         [
             "int",
@@ -568,11 +548,31 @@
         ],
         [
             "int",
+            "i"
+        ],
+        [
+            "int",
             "j"
         ],
         [
             "string",
+            "aux"
+        ],
+        [
+            "string",
             "word_operador_2"
+        ],
+        [
+            "string",
+            "Div_query"
+        ],
+        [
+            "string",
+            "word_operador_1"
+        ],
+        [
+            "Tuple",
+            "word_operador_4"
         ],
         [
             "int",
@@ -581,33 +581,33 @@
     ],
     "method_names": [
         "Items",
-        "BuscarPalabra",
         "LevenshteinDistance",
-        "ConstSuggestion",
         "PalabraSimilar",
-        "MezclaDescendiente",
-        "Organiza",
-        "MergeSort",
+        "ConstSuggestion",
+        "BuscarPalabra",
         "MezclaDescendienteQuery",
-        "CleanWords",
+        "Organiza",
+        "MezclaDescendiente",
+        "MergeSort",
         "ConstWord",
         "Words_Distance",
+        "CleanWords",
         "DeleteDuplicate",
         "ArrayWordsWithOperator",
-        "CalcularScore",
         "CrearSnippet",
+        "CalcularScore",
         "Query",
         "MultiplicarVectoresTfIdf",
+        "CargarTitulos",
         "CargarTF_IDF",
         "CargarArchivos",
-        "CargarTitulos",
         "CargarDocumentos",
-        "CrearVector",
         "CargarDiccionario",
-        "Operador1",
-        "Operador2",
+        "CrearVector",
         "Operador4",
-        "Operador3"
+        "Operador3",
+        "Operador2",
+        "Operador1"
     ],
     "method_return_types": [
         [
@@ -615,15 +615,11 @@
             "IEnumerable"
         ],
         [
-            "LevenshteinDistance",
-            "int"
-        ],
-        [
-            "PalabraSimilar",
+            "BuscarPalabra",
             "string"
         ],
         [
-            "BuscarPalabra",
+            "PalabraSimilar",
             "string"
         ],
         [
@@ -631,8 +627,12 @@
             "string"
         ],
         [
-            "Organiza",
-            "string"
+            "LevenshteinDistance",
+            "int"
+        ],
+        [
+            "MergeSort",
+            "Document"
         ],
         [
             "MezclaDescendienteQuery",
@@ -643,19 +643,19 @@
             "Document"
         ],
         [
-            "MergeSort",
-            "Document"
+            "Organiza",
+            "string"
         ],
         [
             "CleanWords",
             "string"
         ],
         [
-            "ArrayWordsWithOperator",
+            "ConstWord",
             "string"
         ],
         [
-            "ConstWord",
+            "ArrayWordsWithOperator",
             "string"
         ],
         [
@@ -667,15 +667,7 @@
             "string"
         ],
         [
-            "CrearSnippet",
-            "string"
-        ],
-        [
             "MultiplicarVectoresTfIdf",
-            "float"
-        ],
-        [
-            "CalcularScore",
             "float"
         ],
         [
@@ -683,7 +675,15 @@
             "SearchResult"
         ],
         [
-            "CargarTF_IDF",
+            "CrearSnippet",
+            "string"
+        ],
+        [
+            "CalcularScore",
+            "float"
+        ],
+        [
+            "CargarDiccionario",
             "void"
         ],
         [
@@ -699,7 +699,7 @@
             "float"
         ],
         [
-            "CargarDiccionario",
+            "CargarTF_IDF",
             "void"
         ],
         [
@@ -707,7 +707,7 @@
             "void"
         ],
         [
-            "Operador4",
+            "Operador1",
             "void"
         ],
         [
@@ -715,7 +715,7 @@
             "void"
         ],
         [
-            "Operador1",
+            "Operador4",
             "void"
         ],
         [
@@ -748,7 +748,6 @@
         "Namespace_member_declarationContext": 18,
         "Namespace_declarationContext": 9,
         "Qualified_identifierContext": 9,
-        "Namespace_bodyContext": 9,
         "Type_declarationContext": 9,
         "All_member_modifiersContext": 74,
         "All_member_modifierContext": 128,

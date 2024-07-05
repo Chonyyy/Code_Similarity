@@ -132,14 +132,6 @@
     "variable_names": [
         [
             "Expression",
-            "expression1"
-        ],
-        [
-            "Expression",
-            "evaluated1"
-        ],
-        [
-            "var",
             "evaluated"
         ],
         [
@@ -147,12 +139,12 @@
             "x"
         ],
         [
-            "double",
-            "aux"
+            "Expression",
+            "expression1"
         ],
         [
-            "Expression",
-            "corpus"
+            "var",
+            "evaluated"
         ],
         [
             "Boolean",
@@ -160,27 +152,31 @@
         ],
         [
             "Expression",
-            "expression"
-        ],
-        [
-            "double",
-            "result"
-        ],
-        [
-            "Expression",
-            "evaluated"
+            "evaluated1"
         ],
         [
             "var",
             "final"
         ],
         [
-            "string",
-            "tokenText"
+            "Expression",
+            "expression"
         ],
         [
-            "int",
-            "startPosition"
+            "Expression",
+            "corpus"
+        ],
+        [
+            "double",
+            "result"
+        ],
+        [
+            "double",
+            "aux"
+        ],
+        [
+            "string",
+            "tokenText"
         ],
         [
             "string",
@@ -188,15 +184,11 @@
         ],
         [
             "int",
+            "startPosition"
+        ],
+        [
+            "int",
             "i"
-        ],
-        [
-            "var",
-            "syntax"
-        ],
-        [
-            "var",
-            "evaluator"
         ],
         [
             "var",
@@ -204,22 +196,34 @@
         ],
         [
             "var",
+            "syntax"
+        ],
+        [
+            "var",
             "expression"
+        ],
+        [
+            "var",
+            "evaluator"
         ]
     ],
     "method_names": [
         "EvaluateExpression",
-        "EvaluateReservedFunction",
         "EvaluateFullExpression",
+        "EvaluateReservedFunction",
+        "Reserved",
+        "NextPosition",
+        "NextToken",
         "ReservedFunction",
         "Constants",
-        "NextToken",
-        "NextPosition",
-        "Reserved",
         "GetValue",
         "Main"
     ],
     "method_return_types": [
+        [
+            "EvaluateReservedFunction",
+            "Expression"
+        ],
         [
             "EvaluateExpression",
             "Expression"
@@ -229,8 +233,8 @@
             "void"
         ],
         [
-            "EvaluateReservedFunction",
-            "Expression"
+            "Constants",
+            "bool"
         ],
         [
             "Reserved",
@@ -241,15 +245,11 @@
             "Token"
         ],
         [
-            "ReservedFunction",
-            "bool"
-        ],
-        [
             "NextPosition",
             "void"
         ],
         [
-            "Constants",
+            "ReservedFunction",
             "bool"
         ],
         [
@@ -265,28 +265,28 @@
         "Evaluator",
         "Token",
         "Analize",
-        "CheckPrinting",
-        "Variable",
-        "BinaryOperation",
-        "WhileCicle",
-        "StringOperation",
         "Conditional",
-        "FullExpression",
         "StringExp",
-        "Term",
-        "Expression",
         "Declaration",
-        "Function",
-        "NumberExp",
-        "GeneralContext",
-        "Identifier",
-        "Assignment",
-        "DualComparation",
-        "CompareOperation",
-        "Boolean",
         "FunctionCall",
+        "FullExpression",
+        "Identifier",
+        "StringOperation",
         "BooleanOperation",
+        "Term",
+        "BinaryOperation",
+        "Function",
+        "WhileCicle",
+        "GeneralContext",
+        "Variable",
+        "CheckPrinting",
+        "Assignment",
+        "CompareOperation",
+        "DualComparation",
+        "Boolean",
         "ForCicle",
+        "NumberExp",
+        "Expression",
         "Program"
     ],
     "interface_names": [],

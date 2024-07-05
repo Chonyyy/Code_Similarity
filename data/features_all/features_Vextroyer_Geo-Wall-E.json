@@ -1,5 +1,5 @@
 {
-    "total_nodes": 121818,
+    "total_nodes": 121795,
     "max_depth": 2054,
     "number_of_variables": 153,
     "number_of_constants": 0,
@@ -1755,36 +1755,12 @@
     ],
     "variable_names": [
         [
-            "float",
-            "y1"
-        ],
-        [
-            "float",
-            "y2"
-        ],
-        [
-            "List",
-            "resultadocopia"
-        ],
-        [
-            "float",
-            "C"
-        ],
-        [
-            "float",
-            "discriminanteVertical"
-        ],
-        [
-            "float",
-            "n1"
-        ],
-        [
             "List",
             "inCircle"
         ],
         [
-            "float",
-            "x2"
+            "Element",
+            "line"
         ],
         [
             "float",
@@ -1796,43 +1772,15 @@
         ],
         [
             "float",
-            "r1"
-        ],
-        [
-            "float",
-            "distancia"
-        ],
-        [
-            "float",
-            "x"
-        ],
-        [
-            "float",
-            "pendiente2"
-        ],
-        [
-            "List",
-            "resultadoaux1"
-        ],
-        [
-            "Element",
-            "line"
-        ],
-        [
-            "float",
-            "q"
-        ],
-        [
-            "float",
-            "h"
-        ],
-        [
-            "float",
             "k"
         ],
         [
             "float",
-            "discriminante"
+            "y2"
+        ],
+        [
+            "float",
+            "C"
         ],
         [
             "float",
@@ -1840,27 +1788,7 @@
         ],
         [
             "List",
-            "resultado"
-        ],
-        [
-            "List",
-            "resultadoaux"
-        ],
-        [
-            "float",
-            "newx"
-        ],
-        [
-            "float",
-            "A"
-        ],
-        [
-            "List",
-            "resultadoaux2"
-        ],
-        [
-            "float",
-            "p"
+            "inElement1"
         ],
         [
             "float",
@@ -1868,19 +1796,55 @@
         ],
         [
             "float",
+            "r2"
+        ],
+        [
+            "List",
+            "resultadoaux2"
+        ],
+        [
+            "float",
+            "discriminante"
+        ],
+        [
+            "float",
+            "newx"
+        ],
+        [
+            "float",
             "pendiente"
         ],
         [
-            "var",
-            "ramon"
+            "List",
+            "resultadocopia"
+        ],
+        [
+            "float",
+            "x"
+        ],
+        [
+            "float",
+            "p"
+        ],
+        [
+            "float",
+            "r1"
+        ],
+        [
+            "Element",
+            "templine"
         ],
         [
             "List",
-            "inElement1"
+            "resultadoaux"
         ],
         [
             "List",
-            "inElement2"
+            "resultadoaux1"
+        ],
+        [
+            "float",
+            "y1"
         ],
         [
             "float",
@@ -1888,35 +1852,67 @@
         ],
         [
             "float",
+            "y"
+        ],
+        [
+            "var",
+            "ramon"
+        ],
+        [
+            "float",
+            "distancia"
+        ],
+        [
+            "float",
+            "A"
+        ],
+        [
+            "float",
+            "discriminanteVertical"
+        ],
+        [
+            "float",
+            "x2"
+        ],
+        [
+            "List",
+            "resultado"
+        ],
+        [
+            "float",
+            "pendiente2"
+        ],
+        [
+            "float",
             "newy"
         ],
         [
             "float",
-            "r2"
+            "h"
         ],
         [
-            "Element",
-            "templine"
+            "List",
+            "inElement2"
         ],
         [
             "float",
-            "y"
+            "n1"
+        ],
+        [
+            "float",
+            "q"
         ],
         [
             "string",
             "result"
         ],
         [
-            "char",
-            "c"
-        ],
-        [
-            "TokenType",
-            "type"
+            "string",
+            "lexeme"
         ],
         [
             "string",
-            "lexeme"
+            "value"
         ],
         [
             "int",
@@ -1927,16 +1923,20 @@
             "openingQuoteLine"
         ],
         [
-            "string",
-            "value"
+            "char",
+            "c"
         ],
         [
-            "IDrawable",
-            "temp"
+            "TokenType",
+            "type"
         ],
         [
             "Element",
             "sequenceElement"
+        ],
+        [
+            "Element",
+            "sequence"
         ],
         [
             "Element",
@@ -1948,27 +1948,35 @@
         ],
         [
             "Element",
-            "sequence"
-        ],
-        [
-            "Element",
             "evaluated"
         ],
         [
-            "Element",
-            "sequence"
+            "IDrawable",
+            "temp"
         ],
         [
             "Element",
             "rValue"
         ],
         [
-            "Stmt",
-            "tmp"
+            "Element",
+            "sequence"
         ],
         [
             "Stmt",
             "stmts"
+        ],
+        [
+            "Stmt",
+            "tmp"
+        ],
+        [
+            "string",
+            "sourceCode"
+        ],
+        [
+            "List",
+            "tokens"
         ],
         [
             "List",
@@ -1976,11 +1984,7 @@
         ],
         [
             "List",
-            "tokens"
-        ],
-        [
-            "string",
-            "sourceCode"
+            "drawables"
         ],
         [
             "Program",
@@ -1991,20 +1995,16 @@
             "errors"
         ],
         [
-            "List",
-            "drawables"
-        ],
-        [
             "var",
             "nodocontrol"
         ],
         [
             "var",
-            "flags"
+            "respuesta"
         ],
         [
             "var",
-            "respuesta"
+            "lienzo"
         ],
         [
             "int",
@@ -2012,31 +2012,31 @@
         ],
         [
             "var",
+            "consola"
+        ],
+        [
+            "var",
             "lienzocontrol"
         ],
         [
             "var",
-            "nodolector"
+            "flags"
         ],
         [
             "string",
             "texto"
-        ],
-        [
-            "var",
-            "consola"
-        ],
-        [
-            "StreamWriter",
-            "sw"
         ],
         [
             "string",
             "direction"
         ],
         [
+            "StreamWriter",
+            "sw"
+        ],
+        [
             "var",
-            "lienzo"
+            "nodolector"
         ],
         [
             "var",
@@ -2057,14 +2057,14 @@
         [
             "var",
             "nodocontrol"
+        ],
+        [
+            "var",
+            "NameMenu"
         ],
         [
             "string",
             "texto"
-        ],
-        [
-            "var",
-            "NameMenu"
         ],
         [
             "var",
@@ -2075,8 +2075,8 @@
             "padre"
         ],
         [
-            "var",
-            "default_font"
+            "Vector2",
+            "punto"
         ],
         [
             "var",
@@ -2087,6 +2087,10 @@
             "menu"
         ],
         [
+            "var",
+            "default_font"
+        ],
+        [
             "float",
             "GrosorDePuntos"
         ],
@@ -2095,171 +2099,167 @@
             "delta"
         ],
         [
-            "Vector2",
-            "punto"
-        ],
-        [
             "CodeHighlighter",
             "highlighter"
         ]
     ],
     "method_names": [
         "PrintTokens",
-        "InterceptLineCircle",
-        "InterceptLineRay",
-        "DistanciaPuntoPunto",
-        "InterceptSegmentRay",
-        "InterceptPointArc",
-        "InterceptRayRay",
-        "InterceptRayCircle",
-        "InterceptLineLine",
-        "InterceptPointLine",
         "InterceptPointPoint",
-        "InterceptCircleCircle",
-        "InterceptPointCircle",
-        "InterceptLineSegment",
-        "CalcularPendiente",
-        "InterceptSegmentCircle",
+        "InterceptLineCircle",
+        "Intercept",
+        "InterceptRayCircle",
+        "DistanciaPuntoPunto",
+        "InterceptPointLine",
+        "InterceptLineLine",
+        "InterceptSegmentRay",
+        "InterceptLineRay",
         "InterceptSegmentSegment",
         "InterceptPointSegment",
-        "Intercept",
+        "InterceptSegmentCircle",
         "InterceptPointRay",
+        "InterceptRayRay",
+        "InterceptPointCircle",
+        "CalcularPendiente",
+        "InterceptLineSegment",
+        "InterceptPointArc",
+        "InterceptCircleCircle",
         "VisitPointStmt",
-        "VisitStmtList",
         "Print",
         "VisitEmptyStmt",
-        "VisitArcExpr",
-        "VisitBinarySumExpr",
-        "VisitUnaryMinusExpr",
-        "Accept",
-        "VisitCallExpr",
-        "VisitLetInExpr",
-        "VisitLinesExpr",
-        "VisitBinaryDifferenceExpr",
-        "VisitBinaryGreaterEqualExpr",
-        "VisitBinaryModulusExpr",
-        "VisitBinaryProductExpr",
-        "VisitNumberExpr",
-        "VisitVariableExpr",
-        "VisitBinaryDivisionExpr",
+        "VisitStmtList",
+        "VisitBinaryNotEqualExpr",
         "VisitEmptyExpr",
-        "VisitSamplesExpr",
-        "VisitRayExpr",
-        "VisitBinaryEqualEqualExpr",
-        "VisitBinaryLessExpr",
-        "VisitCircleExpr",
+        "VisitBinaryDifferenceExpr",
         "VisitIntersectExpr",
         "VisitSegmentExpr",
-        "VisitStringExpr",
-        "VisitSequenceExpr",
+        "VisitVariableExpr",
         "VisitRandomsExpr",
-        "VisitUnaryNotExpr",
-        "VisitBinaryAndExpr",
-        "VisitBinaryOrExpr",
-        "VisitBinaryGreaterExpr",
-        "VisitBinaryNotEqualExpr",
-        "VisitCountExpr",
-        "VisitConditionalExpr",
-        "VisitBinaryLessEqualExpr",
         "VisitBinaryPowerExpr",
-        "VisitMeasureExpr",
+        "VisitConditionalExpr",
         "VisitPointExpr",
-        "Register",
+        "VisitBinaryAndExpr",
+        "VisitBinaryProductExpr",
+        "Accept",
+        "VisitSequenceExpr",
+        "VisitLetInExpr",
+        "VisitCountExpr",
+        "VisitArcExpr",
+        "VisitBinaryOrExpr",
+        "VisitBinaryEqualEqualExpr",
+        "VisitBinaryDivisionExpr",
+        "VisitNumberExpr",
+        "VisitUnaryNotExpr",
+        "VisitBinarySumExpr",
+        "VisitBinaryGreaterEqualExpr",
+        "VisitRayExpr",
+        "VisitCircleExpr",
+        "VisitUnaryMinusExpr",
+        "VisitBinaryLessEqualExpr",
+        "VisitMeasureExpr",
+        "VisitCallExpr",
+        "VisitLinesExpr",
+        "VisitStringExpr",
+        "VisitBinaryModulusExpr",
+        "VisitSamplesExpr",
+        "VisitBinaryLessExpr",
+        "VisitBinaryGreaterExpr",
         "Operate",
-        "NotEqualTo",
-        "ToString",
+        "Register",
         "EqualTo",
+        "NotEqualTo",
         "GetFunction",
         "ContainsArity",
-        "ScanIdentifier",
-        "Scan",
-        "Abort",
+        "ToString",
         "ScanString",
+        "Scan",
         "TryParseThreeDots",
         "ScanNumber",
         "AddToken",
-        "ScanToken",
+        "Abort",
         "ScanComment",
+        "ScanIdentifier",
+        "ScanToken",
+        "VisitCircleStmt",
         "VisitConstantDeclarationStmt",
+        "VisitPrintStmt",
+        "VisitDrawStmt",
+        "VisitArcStmt",
+        "VisitSegmentStmt",
         "Interpret",
         "VisitPointStmt",
-        "VisitDrawStmt",
-        "VisitEmptyStmt",
-        "VisitPrintStmt",
-        "VisitStmtList",
-        "VisitMatchStmt",
         "VisitFunctionDeclarationStmt",
-        "VisitSegmentStmt",
-        "VisitColorStmt",
-        "VisitCircleStmt",
-        "VisitLinesStmt",
         "VisitRayStmt",
-        "VisitArcStmt",
-        "VisitConstantDeclarationStmt",
-        "VisitPointStmt",
-        "VisitDrawStmt",
-        "VisitEmptyStmt",
-        "Abort",
-        "VisitPrintStmt",
-        "VisitStmtList",
+        "VisitLinesStmt",
         "VisitMatchStmt",
+        "VisitColorStmt",
+        "VisitStmtList",
+        "VisitEmptyStmt",
         "VisitCircleStmt",
+        "VisitConstantDeclarationStmt",
+        "VisitDrawStmt",
+        "VisitArcStmt",
         "OnErrorFound",
-        "VisitFunctionDeclarationStmt",
-        "VisitEvalStmt",
         "VisitSegmentStmt",
+        "VisitEvalStmt",
+        "VisitPointStmt",
+        "VisitMatchStmt",
+        "VisitFunctionDeclarationStmt",
+        "VisitRayStmt",
+        "VisitLinesStmt",
+        "VisitPrintStmt",
         "VisitColorStmt",
         "Check",
-        "VisitLinesStmt",
-        "VisitRayStmt",
-        "VisitArcStmt",
+        "VisitStmtList",
+        "VisitEmptyStmt",
+        "Abort",
         "OnErrorFound",
-        "Abort",
         "HandleError",
-        "ParseStmtList",
         "Abort",
+        "ParseProgram",
         "Parse",
         "OnErrorFound",
-        "ParseProgram",
+        "ParseStmtList",
+        "Abort",
         "CompileFromSource",
         "CompileFromFile",
-        "Abort",
-        "HandleError",
         "OnErrorFound",
-        "_Ready",
+        "HandleError",
+        "Abort",
         "_pressed",
         "_Process",
-        "ToDraw",
+        "_Ready",
+        "_Process",
         "_Ready",
         "WriteLine",
-        "_Process",
-        "_Ready",
+        "ToDraw",
         "_pressed",
         "_Process",
         "_Ready",
         "_pressed",
         "_Process",
+        "_Ready",
+        "_pressed",
         "_Process",
         "_Ready",
         "callexport",
         "_pressed",
-        "_Ready",
-        "_pressed",
         "_Process",
-        "cancel",
+        "_Ready",
+        "_Process",
         "_Ready",
         "accept",
-        "_Process",
-        "_Ready",
+        "cancel",
         "_pressed",
         "_Process",
         "_Ready",
+        "_Process",
         "_Draw",
-        "_Process",
         "_Ready",
         "_Process",
         "_Ready",
-        "_Process"
+        "_Process",
+        "_Ready"
     ],
     "method_return_types": [
         [
@@ -2267,15 +2267,35 @@
             "void"
         ],
         [
+            "InterceptCircleCircle",
+            "List"
+        ],
+        [
+            "InterceptSegmentRay",
+            "List"
+        ],
+        [
+            "InterceptPointPoint",
+            "List"
+        ],
+        [
+            "InterceptPointSegment",
+            "List"
+        ],
+        [
             "InterceptPointLine",
             "List"
         ],
         [
-            "InterceptLineRay",
+            "CalcularPendiente",
+            "float"
+        ],
+        [
+            "InterceptPointArc",
             "List"
         ],
         [
-            "InterceptRayRay",
+            "InterceptPointRay",
             "List"
         ],
         [
@@ -2283,12 +2303,32 @@
             "List"
         ],
         [
+            "InterceptSegmentCircle",
+            "List"
+        ],
+        [
+            "InterceptLineCircle",
+            "List"
+        ],
+        [
+            "InterceptLineRay",
+            "List"
+        ],
+        [
+            "InterceptPointCircle",
+            "List"
+        ],
+        [
             "InterceptLineLine",
             "List"
         ],
         [
-            "InterceptLineSegment",
+            "InterceptRayRay",
             "List"
+        ],
+        [
+            "Intercept",
+            "Element"
         ],
         [
             "DistanciaPuntoPunto",
@@ -2299,51 +2339,11 @@
             "List"
         ],
         [
-            "Intercept",
-            "Element"
-        ],
-        [
-            "InterceptPointPoint",
+            "InterceptLineSegment",
             "List"
         ],
         [
-            "InterceptSegmentCircle",
-            "List"
-        ],
-        [
-            "InterceptPointArc",
-            "List"
-        ],
-        [
-            "InterceptSegmentRay",
-            "List"
-        ],
-        [
-            "CalcularPendiente",
-            "float"
-        ],
-        [
-            "InterceptPointCircle",
-            "List"
-        ],
-        [
-            "InterceptCircleCircle",
-            "List"
-        ],
-        [
-            "InterceptLineCircle",
-            "List"
-        ],
-        [
-            "InterceptPointSegment",
-            "List"
-        ],
-        [
-            "InterceptPointRay",
-            "List"
-        ],
-        [
-            "VisitStmtList",
+            "Print",
             "string"
         ],
         [
@@ -2351,59 +2351,39 @@
             "string"
         ],
         [
-            "Print",
-            "string"
-        ],
-        [
             "VisitEmptyStmt",
             "string"
         ],
         [
-            "VisitBinaryLessExpr",
+            "VisitStmtList",
+            "string"
+        ],
+        [
+            "VisitBinaryEqualEqualExpr",
             "T"
         ],
         [
-            "VisitSegmentExpr",
+            "VisitIntersectExpr",
             "T"
         ],
         [
-            "VisitCountExpr",
+            "VisitBinaryNotEqualExpr",
             "T"
         ],
         [
-            "VisitBinaryLessEqualExpr",
+            "VisitPointExpr",
             "T"
         ],
         [
-            "VisitRayExpr",
+            "VisitBinaryDifferenceExpr",
             "T"
         ],
         [
-            "VisitBinaryGreaterExpr",
+            "Accept",
             "T"
         ],
         [
-            "VisitCallExpr",
-            "T"
-        ],
-        [
-            "VisitUnaryNotExpr",
-            "T"
-        ],
-        [
-            "VisitConditionalExpr",
-            "T"
-        ],
-        [
-            "VisitMeasureExpr",
-            "T"
-        ],
-        [
-            "VisitVariableExpr",
-            "T"
-        ],
-        [
-            "VisitNumberExpr",
+            "VisitRandomsExpr",
             "T"
         ],
         [
@@ -2411,7 +2391,35 @@
             "T"
         ],
         [
-            "VisitBinaryGreaterEqualExpr",
+            "VisitMeasureExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryProductExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryModulusExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryLessEqualExpr",
+            "T"
+        ],
+        [
+            "VisitCountExpr",
+            "T"
+        ],
+        [
+            "VisitSamplesExpr",
+            "T"
+        ],
+        [
+            "VisitRayExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryOrExpr",
             "T"
         ],
         [
@@ -2419,11 +2427,67 @@
             "T"
         ],
         [
+            "VisitConditionalExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryGreaterEqualExpr",
+            "T"
+        ],
+        [
+            "VisitUnaryNotExpr",
+            "T"
+        ],
+        [
+            "VisitArcExpr",
+            "T"
+        ],
+        [
+            "VisitVariableExpr",
+            "T"
+        ],
+        [
             "VisitSequenceExpr",
             "T"
         ],
         [
+            "VisitCallExpr",
+            "T"
+        ],
+        [
             "VisitEmptyExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryGreaterExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryPowerExpr",
+            "T"
+        ],
+        [
+            "VisitSegmentExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryDivisionExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryLessExpr",
+            "T"
+        ],
+        [
+            "VisitBinaryAndExpr",
+            "T"
+        ],
+        [
+            "VisitNumberExpr",
+            "T"
+        ],
+        [
+            "VisitUnaryMinusExpr",
             "T"
         ],
         [
@@ -2439,70 +2503,6 @@
             "T"
         ],
         [
-            "VisitBinaryPowerExpr",
-            "T"
-        ],
-        [
-            "VisitBinaryNotEqualExpr",
-            "T"
-        ],
-        [
-            "VisitBinaryDivisionExpr",
-            "T"
-        ],
-        [
-            "Accept",
-            "T"
-        ],
-        [
-            "VisitUnaryMinusExpr",
-            "T"
-        ],
-        [
-            "VisitBinaryAndExpr",
-            "T"
-        ],
-        [
-            "VisitBinaryModulusExpr",
-            "T"
-        ],
-        [
-            "VisitBinaryProductExpr",
-            "T"
-        ],
-        [
-            "VisitBinaryDifferenceExpr",
-            "T"
-        ],
-        [
-            "VisitRandomsExpr",
-            "T"
-        ],
-        [
-            "VisitBinaryOrExpr",
-            "T"
-        ],
-        [
-            "VisitPointExpr",
-            "T"
-        ],
-        [
-            "VisitBinaryEqualEqualExpr",
-            "T"
-        ],
-        [
-            "VisitSamplesExpr",
-            "T"
-        ],
-        [
-            "VisitIntersectExpr",
-            "T"
-        ],
-        [
-            "VisitArcExpr",
-            "T"
-        ],
-        [
             "Operate",
             "Element"
         ],
@@ -2511,43 +2511,35 @@
             "void"
         ],
         [
-            "ToString",
-            "string"
+            "ContainsArity",
+            "bool"
+        ],
+        [
+            "EqualTo",
+            "Element"
         ],
         [
             "EqualTo",
             "Number"
         ],
         [
-            "GetFunction",
-            "Function"
-        ],
-        [
-            "EqualTo",
-            "Element"
-        ],
-        [
-            "ContainsArity",
-            "bool"
-        ],
-        [
             "NotEqualTo",
             "Element"
         ],
         [
-            "TryParseThreeDots",
-            "bool"
+            "GetFunction",
+            "Function"
         ],
         [
-            "Scan",
-            "List"
+            "ToString",
+            "string"
         ],
         [
             "Abort",
             "void"
         ],
         [
-            "ScanComment",
+            "ScanIdentifier",
             "void"
         ],
         [
@@ -2555,11 +2547,7 @@
             "void"
         ],
         [
-            "ScanNumber",
-            "void"
-        ],
-        [
-            "ScanIdentifier",
+            "ScanComment",
             "void"
         ],
         [
@@ -2571,47 +2559,19 @@
             "void"
         ],
         [
-            "VisitCircleStmt",
-            "object"
+            "ScanNumber",
+            "void"
         ],
         [
-            "VisitFunctionDeclarationStmt",
-            "object"
+            "Scan",
+            "List"
         ],
         [
-            "VisitColorStmt",
-            "object"
+            "TryParseThreeDots",
+            "bool"
         ],
         [
-            "VisitSegmentStmt",
-            "object"
-        ],
-        [
-            "Interpret",
-            "object"
-        ],
-        [
-            "VisitMatchStmt",
-            "object"
-        ],
-        [
-            "VisitRayStmt",
-            "object"
-        ],
-        [
-            "VisitPrintStmt",
-            "object"
-        ],
-        [
-            "VisitConstantDeclarationStmt",
-            "object"
-        ],
-        [
-            "VisitDrawStmt",
-            "object"
-        ],
-        [
-            "VisitArcStmt",
+            "VisitEmptyStmt",
             "object"
         ],
         [
@@ -2619,27 +2579,7 @@
             "object"
         ],
         [
-            "VisitEmptyStmt",
-            "object"
-        ],
-        [
-            "VisitPointStmt",
-            "object"
-        ],
-        [
-            "Interpret",
-            "List"
-        ],
-        [
             "VisitLinesStmt",
-            "object"
-        ],
-        [
-            "VisitCircleStmt",
-            "object"
-        ],
-        [
-            "VisitPointStmt",
             "object"
         ],
         [
@@ -2647,11 +2587,63 @@
             "object"
         ],
         [
-            "VisitSegmentStmt",
+            "VisitCircleStmt",
+            "object"
+        ],
+        [
+            "Interpret",
             "object"
         ],
         [
             "VisitMatchStmt",
+            "object"
+        ],
+        [
+            "VisitColorStmt",
+            "object"
+        ],
+        [
+            "VisitPointStmt",
+            "object"
+        ],
+        [
+            "VisitConstantDeclarationStmt",
+            "object"
+        ],
+        [
+            "VisitRayStmt",
+            "object"
+        ],
+        [
+            "VisitArcStmt",
+            "object"
+        ],
+        [
+            "Interpret",
+            "List"
+        ],
+        [
+            "VisitPrintStmt",
+            "object"
+        ],
+        [
+            "VisitDrawStmt",
+            "object"
+        ],
+        [
+            "VisitSegmentStmt",
+            "object"
+        ],
+        [
+            "VisitEmptyStmt",
+            "object"
+        ],
+        [
+            "VisitStmtList",
+            "object"
+        ],
+        [
+            "VisitLinesStmt",
             "object"
         ],
         [
@@ -2663,39 +2655,11 @@
             "void"
         ],
         [
-            "OnErrorFound",
-            "void"
-        ],
-        [
-            "VisitRayStmt",
+            "VisitCircleStmt",
             "object"
         ],
         [
-            "VisitPrintStmt",
-            "object"
-        ],
-        [
-            "VisitConstantDeclarationStmt",
-            "object"
-        ],
-        [
-            "VisitDrawStmt",
-            "object"
-        ],
-        [
-            "VisitEvalStmt",
-            "object"
-        ],
-        [
-            "VisitArcStmt",
-            "object"
-        ],
-        [
-            "VisitEmptyStmt",
-            "object"
-        ],
-        [
-            "VisitStmtList",
+            "VisitFunctionDeclarationStmt",
             "object"
         ],
         [
@@ -2703,11 +2667,47 @@
             "object"
         ],
         [
-            "VisitLinesStmt",
+            "VisitMatchStmt",
             "object"
         ],
         [
-            "HandleError",
+            "VisitPointStmt",
+            "object"
+        ],
+        [
+            "VisitConstantDeclarationStmt",
+            "object"
+        ],
+        [
+            "VisitRayStmt",
+            "object"
+        ],
+        [
+            "OnErrorFound",
+            "void"
+        ],
+        [
+            "VisitArcStmt",
+            "object"
+        ],
+        [
+            "VisitEvalStmt",
+            "object"
+        ],
+        [
+            "VisitPrintStmt",
+            "object"
+        ],
+        [
+            "VisitDrawStmt",
+            "object"
+        ],
+        [
+            "VisitSegmentStmt",
+            "object"
+        ],
+        [
+            "OnErrorFound",
             "void"
         ],
         [
@@ -2715,7 +2715,7 @@
             "void"
         ],
         [
-            "OnErrorFound",
+            "HandleError",
             "void"
         ],
         [
@@ -2727,10 +2727,6 @@
             "void"
         ],
         [
-            "OnErrorFound",
-            "void"
-        ],
-        [
             "Parse",
             "Program"
         ],
@@ -2739,15 +2735,19 @@
             "Stmt"
         ],
         [
-            "CompileFromSource",
-            "Response"
+            "OnErrorFound",
+            "void"
         ],
         [
             "CompileFromFile",
             "Response"
         ],
         [
-            "HandleError",
+            "CompileFromSource",
+            "Response"
+        ],
+        [
+            "OnErrorFound",
             "void"
         ],
         [
@@ -2755,15 +2755,19 @@
             "void"
         ],
         [
-            "OnErrorFound",
+            "HandleError",
             "void"
         ],
         [
-            "_pressed",
+            "_Process",
             "void"
         ],
         [
             "_Ready",
+            "void"
+        ],
+        [
+            "_pressed",
             "void"
         ],
         [
@@ -2779,15 +2783,11 @@
             "void"
         ],
         [
-            "_Process",
-            "void"
-        ],
-        [
             "WriteLine",
             "void"
         ],
         [
-            "_pressed",
+            "_Process",
             "void"
         ],
         [
@@ -2795,11 +2795,11 @@
             "void"
         ],
         [
-            "_Process",
+            "_pressed",
             "void"
         ],
         [
-            "_pressed",
+            "_Process",
             "void"
         ],
         [
@@ -2807,19 +2807,7 @@
             "void"
         ],
         [
-            "_Process",
-            "void"
-        ],
-        [
             "_pressed",
-            "void"
-        ],
-        [
-            "_Ready",
-            "void"
-        ],
-        [
-            "_Process",
             "void"
         ],
         [
@@ -2827,11 +2815,15 @@
             "void"
         ],
         [
-            "_pressed",
+            "_Process",
             "void"
         ],
         [
             "_Ready",
+            "void"
+        ],
+        [
+            "_pressed",
             "void"
         ],
         [
@@ -2840,6 +2832,10 @@
         ],
         [
             "_Ready",
+            "void"
+        ],
+        [
+            "_pressed",
             "void"
         ],
         [
@@ -2851,15 +2847,23 @@
             "void"
         ],
         [
+            "_Ready",
+            "void"
+        ],
+        [
             "accept",
             "void"
         ],
         [
-            "_pressed",
+            "_Process",
             "void"
         ],
         [
             "_Ready",
+            "void"
+        ],
+        [
+            "_pressed",
             "void"
         ],
         [
@@ -2889,10 +2893,6 @@
         [
             "_Ready",
             "void"
-        ],
-        [
-            "_Process",
-            "void"
         ]
     ],
     "class_names": [
@@ -2900,43 +2900,43 @@
         "Interceptions",
         "AstPrinter",
         "ColorStack",
-        "Empty",
         "Expr",
+        "Empty",
         "OperationTable",
         "Token",
         "Scope",
-        "Function",
-        "RuntimeDefined",
-        "String",
-        "Element",
-        "Number",
-        "Point",
-        "Measure",
-        "Undefined",
         "FunctionList",
+        "Function",
+        "Element",
+        "Undefined",
+        "Point",
+        "String",
+        "Number",
+        "Measure",
+        "RuntimeDefined",
         "Program",
         "Scanner",
         "Interpreter",
         "TypeChecker",
         "GSharpCompilerComponent",
         "Parser",
+        "Flags",
         "Response",
         "Compiler",
-        "Flags",
         "Error",
-        "RuntimeException",
-        "ScopeException",
         "GSharpException",
+        "ScopeException",
         "DependencyResolverException",
         "CircularDependenciesException",
-        "ScannerException",
+        "CompileTimeException",
+        "RuntimeException",
+        "TypeCheckerException",
         "ParserException",
         "RecoveryModeException",
-        "TypeCheckerException",
-        "CompileTimeException",
+        "ScannerException",
         "ClearConsole",
-        "NodoPadre",
         "Imprimidor",
+        "NodoPadre",
         "Cancel",
         "Accept",
         "Save",
@@ -2951,9 +2951,9 @@
         "IVisitorExpr",
         "IVisitableExpr",
         "IDrawable",
+        "ICompileTimeErrorHandler",
         "IErrorLocalizator",
-        "IAbortable",
-        "ICompileTimeErrorHandler"
+        "IAbortable"
     ],
     "delegate_names": [],
     "node_count": {
@@ -2964,7 +2964,6 @@
         "TerminalNodeImpl": 18571,
         "Qualified_identifierContext": 23,
         "IdentifierContext": 6523,
-        "Namespace_bodyContext": 23,
         "ErrorNodeImpl": 27646,
         "Type_declarationContext": 275,
         "All_member_modifiersContext": 534,

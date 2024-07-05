@@ -1,5 +1,5 @@
 {
-    "total_nodes": 17397,
+    "total_nodes": 17394,
     "max_depth": 697,
     "number_of_variables": 70,
     "number_of_constants": 0,
@@ -97,60 +97,12 @@
     ],
     "variable_names": [
         [
-            "List",
-            "SimilarDocuments"
-        ],
-        [
             "double",
-            "Sum_of_Doc_TFIDF_Squared"
-        ],
-        [
-            "double",
-            "Sum_of_Query_TFIDF_Squared"
-        ],
-        [
-            "double",
-            "new_tfidf"
-        ],
-        [
-            "string",
-            "snippet"
-        ],
-        [
-            "int",
-            "queryIndex"
-        ],
-        [
-            "double",
-            "Sim"
-        ],
-        [
-            "double",
-            "highestValue"
-        ],
-        [
-            "int",
-            "start"
+            "score"
         ],
         [
             "int",
             "end"
-        ],
-        [
-            "double",
-            "CosSim"
-        ],
-        [
-            "double",
-            "similarity"
-        ],
-        [
-            "string",
-            "title"
-        ],
-        [
-            "double",
-            "newValue"
         ],
         [
             "double",
@@ -161,16 +113,24 @@
             "text"
         ],
         [
-            "string",
-            "key"
+            "double",
+            "new_tfidf"
+        ],
+        [
+            "int",
+            "start"
         ],
         [
             "string",
             "separatedtext"
         ],
         [
-            "double",
-            "score"
+            "Dictionary",
+            "Term_newTFIDF"
+        ],
+        [
+            "int",
+            "queryIndex"
         ],
         [
             "string",
@@ -178,15 +138,55 @@
         ],
         [
             "double",
-            "value"
+            "similarity"
         ],
         [
-            "Dictionary",
-            "Term_newTFIDF"
+            "double",
+            "Sim"
+        ],
+        [
+            "double",
+            "Sum_of_Query_TFIDF_Squared"
         ],
         [
             "string",
-            "queryTerms"
+            "snippet"
+        ],
+        [
+            "double",
+            "CosSim"
+        ],
+        [
+            "double",
+            "highestValue"
+        ],
+        [
+            "string",
+            "key"
+        ],
+        [
+            "double",
+            "Sum_of_Doc_TFIDF_Squared"
+        ],
+        [
+            "double",
+            "value"
+        ],
+        [
+            "string",
+            "title"
+        ],
+        [
+            "double",
+            "newValue"
+        ],
+        [
+            "List",
+            "SimilarDocuments"
+        ],
+        [
+            "int",
+            "smallestdistance"
         ],
         [
             "string",
@@ -198,14 +198,6 @@
         ],
         [
             "int",
-            "distance"
-        ],
-        [
-            "int",
-            "d"
-        ],
-        [
-            "int",
             "costo"
         ],
         [
@@ -214,47 +206,31 @@
         ],
         [
             "int",
+            "d"
+        ],
+        [
+            "int",
+            "distance"
+        ],
+        [
+            "int",
             "j"
+        ],
+        [
+            "string",
+            "queryTerms"
         ],
         [
             "int",
             "m"
         ],
         [
-            "int",
-            "smallestdistance"
+            "double",
+            "Total_Docs"
         ],
         [
             "Dictionary",
             "Term_TFIDF"
-        ],
-        [
-            "double",
-            "Terms_in_Doc"
-        ],
-        [
-            "double",
-            "DF"
-        ],
-        [
-            "string",
-            "word"
-        ],
-        [
-            "double",
-            "TF"
-        ],
-        [
-            "string",
-            "document"
-        ],
-        [
-            "double",
-            "IDF"
-        ],
-        [
-            "double",
-            "TFIDF"
         ],
         [
             "Dictionary",
@@ -262,15 +238,35 @@
         ],
         [
             "double",
-            "Total_Docs"
+            "DF"
+        ],
+        [
+            "double",
+            "IDF"
+        ],
+        [
+            "string",
+            "document"
+        ],
+        [
+            "double",
+            "TFIDF"
+        ],
+        [
+            "double",
+            "Terms_in_Doc"
         ],
         [
             "string",
             "words"
         ],
         [
-            "Similarity",
-            "similarity"
+            "double",
+            "TF"
+        ],
+        [
+            "string",
+            "word"
         ],
         [
             "Suggestion",
@@ -281,16 +277,20 @@
             "user_query"
         ],
         [
+            "string",
+            "sug"
+        ],
+        [
+            "Similarity",
+            "similarity"
+        ],
+        [
             "SearchItem",
             "items"
         ],
         [
             "string",
-            "sug"
-        ],
-        [
-            "List",
-            "list"
+            "text"
         ],
         [
             "int",
@@ -298,15 +298,15 @@
         ],
         [
             "string",
-            "projectpath"
-        ],
-        [
-            "string",
             "words"
         ],
         [
             "string",
-            "text"
+            "projectpath"
+        ],
+        [
+            "List",
+            "list"
         ],
         [
             "Dictionary",
@@ -314,19 +314,7 @@
         ],
         [
             "double",
-            "TotalDocs"
-        ],
-        [
-            "double",
             "DF"
-        ],
-        [
-            "double",
-            "TF"
-        ],
-        [
-            "Dictionary",
-            "Query_TF"
         ],
         [
             "double",
@@ -337,37 +325,45 @@
             "TFIDF"
         ],
         [
+            "double",
+            "TotalDocs"
+        ],
+        [
             "string",
             "words"
+        ],
+        [
+            "Dictionary",
+            "Query_TF"
+        ],
+        [
+            "double",
+            "TF"
         ]
     ],
     "method_names": [
         "Items",
-        "GetSnippet",
-        "SetMostSimilarDocuments",
-        "CalculateCosineSimilarity",
         "CalculateSimilarity",
-        "SetQuerySuggestion",
+        "SetMostSimilarDocuments",
+        "GetSnippet",
+        "CalculateCosineSimilarity",
         "LevenshteinDistance",
-        "TermFrequency",
+        "SetQuerySuggestion",
         "TermFrequency_InverseDocumentFrequency",
+        "TermFrequency",
         "InverseDocumentFrequency",
         "Query",
         "SetDataBasePath",
-        "SetDataReady",
-        "SetDocvsWords",
         "SetTotalDistinctWords",
-        "SetQueryWords",
-        "SetQueryTFIDF"
+        "SetDocvsWords",
+        "SetDataReady",
+        "SetQueryTFIDF",
+        "SetQueryWords"
     ],
     "method_return_types": [
         [
             "Items",
             "IEnumerable"
-        ],
-        [
-            "CalculateCosineSimilarity",
-            "void"
         ],
         [
             "CalculateSimilarity",
@@ -382,6 +378,10 @@
             "string"
         ],
         [
+            "CalculateCosineSimilarity",
+            "void"
+        ],
+        [
             "SetQuerySuggestion",
             "void"
         ],
@@ -390,11 +390,11 @@
             "int"
         ],
         [
-            "TermFrequency",
+            "TermFrequency_InverseDocumentFrequency",
             "void"
         ],
         [
-            "TermFrequency_InverseDocumentFrequency",
+            "TermFrequency",
             "void"
         ],
         [
@@ -410,11 +410,11 @@
             "void"
         ],
         [
-            "SetDataBasePath",
+            "SetDocvsWords",
             "void"
         ],
         [
-            "SetDocvsWords",
+            "SetDataBasePath",
             "void"
         ],
         [
@@ -422,11 +422,11 @@
             "void"
         ],
         [
-            "SetQueryWords",
+            "SetQueryTFIDF",
             "void"
         ],
         [
-            "SetQueryTFIDF",
+            "SetQueryWords",
             "void"
         ]
     ],
@@ -454,7 +454,6 @@
         "Namespace_member_declarationContext": 16,
         "Namespace_declarationContext": 8,
         "Qualified_identifierContext": 8,
-        "Namespace_bodyContext": 8,
         "Type_declarationContext": 8,
         "All_member_modifiersContext": 77,
         "All_member_modifierContext": 81,
@@ -532,6 +531,7 @@
         "Numeric_typeContext": 84,
         "Integral_typeContext": 27,
         "Floating_point_typeContext": 57,
+        "Namespace_bodyContext": 5,
         "Method_invocationContext": 82,
         "ForeachStatementContext": 22,
         "Local_variable_typeContext": 92,

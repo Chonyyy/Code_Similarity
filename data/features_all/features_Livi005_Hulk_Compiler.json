@@ -1,5 +1,5 @@
 {
-    "total_nodes": 67008,
+    "total_nodes": 66991,
     "max_depth": 1121,
     "number_of_variables": 112,
     "number_of_constants": 0,
@@ -881,12 +881,16 @@
             "program"
         ],
         [
-            "Tokenizar",
-            "tokenizar"
+            "List",
+            "errores"
         ],
         [
             "List",
-            "errores"
+            "tokens"
+        ],
+        [
+            "Tokenizar",
+            "tokenizar"
         ],
         [
             "Parser",
@@ -897,16 +901,16 @@
             "scope"
         ],
         [
-            "List",
-            "tokens"
+            "int",
+            "i"
         ],
         [
             "char",
             "Leyendo"
         ],
         [
-            "int",
-            "i"
+            "Expression",
+            "X"
         ],
         [
             "Expression",
@@ -914,55 +918,7 @@
         ],
         [
             "Expression",
-            "Them"
-        ],
-        [
-            "Expression",
-            "result"
-        ],
-        [
-            "Expression",
-            "Div"
-        ],
-        [
-            "Expression",
-            "instrutcions"
-        ],
-        [
-            "Expression",
-            "Sub"
-        ],
-        [
-            "Expression",
-            "MenorEqual"
-        ],
-        [
-            "Expression",
-            "T"
-        ],
-        [
-            "Expression",
-            "asig"
-        ],
-        [
-            "Expression",
-            "Pow"
-        ],
-        [
-            "Expression",
-            "func"
-        ],
-        [
-            "Expression",
-            "F"
-        ],
-        [
-            "Expression",
-            "Not"
-        ],
-        [
-            "var",
-            "expression"
+            "print"
         ],
         [
             "Token",
@@ -970,7 +926,35 @@
         ],
         [
             "Expression",
-            "EqualEqual"
+            "menor"
+        ],
+        [
+            "Expression",
+            "Else"
+        ],
+        [
+            "Expression",
+            "result"
+        ],
+        [
+            "Expression",
+            "ITE"
+        ],
+        [
+            "Expression",
+            "Mult"
+        ],
+        [
+            "Expression",
+            "MenorEqual"
+        ],
+        [
+            "Token",
+            "id"
+        ],
+        [
+            "Function",
+            "func"
         ],
         [
             "Token",
@@ -978,59 +962,35 @@
         ],
         [
             "Expression",
+            "Mod"
+        ],
+        [
+            "Expression",
+            "EqualEqual"
+        ],
+        [
+            "Expression",
             "If"
         ],
         [
-            "List",
-            "param"
+            "int",
+            "i"
         ],
         [
             "Expression",
-            "C"
-        ],
-        [
-            "Expression",
-            "print"
-        ],
-        [
-            "Expression",
-            "Add"
-        ],
-        [
-            "Expression",
-            "Let_in"
-        ],
-        [
-            "Expression",
-            "ITE"
-        ],
-        [
-            "Token",
-            "id"
-        ],
-        [
-            "Expression",
-            "menor"
+            "Them"
         ],
         [
             "List",
             "result"
         ],
         [
-            "Expression",
-            "Mod"
-        ],
-        [
-            "Function",
-            "func"
+            "var",
+            "expression"
         ],
         [
             "Expression",
-            "X"
-        ],
-        [
-            "int",
-            "i"
+            "Add"
         ],
         [
             "Expression",
@@ -1042,15 +1002,39 @@
         ],
         [
             "Expression",
-            "distint"
-        ],
-        [
-            "Expression",
-            "Mult"
+            "func"
         ],
         [
             "Expression",
             "Y"
+        ],
+        [
+            "Expression",
+            "Sub"
+        ],
+        [
+            "Expression",
+            "C"
+        ],
+        [
+            "Expression",
+            "instrutcions"
+        ],
+        [
+            "Expression",
+            "T"
+        ],
+        [
+            "Expression",
+            "Pow"
+        ],
+        [
+            "Expression",
+            "Let_in"
+        ],
+        [
+            "Expression",
+            "asig"
         ],
         [
             "Expression",
@@ -1062,7 +1046,23 @@
         ],
         [
             "Expression",
-            "Else"
+            "F"
+        ],
+        [
+            "Expression",
+            "Div"
+        ],
+        [
+            "Expression",
+            "distint"
+        ],
+        [
+            "Expression",
+            "Not"
+        ],
+        [
+            "List",
+            "param"
         ],
         [
             "bool",
@@ -1070,11 +1070,11 @@
         ],
         [
             "Dictionary",
-            "dicc"
+            "Arguments"
         ],
         [
             "Dictionary",
-            "Arguments"
+            "dicc"
         ],
         [
             "string",
@@ -1085,12 +1085,12 @@
             "index"
         ],
         [
-            "string",
-            "result"
-        ],
-        [
             "Scope",
             "L"
+        ],
+        [
+            "string",
+            "result"
         ],
         [
             "Scope",
@@ -1113,53 +1113,53 @@
             "Left"
         ],
         [
-            "bool",
-            "Right"
-        ],
-        [
             "var",
             "Left"
+        ],
+        [
+            "bool",
+            "Right"
         ]
     ],
     "method_names": [
         "Main",
+        "AddToken",
         "Imprimir",
         "Analizar",
-        "AddToken",
         "GetValue",
+        "ParserID",
+        "ParserAnd_Or",
+        "ParserH",
+        "ParserB",
+        "ParserI",
         "ParserD",
         "ParserComparer",
-        "ParserAnd_Or",
-        "ParserB",
-        "ParserY",
-        "ParserH",
-        "ParserFactor",
-        "ParserI",
-        "ParserExpression",
         "ParserTerm",
-        "ParserCode",
-        "ParserID",
+        "ParserFactor",
+        "ParserExpression",
+        "ParserY",
         "ParserX",
+        "ParserCode",
         "Scope",
+        "Evaluate",
+        "CheckSemantic",
+        "Scope",
+        "Evaluate",
+        "CheckSemantic",
+        "Scope",
+        "Evaluate",
+        "CheckSemantic",
+        "Scope",
+        "Evaluate",
         "CheckSemantic",
         "Evaluate",
-        "Scope",
-        "CheckSemantic",
         "Evaluate",
         "Scope",
-        "CheckSemantic",
         "Evaluate",
+        "CheckSemantic",
         "Scope",
+        "Evaluate",
         "CheckSemantic",
-        "Evaluate",
-        "Evaluate",
-        "Evaluate",
-        "Scope",
-        "CheckSemantic",
-        "Evaluate",
-        "Scope",
-        "CheckSemantic",
-        "Evaluate",
         "Main"
     ],
     "method_return_types": [
@@ -1168,43 +1168,23 @@
             "void"
         ],
         [
-            "Imprimir",
-            "void"
+            "Analizar",
+            "List"
         ],
         [
             "AddToken",
             "void"
         ],
         [
-            "Analizar",
-            "List"
+            "Imprimir",
+            "void"
         ],
         [
             "GetValue",
             "string"
         ],
         [
-            "ParserD",
-            "Expression"
-        ],
-        [
-            "ParserB",
-            "Expression"
-        ],
-        [
-            "ParserAnd_Or",
-            "Expression"
-        ],
-        [
-            "ParserI",
-            "Expression"
-        ],
-        [
-            "ParserFactor",
-            "Expression"
-        ],
-        [
-            "ParserY",
+            "ParserCode",
             "Expression"
         ],
         [
@@ -1212,7 +1192,19 @@
             "List"
         ],
         [
-            "ParserCode",
+            "ParserD",
+            "Expression"
+        ],
+        [
+            "ParserY",
+            "Expression"
+        ],
+        [
+            "ParserI",
+            "Expression"
+        ],
+        [
+            "ParserB",
             "Expression"
         ],
         [
@@ -1220,7 +1212,7 @@
             "List"
         ],
         [
-            "ParserComparer",
+            "ParserFactor",
             "Expression"
         ],
         [
@@ -1232,52 +1224,16 @@
             "Expression"
         ],
         [
+            "ParserAnd_Or",
+            "Expression"
+        ],
+        [
             "ParserTerm",
             "Expression"
         ],
         [
-            "Scope",
-            "void"
-        ],
-        [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "CheckSemantic",
-            "bool"
-        ],
-        [
-            "Scope",
-            "void"
-        ],
-        [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "CheckSemantic",
-            "bool"
-        ],
-        [
-            "Scope",
-            "void"
-        ],
-        [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "CheckSemantic",
-            "bool"
-        ],
-        [
-            "Scope",
-            "void"
-        ],
-        [
-            "Evaluate",
-            "string"
+            "ParserComparer",
+            "Expression"
         ],
         [
             "CheckSemantic",
@@ -1285,7 +1241,39 @@
         ],
         [
             "Evaluate",
+            "string"
+        ],
+        [
+            "Scope",
             "void"
+        ],
+        [
+            "CheckSemantic",
+            "bool"
+        ],
+        [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "Scope",
+            "void"
+        ],
+        [
+            "CheckSemantic",
+            "bool"
+        ],
+        [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "Scope",
+            "void"
+        ],
+        [
+            "CheckSemantic",
+            "bool"
         ],
         [
             "Evaluate",
@@ -1297,14 +1285,6 @@
         ],
         [
             "Evaluate",
-            "string"
-        ],
-        [
-            "CheckSemantic",
-            "bool"
-        ],
-        [
-            "Scope",
             "void"
         ],
         [
@@ -1314,6 +1294,26 @@
         [
             "CheckSemantic",
             "bool"
+        ],
+        [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "Scope",
+            "void"
+        ],
+        [
+            "CheckSemantic",
+            "bool"
+        ],
+        [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "Scope",
+            "void"
         ],
         [
             "Main",
@@ -1325,91 +1325,91 @@
         "Context1",
         "Program",
         "Tokenizar",
-        "EOFToken",
-        "OpenLToken",
-        "SenToken",
-        "TanToken",
-        "InToken",
-        "OpenPToken",
-        "ModToken",
-        "SquartToken",
-        "CloseLToken",
-        "StarToken",
-        "TrueToken",
-        "FalseToken",
-        "IdToken",
-        "OrToken",
-        "MayorToken",
-        "EndToken",
-        "PointEqualToken",
-        "AddToken",
-        "LetToken",
-        "ThemToken",
-        "ComillaToken",
-        "MenorEqualToken",
-        "VarToken",
-        "PowToken",
-        "ClosePToken",
-        "MayorEqualToken",
         "AndToken",
         "ImplicToken",
-        "EqualToken",
-        "PiToken",
-        "ExcToken",
-        "ConcatToken",
-        "IfToken",
-        "ComaToken",
-        "MenorToken",
+        "MayorToken",
+        "TanToken",
         "NotToken",
+        "ClosePToken",
+        "FalseToken",
+        "LetToken",
         "SubToken",
+        "PrintToken",
+        "StarToken",
+        "OpenLToken",
+        "Token",
+        "IdToken",
+        "TrueToken",
+        "SquartToken",
+        "LogToken",
+        "PointEqualToken",
+        "ExcToken",
         "EqualEqualToken",
+        "VarToken",
+        "ComillaToken",
+        "MenorToken",
+        "IfToken",
         "NumberToken",
         "FunctionToken",
-        "DistintToken",
-        "Token",
-        "LogToken",
-        "PrintToken",
-        "DivToken",
-        "ElseToken",
-        "CosToken",
+        "EqualToken",
+        "SenToken",
         "TextToken",
+        "OpenPToken",
+        "CosToken",
+        "AddToken",
+        "PowToken",
+        "DistintToken",
+        "PiToken",
+        "MenorEqualToken",
+        "ElseToken",
+        "ThemToken",
+        "ModToken",
+        "ConcatToken",
+        "EndToken",
+        "EOFToken",
+        "DivToken",
+        "CloseLToken",
+        "InToken",
+        "OrToken",
+        "ComaToken",
+        "MayorEqualToken",
         "Context",
         "Parser",
         "BinaryExpression",
-        "Tan",
         "Squart",
         "Sen",
         "Log",
         "Cos",
         "UnaryExpression",
-        "Function",
-        "FuncCall",
+        "Tan",
         "Print",
+        "FuncCall",
+        "Function",
         "Expression",
-        "AssingExpression",
         "LetInExpression",
+        "AssingExpression",
         "AtomExpression",
-        "Number",
         "Text",
+        "Number",
         "If_them_else",
-        "MayorExpression",
-        "MenorExpression",
-        "MenorEqualExpression",
+        "EqualExpression",
         "NotExpresion",
         "DistintExpression",
-        "OrExpression",
-        "MayorEqualExpression",
-        "EqualExpression",
         "AndExpression",
         "ConditionalExpression",
-        "Mod",
-        "Div",
+        "MayorEqualExpression",
+        "MayorExpression",
+        "MenorEqualExpression",
+        "MenorExpression",
+        "OrExpression",
         "Pow",
-        "Sub",
-        "Concat",
         "Start",
-        "NoConditionalExpression",
         "Add",
+        "Sub",
+        "Div",
+        "Mod",
+        "Concat",
+        "NoConditionalExpression",
         "Program",
         "Errors"
     ],
@@ -1423,7 +1423,6 @@
         "TerminalNodeImpl": 12416,
         "Qualified_identifierContext": 18,
         "IdentifierContext": 3963,
-        "Namespace_bodyContext": 18,
         "Type_declarationContext": 107,
         "All_member_modifiersContext": 376,
         "All_member_modifierContext": 528,
@@ -1514,6 +1513,7 @@
         "Local_function_bodyContext": 3,
         "ParenthesisExpressionsContext": 3,
         "ReturnStatementContext": 126,
+        "Namespace_bodyContext": 1,
         "Enum_definitionContext": 4,
         "Enum_bodyContext": 4,
         "Enum_member_declarationContext": 63,

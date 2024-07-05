@@ -1,5 +1,5 @@
 {
-    "total_nodes": 28862,
+    "total_nodes": 28855,
     "max_depth": 760,
     "number_of_variables": 102,
     "number_of_constants": 0,
@@ -438,6 +438,10 @@
     ],
     "variable_names": [
         [
+            "string",
+            "t"
+        ],
+        [
             "int",
             "cost"
         ],
@@ -447,7 +451,15 @@
         ],
         [
             "string",
-            "t"
+            "suggestion"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Dictionary",
+            "text"
         ],
         [
             "int",
@@ -455,11 +467,7 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "string",
-            "suggestion"
+            "lev"
         ],
         [
             "int",
@@ -468,10 +476,6 @@
         [
             "string",
             "snippet"
-        ],
-        [
-            "int",
-            "lev"
         ],
         [
             "int",
@@ -479,79 +483,51 @@
         ],
         [
             "Dictionary",
-            "text"
-        ],
-        [
-            "string",
-            "term"
-        ],
-        [
-            "string",
-            "line"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "StreamReader",
-            "sr"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "Dictionary",
-            "documentText"
-        ],
-        [
-            "Dictionary",
             "terms"
-        ],
-        [
-            "Dictionary",
-            "text"
         ],
         [
             "List",
             "terms"
         ],
         [
-            "DirectoryInfo",
-            "directory"
-        ],
-        [
-            "Dictionary",
-            "searchItems"
-        ],
-        [
-            "SearchItem",
-            "result"
+            "int",
+            "count"
         ],
         [
             "int",
             "i"
         ],
         [
+            "Dictionary",
+            "text"
+        ],
+        [
+            "Dictionary",
+            "documentText"
+        ],
+        [
+            "StreamReader",
+            "sr"
+        ],
+        [
             "string",
-            "name"
+            "line"
+        ],
+        [
+            "string",
+            "term"
+        ],
+        [
+            "Dictionary",
+            "searchItems"
         ],
         [
             "int",
             "count"
         ],
         [
-            "string",
-            "snippet"
-        ],
-        [
-            "Vector",
-            "simCos"
-        ],
-        [
             "SearchItem",
-            "items"
+            "result"
         ],
         [
             "float",
@@ -559,11 +535,31 @@
         ],
         [
             "int",
-            "df"
+            "i"
         ],
         [
-            "float",
-            "count"
+            "Vector",
+            "simCos"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "DirectoryInfo",
+            "directory"
+        ],
+        [
+            "Matrix",
+            "D"
         ],
         [
             "int",
@@ -571,19 +567,15 @@
         ],
         [
             "int",
+            "df"
+        ],
+        [
+            "int",
             "j"
         ],
         [
-            "Matrix",
-            "D"
-        ],
-        [
-            "Matrix",
-            "result"
-        ],
-        [
-            "SquareMatrix",
-            "menor"
+            "float",
+            "count"
         ],
         [
             "Matrix",
@@ -591,19 +583,35 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "k"
         ],
         [
+            "SquareMatrix",
+            "inverse"
+        ],
+        [
+            "SquareMatrix",
+            "menor"
+        ],
+        [
             "int",
-            "ni"
+            "i"
+        ],
+        [
+            "Matrix",
+            "transpose"
         ],
         [
             "int",
             "nj"
+        ],
+        [
+            "string",
+            "str"
+        ],
+        [
+            "int",
+            "ni"
         ],
         [
             "SquareMatrix",
@@ -615,27 +623,23 @@
         ],
         [
             "Matrix",
-            "transpose"
+            "result"
         ],
         [
             "float",
             "det"
         ],
         [
-            "string",
-            "str"
-        ],
-        [
-            "SquareMatrix",
-            "inverse"
-        ],
-        [
-            "int",
-            "i"
+            "Dictionary",
+            "foundInText"
         ],
         [
             "int",
             "k"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "float",
@@ -650,90 +654,78 @@
             "minDis"
         ],
         [
-            "Dictionary",
-            "foundInText"
-        ],
-        [
-            "Matrix",
-            "result"
+            "int",
+            "i"
         ],
         [
             "Vector",
             "dj"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
             "Vector",
             "simCos"
+        ],
+        [
+            "float",
+            "result"
         ],
         [
             "int",
             "j"
         ],
         [
-            "float",
+            "Matrix",
             "result"
         ]
     ],
     "method_names": [
         "Items",
-        "CreateSnippet",
-        "Suggestion",
-        "FindMostSimilar",
         "LevenshteinDistance",
+        "Suggestion",
         "Snippet",
+        "FindMostSimilar",
+        "CreateSnippet",
+        "DocumentText",
+        "GetTerms",
         "GetAllTerms",
         "AddChar",
-        "DocumentText",
-        "GetTerm",
         "Text",
-        "GetTerms",
-        "QueryTerms",
-        "LoadCache",
+        "GetTerm",
         "Q",
-        "Items",
+        "QueryTerms",
         "CalculateScore",
+        "LoadCache",
+        "Items",
         "Query",
         "TF_IDF",
         "DF",
-        "Sum",
-        "Cofactor",
-        "Menor",
-        "MulEsc",
-        "CofactorMatrix",
-        "Transpose",
-        "Mul",
         "ToString",
-        "Inverse",
+        "Transpose",
+        "Menor",
+        "CofactorMatrix",
+        "Sum",
         "Sub",
-        "FindRelatedTerm",
-        "CheckOperators",
-        "CheckBannedTerms",
-        "CheckRelatedTerms",
-        "FindOperators",
-        "FoundInText",
-        "FindDistance",
-        "RegisterOperator",
-        "SimCos",
+        "Cofactor",
+        "MulEsc",
+        "Inverse",
         "Mul",
+        "FindOperators",
+        "CheckOperators",
+        "FindRelatedTerm",
+        "FoundInText",
+        "RegisterOperator",
+        "FindDistance",
+        "CheckRelatedTerms",
+        "CheckBannedTerms",
         "MulM",
-        "Norm"
+        "SimCos",
+        "Norm",
+        "Mul"
     ],
     "method_return_types": [
         [
             "Items",
             "IEnumerable"
-        ],
-        [
-            "LevenshteinDistance",
-            "int"
-        ],
-        [
-            "Suggestion",
-            "string"
         ],
         [
             "CreateSnippet",
@@ -744,12 +736,24 @@
             "string"
         ],
         [
+            "LevenshteinDistance",
+            "int"
+        ],
+        [
             "Snippet",
+            "string"
+        ],
+        [
+            "Suggestion",
             "string"
         ],
         [
             "AddChar",
             "string"
+        ],
+        [
+            "Text",
+            "Dictionary"
         ],
         [
             "GetTerm",
@@ -760,32 +764,12 @@
             "List"
         ],
         [
-            "Text",
+            "DocumentText",
             "Dictionary"
         ],
         [
             "GetAllTerms",
             "Dictionary"
-        ],
-        [
-            "DocumentText",
-            "Dictionary"
-        ],
-        [
-            "QueryTerms",
-            "void"
-        ],
-        [
-            "LoadCache",
-            "void"
-        ],
-        [
-            "CalculateScore",
-            "Dictionary"
-        ],
-        [
-            "Items",
-            "SearchItem"
         ],
         [
             "Q",
@@ -796,19 +780,51 @@
             "SearchResult"
         ],
         [
-            "TF_IDF",
-            "Matrix"
+            "QueryTerms",
+            "void"
+        ],
+        [
+            "Items",
+            "SearchItem"
+        ],
+        [
+            "LoadCache",
+            "void"
+        ],
+        [
+            "CalculateScore",
+            "Dictionary"
         ],
         [
             "DF",
             "int"
         ],
         [
-            "Transpose",
+            "TF_IDF",
             "Matrix"
         ],
         [
             "Mul",
+            "Matrix"
+        ],
+        [
+            "CofactorMatrix",
+            "SquareMatrix"
+        ],
+        [
+            "Inverse",
+            "SquareMatrix"
+        ],
+        [
+            "Menor",
+            "float"
+        ],
+        [
+            "MulEsc",
+            "Matrix"
+        ],
+        [
+            "Sub",
             "Matrix"
         ],
         [
@@ -820,40 +836,20 @@
             "Matrix"
         ],
         [
-            "CofactorMatrix",
-            "SquareMatrix"
-        ],
-        [
-            "Sub",
+            "Transpose",
             "Matrix"
-        ],
-        [
-            "Menor",
-            "float"
         ],
         [
             "ToString",
             "string"
         ],
         [
-            "MulEsc",
-            "Matrix"
-        ],
-        [
-            "Inverse",
-            "SquareMatrix"
-        ],
-        [
-            "FindRelatedTerm",
-            "string"
-        ],
-        [
-            "CheckRelatedTerms",
+            "CheckBannedTerms",
             "bool"
         ],
         [
-            "FindDistance",
-            "float"
+            "FindOperators",
+            "void"
         ],
         [
             "RegisterOperator",
@@ -864,16 +860,24 @@
             "float"
         ],
         [
+            "FindRelatedTerm",
+            "string"
+        ],
+        [
+            "CheckRelatedTerms",
+            "bool"
+        ],
+        [
             "FoundInText",
             "Dictionary"
         ],
         [
-            "FindOperators",
-            "void"
+            "FindDistance",
+            "float"
         ],
         [
-            "CheckBannedTerms",
-            "bool"
+            "SimCos",
+            "Vector"
         ],
         [
             "MulM",
@@ -882,10 +886,6 @@
         [
             "Norm",
             "float"
-        ],
-        [
-            "SimCos",
-            "Vector"
         ],
         [
             "Mul",
@@ -899,8 +899,8 @@
         "Terms",
         "Moogle",
         "MathTools",
-        "Matrix",
         "SquareMatrix",
+        "Matrix",
         "Operators",
         "Vector"
     ],
@@ -918,7 +918,6 @@
         "Namespace_member_declarationContext": 17,
         "Namespace_declarationContext": 7,
         "Qualified_identifierContext": 7,
-        "Namespace_bodyContext": 7,
         "Type_declarationContext": 10,
         "All_member_modifiersContext": 84,
         "All_member_modifierContext": 125,

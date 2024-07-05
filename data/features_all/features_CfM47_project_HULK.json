@@ -1,5 +1,5 @@
 {
-    "total_nodes": 52832,
+    "total_nodes": 52802,
     "max_depth": 2266,
     "number_of_variables": 67,
     "number_of_constants": 1,
@@ -488,24 +488,24 @@
     ],
     "variable_names": [
         [
-            "HulkTypes",
-            "ifType"
+            "bool",
+            "condition"
         ],
         [
             "HulkTypes",
             "elseType"
         ],
         [
-            "bool",
-            "condition"
-        ],
-        [
-            "var",
-            "leftType"
+            "HulkTypes",
+            "ifType"
         ],
         [
             "var",
             "rightType"
+        ],
+        [
+            "var",
+            "leftType"
         ],
         [
             "HulkTypes",
@@ -516,12 +516,16 @@
             "enteredType"
         ],
         [
-            "int",
-            "start"
+            "string",
+            "tokens"
         ],
         [
-            "MatchCollection",
-            "collection"
+            "int",
+            "result"
+        ],
+        [
+            "string",
+            "instruction"
         ],
         [
             "List",
@@ -530,6 +534,10 @@
         [
             "int",
             "i"
+        ],
+        [
+            "MatchCollection",
+            "collection"
         ],
         [
             "int",
@@ -541,19 +549,11 @@
         ],
         [
             "int",
-            "result"
-        ],
-        [
-            "string",
-            "instruction"
+            "start"
         ],
         [
             "Regex",
             "pattern"
-        ],
-        [
-            "string",
-            "tokens"
         ],
         [
             "Random",
@@ -564,28 +564,24 @@
             "Instructions"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
             "string",
             "instruction"
-        ],
-        [
-            "HulkExpression",
-            "exp"
         ],
         [
             "string",
             "s"
         ],
         [
-            "string",
-            "messageEnd"
+            "HulkExpression",
+            "exp"
         ],
         [
-            "HulkExpression",
-            "right"
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "messageEnd"
         ],
         [
             "List",
@@ -596,16 +592,20 @@
             "var"
         ],
         [
-            "List",
-            "left"
-        ],
-        [
             "int",
             "i"
         ],
         [
+            "List",
+            "left"
+        ],
+        [
             "HulkExpression",
             "expr"
+        ],
+        [
+            "HulkExpression",
+            "right"
         ],
         [
             "HulkExpression",
@@ -628,6 +628,14 @@
             "mainWindow"
         ],
         [
+            "var",
+            "funcNames"
+        ],
+        [
+            "Dictionary",
+            "functions"
+        ],
+        [
             "int",
             "i"
         ],
@@ -637,19 +645,11 @@
         ],
         [
             "string",
-            "args"
-        ],
-        [
-            "var",
-            "funcNames"
-        ],
-        [
-            "string",
             "argument"
         ],
         [
-            "Dictionary",
-            "functions"
+            "string",
+            "args"
         ],
         [
             "System",
@@ -668,24 +668,8 @@
             "builder"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "var",
-            "lastFunc"
-        ],
-        [
-            "string",
-            "args"
-        ],
-        [
             "var",
             "funcNames"
-        ],
-        [
-            "string",
-            "argument"
         ],
         [
             "Dictionary",
@@ -701,6 +685,10 @@
         ],
         [
             "string",
+            "argument"
+        ],
+        [
+            "string",
             "args"
         ],
         [
@@ -708,12 +696,24 @@
             "funcNames"
         ],
         [
+            "Dictionary",
+            "functions"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "lastFunc"
+        ],
+        [
             "string",
             "argument"
         ],
         [
-            "Dictionary",
-            "functions"
+            "string",
+            "args"
         ],
         [
             "MobileMainViewModel",
@@ -725,36 +725,36 @@
         ]
     ],
     "method_names": [
-        "CheckType",
         "GetValue",
         "Result",
         "CheckType",
         "GetValue",
-        "CheckValue",
-        "CheckArgs",
+        "CheckType",
         "GetValue",
+        "CheckArgs",
+        "CheckValue",
         "CheckType",
         "GetNameLimit",
-        "GetCommaSeparatedTokens",
         "GoToPreviousParenthesis",
         "GetInstructions",
-        "GetTokens",
+        "GetCommaSeparatedTokens",
         "GoToNextParenthesis",
-        "CheckType",
+        "GetTokens",
         "GetValue",
+        "CheckType",
         "Evaluate",
-        "Compile",
         "Clear",
-        "ParseInner",
-        "Parse",
+        "Compile",
         "TryAsignment",
         "ParseInternal",
-        "IsCorrectName",
+        "ParseInner",
+        "Parse",
         "AllCorrectNames",
+        "IsCorrectName",
         "Main",
         "pictureBox1_Click",
-        "PrintOutput",
         "GetLastFunctionName",
+        "PrintOutput",
         "Run_Click",
         "InitializeComponent",
         "Dispose",
@@ -763,10 +763,10 @@
         "Dispose",
         "CreateMauiApp",
         "OnInputEntryCompleted",
-        "PrintOutput",
         "GetLastFunctionName",
         "PrintOutput",
         "GetLastFunctionName",
+        "PrintOutput",
         "OnInputEntryCompleted",
         "Button_Clicked",
         "OnInputEntryCompleted",
@@ -780,6 +780,10 @@
         "Main"
     ],
     "method_return_types": [
+        [
+            "GetValue",
+            "object"
+        ],
         [
             "CheckType",
             "HulkTypes"
@@ -797,71 +801,67 @@
             "HulkTypes"
         ],
         [
-            "GetValue",
-            "object"
-        ],
-        [
-            "CheckType",
-            "HulkTypes"
+            "CheckValue",
+            "void"
         ],
         [
             "CheckArgs",
             "void"
         ],
         [
-            "CheckValue",
-            "void"
-        ],
-        [
             "GetValue",
             "object"
-        ],
-        [
-            "GetCommaSeparatedTokens",
-            "List"
-        ],
-        [
-            "GoToPreviousParenthesis",
-            "int"
-        ],
-        [
-            "GetInstructions",
-            "List"
-        ],
-        [
-            "GetNameLimit",
-            "int"
-        ],
-        [
-            "GoToNextParenthesis",
-            "int"
-        ],
-        [
-            "GetTokens",
-            "string"
         ],
         [
             "CheckType",
             "HulkTypes"
         ],
         [
-            "Evaluate",
-            "object"
+            "GetTokens",
+            "string"
+        ],
+        [
+            "GetCommaSeparatedTokens",
+            "List"
+        ],
+        [
+            "GetInstructions",
+            "List"
+        ],
+        [
+            "GoToNextParenthesis",
+            "int"
+        ],
+        [
+            "GoToPreviousParenthesis",
+            "int"
+        ],
+        [
+            "GetNameLimit",
+            "int"
         ],
         [
             "GetValue",
             "object"
         ],
         [
-            "Clear",
-            "void"
+            "Evaluate",
+            "object"
+        ],
+        [
+            "CheckType",
+            "HulkTypes"
         ],
         [
             "Compile",
             "void"
         ],
         [
-            "ParseInternal",
+            "Clear",
+            "void"
+        ],
+        [
+            "ParseInner",
             "HulkExpression"
         ],
         [
@@ -869,7 +869,7 @@
             "HulkExpression"
         ],
         [
-            "ParseInner",
+            "ParseInternal",
             "HulkExpression"
         ],
         [
@@ -893,6 +893,10 @@
             "void"
         ],
         [
+            "PrintOutput",
+            "void"
+        ],
+        [
             "Run_Click",
             "void"
         ],
@@ -901,15 +905,11 @@
             "string"
         ],
         [
-            "PrintOutput",
+            "InitializeComponent",
             "void"
         ],
         [
             "Dispose",
-            "void"
-        ],
-        [
-            "InitializeComponent",
             "void"
         ],
         [
@@ -917,11 +917,11 @@
             "void"
         ],
         [
-            "Dispose",
+            "InitializeComponent",
             "void"
         ],
         [
-            "InitializeComponent",
+            "Dispose",
             "void"
         ],
         [
@@ -933,6 +933,10 @@
             "void"
         ],
         [
+            "PrintOutput",
+            "void"
+        ],
+        [
             "GetLastFunctionName",
             "string"
         ],
@@ -945,15 +949,11 @@
             "string"
         ],
         [
-            "PrintOutput",
+            "Button_Clicked",
             "void"
         ],
         [
             "OnInputEntryCompleted",
-            "void"
-        ],
-        [
-            "Button_Clicked",
             "void"
         ],
         [
@@ -998,20 +998,20 @@
         "IfElseStatement",
         "LetInStatement",
         "BinaryFunction",
+        "Asignment",
         "FunctionCall",
         "Variable",
         "PrintFunc",
-        "Asignment",
         "Tokenizer",
-        "Rand",
+        "Negation",
         "ERaised",
+        "SquaredRoot",
         "UnaryFunction",
         "Cosine",
-        "Negative",
-        "SquaredRoot",
-        "Sine",
-        "Negation",
         "Positive",
+        "Sine",
+        "Negative",
+        "Rand",
         "Kompiler",
         "InstrucctionError",
         "HulkException",
@@ -1061,7 +1061,6 @@
         "TerminalNodeImpl": 8700,
         "Qualified_identifierContext": 34,
         "IdentifierContext": 2510,
-        "Namespace_bodyContext": 34,
         "Type_declarationContext": 249,
         "All_member_modifiersContext": 331,
         "All_member_modifierContext": 399,
@@ -1198,6 +1197,7 @@
         "Constant_declaratorContext": 1,
         "WhileStatementContext": 1,
         "ThisReferenceExpressionContext": 166,
+        "Namespace_bodyContext": 4,
         "BaseAccessExpressionContext": 2,
         "Unbound_type_nameContext": 6,
         "Qualified_alias_memberContext": 14,
@@ -1205,5 +1205,5 @@
     },
     "project_name": "CfM47_project_HULK",
     "label": "original",
-    "project_type": "hulk"
+    "project_type": "moogle"
 }

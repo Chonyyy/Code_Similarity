@@ -1,5 +1,5 @@
 {
-    "total_nodes": 13995,
+    "total_nodes": 13992,
     "max_depth": 573,
     "number_of_variables": 55,
     "number_of_constants": 0,
@@ -75,24 +75,16 @@
     ],
     "variable_names": [
         [
+            "string",
+            "word"
+        ],
+        [
+            "double",
+            "TF"
+        ],
+        [
             "Dictionary",
             "TF"
-        ],
-        [
-            "double",
-            "variable1"
-        ],
-        [
-            "string",
-            "palabras"
-        ],
-        [
-            "double",
-            "TF"
-        ],
-        [
-            "string",
-            "texto"
         ],
         [
             "double",
@@ -107,68 +99,60 @@
             "TFIDF"
         ],
         [
-            "double",
-            "caracteres"
+            "string",
+            "texto"
         ],
         [
-            "string",
-            "word"
+            "double",
+            "caracteres"
         ],
         [
             "Dictionary",
             "DictionaryTFIDF"
         ],
         [
-            "Query",
-            "query2"
-        ],
-        [
-            "SearchItem",
-            "items"
-        ],
-        [
-            "SearchItem",
-            "Item"
-        ],
-        [
-            "SimilitudCoseno",
-            "similitud"
-        ],
-        [
             "string",
-            "Proyecto"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "List"
-        ],
-        [
-            "string",
-            "words"
-        ],
-        [
-            "string",
-            "text"
-        ],
-        [
-            "double",
-            "TotalDocumentos"
+            "palabras"
         ],
         [
             "double",
             "variable1"
         ],
         [
-            "double",
-            "TF"
+            "SearchItem",
+            "items"
         ],
         [
-            "double",
-            "IDF"
+            "SimilitudCoseno",
+            "similitud"
+        ],
+        [
+            "SearchItem",
+            "Item"
+        ],
+        [
+            "Query",
+            "query2"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "Proyecto"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "List",
+            "List"
         ],
         [
             "Dictionary",
@@ -176,11 +160,11 @@
         ],
         [
             "double",
-            "TFIDF"
+            "IDF"
         ],
         [
-            "Dictionary",
-            "QueryIDF"
+            "double",
+            "TFIDF"
         ],
         [
             "string",
@@ -188,11 +172,71 @@
         ],
         [
             "double",
-            "Score"
+            "TF"
         ],
         [
             "double",
-            "CosenoCalculateDouble"
+            "TotalDocumentos"
+        ],
+        [
+            "Dictionary",
+            "QueryIDF"
+        ],
+        [
+            "double",
+            "variable1"
+        ],
+        [
+            "string",
+            "TextoSeparado"
+        ],
+        [
+            "string",
+            "Texto"
+        ],
+        [
+            "int",
+            "end"
+        ],
+        [
+            "double",
+            "Cosenos"
+        ],
+        [
+            "string",
+            "Key"
+        ],
+        [
+            "int",
+            "start"
+        ],
+        [
+            "double",
+            "ValorTermino"
+        ],
+        [
+            "double",
+            "Score"
+        ],
+        [
+            "string",
+            "Titulo"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "string",
+            "Result"
+        ],
+        [
+            "List",
+            "DocumentosSim"
+        ],
+        [
+            "double",
+            "Value"
         ],
         [
             "double",
@@ -204,55 +248,19 @@
         ],
         [
             "double",
-            "TotalTFIDF"
+            "TotalTFIDFQuery"
+        ],
+        [
+            "double",
+            "TotalTFIDFDocumento"
         ],
         [
             "Dictionary",
             "TFIDFxPalabra"
         ],
         [
-            "string",
-            "Termino"
-        ],
-        [
-            "List",
-            "DocumentosSim"
-        ],
-        [
-            "string",
-            "Texto"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "string",
-            "Titulo"
-        ],
-        [
-            "string",
-            "Key"
-        ],
-        [
             "double",
-            "TotalTFIDFQuery"
-        ],
-        [
-            "int",
-            "start"
-        ],
-        [
-            "int",
-            "end"
-        ],
-        [
-            "double",
-            "ValorTermino"
-        ],
-        [
-            "string",
-            "TextoSeparado"
+            "CosenoCalculateDouble"
         ],
         [
             "double",
@@ -260,39 +268,31 @@
         ],
         [
             "double",
-            "Cosenos"
-        ],
-        [
-            "string",
-            "Result"
-        ],
-        [
-            "double",
             "value"
         ],
         [
             "double",
-            "Value"
+            "TotalTFIDF"
         ],
         [
-            "double",
-            "TotalTFIDFDocumento"
+            "string",
+            "Termino"
         ]
     ],
     "method_names": [
         "Items",
-        "CalculateIDf",
-        "CalculateTF",
         "CalculateTFIDF",
+        "CalculateTF",
+        "CalculateIDf",
         "Query",
         "InicializarTxt",
-        "InicializarDictionaryDocumentos",
-        "InicializarDictionaryPalabras",
         "CorrectorTexto",
-        "InicializarQuery",
+        "InicializarDictionaryPalabras",
+        "InicializarDictionaryDocumentos",
         "TFIDFQuery",
-        "Similitud",
+        "InicializarQuery",
         "Coseno",
+        "Similitud",
         "InicializarSnippet",
         "OrdenDocumentos"
     ],
@@ -306,11 +306,11 @@
             "void"
         ],
         [
-            "CalculateIDf",
+            "CalculateTF",
             "void"
         ],
         [
-            "CalculateTF",
+            "CalculateIDf",
             "void"
         ],
         [
@@ -318,19 +318,19 @@
             "SearchResult"
         ],
         [
-            "InicializarTxt",
-            "void"
-        ],
-        [
             "InicializarDictionaryPalabras",
             "void"
         ],
         [
-            "InicializarDictionaryDocumentos",
+            "InicializarTxt",
             "void"
         ],
         [
             "CorrectorTexto",
+            "void"
+        ],
+        [
+            "InicializarDictionaryDocumentos",
             "void"
         ],
         [
@@ -346,16 +346,16 @@
             "void"
         ],
         [
+            "InicializarSnippet",
+            "string"
+        ],
+        [
             "OrdenDocumentos",
             "void"
         ],
         [
             "Similitud",
             "void"
-        ],
-        [
-            "InicializarSnippet",
-            "string"
         ]
     ],
     "class_names": [
@@ -381,7 +381,6 @@
         "Namespace_member_declarationContext": 14,
         "Namespace_declarationContext": 7,
         "Qualified_identifierContext": 7,
-        "Namespace_bodyContext": 7,
         "Type_declarationContext": 7,
         "All_member_modifiersContext": 67,
         "All_member_modifierContext": 71,
@@ -455,6 +454,7 @@
         "Numeric_typeContext": 69,
         "Integral_typeContext": 12,
         "Floating_point_typeContext": 57,
+        "Namespace_bodyContext": 4,
         "Object_creation_expressionContext": 27,
         "Method_invocationContext": 72,
         "ForeachStatementContext": 21,

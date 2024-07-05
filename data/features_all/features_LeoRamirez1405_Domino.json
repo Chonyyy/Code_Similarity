@@ -1,5 +1,5 @@
 {
-    "total_nodes": 68778,
+    "total_nodes": 68747,
     "max_depth": 2439,
     "number_of_variables": 203,
     "number_of_constants": 0,
@@ -1650,20 +1650,16 @@
     ],
     "variable_names": [
         [
+            "(",
+            "jugada"
+        ],
+        [
             "int",
-            "cantFichasJugadorActual"
+            "posParaJugar"
         ],
         [
             "bool",
             "huboJugada"
-        ],
-        [
-            "Dictionary",
-            "argumentos"
-        ],
-        [
-            "(",
-            "jugada"
         ],
         [
             "List",
@@ -1671,7 +1667,11 @@
         ],
         [
             "int",
-            "posParaJugar"
+            "cantFichasJugadorActual"
+        ],
+        [
+            "Dictionary",
+            "argumentos"
         ],
         [
             "List",
@@ -1690,12 +1690,16 @@
             "random"
         ],
         [
-            "Random",
-            "r"
+            "int",
+            "i"
         ],
         [
             "int",
-            "i"
+            "j"
+        ],
+        [
+            "Random",
+            "r"
         ],
         [
             "var",
@@ -1703,11 +1707,15 @@
         ],
         [
             "int",
-            "j"
+            "posFicha"
+        ],
+        [
+            "Ficha",
+            "MejorFicha"
         ],
         [
             "int",
-            "actual"
+            "i"
         ],
         [
             "int",
@@ -1715,7 +1723,7 @@
         ],
         [
             "int",
-            "posFicha"
+            "actual"
         ],
         [
             "int",
@@ -1727,22 +1735,6 @@
         ],
         [
             "Ficha",
-            "MejorFicha"
-        ],
-        [
-            "Ficha",
-            "f"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "(",
-            "sol"
-        ],
-        [
-            "Ficha",
             "f"
         ],
         [
@@ -1750,20 +1742,20 @@
             "respuesta"
         ],
         [
-            "(",
-            "result"
-        ],
-        [
             "string",
             "trabajo"
         ],
         [
-            "List",
-            "posManoIzq"
+            "Ficha",
+            "f"
         ],
         [
-            "List",
-            "posiblesDerechas"
+            "(",
+            "result"
+        ],
+        [
+            "(",
+            "sol"
         ],
         [
             "int",
@@ -1771,23 +1763,19 @@
         ],
         [
             "List",
-            "posiblesIzquierdas"
+            "posiblesDerechas"
+        ],
+        [
+            "List",
+            "posManoIzq"
         ],
         [
             "List",
             "posManoDer"
         ],
         [
-            "int",
-            "aux"
-        ],
-        [
-            "Ficha",
-            "f"
-        ],
-        [
-            "int",
-            "num"
+            "List",
+            "posiblesIzquierdas"
         ],
         [
             "int",
@@ -1802,24 +1790,24 @@
             "f"
         ],
         [
-            "Random",
-            "r"
+            "int",
+            "aux"
         ],
         [
             "int",
             "num"
-        ],
-        [
-            "int",
-            "intentos"
         ],
         [
             "bool",
             "revisados"
         ],
         [
+            "int",
+            "intentos"
+        ],
+        [
             "Ficha",
-            "ficha"
+            "f"
         ],
         [
             "Random",
@@ -1828,10 +1816,6 @@
         [
             "int",
             "num"
-        ],
-        [
-            "int",
-            "suelto"
         ],
         [
             "int",
@@ -1846,140 +1830,12 @@
             "i"
         ],
         [
-            "List",
-            "fichas"
-        ],
-        [
-            "ParteFicha",
-            "uno"
-        ],
-        [
-            "ParteFicha",
-            "seis"
-        ],
-        [
-            "ParteFicha",
-            "cuatro"
-        ],
-        [
-            "List",
-            "partes"
+            "Ficha",
+            "ficha"
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "ParteFicha",
-            "dos"
-        ],
-        [
-            "ParteFicha",
-            "nueve"
-        ],
-        [
-            "ParteFicha",
-            "tres"
-        ],
-        [
-            "ParteFicha",
-            "cero"
-        ],
-        [
-            "ParteFicha",
-            "ocho"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "ParteFicha",
-            "cinco"
-        ],
-        [
-            "ParteFicha",
-            "siete"
-        ],
-        [
-            "List",
-            "fichas"
-        ],
-        [
-            "ParteFicha",
-            "uno"
-        ],
-        [
-            "ParteFicha",
-            "seis"
-        ],
-        [
-            "ParteFicha",
-            "cuatro"
-        ],
-        [
-            "List",
-            "partes"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "ParteFicha",
-            "dos"
-        ],
-        [
-            "ParteFicha",
-            "nueve"
-        ],
-        [
-            "ParteFicha",
-            "tres"
-        ],
-        [
-            "ParteFicha",
-            "cero"
-        ],
-        [
-            "ParteFicha",
-            "ocho"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "ParteFicha",
-            "cinco"
-        ],
-        [
-            "ParteFicha",
-            "siete"
-        ],
-        [
-            "int",
-            "totalPuntos"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "valorFichasPorJugador"
-        ],
-        [
-            "int",
-            "puntos"
-        ],
-        [
-            "Random",
-            "a"
-        ],
-        [
-            "int",
-            "i"
+            "suelto"
         ],
         [
             "Random",
@@ -1990,20 +1846,128 @@
             "num"
         ],
         [
-            "int",
-            "jugadorActual"
+            "ParteFicha",
+            "ocho"
         ],
         [
-            "bool",
-            "empate"
+            "ParteFicha",
+            "cinco"
+        ],
+        [
+            "ParteFicha",
+            "nueve"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "List",
-            "aux"
+            "partes"
+        ],
+        [
+            "ParteFicha",
+            "cero"
+        ],
+        [
+            "ParteFicha",
+            "tres"
+        ],
+        [
+            "ParteFicha",
+            "siete"
+        ],
+        [
+            "ParteFicha",
+            "seis"
+        ],
+        [
+            "List",
+            "fichas"
         ],
         [
             "int",
-            "jugadorGanador"
+            "j"
+        ],
+        [
+            "ParteFicha",
+            "uno"
+        ],
+        [
+            "ParteFicha",
+            "dos"
+        ],
+        [
+            "ParteFicha",
+            "cuatro"
+        ],
+        [
+            "ParteFicha",
+            "ocho"
+        ],
+        [
+            "ParteFicha",
+            "cinco"
+        ],
+        [
+            "ParteFicha",
+            "nueve"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "partes"
+        ],
+        [
+            "ParteFicha",
+            "cero"
+        ],
+        [
+            "ParteFicha",
+            "tres"
+        ],
+        [
+            "ParteFicha",
+            "siete"
+        ],
+        [
+            "ParteFicha",
+            "seis"
+        ],
+        [
+            "List",
+            "fichas"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "ParteFicha",
+            "uno"
+        ],
+        [
+            "ParteFicha",
+            "dos"
+        ],
+        [
+            "ParteFicha",
+            "cuatro"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "totalPuntos"
+        ],
+        [
+            "int",
+            "puntos"
         ],
         [
             "List",
@@ -2014,24 +1978,56 @@
             "i"
         ],
         [
+            "Random",
+            "a"
+        ],
+        [
             "int",
-            "min"
+            "num"
+        ],
+        [
+            "Random",
+            "r"
         ],
         [
             "int",
             "max"
         ],
         [
-            "List",
-            "fichasJugadores"
+            "int",
+            "i"
         ],
         [
             "(",
             "resultAux"
         ],
         [
-            "System",
-            "r"
+            "bool",
+            "empate"
+        ],
+        [
+            "int",
+            "jugadorGanador"
+        ],
+        [
+            "List",
+            "valorFichasPorJugador"
+        ],
+        [
+            "List",
+            "fichasJugadores"
+        ],
+        [
+            "int",
+            "min"
+        ],
+        [
+            "int",
+            "jugadorActual"
+        ],
+        [
+            "List",
+            "aux"
         ],
         [
             "Ficha",
@@ -2046,60 +2042,20 @@
             "pos"
         ],
         [
-            "List",
-            "result"
+            "System",
+            "r"
         ],
         [
             "int",
             "j"
         ],
         [
+            "List",
+            "result"
+        ],
+        [
             "int",
             "a"
-        ],
-        [
-            "IGanador",
-            "ganador"
-        ],
-        [
-            "int",
-            "totalDeFichasJuegoActual"
-        ],
-        [
-            "int",
-            "cantMaxFichas"
-        ],
-        [
-            "List",
-            "ListaJugadores"
-        ],
-        [
-            "int",
-            "noFichPorJug"
-        ],
-        [
-            "var",
-            "creando2"
-        ],
-        [
-            "int",
-            "noJugadores"
-        ],
-        [
-            "IReglas",
-            "reglas"
-        ],
-        [
-            "IContarPuntos",
-            "ContarPuntos"
-        ],
-        [
-            "string",
-            "resp2"
-        ],
-        [
-            "int",
-            "x3"
         ],
         [
             "int",
@@ -2107,31 +2063,51 @@
         ],
         [
             "int",
-            "x4"
+            "x3"
         ],
         [
-            "List",
-            "fichasJugadores"
+            "string",
+            "resp5"
         ],
         [
-            "ICalculaPuntos",
-            "calcula"
+            "var",
+            "creando5"
         ],
         [
-            "IValidarJugada",
-            "validarJugada"
+            "var",
+            "creando6"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "creando4"
         ],
         [
             "int",
             "x"
         ],
         [
-            "string",
-            "resp"
+            "List",
+            "jugadores"
         ],
         [
-            "var",
-            "creando5"
+            "int",
+            "noJug"
+        ],
+        [
+            "string",
+            "jugString"
+        ],
+        [
+            "bool",
+            "juegoEnEquipo"
+        ],
+        [
+            "ICalculaPuntos",
+            "calcula"
         ],
         [
             "string",
@@ -2143,43 +2119,11 @@
         ],
         [
             "int",
-            "noJug"
+            "noJugadores"
         ],
         [
-            "string",
-            "resp5"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "int",
-            "r"
-        ],
-        [
-            "string",
-            "resp6"
-        ],
-        [
-            "string",
-            "jugString"
-        ],
-        [
-            "int",
-            "respuesta"
-        ],
-        [
-            "int",
-            "x2"
-        ],
-        [
-            "var",
-            "creando"
-        ],
-        [
-            "List",
-            "jug"
+            "IContarPuntos",
+            "ContarPuntos"
         ],
         [
             "bool",
@@ -2187,85 +2131,142 @@
         ],
         [
             "int",
-            "cantJugadores"
+            "totalDeFichasJuegoActual"
         ],
         [
-            "var",
-            "creando3"
-        ],
-        [
-            "IProximoJugador",
-            "proximoJugador"
-        ],
-        [
-            "int",
-            "result"
-        ],
-        [
-            "List",
-            "jugadores"
-        ],
-        [
-            "string",
-            "resp3"
-        ],
-        [
-            "var",
-            "creando6"
+            "IValidarJugada",
+            "validarJugada"
         ],
         [
             "int",
             "x6"
         ],
         [
-            "IAccionDespuesDeLaJugada",
-            "adj"
+            "string",
+            "resp6"
+        ],
+        [
+            "List",
+            "fichasJugadores"
+        ],
+        [
+            "var",
+            "creando"
+        ],
+        [
+            "int",
+            "noFichPorJug"
+        ],
+        [
+            "IReglas",
+            "reglas"
         ],
         [
             "int",
             "FichasDomino"
         ],
         [
+            "int",
+            "respuesta"
+        ],
+        [
+            "string",
+            "resp3"
+        ],
+        [
+            "int",
+            "cantJugadores"
+        ],
+        [
+            "List",
+            "ListaJugadores"
+        ],
+        [
+            "int",
+            "x2"
+        ],
+        [
+            "List",
+            "jug"
+        ],
+        [
             "var",
-            "creando4"
+            "creando3"
+        ],
+        [
+            "string",
+            "resp"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "IProximoJugador",
+            "proximoJugador"
+        ],
+        [
+            "IAccionDespuesDeLaJugada",
+            "adj"
+        ],
+        [
+            "IGanador",
+            "ganador"
+        ],
+        [
+            "int",
+            "cantMaxFichas"
+        ],
+        [
+            "var",
+            "creando2"
+        ],
+        [
+            "int",
+            "r"
         ],
         [
             "int",
             "x5"
         ],
         [
-            "bool",
-            "juegoEnEquipo"
+            "int",
+            "result"
+        ],
+        [
+            "string",
+            "resp2"
         ],
         [
             "int",
-            "i"
+            "x4"
         ]
     ],
     "method_names": [
         "ToString",
         "Equals",
-        "TerminoPartida",
-        "GetJugadores",
+        "Jugar",
         "ImprimirMesa",
         "GetGanador",
-        "Jugar",
-        "Extremos",
+        "TerminoPartida",
+        "GetJugadores",
         "imprimirMesa",
-        "AddDer",
         "AddIzq",
-        "TerminoModo",
+        "Extremos",
+        "AddDer",
         "GetGanador",
-        "TerminoUnaPratida",
         "TerminoModo",
-        "GetGanador",
         "TerminoUnaPratida",
+        "GetGanador",
         "TerminoModo",
-        "GetGanador",
         "TerminoUnaPratida",
+        "GetGanador",
         "TerminoModo",
-        "GetGanador",
         "TerminoUnaPratida",
+        "GetGanador",
+        "TerminoModo",
+        "TerminoUnaPratida",
+        "Jugar",
         "Ordena",
         "Jugar",
         "Calcula",
@@ -2278,7 +2279,6 @@
         "juegaConMesa",
         "Jugar",
         "Jugar",
-        "Jugar",
         "maxFichas",
         "fichas",
         "maxFichas",
@@ -2286,51 +2286,51 @@
         "maxFichas",
         "fichas",
         "CantFichasTotalJuego",
-        "CantFichasPorJugador",
         "JugadorInicial",
+        "CantFichasPorJugador",
         "CalcularPuntosGanoJugador",
         "ContarPuntos",
         "JugadorInicial",
         "FinalizoPartida",
         "ProximoJugador",
         "Ganador",
-        "AccionDespuesDeLaJugada",
-        "CantFichasPorJugador",
         "Repartir",
+        "ProximoJugador",
+        "CantFichasPorJugador",
+        "AccionDespuesDeLaJugada",
+        "Ganador",
         "FinalizoPartida",
+        "ValidarJugada",
         "CantFichasTotalJuego",
         "CalcularPuntosGanoJugador",
         "ValidarJugada",
-        "Ganador",
+        "Repartir",
+        "AccionDespuesDeLaJugada",
+        "Repartir",
         "ProximoJugador",
-        "ValidarJugada",
-        "Repartir",
-        "AccionDespuesDeLaJugada",
-        "AccionDespuesDeLaJugada",
         "CantFichasPorJugador",
-        "Repartir",
+        "AccionDespuesDeLaJugada",
+        "Ganador",
         "FinalizoPartida",
+        "ValidarJugada",
         "CantFichasTotalJuego",
         "CalcularPuntosGanoJugador",
-        "ValidarJugada",
-        "Ganador",
-        "ProximoJugador",
-        "ComoEscogerGanador",
-        "CrearArbitro",
-        "Main",
-        "QueHacerDespuesdeCadaJugada",
-        "IniciaJugadores",
-        "AsignandoCantidadJugadores",
         "RellenarReglaPersonalizada",
-        "IniciaRegla",
-        "EscogiendoHastaQueDobleJugar",
-        "EscogiendoCantidadFichasPorJugador",
+        "Main",
+        "ComoEscogerGanador",
         "ComoCalcularlospuntosAsignadosAlGanador",
+        "ComoDeseaHacerLaEquivalenciaEntrePuntosYFichas",
+        "QueHacerDespuesdeCadaJugada",
+        "IniciaRegla",
         "ComoEscogerProximoJugador",
-        "ValidarJugada",
-        "CreandoModo",
         "ChequeandoJuegoEnEquipo",
-        "ComoDeseaHacerLaEquivalenciaEntrePuntosYFichas"
+        "ValidarJugada",
+        "EscogiendoHastaQueDobleJugar",
+        "CreandoModo",
+        "EscogiendoCantidadFichasPorJugador",
+        "AsignandoCantidadJugadores",
+        "IniciaJugadores",
+        "CrearArbitro"
     ],
     "method_return_types": [
         [
@@ -2342,35 +2342,27 @@
             "string"
         ],
         [
-            "ImprimirMesa",
-            "void"
-        ],
-        [
             "GetJugadores",
             "List"
-        ],
-        [
-            "TerminoPartida",
-            "bool"
-        ],
-        [
-            "GetGanador",
-            "("
         ],
         [
             "Jugar",
             "Ficha"
         ],
         [
-            "Extremos",
+            "GetGanador",
             "("
         ],
         [
-            "imprimirMesa",
+            "TerminoPartida",
+            "bool"
+        ],
+        [
+            "ImprimirMesa",
             "void"
         ],
         [
-            "AddDer",
+            "imprimirMesa",
             "void"
         ],
         [
@@ -2378,6 +2370,14 @@
             "void"
         ],
         [
+            "AddDer",
+            "void"
+        ],
+        [
+            "Extremos",
+            "("
+        ],
+        [
             "GetGanador",
             "("
         ],
@@ -2424,6 +2424,10 @@
         [
             "TerminoUnaPratida",
             "void"
+        ],
+        [
+            "Jugar",
+            "("
         ],
         [
             "Ordena",
@@ -2431,11 +2435,11 @@
         ],
         [
             "Jugar",
-            "("
+            "Ficha"
         ],
         [
             "Jugar",
-            "Ficha"
+            "("
         ],
         [
             "Calcula",
@@ -2450,6 +2454,10 @@
             "("
         ],
         [
+            "juegaConMesa",
+            "void"
+        ],
+        [
             "Jugar",
             "Ficha"
         ],
@@ -2458,10 +2466,6 @@
             "("
         ],
         [
-            "juegaConMesa",
-            "void"
-        ],
-        [
             "Jugar",
             "("
         ],
@@ -2472,10 +2476,6 @@
         [
             "juegaConMesa",
             "void"
-        ],
-        [
-            "Jugar",
-            "("
         ],
         [
             "Jugar",
@@ -2508,6 +2508,10 @@
         [
             "fichas",
             "List"
+        ],
+        [
+            "JugadorInicial",
+            "int"
         ],
         [
             "CantFichasPorJugador",
@@ -2515,10 +2519,6 @@
         ],
         [
             "CantFichasTotalJuego",
-            "int"
-        ],
-        [
-            "JugadorInicial",
             "int"
         ],
         [
@@ -2546,28 +2546,16 @@
             "("
         ],
         [
-            "AccionDespuesDeLaJugada",
-            "void"
-        ],
-        [
-            "ValidarJugada",
+            "FinalizoPartida",
             "bool"
-        ],
-        [
-            "CantFichasTotalJuego",
-            "int"
         ],
         [
             "ProximoJugador",
             "int"
         ],
         [
-            "CantFichasPorJugador",
-            "int"
-        ],
-        [
-            "FinalizoPartida",
-            "bool"
+            "Ganador",
+            "("
         ],
         [
             "CalcularPuntosGanoJugador",
@@ -2578,8 +2566,20 @@
             "List"
         ],
         [
-            "Ganador",
-            "("
+            "CantFichasTotalJuego",
+            "int"
+        ],
+        [
+            "ValidarJugada",
+            "bool"
+        ],
+        [
+            "CantFichasPorJugador",
+            "int"
+        ],
+        [
+            "AccionDespuesDeLaJugada",
+            "void"
         ],
         [
             "ValidarJugada",
@@ -2594,28 +2594,16 @@
             "void"
         ],
         [
-            "AccionDespuesDeLaJugada",
-            "void"
-        ],
-        [
-            "ValidarJugada",
+            "FinalizoPartida",
             "bool"
-        ],
-        [
-            "CantFichasTotalJuego",
-            "int"
         ],
         [
             "ProximoJugador",
             "int"
         ],
         [
-            "CantFichasPorJugador",
-            "int"
-        ],
-        [
-            "FinalizoPartida",
-            "bool"
+            "Ganador",
+            "("
         ],
         [
             "CalcularPuntosGanoJugador",
@@ -2626,28 +2614,32 @@
             "List"
         ],
         [
-            "Ganador",
-            "("
+            "CantFichasTotalJuego",
+            "int"
         ],
         [
             "ValidarJugada",
-            "void"
+            "bool"
         ],
         [
-            "AsignandoCantidadJugadores",
+            "CantFichasPorJugador",
             "int"
         ],
         [
-            "ComoEscogerProximoJugador",
+            "AccionDespuesDeLaJugada",
             "void"
         ],
         [
-            "CrearArbitro",
-            "Arbitro"
+            "ComoDeseaHacerLaEquivalenciaEntrePuntosYFichas",
+            "void"
         ],
         [
-            "EscogiendoHastaQueDobleJugar",
-            "int"
+            "QueHacerDespuesdeCadaJugada",
+            "void"
+        ],
+        [
+            "RellenarReglaPersonalizada",
+            "void"
         ],
         [
             "EscogiendoCantidadFichasPorJugador",
@@ -2658,22 +2650,6 @@
             "IReglas"
         ],
         [
-            "ComoCalcularlospuntosAsignadosAlGanador",
-            "void"
-        ],
-        [
-            "QueHacerDespuesdeCadaJugada",
-            "void"
-        ],
-        [
-            "IniciaJugadores",
-            "List"
-        ],
-        [
-            "ComoDeseaHacerLaEquivalenciaEntrePuntosYFichas",
-            "void"
-        ],
-        [
             "ComoEscogerGanador",
             "void"
         ],
@@ -2682,7 +2658,7 @@
             "void"
         ],
         [
-            "RellenarReglaPersonalizada",
+            "ValidarJugada",
             "void"
         ],
         [
@@ -2690,8 +2666,32 @@
             "IModo"
         ],
         [
+            "ComoEscogerProximoJugador",
+            "void"
+        ],
+        [
+            "IniciaJugadores",
+            "List"
+        ],
+        [
+            "CrearArbitro",
+            "Arbitro"
+        ],
+        [
             "ChequeandoJuegoEnEquipo",
             "bool"
+        ],
+        [
+            "AsignandoCantidadJugadores",
+            "int"
+        ],
+        [
+            "EscogiendoHastaQueDobleJugar",
+            "int"
+        ],
+        [
+            "ComoCalcularlospuntosAsignadosAlGanador",
+            "void"
         ]
     ],
     "class_names": [
@@ -2709,33 +2709,33 @@
         "Leo",
         "Pasador",
         "Aleatorio",
-        "ESMatematico",
         "ESHumano",
-        "ESBotagorda",
         "ESLeo",
+        "ESMatematico",
+        "ESBotagorda",
         "ESAleatorio",
         "Emojis",
         "Doble9",
-        "CalcularPuntosGanoJugador_Comunista",
-        "CalcularPuntosGanoJugador_Quincena",
-        "CalcularPuntosGanoJugador_SoloYo",
         "CalcularPuntosGanoJugador_Clasico",
+        "CalcularPuntosGanoJugador_Comunista",
+        "CalcularPuntosGanoJugador_SoloYo",
+        "CalcularPuntosGanoJugador_Quincena",
         "CalcularPuntosGanoJugador_Capitalista",
-        "ContarPuntos_ManoDura",
         "ContarPuntos_Clasico",
+        "ContarPuntos_ManoDura",
         "ContarPuntos_DobleDoble",
         "ClaseComunReglas",
-        "FinalizarJugada_Llegue100",
         "FinalizarJugada_Clasico",
+        "FinalizarJugada_Llegue100",
         "ProximoJugador_Clasico",
         "ProximoJugador_Aleatorio",
         "Ganador_Inverso",
-        "Ganador_Clasico",
         "Ganador_Quincena",
+        "Ganador_Clasico",
         "Ganador_SiEmpataAcumulaSusPuntos",
         "ClasicoIndividual",
-        "ValidarJugada_Clasica",
         "ValidarJugada_Menor",
+        "ValidarJugada_Clasica",
         "ValidarJugada_Mayor",
         "Repartir_Clasico",
         "AccionDespuesDeLaJugada_Quincena",
@@ -2772,7 +2772,6 @@
         "Namespace_member_declarationContext": 95,
         "Namespace_declarationContext": 31,
         "Qualified_identifierContext": 31,
-        "Namespace_bodyContext": 31,
         "Type_declarationContext": 64,
         "All_member_modifiersContext": 212,
         "All_member_modifierContext": 231,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 12201,
+    "total_nodes": 12200,
     "max_depth": 464,
     "number_of_variables": 8,
     "number_of_constants": 24,
@@ -223,12 +223,28 @@
     ],
     "variable_names": [
         [
+            "string",
+            "text"
+        ],
+        [
+            "List",
+            "tokens"
+        ],
+        [
+            "TokenReader",
+            "stream"
+        ],
+        [
+            "string",
+            "value"
+        ],
+        [
             "double",
             "d"
         ],
         [
-            "string",
-            "text"
+            "int",
+            "i"
         ],
         [
             "var",
@@ -237,45 +253,29 @@
         [
             "int",
             "i"
-        ],
-        [
-            "string",
-            "value"
-        ],
-        [
-            "TokenReader",
-            "stream"
-        ],
-        [
-            "List",
-            "tokens"
-        ],
-        [
-            "int",
-            "i"
         ]
     ],
     "method_names": [
         "ToString",
-        "ReadWhiteSpace",
-        "ReadNumber",
-        "ReadAny",
-        "ReadUntil",
-        "ContinuesWith",
-        "GetTokens",
         "ValidIdCharacter",
-        "Match",
-        "Peek",
         "MatchSymbol",
-        "ReadID",
+        "Peek",
+        "ReadNumber",
+        "ReadUntil",
         "MatchText",
-        "LookAhead",
+        "ReadWhiteSpace",
+        "Match",
+        "GetTokens",
+        "ReadID",
+        "ContinuesWith",
+        "ReadAny",
         "CanLookAhead",
-        "IEnumerable",
-        "MoveBack",
+        "LookAhead",
         "GetEnumerator",
         "Next",
-        "MoveNext"
+        "MoveBack",
+        "MoveNext",
+        "IEnumerable"
     ],
     "method_return_types": [
         [
@@ -283,39 +283,15 @@
             "string"
         ],
         [
-            "GetTokens",
-            "IEnumerable"
-        ],
-        [
-            "ReadID",
-            "bool"
-        ],
-        [
-            "Match",
-            "bool"
-        ],
-        [
-            "MatchText",
-            "bool"
-        ],
-        [
-            "MatchSymbol",
-            "bool"
-        ],
-        [
-            "ReadWhiteSpace",
-            "bool"
+            "ReadAny",
+            "char"
         ],
         [
             "Peek",
             "char"
         ],
         [
-            "ContinuesWith",
-            "bool"
-        ],
-        [
-            "ReadNumber",
+            "Match",
             "bool"
         ],
         [
@@ -323,36 +299,60 @@
             "bool"
         ],
         [
-            "ReadAny",
-            "char"
+            "GetTokens",
+            "IEnumerable"
+        ],
+        [
+            "ReadWhiteSpace",
+            "bool"
+        ],
+        [
+            "MatchText",
+            "bool"
         ],
         [
             "ReadUntil",
             "bool"
         ],
         [
-            "Next",
+            "ContinuesWith",
             "bool"
         ],
         [
-            "IEnumerable",
+            "MatchSymbol",
+            "bool"
+        ],
+        [
+            "ReadID",
+            "bool"
+        ],
+        [
+            "ReadNumber",
+            "bool"
+        ],
+        [
+            "GetEnumerator",
             "IEnumerator"
-        ],
-        [
-            "MoveBack",
-            "void"
-        ],
-        [
-            "MoveNext",
-            "void"
         ],
         [
             "CanLookAhead",
             "bool"
         ],
         [
-            "GetEnumerator",
+            "MoveNext",
+            "void"
+        ],
+        [
+            "IEnumerable",
             "IEnumerator"
+        ],
+        [
+            "Next",
+            "bool"
+        ],
+        [
+            "MoveBack",
+            "void"
         ],
         [
             "LookAhead",
@@ -361,10 +361,10 @@
     ],
     "class_names": [
         "Expression",
-        "Token",
         "TokenValues",
-        "LexicalAnalyzer",
+        "Token",
         "TokenReader",
+        "LexicalAnalyzer",
         "Lexer",
         "TokenStream",
         "Parser",
@@ -380,7 +380,6 @@
         "TerminalNodeImpl": 2309,
         "Qualified_identifierContext": 1,
         "IdentifierContext": 660,
-        "Namespace_bodyContext": 1,
         "Type_declarationContext": 11,
         "All_member_modifiersContext": 82,
         "All_member_modifierContext": 86,

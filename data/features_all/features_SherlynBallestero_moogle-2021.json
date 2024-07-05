@@ -1,5 +1,5 @@
 {
-    "total_nodes": 31708,
+    "total_nodes": 31705,
     "max_depth": 959,
     "number_of_variables": 129,
     "number_of_constants": 0,
@@ -311,44 +311,16 @@
             "sinonimos"
         ],
         [
-            "string",
-            "path"
-        ],
-        [
             "List",
             "names"
         ],
         [
+            "string",
+            "path"
+        ],
+        [
             "Dictionary",
             "DictionaryForPositions"
-        ],
-        [
-            "string",
-            "answer"
-        ],
-        [
-            "int",
-            "n"
-        ],
-        [
-            "string",
-            "aux"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "double",
-            "max"
-        ],
-        [
-            "Suggestion",
-            "sgt"
-        ],
-        [
-            "int",
-            "j"
         ],
         [
             "double",
@@ -356,15 +328,27 @@
         ],
         [
             "int",
-            "m"
+            "n"
+        ],
+        [
+            "Suggestion",
+            "sgt"
+        ],
+        [
+            "double",
+            "v2"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "double",
             "dp"
         ],
         [
-            "double",
-            "v2"
+            "string",
+            "aux"
         ],
         [
             "string",
@@ -372,55 +356,51 @@
         ],
         [
             "double",
-            "posdif"
-        ],
-        [
-            "double",
             "tot"
         ],
         [
-            "List",
-            "a"
+            "int",
+            "j"
         ],
         [
             "double",
-            "b"
-        ],
-        [
-            "Symbol",
-            "symbol"
-        ],
-        [
-            "List",
-            "scoresSyn"
+            "max"
         ],
         [
             "string",
-            "DocumentsInOrder"
+            "answer"
         ],
         [
-            "List",
-            "items"
-        ],
-        [
-            "SearchItem",
-            "items1"
+            "double",
+            "posdif"
         ],
         [
             "int",
-            "i"
+            "m"
         ],
         [
-            "Suggestion",
-            "sgt"
+            "List",
+            "lst"
         ],
         [
             "string",
             "newQuery"
         ],
         [
+            "List",
+            "items"
+        ],
+        [
             "string",
-            "snippet"
+            "suggestion"
+        ],
+        [
+            "double",
+            "b"
+        ],
+        [
+            "Dictionary",
+            "Doc"
         ],
         [
             "string",
@@ -431,32 +411,48 @@
             "QuerySyn"
         ],
         [
-            "string",
-            "suggestion"
-        ],
-        [
-            "Dictionary",
-            "Doc"
-        ],
-        [
-            "List",
-            "lst"
-        ],
-        [
             "List",
             "scores"
         ],
         [
-            "string",
-            "yes"
+            "int",
+            "i"
         ],
         [
-            "(",
-            "banDocs"
+            "SearchItem",
+            "items1"
+        ],
+        [
+            "Symbol",
+            "symbol"
+        ],
+        [
+            "List",
+            "a"
         ],
         [
             "string",
-            "no"
+            "DocumentsInOrder"
+        ],
+        [
+            "List",
+            "scoresSyn"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "Suggestion",
+            "sgt"
+        ],
+        [
+            "Suggestion",
+            "sg"
+        ],
+        [
+            "List",
+            "answer"
         ],
         [
             "Dictionary",
@@ -464,47 +460,27 @@
         ],
         [
             "Suggestion",
-            "sg"
+            "sg2"
+        ],
+        [
+            "(",
+            "b"
         ],
         [
             "string",
-            "aux"
-        ],
-        [
-            "bool",
-            "marks"
-        ],
-        [
-            "Symbol",
-            "answer"
+            "aux2"
         ],
         [
             "Operator",
             "Op"
         ],
         [
-            "Suggestion",
-            "sg2"
-        ],
-        [
-            "string",
-            "ttt1"
-        ],
-        [
             "string",
             "ttt2"
         ],
         [
-            "List",
+            "Symbol",
             "answer"
-        ],
-        [
-            "string",
-            "files"
-        ],
-        [
-            "string",
-            "aux2"
         ],
         [
             "int",
@@ -512,63 +488,59 @@
         ],
         [
             "(",
-            "b"
+            "banDocs"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "string",
+            "yes"
+        ],
+        [
+            "string",
+            "no"
         ],
         [
             "List",
             "Closeness"
         ],
         [
-            "Dictionary",
-            "mp"
+            "bool",
+            "marks"
         ],
         [
-            "double",
-            "queryForVector"
+            "string",
+            "files"
         ],
         [
-            "double",
-            "cosin"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "double",
-            "FoundT"
+            "string",
+            "ttt1"
         ],
         [
             "List",
             "lst"
         ],
         [
+            "double",
+            "queryForVector"
+        ],
+        [
             "int",
-            "i"
+            "ind"
         ],
         [
-            "List",
-            "answer"
-        ],
-        [
-            "double",
-            "auxDouble"
-        ],
-        [
-            "List",
-            "lidf"
-        ],
-        [
-            "double",
-            "index"
-        ],
-        [
-            "double",
-            "idf"
+            "bool",
+            "flag"
         ],
         [
             "double",
             "mdt"
+        ],
+        [
+            "int",
+            "k"
         ],
         [
             "Vector",
@@ -579,24 +551,60 @@
             "BanDocuments"
         ],
         [
+            "double",
+            "index"
+        ],
+        [
+            "double",
+            "cosin"
+        ],
+        [
             "string",
-            "filesName"
+            "words"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "answer"
+        ],
+        [
+            "double",
+            "idf"
+        ],
+        [
+            "double",
+            "FoundT"
         ],
         [
             "double",
             "NomberOfDocuments"
         ],
         [
-            "bool",
-            "flag"
+            "double",
+            "auxDouble"
+        ],
+        [
+            "List",
+            "lidf"
+        ],
+        [
+            "Dictionary",
+            "mp"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "double",
             "tfidf"
         ],
         [
-            "int",
-            "k"
+            "string",
+            "filesName"
         ],
         [
             "Vector",
@@ -604,11 +612,15 @@
         ],
         [
             "int",
-            "ind"
+            "R"
         ],
         [
-            "string",
-            "words"
+            "StringBuilder",
+            "word"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "string",
@@ -620,22 +632,6 @@
         ],
         [
             "List",
-            "Pos"
-        ],
-        [
-            "int",
-            "L"
-        ],
-        [
-            "StringBuilder",
-            "word"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
             "vect"
         ],
         [
@@ -643,16 +639,20 @@
             "s2"
         ],
         [
+            "List",
+            "Pos"
+        ],
+        [
             "int",
-            "R"
+            "L"
+        ],
+        [
+            "StreamReader",
+            "str"
         ],
         [
             "double",
             "answer"
-        ],
-        [
-            "string",
-            "line"
         ],
         [
             "int",
@@ -667,39 +667,51 @@
             "words"
         ],
         [
-            "StreamReader",
-            "str"
+            "string",
+            "line"
         ]
     ],
     "method_names": [
         "Items",
-        "SaveFileNames",
         "TekeDictionarySyn",
-        "SaveDictionaryPosition",
-        "TakeFileNames",
         "TekeDictionaryPosition",
-        "suggestionForQuery",
+        "TakeFileNames",
+        "SaveDictionaryPosition",
+        "SaveFileNames",
         "SimilarityInWords",
+        "suggestionForQuery",
         "Query",
         "Init",
-        "GetSymbol",
         "BanDocuments",
-        "IDF",
+        "GetSymbol",
         "MV",
+        "IDF",
+        "GetWordsAndPositionsFromString",
+        "FindFistLeft",
+        "FindFistRight",
         "CompareWords",
         "GetCharPositions",
-        "FindFistRight",
-        "FindFistLeft",
-        "GetWordsAndPositionsFromString",
-        "fillWithZeros",
-        "SplitPhraseInWords",
         "Find",
-        "FindInArray"
+        "SplitPhraseInWords",
+        "FindInArray",
+        "fillWithZeros"
     ],
     "method_return_types": [
         [
             "Items",
             "IEnumerable"
+        ],
+        [
+            "TekeDictionaryPosition",
+            "Dictionary"
+        ],
+        [
+            "TekeDictionarySyn",
+            "Dictionary"
+        ],
+        [
+            "SaveFileNames",
+            "void"
         ],
         [
             "TakeFileNames",
@@ -708,18 +720,6 @@
         [
             "SaveDictionaryPosition",
             "void"
-        ],
-        [
-            "SaveFileNames",
-            "void"
-        ],
-        [
-            "TekeDictionarySyn",
-            "Dictionary"
-        ],
-        [
-            "TekeDictionaryPosition",
-            "Dictionary"
         ],
         [
             "SimilarityInWords",
@@ -746,23 +746,19 @@
             "List"
         ],
         [
-            "MV",
-            "List"
-        ],
-        [
             "IDF",
             "double"
         ],
         [
-            "GetCharPositions",
+            "MV",
             "List"
         ],
         [
-            "FindFistRight",
+            "FindFistLeft",
             "int"
         ],
         [
-            "FindFistLeft",
+            "FindFistRight",
             "int"
         ],
         [
@@ -774,16 +770,20 @@
             "List"
         ],
         [
+            "GetCharPositions",
+            "List"
+        ],
+        [
             "FindInArray",
+            "bool"
+        ],
+        [
+            "Find",
             "bool"
         ],
         [
             "fillWithZeros",
             "double"
-        ],
-        [
-            "Find",
-            "bool"
         ],
         [
             "SplitPhraseInWords",
@@ -816,7 +816,6 @@
         "Namespace_member_declarationContext": 48,
         "Namespace_declarationContext": 10,
         "Qualified_identifierContext": 10,
-        "Namespace_bodyContext": 10,
         "Type_declarationContext": 38,
         "All_member_modifiersContext": 76,
         "All_member_modifierContext": 99,
@@ -894,6 +893,7 @@
         "Numeric_typeContext": 140,
         "Integral_typeContext": 83,
         "Floating_point_typeContext": 57,
+        "Namespace_bodyContext": 7,
         "Tuple_typeContext": 16,
         "Tuple_elementContext": 32,
         "DeclarationStatementContext": 100,

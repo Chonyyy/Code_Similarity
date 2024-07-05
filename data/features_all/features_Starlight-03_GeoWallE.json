@@ -492,7 +492,31 @@
         ],
         [
             "var",
+            "textPanel"
+        ],
+        [
+            "float",
+            "r"
+        ],
+        [
+            "var",
+            "canvas"
+        ],
+        [
+            "var",
             "nameLabel"
+        ],
+        [
+            "Point",
+            "center"
+        ],
+        [
+            "Point",
+            "p2"
+        ],
+        [
+            "var",
+            "file"
         ],
         [
             "var",
@@ -503,60 +527,35 @@
             "children"
         ],
         [
-            "var",
-            "textPanel"
-        ],
-        [
-            "var",
-            "canvas"
-        ],
-        [
             "Point",
             "p1"
         ],
         [
-            "var",
-            "file"
-        ],
-        [
-            "Point",
-            "center"
-        ],
-        [
-            "float",
-            "r"
-        ],
-        [
-            "Point",
-            "p2"
+            "double",
+            "finalAngle"
         ],
         [
             "double",
             "startAngle"
-        ],
-        [
-            "double",
-            "finalAngle"
         ]
     ],
     "method_names": [
-        "GetToken",
         "GetTokens",
+        "GetToken",
         "IsToken",
         "AddError",
         "Tokenize",
-        "JumpLine",
-        "Current",
-        "LookNext",
-        "CurrentIs",
-        "Match",
         "NextIs",
-        "MoveBack",
-        "LookBack",
         "MoveForward",
+        "MoveBack",
+        "CurrentIs",
+        "Current",
+        "LookBack",
+        "LookNext",
+        "JumpLine",
+        "Match",
         "AddError",
         "AddError",
-        "Validate",
         "Evaluate",
         "Validate",
         "Evaluate",
@@ -565,17 +564,17 @@
         "Evaluate",
         "Validate",
         "Evaluate",
+        "Validate",
         "Evaluate",
-        "GetVariableValue",
-        "SetFunctionType",
         "DefineFunction",
-        "DefineVariable",
         "VariableIsDefined",
-        "GetFunctionBody",
-        "SetVariableValue",
         "CreateChildContext",
+        "DefineVariable",
         "FunctionIsDefined",
-        "Validate",
+        "SetVariableValue",
+        "SetFunctionType",
+        "GetVariableValue",
+        "GetFunctionBody",
         "Evaluate",
         "Validate",
         "Evaluate",
@@ -595,16 +594,17 @@
         "Evaluate",
         "Validate",
         "Evaluate",
+        "Validate",
         "_Ready",
         "PopUpSaveFileDialog",
-        "SaveAsFile",
         "OnSaveAsPressed",
-        "SaveFile",
-        "_Ready",
-        "OnSavePressed",
         "OnExitPressed",
-        "OnCompilePressed",
         "OnSaveFileDialogFileSelected",
+        "OnSavePressed",
+        "_Ready",
+        "OnCompilePressed",
+        "SaveFile",
+        "SaveAsFile",
         "_Draw",
         "_Draw",
         "_Draw",
@@ -612,16 +612,16 @@
     ],
     "method_return_types": [
         [
+            "IsToken",
+            "bool"
+        ],
+        [
             "GetToken",
             "Token"
         ],
         [
             "GetTokens",
             "IEnumerable"
-        ],
-        [
-            "IsToken",
-            "bool"
         ],
         [
             "AddError",
@@ -632,11 +632,15 @@
             "void"
         ],
         [
-            "LookBack",
-            "Token"
+            "CurrentIs",
+            "bool"
         ],
         [
-            "MoveBack",
+            "Match",
+            "bool"
+        ],
+        [
+            "JumpLine",
             "void"
         ],
         [
@@ -644,31 +648,23 @@
             "bool"
         ],
         [
-            "MoveForward",
-            "void"
-        ],
-        [
-            "CurrentIs",
-            "bool"
-        ],
-        [
             "LookNext",
             "Token"
         ],
         [
-            "JumpLine",
+            "MoveBack",
             "void"
+        ],
+        [
+            "LookBack",
+            "Token"
         ],
         [
             "Current",
             "Token"
         ],
         [
-            "Match",
-            "bool"
-        ],
-        [
-            "AddError",
+            "MoveForward",
             "void"
         ],
         [
@@ -676,6 +672,26 @@
             "void"
         ],
         [
+            "AddError",
+            "void"
+        ],
+        [
+            "Evaluate",
+            "void"
+        ],
+        [
+            "Validate",
+            "bool"
+        ],
+        [
+            "Evaluate",
+            "void"
+        ],
+        [
+            "Validate",
+            "bool"
+        ],
+        [
             "Validate",
             "bool"
         ],
@@ -696,55 +712,35 @@
             "bool"
         ],
         [
-            "Validate",
-            "bool"
-        ],
-        [
             "Evaluate",
             "void"
-        ],
-        [
-            "Validate",
-            "bool"
-        ],
-        [
-            "Evaluate",
-            "void"
-        ],
-        [
-            "Evaluate",
-            "void"
-        ],
-        [
-            "CreateChildContext",
-            "IContext"
         ],
         [
             "GetFunctionBody",
             "Expression"
         ],
         [
-            "VariableIsDefined",
-            "bool"
-        ],
-        [
-            "GetVariableValue",
-            "Expression"
+            "DefineFunction",
+            "void"
         ],
         [
             "FunctionIsDefined",
             "bool"
         ],
         [
-            "DefineFunction",
-            "void"
+            "VariableIsDefined",
+            "bool"
+        ],
+        [
+            "CreateChildContext",
+            "IContext"
+        ],
+        [
+            "GetVariableValue",
+            "Expression"
         ],
         [
             "SetVariableValue",
-            "void"
-        ],
-        [
-            "SetFunctionType",
             "void"
         ],
         [
@@ -752,8 +748,8 @@
             "void"
         ],
         [
-            "Validate",
-            "bool"
+            "SetFunctionType",
+            "void"
         ],
         [
             "Evaluate",
@@ -830,29 +826,17 @@
         [
             "Evaluate",
             "void"
+        ],
+        [
+            "Validate",
+            "bool"
         ],
         [
             "_Ready",
             "void"
         ],
         [
-            "OnExitPressed",
-            "void"
-        ],
-        [
-            "OnSavePressed",
-            "void"
-        ],
-        [
-            "_Ready",
-            "void"
-        ],
-        [
-            "OnSaveAsPressed",
-            "void"
-        ],
-        [
-            "PopUpSaveFileDialog",
+            "OnSaveFileDialogFileSelected",
             "void"
         ],
         [
@@ -860,7 +844,11 @@
             "void"
         ],
         [
-            "SaveFile",
+            "OnSaveAsPressed",
+            "void"
+        ],
+        [
+            "OnSavePressed",
             "void"
         ],
         [
@@ -868,7 +856,19 @@
             "void"
         ],
         [
-            "OnSaveFileDialogFileSelected",
+            "OnExitPressed",
+            "void"
+        ],
+        [
+            "PopUpSaveFileDialog",
+            "void"
+        ],
+        [
+            "SaveFile",
+            "void"
+        ],
+        [
+            "_Ready",
             "void"
         ],
         [
@@ -899,8 +899,8 @@
         "ASTNode",
         "Import",
         "VarDef",
-        "SequenceDecl",
         "VarDecl",
+        "SequenceDecl",
         "Restore",
         "ColorChange",
         "FuncDef",
@@ -917,44 +917,44 @@
         "FuncCall",
         "PointDef",
         "MeasureDef",
-        "CircleDef",
         "ArcDef",
+        "CircleDef",
+        "LineDef",
         "SegmentDef",
         "RayDef",
-        "LineDef",
         "IntersectionDef",
         "Undefined",
         "AtomicExpression",
         "Text",
         "Number",
-        "FixedFunction",
         "Cos",
-        "Log",
-        "Ln",
         "Sin",
-        "Sum",
-        "Div",
+        "Log",
+        "FixedFunction",
+        "Ln",
         "Sub",
         "Pow",
-        "ArithmeticExpression",
         "Mul",
+        "Div",
+        "ArithmeticExpression",
+        "Sum",
         "Mod",
         "BinaryExpression",
         "Concat",
-        "Major",
         "MajorEqual",
-        "Equals",
-        "MinorEqual",
-        "Minor",
+        "Major",
         "NotEqual",
+        "MinorEqual",
+        "Equals",
+        "Minor",
         "ComparisonExpression",
-        "Or",
         "LogicExpression",
         "And",
+        "Or",
         "CodePanel",
         "Menu",
-        "Arc",
         "Circle",
+        "Arc",
         "GObject",
         "TextDraw",
         "Point",

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 44253,
+    "total_nodes": 44193,
     "max_depth": 3678,
     "number_of_variables": 100,
     "number_of_constants": 0,
@@ -935,12 +935,12 @@
             "auxiliar"
         ],
         [
-            "Random",
-            "random"
-        ],
-        [
             "int",
             "auxiliar"
+        ],
+        [
+            "Random",
+            "random"
         ],
         [
             "int",
@@ -951,28 +951,28 @@
             "i"
         ],
         [
-            "var",
-            "organizedBox"
-        ],
-        [
-            "List",
-            "randomOrder"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "index"
+            "Random",
+            "random"
         ],
         [
             "List",
             "auxiliarOrder"
         ],
         [
-            "Random",
-            "random"
+            "int",
+            "index"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "randomOrder"
+        ],
+        [
+            "var",
+            "organizedBox"
         ],
         [
             "List",
@@ -983,12 +983,16 @@
             "random"
         ],
         [
-            "List",
-            "auxiliarList"
+            "int",
+            "i"
         ],
         [
             "int",
             "position"
+        ],
+        [
+            "List",
+            "auxiliarList"
         ],
         [
             "int",
@@ -1016,59 +1020,55 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "Board",
-            "auxiliarTable"
-        ],
-        [
-            "var",
-            "temp"
+            "right"
         ],
         [
             "int",
             "index"
         ],
         [
-            "Dictionary",
-            "possibleExtremeValues"
-        ],
-        [
-            "int",
-            "possibleExtreme"
-        ],
-        [
             "int",
             "i"
         ],
         [
-            "int",
-            "left"
-        ],
-        [
-            "int",
-            "right"
-        ],
-        [
             "Dictionary",
-            "otherPlayersPassedValues"
+            "possibleExtremeValues"
         ],
         [
             "Event",
             "currentEvent"
         ],
         [
+            "int",
+            "possibleExtreme"
+        ],
+        [
+            "var",
+            "temp"
+        ],
+        [
+            "Dictionary",
+            "otherPlayersPassedValues"
+        ],
+        [
+            "Board",
+            "auxiliarTable"
+        ],
+        [
+            "int",
+            "left"
+        ],
+        [
             "Piece",
             "selectedPiece"
         ],
         [
-            "int",
-            "addPiece"
-        ],
-        [
             "IList",
             "newPossibles"
+        ],
+        [
+            "int",
+            "addPiece"
         ],
         [
             "Random",
@@ -1079,8 +1079,8 @@
             "possibles"
         ],
         [
-            "Move",
-            "chosedMove"
+            "IEnumerable",
+            "cloneHand"
         ],
         [
             "Player",
@@ -1091,8 +1091,8 @@
             "chosedPiece"
         ],
         [
-            "IEnumerable",
-            "cloneHand"
+            "Move",
+            "chosedMove"
         ],
         [
             "bool",
@@ -1107,72 +1107,8 @@
             "pos"
         ],
         [
-            "IDealer",
-            "dealer"
-        ],
-        [
-            "Player",
-            "PL1"
-        ],
-        [
-            "IList",
-            "stopConditions"
-        ],
-        [
-            "var",
-            "validDefaultGames"
-        ],
-        [
-            "IList",
-            "evaluators"
-        ],
-        [
-            "IList",
-            "playersClone"
-        ],
-        [
-            "int",
-            "handCapacity"
-        ],
-        [
-            "IList",
-            "defaultOptions"
-        ],
-        [
-            "Player",
-            "PL2"
-        ],
-        [
             "IEnumerable",
             "couples"
-        ],
-        [
-            "int",
-            "swiftTurns"
-        ],
-        [
-            "IDefaultGames",
-            "defaultGame"
-        ],
-        [
-            "IList",
-            "rules"
-        ],
-        [
-            "int",
-            "matches"
-        ],
-        [
-            "int",
-            "boxCapacity"
-        ],
-        [
-            "IList",
-            "winConditions"
-        ],
-        [
-            "int",
-            "maxDouble"
         ],
         [
             "int",
@@ -1183,8 +1119,76 @@
             "orderers"
         ],
         [
+            "Player",
+            "PL1"
+        ],
+        [
             "IList",
             "forReturn"
+        ],
+        [
+            "int",
+            "matches"
+        ],
+        [
+            "IList",
+            "rules"
+        ],
+        [
+            "int",
+            "swiftTurns"
+        ],
+        [
+            "IList",
+            "evaluators"
+        ],
+        [
+            "IList",
+            "winConditions"
+        ],
+        [
+            "Player",
+            "PL2"
+        ],
+        [
+            "IList",
+            "playersClone"
+        ],
+        [
+            "int",
+            "maxDouble"
+        ],
+        [
+            "IDealer",
+            "dealer"
+        ],
+        [
+            "IList",
+            "defaultOptions"
+        ],
+        [
+            "IDefaultGames",
+            "defaultGame"
+        ],
+        [
+            "var",
+            "validDefaultGames"
+        ],
+        [
+            "IList",
+            "stopConditions"
+        ],
+        [
+            "int",
+            "handCapacity"
+        ],
+        [
+            "int",
+            "boxCapacity"
+        ],
+        [
+            "int",
+            "pointLimit"
         ],
         [
             "IScore",
@@ -1196,14 +1200,6 @@
         ],
         [
             "int",
-            "pointLimit"
-        ],
-        [
-            "IList",
-            "players"
-        ],
-        [
-            "int",
             "i"
         ],
         [
@@ -1211,20 +1207,16 @@
             "numberOfPlayers"
         ],
         [
-            "string",
-            "playerName"
-        ],
-        [
             "IStrategy",
             "strategy"
         ],
         [
-            "int",
-            "index"
+            "IList",
+            "players"
         ],
         [
-            "int",
-            "max"
+            "string",
+            "playerName"
         ],
         [
             "T",
@@ -1235,8 +1227,16 @@
             "current"
         ],
         [
-            "Move",
-            "move4"
+            "int",
+            "max"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "IList",
+            "forReturn"
         ],
         [
             "Move",
@@ -1247,10 +1247,6 @@
             "answer"
         ],
         [
-            "int",
-            "selectedNumber"
-        ],
-        [
             "Move",
             "move3"
         ],
@@ -1259,8 +1255,16 @@
             "move2"
         ],
         [
-            "IList",
-            "forReturn"
+            "Move",
+            "move4"
+        ],
+        [
+            "int",
+            "selectedNumber"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "Game",
@@ -1272,15 +1276,11 @@
         ],
         [
             "int",
-            "pieceValue"
-        ],
-        [
-            "int",
             "currentOrganizer"
         ],
         [
             "int",
-            "i"
+            "rounds"
         ],
         [
             "int",
@@ -1288,16 +1288,16 @@
         ],
         [
             "int",
-            "rounds"
+            "pieceValue"
         ]
     ],
     "method_names": [
-        "ToString",
         "Winners",
         "ToString",
         "Winners",
         "ToString",
         "Winners",
+        "ToString",
         "GrantPrize",
         "ToString",
         "GrantPrize",
@@ -1314,7 +1314,6 @@
         "Valid",
         "ToString",
         "Valid",
-        "ToString",
         "Evaluate",
         "ToString",
         "Evaluate",
@@ -1324,26 +1323,27 @@
         "Evaluate",
         "ToString",
         "ToString",
+        "ToString",
+        "Deal",
         "ToString",
         "Deal",
         "ToString",
         "Deal",
         "ChangeOrder",
         "ToString",
-        "Deal",
         "Organize",
         "ToString",
         "Organize",
         "ToString",
+        "Organize",
         "Swap",
-        "Organize",
-        "ToString",
-        "Choice",
         "ToString",
         "FindFriend",
         "Choice",
         "ToString",
         "CheckValue",
+        "Choice",
+        "ToString",
         "Choice",
         "Choice",
         "ToString",
@@ -1362,41 +1362,41 @@
         "Valid",
         "Organize",
         "Clone",
-        "Clone",
-        "ToString",
         "PrintHand",
         "PlayerChoice",
+        "ToString",
+        "Clone",
         "Add",
         "PrintActual",
         "Clone",
         "Clone",
         "TurnPiece",
-        "Clone",
         "GetHashCode",
         "ToString",
-        "Equals",
         "Clone",
+        "Equals",
         "PrintEvent",
-        "DoublesAndMax",
-        "Game",
+        "Clone",
         "CreateCouples",
+        "Game",
+        "DoublesAndMax",
         "Tournament",
         "Players",
         "Selector",
         "NumberSelector",
-        "PossiblePlays",
         "YesOrNo",
-        "TypesCollectionCreator",
+        "PossiblePlays",
         "CollectionCreator",
         "DefaultInstanceCreator",
+        "TypesCollectionCreator",
         "Clone",
         "Clone",
         "Run",
         "Run",
-        "player",
         "RunGame",
-        "FillBox",
-        "GameOver"
+        "player",
+        "GameOver",
+        "FillBox"
     ],
     "method_return_types": [
         [
@@ -1488,10 +1488,6 @@
             "string"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
             "Evaluate",
             "int"
         ],
@@ -1526,6 +1522,14 @@
         [
             "ToString",
             "string"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "Deal",
+            "void"
         ],
         [
             "ToString",
@@ -1552,8 +1556,8 @@
             "string"
         ],
         [
-            "Deal",
-            "void"
+            "ToString",
+            "string"
         ],
         [
             "Organize",
@@ -1580,32 +1584,28 @@
             "void"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
             "Choice",
             "Move"
-        ],
-        [
-            "ToString",
-            "string"
         ],
         [
             "FindFriend",
             "void"
         ],
         [
-            "Choice",
-            "Move"
-        ],
-        [
             "ToString",
             "string"
         ],
         [
+            "Choice",
+            "Move"
+        ],
+        [
             "CheckValue",
             "void"
+        ],
+        [
+            "ToString",
+            "string"
         ],
         [
             "Choice",
@@ -1684,16 +1684,16 @@
             "Player"
         ],
         [
-            "PrintHand",
-            "void"
-        ],
-        [
             "PlayerChoice",
             "Move"
         ],
         [
             "ToString",
             "string"
+        ],
+        [
+            "PrintHand",
+            "void"
         ],
         [
             "PrintActual",
@@ -1716,20 +1716,20 @@
             "void"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
             "Equals",
             "bool"
         ],
         [
-            "GetHashCode",
-            "int"
-        ],
-        [
             "Clone",
             "Piece"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "GetHashCode",
+            "int"
         ],
         [
             "Clone",
@@ -1740,12 +1740,12 @@
             "void"
         ],
         [
-            "CreateCouples",
-            "IEnumerable"
-        ],
-        [
             "DoublesAndMax",
             "bool"
+        ],
+        [
+            "CreateCouples",
+            "IEnumerable"
         ],
         [
             "Game",
@@ -1768,11 +1768,19 @@
             "int"
         ],
         [
+            "PossiblePlays",
+            "IEnumerable"
+        ],
+        [
             "YesOrNo",
             "bool"
         ],
         [
-            "PossiblePlays",
+            "DefaultInstanceCreator",
+            "T"
+        ],
+        [
+            "CollectionCreator",
             "IEnumerable"
         ],
         [
@@ -1780,24 +1788,16 @@
             "IEnumerable"
         ],
         [
-            "CollectionCreator",
-            "IEnumerable"
-        ],
-        [
-            "DefaultInstanceCreator",
-            "T"
-        ],
-        [
-            "Clone",
-            "IEnumerable"
-        ],
-        [
             "Clone",
             "IEnumerable"
         ],
         [
             "Clone",
             "T"
+        ],
+        [
+            "Clone",
+            "IEnumerable"
         ],
         [
             "Run",
@@ -1812,15 +1812,15 @@
             "void"
         ],
         [
+            "FillBox",
+            "void"
+        ],
+        [
             "player",
             "Puntos"
         ],
         [
             "RunGame",
-            "void"
-        ],
-        [
-            "FillBox",
             "void"
         ]
     ],
@@ -1931,7 +1931,6 @@
         "Namespace_member_declarationContext": 134,
         "Namespace_declarationContext": 60,
         "Qualified_identifierContext": 60,
-        "Namespace_bodyContext": 60,
         "Type_declarationContext": 74,
         "All_member_modifiersContext": 241,
         "All_member_modifierContext": 317,

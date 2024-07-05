@@ -1,5 +1,5 @@
 {
-    "total_nodes": 13634,
+    "total_nodes": 13630,
     "max_depth": 303,
     "number_of_variables": 25,
     "number_of_constants": 0,
@@ -259,28 +259,20 @@
             "j"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
             "SearchItem",
             "temp"
         ],
         [
-            "string",
-            "jfiles"
+            "int",
+            "i"
+        ],
+        [
+            "Tuple",
+            "last_val"
         ],
         [
             "HashSet",
             "new_files"
-        ],
-        [
-            "Dictionary",
-            "docs_tfidf"
-        ],
-        [
-            "float",
-            "idf"
         ],
         [
             "string",
@@ -288,7 +280,19 @@
         ],
         [
             "int",
+            "N"
+        ],
+        [
+            "int",
             "count"
+        ],
+        [
+            "string",
+            "jfiles"
+        ],
+        [
+            "Dictionary",
+            "docs_tfidf"
         ],
         [
             "int",
@@ -296,19 +300,23 @@
         ],
         [
             "string",
-            "filename"
+            "text"
         ],
         [
-            "Tuple",
-            "last_val"
+            "float",
+            "idf"
+        ],
+        [
+            "string",
+            "match"
         ],
         [
             "Dictionary",
             "words"
         ],
         [
-            "string",
-            "match"
+            "HashSet",
+            "files"
         ],
         [
             "string",
@@ -316,39 +324,31 @@
         ],
         [
             "string",
-            "text"
-        ],
-        [
-            "int",
-            "N"
-        ],
-        [
-            "HashSet",
-            "files"
+            "filename"
         ]
     ],
     "method_names": [
         "SortItems",
         "Items",
-        "LoadNDictJSON",
-        "GetHighlight",
-        "Add",
-        "GetKeys",
         "Save",
-        "_GetFiles",
-        "GetWords",
-        "Load",
         "Get",
-        "UpdateTfIdf",
+        "Load",
+        "UpdateWC",
+        "GetWords",
+        "Add",
         "LoadDictJSON",
-        "GetFileWC",
-        "SaveJSON",
-        "GetFiles",
         "LoadFloaNtDictJSON",
-        "Vectorize",
+        "_GetFiles",
+        "LoadNDictJSON",
         "GetWC",
+        "SaveJSON",
+        "Vectorize",
+        "GetFiles",
         "LoadHSJSON",
-        "UpdateWC"
+        "UpdateTfIdf",
+        "GetKeys",
+        "GetHighlight",
+        "GetFileWC"
     ],
     "method_return_types": [
         [
@@ -360,71 +360,15 @@
             "void"
         ],
         [
-            "LoadDictJSON",
-            "Dictionary"
-        ],
-        [
-            "GetFileWC",
-            "int"
-        ],
-        [
-            "Save",
-            "void"
-        ],
-        [
-            "LoadHSJSON",
-            "HashSet"
-        ],
-        [
-            "Load",
-            "Dictionary"
-        ],
-        [
-            "LoadNDictJSON",
-            "Dictionary"
-        ],
-        [
-            "UpdateTfIdf",
-            "Dictionary"
-        ],
-        [
-            "GetFiles",
-            "HashSet"
-        ],
-        [
-            "Add",
-            "void"
-        ],
-        [
-            "Vectorize",
-            "void"
-        ],
-        [
-            "Get",
-            "List"
-        ],
-        [
             "SaveJSON",
             "void"
-        ],
-        [
-            "UpdateWC",
-            "void"
-        ],
-        [
-            "GetKeys",
-            "List"
         ],
         [
             "LoadFloaNtDictJSON",
             "Dictionary"
         ],
         [
-            "GetWC",
-            "int"
-        ],
-        [
-            "_GetFiles",
+            "LoadHSJSON",
             "HashSet"
         ],
         [
@@ -432,8 +376,64 @@
             "Dictionary"
         ],
         [
+            "Load",
+            "Dictionary"
+        ],
+        [
+            "GetFiles",
+            "HashSet"
+        ],
+        [
+            "Vectorize",
+            "void"
+        ],
+        [
+            "GetKeys",
+            "List"
+        ],
+        [
+            "Get",
+            "List"
+        ],
+        [
+            "UpdateWC",
+            "void"
+        ],
+        [
+            "GetWC",
+            "int"
+        ],
+        [
             "GetHighlight",
             "string"
+        ],
+        [
+            "_GetFiles",
+            "HashSet"
+        ],
+        [
+            "UpdateTfIdf",
+            "Dictionary"
+        ],
+        [
+            "Add",
+            "void"
+        ],
+        [
+            "LoadDictJSON",
+            "Dictionary"
+        ],
+        [
+            "Save",
+            "void"
+        ],
+        [
+            "LoadNDictJSON",
+            "Dictionary"
+        ],
+        [
+            "GetFileWC",
+            "int"
         ]
     ],
     "class_names": [
@@ -457,7 +457,6 @@
         "Namespace_member_declarationContext": 9,
         "Namespace_declarationContext": 4,
         "Qualified_identifierContext": 4,
-        "Namespace_bodyContext": 4,
         "Type_declarationContext": 5,
         "All_member_modifiersContext": 53,
         "All_member_modifierContext": 83,

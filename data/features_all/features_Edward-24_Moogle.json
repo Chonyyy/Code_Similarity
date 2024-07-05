@@ -1,5 +1,5 @@
 {
-    "total_nodes": 16379,
+    "total_nodes": 16370,
     "max_depth": 788,
     "number_of_variables": 44,
     "number_of_constants": 0,
@@ -119,15 +119,15 @@
         ],
         [
             "char",
-            "charword"
+            "charword2"
         ],
         [
             "int",
-            "distance"
+            "aux"
         ],
         [
-            "string",
-            "suggest"
+            "int",
+            "i"
         ],
         [
             "int",
@@ -135,23 +135,11 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "aux"
-        ],
-        [
-            "int",
             "x"
         ],
         [
             "int",
-            "j"
-        ],
-        [
-            "char",
-            "charword2"
+            "distance"
         ],
         [
             "int",
@@ -159,11 +147,19 @@
         ],
         [
             "int",
-            "i"
+            "j"
         ],
         [
-            "Search",
-            "search"
+            "string",
+            "suggest"
+        ],
+        [
+            "char",
+            "charword"
+        ],
+        [
+            "int",
+            "r"
         ],
         [
             "Suggestion",
@@ -171,27 +167,47 @@
         ],
         [
             "int",
-            "r"
+            "i"
         ],
         [
             "SearchItem",
             "items"
         ],
         [
-            "bool",
-            "aux"
-        ],
-        [
-            "SearchSnippet",
-            "searchSnippet"
-        ],
-        [
-            "List",
-            "OperatorImportance"
+            "Search",
+            "search"
         ],
         [
             "int",
-            "start"
+            "index"
+        ],
+        [
+            "int",
+            "indexoperator"
+        ],
+        [
+            "double",
+            "max"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "double",
+            "cantidad"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "float",
+            "score"
+        ],
+        [
+            "int",
+            "aux"
         ],
         [
             "int",
@@ -202,48 +218,32 @@
             "StemmerQuery"
         ],
         [
+            "SearchSnippet",
+            "searchSnippet"
+        ],
+        [
             "List",
             "OperatorExist"
         ],
         [
-            "int",
-            "i"
+            "List",
+            "OperatorImportance"
         ],
         [
-            "double",
-            "cantidad"
-        ],
-        [
-            "int",
+            "bool",
             "aux"
-        ],
-        [
-            "int",
-            "indexoperator"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "string",
-            "result"
         ],
         [
             "EnglishPorter2Stemmer",
             "stemming"
         ],
         [
-            "double",
-            "max"
+            "int",
+            "start"
         ],
         [
             "string",
             "HighestTFIDF"
-        ],
-        [
-            "float",
-            "score"
         ],
         [
             "string",
@@ -256,11 +256,11 @@
     ],
     "method_names": [
         "Items",
-        "Levenshtein",
         "SuggestWord",
+        "Levenshtein",
         "Query",
-        "WordsAround",
         "Stemming",
+        "WordsAround",
         "Clean"
     ],
     "method_return_types": [
@@ -318,7 +318,6 @@
         "Namespace_member_declarationContext": 18,
         "Namespace_declarationContext": 9,
         "Qualified_identifierContext": 9,
-        "Namespace_bodyContext": 9,
         "Type_declarationContext": 9,
         "All_member_modifiersContext": 64,
         "All_member_modifierContext": 90,

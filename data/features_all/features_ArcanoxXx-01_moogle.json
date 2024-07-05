@@ -1,5 +1,5 @@
 {
-    "total_nodes": 17004,
+    "total_nodes": 16998,
     "max_depth": 600,
     "number_of_variables": 45,
     "number_of_constants": 1,
@@ -219,16 +219,20 @@
     ],
     "variable_names": [
         [
+            "int",
+            "k"
+        ],
+        [
+            "double",
+            "Producto"
+        ],
+        [
             "double",
             "producto"
         ],
         [
             "int",
             "i"
-        ],
-        [
-            "int",
-            "k"
         ],
         [
             "double",
@@ -239,12 +243,12 @@
             "j"
         ],
         [
-            "double",
-            "Producto"
-        ],
-        [
             "int",
             "i"
+        ],
+        [
+            "float",
+            "NormaA"
         ],
         [
             "Query",
@@ -252,15 +256,43 @@
         ],
         [
             "float",
-            "NormaA"
+            "NormaB"
+        ],
+        [
+            "float",
+            "contador"
+        ],
+        [
+            "float",
+            "score"
+        ],
+        [
+            "string",
+            "titulo"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "PalabraMasRelevante"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "SearchItem",
             "sugerencia"
         ],
         [
-            "float",
-            "contador"
+            "string",
+            "snippet"
+        ],
+        [
+            "SearchItem",
+            "A"
         ],
         [
             "List",
@@ -271,32 +303,8 @@
             "i"
         ],
         [
-            "SearchItem",
-            "A"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
             "string",
-            "snippet"
-        ],
-        [
-            "string",
-            "PalabraMasRelevante"
-        ],
-        [
-            "string",
-            "titulo"
-        ],
-        [
-            "float",
-            "NormaB"
-        ],
-        [
-            "float",
-            "score"
+            "TodasLAsPalabras"
         ],
         [
             "char",
@@ -304,19 +312,11 @@
         ],
         [
             "string",
-            "TodasLAsPalabras"
-        ],
-        [
-            "int",
-            "i"
+            "NuevaPalabra"
         ],
         [
             "int",
             "j"
-        ],
-        [
-            "string",
-            "NuevaPalabra"
         ],
         [
             "string",
@@ -337,29 +337,29 @@
     ],
     "method_names": [
         "Items",
-        "Suma",
         "Producto",
         "ProductoPorEscalar",
-        "LlenarPalabras",
+        "Suma",
         "LlenarTF_IDF",
-        "Snippet",
-        "LlenarIDF",
-        "ConstruirDocumentos",
-        "ComprobarTienenQueEstar",
-        "CalcularScore",
-        "SonIguales",
-        "Agregar",
-        "ComprobarNoPuedenEstar",
-        "Query",
-        "CrearTF_IDF",
-        "LlenarTienenQueEstarYNoPuedenEstar",
-        "DividirYMantenerCaracteres",
         "LlenarPalabras",
-        "Dividir",
+        "Snippet",
+        "ConstruirDocumentos",
+        "SonIguales",
+        "ComprobarTienenQueEstar",
+        "ComprobarNoPuedenEstar",
+        "LlenarIDF",
+        "Query",
+        "Agregar",
+        "CrearTF_IDF",
+        "CalcularScore",
         "CorregirPalabra",
         "Dividir",
-        "ObtenerArchivos",
-        "ObtenerTextos"
+        "DividirYMantenerCaracteres",
+        "LlenarTienenQueEstarYNoPuedenEstar",
+        "LlenarPalabras",
+        "Dividir",
+        "ObtenerTextos",
+        "ObtenerArchivos"
     ],
     "method_return_types": [
         [
@@ -387,6 +387,14 @@
             "void"
         ],
         [
+            "ComprobarTienenQueEstar",
+            "bool"
+        ],
+        [
+            "ComprobarNoPuedenEstar",
+            "bool"
+        ],
+        [
             "ConstruirDocumentos",
             "void"
         ],
@@ -395,8 +403,8 @@
             "void"
         ],
         [
-            "CrearTF_IDF",
-            "void"
+            "Query",
+            "SearchResult"
         ],
         [
             "SonIguales",
@@ -411,24 +419,12 @@
             "void"
         ],
         [
-            "ComprobarTienenQueEstar",
-            "bool"
-        ],
-        [
-            "ComprobarNoPuedenEstar",
-            "bool"
-        ],
-        [
-            "Query",
-            "SearchResult"
+            "CrearTF_IDF",
+            "void"
         ],
         [
             "CalcularScore",
             "float"
-        ],
-        [
-            "LlenarTienenQueEstarYNoPuedenEstar",
-            "void"
         ],
         [
             "DividirYMantenerCaracteres",
@@ -439,12 +435,16 @@
             "string"
         ],
         [
-            "Dividir",
-            "string"
+            "LlenarTienenQueEstarYNoPuedenEstar",
+            "void"
         ],
         [
             "LlenarPalabras",
             "void"
+        ],
+        [
+            "Dividir",
+            "string"
         ],
         [
             "ObtenerArchivos",
@@ -482,7 +482,6 @@
         "Namespace_member_declarationContext": 13,
         "Namespace_declarationContext": 6,
         "Qualified_identifierContext": 6,
-        "Namespace_bodyContext": 6,
         "Type_declarationContext": 7,
         "All_member_modifiersContext": 55,
         "All_member_modifierContext": 69,

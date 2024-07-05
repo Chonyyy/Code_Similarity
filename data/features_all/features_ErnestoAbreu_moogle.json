@@ -1,5 +1,5 @@
 {
-    "total_nodes": 8943,
+    "total_nodes": 8936,
     "max_depth": 389,
     "number_of_variables": 27,
     "number_of_constants": 0,
@@ -116,10 +116,6 @@
     "variable_names": [
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "k"
         ],
         [
@@ -127,24 +123,8 @@
             "newMatrix"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
             "Matrix",
             "C"
-        ],
-        [
-            "List",
-            "wordsList"
-        ],
-        [
-            "char",
-            "separator"
-        ],
-        [
-            "Dictionary",
-            "Word"
         ],
         [
             "int",
@@ -152,14 +132,34 @@
         ],
         [
             "int",
+            "j"
+        ],
+        [
+            "int",
             "k"
+        ],
+        [
+            "char",
+            "separator"
+        ],
+        [
+            "string",
+            "wordsList"
         ],
         [
             "string",
             "newWord"
         ],
         [
-            "string",
+            "int",
+            "i"
+        ],
+        [
+            "Dictionary",
+            "Word"
+        ],
+        [
+            "List",
             "wordsList"
         ],
         [
@@ -171,23 +171,23 @@
             "module"
         ],
         [
-            "float",
-            "dot_product"
-        ],
-        [
             "int",
             "i"
+        ],
+        [
+            "float",
+            "dot_product"
         ]
     ],
     "method_names": [
         "Items",
         "debug",
         "Transpose",
+        "IsLetter",
+        "WordsList",
+        "DocumentsNameList",
         "Normalize",
         "GetWords",
-        "IsLetter",
-        "DocumentsNameList",
-        "WordsList",
         "Dot_Product",
         "Module"
     ],
@@ -197,19 +197,15 @@
             "IEnumerable"
         ],
         [
-            "debug",
-            "void"
-        ],
-        [
             "Transpose",
             "void"
         ],
         [
-            "Normalize",
-            "string"
+            "debug",
+            "void"
         ],
         [
-            "DocumentsNameList",
+            "GetWords",
             "string"
         ],
         [
@@ -217,11 +213,15 @@
             "bool"
         ],
         [
-            "GetWords",
+            "WordsList",
             "string"
         ],
         [
-            "WordsList",
+            "DocumentsNameList",
+            "string"
+        ],
+        [
+            "Normalize",
             "string"
         ],
         [
@@ -254,7 +254,6 @@
         "Namespace_member_declarationContext": 12,
         "Namespace_declarationContext": 7,
         "Qualified_identifierContext": 7,
-        "Namespace_bodyContext": 7,
         "Type_declarationContext": 5,
         "All_member_modifiersContext": 34,
         "All_member_modifierContext": 42,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 44207,
+    "total_nodes": 44240,
     "max_depth": 1057,
     "number_of_variables": 52,
     "number_of_constants": 0,
@@ -34,7 +34,7 @@
     "modifier_volatile": 0,
     "modifier_virtual": 0,
     "modifier_override": 12,
-    "modifier_new": 26,
+    "modifier_new": 30,
     "modifier_partial": 0,
     "modifier_extern": 0,
     "modifier_unsafe": 0,
@@ -267,11 +267,11 @@
         ],
         [
             "Expression",
-            "BoolExpression"
+            "TrueExpression"
         ],
         [
             "Expression",
-            "TrueExpression"
+            "BoolExpression"
         ],
         [
             "bool",
@@ -280,14 +280,6 @@
         [
             "bool",
             "right"
-        ],
-        [
-            "Random",
-            "r"
-        ],
-        [
-            "Expression",
-            "e"
         ],
         [
             "double",
@@ -302,16 +294,20 @@
             "result"
         ],
         [
-            "List",
-            "FunctionExpression"
+            "Random",
+            "r"
+        ],
+        [
+            "Expression",
+            "e"
         ],
         [
             "string",
             "functionName"
         ],
         [
-            "Expression",
-            "parameter"
+            "List",
+            "FunctionExpression"
         ],
         [
             "Dictionary",
@@ -322,12 +318,12 @@
             "OriginalIndex"
         ],
         [
-            "int",
-            "i"
+            "Expression",
+            "parameter"
         ],
         [
             "Expression",
-            "PrintExpression"
+            "F_errors"
         ],
         [
             "List",
@@ -335,31 +331,7 @@
         ],
         [
             "Expression",
-            "F_errors"
-        ],
-        [
-            "Expression",
-            "printExp"
-        ],
-        [
-            "Expression",
-            "letIn"
-        ],
-        [
-            "string",
-            "result"
-        ],
-        [
-            "Expression",
-            "num"
-        ],
-        [
-            "Expression",
-            "c"
-        ],
-        [
-            "Expression",
-            "p"
+            "PrintExpression"
         ],
         [
             "int",
@@ -367,31 +339,7 @@
         ],
         [
             "Expression",
-            "M"
-        ],
-        [
-            "Expression",
-            "f"
-        ],
-        [
-            "Expression",
-            "l"
-        ],
-        [
-            "Expression",
             "exp"
-        ],
-        [
-            "Expression",
-            "result"
-        ],
-        [
-            "Expression",
-            "ifelse"
-        ],
-        [
-            "bool",
-            "isIdfunction"
         ],
         [
             "string",
@@ -399,15 +347,67 @@
         ],
         [
             "Expression",
-            "Value"
+            "f"
+        ],
+        [
+            "Expression",
+            "num"
+        ],
+        [
+            "Expression",
+            "ifelse"
+        ],
+        [
+            "Expression",
+            "l"
+        ],
+        [
+            "Expression",
+            "p"
+        ],
+        [
+            "Expression",
+            "M"
+        ],
+        [
+            "Expression",
+            "printExp"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "Expression",
+            "c"
+        ],
+        [
+            "Expression",
+            "letIn"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "bool",
+            "isIdfunction"
+        ],
+        [
+            "Expression",
+            "result"
+        ],
+        [
+            "string",
+            "NameValue"
         ],
         [
             "string",
             "name"
         ],
         [
-            "string",
-            "NameValue"
+            "Expression",
+            "Value"
         ],
         [
             "string",
@@ -419,58 +419,54 @@
         ]
     ],
     "method_names": [
-        "Restart",
-        "IsString",
-        "IsNumber",
         "IsBool",
         "GetInvalidToken",
         "Tokenizer",
-        "KindOfToken",
         "IsID",
+        "IsString",
+        "IsNumber",
+        "KindOfToken",
+        "Restart",
         "PrintError",
         "Evaluate",
-        "Or",
         "LessOrEqual",
         "Different",
-        "And",
         "GreaterOrEqual",
         "Equals",
+        "And",
+        "Evaluate",
         "Greater",
         "Less",
-        "Evaluate",
-        "cos",
-        "exp",
+        "Or",
+        "log",
         "rand",
+        "cos",
         "PI",
+        "sin",
+        "exp",
+        "Evaluate",
         "sqrt",
         "E",
-        "sin",
-        "log",
         "Evaluate",
         "Evaluate",
         "Evaluate",
-        "IsFunctionName",
         "Current",
-        "Evaluate",
         "Next",
+        "IsFunctionName",
         "Evaluate",
         "Main"
     ],
     "method_return_types": [
         [
-            "IsNumber",
-            "bool"
+            "KindOfToken",
+            "string"
         ],
         [
             "IsID",
             "bool"
         ],
         [
-            "GetInvalidToken",
-            "string"
-        ],
-        [
-            "IsString",
+            "IsNumber",
             "bool"
         ],
         [
@@ -478,16 +474,20 @@
             "void"
         ],
         [
-            "Restart",
-            "void"
+            "IsString",
+            "bool"
+        ],
+        [
+            "GetInvalidToken",
+            "string"
         ],
         [
             "IsBool",
             "bool"
         ],
         [
-            "KindOfToken",
-            "string"
+            "Restart",
+            "void"
         ],
         [
             "PrintError",
@@ -498,15 +498,15 @@
             "void"
         ],
         [
-            "Different",
+            "Greater",
             "string"
         ],
         [
-            "LessOrEqual",
+            "GreaterOrEqual",
             "string"
         ],
         [
-            "Or",
+            "Equals",
             "string"
         ],
         [
@@ -518,11 +518,11 @@
             "void"
         ],
         [
-            "GreaterOrEqual",
+            "Or",
             "string"
         ],
         [
-            "Greater",
+            "LessOrEqual",
             "string"
         ],
         [
@@ -530,31 +530,15 @@
             "string"
         ],
         [
-            "Equals",
+            "Different",
             "string"
         ],
         [
-            "E",
-            "void"
-        ],
-        [
-            "cos",
-            "void"
-        ],
-        [
-            "log",
+            "sqrt",
             "void"
         ],
         [
             "sin",
-            "void"
-        ],
-        [
-            "rand",
-            "void"
-        ],
-        [
-            "exp",
             "void"
         ],
         [
@@ -566,7 +550,23 @@
             "void"
         ],
         [
-            "sqrt",
+            "E",
+            "void"
+        ],
+        [
+            "log",
+            "void"
+        ],
+        [
+            "cos",
+            "void"
+        ],
+        [
+            "exp",
+            "void"
+        ],
+        [
+            "rand",
             "void"
         ],
         [
@@ -575,15 +575,15 @@
         ],
         [
             "Evaluate",
-            "void"
-        ],
-        [
-            "Next",
             "void"
         ],
         [
             "IsFunctionName",
             "bool"
+        ],
+        [
+            "Next",
+            "void"
         ],
         [
             "Evaluate",
@@ -604,20 +604,20 @@
     ],
     "class_names": [
         "Lexer",
-        "LexicalError",
         "SystemErrors",
         "SyntaxError",
+        "LexicalError",
         "IfElse",
-        "BoolOperator",
         "CompareOperations",
+        "BoolOperator",
         "TrigoMathicsExpressions",
         "FunctionDeclaration",
         "FunctionCall",
         "Print",
-        "Expression",
-        "BinaryExpressions",
-        "Atom",
         "HulkExpression",
+        "Atom",
+        "BinaryExpressions",
+        "Expression",
         "Let_in",
         "Program"
     ],
@@ -627,21 +627,21 @@
         "Compilation_unitContext": 13,
         "Using_directivesContext": 13,
         "UsingNamespaceDirectiveContext": 32,
-        "TerminalNodeImpl": 7516,
-        "Namespace_or_type_nameContext": 225,
-        "IdentifierContext": 2056,
+        "TerminalNodeImpl": 7528,
+        "Namespace_or_type_nameContext": 227,
+        "IdentifierContext": 2060,
         "Namespace_member_declarationsContext": 20,
-        "Namespace_member_declarationContext": 27,
+        "Namespace_member_declarationContext": 32,
         "Namespace_declarationContext": 10,
         "Qualified_identifierContext": 10,
         "Namespace_bodyContext": 10,
-        "Type_declarationContext": 17,
+        "Type_declarationContext": 22,
         "Class_definitionContext": 17,
         "Class_bodyContext": 17,
         "Class_member_declarationsContext": 17,
         "Class_member_declarationContext": 87,
-        "All_member_modifiersContext": 80,
-        "All_member_modifierContext": 124,
+        "All_member_modifiersContext": 84,
+        "All_member_modifierContext": 128,
         "Common_member_declarationContext": 87,
         "Typed_member_declarationContext": 51,
         "Type_Context": 304,
@@ -708,7 +708,7 @@
         "Local_variable_declarationContext": 52,
         "Local_variable_declaratorContext": 52,
         "Local_variable_initializerContext": 52,
-        "ErrorNodeImpl": 1251,
+        "ErrorNodeImpl": 1240,
         "ParenthesisExpressionsContext": 3,
         "IfStatementContext": 155,
         "If_bodyContext": 260,
@@ -734,12 +734,14 @@
         "TryStatementContext": 2,
         "Catch_clausesContext": 2,
         "Specific_catch_clauseContext": 3,
+        "AttributesContext": 2,
+        "Attribute_sectionContext": 2,
+        "Attribute_listContext": 10,
+        "AttributeContext": 10,
         "Rank_specifierContext": 1,
         "ContinueStatementContext": 1,
         "Global_attribute_sectionContext": 8,
         "Global_attribute_targetContext": 8,
-        "Attribute_listContext": 8,
-        "AttributeContext": 8,
         "Qualified_alias_memberContext": 2,
         "Attribute_argumentContext": 9
     },

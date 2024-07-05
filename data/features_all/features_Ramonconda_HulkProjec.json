@@ -1,5 +1,5 @@
 {
-    "total_nodes": 50910,
+    "total_nodes": 50908,
     "max_depth": 929,
     "number_of_variables": 99,
     "number_of_constants": 0,
@@ -848,8 +848,8 @@
     ],
     "variable_names": [
         [
-            "int",
-            "start"
+            "Regex",
+            "pattern"
         ],
         [
             "MatchCollection",
@@ -861,23 +861,15 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "parenthesisCount"
+            "start"
         ],
         [
             "int",
             "result"
         ],
         [
-            "string",
-            "instruction"
-        ],
-        [
-            "Regex",
-            "pattern"
+            "int",
+            "parenthesisCount"
         ],
         [
             "string",
@@ -888,6 +880,14 @@
             "j"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "instruction"
+        ],
+        [
             "var",
             "condition"
         ],
@@ -896,32 +896,44 @@
             "Exp"
         ],
         [
-            "var",
-            "ifValue"
-        ],
-        [
-            "object",
-            "val"
-        ],
-        [
             "bool",
             "isOK"
-        ],
-        [
-            "string",
-            "expectedType"
         ],
         [
             "var",
             "elseValue"
         ],
         [
-            "var",
+            "string",
+            "expectedType"
+        ],
+        [
+            "object",
             "val"
+        ],
+        [
+            "var",
+            "ifValue"
         ],
         [
             "Types",
             "type"
+        ],
+        [
+            "var",
+            "val"
+        ],
+        [
+            "string",
+            "expected"
+        ],
+        [
+            "string",
+            "message"
+        ],
+        [
+            "var",
+            "conflictiveType"
         ],
         [
             "Random",
@@ -929,82 +941,18 @@
         ],
         [
             "var",
-            "conflictiveType"
+            "Vars"
         ],
         [
             "string",
-            "message"
+            "arg"
         ],
         [
-            "string",
-            "expected"
-        ],
-        [
-            "List",
-            "VariableName"
+            "HulkExpression",
+            "DefExpression"
         ],
         [
             "VariableDeclaration",
-            "result"
-        ],
-        [
-            "Variable",
-            "LetVariable"
-        ],
-        [
-            "HulkExpression",
-            "ElseDo"
-        ],
-        [
-            "var",
-            "ExpressionList"
-        ],
-        [
-            "HulkExpression",
-            "expr"
-        ],
-        [
-            "string",
-            "invalid"
-        ],
-        [
-            "string",
-            "funcName"
-        ],
-        [
-            "List",
-            "Args"
-        ],
-        [
-            "Dictionary",
-            "LayerVariables"
-        ],
-        [
-            "FunctionDeclaration",
-            "Definition"
-        ],
-        [
-            "bool",
-            "correct"
-        ],
-        [
-            "HulkExpression",
-            "condition"
-        ],
-        [
-            "FunctionDeclaration",
-            "result"
-        ],
-        [
-            "var",
-            "result"
-        ],
-        [
-            "int",
-            "conditionEnd"
-        ],
-        [
-            "HulkExpression",
             "result"
         ],
         [
@@ -1013,31 +961,51 @@
         ],
         [
             "string",
-            "name"
+            "invalid"
+        ],
+        [
+            "bool",
+            "correct"
+        ],
+        [
+            "Dictionary",
+            "LayerVariables"
         ],
         [
             "int",
             "declarationEnd"
         ],
         [
-            "LetInStatement",
-            "result"
+            "FunctionDeclaration",
+            "Definition"
         ],
         [
             "int",
-            "ifDoEnd"
+            "i"
         ],
         [
-            "HulkExpression",
-            "DefExpression"
-        ],
-        [
-            "List",
-            "ArgNames"
+            "var",
+            "ExpressionList"
         ],
         [
             "string",
-            "arg"
+            "funcName"
+        ],
+        [
+            "Variable",
+            "LetVariable"
+        ],
+        [
+            "int",
+            "conditionEnd"
+        ],
+        [
+            "HulkExpression",
+            "expr"
+        ],
+        [
+            "LetInStatement",
+            "result"
         ],
         [
             "FunctionDeclaration",
@@ -1045,19 +1013,43 @@
         ],
         [
             "int",
-            "i"
+            "ifDoEnd"
+        ],
+        [
+            "List",
+            "ArgNames"
+        ],
+        [
+            "List",
+            "Args"
+        ],
+        [
+            "FunctionDeclaration",
+            "result"
+        ],
+        [
+            "HulkExpression",
+            "ElseDo"
+        ],
+        [
+            "HulkExpression",
+            "condition"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "string",
+            "type"
         ],
         [
             "List",
             "names"
         ],
         [
-            "var",
-            "Vars"
-        ],
-        [
-            "string",
-            "type"
+            "HulkExpression",
+            "result"
         ],
         [
             "HulkExpression",
@@ -1065,7 +1057,23 @@
         ],
         [
             "List",
+            "VariableName"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "string",
+            "s"
+        ],
+        [
+            "List",
             "CompInstructions"
+        ],
+        [
+            "HulkExpression",
+            "exp"
         ],
         [
             "int",
@@ -1076,63 +1084,51 @@
             "instruction"
         ],
         [
-            "HulkExpression",
-            "exp"
-        ],
-        [
-            "string",
-            "s"
-        ],
-        [
             "Compiler",
             "compiler"
         ]
     ],
     "method_names": [
-        "GetNameLimit",
-        "GetCommaSeparatedTokens",
-        "GoToPreviousParenthesis",
+        "GoToNextParenthesis",
         "GetInstructions",
         "GetTokens",
-        "GoToNextParenthesis",
-        "GetValue",
+        "GetCommaSeparatedTokens",
+        "GoToPreviousParenthesis",
+        "GetNameLimit",
         "Result",
-        "CheckValue",
         "Define",
+        "GetValue",
+        "CheckValue",
         "CheckValues",
         "CheckValue",
-        "ArgsOk",
         "GetValue",
+        "ArgsOk",
         "Evaluate",
         "AddNewFunction",
-        "TryConditionalAnd",
-        "Parse",
-        "ParseVarDeclaration",
+        "ParseLetInExpression",
         "ParseLetInArgs",
+        "TryConditionalOr",
         "TryEquality",
+        "TryAdditive",
+        "TryUnary",
+        "ParseInternal",
+        "TryConditionalAnd",
+        "ParseVarDeclaration",
+        "ParseIfElseStatement",
+        "ParseInner",
+        "TryMultiplicative",
         "TryPower",
         "ParseFunctionDeclaration",
-        "TryAdditive",
-        "ParseInner",
-        "TryFunctionCall",
-        "TryConditionalOr",
-        "TryUnary",
+        "Parse",
         "TryRelational",
-        "ParseInternal",
+        "TryFunctionCall",
         "TryPrincipal",
-        "ParseIfElseStatement",
-        "TryMultiplicative",
-        "ParseLetInExpression",
         "Compile",
         "Main"
     ],
     "method_return_types": [
         [
-            "GetCommaSeparatedTokens",
-            "List"
-        ],
-        [
-            "GoToPreviousParenthesis",
+            "GoToNextParenthesis",
             "int"
         ],
         [
@@ -1140,23 +1136,35 @@
             "List"
         ],
         [
+            "GetTokens",
+            "string"
+        ],
+        [
+            "GoToPreviousParenthesis",
+            "int"
+        ],
+        [
             "GetNameLimit",
             "int"
         ],
         [
-            "GoToNextParenthesis",
-            "int"
+            "GetCommaSeparatedTokens",
+            "List"
         ],
         [
-            "GetTokens",
-            "string"
+            "CheckValues",
+            "void"
+        ],
+        [
+            "Result",
+            "object"
         ],
         [
             "CheckValue",
             "object"
         ],
         [
-            "Result",
+            "GetValue",
             "object"
         ],
         [
@@ -1164,20 +1172,8 @@
             "void"
         ],
         [
-            "CheckValues",
-            "void"
-        ],
-        [
-            "GetValue",
-            "object"
-        ],
-        [
             "CheckValue",
             "void"
-        ],
-        [
-            "ArgsOk",
-            "bool"
         ],
         [
             "Evaluate",
@@ -1188,8 +1184,52 @@
             "object"
         ],
         [
+            "ArgsOk",
+            "bool"
+        ],
+        [
             "AddNewFunction",
             "void"
+        ],
+        [
+            "TryPower",
+            "HulkExpression"
+        ],
+        [
+            "Parse",
+            "HulkExpression"
+        ],
+        [
+            "TryEquality",
+            "HulkExpression"
+        ],
+        [
+            "TryMultiplicative",
+            "HulkExpression"
+        ],
+        [
+            "ParseInner",
+            "HulkExpression"
+        ],
+        [
+            "TryAdditive",
+            "HulkExpression"
+        ],
+        [
+            "ParseLetInExpression",
+            "HulkExpression"
+        ],
+        [
+            "TryPrincipal",
+            "HulkExpression"
+        ],
+        [
+            "ParseIfElseStatement",
+            "HulkExpression"
+        ],
+        [
+            "TryConditionalAnd",
+            "HulkExpression"
         ],
         [
             "ParseLetInArgs",
@@ -1200,39 +1240,7 @@
             "HulkExpression"
         ],
         [
-            "TryEquality",
-            "HulkExpression"
-        ],
-        [
-            "TryAdditive",
-            "HulkExpression"
-        ],
-        [
             "ParseInternal",
-            "HulkExpression"
-        ],
-        [
-            "TryConditionalAnd",
-            "HulkExpression"
-        ],
-        [
-            "ParseInner",
-            "HulkExpression"
-        ],
-        [
-            "ParseVarDeclaration",
-            "HulkExpression"
-        ],
-        [
-            "ParseIfElseStatement",
-            "HulkExpression"
-        ],
-        [
-            "TryPrincipal",
-            "HulkExpression"
-        ],
-        [
-            "TryUnary",
             "HulkExpression"
         ],
         [
@@ -1240,27 +1248,19 @@
             "HulkExpression"
         ],
         [
+            "ParseVarDeclaration",
+            "HulkExpression"
+        ],
+        [
+            "TryUnary",
+            "HulkExpression"
+        ],
+        [
             "TryConditionalOr",
             "HulkExpression"
         ],
         [
-            "ParseLetInExpression",
-            "HulkExpression"
-        ],
-        [
-            "TryPower",
-            "HulkExpression"
-        ],
-        [
-            "TryMultiplicative",
-            "HulkExpression"
-        ],
-        [
             "TryFunctionCall",
-            "HulkExpression"
-        ],
-        [
-            "Parse",
             "HulkExpression"
         ],
         [
@@ -1276,34 +1276,34 @@
         "RegularError",
         "HulkException",
         "MakeToken",
-        "IfElseStatement",
         "LetInStatement",
+        "IfElseStatement",
         "Asignment",
-        "Cosine",
-        "Conjunction",
-        "Positive",
-        "Rand",
-        "GreaterThan",
-        "Negative",
-        "SquaredRoot",
-        "Sine",
-        "LowerEqualThan",
-        "LowerThan",
         "Equal",
-        "ERaised",
-        "Logarithm",
-        "Subtraction",
-        "Addition",
-        "Negation",
-        "GreaterEqualThan",
         "Power",
-        "Disjunction",
+        "LowerThan",
+        "ERaised",
+        "Negative",
+        "Division",
+        "Cosine",
+        "Positive",
         "BinaryFunction",
+        "Addition",
         "UnaryFunction",
         "Multiplication",
-        "Module",
         "UnEqual",
-        "Division",
+        "Logarithm",
+        "Subtraction",
+        "SquaredRoot",
+        "Sine",
+        "Negation",
+        "GreaterThan",
+        "GreaterEqualThan",
+        "Module",
+        "Rand",
+        "Disjunction",
+        "Conjunction",
+        "LowerEqualThan",
         "HulkHistory",
         "HulkParser",
         "Compiler",
@@ -1340,7 +1340,7 @@
         "Member_nameContext": 14,
         "Accessor_declarationsContext": 14,
         "Accessor_bodyContext": 25,
-        "ErrorNodeImpl": 2657,
+        "ErrorNodeImpl": 2655,
         "Tuple_typeContext": 1,
         "Tuple_elementContext": 1,
         "Constructor_declarationContext": 34,

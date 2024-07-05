@@ -1,5 +1,5 @@
 {
-    "total_nodes": 18631,
+    "total_nodes": 18942,
     "max_depth": 611,
     "number_of_variables": 41,
     "number_of_constants": 0,
@@ -25,8 +25,8 @@
     "control_structures_for": 0,
     "control_structures_while": 8,
     "control_structures_dowhile": 0,
-    "access_modifiers_public": 72,
-    "access_modifiers_private": 25,
+    "access_modifiers_public": 87,
+    "access_modifiers_private": 32,
     "access_modifiers_protected": 0,
     "access_modifiers_internal": 1,
     "access_modifiers_static": 5,
@@ -36,7 +36,7 @@
     "modifier_volatile": 0,
     "modifier_virtual": 0,
     "modifier_override": 1,
-    "modifier_new": 6,
+    "modifier_new": 37,
     "modifier_partial": 0,
     "modifier_extern": 0,
     "modifier_unsafe": 0,
@@ -99,16 +99,16 @@
             "newScope"
         ],
         [
+            "Expression",
+            "AST"
+        ],
+        [
             "Evaluator",
             "evaluator"
         ],
         [
-            "Lexer",
-            "lexer"
-        ],
-        [
-            "Expression",
-            "AST"
+            "List",
+            "tokens"
         ],
         [
             "object",
@@ -119,8 +119,8 @@
             "parser"
         ],
         [
-            "List",
-            "tokens"
+            "Lexer",
+            "lexer"
         ],
         [
             "char",
@@ -128,23 +128,15 @@
         ],
         [
             "Expression",
-            "condition"
+            "value"
         ],
         [
             "Token",
             "id"
         ],
         [
-            "List",
-            "assignments"
-        ],
-        [
             "Expression",
-            "value"
-        ],
-        [
-            "Token",
-            "Operator"
+            "condition"
         ],
         [
             "Expression",
@@ -155,51 +147,59 @@
             "thenBranch"
         ],
         [
-            "Expression",
-            "expression"
+            "Token",
+            "Operator"
         ],
         [
             "Expression",
-            "right"
+            "expression"
         ],
         [
             "Expression",
             "elseBranch"
         ],
         [
-            "string",
-            "line"
+            "List",
+            "assignments"
+        ],
+        [
+            "Expression",
+            "right"
         ],
         [
             "Interpreter",
             "interpreter"
+        ],
+        [
+            "string",
+            "line"
         ]
     ],
     "method_names": [
-        "PopScope",
         "CurrentScope",
-        "PushScope",
+        "PopScope",
         "Evaluate",
-        "Initialize",
+        "PushScope",
         "AddFunction",
+        "Initialize",
         "ToString",
         "Run",
         "Report",
         "ScanTokens",
         "ScanToken",
-        "Logical",
-        "Equality",
-        "Power",
         "Unary",
         "IfElseStatement",
-        "Comparison",
-        "LetInExpression",
-        "Parse",
-        "Term",
-        "Factor",
         "Primary",
+        "LetInExpression",
+        "Factor",
+        "Power",
+        "Logical",
         "Concatenation",
+        "Term",
         "Literal",
+        "Comparison",
+        "Parse",
+        "Equality",
         "Expression",
         "Main"
     ],
@@ -207,6 +207,10 @@
         [
             "CurrentScope",
             "Dictionary"
+        ],
+        [
+            "PushScope",
+            "void"
         ],
         [
             "PopScope",
@@ -217,15 +221,11 @@
             "object"
         ],
         [
-            "PushScope",
+            "Initialize",
             "void"
         ],
         [
             "AddFunction",
-            "void"
-        ],
-        [
-            "Initialize",
             "void"
         ],
         [
@@ -249,31 +249,7 @@
             "void"
         ],
         [
-            "Expression",
-            "Expression"
-        ],
-        [
-            "Unary",
-            "Expression"
-        ],
-        [
-            "Term",
-            "Expression"
-        ],
-        [
-            "Literal",
-            "Expression"
-        ],
-        [
-            "Parse",
-            "Expression"
-        ],
-        [
-            "Factor",
-            "Expression"
-        ],
-        [
-            "Primary",
+            "IfElseStatement",
             "Expression"
         ],
         [
@@ -281,11 +257,31 @@
             "Expression"
         ],
         [
+            "Comparison",
+            "Expression"
+        ],
+        [
+            "Literal",
+            "Expression"
+        ],
+        [
             "Logical",
             "Expression"
         ],
         [
-            "LetInExpression",
+            "Term",
+            "Expression"
+        ],
+        [
+            "Expression",
+            "Expression"
+        ],
+        [
+            "Parse",
+            "Expression"
+        ],
+        [
+            "Concatenation",
             "Expression"
         ],
         [
@@ -293,15 +289,19 @@
             "Expression"
         ],
         [
-            "IfElseStatement",
+            "LetInExpression",
             "Expression"
         ],
         [
-            "Comparison",
+            "Primary",
             "Expression"
         ],
         [
-            "Concatenation",
+            "Factor",
+            "Expression"
+        ],
+        [
+            "Unary",
             "Expression"
         ],
         [
@@ -312,17 +312,17 @@
     "class_names": [
         "Evaluator",
         "Memory",
-        "VariableExpression",
         "FunctionDeclaration",
-        "IfElseStatement",
-        "LetInExpression",
-        "BinaryExpression",
-        "GroupingExpression",
         "AssignExpression",
         "LiteralExpression",
-        "UnaryExpression",
-        "Expression",
+        "IfElseStatement",
+        "LetInExpression",
         "FunctionCall",
+        "BinaryExpression",
+        "UnaryExpression",
+        "GroupingExpression",
+        "VariableExpression",
+        "Expression",
         "Token",
         "Interpreter",
         "Error",
@@ -336,17 +336,17 @@
         "Compilation_unitContext": 10,
         "Using_directivesContext": 10,
         "UsingNamespaceDirectiveContext": 53,
-        "TerminalNodeImpl": 3065,
-        "Namespace_or_type_nameContext": 249,
-        "IdentifierContext": 996,
+        "TerminalNodeImpl": 3165,
+        "Namespace_or_type_nameContext": 257,
+        "IdentifierContext": 1007,
         "Namespace_member_declarationsContext": 20,
-        "Namespace_member_declarationContext": 31,
+        "Namespace_member_declarationContext": 92,
         "Namespace_declarationContext": 10,
         "Qualified_identifierContext": 10,
         "Namespace_bodyContext": 10,
-        "Type_declarationContext": 21,
-        "All_member_modifiersContext": 99,
-        "All_member_modifierContext": 108,
+        "Type_declarationContext": 82,
+        "All_member_modifiersContext": 152,
+        "All_member_modifierContext": 161,
         "Class_definitionContext": 19,
         "Class_bodyContext": 19,
         "Class_member_declarationsContext": 18,
@@ -422,7 +422,11 @@
         "ThrowStatementContext": 5,
         "String_literalContext": 34,
         "IsTypeContext": 8,
-        "ErrorNodeImpl": 2823,
+        "ErrorNodeImpl": 2724,
+        "AttributesContext": 22,
+        "Attribute_sectionContext": 25,
+        "Attribute_listContext": 8,
+        "AttributeContext": 8,
         "Enum_definitionContext": 1,
         "Enum_bodyContext": 1,
         "Enum_member_declarationContext": 34,

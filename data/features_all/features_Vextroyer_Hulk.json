@@ -1,5 +1,5 @@
 {
-    "total_nodes": 41396,
+    "total_nodes": 41384,
     "max_depth": 788,
     "number_of_variables": 42,
     "number_of_constants": 0,
@@ -587,12 +587,20 @@
             "expected"
         ],
         [
+            "int",
+            "testNumber"
+        ],
+        [
             "string",
             "result"
         ],
         [
-            "int",
-            "testNumber"
+            "Token",
+            "identifier"
+        ],
+        [
+            "List",
+            "parameters"
         ],
         [
             "Expr",
@@ -600,15 +608,19 @@
         ],
         [
             "Expr",
-            "ifBranch"
-        ],
-        [
-            "Expr",
-            "right"
-        ],
-        [
-            "Expr",
             "elseBranch"
+        ],
+        [
+            "List",
+            "arguments"
+        ],
+        [
+            "Expr",
+            "left"
+        ],
+        [
+            "Expr",
+            "ifBranch"
         ],
         [
             "List",
@@ -616,7 +628,7 @@
         ],
         [
             "Expr",
-            "condition"
+            "rValue"
         ],
         [
             "Expr",
@@ -624,27 +636,15 @@
         ],
         [
             "Expr",
-            "rValue"
+            "right"
+        ],
+        [
+            "Expr",
+            "condition"
         ],
         [
             "Expr",
             "body"
-        ],
-        [
-            "List",
-            "parameters"
-        ],
-        [
-            "List",
-            "arguments"
-        ],
-        [
-            "Token",
-            "identifier"
-        ],
-        [
-            "Expr",
-            "left"
         ],
         [
             "List",
@@ -667,52 +667,56 @@
             "condition"
         ],
         [
-            "int",
-            "arity"
-        ],
-        [
             "string",
             "name"
         ],
         [
-            "AstPrinter",
-            "printer"
-        ],
-        [
             "int",
-            "i"
-        ],
-        [
-            "string",
-            "output"
-        ],
-        [
-            "StreamReader",
-            "errors"
-        ],
-        [
-            "Expr",
-            "expr"
+            "arity"
         ],
         [
             "string",
             "source"
         ],
         [
+            "StreamReader",
+            "errors"
+        ],
+        [
             "string",
             "line"
         ],
         [
-            "Parser",
-            "parser"
+            "Expr",
+            "expr"
+        ],
+        [
+            "AstPrinter",
+            "printer"
         ],
         [
             "List",
             "tokens"
         ],
         [
+            "string",
+            "output"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Parser",
+            "parser"
+        ],
+        [
             "Scanner",
             "scanner"
+        ],
+        [
+            "Token",
+            "actual"
         ],
         [
             "Token",
@@ -721,10 +725,6 @@
         [
             "int",
             "i"
-        ],
-        [
-            "Token",
-            "actual"
         ],
         [
             "Expr",
@@ -737,69 +737,69 @@
     ],
     "method_names": [
         "Test",
-        "Replace",
-        "VisitAssignmentExpr",
         "VisitFunctionExpr",
-        "VisitCallExpr",
-        "VisitLetInExpr",
-        "VisitVariableExpr",
-        "Match",
-        "VisitLiteralExpr",
-        "VisitUnaryExpr",
-        "VisitConditionalExpr",
         "VisitBinaryExpr",
+        "VisitCallExpr",
+        "Replace",
+        "VisitUnaryExpr",
+        "VisitLetInExpr",
+        "VisitLiteralExpr",
+        "Match",
+        "VisitConditionalExpr",
+        "VisitAssignmentExpr",
+        "VisitVariableExpr",
         "ToString",
         "VisitFunctionExpr",
-        "VisitAssignmentExpr",
-        "VisitCallExpr",
-        "VisitLetInExpr",
-        "VisitVariableExpr",
-        "Interpret",
-        "VisitLiteralExpr",
-        "VisitUnaryExpr",
-        "VisitConditionalExpr",
         "VisitBinaryExpr",
-        "Stringify",
+        "VisitCallExpr",
+        "VisitUnaryExpr",
+        "VisitLetInExpr",
+        "VisitLiteralExpr",
+        "VisitConditionalExpr",
+        "VisitAssignmentExpr",
         "Evaluate",
+        "VisitVariableExpr",
+        "Stringify",
+        "Interpret",
         "Remove",
+        "Set",
         "redefined",
         "Get",
-        "Set",
         "Register",
+        "Main",
+        "DebugScanner",
+        "Error",
+        "TestingMode",
+        "Run",
+        "InteractiveMode",
         "SelectMode",
         "DebugParser",
         "ErrorTestingMode",
-        "Main",
-        "TestingMode",
-        "Run",
-        "DebugScanner",
-        "Error",
-        "InteractiveMode",
         "ErrorType",
         "HandleException",
         "VisitFunctionExpr",
-        "VisitAssignmentExpr",
-        "VisitUnaryExpr",
         "VisitCallExpr",
+        "VisitBinaryExpr",
+        "VisitUnaryExpr",
         "VisitLetInExpr",
+        "VisitLiteralExpr",
+        "VisitAssignmentExpr",
+        "VisitConditionalExpr",
+        "Accept",
         "VisitVariableExpr",
         "RandomizeArgs",
-        "Accept",
-        "VisitLiteralExpr",
-        "VisitConditionalExpr",
-        "VisitBinaryExpr",
-        "Parse",
         "HLExpression",
+        "Parse",
         "VisitFunctionExpr",
-        "VisitAssignmentExpr",
-        "VisitCallExpr",
-        "VisitLetInExpr",
         "Print",
-        "VisitVariableExpr",
-        "VisitLiteralExpr",
+        "VisitBinaryExpr",
+        "VisitCallExpr",
         "VisitUnaryExpr",
+        "VisitLetInExpr",
+        "VisitLiteralExpr",
         "VisitConditionalExpr",
-        "VisitBinaryExpr"
+        "VisitAssignmentExpr",
+        "VisitVariableExpr"
     ],
     "method_return_types": [
         [
@@ -807,7 +807,15 @@
             "void"
         ],
         [
-            "VisitBinaryExpr",
+            "VisitAssignmentExpr",
+            "Expr"
+        ],
+        [
+            "VisitFunctionExpr",
+            "Expr"
+        ],
+        [
+            "VisitCallExpr",
             "Expr"
         ],
         [
@@ -815,15 +823,23 @@
             "Expr"
         ],
         [
+            "Match",
+            "Token"
+        ],
+        [
             "VisitUnaryExpr",
             "Expr"
         ],
         [
-            "VisitLetInExpr",
+            "VisitConditionalExpr",
             "Expr"
         ],
         [
-            "VisitCallExpr",
+            "VisitBinaryExpr",
+            "Expr"
+        ],
+        [
+            "VisitLetInExpr",
             "Expr"
         ],
         [
@@ -835,22 +851,6 @@
             "Expr"
         ],
         [
-            "VisitFunctionExpr",
-            "Expr"
-        ],
-        [
-            "VisitConditionalExpr",
-            "Expr"
-        ],
-        [
-            "Match",
-            "Token"
-        ],
-        [
-            "VisitAssignmentExpr",
-            "Expr"
-        ],
-        [
             "ToString",
             "string"
         ],
@@ -859,7 +859,7 @@
             "object"
         ],
         [
-            "VisitAssignmentExpr",
+            "VisitConditionalExpr",
             "object"
         ],
         [
@@ -871,31 +871,31 @@
             "object"
         ],
         [
-            "Interpret",
+            "Stringify",
             "string"
-        ],
-        [
-            "VisitCallExpr",
-            "object"
         ],
         [
             "VisitVariableExpr",
             "object"
         ],
         [
-            "VisitConditionalExpr",
+            "VisitCallExpr",
+            "object"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "Interpret",
+            "string"
+        ],
+        [
+            "VisitAssignmentExpr",
             "object"
         ],
         [
             "VisitFunctionExpr",
-            "object"
-        ],
-        [
-            "Stringify",
-            "string"
-        ],
-        [
-            "Evaluate",
             "object"
         ],
         [
@@ -903,51 +903,23 @@
             "object"
         ],
         [
-            "Remove",
-            "void"
-        ],
-        [
             "Register",
             "void"
         ],
         [
-            "redefined",
-            "be"
+            "Remove",
+            "void"
         ],
         [
             "Get",
             "object"
         ],
         [
+            "redefined",
+            "be"
+        ],
+        [
             "Set",
-            "void"
-        ],
-        [
-            "SelectMode",
-            "void"
-        ],
-        [
-            "InteractiveMode",
-            "void"
-        ],
-        [
-            "Error",
-            "void"
-        ],
-        [
-            "Run",
-            "string"
-        ],
-        [
-            "TestingMode",
-            "void"
-        ],
-        [
-            "DebugScanner",
-            "void"
-        ],
-        [
-            "ErrorTestingMode",
             "void"
         ],
         [
@@ -955,11 +927,35 @@
             "void"
         ],
         [
+            "DebugScanner",
+            "void"
+        ],
+        [
             "DebugParser",
             "void"
         ],
         [
-            "HandleException",
+            "TestingMode",
+            "void"
+        ],
+        [
+            "InteractiveMode",
+            "void"
+        ],
+        [
+            "Run",
+            "string"
+        ],
+        [
+            "SelectMode",
+            "void"
+        ],
+        [
+            "ErrorTestingMode",
+            "void"
+        ],
+        [
+            "Error",
             "void"
         ],
         [
@@ -967,24 +963,12 @@
             "string"
         ],
         [
-            "RandomizeArgs",
+            "HandleException",
             "void"
         ],
         [
-            "VisitAssignmentExpr",
-            "R"
-        ],
-        [
-            "VisitFunctionExpr",
-            "R"
-        ],
-        [
-            "Accept",
-            "R"
-        ],
-        [
-            "VisitBinaryExpr",
-            "R"
+            "RandomizeArgs",
+            "void"
         ],
         [
             "VisitLiteralExpr",
@@ -995,11 +979,19 @@
             "R"
         ],
         [
-            "VisitLetInExpr",
+            "VisitConditionalExpr",
             "R"
         ],
         [
-            "VisitVariableExpr",
+            "VisitBinaryExpr",
+            "R"
+        ],
+        [
+            "Accept",
+            "R"
+        ],
+        [
+            "VisitLetInExpr",
             "R"
         ],
         [
@@ -1007,7 +999,15 @@
             "R"
         ],
         [
-            "VisitConditionalExpr",
+            "VisitVariableExpr",
+            "R"
+        ],
+        [
+            "VisitAssignmentExpr",
+            "R"
+        ],
+        [
+            "VisitFunctionExpr",
             "R"
         ],
         [
@@ -1019,15 +1019,7 @@
             "Expr"
         ],
         [
-            "VisitConditionalExpr",
-            "string"
-        ],
-        [
-            "VisitAssignmentExpr",
-            "string"
-        ],
-        [
-            "Print",
+            "VisitLiteralExpr",
             "string"
         ],
         [
@@ -1035,15 +1027,7 @@
             "string"
         ],
         [
-            "VisitLiteralExpr",
-            "string"
-        ],
-        [
             "VisitUnaryExpr",
-            "string"
-        ],
-        [
-            "VisitLetInExpr",
             "string"
         ],
         [
@@ -1055,7 +1039,23 @@
             "string"
         ],
         [
+            "VisitLetInExpr",
+            "string"
+        ],
+        [
             "VisitFunctionExpr",
+            "string"
+        ],
+        [
+            "VisitAssignmentExpr",
+            "string"
+        ],
+        [
+            "VisitConditionalExpr",
+            "string"
+        ],
+        [
+            "Print",
             "string"
         ]
     ],
@@ -1066,20 +1066,20 @@
         "Interpreter",
         "Environment",
         "Hulk",
-        "InterpreterException",
         "ParserException",
         "ScannerException",
         "HulkException",
+        "InterpreterException",
+        "VariableExpr",
+        "LiteralExpr",
+        "CallExpr",
+        "LetInExpr",
+        "Expr",
+        "AssignmentExpr",
+        "FunctionExpr",
+        "BinaryExpr",
         "UnaryExpr",
         "ConditionalExpr",
-        "CallExpr",
-        "AssignmentExpr",
-        "LiteralExpr",
-        "VariableExpr",
-        "BinaryExpr",
-        "LetInExpr",
-        "FunctionExpr",
-        "Expr",
         "Parser",
         "AstPrinter"
     ],
@@ -1095,7 +1095,6 @@
         "TerminalNodeImpl": 5995,
         "Qualified_identifierContext": 12,
         "IdentifierContext": 1659,
-        "Namespace_bodyContext": 12,
         "Type_declarationContext": 41,
         "Struct_definitionContext": 1,
         "Struct_bodyContext": 1,

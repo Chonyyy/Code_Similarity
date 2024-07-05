@@ -1,5 +1,5 @@
 {
-    "total_nodes": 57172,
+    "total_nodes": 57145,
     "max_depth": 1788,
     "number_of_variables": 61,
     "number_of_constants": 0,
@@ -553,35 +553,31 @@
         ],
         [
             "Dictionary",
-            "constants"
-        ],
-        [
-            "var",
-            "syntaxTree"
+            "functions"
         ],
         [
             "Dictionary",
-            "functions"
+            "constants"
         ],
         [
             "var",
             "checking"
         ],
         [
-            "object",
-            "obj"
+            "var",
+            "syntaxTree"
         ],
         [
             "global",
             "temp"
         ],
         [
-            "DialogResult",
-            "result1"
+            "object",
+            "obj"
         ],
         [
-            "MessageBoxButtons",
-            "messageBoxButtons"
+            "DialogResult",
+            "result1"
         ],
         [
             "var",
@@ -590,6 +586,10 @@
         [
             "Process",
             "process"
+        ],
+        [
+            "MessageBoxButtons",
+            "messageBoxButtons"
         ],
         [
             "System",
@@ -605,19 +605,91 @@
         ],
         [
             "double",
+            "x_c"
+        ],
+        [
+            "double",
             "D"
         ],
         [
+            "Points",
+            "up"
+        ],
+        [
+            "double",
+            "c"
+        ],
+        [
             "float",
-            "distance_v1"
+            "distance_v2"
+        ],
+        [
+            "double",
+            "x_1"
+        ],
+        [
+            "var",
+            "denominador"
+        ],
+        [
+            "float",
+            "n"
+        ],
+        [
+            "double",
+            "x_2"
+        ],
+        [
+            "var",
+            "errorRange"
+        ],
+        [
+            "float",
+            "angle"
+        ],
+        [
+            "double",
+            "distance"
+        ],
+        [
+            "float",
+            "y_2"
+        ],
+        [
+            "double",
+            "razon"
+        ],
+        [
+            "float",
+            "y_1"
         ],
         [
             "double",
             "b"
         ],
         [
+            "var",
+            "enumerador"
+        ],
+        [
             "(",
             "v2"
+        ],
+        [
+            "double",
+            "y_c"
+        ],
+        [
+            "float",
+            "scalarProduct"
+        ],
+        [
+            "double",
+            "y_1"
+        ],
+        [
+            "double",
+            "y_2"
         ],
         [
             "double",
@@ -628,16 +700,12 @@
             "result"
         ],
         [
+            "(",
+            "v1"
+        ],
+        [
             "float",
-            "scalarProduct"
-        ],
-        [
-            "double",
-            "y_c"
-        ],
-        [
-            "double",
-            "x_c"
+            "m"
         ],
         [
             "Points",
@@ -645,91 +713,15 @@
         ],
         [
             "float",
-            "m"
-        ],
-        [
-            "float",
-            "distance_v2"
-        ],
-        [
-            "(",
-            "v1"
-        ],
-        [
-            "float",
-            "n"
-        ],
-        [
-            "var",
-            "denominador"
-        ],
-        [
-            "double",
-            "distance"
-        ],
-        [
-            "double",
-            "x_2"
-        ],
-        [
-            "Points",
-            "up"
-        ],
-        [
-            "double",
-            "razon"
-        ],
-        [
-            "double",
-            "y_2"
-        ],
-        [
-            "double",
-            "y_1"
-        ],
-        [
-            "var",
-            "errorRange"
-        ],
-        [
-            "double",
-            "c"
-        ],
-        [
-            "float",
-            "y_2"
-        ],
-        [
-            "double",
-            "x_1"
-        ],
-        [
-            "var",
-            "enumerador"
-        ],
-        [
-            "float",
-            "y_1"
-        ],
-        [
-            "float",
-            "angle"
+            "distance_v1"
         ],
         [
             "string",
             "operandType"
         ],
         [
-            "List",
-            "values"
-        ],
-        [
-            "List",
+            "var",
             "elements"
-        ],
-        [
-            "string",
-            "type"
         ],
         [
             "int",
@@ -740,28 +732,40 @@
             "elementType"
         ],
         [
-            "var",
+            "string",
+            "type"
+        ],
+        [
+            "List",
             "elements"
         ],
         [
-            "Func",
-            "func"
+            "List",
+            "values"
         ],
         [
             "var",
             "first"
         ],
         [
-            "string",
-            "type"
+            "Func",
+            "func"
         ],
         [
             "int",
             "i"
         ],
         [
+            "string",
+            "type"
+        ],
+        [
             "var",
             "func"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "var",
@@ -770,77 +774,73 @@
         [
             "var",
             "seqType"
-        ],
-        [
-            "int",
-            "i"
         ]
     ],
     "method_names": [
         "Reset",
         "BlendCompile",
+        "Exit_Click",
         "MoreAbout_Click",
         "GraphicWindow_Click",
-        "Exit_Click",
-        "InitializeComponent",
         "Dispose",
+        "InitializeComponent",
         "Main",
-        "InitializeComponent",
         "Dispose",
-        "Check",
+        "InitializeComponent",
         "Evaluate",
         "Check",
         "Check",
-        "IntersectionCircle_Ray",
-        "LineEquation",
-        "AngleBetweenVectors",
-        "DistanceBetweenPoints",
-        "DistancePointLine",
-        "IsInSegment",
-        "PointInLine",
+        "Check",
         "GetAngleQuadrant",
-        "Intersect",
+        "DistancePointLine",
+        "LineEquation",
+        "DistanceBetweenPoints",
+        "AngleBetweenVectors",
+        "IsInSegment",
+        "IntersectionCircle_Ray",
+        "PointInLine",
         "PointsInFigure",
-        "GetHashCode",
+        "Intersect",
+        "Evaluate",
         "Check",
+        "GetHashCode",
         "Equals",
+        "Check",
         "Evaluate",
-        "Check",
-        "Check",
         "RestOfSequence",
+        "Check",
         "Evaluate",
+        "RestOfSequence",
+        "Check",
         "CreateInifniteSequence",
-        "Check",
-        "RestOfSequence",
         "Evaluate",
-        "Check",
         "RestOfSequence",
-        "Evaluate",
-        "GetHashCode",
+        "Check",
         "GetInternalTypeOfSequence",
         "RestOfSequence",
+        "GetHashCode",
         "Equals",
-        "Check",
         "Evaluate",
         "Check",
-        "Reset",
-        "SetError"
+        "Check",
+        "SetError",
+        "Reset"
     ],
     "method_return_types": [
-        [
-            "Reset",
-            "void"
-        ],
         [
             "BlendCompile",
             "("
         ],
         [
-            "Exit_Click",
+            "Reset",
             "void"
         ],
         [
             "GraphicWindow_Click",
+            "void"
+        ],
+        [
+            "Exit_Click",
             "void"
         ],
         [
@@ -884,68 +884,60 @@
             "bool"
         ],
         [
-            "PointInLine",
-            "float"
-        ],
-        [
             "IsInSegment",
             "bool"
-        ],
-        [
-            "GetAngleQuadrant",
-            "int"
-        ],
-        [
-            "DistanceBetweenPoints",
-            "float"
-        ],
-        [
-            "DistancePointLine",
-            "float"
-        ],
-        [
-            "IntersectionCircle_Ray",
-            "Points"
-        ],
-        [
-            "AngleBetweenVectors",
-            "float"
         ],
         [
             "LineEquation",
             "("
         ],
         [
-            "PointsInFigure",
-            "SequenceExpressionSyntax"
+            "DistanceBetweenPoints",
+            "float"
+        ],
+        [
+            "PointInLine",
+            "float"
+        ],
+        [
+            "AngleBetweenVectors",
+            "float"
+        ],
+        [
+            "GetAngleQuadrant",
+            "int"
+        ],
+        [
+            "IntersectionCircle_Ray",
+            "Points"
+        ],
+        [
+            "DistancePointLine",
+            "float"
         ],
         [
             "Intersect",
             "FiniteSequence"
         ],
         [
-            "Evaluate",
-            "object"
-        ],
-        [
-            "Check",
-            "bool"
-        ],
-        [
-            "Equals",
-            "bool"
+            "PointsInFigure",
+            "SequenceExpressionSyntax"
         ],
         [
             "GetHashCode",
             "int"
         ],
         [
-            "Check",
+            "Equals",
             "bool"
         ],
         [
             "Evaluate",
             "object"
+        ],
+        [
+            "Check",
+            "bool"
         ],
         [
             "Check",
@@ -956,12 +948,12 @@
             "SequenceExpressionSyntax"
         ],
         [
-            "Check",
-            "bool"
-        ],
-        [
             "Evaluate",
             "object"
+        ],
+        [
+            "Check",
+            "bool"
         ],
         [
             "CreateInifniteSequence",
@@ -972,16 +964,32 @@
             "SequenceExpressionSyntax"
         ],
         [
+            "Evaluate",
+            "object"
+        ],
+        [
             "Check",
             "bool"
+        ],
+        [
+            "RestOfSequence",
+            "SequenceExpressionSyntax"
         ],
         [
             "Evaluate",
             "object"
         ],
         [
-            "RestOfSequence",
-            "SequenceExpressionSyntax"
+            "Check",
+            "bool"
+        ],
+        [
+            "GetHashCode",
+            "int"
+        ],
+        [
+            "Equals",
+            "bool"
         ],
         [
             "RestOfSequence",
@@ -992,20 +1000,12 @@
             "string"
         ],
         [
-            "Equals",
-            "bool"
-        ],
-        [
-            "GetHashCode",
-            "int"
+            "Evaluate",
+            "object"
         ],
         [
             "Check",
             "bool"
-        ],
-        [
-            "Evaluate",
-            "object"
         ],
         [
             "Check",
@@ -1029,8 +1029,8 @@
         "Program",
         "Form1",
         "SyntaxToken",
-        "ErrorExpressionSyntax",
         "ExpressionSyntax",
+        "ErrorExpressionSyntax",
         "MultipleAssignmentSyntax",
         "Restore",
         "Utilities",
@@ -1051,8 +1051,8 @@
         "VoidExpressionSyntax",
         "ImportExpressionSyntax",
         "ScopeSupplies",
-        "Scope",
         "Function",
+        "Scope",
         "Constant",
         "Error"
     ],
@@ -1069,7 +1069,6 @@
         "Namespace_member_declarationContext": 446,
         "Namespace_declarationContext": 32,
         "Qualified_identifierContext": 32,
-        "Namespace_bodyContext": 32,
         "Type_declarationContext": 414,
         "All_member_modifiersContext": 566,
         "All_member_modifierContext": 794,
@@ -1158,6 +1157,7 @@
         "Global_attribute_targetContext": 18,
         "Qualified_alias_memberContext": 18,
         "Attribute_argumentContext": 28,
+        "Namespace_bodyContext": 5,
         "Constructor_declarationContext": 16,
         "BodyContext": 16,
         "Property_declarationContext": 58,

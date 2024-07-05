@@ -1,5 +1,5 @@
 {
-    "total_nodes": 15161,
+    "total_nodes": 15152,
     "max_depth": 428,
     "number_of_variables": 31,
     "number_of_constants": 0,
@@ -145,23 +145,19 @@
     "variable_names": [
         [
             "int",
+            "k"
+        ],
+        [
+            "int",
+            "temparreglo"
+        ],
+        [
+            "int",
             "tempmatriz"
         ],
         [
             "int",
-            "temporal"
-        ],
-        [
-            "int",
-            "resultado"
-        ],
-        [
-            "int",
             "c"
-        ],
-        [
-            "double",
-            "sol"
         ],
         [
             "int",
@@ -169,30 +165,34 @@
         ],
         [
             "int",
-            "k"
+            "pos"
+        ],
+        [
+            "int",
+            "resultado"
+        ],
+        [
+            "int",
+            "temporal"
         ],
         [
             "int",
             "j"
         ],
         [
-            "int",
-            "pos"
-        ],
-        [
-            "int",
-            "temparreglo"
+            "double",
+            "sol"
         ]
     ],
     "method_names": [
         "Items",
         "Query",
-        "RemoveAllColumnas",
         "Rotar",
-        "EliminaColumnaMatriz",
-        "Multiplicar",
+        "Sumar",
         "EliminaCeldas",
-        "Sumar"
+        "RemoveAllColumnas",
+        "Multiplicar",
+        "EliminaColumnaMatriz"
     ],
     "method_return_types": [
         [
@@ -208,11 +208,15 @@
             "int"
         ],
         [
-            "Rotar",
-            "double"
+            "EliminaColumnaMatriz",
+            "int"
         ],
         [
             "Sumar",
+            "double"
+        ],
+        [
+            "Rotar",
             "double"
         ],
         [
@@ -222,10 +226,6 @@
         [
             "Multiplicar",
             "double"
-        ],
-        [
-            "EliminaColumnaMatriz",
-            "int"
         ]
     ],
     "class_names": [
@@ -275,7 +275,6 @@
         "Namespace_member_declarationContext": 14,
         "Namespace_declarationContext": 10,
         "Qualified_identifierContext": 10,
-        "Namespace_bodyContext": 10,
         "Type_declarationContext": 4,
         "All_member_modifiersContext": 23,
         "All_member_modifierContext": 32,
@@ -333,6 +332,7 @@
         "Integral_typeContext": 38,
         "Floating_point_typeContext": 20,
         "Method_invocationContext": 43,
+        "Namespace_bodyContext": 1,
         "DeclarationStatementContext": 16,
         "Local_variable_declarationContext": 31,
         "Local_variable_typeContext": 31,

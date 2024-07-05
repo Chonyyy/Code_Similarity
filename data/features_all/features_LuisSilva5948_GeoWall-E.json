@@ -1,5 +1,5 @@
 {
-    "total_nodes": 75677,
+    "total_nodes": 75772,
     "max_depth": 1110,
     "number_of_variables": 207,
     "number_of_constants": 0,
@@ -29,7 +29,7 @@
     "control_structures_while": 4,
     "control_structures_dowhile": 0,
     "access_modifiers_public": 264,
-    "access_modifiers_private": 18,
+    "access_modifiers_private": 31,
     "access_modifiers_protected": 1,
     "access_modifiers_internal": 2,
     "access_modifiers_static": 104,
@@ -39,7 +39,7 @@
     "modifier_volatile": 0,
     "modifier_virtual": 0,
     "modifier_override": 14,
-    "modifier_new": 46,
+    "modifier_new": 50,
     "modifier_partial": 1,
     "modifier_extern": 0,
     "modifier_unsafe": 0,
@@ -1218,12 +1218,12 @@
             "c"
         ],
         [
-            "List",
-            "AST"
-        ],
-        [
             "Expression",
             "instruction"
+        ],
+        [
+            "List",
+            "AST"
         ],
         [
             "var",
@@ -1234,60 +1234,24 @@
             "type"
         ],
         [
-            "List",
-            "rays"
-        ],
-        [
             "double",
-            "x"
-        ],
-        [
-            "int",
-            "i"
+            "slope"
         ],
         [
             "List",
             "circles"
         ],
         [
-            "List",
-            "arcs"
-        ],
-        [
             "double",
-            "maxY"
+            "count"
         ],
         [
             "double",
             "orientation"
         ],
         [
-            "double",
-            "startAngle"
-        ],
-        [
-            "int",
-            "limit"
-        ],
-        [
-            "double",
-            "sweepAngle"
-        ],
-        [
             "List",
             "lines"
-        ],
-        [
-            "List",
-            "points"
-        ],
-        [
-            "List",
-            "segments"
-        ],
-        [
-            "int",
-            "amount"
         ],
         [
             "double",
@@ -1295,23 +1259,47 @@
         ],
         [
             "double",
-            "slope"
+            "intercept"
+        ],
+        [
+            "List",
+            "arcs"
         ],
         [
             "double",
-            "y"
+            "sweepAngle"
         ],
         [
             "List",
             "numbers"
         ],
         [
-            "double",
-            "intercept"
+            "int",
+            "limit"
+        ],
+        [
+            "int",
+            "amount"
         ],
         [
             "double",
             "angle"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "rays"
+        ],
+        [
+            "List",
+            "points"
+        ],
+        [
+            "double",
+            "startAngle"
         ],
         [
             "double",
@@ -1319,23 +1307,35 @@
         ],
         [
             "double",
-            "count"
+            "maxY"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "List",
+            "segments"
+        ],
+        [
+            "double",
+            "y"
         ],
         [
             "SemanticChecker",
             "checker"
         ],
         [
-            "List",
-            "tokens"
+            "Lexer",
+            "lexer"
         ],
         [
             "List",
             "AST"
         ],
         [
-            "Lexer",
-            "lexer"
+            "List",
+            "tokens"
         ],
         [
             "Evaluator",
@@ -1346,52 +1346,12 @@
             "parser"
         ],
         [
-            "double",
-            "centerY"
-        ],
-        [
-            "double",
-            "x2"
-        ],
-        [
-            "Circle",
-            "circle"
-        ],
-        [
-            "object",
-            "posibleInterseccion"
-        ],
-        [
-            "var",
-            "radius"
-        ],
-        [
-            "double",
-            "x"
-        ],
-        [
-            "double",
-            "r1"
-        ],
-        [
-            "double",
-            "maxY"
-        ],
-        [
             "Line",
-            "line1"
+            "newLine"
         ],
         [
             "double",
-            "m"
-        ],
-        [
-            "double",
-            "x3"
-        ],
-        [
-            "object",
-            "possibleIntersections"
+            "intersectX2"
         ],
         [
             "List",
@@ -1399,147 +1359,27 @@
         ],
         [
             "double",
-            "minX"
-        ],
-        [
-            "double",
-            "a"
-        ],
-        [
-            "Vector2",
-            "initialRay"
-        ],
-        [
-            "float",
-            "angleToInitialRay"
-        ],
-        [
-            "double",
-            "h"
-        ],
-        [
-            "double",
-            "y0"
-        ],
-        [
-            "double",
-            "y3"
-        ],
-        [
-            "var",
-            "center"
-        ],
-        [
-            "double",
             "A"
         ],
         [
             "double",
-            "n"
+            "m"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "var",
+            "radius"
         ],
         [
             "FiniteSequence",
             "seq"
         ],
         [
-            "float",
-            "angleToPoint"
-        ],
-        [
             "double",
             "y4"
-        ],
-        [
-            "List",
-            "validintersections"
-        ],
-        [
-            "double",
-            "x1"
-        ],
-        [
-            "Line",
-            "line2"
-        ],
-        [
-            "double",
-            "denominador"
-        ],
-        [
-            "Line",
-            "newLine"
-        ],
-        [
-            "Vector2",
-            "finalRay"
-        ],
-        [
-            "double",
-            "intersectY1"
-        ],
-        [
-            "List",
-            "intersections"
-        ],
-        [
-            "double",
-            "minY"
-        ],
-        [
-            "double",
-            "distance"
-        ],
-        [
-            "double",
-            "B"
-        ],
-        [
-            "Vector2",
-            "centerToPoint"
-        ],
-        [
-            "double",
-            "r2"
-        ],
-        [
-            "double",
-            "maxX"
-        ],
-        [
-            "double",
-            "x4"
-        ],
-        [
-            "double",
-            "centerX"
-        ],
-        [
-            "Line",
-            "line"
-        ],
-        [
-            "double",
-            "intersectX1"
-        ],
-        [
-            "double",
-            "y"
-        ],
-        [
-            "double",
-            "intersectX2"
-        ],
-        [
-            "float",
-            "angleToFinalRay"
-        ],
-        [
-            "double",
-            "lineX"
-        ],
-        [
-            "Segment",
-            "segment"
         ],
         [
             "double",
@@ -1547,15 +1387,123 @@
         ],
         [
             "double",
-            "C"
+            "x3"
         ],
         [
             "double",
-            "y1"
+            "h"
+        ],
+        [
+            "double",
+            "y3"
+        ],
+        [
+            "double",
+            "minY"
+        ],
+        [
+            "double",
+            "x4"
+        ],
+        [
+            "double",
+            "denominador"
+        ],
+        [
+            "Vector2",
+            "initialRay"
+        ],
+        [
+            "double",
+            "lineX"
+        ],
+        [
+            "float",
+            "angleToFinalRay"
+        ],
+        [
+            "Vector2",
+            "centerToPoint"
+        ],
+        [
+            "Segment",
+            "segment"
+        ],
+        [
+            "double",
+            "minX"
+        ],
+        [
+            "double",
+            "intersectY1"
+        ],
+        [
+            "double",
+            "y0"
+        ],
+        [
+            "double",
+            "distance"
+        ],
+        [
+            "float",
+            "angleToPoint"
+        ],
+        [
+            "double",
+            "intersectY2"
+        ],
+        [
+            "Line",
+            "line"
+        ],
+        [
+            "object",
+            "posibleInterseccion"
+        ],
+        [
+            "Vector2",
+            "finalRay"
         ],
         [
             "double",
             "y2"
+        ],
+        [
+            "var",
+            "center"
+        ],
+        [
+            "double",
+            "C"
+        ],
+        [
+            "double",
+            "t"
+        ],
+        [
+            "double",
+            "n"
+        ],
+        [
+            "List",
+            "intersections"
+        ],
+        [
+            "Line",
+            "line2"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "r2"
+        ],
+        [
+            "List",
+            "validintersections"
         ],
         [
             "Circle",
@@ -1563,115 +1511,167 @@
         ],
         [
             "double",
+            "maxY"
+        ],
+        [
+            "double",
+            "r1"
+        ],
+        [
+            "object",
+            "possibleIntersections"
+        ],
+        [
+            "double",
+            "a"
+        ],
+        [
+            "Line",
+            "line1"
+        ],
+        [
+            "double",
+            "intersectX1"
+        ],
+        [
+            "double",
             "discriminant"
         ],
         [
             "double",
-            "intersectY2"
+            "x"
         ],
         [
             "double",
-            "t"
+            "centerY"
         ],
         [
-            "IUserInterface",
-            "userInterface"
+            "Circle",
+            "circle"
+        ],
+        [
+            "double",
+            "maxX"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "double",
+            "B"
+        ],
+        [
+            "float",
+            "angleToInitialRay"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "double",
+            "centerX"
         ],
         [
             "string",
             "line"
+        ],
+        [
+            "IUserInterface",
+            "userInterface"
         ]
     ],
     "method_names": [
-        "InitializeComponent",
         "Dispose",
+        "InitializeComponent",
         "Main",
-        "SetConstant",
         "altered",
+        "SetConstant",
         "ToString",
-        "ScanToken",
         "ScanTokens",
+        "ScanToken",
         "Errors",
         "Parse",
         "ToString",
+        "GetElements",
+        "FindSequenceTail",
         "GetSequenceTail",
+        "GetElementType",
+        "Concatenate",
         "IEnumerable",
         "GetEnumerator",
-        "GetElementType",
-        "FindSequenceTail",
-        "Concatenate",
-        "GetElements",
-        "ToString",
         "Equals",
-        "Intersect",
-        "RandomArcSequence",
-        "Line",
-        "Sqrt",
-        "RandomMeasure",
+        "ToString",
+        "RandomPointInArc",
         "RandomSegmentSequence",
-        "Randoms",
+        "RandomSegment",
+        "RandomPointInLine",
+        "Measure",
+        "Intercept",
+        "Ray",
+        "Slope",
+        "RandomPointInRay",
+        "RandomPointInCircle",
+        "Log",
+        "Segment",
+        "Line",
+        "Arc",
+        "Count",
+        "Circle",
         "RandomXCoordinate",
         "Reset",
-        "RandomCircleSequence",
-        "Count",
+        "Orientation",
         "RandomLine",
         "RandomPointSequence",
-        "Exp",
-        "Ray",
-        "Cos",
-        "Samples",
-        "RandomPointInArc",
-        "RandomPointInRay",
-        "Orientation",
-        "Segment",
-        "RandomPointInCircle",
-        "RandomRay",
-        "RandomCircle",
-        "RandomArc",
-        "Distance",
-        "RandomPointInLine",
-        "RandomPointInSegment",
-        "RandomRaySequence",
-        "GetAngle",
-        "Point",
-        "Circle",
-        "Log",
-        "Points",
-        "RandomYCoordinate",
-        "Sin",
-        "RandomPoint",
-        "RandomSegment",
-        "Measure",
-        "Slope",
-        "Arc",
-        "Intercept",
         "RandomNumberSequence",
+        "Point",
+        "Intersect",
+        "RandomYCoordinate",
+        "RandomCircleSequence",
+        "Points",
+        "RandomPointInSegment",
+        "RandomArcSequence",
+        "RandomPoint",
+        "GetAngle",
+        "Cos",
+        "Distance",
+        "Sin",
+        "RandomMeasure",
+        "RandomArc",
         "RandomLineSequence",
+        "RandomRaySequence",
+        "Randoms",
+        "Exp",
+        "RandomCircle",
+        "RandomRay",
+        "Samples",
+        "Sqrt",
         "Execute",
-        "DrawCircle",
+        "DrawLine",
         "DrawArc",
         "ReportError",
-        "DrawLine",
-        "DrawPoint",
-        "Print",
         "DrawRay",
+        "DrawCircle",
         "DrawSegment",
+        "Print",
+        "DrawPoint",
+        "DistancePointLine",
+        "PointDistance",
         "Intersect",
         "GetLineEquation",
-        "DistancePointLine",
         "IsInSegment",
         "IsInRay",
         "IsInArc",
-        "PointDistance",
-        "DrawCircle",
+        "DrawLine",
         "DrawArc",
         "ReportError",
-        "DrawPoint",
-        "DrawLine",
-        "Print",
         "DrawRay",
+        "DrawCircle",
+        "Main",
         "DrawSegment",
-        "Main"
+        "Print",
+        "DrawPoint"
     ],
     "method_return_types": [
         [
@@ -1707,16 +1707,28 @@
             "List"
         ],
         [
-            "Errors",
-            "("
-        ],
-        [
             "Parse",
             "List"
         ],
         [
+            "Errors",
+            "("
+        ],
+        [
             "ToString",
             "string"
+        ],
+        [
+            "Concatenate",
+            "void"
+        ],
+        [
+            "GetElementType",
+            "GSharpType"
+        ],
+        [
+            "IEnumerable",
+            "IEnumerator"
         ],
         [
             "GetSequenceTail",
@@ -1727,24 +1739,12 @@
             "Sequence"
         ],
         [
-            "IEnumerable",
-            "IEnumerator"
-        ],
-        [
-            "GetElementType",
-            "GSharpType"
-        ],
-        [
             "GetElements",
             "List"
         ],
         [
             "GetEnumerator",
             "IEnumerator"
-        ],
-        [
-            "Concatenate",
-            "void"
         ],
         [
             "Equals",
@@ -1755,80 +1755,16 @@
             "string"
         ],
         [
-            "RandomSegmentSequence",
-            "FiniteSequence"
-        ],
-        [
-            "RandomPointInCircle",
+            "RandomPoint",
             "Point"
         ],
         [
-            "Slope",
-            "double"
-        ],
-        [
-            "RandomSegment",
-            "Segment"
-        ],
-        [
-            "Point",
+            "RandomPointInSegment",
             "Point"
-        ],
-        [
-            "Randoms",
-            "object"
-        ],
-        [
-            "RandomLineSequence",
-            "FiniteSequence"
-        ],
-        [
-            "Count",
-            "object"
-        ],
-        [
-            "Cos",
-            "object"
-        ],
-        [
-            "RandomPointSequence",
-            "FiniteSequence"
         ],
         [
             "Ray",
             "Ray"
-        ],
-        [
-            "RandomYCoordinate",
-            "double"
-        ],
-        [
-            "Intersect",
-            "object"
-        ],
-        [
-            "RandomLine",
-            "Line"
-        ],
-        [
-            "RandomCircle",
-            "Circle"
-        ],
-        [
-            "RandomRaySequence",
-            "FiniteSequence"
-        ],
-        [
-            "RandomRay",
-            "Ray"
-        ],
-        [
-            "Log",
-            "object"
-        ],
-        [
-            "Points",
-            "object"
         ],
         [
             "RandomPointInLine",
@@ -1839,83 +1775,47 @@
             "object"
         ],
         [
-            "Orientation",
-            "double"
-        ],
-        [
-            "Segment",
-            "Segment"
-        ],
-        [
-            "RandomPointInArc",
-            "Point"
-        ],
-        [
-            "Arc",
-            "Arc"
-        ],
-        [
-            "Measure",
-            "Measure"
-        ],
-        [
-            "RandomPoint",
-            "Point"
-        ],
-        [
             "RandomPointInRay",
             "Point"
         ],
         [
-            "Samples",
-            "object"
+            "RandomSegmentSequence",
+            "FiniteSequence"
         ],
         [
-            "Exp",
-            "object"
+            "Orientation",
+            "double"
+        ],
+        [
+            "RandomRaySequence",
+            "FiniteSequence"
         ],
         [
             "Sin",
             "object"
         ],
         [
-            "RandomMeasure",
-            "Measure"
-        ],
-        [
-            "Line",
-            "Line"
-        ],
-        [
-            "Reset",
-            "void"
-        ],
-        [
-            "RandomArc",
-            "Arc"
-        ],
-        [
-            "RandomArcSequence",
-            "FiniteSequence"
-        ],
-        [
-            "GetAngle",
-            "double"
-        ],
-        [
-            "Circle",
-            "Circle"
-        ],
-        [
-            "Intercept",
-            "double"
+            "Cos",
+            "object"
         ],
         [
             "RandomXCoordinate",
             "double"
         ],
         [
-            "RandomCircleSequence",
+            "Distance",
+            "double"
+        ],
+        [
+            "Log",
+            "object"
+        ],
+        [
+            "RandomLine",
+            "Line"
+        ],
+        [
+            "RandomArcSequence",
             "FiniteSequence"
         ],
         [
@@ -1923,15 +1823,127 @@
             "FiniteSequence"
         ],
         [
-            "RandomPointInSegment",
-            "Point"
+            "RandomCircle",
+            "Circle"
         ],
         [
-            "Distance",
+            "Slope",
             "double"
         ],
         [
+            "RandomPointInCircle",
+            "Point"
+        ],
+        [
+            "RandomCircleSequence",
+            "FiniteSequence"
+        ],
+        [
+            "Samples",
+            "object"
+        ],
+        [
+            "Arc",
+            "Arc"
+        ],
+        [
+            "Randoms",
+            "object"
+        ],
+        [
+            "Line",
+            "Line"
+        ],
+        [
+            "Circle",
+            "Circle"
+        ],
+        [
+            "RandomPointInArc",
+            "Point"
+        ],
+        [
+            "Count",
+            "object"
+        ],
+        [
+            "RandomPointSequence",
+            "FiniteSequence"
+        ],
+        [
+            "RandomLineSequence",
+            "FiniteSequence"
+        ],
+        [
+            "GetAngle",
+            "double"
+        ],
+        [
+            "RandomMeasure",
+            "Measure"
+        ],
+        [
+            "Point",
+            "Point"
+        ],
+        [
+            "RandomArc",
+            "Arc"
+        ],
+        [
+            "Intersect",
+            "object"
+        ],
+        [
+            "Segment",
+            "Segment"
+        ],
+        [
+            "Points",
+            "object"
+        ],
+        [
+            "Exp",
+            "object"
+        ],
+        [
+            "RandomYCoordinate",
+            "double"
+        ],
+        [
+            "Measure",
+            "Measure"
+        ],
+        [
+            "Reset",
+            "void"
+        ],
+        [
+            "Intercept",
+            "double"
+        ],
+        [
+            "RandomRay",
+            "Ray"
+        ],
+        [
+            "RandomSegment",
+            "Segment"
+        ],
+        [
             "Execute",
+            "void"
+        ],
+        [
+            "Print",
+            "void"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawArc",
             "void"
         ],
         [
@@ -1947,7 +1959,7 @@
             "void"
         ],
         [
-            "DrawLine",
+            "ReportError",
             "void"
         ],
         [
@@ -1955,27 +1967,11 @@
             "void"
         ],
         [
-            "DrawArc",
-            "void"
-        ],
-        [
-            "Print",
-            "void"
-        ],
-        [
-            "ReportError",
-            "void"
-        ],
-        [
-            "Intersect",
-            "object"
-        ],
-        [
             "IsInSegment",
             "bool"
         ],
         [
-            "DistancePointLine",
+            "PointDistance",
             "double"
         ],
         [
@@ -1983,16 +1979,36 @@
             "bool"
         ],
         [
-            "IsInRay",
-            "bool"
-        ],
-        [
             "GetLineEquation",
             "("
         ],
         [
-            "PointDistance",
+            "IsInRay",
+            "bool"
+        ],
+        [
+            "DistancePointLine",
             "double"
+        ],
+        [
+            "Intersect",
+            "object"
+        ],
+        [
+            "Print",
+            "void"
+        ],
+        [
+            "Main",
+            "void"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawArc",
+            "void"
         ],
         [
             "DrawRay",
@@ -2007,27 +2023,11 @@
             "void"
         ],
         [
-            "DrawLine",
-            "void"
-        ],
-        [
-            "DrawPoint",
-            "void"
-        ],
-        [
-            "DrawArc",
-            "void"
-        ],
-        [
-            "Print",
-            "void"
-        ],
-        [
             "ReportError",
             "void"
         ],
         [
-            "Main",
+            "DrawPoint",
             "void"
         ]
     ],
@@ -2038,32 +2038,32 @@
         "Token",
         "Lexer",
         "Parser",
-        "Function",
-        "Expression",
+        "GSharpNumber",
+        "GroupingExpression",
+        "PrintStatement",
         "BinaryExpression",
-        "Undefined",
+        "LetExpression",
+        "Function",
+        "LiteralExpression",
         "UnaryExpression",
         "ConstantExpression",
         "MultipleAssignment",
-        "DrawStatement",
-        "GroupingExpression",
-        "GSharpNumber",
-        "GSharpString",
         "RandomDeclaration",
-        "RestoreStatement",
-        "Conditional",
-        "PrintStatement",
         "ColorStatement",
-        "LiteralExpression",
-        "Call",
-        "LetExpression",
+        "Conditional",
         "Assignment",
+        "DrawStatement",
         "ImportStatement",
+        "GSharpString",
+        "Expression",
+        "Undefined",
+        "Call",
+        "RestoreStatement",
         "FiniteSequence",
         "Sequence",
-        "GSharpFigure",
-        "Point",
         "Measure",
+        "Point",
+        "GSharpFigure",
         "StandardLibrary",
         "Interpreter",
         "Intersections",
@@ -2078,15 +2078,15 @@
     "node_count": {
         "Compilation_unitContext": 18,
         "Namespace_member_declarationsContext": 35,
-        "Namespace_member_declarationContext": 62,
+        "Namespace_member_declarationContext": 82,
         "Namespace_declarationContext": 17,
-        "TerminalNodeImpl": 12709,
+        "TerminalNodeImpl": 12737,
         "Qualified_identifierContext": 17,
-        "IdentifierContext": 4116,
+        "IdentifierContext": 4119,
         "Namespace_bodyContext": 17,
-        "Type_declarationContext": 45,
-        "All_member_modifiersContext": 288,
-        "All_member_modifierContext": 415,
+        "Type_declarationContext": 65,
+        "All_member_modifiersContext": 305,
+        "All_member_modifierContext": 432,
         "Class_definitionContext": 37,
         "Class_bodyContext": 39,
         "Class_member_declarationsContext": 36,
@@ -2096,7 +2096,7 @@
         "Type_Context": 1110,
         "Base_typeContext": 1150,
         "Class_typeContext": 994,
-        "Namespace_or_type_nameContext": 984,
+        "Namespace_or_type_nameContext": 987,
         "Field_declarationContext": 16,
         "Variable_declaratorsContext": 16,
         "Variable_declaratorContext": 16,
@@ -2151,10 +2151,10 @@
         "Boolean_literalContext": 9,
         "Using_directivesContext": 16,
         "UsingNamespaceDirectiveContext": 62,
-        "AttributesContext": 3,
-        "Attribute_sectionContext": 3,
-        "Attribute_listContext": 3,
-        "AttributeContext": 3,
+        "AttributesContext": 8,
+        "Attribute_sectionContext": 8,
+        "Attribute_listContext": 6,
+        "AttributeContext": 6,
         "Type_argument_listContext": 157,
         "Property_declarationContext": 73,
         "Member_nameContext": 73,
@@ -2166,7 +2166,7 @@
         "BodyContext": 38,
         "ReturnStatementContext": 203,
         "ThrowStatementContext": 36,
-        "ErrorNodeImpl": 5842,
+        "ErrorNodeImpl": 5813,
         "Enum_definitionContext": 4,
         "Enum_bodyContext": 4,
         "Enum_member_declarationContext": 71,

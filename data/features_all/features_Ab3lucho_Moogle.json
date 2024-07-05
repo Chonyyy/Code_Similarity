@@ -1,5 +1,5 @@
 {
-    "total_nodes": 21842,
+    "total_nodes": 21839,
     "max_depth": 515,
     "number_of_variables": 89,
     "number_of_constants": 0,
@@ -105,64 +105,20 @@
     ],
     "variable_names": [
         [
-            "Dictionary",
-            "TF"
-        ],
-        [
-            "double",
-            "contador"
-        ],
-        [
-            "Dictionary",
-            "PalabravsIDF"
-        ],
-        [
-            "double",
-            "tf"
-        ],
-        [
             "string",
-            "PalabrasTemporales"
-        ],
-        [
-            "string",
-            "palabras"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "x"
-        ],
-        [
-            "double",
-            "documentoLength"
-        ],
-        [
-            "Dictionary",
-            "wordCounts"
-        ],
-        [
-            "Dictionary",
-            "IDFTemp"
+            "PalabrasNoRepetidasTemporales"
         ],
         [
             "HashSet",
             "palabras"
         ],
         [
-            "double",
-            "idf"
+            "Dictionary",
+            "fakenameVsTF"
         ],
         [
-            "Dictionary",
-            "fakenameVsITF"
-        ],
-        [
-            "Dictionary",
-            "PalabravsTF"
+            "string",
+            "palabras"
         ],
         [
             "double",
@@ -170,59 +126,75 @@
         ],
         [
             "Dictionary",
+            "wordCounts"
+        ],
+        [
+            "Dictionary",
+            "fakenameVsITF"
+        ],
+        [
+            "Dictionary",
             "PalabrasvsTFIDF"
         ],
         [
             "Dictionary",
-            "fakenameVsTF"
+            "TF"
+        ],
+        [
+            "string",
+            "PalabrasTemporales"
+        ],
+        [
+            "Dictionary",
+            "PalabravsTF"
         ],
         [
             "double",
-            "tfidf"
+            "idf"
+        ],
+        [
+            "double",
+            "documentoLength"
+        ],
+        [
+            "Dictionary",
+            "PalabravsIDF"
         ],
         [
             "Dictionary",
             "fakenameVsTFIDF"
         ],
         [
-            "Dictionary",
-            "NombrevsIDFTemp"
-        ],
-        [
-            "string",
-            "PalabrasNoRepetidasTemporales"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "string",
-            "suggestion"
-        ],
-        [
-            "Busqueda",
-            "objeto3"
-        ],
-        [
-            "int",
-            "n"
-        ],
-        [
-            "TF_IDF",
-            "objeto2"
-        ],
-        [
-            "int",
-            "min"
-        ],
-        [
-            "List",
-            "items"
+            "double",
+            "contador"
         ],
         [
             "int",
             "i"
+        ],
+        [
+            "Dictionary",
+            "NombrevsIDFTemp"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "double",
+            "tf"
+        ],
+        [
+            "Dictionary",
+            "IDFTemp"
+        ],
+        [
+            "double",
+            "tfidf"
+        ],
+        [
+            "int",
+            "curr"
         ],
         [
             "SearchItem",
@@ -230,31 +202,7 @@
         ],
         [
             "int",
-            "curr"
-        ],
-        [
-            "string",
-            "tempath"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "SearchItem",
-            "items2"
-        ],
-        [
-            "int",
-            "Distancias"
-        ],
-        [
-            "string",
-            "mypath"
-        ],
-        [
-            "var",
-            "ResultadosOrdenados"
+            "min"
         ],
         [
             "int",
@@ -266,71 +214,71 @@
         ],
         [
             "int",
-            "m"
+            "index"
         ],
         [
             "Dictionary",
             "Results"
         ],
         [
-            "int",
-            "contador"
-        ],
-        [
-            "double",
-            "contador"
-        ],
-        [
             "string",
-            "Documento"
+            "tempath"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "TF_IDF",
+            "objeto2"
         ],
         [
             "var",
+            "ResultadosOrdenados"
+        ],
+        [
+            "SearchItem",
+            "items2"
+        ],
+        [
+            "Busqueda",
+            "objeto3"
+        ],
+        [
+            "List",
             "items"
         ],
         [
+            "int",
+            "n"
+        ],
+        [
             "string",
-            "SnippetFinal"
-        ],
-        [
-            "char",
-            "delimitadores"
-        ],
-        [
-            "Dictionary",
-            "DiccionarioTFIDF_Query"
+            "suggestion"
         ],
         [
             "int",
             "i"
         ],
         [
-            "string",
-            "palabras"
-        ],
-        [
             "int",
-            "x"
+            "Distancias"
         ],
         [
             "string",
-            "snippet"
+            "mypath"
         ],
         [
-            "int",
-            "index"
+            "var",
+            "items"
         ],
         [
-            "double",
-            "idf"
-        ],
-        [
-            "double",
-            "contador2"
-        ],
-        [
-            "double",
-            "sum"
+            "char",
+            "delimitadores"
         ],
         [
             "double",
@@ -338,15 +286,75 @@
         ],
         [
             "double",
+            "sum"
+        ],
+        [
+            "string",
+            "palabras"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "Dictionary",
+            "Results"
+        ],
+        [
+            "double",
             "cantidad_total_documentos"
+        ],
+        [
+            "double",
+            "contador2"
         ],
         [
             "double",
             "DocumentosDodeExiste"
         ],
         [
+            "string",
+            "Documento"
+        ],
+        [
+            "double",
+            "idf"
+        ],
+        [
             "Dictionary",
-            "Results"
+            "DiccionarioTFIDF_Query"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "double",
+            "contador"
+        ],
+        [
+            "string",
+            "SnippetFinal"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "char",
+            "delimitadores"
+        ],
+        [
+            "string",
+            "StringTexto"
         ],
         [
             "int",
@@ -355,6 +363,10 @@
         [
             "List",
             "Puente"
+        ],
+        [
+            "string",
+            "text"
         ],
         [
             "string",
@@ -367,54 +379,38 @@
         [
             "string",
             "palabraFalsa"
-        ],
-        [
-            "char",
-            "delimitadores"
-        ],
-        [
-            "string",
-            "text"
-        ],
-        [
-            "string",
-            "StringTexto"
         ]
     ],
     "method_names": [
         "Items",
-        "TF_IDF",
-        "IDF",
         "TF",
+        "TF_IDF",
         "Motor_TF_IDF",
+        "IDF",
         "LevenshteinDistance",
-        "Query",
         "Cargar",
-        "ContadorPalabra",
+        "Query",
+        "TF_IDF_Query",
         "TokenizarQuery",
         "Similitud_TFIDF_Query",
         "Motor_Snippet",
         "IDF_Query",
-        "TF_IDF_Query",
+        "ContadorPalabra",
         "Motor_Resultados",
-        "Snippet_",
         "TF_Query",
+        "Snippet_",
         "Motor_Busqueda",
-        "FakeData",
-        "ObtenerPalabras",
-        "ObtenerTextos",
-        "LimpiarNombre",
         "Obtenerpalabrasstring",
+        "ObtenerPalabras",
+        "LimpiarNombre",
+        "FakeData",
+        "ObtenerTextos",
         "Motor_Manejo"
     ],
     "method_return_types": [
         [
             "Items",
             "IEnumerable"
-        ],
-        [
-            "TF_IDF",
-            "void"
         ],
         [
             "TF",
@@ -425,12 +421,12 @@
             "void"
         ],
         [
-            "IDF",
+            "TF_IDF",
             "void"
         ],
         [
-            "LevenshteinDistance",
-            "int"
+            "IDF",
+            "void"
         ],
         [
             "Query",
@@ -441,6 +437,26 @@
             "Dictionary"
         ],
         [
+            "LevenshteinDistance",
+            "int"
+        ],
+        [
+            "Motor_Snippet",
+            "void"
+        ],
+        [
+            "Snippet_",
+            "void"
+        ],
+        [
+            "Motor_Busqueda",
+            "void"
+        ],
+        [
+            "TF_IDF_Query",
+            "void"
+        ],
+        [
             "Similitud_TFIDF_Query",
             "void"
         ],
@@ -449,59 +465,43 @@
             "void"
         ],
         [
-            "IDF_Query",
-            "void"
-        ],
-        [
-            "TF_IDF_Query",
-            "void"
+            "TokenizarQuery",
+            "string"
         ],
         [
             "ContadorPalabra",
             "double"
         ],
         [
-            "TokenizarQuery",
-            "string"
-        ],
-        [
-            "Snippet_",
-            "void"
-        ],
-        [
-            "Motor_Snippet",
-            "void"
-        ],
-        [
-            "Motor_Busqueda",
-            "void"
-        ],
-        [
             "TF_Query",
             "void"
         ],
         [
-            "Motor_Manejo",
-            "string"
+            "IDF_Query",
+            "void"
         ],
         [
             "LimpiarNombre",
             "string"
         ],
         [
+            "FakeData",
+            "void"
+        ],
+        [
             "ObtenerPalabras",
             "void"
         ],
         [
-            "FakeData",
-            "void"
+            "Obtenerpalabrasstring",
+            "string"
         ],
         [
             "ObtenerTextos",
             "string"
         ],
         [
-            "Obtenerpalabrasstring",
+            "Motor_Manejo",
             "string"
         ]
     ],
@@ -526,7 +526,6 @@
         "Namespace_member_declarationContext": 11,
         "Namespace_declarationContext": 6,
         "Qualified_identifierContext": 6,
-        "Namespace_bodyContext": 6,
         "Type_declarationContext": 5,
         "All_member_modifiersContext": 61,
         "All_member_modifierContext": 64,
@@ -603,6 +602,7 @@
         "Simple_typeContext": 104,
         "Numeric_typeContext": 104,
         "Integral_typeContext": 38,
+        "Namespace_bodyContext": 3,
         "Floating_point_typeContext": 66,
         "Variable_initializerContext": 55,
         "DeclarationStatementContext": 70,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 93446,
+    "total_nodes": 93435,
     "max_depth": 4257,
     "number_of_variables": 183,
     "number_of_constants": 0,
@@ -779,8 +779,24 @@
     ],
     "variable_names": [
         [
+            "var",
+            "mainWindow"
+        ],
+        [
+            "string",
+            "currentDirectory"
+        ],
+        [
+            "string",
+            "contenido"
+        ],
+        [
             "string",
             "projectDirectory"
+        ],
+        [
+            "MainWindow",
+            "mainWindow"
         ],
         [
             "string",
@@ -792,23 +808,7 @@
         ],
         [
             "string",
-            "currentDirectory"
-        ],
-        [
-            "string",
-            "contenido"
-        ],
-        [
-            "var",
-            "mainWindow"
-        ],
-        [
-            "string",
             "folderPath"
-        ],
-        [
-            "MainWindow",
-            "mainWindow"
         ],
         [
             "System",
@@ -816,19 +816,11 @@
         ],
         [
             "var",
-            "lexer"
-        ],
-        [
-            "var",
             "parser"
         ],
         [
             "var",
-            "result"
-        ],
-        [
-            "List",
-            "toDraw"
+            "lexer"
         ],
         [
             "var",
@@ -836,27 +828,11 @@
         ],
         [
             "var",
-            "evaluatedIn"
-        ],
-        [
-            "var",
-            "variableFound"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "var",
-            "intersect"
-        ],
-        [
-            "var",
             "sequence"
         ],
         [
             "var",
-            "randomPoints"
+            "result"
         ],
         [
             "var",
@@ -864,7 +840,31 @@
         ],
         [
             "var",
+            "evaluatedIn"
+        ],
+        [
+            "List",
+            "toDraw"
+        ],
+        [
+            "var",
+            "intersect"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
             "points"
+        ],
+        [
+            "var",
+            "variableFound"
+        ],
+        [
+            "var",
+            "randomPoints"
         ],
         [
             "var",
@@ -872,15 +872,23 @@
         ],
         [
             "var",
-            "symbol"
-        ],
-        [
-            "var",
             "left"
         ],
         [
             "var",
-            "point1"
+            "symbol"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "random"
         ],
         [
             "var",
@@ -892,6 +900,10 @@
         ],
         [
             "var",
+            "point1"
+        ],
+        [
+            "var",
             "count"
         ],
         [
@@ -904,15 +916,7 @@
         ],
         [
             "var",
-            "point1"
-        ],
-        [
-            "var",
             "point2"
-        ],
-        [
-            "var",
-            "count"
         ],
         [
             "var",
@@ -920,23 +924,7 @@
         ],
         [
             "var",
-            "i"
-        ],
-        [
-            "var",
-            "random"
-        ],
-        [
-            "var",
             "point1"
-        ],
-        [
-            "var",
-            "rays"
-        ],
-        [
-            "var",
-            "point2"
         ],
         [
             "var",
@@ -944,6 +932,10 @@
         ],
         [
             "var",
+            "rays"
+        ],
+        [
+            "var",
             "i"
         ],
         [
@@ -952,7 +944,11 @@
         ],
         [
             "var",
-            "point"
+            "point2"
+        ],
+        [
+            "var",
+            "point1"
         ],
         [
             "var",
@@ -972,7 +968,7 @@
         ],
         [
             "var",
-            "currentPath"
+            "point"
         ],
         [
             "var",
@@ -980,15 +976,7 @@
         ],
         [
             "var",
-            "random"
-        ],
-        [
-            "var",
-            "count"
-        ],
-        [
-            "var",
-            "i"
+            "currentPath"
         ],
         [
             "var",
@@ -996,15 +984,23 @@
         ],
         [
             "var",
-            "circle"
+            "i"
         ],
         [
             "var",
-            "point"
+            "random"
         ],
         [
             "var",
             "count"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "var",
+            "circle"
         ],
         [
             "var",
@@ -1013,6 +1009,10 @@
         [
             "var",
             "random"
+        ],
+        [
+            "var",
+            "point"
         ],
         [
             "var",
@@ -1023,14 +1023,6 @@
             "i"
         ],
         [
-            "Point",
-            "newPoint"
-        ],
-        [
-            "double",
-            "y"
-        ],
-        [
             "double",
             "angle"
         ],
@@ -1039,16 +1031,12 @@
             "x"
         ],
         [
-            "Random",
-            "random"
-        ],
-        [
-            "int",
-            "drawingCanvasWidth"
+            "Point",
+            "newPoint"
         ],
         [
             "double",
-            "pointCenterY"
+            "y"
         ],
         [
             "int",
@@ -1059,16 +1047,28 @@
             "pointCenterX"
         ],
         [
+            "int",
+            "drawingCanvasWidth"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "double",
+            "pointCenterY"
+        ],
+        [
             "double",
             "measure"
         ],
         [
-            "List",
-            "otherNodes"
+            "double",
+            "b"
         ],
         [
             "List",
-            "functionNodes"
+            "otherNodes"
         ],
         [
             "double",
@@ -1079,16 +1079,12 @@
             "importNodes"
         ],
         [
-            "double",
-            "b"
-        ],
-        [
             "List",
             "newNodes"
         ],
         [
-            "var",
-            "center"
+            "List",
+            "functionNodes"
         ],
         [
             "var",
@@ -1096,11 +1092,19 @@
         ],
         [
             "var",
-            "end"
+            "center"
         ],
         [
             "var",
             "start"
+        ],
+        [
+            "var",
+            "end"
+        ],
+        [
+            "var",
+            "evaluatedIn"
         ],
         [
             "var",
@@ -1112,11 +1116,7 @@
         ],
         [
             "var",
-            "evaluatedIn"
-        ],
-        [
-            "var",
-            "number"
+            "operandResult"
         ],
         [
             "var",
@@ -1124,7 +1124,7 @@
         ],
         [
             "var",
-            "operandResult"
+            "number"
         ],
         [
             "var",
@@ -1141,6 +1141,18 @@
         [
             "var",
             "p2"
+        ],
+        [
+            "TypeInference",
+            "typeInference"
+        ],
+        [
+            "Sequence",
+            "sequence"
+        ],
+        [
+            "var",
+            "type"
         ],
         [
             "int",
@@ -1148,23 +1160,15 @@
         ],
         [
             "var",
-            "evaluatedElement"
-        ],
-        [
-            "var",
             "sequenceElementsEvaluated"
         ],
         [
             "var",
-            "type"
+            "elementEvaluable"
         ],
         [
-            "Sequence",
-            "sequence"
-        ],
-        [
-            "TypeInference",
-            "typeInference"
+            "var",
+            "evaluatedElement"
         ],
         [
             "int",
@@ -1172,7 +1176,7 @@
         ],
         [
             "var",
-            "elementEvaluable"
+            "points"
         ],
         [
             "var",
@@ -1184,15 +1188,11 @@
         ],
         [
             "var",
-            "points"
-        ],
-        [
-            "var",
             "variable"
         ],
         [
             "var",
-            "function"
+            "functionDefined"
         ],
         [
             "int",
@@ -1200,15 +1200,7 @@
         ],
         [
             "var",
-            "evaluatedArgument"
-        ],
-        [
-            "var",
-            "functionDefined"
-        ],
-        [
-            "Dictionary",
-            "argumentsDefined"
+            "function"
         ],
         [
             "var",
@@ -1216,7 +1208,19 @@
         ],
         [
             "var",
+            "evaluatedArgument"
+        ],
+        [
+            "Dictionary",
+            "argumentsDefined"
+        ],
+        [
+            "var",
             "exp"
+        ],
+        [
+            "var",
+            "f2"
         ],
         [
             "var",
@@ -1232,10 +1236,6 @@
         ],
         [
             "var",
-            "f2"
-        ],
-        [
-            "var",
             "random"
         ],
         [
@@ -1244,15 +1244,19 @@
         ],
         [
             "var",
-            "end"
-        ],
-        [
-            "var",
             "start"
         ],
         [
+            "var",
+            "end"
+        ],
+        [
             "double",
-            "startAngle"
+            "r"
+        ],
+        [
+            "Circle",
+            "circle1"
         ],
         [
             "Random",
@@ -1260,15 +1264,7 @@
         ],
         [
             "double",
-            "y"
-        ],
-        [
-            "Circle",
-            "circle1"
-        ],
-        [
-            "double",
-            "temp"
+            "t"
         ],
         [
             "double",
@@ -1276,11 +1272,15 @@
         ],
         [
             "double",
-            "endAngle"
+            "temp"
         ],
         [
             "IEnumerable",
             "points"
+        ],
+        [
+            "Point",
+            "point"
         ],
         [
             "double",
@@ -1291,16 +1291,16 @@
             "figure"
         ],
         [
-            "Point",
-            "point"
+            "double",
+            "startAngle"
         ],
         [
             "double",
-            "r"
+            "endAngle"
         ],
         [
             "double",
-            "t"
+            "y"
         ],
         [
             "var",
@@ -1308,11 +1308,7 @@
         ],
         [
             "var",
-            "end"
-        ],
-        [
-            "var",
-            "center"
+            "measure"
         ],
         [
             "var",
@@ -1320,7 +1316,11 @@
         ],
         [
             "var",
-            "measure"
+            "center"
+        ],
+        [
+            "var",
+            "end"
         ],
         [
             "var",
@@ -1328,11 +1328,11 @@
         ],
         [
             "var",
-            "number"
+            "sequence"
         ],
         [
             "var",
-            "sequence"
+            "number"
         ],
         [
             "var",
@@ -1349,24 +1349,24 @@
     ],
     "method_names": [
         "Draw",
-        "Button_Click",
-        "Start",
-        "Commands",
         "About",
+        "Commands",
+        "Start",
+        "Button_Click",
         "Import",
-        "HandleParse",
-        "HandleLexer",
-        "HandleEvaluate",
         "CheckErrors",
+        "HandleEvaluate",
+        "HandleLexer",
         "HandleSemantic",
-        "HandleMultipleAsignationNode",
+        "HandleParse",
         "HandleAsignationLet",
-        "HandleAsignationNode",
-        "HandleVariableExpression",
-        "EvaluateLetBlock",
+        "HandleMultipleAsignationNode",
         "HandleDrawNode",
-        "HandleLetInAsignationExpression",
         "Evaluate",
+        "HandleVariableExpression",
+        "HandleAsignationNode",
+        "EvaluateLetBlock",
+        "HandleLetInAsignationExpression",
         "InferType",
         "CheckSequenceType",
         "CreateSequence",
@@ -1388,20 +1388,21 @@
         "SetName",
         "SetName",
         "SetName",
+        "AsignY",
+        "SetX",
         "AsignX",
         "SetY",
-        "AsignY",
         "SetName",
-        "SetX",
         "SetName",
         "GetMeasure",
+        "ReorderNodes",
+        "OrderByType",
         "Slope",
         "SlopeAndEquation",
-        "OrderByType",
-        "ReorderNodes",
         "SetErrors",
-        "Peek",
         "SetError",
+        "Peek",
+        "Evaluate",
         "Evaluate",
         "Evaluate",
         "Evaluate",
@@ -1420,13 +1421,12 @@
         "Evaluate",
         "CreateRandoms",
         "Evaluate",
+        "GenerateRandomPointsOnLine",
         "Evaluate",
+        "GenerateRandomPointsOnCircle",
+        "GenerateRandomPointsOnArc",
         "GenerateRandomPointsOnSegment",
         "GenerateRandomPointsOnRay",
-        "GenerateRandomPointsOnArc",
-        "Evaluate",
-        "GenerateRandomPointsOnLine",
-        "GenerateRandomPointsOnCircle",
         "Evaluate",
         "Evaluate",
         "Evaluate",
@@ -1439,15 +1439,11 @@
             "void"
         ],
         [
-            "Start",
-            "void"
-        ],
-        [
             "About",
             "void"
         ],
         [
-            "Commands",
+            "Start",
             "void"
         ],
         [
@@ -1459,7 +1455,7 @@
             "void"
         ],
         [
-            "HandleLexer",
+            "Commands",
             "void"
         ],
         [
@@ -1475,31 +1471,11 @@
             "bool"
         ],
         [
+            "HandleLexer",
+            "void"
+        ],
+        [
             "HandleSemantic",
-            "void"
-        ],
-        [
-            "HandleVariableExpression",
-            "void"
-        ],
-        [
-            "HandleDrawNode",
-            "void"
-        ],
-        [
-            "HandleAsignationLet",
-            "Type"
-        ],
-        [
-            "Evaluate",
-            "List"
-        ],
-        [
-            "HandleLetInAsignationExpression",
-            "void"
-        ],
-        [
-            "HandleAsignationNode",
             "void"
         ],
         [
@@ -1507,15 +1483,39 @@
             "void"
         ],
         [
+            "HandleLetInAsignationExpression",
+            "void"
+        ],
+        [
+            "HandleVariableExpression",
+            "void"
+        ],
+        [
             "HandleMultipleAsignationNode",
             "void"
         ],
         [
-            "CheckSequenceType",
-            "TypeInfered"
+            "HandleAsignationNode",
+            "void"
+        ],
+        [
+            "HandleDrawNode",
+            "void"
+        ],
+        [
+            "Evaluate",
+            "List"
+        ],
+        [
+            "HandleAsignationLet",
+            "Type"
         ],
         [
             "InferType",
+            "TypeInfered"
+        ],
+        [
+            "CheckSequenceType",
             "TypeInfered"
         ],
         [
@@ -1559,16 +1559,16 @@
             "Type"
         ],
         [
+            "RestOfElements",
+            "IEnumerable"
+        ],
+        [
             "SetName",
             "void"
         ],
         [
             "GetElement",
             "Type"
-        ],
-        [
-            "RestOfElements",
-            "IEnumerable"
         ],
         [
             "Count",
@@ -1595,23 +1595,23 @@
             "void"
         ],
         [
-            "SetY",
-            "double"
+            "AsignY",
+            "void"
         ],
         [
-            "SetName",
-            "void"
+            "SetX",
+            "double"
         ],
         [
             "AsignX",
             "void"
         ],
         [
-            "AsignY",
+            "SetName",
             "void"
         ],
         [
-            "SetX",
+            "SetY",
             "double"
         ],
         [
@@ -1623,20 +1623,20 @@
             "double"
         ],
         [
-            "Slope",
-            "double"
-        ],
-        [
             "SlopeAndEquation",
             "("
         ],
         [
-            "OrderByType",
-            "("
+            "Slope",
+            "double"
         ],
         [
             "ReorderNodes",
             "List"
+        ],
+        [
+            "OrderByType",
+            "("
         ],
         [
             "SetErrors",
@@ -1675,12 +1675,12 @@
             "Type"
         ],
         [
-            "HandleSequenceExpression",
-            "void"
-        ],
-        [
             "Evaluate",
             "Type"
+        ],
+        [
+            "HandleSequenceExpression",
+            "void"
         ],
         [
             "CreatePoints",
@@ -1727,15 +1727,11 @@
             "Type"
         ],
         [
-            "GenerateRandomPointsOnLine",
-            "IEnumerable"
-        ],
-        [
             "GenerateRandomPointsOnCircle",
             "IEnumerable"
         ],
         [
-            "GenerateRandomPointsOnRay",
+            "GenerateRandomPointsOnSegment",
             "IEnumerable"
         ],
         [
@@ -1743,11 +1739,15 @@
             "Type"
         ],
         [
-            "GenerateRandomPointsOnArc",
+            "GenerateRandomPointsOnRay",
             "IEnumerable"
         ],
         [
-            "GenerateRandomPointsOnSegment",
+            "GenerateRandomPointsOnLine",
+            "IEnumerable"
+        ],
+        [
+            "GenerateRandomPointsOnArc",
             "IEnumerable"
         ],
         [
@@ -1851,7 +1851,7 @@
         "Compilation_unitContext": 75,
         "Using_directivesContext": 15,
         "UsingNamespaceDirectiveContext": 53,
-        "TerminalNodeImpl": 15180,
+        "TerminalNodeImpl": 15179,
         "Namespace_or_type_nameContext": 1317,
         "IdentifierContext": 5237,
         "Global_attribute_sectionContext": 1,
@@ -1879,12 +1879,12 @@
         "Primary_expressionContext": 2350,
         "SimpleNameExpressionContext": 1946,
         "Member_accessContext": 1014,
-        "ErrorNodeImpl": 13963,
+        "ErrorNodeImpl": 13965,
         "Namespace_member_declarationsContext": 130,
         "Namespace_member_declarationContext": 410,
         "Namespace_declarationContext": 71,
         "Qualified_identifierContext": 71,
-        "Namespace_bodyContext": 71,
+        "Namespace_bodyContext": 59,
         "Type_declarationContext": 339,
         "All_member_modifiersContext": 734,
         "All_member_modifierContext": 812,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 25733,
+    "total_nodes": 25729,
     "max_depth": 391,
     "number_of_variables": 53,
     "number_of_constants": 0,
@@ -121,19 +121,19 @@
     "variable_names": [
         [
             "var",
+            "code"
+        ],
+        [
+            "var",
             "resul"
         ],
         [
             "var",
-            "code"
+            "tree"
         ],
         [
             "int",
             "i"
-        ],
-        [
-            "var",
-            "tree"
         ],
         [
             "Parser",
@@ -144,12 +144,8 @@
             "reserved"
         ],
         [
-            "string",
-            "result"
-        ],
-        [
-            "string",
-            "dato"
+            "double",
+            "number"
         ],
         [
             "List",
@@ -157,51 +153,55 @@
         ],
         [
             "double",
-            "number"
-        ],
-        [
-            "Error",
-            "error"
-        ],
-        [
-            "int",
-            "cont"
-        ],
-        [
-            "bool",
-            "aux"
+            "x"
         ],
         [
             "Token",
             "nuevo"
         ],
         [
-            "int",
-            "i"
+            "Error",
+            "error"
         ],
         [
             "Token",
             "word"
         ],
         [
-            "double",
-            "x"
+            "int",
+            "cont"
+        ],
+        [
+            "string",
+            "result"
         ],
         [
             "string",
             "aux"
         ],
         [
+            "string",
+            "dato"
+        ],
+        [
             "int",
             "j"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "bool",
+            "aux"
         ]
     ],
     "method_names": [
         "Main",
+        "Scanner",
+        "IsLiteral",
         "IsNumber",
         "CheckWord",
-        "IsLiteral",
-        "Scanner",
         "RerservedWord"
     ],
     "method_return_types": [
@@ -214,28 +214,28 @@
             "double"
         ],
         [
-            "Scanner",
-            "List"
-        ],
-        [
-            "RerservedWord",
-            "Token"
-        ],
-        [
             "CheckWord",
             "int"
         ],
         [
+            "Scanner",
+            "List"
+        ],
+        [
             "IsLiteral",
             "string"
+        ],
+        [
+            "RerservedWord",
+            "Token"
         ]
     ],
     "class_names": [
         "Program",
         "Expression",
         "Execute",
-        "Token",
         "Error",
+        "Token",
         "Lexer",
         "Parser"
     ],
@@ -252,7 +252,6 @@
         "Namespace_member_declarationContext": 14,
         "Namespace_declarationContext": 6,
         "Qualified_identifierContext": 6,
-        "Namespace_bodyContext": 6,
         "Type_declarationContext": 8,
         "All_member_modifiersContext": 34,
         "All_member_modifierContext": 50,
@@ -331,6 +330,7 @@
         "Attribute_argumentContext": 7,
         "ErrorNodeImpl": 9002,
         "Qualified_alias_memberContext": 1,
+        "Namespace_bodyContext": 2,
         "Enum_definitionContext": 1,
         "Enum_bodyContext": 1,
         "Enum_member_declarationContext": 38,

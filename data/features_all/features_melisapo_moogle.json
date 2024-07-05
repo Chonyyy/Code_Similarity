@@ -1,5 +1,5 @@
 {
-    "total_nodes": 30266,
+    "total_nodes": 30265,
     "max_depth": 1198,
     "number_of_variables": 168,
     "number_of_constants": 0,
@@ -538,75 +538,11 @@
         ],
         [
             "int",
-            "i"
+            "x"
         ],
         [
             "int",
-            "x"
-        ],
-        [
-            "var",
-            "TSize"
-        ],
-        [
-            "var",
-            "snippet"
-        ],
-        [
-            "double",
-            "BestRelevance"
-        ],
-        [
-            "var",
-            "bestWord"
-        ],
-        [
-            "string",
-            "Word"
-        ],
-        [
-            "var",
-            "WSize"
-        ],
-        [
-            "var",
-            "SizeTS"
-        ],
-        [
-            "var",
-            "y"
-        ],
-        [
-            "var",
-            "ListDocument"
-        ],
-        [
-            "var",
-            "Pos"
-        ],
-        [
-            "var",
-            "text"
-        ],
-        [
-            "var",
             "i"
-        ],
-        [
-            "var",
-            "x"
-        ],
-        [
-            "var",
-            "rest"
-        ],
-        [
-            "var",
-            "D"
-        ],
-        [
-            "var",
-            "SizeRS"
         ],
         [
             "string",
@@ -614,7 +550,35 @@
         ],
         [
             "var",
-            "restLS"
+            "SizeLS"
+        ],
+        [
+            "var",
+            "bestWord"
+        ],
+        [
+            "var",
+            "WSize"
+        ],
+        [
+            "var",
+            "SizeRS"
+        ],
+        [
+            "var",
+            "SizeTS"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "snippet"
+        ],
+        [
+            "var",
+            "x"
         ],
         [
             "var",
@@ -622,11 +586,51 @@
         ],
         [
             "var",
-            "getSnippet"
+            "rest"
         ],
         [
             "var",
-            "SizeLS"
+            "Pos"
+        ],
+        [
+            "var",
+            "ListDocument"
+        ],
+        [
+            "var",
+            "TSize"
+        ],
+        [
+            "double",
+            "BestRelevance"
+        ],
+        [
+            "var",
+            "text"
+        ],
+        [
+            "string",
+            "Word"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "var",
+            "restLS"
+        ],
+        [
+            "var",
+            "D"
+        ],
+        [
+            "var",
+            "getSnippet"
+        ],
+        [
+            "int",
+            "k"
         ],
         [
             "List",
@@ -634,35 +638,7 @@
         ],
         [
             "Dictionary",
-            "TWords"
-        ],
-        [
-            "StreamReader",
-            "listword"
-        ],
-        [
-            "Dictionary",
-            "Documents"
-        ],
-        [
-            "string",
-            "ListDocument"
-        ],
-        [
-            "double",
-            "Rate"
-        ],
-        [
-            "string",
-            "Content"
-        ],
-        [
-            "int",
-            "TotalDocument"
-        ],
-        [
-            "int",
-            "i"
+            "Words"
         ],
         [
             "string",
@@ -670,26 +646,26 @@
         ],
         [
             "int",
-            "k"
+            "i"
         ],
         [
-            "int",
-            "j"
+            "double",
+            "Rate"
         ],
         [
-            "Dictionary",
-            "Words"
-        ],
-        [
-            "String",
-            "ListDocument"
+            "StreamReader",
+            "listword"
         ],
         [
             "var",
             "TotalOcurrence"
         ],
         [
-            "var",
+            "Dictionary",
+            "Documents"
+        ],
+        [
+            "int",
             "TotalDocument"
         ],
         [
@@ -697,36 +673,28 @@
             "isletter"
         ],
         [
+            "string",
+            "ListDocument"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Dictionary",
+            "TWords"
+        ],
+        [
+            "String",
+            "ListDocument"
+        ],
+        [
+            "string",
+            "Content"
+        ],
+        [
             "var",
-            "Suggest"
-        ],
-        [
-            "var",
-            "Dist"
-        ],
-        [
-            "var",
-            "IsLetter"
-        ],
-        [
-            "int",
-            "y"
-        ],
-        [
-            "int",
-            "z"
-        ],
-        [
-            "int",
-            "Change"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "x"
+            "TotalDocument"
         ],
         [
             "var",
@@ -734,11 +702,7 @@
         ],
         [
             "var",
-            "word"
-        ],
-        [
-            "int",
-            "j"
+            "Suggest"
         ],
         [
             "int",
@@ -749,28 +713,44 @@
             "changeWord"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "y"
+        ],
+        [
+            "var",
+            "IsLetter"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "int",
+            "Change"
+        ],
+        [
+            "var",
+            "word"
+        ],
+        [
+            "var",
+            "Dist"
+        ],
+        [
+            "int",
+            "z"
+        ],
+        [
             "var",
             "Suggest"
-        ],
-        [
-            "var",
-            "Operators"
-        ],
-        [
-            "var",
-            "Snippets"
-        ],
-        [
-            "var",
-            "Tupla2"
-        ],
-        [
-            "var",
-            "Query"
-        ],
-        [
-            "var",
-            "Tupla3"
         ],
         [
             "var",
@@ -778,11 +758,11 @@
         ],
         [
             "var",
-            "items"
+            "Snippets"
         ],
         [
             "var",
-            "Tupla1"
+            "items"
         ],
         [
             "var",
@@ -790,7 +770,11 @@
         ],
         [
             "var",
-            "TWords"
+            "Tupla2"
+        ],
+        [
+            "var",
+            "Tupla1"
         ],
         [
             "var",
@@ -798,7 +782,27 @@
         ],
         [
             "var",
-            "signo1"
+            "Tupla3"
+        ],
+        [
+            "var",
+            "Operators"
+        ],
+        [
+            "var",
+            "Query"
+        ],
+        [
+            "var",
+            "TWords"
+        ],
+        [
+            "var",
+            "change"
+        ],
+        [
+            "var",
+            "promedy"
         ],
         [
             "double",
@@ -806,15 +810,19 @@
         ],
         [
             "var",
-            "change"
+            "signo1"
+        ],
+        [
+            "MetaData",
+            "WordInfo"
         ],
         [
             "int",
             "i"
         ],
         [
-            "MetaData",
-            "WordInfo"
+            "double",
+            "V"
         ],
         [
             "int",
@@ -826,19 +834,11 @@
         ],
         [
             "var",
-            "Switch"
-        ],
-        [
-            "var",
             "list"
         ],
         [
             "var",
-            "promedy"
-        ],
-        [
-            "double",
-            "V"
+            "Switch"
         ],
         [
             "var",
@@ -857,84 +857,20 @@
             "IsLetter"
         ],
         [
+            "string",
+            "words"
+        ],
+        [
             "Dictionary",
             "Query"
         ],
         [
-            "string",
-            "words"
-        ],
-        [
             "var",
-            "ocurrence"
-        ],
-        [
-            "int",
-            "order"
-        ],
-        [
-            "string",
-            "word"
-        ],
-        [
-            "var",
-            "Document"
-        ],
-        [
-            "var",
-            "pos"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "Q"
-        ],
-        [
-            "int",
-            "counter"
-        ],
-        [
-            "var",
-            "distance"
-        ],
-        [
-            "string",
-            "Words"
-        ],
-        [
-            "string",
-            "SubQuery"
-        ],
-        [
-            "var",
-            "DQuery"
-        ],
-        [
-            "var",
-            "x"
-        ],
-        [
-            "var",
-            "Word1pos"
+            "t"
         ],
         [
             "var",
             "lowDistance"
-        ],
-        [
-            "var",
-            "words"
-        ],
-        [
-            "int",
-            "vueltas"
-        ],
-        [
-            "var",
-            "word2pos"
         ],
         [
             "int",
@@ -942,31 +878,67 @@
         ],
         [
             "var",
-            "t"
-        ],
-        [
-            "char",
-            "C"
-        ],
-        [
-            "List",
-            "support"
-        ],
-        [
-            "List",
-            "DuoWords"
-        ],
-        [
-            "int",
-            "k"
+            "Document"
         ],
         [
             "Dictionary",
             "DistanceWords"
         ],
         [
+            "int",
+            "order"
+        ],
+        [
+            "int",
+            "vueltas"
+        ],
+        [
             "var",
+            "pos"
+        ],
+        [
+            "var",
+            "words"
+        ],
+        [
+            "var",
+            "ocurrence"
+        ],
+        [
+            "char",
+            "C"
+        ],
+        [
+            "int",
             "k"
+        ],
+        [
+            "var",
+            "Word1pos"
+        ],
+        [
+            "var",
+            "DQuery"
+        ],
+        [
+            "string",
+            "word"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "List",
+            "DuoWords"
+        ],
+        [
+            "List",
+            "support"
+        ],
+        [
+            "string",
+            "Words"
         ],
         [
             "bool",
@@ -974,62 +946,38 @@
         ],
         [
             "var",
-            "signo1"
+            "word2pos"
+        ],
+        [
+            "int",
+            "counter"
         ],
         [
             "var",
-            "signo2"
+            "k"
         ],
         [
-            "double",
-            "TF"
+            "string",
+            "SubQuery"
         ],
         [
-            "double",
-            "TotalOcurrence"
+            "int",
+            "Q"
         ],
         [
-            "double",
-            "TotalDocument"
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "distance"
         ],
         [
             "double",
             "ocurrence"
         ],
         [
-            "Dictionary",
-            "Score"
-        ],
-        [
             "double",
-            "Sumatory1"
-        ],
-        [
-            "double",
-            "Sumatory3"
-        ],
-        [
-            "var",
-            "S"
-        ],
-        [
-            "double",
-            "Sumatory2"
-        ],
-        [
-            "double",
-            "IDF"
-        ],
-        [
-            "var",
-            "y"
-        ],
-        [
-            "double",
-            "Weight"
-        ],
-        [
-            "var",
             "TotalDocument"
         ],
         [
@@ -1037,46 +985,98 @@
             "signo3"
         ],
         [
+            "double",
+            "Sumatory2"
+        ],
+        [
+            "double",
+            "Sumatory1"
+        ],
+        [
+            "double",
+            "IDF"
+        ],
+        [
+            "var",
+            "signo1"
+        ],
+        [
             "var",
             "TotalWords"
         ],
         [
+            "Dictionary",
+            "Score"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "var",
+            "signo2"
+        ],
+        [
+            "double",
+            "Sumatory3"
+        ],
+        [
+            "double",
+            "TotalOcurrence"
+        ],
+        [
+            "var",
+            "S"
+        ],
+        [
+            "double",
+            "TF"
+        ],
+        [
+            "double",
+            "Weight"
+        ],
+        [
             "var",
             "x"
+        ],
+        [
+            "var",
+            "TotalDocument"
         ]
     ],
     "method_names": [
         "Items",
         "Getitems",
-        "BestWord",
-        "GetSnippet",
         "GSnippet",
+        "GetSnippet",
+        "BestWord",
         "LoaderDocument",
-        "PoorRelevance",
         "Loader",
-        "MakeSuggest",
+        "PoorRelevance",
         "suggestion",
         "DiferentWord",
+        "MakeSuggest",
         "LD",
         "Query",
         "List",
-        "ReviseQuery",
-        "Change",
-        "ScoreRanking",
         "Promedy",
+        "Change",
         "Filter",
+        "ReviseQuery",
+        "ScoreRanking",
         "QDocument",
-        "SearchParticularWords",
-        "IncreaseScore",
         "SearchWord",
-        "DecreaseScore",
+        "IncreaseScore",
+        "SearchParticularWords",
         "IncreaseRelevance",
         "NearbyWords",
-        "DWeight",
+        "DecreaseScore",
         "DWeight1",
-        "QWeight",
+        "score",
         "Filter",
-        "score"
+        "QWeight",
+        "DWeight"
     ],
     "method_return_types": [
         [
@@ -1088,20 +1088,16 @@
             "SearchItem"
         ],
         [
+            "BestWord",
+            "string"
+        ],
+        [
             "GetSnippet",
             "string"
         ],
         [
             "GSnippet",
             "Dictionary"
-        ],
-        [
-            "BestWord",
-            "string"
-        ],
-        [
-            "Loader",
-            "("
         ],
         [
             "LoaderDocument",
@@ -1112,16 +1108,20 @@
             "void"
         ],
         [
+            "Loader",
+            "("
+        ],
+        [
             "DiferentWord",
+            "void"
+        ],
+        [
+            "MakeSuggest",
             "void"
         ],
         [
             "LD",
             "int"
-        ],
-        [
-            "MakeSuggest",
-            "void"
         ],
         [
             "suggestion",
@@ -1136,19 +1136,19 @@
             "void"
         ],
         [
-            "Change",
-            "Dictionary"
+            "Promedy",
+            "double"
         ],
         [
             "ReviseQuery",
             "void"
         ],
         [
-            "List",
-            "double"
+            "Change",
+            "Dictionary"
         ],
         [
-            "Promedy",
+            "List",
             "double"
         ],
         [
@@ -1160,22 +1160,6 @@
             "("
         ],
         [
-            "NearbyWords",
-            "void"
-        ],
-        [
-            "SearchWord",
-            "string"
-        ],
-        [
-            "IncreaseScore",
-            "void"
-        ],
-        [
-            "IncreaseRelevance",
-            "void"
-        ],
-        [
             "SearchParticularWords",
             "List"
         ],
@@ -1184,24 +1168,40 @@
             "void"
         ],
         [
-            "Filter",
+            "NearbyWords",
             "void"
         ],
         [
-            "DWeight",
-            "double"
+            "IncreaseRelevance",
+            "void"
         ],
         [
-            "DWeight1",
-            "double"
+            "IncreaseScore",
+            "void"
+        ],
+        [
+            "SearchWord",
+            "string"
         ],
         [
             "QWeight",
             "double"
         ],
         [
+            "Filter",
+            "void"
+        ],
+        [
             "score",
             "Dictionary"
+        ],
+        [
+            "DWeight1",
+            "double"
+        ],
+        [
+            "DWeight",
+            "double"
         ]
     ],
     "class_names": [
@@ -1262,7 +1262,7 @@
         "Namespace_member_declarationContext": 24,
         "Namespace_declarationContext": 12,
         "Qualified_identifierContext": 12,
-        "Namespace_bodyContext": 12,
+        "Namespace_bodyContext": 11,
         "Type_declarationContext": 12,
         "All_member_modifiersContext": 57,
         "All_member_modifierContext": 83,

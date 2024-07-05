@@ -1,5 +1,5 @@
 {
-    "total_nodes": 17018,
+    "total_nodes": 17011,
     "max_depth": 464,
     "number_of_variables": 63,
     "number_of_constants": 0,
@@ -173,40 +173,32 @@
     ],
     "variable_names": [
         [
-            "Searcher",
-            "currentWord"
-        ],
-        [
-            "float",
-            "tf"
-        ],
-        [
             "List",
             "searchResults"
         ],
         [
-            "string",
-            "fileName"
-        ],
-        [
-            "string",
-            "currentFilePath"
-        ],
-        [
             "int",
-            "distance"
+            "end"
         ],
         [
             "float",
             "tfIdf"
         ],
         [
-            "directoryName",
-            "currentDirectoryName"
+            "var",
+            "outPutDirectory"
+        ],
+        [
+            "float",
+            "tf"
         ],
         [
             "int",
-            "docsNumber"
+            "start"
+        ],
+        [
+            "Searcher",
+            "currentWord"
         ],
         [
             "int",
@@ -217,24 +209,52 @@
             "wordsDictionary2"
         ],
         [
-            "string",
-            "icon_path"
+            "List",
+            "wordsFromFile"
+        ],
+        [
+            "int",
+            "docsNumber"
+        ],
+        [
+            "directoryName",
+            "currentDirectoryName"
+        ],
+        [
+            "int",
+            "distance"
         ],
         [
             "string",
-            "contentLower"
+            "fileName"
         ],
         [
             "int",
             "currentFileNameID"
         ],
         [
-            "int",
-            "start"
+            "string",
+            "contentLower"
         ],
         [
-            "int",
-            "end"
+            "WordDetails",
+            "temp"
+        ],
+        [
+            "Doc",
+            "currentDoc"
+        ],
+        [
+            "string",
+            "content"
+        ],
+        [
+            "string",
+            "filePath"
+        ],
+        [
+            "string",
+            "icon_path"
         ],
         [
             "float",
@@ -246,83 +266,19 @@
         ],
         [
             "string",
-            "content"
-        ],
-        [
-            "Doc",
-            "currentDoc"
-        ],
-        [
-            "List",
-            "wordsFromFile"
-        ],
-        [
-            "WordDetails",
-            "temp"
-        ],
-        [
-            "string",
-            "filePath"
-        ],
-        [
-            "var",
-            "outPutDirectory"
-        ],
-        [
-            "string",
-            "replace"
-        ],
-        [
-            "double",
-            "qwDistance"
-        ],
-        [
-            "List",
-            "queryListed"
-        ],
-        [
-            "var",
-            "fs"
+            "currentFilePath"
         ],
         [
             "List",
             "words"
         ],
         [
-            "double",
-            "distance"
-        ],
-        [
-            "var",
-            "queryLenght"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "List",
             "wordsFromFile"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
-            "var",
-            "cost"
-        ],
-        [
             "string",
             "content"
-        ],
-        [
-            "var",
-            "wordLenght"
-        ],
-        [
-            "var",
-            "matrix"
         ],
         [
             "string",
@@ -333,8 +289,52 @@
             "result"
         ],
         [
+            "double",
+            "distance"
+        ],
+        [
+            "var",
+            "matrix"
+        ],
+        [
+            "var",
+            "wordLenght"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
             "var",
             "sr"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "var",
+            "cost"
+        ],
+        [
+            "double",
+            "qwDistance"
+        ],
+        [
+            "var",
+            "queryLenght"
+        ],
+        [
+            "List",
+            "queryListed"
+        ],
+        [
+            "var",
+            "fs"
+        ],
+        [
+            "string",
+            "replace"
         ],
         [
             "Stopwatch",
@@ -345,16 +345,16 @@
             "time"
         ],
         [
-            "Matrix",
-            "result"
+            "int",
+            "k"
         ],
         [
             "int",
             "i"
         ],
         [
-            "int",
-            "k"
+            "Matrix",
+            "transposed"
         ],
         [
             "int",
@@ -362,27 +362,27 @@
         ],
         [
             "Matrix",
-            "transposed"
+            "result"
         ]
     ],
     "method_names": [
         "Items",
-        "GetMainPath",
-        "Search",
-        "GetFileName",
-        "Initialize",
         "Snippet",
+        "Initialize",
+        "Search",
+        "GetMainPath",
+        "GetFileName",
         "NormalizeQuery",
+        "NormalizeDoc",
         "FindSimilarities",
         "Processor",
-        "NormalizeDoc",
-        "CompareTo",
         "InitData",
-        "MatrixSum",
-        "ScalarProd",
+        "CompareTo",
         "Transposed",
-        "Equal",
-        "Mult"
+        "Mult",
+        "ScalarProd",
+        "MatrixSum",
+        "Equal"
     ],
     "method_return_types": [
         [
@@ -390,31 +390,23 @@
             "IEnumerable"
         ],
         [
-            "Search",
-            "List"
+            "GetFileName",
+            "string"
         ],
         [
             "GetMainPath",
             "string"
         ],
         [
-            "Snippet",
-            "string"
-        ],
-        [
-            "GetFileName",
-            "string"
+            "Search",
+            "List"
         ],
         [
             "Initialize",
             "void"
         ],
         [
-            "NormalizeQuery",
-            "List"
-        ],
-        [
-            "FindSimilarities",
+            "Snippet",
             "string"
         ],
         [
@@ -422,8 +414,16 @@
             "List"
         ],
         [
+            "NormalizeQuery",
+            "List"
+        ],
+        [
             "Processor",
             "bool"
+        ],
+        [
+            "FindSimilarities",
+            "string"
         ],
         [
             "InitData",
@@ -446,25 +446,25 @@
             "Matrix"
         ],
         [
-            "Mult",
+            "Transposed",
             "Matrix"
         ],
         [
-            "Transposed",
+            "Mult",
             "Matrix"
         ]
     ],
     "class_names": [
         "SearchResult",
         "SearchItem",
-        "Doc",
-        "WordDetails",
         "directoryName",
+        "WordDetails",
         "Searcher",
         "LoadData",
+        "Doc",
+        "LevenshteinMethod",
         "Normalize",
         "WordProcessor",
-        "LevenshteinMethod",
         "SearchItemPLus",
         "Moogle",
         "Matrix"
@@ -483,7 +483,6 @@
         "Namespace_member_declarationContext": 41,
         "Namespace_declarationContext": 7,
         "Qualified_identifierContext": 7,
-        "Namespace_bodyContext": 7,
         "Type_declarationContext": 34,
         "All_member_modifiersContext": 76,
         "All_member_modifierContext": 84,

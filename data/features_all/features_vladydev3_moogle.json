@@ -1,5 +1,5 @@
 {
-    "total_nodes": 40659,
+    "total_nodes": 40651,
     "max_depth": 865,
     "number_of_variables": 92,
     "number_of_constants": 0,
@@ -272,39 +272,15 @@
         ],
         [
             "string",
-            "word1"
-        ],
-        [
-            "double",
-            "magnitude1"
-        ],
-        [
-            "int",
-            "i"
+            "querykeys"
         ],
         [
             "string",
             "word2"
         ],
         [
-            "double",
-            "similarity"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "double",
-            "magnitude2"
-        ],
-        [
             "int",
             "index"
-        ],
-        [
-            "string",
-            "querykeys"
         ],
         [
             "double",
@@ -312,7 +288,59 @@
         ],
         [
             "double",
+            "similarity"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
+            "magnitude1"
+        ],
+        [
+            "double",
+            "magnitude2"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "word1"
+        ],
+        [
+            "HashSet",
+            "wordSet"
+        ],
+        [
+            "Dictionary",
+            "docCount"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "string",
+            "strippedContent"
+        ],
+        [
+            "var",
+            "groupedWords"
+        ],
+        [
+            "HashSet",
+            "uniqueWords"
+        ],
+        [
+            "double",
             "sumOfSquares"
+        ],
+        [
+            "Dictionary",
+            "wordCounts"
         ],
         [
             "Stemmer",
@@ -320,35 +348,19 @@
         ],
         [
             "string",
-            "files"
+            "stemmedwords"
         ],
         [
             "string",
-            "stemmedwords"
+            "name"
         ],
         [
             "int",
             "N"
         ],
         [
-            "HashSet",
-            "wordSet"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "StreamReader",
-            "reader"
-        ],
-        [
-            "Dictionary",
-            "wordCounts"
-        ],
-        [
-            "string",
-            "name"
+            "Encoding",
+            "encoding"
         ],
         [
             "int",
@@ -359,48 +371,40 @@
             "SnipLeng"
         ],
         [
-            "HashSet",
-            "uniqueWords"
+            "string",
+            "content"
         ],
         [
-            "var",
-            "groupedWords"
-        ],
-        [
-            "Encoding",
-            "encoding"
+            "StreamReader",
+            "reader"
         ],
         [
             "string",
             "wordsStem"
         ],
         [
-            "string",
-            "strippedContent"
+            "int",
+            "i"
         ],
         [
             "string",
-            "content"
-        ],
-        [
-            "string",
-            "text"
+            "files"
         ],
         [
             "int",
             "middle"
         ],
         [
-            "Dictionary",
-            "docCount"
+            "var",
+            "temp"
+        ],
+        [
+            "int",
+            "aDevolver"
         ],
         [
             "DateTime",
             "start"
-        ],
-        [
-            "var",
-            "temp"
         ],
         [
             "int",
@@ -411,6 +415,14 @@
             "queryprocessed"
         ],
         [
+            "VectorModel",
+            "vectorModel"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
             "string",
             "snippet"
         ],
@@ -419,20 +431,8 @@
             "resultsCount"
         ],
         [
-            "SearchItem",
-            "items"
-        ],
-        [
-            "VectorModel",
-            "vectorModel"
-        ],
-        [
             "int",
-            "aDevolver"
-        ],
-        [
-            "Matrix",
-            "result"
+            "k"
         ],
         [
             "Vector",
@@ -443,32 +443,16 @@
             "i"
         ],
         [
-            "int",
-            "k"
+            "Vector",
+            "elements"
         ],
         [
             "int",
             "j"
         ],
         [
-            "Vector",
-            "elements"
-        ],
-        [
-            "int",
-            "shortestDistance"
-        ],
-        [
-            "string",
-            "similar"
-        ],
-        [
-            "int",
-            "distance"
-        ],
-        [
-            "double",
-            "tfidf"
+            "Matrix",
+            "result"
         ],
         [
             "var",
@@ -479,24 +463,40 @@
             "i"
         ],
         [
-            "Dictionary",
-            "temp"
+            "double",
+            "tfidf"
+        ],
+        [
+            "string",
+            "similar"
         ],
         [
             "int",
             "pos"
         ],
         [
+            "int",
+            "distance"
+        ],
+        [
+            "int",
+            "shortestDistance"
+        ],
+        [
+            "Dictionary",
+            "temp"
+        ],
+        [
             "string",
             "word"
         ],
         [
-            "double",
-            "result"
-        ],
-        [
             "int",
             "i"
+        ],
+        [
+            "double",
+            "result"
         ],
         [
             "double",
@@ -510,28 +510,28 @@
     "method_names": [
         "Items",
         "DistanciaLev",
-        "DotProduct",
-        "RelevantDoc",
         "CosineSimilarity",
+        "RelevantDoc",
         "GetIndex",
+        "DotProduct",
         "IDFCorpus",
         "LoadDocs",
-        "Stemming",
-        "StemmingText",
         "TF",
-        "CreateSnippet",
+        "Stemming",
         "CreateTF_IDF_Matrix",
+        "CreateSnippet",
         "NormalizeVector",
+        "StemmingText",
         "QueryProcess",
-        "Transpose",
         "GetRow",
         "GetCol",
-        "AnyOperator",
+        "Transpose",
         "SimilarWord",
-        "QueryProcessed",
+        "AnyOperator",
         "ImportanceOperator",
-        "Normalize",
+        "QueryProcessed",
         "Magnitude",
+        "Normalize",
         "EliminaAcento"
     ],
     "method_return_types": [
@@ -548,6 +548,10 @@
             "void"
         ],
         [
+            "GetIndex",
+            "int"
+        ],
+        [
             "DotProduct",
             "double"
         ],
@@ -556,35 +560,11 @@
             "double"
         ],
         [
-            "GetIndex",
-            "int"
-        ],
-        [
             "RelevantDoc",
             "bool"
         ],
         [
-            "CreateSnippet",
-            "string"
-        ],
-        [
-            "StemmingText",
-            "string"
-        ],
-        [
-            "NormalizeVector",
-            "Dictionary"
-        ],
-        [
-            "Stemming",
-            "string"
-        ],
-        [
             "LoadDocs",
-            "void"
-        ],
-        [
-            "IDFCorpus",
             "void"
         ],
         [
@@ -592,8 +572,28 @@
             "void"
         ],
         [
+            "CreateSnippet",
+            "string"
+        ],
+        [
+            "IDFCorpus",
+            "void"
+        ],
+        [
+            "Stemming",
+            "string"
+        ],
+        [
+            "StemmingText",
+            "string"
+        ],
+        [
             "TF",
             "double"
+        ],
+        [
+            "NormalizeVector",
+            "Dictionary"
         ],
         [
             "QueryProcess",
@@ -604,36 +604,36 @@
             "Vector"
         ],
         [
-            "Transpose",
-            "Matrix"
-        ],
-        [
             "GetRow",
             "Vector"
         ],
         [
-            "ImportanceOperator",
-            "string"
+            "Transpose",
+            "Matrix"
         ],
         [
             "SimilarWord",
             "string"
         ],
         [
-            "QueryProcessed",
-            "void"
-        ],
-        [
             "AnyOperator",
             "void"
         ],
         [
-            "Magnitude",
-            "double"
+            "QueryProcessed",
+            "void"
+        ],
+        [
+            "ImportanceOperator",
+            "string"
         ],
         [
             "Normalize",
             "Vector"
+        ],
+        [
+            "Magnitude",
+            "double"
         ],
         [
             "EliminaAcento",
@@ -666,7 +666,6 @@
         "Namespace_member_declarationContext": 20,
         "Namespace_declarationContext": 10,
         "Qualified_identifierContext": 10,
-        "Namespace_bodyContext": 10,
         "Type_declarationContext": 10,
         "All_member_modifiersContext": 102,
         "All_member_modifierContext": 163,
@@ -744,6 +743,7 @@
         "Numeric_typeContext": 153,
         "Integral_typeContext": 91,
         "Floating_point_typeContext": 62,
+        "Namespace_bodyContext": 2,
         "DeclarationStatementContext": 63,
         "Local_variable_declarationContext": 92,
         "Local_variable_typeContext": 104,

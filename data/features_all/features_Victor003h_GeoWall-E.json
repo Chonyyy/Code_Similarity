@@ -1,5 +1,5 @@
 {
-    "total_nodes": 41933,
+    "total_nodes": 41916,
     "max_depth": 982,
     "number_of_variables": 36,
     "number_of_constants": 0,
@@ -194,12 +194,16 @@
     ],
     "variable_names": [
         [
-            "CodeEdit",
-            "codeEdit"
+            "var",
+            "resul"
         ],
         [
             "var",
-            "tree"
+            "canvas"
+        ],
+        [
+            "Vector2",
+            "vector"
         ],
         [
             "FileDialog",
@@ -207,43 +211,39 @@
         ],
         [
             "var",
-            "r"
-        ],
-        [
-            "var",
-            "canvas"
-        ],
-        [
-            "string",
-            "code"
-        ],
-        [
-            "string",
-            "f"
-        ],
-        [
-            "DrawFunction",
-            "s"
-        ],
-        [
-            "var",
-            "resul"
-        ],
-        [
-            "Vector2",
-            "vector"
-        ],
-        [
-            "GraphEdit",
-            "graph"
+            "tree"
         ],
         [
             "List",
             "figures"
         ],
         [
+            "DrawFunction",
+            "s"
+        ],
+        [
             "Parser",
             "parser"
+        ],
+        [
+            "GraphEdit",
+            "graph"
+        ],
+        [
+            "string",
+            "code"
+        ],
+        [
+            "var",
+            "r"
+        ],
+        [
+            "CodeEdit",
+            "codeEdit"
+        ],
+        [
+            "string",
+            "f"
         ],
         [
             "string",
@@ -258,10 +258,6 @@
             "figures"
         ],
         [
-            "TokenType",
-            "fi"
-        ],
-        [
             "var",
             "x"
         ],
@@ -270,52 +266,56 @@
             "new_secuen"
         ],
         [
+            "Errors",
+            "Err"
+        ],
+        [
             "bool",
             "first"
+        ],
+        [
+            "TokenType",
+            "fi"
         ],
         [
             "Token",
             "generico"
         ],
         [
-            "Errors",
-            "Err"
-        ],
-        [
             "List",
-            "token_list"
+            "lines"
         ],
         [
             "string",
             "aux"
         ],
         [
+            "List",
+            "token_list"
+        ],
+        [
             "var",
             "token"
         ],
         [
-            "List",
-            "lines"
-        ],
-        [
-            "Errors",
-            "Error"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "var",
-            "l"
+            "Lexer",
+            "lexer"
         ],
         [
             "Expressions",
             "expr"
         ],
         [
-            "Lexer",
-            "lexer"
+            "var",
+            "l"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Errors",
+            "Error"
         ],
         [
             "Errors",
@@ -323,19 +323,18 @@
         ]
     ],
     "method_names": [
-        "_on_button_3_pressed",
-        "AllDraw",
-        "CheckError",
-        "_on_button_pressed",
-        "Draw",
-        "_Ready",
         "_on_graph_edit_draw",
-        "_on_button_4_pressed",
-        "_on_save_file_dialog_file_selected",
+        "_on_button_3_pressed",
+        "_Process",
+        "AllDraw",
+        "Draw",
         "_on_open_file_dialog_file_selected",
+        "_on_save_file_dialog_file_selected",
         "_on_button_2_pressed",
-        "_Process",
         "_Ready",
+        "_on_button_pressed",
+        "_on_button_4_pressed",
+        "CheckError",
         "_Process",
         "_Ready",
         "_Process",
@@ -351,54 +350,23 @@
         "_Ready",
         "_draw",
         "_Process",
+        "_Ready",
         "Evaluator",
         "Scanner",
-        "GetPrecendece",
-        "NextLine",
         "IsDeclaration",
         "Parse",
+        "NextLine",
+        "GetPrecendece",
         "NextToken",
         "GetValue"
     ],
     "method_return_types": [
         [
-            "_on_graph_edit_draw",
-            "void"
-        ],
-        [
-            "_Ready",
-            "void"
-        ],
-        [
-            "_on_button_2_pressed",
-            "void"
-        ],
-        [
-            "_on_save_file_dialog_file_selected",
-            "void"
-        ],
-        [
-            "Draw",
-            "void"
-        ],
-        [
             "_on_button_4_pressed",
             "void"
         ],
         [
-            "CheckError",
-            "bool"
-        ],
-        [
-            "_on_button_pressed",
-            "void"
-        ],
-        [
-            "AllDraw",
-            "DrawFunction"
-        ],
-        [
-            "_on_open_file_dialog_file_selected",
+            "Draw",
             "void"
         ],
         [
@@ -410,8 +378,36 @@
             "void"
         ],
         [
+            "_on_save_file_dialog_file_selected",
+            "void"
+        ],
+        [
+            "_on_button_2_pressed",
+            "void"
+        ],
+        [
+            "_on_button_pressed",
+            "void"
+        ],
+        [
+            "_on_graph_edit_draw",
+            "void"
+        ],
+        [
+            "CheckError",
+            "bool"
+        ],
+        [
+            "_on_open_file_dialog_file_selected",
+            "void"
+        ],
+        [
             "_Ready",
             "void"
+        ],
+        [
+            "AllDraw",
+            "DrawFunction"
         ],
         [
             "_Process",
@@ -435,6 +431,10 @@
         ],
         [
             "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
             "void"
         ],
         [
@@ -442,10 +442,6 @@
             "void"
         ],
         [
-            "_Process",
-            "void"
-        ],
-        [
             "_Ready",
             "void"
         ],
@@ -463,6 +459,10 @@
         ],
         [
             "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
             "void"
         ],
         [
@@ -470,7 +470,7 @@
             "void"
         ],
         [
-            "_Process",
+            "_Ready",
             "void"
         ],
         [
@@ -482,8 +482,8 @@
             "List"
         ],
         [
-            "NextLine",
-            "void"
+            "GetPrecendece",
+            "int"
         ],
         [
             "Parse",
@@ -494,8 +494,8 @@
             "Token"
         ],
         [
-            "GetPrecendece",
-            "int"
+            "NextLine",
+            "void"
         ],
         [
             "IsDeclaration",
@@ -632,7 +632,6 @@
         "Tuple_elementContext": 3,
         "Namespace_declarationContext": 17,
         "Qualified_identifierContext": 17,
-        "Namespace_bodyContext": 17,
         "Enum_definitionContext": 1,
         "Enum_bodyContext": 1,
         "Enum_member_declarationContext": 62,

@@ -252,40 +252,24 @@
     ],
     "variable_names": [
         [
-            "dynamic",
-            "result"
-        ],
-        [
             "object",
             "value_base"
-        ],
-        [
-            "object",
-            "left_st"
-        ],
-        [
-            "Dictionary",
-            "Var"
-        ],
-        [
-            "object",
-            "value_agrument"
         ],
         [
             "object",
             "right_and"
         ],
         [
-            "Node",
-            "param_f"
+            "string",
+            "type_left"
         ],
         [
             "object",
-            "value_cos"
+            "left_a"
         ],
         [
-            "Dictionary",
-            "Var_let_in"
+            "Function_B",
+            "function"
         ],
         [
             "object",
@@ -297,43 +281,19 @@
         ],
         [
             "object",
-            "left_a"
-        ],
-        [
-            "dynamic",
-            "right_or"
-        ],
-        [
-            "string",
-            "type_right"
-        ],
-        [
-            "object",
-            "left_b"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "string",
-            "v1_type"
-        ],
-        [
-            "string",
-            "type_left"
-        ],
-        [
-            "object",
-            "value_sin"
-        ],
-        [
-            "object",
-            "right_b"
+            "value"
         ],
         [
             "Dictionary",
             "Param"
+        ],
+        [
+            "object",
+            "condition"
+        ],
+        [
+            "Node",
+            "param_f"
         ],
         [
             "bool",
@@ -341,11 +301,31 @@
         ],
         [
             "object",
-            "right_a"
+            "left_st"
         ],
         [
             "object",
-            "value_print"
+            "right_st"
+        ],
+        [
+            "object",
+            "value_sin"
+        ],
+        [
+            "dynamic",
+            "left_or"
+        ],
+        [
+            "dynamic",
+            "value"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "object",
+            "value_cos"
         ],
         [
             "int",
@@ -357,39 +337,79 @@
         ],
         [
             "object",
+            "left_b"
+        ],
+        [
+            "object",
+            "value_print"
+        ],
+        [
+            "object",
+            "right_a"
+        ],
+        [
+            "Dictionary",
+            "Var_let_in"
+        ],
+        [
+            "string",
+            "v1_type"
+        ],
+        [
+            "dynamic",
+            "result"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "dynamic",
+            "right_or"
+        ],
+        [
+            "object",
+            "right_b"
+        ],
+        [
+            "string",
+            "type_right"
+        ],
+        [
+            "object",
+            "value_agrument"
+        ],
+        [
+            "Dictionary",
+            "Var"
+        ],
+        [
+            "object",
             "not"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "Function_B",
-            "function"
-        ],
-        [
-            "dynamic",
-            "left_or"
-        ],
-        [
-            "dynamic",
-            "value"
-        ],
-        [
-            "object",
-            "value"
-        ],
-        [
-            "object",
-            "right_st"
-        ],
-        [
-            "object",
-            "condition"
+            "List",
+            "TS"
         ],
         [
             "int",
             "dot_counter"
+        ],
+        [
+            "string",
+            "s"
+        ],
+        [
+            "string",
+            "word"
+        ],
+        [
+            "Token",
+            "currentToken"
+        ],
+        [
+            "string",
+            "number"
         ],
         [
             "(",
@@ -397,27 +417,11 @@
         ],
         [
             "string",
-            "number"
-        ],
-        [
-            "string",
             "value"
         ],
         [
-            "Token",
-            "currentToken"
-        ],
-        [
-            "List",
-            "TS"
-        ],
-        [
-            "string",
-            "word"
-        ],
-        [
-            "string",
-            "s"
+            "Node",
+            "name"
         ],
         [
             "string",
@@ -425,47 +429,23 @@
         ],
         [
             "Node",
+            "valor"
+        ],
+        [
+            "Node",
             "valor2"
-        ],
-        [
-            "Node",
-            "operation"
-        ],
-        [
-            "Node",
-            "function"
         ],
         [
             "string",
             "a"
         ],
         [
-            "Node",
-            "assigments"
+            "bool",
+            "comma"
         ],
         [
             "Node",
-            "operations_if"
-        ],
-        [
-            "Node",
-            "Tree"
-        ],
-        [
-            "string",
-            "op"
-        ],
-        [
-            "Node",
-            "parammeters"
-        ],
-        [
-            "Node",
-            "name"
-        ],
-        [
-            "Node",
-            "right"
+            "operations"
         ],
         [
             "Node",
@@ -473,15 +453,51 @@
         ],
         [
             "Node",
+            "node"
+        ],
+        [
+            "string",
+            "op"
+        ],
+        [
+            "Token",
+            "current_token"
+        ],
+        [
+            "dynamic",
+            "value"
+        ],
+        [
+            "Node",
             "function_name"
         ],
         [
             "Node",
-            "valor"
+            "function"
+        ],
+        [
+            "Node",
+            "expression"
+        ],
+        [
+            "Node",
+            "operations_if"
+        ],
+        [
+            "Node",
+            "parammeter_name"
+        ],
+        [
+            "dynamic",
+            "f_name"
         ],
         [
             "Node",
             "conditional_if_else"
+        ],
+        [
+            "Node",
+            "var"
         ],
         [
             "Node",
@@ -493,15 +509,7 @@
         ],
         [
             "Node",
-            "node"
-        ],
-        [
-            "Token",
-            "current_token"
-        ],
-        [
-            "Node",
-            "variable"
+            "parammeters"
         ],
         [
             "Node",
@@ -509,39 +517,35 @@
         ],
         [
             "Node",
-            "expression"
+            "right"
         ],
         [
             "Node",
-            "operations"
+            "operation"
+        ],
+        [
+            "Node",
+            "Tree"
         ],
         [
             "Node",
             "operations_else"
         ],
         [
-            "dynamic",
-            "f_name"
-        ],
-        [
-            "dynamic",
-            "value"
+            "Node",
+            "variable"
         ],
         [
             "Node",
-            "parammeter_name"
+            "assigments"
+        ],
+        [
+            "string",
+            "s"
         ],
         [
             "Node",
-            "var"
-        ],
-        [
-            "bool",
-            "comma"
-        ],
-        [
-            "Semantic_Analyzer",
-            "sa"
+            "N"
         ],
         [
             "Parser",
@@ -552,60 +556,64 @@
             "T"
         ],
         [
-            "Node",
-            "N"
-        ],
-        [
             "List",
             "TS"
         ],
         [
-            "string",
-            "s"
+            "Semantic_Analyzer",
+            "sa"
         ]
     ],
     "method_names": [
         "Read_Parser",
-        "Identify",
-        "Get_Var_Param",
-        "Type_Expected",
+        "Function_Exist",
         "Input_Error",
         "Save_Var",
-        "Choice",
-        "Function_Exist",
+        "Get_Var_Param",
         "Call_Function",
-        "Evaluate",
+        "Type_Expected",
+        "Identify",
         "Expected",
-        "Skip_Space",
-        "Get_Sequency",
-        "Read",
-        "Own_Words",
-        "Move_on",
+        "Choice",
+        "Evaluate",
         "Input_Error",
+        "Skip_Space",
         "Int_Analyzer",
         "Get_token",
         "String_Analyzer",
-        "Function",
-        "Showing",
-        "Parse",
-        "Layer_4",
-        "Factor",
-        "Layer_1",
-        "Exceptions_Missing",
-        "Input_Error",
-        "Global_Layer",
-        "Layer_2",
-        "Assigment",
+        "Get_Sequency",
+        "Move_on",
+        "Own_Words",
+        "Read",
         "Conditional",
         "Layer_6",
-        "Layer_3",
+        "Assigment",
         "Layer_5",
+        "Layer_4",
+        "Input_Error",
+        "Showing",
+        "Exceptions_Missing",
+        "Factor",
+        "Layer_2",
+        "Layer_3",
+        "Layer_1",
+        "Parse",
+        "Global_Layer",
+        "Function",
         "Main"
     ],
     "method_return_types": [
         [
-            "Get_Var_Param",
-            "Dictionary"
+            "Read_Parser",
+            "void"
+        ],
+        [
+            "Save_Var",
+            "void"
+        ],
+        [
+            "Choice",
+            "void"
         ],
         [
             "Identify",
@@ -616,27 +624,15 @@
             "bool"
         ],
         [
-            "Choice",
-            "void"
-        ],
-        [
-            "Call_Function",
-            "int"
-        ],
-        [
-            "Type_Expected",
-            "void"
-        ],
-        [
-            "Read_Parser",
-            "void"
-        ],
-        [
-            "Input_Error",
-            "void"
+            "Get_Var_Param",
+            "Dictionary"
         ],
         [
             "Expected",
+            "void"
+        ],
+        [
+            "Type_Expected",
             "void"
         ],
         [
@@ -644,27 +640,35 @@
             "object"
         ],
         [
-            "Save_Var",
+            "Input_Error",
             "void"
+        ],
+        [
+            "Call_Function",
+            "int"
+        ],
+        [
+            "Read",
+            "("
         ],
         [
             "String_Analyzer",
             "string"
         ],
         [
-            "Move_on",
-            "void"
-        ],
-        [
-            "Get_token",
-            "Token"
-        ],
-        [
             "Get_Sequency",
             "List"
         ],
         [
+            "Int_Analyzer",
+            "double"
+        ],
+        [
             "Skip_Space",
+            "void"
+        ],
+        [
+            "Input_Error",
             "void"
         ],
         [
@@ -672,39 +676,11 @@
             "Token"
         ],
         [
-            "Int_Analyzer",
-            "double"
+            "Get_token",
+            "Token"
         ],
         [
-            "Input_Error",
-            "void"
-        ],
-        [
-            "Read",
-            "("
-        ],
-        [
-            "Parse",
-            "Node"
-        ],
-        [
-            "Factor",
-            "Node"
-        ],
-        [
-            "Layer_6",
-            "Node"
-        ],
-        [
-            "Conditional",
-            "Node"
-        ],
-        [
-            "Layer_3",
-            "Node"
-        ],
-        [
-            "Exceptions_Missing",
+            "Move_on",
             "void"
         ],
         [
@@ -712,11 +688,7 @@
             "Node"
         ],
         [
-            "Layer_4",
-            "Node"
-        ],
-        [
-            "Global_Layer",
+            "Layer_2",
             "Node"
         ],
         [
@@ -728,6 +700,30 @@
             "Node"
         ],
         [
+            "Parse",
+            "Node"
+        ],
+        [
+            "Factor",
+            "Node"
+        ],
+        [
+            "Global_Layer",
+            "Node"
+        ],
+        [
+            "Layer_3",
+            "Node"
+        ],
+        [
+            "Exceptions_Missing",
+            "void"
+        ],
+        [
+            "Layer_4",
+            "Node"
+        ],
+        [
             "Input_Error",
             "void"
         ],
@@ -736,11 +732,15 @@
             "Node"
         ],
         [
-            "Layer_2",
+            "Layer_6",
             "Node"
         ],
         [
             "Layer_5",
+            "Node"
+        ],
+        [
+            "Conditional",
             "Node"
         ],
         [

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 19814,
+    "total_nodes": 19797,
     "max_depth": 787,
     "number_of_variables": 48,
     "number_of_constants": 0,
@@ -399,24 +399,24 @@
     ],
     "variable_names": [
         [
-            "Winner",
-            "solowin"
-        ],
-        [
-            "int",
-            "maxs"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "List",
             "winners"
         ],
         [
             "int",
             "max"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "maxs"
+        ],
+        [
+            "Winner",
+            "solowin"
         ],
         [
             "var",
@@ -427,24 +427,44 @@
             "option"
         ],
         [
-            "Func",
-            "randomface"
+            "Token",
+            "jugada"
         ],
         [
             "Token",
             "extremos"
         ],
         [
+            "var",
+            "posiblesjugadas"
+        ],
+        [
             "Random",
             "x"
+        ],
+        [
+            "Func",
+            "randomface"
         ],
         [
             "List",
             "result"
         ],
         [
-            "var",
-            "posiblesjugadas"
+            "Winner",
+            "aux"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "Token",
@@ -452,67 +472,19 @@
         ],
         [
             "int",
-            "x"
-        ],
-        [
-            "List",
-            "result"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "Winner",
-            "aux"
-        ],
-        [
-            "int",
-            "x"
-        ],
-        [
-            "List",
-            "carasDiferentes"
-        ],
-        [
-            "var",
-            "temp"
-        ],
-        [
-            "int",
             "k"
-        ],
-        [
-            "int",
-            "aux"
-        ],
-        [
-            "List",
-            "aux"
-        ],
-        [
-            "IComparable",
-            "data"
-        ],
-        [
-            "int",
-            "count"
         ],
         [
             "var",
             "randomNumber"
         ],
         [
+            "List",
+            "carasDiferentes"
+        ],
+        [
             "int",
             "i"
-        ],
-        [
-            "IComparable",
-            "result"
-        ],
-        [
-            "int",
-            "l"
         ],
         [
             "int",
@@ -520,46 +492,74 @@
         ],
         [
             "int",
+            "l"
+        ],
+        [
+            "IComparable",
+            "data"
+        ],
+        [
+            "var",
+            "temp"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "int",
+            "aux"
+        ],
+        [
+            "int",
             "j"
         ],
         [
-            "Token",
-            "jugada"
+            "IComparable",
+            "result"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "List",
+            "aux"
         ]
     ],
     "method_names": [
         "GetWinners",
-        "Compare",
-        "ToString",
         "GetPuntuation",
+        "Compare",
         "Print",
-        "TryParser",
+        "ToString",
         "Main",
-        "CanBeCompare",
-        "Compare",
+        "TryParser",
         "GetPuntuation",
+        "Compare",
         "CanbeMatch",
+        "CanBeCompare",
         "PosiblesJugadas",
         "Comp",
         "Juega",
-        "NxtTurn",
-        "Apply",
-        "AsignaFichaPlayer",
-        "Over",
         "GetWinners",
-        "AsignaFichasAPlayers",
-        "DrawWinner",
-        "Compare",
-        "Getscore",
-        "CanBeCompare",
-        "Print",
+        "Over",
+        "AsignaFichaPlayer",
         "Apply",
+        "NxtTurn",
+        "DrawWinner",
+        "AsignaFichasAPlayers",
         "GetPuntuation",
         "ToString",
+        "Getscore",
+        "Compare",
         "CanbeMatch",
-        "GiveSortedHand",
-        "Strategy",
+        "Apply",
+        "Print",
+        "CanBeCompare",
         "GetData",
+        "Strategy",
+        "GiveSortedHand",
         "NxtTurn"
     ],
     "method_return_types": [
@@ -568,19 +568,19 @@
             "Winner"
         ],
         [
-            "Print",
-            "void"
-        ],
-        [
-            "GetPuntuation",
-            "int"
-        ],
-        [
             "ToString",
             "string"
         ],
         [
+            "Print",
+            "void"
+        ],
+        [
             "Compare",
+            "int"
+        ],
+        [
+            "GetPuntuation",
             "int"
         ],
         [
@@ -592,19 +592,19 @@
             "void"
         ],
         [
-            "GetPuntuation",
-            "int"
+            "CanBeCompare",
+            "bool"
         ],
         [
             "CanbeMatch",
             "bool"
         ],
         [
-            "CanBeCompare",
-            "bool"
+            "Compare",
+            "int"
         ],
         [
-            "Compare",
+            "GetPuntuation",
             "int"
         ],
         [
@@ -624,8 +624,8 @@
             "bool"
         ],
         [
-            "Over",
-            "bool"
+            "AsignaFichaPlayer",
+            "void"
         ],
         [
             "GetWinners",
@@ -636,8 +636,8 @@
             "int"
         ],
         [
-            "AsignaFichaPlayer",
-            "void"
+            "Over",
+            "bool"
         ],
         [
             "DrawWinner",
@@ -652,12 +652,8 @@
             "bool"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
-            "Getscore",
-            "void"
+            "CanbeMatch",
+            "bool"
         ],
         [
             "CanBeCompare",
@@ -668,24 +664,28 @@
             "int"
         ],
         [
-            "Print",
-            "void"
-        ],
-        [
             "GetPuntuation",
             "int"
         ],
         [
-            "CanbeMatch",
-            "bool"
+            "Print",
+            "void"
         ],
         [
-            "Strategy",
-            "Token"
+            "Getscore",
+            "void"
+        ],
+        [
+            "ToString",
+            "string"
         ],
         [
             "GiveSortedHand",
             "List"
+        ],
+        [
+            "Strategy",
+            "Token"
         ],
         [
             "GetData",
@@ -699,34 +699,34 @@
     "class_names": [
         "ScorePlayerWinner",
         "EmptyHandWinner",
-        "IntegerFace",
         "IntegerToken",
+        "IntegerFace",
         "Utils",
         "Program",
         "Player",
         "GameComponents",
         "Winner",
-        "Token",
-        "NoDoubleRule",
         "Face",
-        "BoardToken",
         "DefaultTokeRule",
+        "BoardToken",
+        "NoDoubleRule",
+        "Token",
         "BGStrategy",
-        "PDStrategy",
         "RandomStrategy",
+        "PDStrategy",
         "Team",
-        "ClassicTurn",
-        "ClockTurn"
+        "ClockTurn",
+        "ClassicTurn"
     ],
     "interface_names": [
-        "IDeck",
         "IFace",
         "IPuntuable",
         "IComparable",
+        "IDeck",
         "IReglaDeSelección",
-        "IWinnersRule",
-        "ITokenRule",
         "ITurnRule",
+        "ITokenRule",
+        "IWinnersRule",
         "IGameBreak",
         "IStrategy"
     ],
@@ -739,7 +739,6 @@
         "TerminalNodeImpl": 2927,
         "Qualified_identifierContext": 18,
         "IdentifierContext": 928,
-        "Namespace_bodyContext": 18,
         "ErrorNodeImpl": 5055,
         "Using_directivesContext": 8,
         "UsingNamespaceDirectiveContext": 19,
@@ -847,6 +846,7 @@
         "Member_nameContext": 14,
         "Accessor_declarationsContext": 13,
         "Accessor_bodyContext": 18,
+        "Namespace_bodyContext": 1,
         "ForeachStatementContext": 4,
         "Set_accessor_declarationContext": 5,
         "Accessor_modifierContext": 2

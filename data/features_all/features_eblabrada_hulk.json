@@ -451,7 +451,7 @@
     "variable_names": [
         [
             "var",
-            "interpretResult"
+            "tokens"
         ],
         [
             "var",
@@ -459,7 +459,11 @@
         ],
         [
             "var",
-            "tokens"
+            "interpretResult"
+        ],
+        [
+            "string",
+            "line"
         ],
         [
             "var",
@@ -471,23 +475,7 @@
         ],
         [
             "string",
-            "line"
-        ],
-        [
-            "string",
-            "text"
-        ],
-        [
-            "Token",
-            "invalid"
-        ],
-        [
-            "string",
             "value"
-        ],
-        [
-            "char",
-            "c"
         ],
         [
             "TokenType",
@@ -495,43 +483,19 @@
         ],
         [
             "string",
-            "nameValue"
+            "text"
         ],
         [
-            "var",
-            "cosa"
+            "char",
+            "c"
         ],
         [
-            "List",
-            "values"
-        ],
-        [
-            "int",
-            "i"
+            "Token",
+            "invalid"
         ],
         [
             "List",
             "parameters"
-        ],
-        [
-            "var",
-            "args"
-        ],
-        [
-            "object",
-            "left"
-        ],
-        [
-            "var",
-            "funCall"
-        ],
-        [
-            "var",
-            "assignments"
-        ],
-        [
-            "object",
-            "right"
         ],
         [
             "var",
@@ -542,74 +506,110 @@
             "result"
         ],
         [
+            "var",
+            "cosa"
+        ],
+        [
+            "object",
+            "right"
+        ],
+        [
+            "string",
+            "nameValue"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "assignments"
+        ],
+        [
             "object",
             "value"
+        ],
+        [
+            "var",
+            "funCall"
+        ],
+        [
+            "var",
+            "args"
         ],
         [
             "object",
             "condition"
         ],
         [
-            "Expr",
-            "result"
+            "object",
+            "left"
+        ],
+        [
+            "List",
+            "values"
         ],
         [
             "var",
             "name"
+        ],
+        [
+            "Expr",
+            "result"
         ]
     ],
     "method_names": [
-        "RunAsync",
         "Main",
+        "RunAsync",
         "RunPromptAsync",
         "Get",
-        "Advance",
-        "IsAlpha",
-        "ScanString",
-        "ScanNumber",
-        "IsDigit",
-        "ScanTokens",
-        "ScanToken",
-        "Next",
-        "IsAlphaNum",
         "IsAtEnd",
-        "AddToken",
         "Peek",
+        "AddToken",
         "Eat",
+        "IsDigit",
+        "IsAlphaNum",
+        "ScanString",
+        "ScanTokens",
+        "Advance",
+        "Next",
+        "IsAlpha",
+        "ScanToken",
         "ScanIdentifier",
-        "VisitFunctionExpr",
-        "VisitCallExpr",
-        "VisitLetInExpr",
+        "ScanNumber",
         "VisitVariableExpr",
-        "VisitAssignExpr",
-        "VisitLiteralExpr",
-        "VisitUnaryExpr",
-        "Accept",
         "VisitConditionalExpr",
+        "VisitUnaryExpr",
         "VisitBinaryExpr",
-        "ToString",
-        "IsEqual",
-        "VisitFunctionExpr",
-        "VisitCallExpr",
+        "VisitAssignExpr",
         "VisitLetInExpr",
-        "CheckNumber",
+        "VisitCallExpr",
+        "VisitLiteralExpr",
+        "Accept",
+        "VisitFunctionExpr",
+        "ToString",
+        "IsTrue",
         "VisitVariableExpr",
         "Interpret",
-        "VisitAssignExpr",
-        "VisitLiteralExpr",
-        "VisitUnaryExpr",
-        "IsTrue",
         "VisitConditionalExpr",
+        "VisitUnaryExpr",
         "VisitBinaryExpr",
+        "VisitAssignExpr",
         "Stringify",
+        "IsEqual",
+        "VisitCallExpr",
+        "VisitLiteralExpr",
+        "CheckNumber",
         "Evaluate",
+        "VisitFunctionExpr",
+        "VisitLetInExpr",
         "Error",
         "VisitConditionalExpr",
         "Print",
         "report",
         "showError",
-        "Parse",
-        "HulkExpr"
+        "HulkExpr",
+        "Parse"
     ],
     "method_return_types": [
         [
@@ -617,11 +617,11 @@
             "Task"
         ],
         [
-            "RunPromptAsync",
+            "Main",
             "Task"
         ],
         [
-            "Main",
+            "RunPromptAsync",
             "Task"
         ],
         [
@@ -629,27 +629,7 @@
             "object"
         ],
         [
-            "Eat",
-            "bool"
-        ],
-        [
-            "IsAlpha",
-            "bool"
-        ],
-        [
-            "IsAlphaNum",
-            "bool"
-        ],
-        [
-            "Next",
-            "char"
-        ],
-        [
-            "ScanTokens",
-            "List"
-        ],
-        [
-            "Peek",
+            "Advance",
             "char"
         ],
         [
@@ -657,7 +637,7 @@
             "bool"
         ],
         [
-            "ScanNumber",
+            "ScanString",
             "void"
         ],
         [
@@ -665,36 +645,44 @@
             "bool"
         ],
         [
-            "Advance",
-            "char"
+            "ScanTokens",
+            "List"
         ],
         [
-            "ScanToken",
-            "void"
-        ],
-        [
-            "ScanString",
-            "void"
+            "IsAlpha",
+            "bool"
         ],
         [
             "ScanIdentifier",
             "void"
         ],
         [
+            "Next",
+            "char"
+        ],
+        [
             "AddToken",
             "void"
         ],
         [
-            "VisitFunctionExpr",
-            "R"
+            "ScanToken",
+            "void"
         ],
         [
-            "VisitBinaryExpr",
-            "R"
+            "Peek",
+            "char"
         ],
         [
-            "VisitLiteralExpr",
-            "R"
+            "Eat",
+            "bool"
+        ],
+        [
+            "ScanNumber",
+            "void"
+        ],
+        [
+            "IsAlphaNum",
+            "bool"
         ],
         [
             "VisitAssignExpr",
@@ -702,6 +690,26 @@
         ],
         [
             "VisitUnaryExpr",
+            "R"
+        ],
+        [
+            "VisitVariableExpr",
+            "R"
+        ],
+        [
+            "VisitCallExpr",
+            "R"
+        ],
+        [
+            "VisitBinaryExpr",
+            "R"
+        ],
+        [
+            "VisitFunctionExpr",
+            "R"
+        ],
+        [
+            "VisitConditionalExpr",
             "R"
         ],
         [
@@ -713,15 +721,7 @@
             "R"
         ],
         [
-            "VisitVariableExpr",
-            "R"
-        ],
-        [
-            "VisitCallExpr",
-            "R"
-        ],
-        [
-            "VisitConditionalExpr",
+            "VisitLiteralExpr",
             "R"
         ],
         [
@@ -729,16 +729,32 @@
             "string"
         ],
         [
+            "VisitVariableExpr",
+            "object"
+        ],
+        [
             "VisitUnaryExpr",
             "object"
         ],
         [
-            "VisitAssignExpr",
+            "VisitCallExpr",
             "object"
         ],
         [
-            "CheckNumber",
-            "void"
+            "Interpret",
+            "string"
+        ],
+        [
+            "VisitConditionalExpr",
+            "object"
+        ],
+        [
+            "IsEqual",
+            "bool"
+        ],
+        [
+            "VisitFunctionExpr",
+            "object"
         ],
         [
             "VisitBinaryExpr",
@@ -749,31 +765,15 @@
             "object"
         ],
         [
-            "Interpret",
-            "string"
+            "VisitLiteralExpr",
+            "object"
         ],
         [
             "IsTrue",
             "bool"
         ],
         [
-            "IsEqual",
-            "bool"
-        ],
-        [
-            "VisitCallExpr",
-            "object"
-        ],
-        [
-            "VisitVariableExpr",
-            "object"
-        ],
-        [
-            "VisitConditionalExpr",
-            "object"
-        ],
-        [
-            "VisitFunctionExpr",
+            "Evaluate",
             "object"
         ],
         [
@@ -781,11 +781,11 @@
             "string"
         ],
         [
-            "Evaluate",
-            "object"
+            "CheckNumber",
+            "void"
         ],
         [
-            "VisitLiteralExpr",
+            "VisitAssignExpr",
             "object"
         ],
         [
@@ -821,16 +821,16 @@
         "Hulk",
         "Atmosphere",
         "Scanner",
-        "Assign",
-        "Unary",
-        "Function",
-        "Variable",
-        "LetIn",
+        "Call",
         "Conditional",
+        "Unary",
+        "LetIn",
+        "Expr",
+        "Function",
         "Literal",
         "Binary",
-        "Expr",
-        "Call",
+        "Assign",
+        "Variable",
         "Token",
         "Interpreter",
         "ConsoleLogger",
@@ -985,5 +985,5 @@
     },
     "project_name": "eblabrada_hulk",
     "label": "original",
-    "project_type": "hulk"
+    "project_type": "moogle"
 }

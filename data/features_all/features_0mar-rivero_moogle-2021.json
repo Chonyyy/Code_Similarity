@@ -1,5 +1,5 @@
 {
-    "total_nodes": 22004,
+    "total_nodes": 21992,
     "max_depth": 830,
     "number_of_variables": 26,
     "number_of_constants": 5,
@@ -382,10 +382,6 @@
     "variable_names": [
         [
             "var",
-            "dates"
-        ],
-        [
-            "var",
             "words"
         ],
         [
@@ -394,31 +390,7 @@
         ],
         [
             "var",
-            "j"
-        ],
-        [
-            "var",
-            "a"
-        ],
-        [
-            "var",
-            "toPut"
-        ],
-        [
-            "var",
-            "replacing"
-        ],
-        [
-            "var",
-            "b"
-        ],
-        [
-            "var",
-            "row"
-        ],
-        [
-            "var",
-            "levenshteinDistance"
+            "dates"
         ],
         [
             "var",
@@ -426,11 +398,27 @@
         ],
         [
             "var",
-            "matrix"
+            "b"
         ],
         [
             "var",
             "inserting"
+        ],
+        [
+            "var",
+            "levenshteinDistance"
+        ],
+        [
+            "var",
+            "matrix"
+        ],
+        [
+            "var",
+            "replacing"
+        ],
+        [
+            "var",
+            "a"
         ],
         [
             "var",
@@ -446,7 +434,19 @@
         ],
         [
             "var",
+            "toPut"
+        ],
+        [
+            "var",
             "col"
+        ],
+        [
+            "var",
+            "row"
+        ],
+        [
+            "var",
+            "j"
         ],
         [
             "var",
@@ -454,7 +454,7 @@
         ],
         [
             "var",
-            "bestWord"
+            "max"
         ],
         [
             "var",
@@ -462,32 +462,32 @@
         ],
         [
             "var",
-            "max"
-        ],
-        [
-            "var",
-            "tfxIdf"
+            "bestWord"
         ],
         [
             "var",
             "dic"
+        ],
+        [
+            "var",
+            "tfxIdf"
         ]
     ],
     "method_names": [
         "Items",
+        "MostRepeatedWordOccurrences",
+        "Snippet",
         "ProcessCorpus",
         "Proximity",
-        "MostRepeatedWordOccurrences",
+        "GetDocuments",
         "LoadStemmerDictionary",
         "LoadIndexes",
-        "GetDocuments",
-        "Snippet",
         "SusCost",
-        "InCost",
-        "LevenshteinFactor",
+        "LevenshteinDistance",
         "Levenshteable",
         "Put",
-        "LevenshteinDistance",
+        "LevenshteinFactor",
+        "InCost",
         "Syn",
         "Suggestion",
         "Query",
@@ -495,18 +495,18 @@
         "Similarity",
         "Query",
         "WordRelevance",
-        "Freq",
+        "CalculateTf",
         "CalculateWq",
+        "CalculateIdf",
         "ProcessQuery",
-        "CalculateTf",
-        "CalculateIdf",
         "Freq",
-        "CalculateW",
-        "ProcessTFxIdf",
-        "Norm",
         "CalculateTf",
+        "ProcessNorms",
+        "CalculateW",
         "CalculateIdf",
-        "ProcessNorms"
+        "Norm",
+        "ProcessTFxIdf",
+        "Freq"
     ],
     "method_return_types": [
         [
@@ -518,14 +518,6 @@
             "int"
         ],
         [
-            "LoadStemmerDictionary",
-            "Dictionary"
-        ],
-        [
-            "Proximity",
-            "int"
-        ],
-        [
             "ProcessCorpus",
             "void"
         ],
@@ -534,24 +526,24 @@
             "Dictionary"
         ],
         [
+            "LoadStemmerDictionary",
+            "Dictionary"
+        ],
+        [
             "Snippet",
             "string"
+        ],
+        [
+            "Proximity",
+            "int"
         ],
         [
             "GetDocuments",
             "ICollection"
         ],
         [
-            "Put",
-            "bool"
-        ],
-        [
             "InCost",
             "double"
-        ],
-        [
-            "Levenshteable",
-            "bool"
         ],
         [
             "SusCost",
@@ -562,8 +554,16 @@
             "double"
         ],
         [
+            "Levenshteable",
+            "bool"
+        ],
+        [
             "LevenshteinDistance",
             "double"
+        ],
+        [
+            "Put",
+            "bool"
         ],
         [
             "Syn",
@@ -582,7 +582,7 @@
             "string"
         ],
         [
-            "WordRelevance",
+            "Similarity",
             "double"
         ],
         [
@@ -590,15 +590,7 @@
             "IEnumerable"
         ],
         [
-            "Similarity",
-            "double"
-        ],
-        [
-            "CalculateTf",
-            "double"
-        ],
-        [
-            "CalculateIdf",
+            "WordRelevance",
             "double"
         ],
         [
@@ -610,23 +602,19 @@
             "double"
         ],
         [
-            "ProcessQuery",
-            "Dictionary"
+            "CalculateIdf",
+            "double"
         ],
         [
             "CalculateTf",
             "double"
         ],
         [
-            "CalculateIdf",
-            "double"
+            "ProcessQuery",
+            "Dictionary"
         ],
         [
-            "Norm",
-            "double"
-        ],
-        [
-            "ProcessTFxIdf",
+            "ProcessNorms",
             "Dictionary"
         ],
         [
@@ -634,12 +622,24 @@
             "double"
         ],
         [
-            "ProcessNorms",
+            "ProcessTFxIdf",
             "Dictionary"
+        ],
+        [
+            "CalculateIdf",
+            "double"
+        ],
+        [
+            "CalculateTf",
+            "double"
         ],
         [
             "Freq",
             "int"
+        ],
+        [
+            "Norm",
+            "double"
         ]
     ],
     "class_names": [
@@ -670,7 +670,6 @@
         "Namespace_member_declarationContext": 83,
         "Namespace_declarationContext": 12,
         "Qualified_identifierContext": 12,
-        "Namespace_bodyContext": 12,
         "Type_declarationContext": 71,
         "All_member_modifiersContext": 144,
         "All_member_modifierContext": 214,

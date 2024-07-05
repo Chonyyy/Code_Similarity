@@ -1,5 +1,5 @@
 {
-    "total_nodes": 5864,
+    "total_nodes": 5861,
     "max_depth": 220,
     "number_of_variables": 23,
     "number_of_constants": 0,
@@ -101,12 +101,16 @@
             "docVecor"
         ],
         [
-            "int",
-            "j"
+            "Match",
+            "match"
         ],
         [
             "int",
-            "PosScoresLength"
+            "end"
+        ],
+        [
+            "string",
+            "text"
         ],
         [
             "double",
@@ -114,39 +118,43 @@
         ],
         [
             "int",
-            "i"
+            "start"
+        ],
+        [
+            "string",
+            "ruta"
         ],
         [
             "int",
             "index"
         ],
         [
-            "double",
-            "scores"
-        ],
-        [
             "Vector",
             "queryVector"
         ],
         [
-            "List",
+            "double",
+            "scores"
+        ],
+        [
+            "string",
             "results"
         ],
         [
-            "int",
-            "start"
+            "string",
+            "words"
         ],
         [
             "int",
-            "end"
-        ],
-        [
-            "Query",
-            "userInp"
+            "j"
         ],
         [
             "double",
             "positiveScores"
+        ],
+        [
+            "int",
+            "PosScoresLength"
         ],
         [
             "SearchItem",
@@ -154,40 +162,32 @@
         ],
         [
             "string",
-            "text"
-        ],
-        [
-            "string",
-            "results"
-        ],
-        [
-            "string",
             "pattern"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Query",
+            "userInp"
+        ],
+        [
+            "List",
+            "results"
         ],
         [
             "double",
             "doc"
-        ],
-        [
-            "string",
-            "ruta"
-        ],
-        [
-            "Match",
-            "match"
-        ],
-        [
-            "string",
-            "words"
         ]
     ],
     "method_names": [
         "Items",
-        "initDocs",
-        "GetResults",
-        "ExtractText",
         "GetScores",
-        "Query"
+        "ExtractText",
+        "GetResults",
+        "Query",
+        "initDocs"
     ],
     "method_return_types": [
         [
@@ -203,16 +203,16 @@
             "string"
         ],
         [
-            "ExtractText",
-            "string"
-        ],
-        [
             "GetScores",
             "double"
         ],
         [
             "Query",
             "SearchResult"
+        ],
+        [
+            "ExtractText",
+            "string"
         ]
     ],
     "class_names": [
@@ -234,7 +234,6 @@
         "Namespace_member_declarationContext": 6,
         "Namespace_declarationContext": 3,
         "Qualified_identifierContext": 3,
-        "Namespace_bodyContext": 3,
         "Type_declarationContext": 3,
         "All_member_modifiersContext": 19,
         "All_member_modifierContext": 26,

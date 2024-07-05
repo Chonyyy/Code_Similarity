@@ -1,5 +1,5 @@
 {
-    "total_nodes": 36418,
+    "total_nodes": 36386,
     "max_depth": 1677,
     "number_of_variables": 38,
     "number_of_constants": 0,
@@ -261,28 +261,8 @@
     ],
     "variable_names": [
         [
-            "var",
-            "condition"
-        ],
-        [
-            "var",
-            "thenExpression"
-        ],
-        [
-            "int",
-            "peekIndex"
-        ],
-        [
-            "var",
-            "nextVariableDeclaration"
-        ],
-        [
-            "var",
-            "identifier"
-        ],
-        [
-            "var",
-            "right"
+            "Node",
+            "expression"
         ],
         [
             "double",
@@ -290,27 +270,7 @@
         ],
         [
             "var",
-            "identifiers"
-        ],
-        [
-            "var",
-            "value"
-        ],
-        [
-            "Node",
-            "expression"
-        ],
-        [
-            "Node",
-            "sequence"
-        ],
-        [
-            "var",
             "body"
-        ],
-        [
-            "var",
-            "variableDeclarations"
         ],
         [
             "Node",
@@ -318,7 +278,35 @@
         ],
         [
             "var",
-            "args"
+            "identifiers"
+        ],
+        [
+            "var",
+            "identifier"
+        ],
+        [
+            "int",
+            "peekIndex"
+        ],
+        [
+            "var",
+            "operatorToken"
+        ],
+        [
+            "int",
+            "end"
+        ],
+        [
+            "var",
+            "multiLetNode"
+        ],
+        [
+            "var",
+            "elseExpression"
+        ],
+        [
+            "var",
+            "value"
         ],
         [
             "var",
@@ -330,19 +318,27 @@
         ],
         [
             "var",
-            "elseExpression"
+            "variableDeclarations"
+        ],
+        [
+            "var",
+            "nextVariableDeclaration"
+        ],
+        [
+            "var",
+            "args"
         ],
         [
             "Node",
             "firstValue"
         ],
         [
-            "int",
-            "end"
+            "var",
+            "right"
         ],
         [
-            "var",
-            "operatorToken"
+            "Node",
+            "sequence"
         ],
         [
             "var",
@@ -350,19 +346,11 @@
         ],
         [
             "var",
-            "multiLetNode"
+            "thenExpression"
         ],
         [
             "var",
-            "evaluator"
-        ],
-        [
-            "var",
-            "lexer"
-        ],
-        [
-            "List",
-            "toDraws"
+            "condition"
         ],
         [
             "var",
@@ -370,11 +358,23 @@
         ],
         [
             "var",
-            "parser"
+            "evaluator"
         ],
         [
             "ListExtrasScoper",
             "GlobalScope"
+        ],
+        [
+            "List",
+            "toDraws"
+        ],
+        [
+            "var",
+            "parser"
+        ],
+        [
+            "var",
+            "lexer"
         ],
         [
             "var",
@@ -386,29 +386,29 @@
         ]
     ],
     "method_names": [
-        "InitializeComponent",
         "Dispose",
+        "InitializeComponent",
         "Main",
         "GSharp",
-        "AnalyzeVariableDeclaration",
-        "AnalyzeFunctionCall",
-        "AnalyzeFunctionPredefined",
-        "AnalyzeMeasure",
         "AnalyzeIntersect",
-        "AnalyzeSequence",
+        "AnalyzeMeasure",
         "AnalyzeFunctionDeclaration",
-        "AnalyzeIdentifier",
         "AnalyzeGlobalConst",
+        "AnalyzeSequence",
+        "AnalyzeFunctionCall",
+        "AnalyzeMultiAssignment",
+        "AnalyzeConstDeclaration",
+        "AnalyzeIdentifier",
+        "AnalyzeVariableDeclaration",
+        "AnalyzeFunctionPredefined",
         "Analyze",
         "AnalyzeFigure",
-        "AnalyzeConstDeclaration",
-        "AnalyzeMultiAssignment",
         "ParseBinaryExpression",
-        "ParseMultiLet",
         "ParseFunctionCallParse",
-        "ParseDeclareSimpleVar",
-        "ParseSequence",
+        "ParseMultiLet",
         "MultiAssignParse",
+        "ParseSequence",
+        "ParseDeclareSimpleVar",
         "ConsumeToken",
         "Interpret",
         "StringLiteral"
@@ -431,15 +431,7 @@
             "IEnumerable"
         ],
         [
-            "AnalyzeVariableDeclaration",
-            "void"
-        ],
-        [
-            "Analyze",
-            "void"
-        ],
-        [
-            "AnalyzeGlobalConst",
+            "AnalyzeFunctionPredefined",
             "void"
         ],
         [
@@ -447,31 +439,7 @@
             "void"
         ],
         [
-            "AnalyzeIdentifier",
-            "void"
-        ],
-        [
-            "AnalyzeFunctionDeclaration",
-            "void"
-        ],
-        [
-            "AnalyzeIntersect",
-            "void"
-        ],
-        [
-            "AnalyzeConstDeclaration",
-            "void"
-        ],
-        [
-            "AnalyzeSequence",
-            "void"
-        ],
-        [
             "AnalyzeMultiAssignment",
-            "void"
-        ],
-        [
-            "AnalyzeMeasure",
             "void"
         ],
         [
@@ -479,19 +447,47 @@
             "void"
         ],
         [
-            "AnalyzeFunctionPredefined",
+            "AnalyzeVariableDeclaration",
             "void"
         ],
         [
-            "ParseFunctionCallParse",
-            "Node"
+            "AnalyzeConstDeclaration",
+            "void"
+        ],
+        [
+            "Analyze",
+            "void"
+        ],
+        [
+            "AnalyzeMeasure",
+            "void"
+        ],
+        [
+            "AnalyzeIdentifier",
+            "void"
+        ],
+        [
+            "AnalyzeSequence",
+            "void"
+        ],
+        [
+            "AnalyzeFunctionDeclaration",
+            "void"
+        ],
+        [
+            "AnalyzeGlobalConst",
+            "void"
+        ],
+        [
+            "AnalyzeIntersect",
+            "void"
         ],
         [
             "ParseMultiLet",
             "Node"
         ],
         [
-            "ParseDeclareSimpleVar",
+            "ParseFunctionCallParse",
             "Node"
         ],
         [
@@ -504,6 +500,10 @@
         ],
         [
             "ParseSequence",
+            "Node"
+        ],
+        [
+            "ParseDeclareSimpleVar",
             "Node"
         ],
         [
@@ -527,15 +527,15 @@
         "Evaluator",
         "SemanticAnalyzer",
         "Parser",
-        "Figure",
-        "Node",
         "GlobalConstNode",
-        "ColorNode",
+        "Node",
         "MultiAssignmentNode",
-        "RestoreNode",
-        "ValueNode",
+        "Figure",
         "UndefinedNode",
+        "ColorNode",
+        "ValueNode",
         "EndNode",
+        "RestoreNode",
         "Parser",
         "InfiniteSequenceNode",
         "ImportNode",
@@ -573,14 +573,13 @@
         "Compilation_unitContext": 37,
         "Using_directivesContext": 12,
         "UsingNamespaceDirectiveContext": 29,
-        "TerminalNodeImpl": 5138,
+        "TerminalNodeImpl": 5137,
         "Namespace_or_type_nameContext": 413,
         "IdentifierContext": 1520,
         "Namespace_member_declarationsContext": 42,
         "Namespace_member_declarationContext": 434,
         "Namespace_declarationContext": 37,
         "Qualified_identifierContext": 37,
-        "Namespace_bodyContext": 37,
         "Type_declarationContext": 397,
         "All_member_modifiersContext": 560,
         "All_member_modifierContext": 594,
@@ -599,7 +598,7 @@
         "Variable_declaratorContext": 16,
         "Variable_initializerContext": 31,
         "ExpressionContext": 643,
-        "ErrorNodeImpl": 11792,
+        "ErrorNodeImpl": 11793,
         "Tuple_typeContext": 5,
         "Tuple_elementContext": 5,
         "AttributesContext": 39,
@@ -657,6 +656,7 @@
         "Numeric_typeContext": 21,
         "Integral_typeContext": 14,
         "ThisReferenceExpressionContext": 11,
+        "Namespace_bodyContext": 5,
         "Type_argument_listContext": 43,
         "ReturnStatementContext": 24,
         "Property_declarationContext": 90,

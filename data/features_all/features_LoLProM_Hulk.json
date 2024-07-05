@@ -1,5 +1,5 @@
 {
-    "total_nodes": 19453,
+    "total_nodes": 19435,
     "max_depth": 1093,
     "number_of_variables": 11,
     "number_of_constants": 0,
@@ -176,11 +176,11 @@
     "variable_names": [
         [
             "var",
-            "evaluator"
+            "lexer"
         ],
         [
             "var",
-            "lexer"
+            "evaluator"
         ],
         [
             "var",
@@ -212,33 +212,33 @@
         ],
         [
             "var",
-            "index"
+            "currentToken"
         ],
         [
             "var",
-            "currentToken"
+            "index"
         ]
     ],
     "method_names": [
         "Main",
-        "GetStandardLibraryFunctions",
-        "Sqrt",
         "GetStandardLibraryVariables",
+        "Sqrt",
+        "GetStandardLibraryFunctions",
         "GetUnaryExpressionType",
-        "GetBinaryOperatorPrecedence",
         "GetUnaryOperatorPrecedence",
+        "GetBinaryOperatorPrecedence",
         "GetExpressionType",
         "Eval",
-        "EvaluateExpression",
         "Evaluate",
+        "EvaluateExpression",
         "Parse",
         "Contains",
-        "BuildChildScope",
         "GetValue",
         "AddVariable",
+        "BuildChildScope",
         "TokenAhead",
-        "LookAhead",
-        "MatchToken"
+        "MatchToken",
+        "LookAhead"
     ],
     "method_return_types": [
         [
@@ -246,16 +246,16 @@
             "void"
         ],
         [
-            "Sqrt",
-            "("
+            "GetStandardLibraryVariables",
+            "Scope"
         ],
         [
             "GetStandardLibraryFunctions",
             "Dictionary"
         ],
         [
-            "GetStandardLibraryVariables",
-            "Scope"
+            "Sqrt",
+            "("
         ],
         [
             "GetUnaryExpressionType",
@@ -290,6 +290,10 @@
             "ASTree"
         ],
         [
+            "AddVariable",
+            "void"
+        ],
+        [
             "GetValue",
             "object"
         ],
@@ -298,19 +302,15 @@
             "Scope"
         ],
         [
-            "AddVariable",
-            "void"
-        ],
-        [
             "Contains",
             "bool"
         ],
         [
-            "MatchToken",
+            "TokenAhead",
             "Token"
         ],
         [
-            "TokenAhead",
+            "MatchToken",
             "Token"
         ],
         [
@@ -383,7 +383,6 @@
         "Namespace_member_declarationContext": 64,
         "Namespace_declarationContext": 21,
         "Qualified_identifierContext": 21,
-        "Namespace_bodyContext": 21,
         "Type_declarationContext": 43,
         "Class_definitionContext": 19,
         "Class_bodyContext": 19,
@@ -460,6 +459,7 @@
         "Tuple_typeContext": 5,
         "Tuple_elementContext": 7,
         "Integral_typeContext": 8,
+        "Namespace_bodyContext": 3,
         "Constructor_initializerContext": 3,
         "TypeofExpressionContext": 38,
         "ThrowStatementContext": 5,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 17273,
+    "total_nodes": 17264,
     "max_depth": 727,
     "number_of_variables": 75,
     "number_of_constants": 0,
@@ -313,8 +313,8 @@
     ],
     "variable_names": [
         [
-            "double",
-            "producto_escalar"
+            "int",
+            "k"
         ],
         [
             "double",
@@ -325,8 +325,8 @@
             "i"
         ],
         [
-            "int",
-            "k"
+            "double",
+            "producto_escalar"
         ],
         [
             "double",
@@ -338,7 +338,15 @@
         ],
         [
             "int",
-            "space"
+            "startIndex"
+        ],
+        [
+            "int",
+            "endIndex"
+        ],
+        [
+            "List",
+            "not"
         ],
         [
             "int",
@@ -347,14 +355,6 @@
         [
             "int",
             "count_ast"
-        ],
-        [
-            "List",
-            "yes"
-        ],
-        [
-            "List",
-            "not"
         ],
         [
             "int",
@@ -366,31 +366,27 @@
         ],
         [
             "int",
-            "endIndex"
+            "space"
         ],
         [
-            "int",
-            "startIndex"
-        ],
-        [
-            "string",
-            "part_query"
+            "List",
+            "yes"
         ],
         [
             "string",
             "word"
         ],
         [
-            "double",
-            "tfidf"
-        ],
-        [
-            "double",
-            "result"
+            "string",
+            "part_query"
         ],
         [
             "int",
             "i"
+        ],
+        [
+            "double",
+            "result"
         ],
         [
             "int",
@@ -401,56 +397,48 @@
             "roots"
         ],
         [
-            "List",
-            "not"
-        ],
-        [
-            "List",
-            "need"
-        ],
-        [
-            "Dictionary",
-            "tf"
-        ],
-        [
-            "char",
-            "sg"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
-            "items"
-        ],
-        [
             "double",
-            "result"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "StreamReader",
-            "reader"
-        ],
-        [
-            "double",
-            "tfs"
-        ],
-        [
-            "string",
-            "snippet"
+            "tfidf"
         ],
         [
             "Dictionary",
             "priority"
         ],
         [
-            "string",
-            "Query"
+            "List",
+            "not"
+        ],
+        [
+            "var",
+            "t"
+        ],
+        [
+            "double",
+            "query_vector"
+        ],
+        [
+            "List",
+            "need"
+        ],
+        [
+            "double",
+            "result"
+        ],
+        [
+            "double",
+            "scores"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "double",
+            "tfs"
+        ],
+        [
+            "double",
+            "documents"
         ],
         [
             "string",
@@ -458,15 +446,11 @@
         ],
         [
             "double",
-            "query_vector"
-        ],
-        [
-            "double",
-            "scores"
-        ],
-        [
-            "double",
             "v"
+        ],
+        [
+            "string",
+            "snippet"
         ],
         [
             "double",
@@ -477,16 +461,20 @@
             "norm"
         ],
         [
-            "var",
-            "t"
-        ],
-        [
-            "double",
-            "documents"
+            "List",
+            "items"
         ],
         [
             "double",
             "numerator"
+        ],
+        [
+            "char",
+            "sg"
+        ],
+        [
+            "StreamReader",
+            "reader"
         ],
         [
             "double",
@@ -497,24 +485,24 @@
             "i"
         ],
         [
-            "StreamReader",
-            "reader"
+            "Dictionary",
+            "tf"
+        ],
+        [
+            "string",
+            "Query"
         ],
         [
             "char",
             "sg"
         ],
         [
-            "int",
-            "last_apparicion"
-        ],
-        [
             "string",
             "content"
         ],
         [
-            "string",
-            "words"
+            "StreamReader",
+            "reader"
         ],
         [
             "int",
@@ -522,7 +510,23 @@
         ],
         [
             "string",
+            "words"
+        ],
+        [
+            "int",
+            "last_apparicion"
+        ],
+        [
+            "string",
             "documents_root"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "int",
@@ -531,38 +535,34 @@
         [
             "SearchItem",
             "temp"
-        ],
-        [
-            "string",
-            "result"
         ]
     ],
     "method_names": [
-        "Producto",
+        "Producto_Escalar",
         "IgualOrden",
         "Suma",
-        "Producto_Escalar",
         "Multiplicable",
+        "Producto",
         "Items",
-        "RemoveWords",
         "WordsNot",
-        "WordsYes",
         "WordsPriority",
+        "RemoveWords",
         "NeedWords",
+        "WordsYes",
         "TFS",
         "IDFS",
-        "Snippet",
-        "TokenizeQuery",
-        "Vectorial_Model",
-        "QueryTf",
         "Query_Norm",
-        "Query",
+        "QueryTf",
+        "Snippet",
         "Build_Documents_Vectors",
+        "TokenizeQuery",
+        "Query",
+        "Vectorial_Model",
         "Query",
         "LoadDocuments",
+        "Sort",
         "EnumerateFiles",
-        "TokenizeWord",
-        "Sort"
+        "TokenizeWord"
     ],
     "method_return_types": [
         [
@@ -570,15 +570,11 @@
             "MatrizOps"
         ],
         [
-            "Suma",
-            "MatrizOps"
-        ],
-        [
-            "Multiplicable",
+            "IgualOrden",
             "bool"
         ],
         [
-            "IgualOrden",
+            "Multiplicable",
             "bool"
         ],
         [
@@ -586,39 +582,47 @@
             "MatrizOps"
         ],
         [
+            "Suma",
+            "MatrizOps"
+        ],
+        [
             "Items",
             "IEnumerable"
-        ],
-        [
-            "WordsPriority",
-            "Dictionary"
-        ],
-        [
-            "NeedWords",
-            "double"
-        ],
-        [
-            "RemoveWords",
-            "double"
-        ],
-        [
-            "WordsNot",
-            "List"
         ],
         [
             "WordsYes",
             "List"
         ],
         [
-            "TFS",
+            "WordsNot",
+            "List"
+        ],
+        [
+            "RemoveWords",
             "double"
+        ],
+        [
+            "NeedWords",
+            "double"
+        ],
+        [
+            "WordsPriority",
+            "Dictionary"
         ],
         [
             "IDFS",
             "double"
         ],
         [
+            "TFS",
+            "double"
+        ],
+        [
             "TokenizeQuery",
+            "string"
+        ],
+        [
+            "Snippet",
             "string"
         ],
         [
@@ -630,8 +634,8 @@
             "double"
         ],
         [
-            "Snippet",
-            "string"
+            "Query",
+            "SearchResult"
         ],
         [
             "Vectorial_Model",
@@ -646,8 +650,8 @@
             "SearchResult"
         ],
         [
-            "Query",
-            "SearchResult"
+            "Sort",
+            "SearchItem"
         ],
         [
             "LoadDocuments",
@@ -656,10 +660,6 @@
         [
             "TokenizeWord",
             "string"
-        ],
-        [
-            "Sort",
-            "SearchItem"
         ],
         [
             "EnumerateFiles",
@@ -690,7 +690,6 @@
         "Namespace_member_declarationContext": 18,
         "Namespace_declarationContext": 9,
         "Qualified_identifierContext": 9,
-        "Namespace_bodyContext": 9,
         "Type_declarationContext": 9,
         "Class_definitionContext": 9,
         "Class_bodyContext": 9,

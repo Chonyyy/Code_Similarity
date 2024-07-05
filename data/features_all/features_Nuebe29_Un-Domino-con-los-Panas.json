@@ -1,5 +1,5 @@
 {
-    "total_nodes": 26466,
+    "total_nodes": 26448,
     "max_depth": 1325,
     "number_of_variables": 57,
     "number_of_constants": 0,
@@ -699,20 +699,12 @@
     ],
     "variable_names": [
         [
-            "int",
-            "aux"
-        ],
-        [
             "List",
             "copy"
         ],
         [
             "int",
-            "min"
-        ],
-        [
-            "int",
-            "ganador"
+            "i"
         ],
         [
             "int",
@@ -720,7 +712,15 @@
         ],
         [
             "int",
-            "i"
+            "devolver"
+        ],
+        [
+            "int",
+            "aux"
+        ],
+        [
+            "int",
+            "min"
         ],
         [
             "int",
@@ -736,19 +736,23 @@
         ],
         [
             "int",
-            "devolver"
+            "ganador"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "List",
             "list"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
             "double",
             "aux"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "int",
@@ -763,20 +767,16 @@
             "i"
         ],
         [
-            "int",
-            "aux"
+            "List",
+            "list"
         ],
         [
             "Random",
             "r"
         ],
         [
-            "List",
-            "list"
-        ],
-        [
             "int",
-            "i"
+            "aux"
         ],
         [
             "int",
@@ -787,16 +787,12 @@
             "a"
         ],
         [
-            "List",
-            "list"
-        ],
-        [
             "var",
             "root"
         ],
         [
-            "var",
-            "actual"
+            "List",
+            "list"
         ],
         [
             "var",
@@ -804,7 +800,19 @@
         ],
         [
             "var",
-            "newMoves"
+            "actual"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Dictionary",
+            "data"
+        ],
+        [
+            "int",
+            "devolver"
         ],
         [
             "Random",
@@ -815,16 +823,8 @@
             "peso"
         ],
         [
-            "Dictionary",
-            "data"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "devolver"
+            "var",
+            "newMoves"
         ],
         [
             "var",
@@ -836,19 +836,19 @@
         ],
         [
             "int",
+            "aux"
+        ],
+        [
+            "int",
             "turnos"
         ],
         [
             "int",
-            "aux"
+            "count"
         ],
         [
             "Random",
             "r"
-        ],
-        [
-            "int",
-            "count"
         ],
         [
             "int",
@@ -864,33 +864,33 @@
         "GetForecastAsync",
         "Ordena",
         "DecidirGanador",
-        "EsPrimo",
         "Generamazo",
-        "SacarJugadas",
+        "EsPrimo",
         "PuedeSalir",
-        "Jugabilidad",
         "matchea",
+        "Jugabilidad",
+        "SacarJugadas",
         "Reparte",
-        "RunTurn",
         "Run",
         "RecibeParametros",
+        "RunTurn",
         "ToString",
         "Juega",
-        "Clone",
         "IEnumerable",
-        "Pintar",
         "GetEnumerator",
+        "Pintar",
+        "Clone",
         "Estrategiarandom",
         "NoPasarse",
         "Botagordas",
-        "RunTurn",
         "EfectuarJugada",
         "Run",
+        "RunTurn",
         "Condicion",
         "Turno",
-        "Clone",
         "Add",
-        "Remove"
+        "Remove",
+        "Clone"
     ],
     "method_return_types": [
         [
@@ -910,11 +910,19 @@
             "int"
         ],
         [
+            "EsPrimo",
+            "bool"
+        ],
+        [
             "Generamazo",
             "List"
         ],
         [
-            "EsPrimo",
+            "SacarJugadas",
+            "List"
+        ],
+        [
+            "PuedeSalir",
             "bool"
         ],
         [
@@ -926,28 +934,20 @@
             "void"
         ],
         [
-            "SacarJugadas",
-            "List"
-        ],
-        [
-            "PuedeSalir",
-            "bool"
-        ],
-        [
             "Reparte",
             "List"
         ],
         [
-            "RecibeParametros",
-            "void"
+            "RunTurn",
+            "bool"
         ],
         [
             "Run",
             "void"
         ],
         [
-            "RunTurn",
-            "bool"
+            "RecibeParametros",
+            "void"
         ],
         [
             "ToString",
@@ -958,12 +958,8 @@
             "int"
         ],
         [
-            "GetEnumerator",
-            "IEnumerator"
-        ],
-        [
-            "Pintar",
-            "IEnumerable"
+            "Clone",
+            "Tablero"
         ],
         [
             "Clone",
@@ -974,8 +970,12 @@
             "IEnumerator"
         ],
         [
-            "Clone",
-            "Tablero"
+            "GetEnumerator",
+            "IEnumerator"
+        ],
+        [
+            "Pintar",
+            "IEnumerable"
         ],
         [
             "Estrategiarandom",
@@ -990,16 +990,16 @@
             "int"
         ],
         [
+            "RunTurn",
+            "bool"
+        ],
+        [
             "Run",
             "void"
         ],
         [
             "EfectuarJugada",
             "void"
-        ],
-        [
-            "RunTurn",
-            "bool"
         ],
         [
             "Condicion",
@@ -1010,28 +1010,28 @@
             "IEnumerable"
         ],
         [
-            "Remove",
-            "void"
-        ],
-        [
             "Add",
             "void"
         ],
         [
             "Clone",
             "Mano"
+        ],
+        [
+            "Remove",
+            "void"
         ]
     ],
     "class_names": [
         "ErrorModel",
         "WeatherForecast",
         "WeatherForecastService",
-        "GanadorCálsico",
         "GanadorPorJugadas",
         "GanadorPorFichas",
+        "GanadorCálsico",
         "GeneradorPrimos",
-        "Generadorclasico",
         "GeneradorPares",
+        "Generadorclasico",
         "MatcherClasico",
         "MatcherDistancia2",
         "MatcherLongana",
@@ -1045,11 +1045,11 @@
         "Movimiento",
         "Estrategias",
         "Referee",
-        "EndconditionClasico",
         "EndconditionPorPases3",
+        "EndconditionClasico",
         "EndconditionPorPuntos50",
-        "TurnerRandom",
         "TurnerClasico",
+        "TurnerRandom",
         "TurnerContrario",
         "Mano"
     ],
@@ -1078,7 +1078,6 @@
         "Namespace_member_declarationContext": 53,
         "Namespace_declarationContext": 18,
         "Qualified_identifierContext": 18,
-        "Namespace_bodyContext": 18,
         "Type_declarationContext": 35,
         "AttributesContext": 1,
         "Attribute_sectionContext": 2,

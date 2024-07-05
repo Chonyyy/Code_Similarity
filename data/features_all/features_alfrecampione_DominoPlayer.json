@@ -1,5 +1,5 @@
 {
-    "total_nodes": 28721,
+    "total_nodes": 28776,
     "max_depth": 831,
     "number_of_variables": 63,
     "number_of_constants": 6,
@@ -23,8 +23,8 @@
     "control_structures_for": 19,
     "control_structures_while": 2,
     "control_structures_dowhile": 0,
-    "access_modifiers_public": 84,
-    "access_modifiers_private": 17,
+    "access_modifiers_public": 88,
+    "access_modifiers_private": 18,
     "access_modifiers_protected": 9,
     "access_modifiers_internal": 1,
     "access_modifiers_static": 20,
@@ -34,7 +34,7 @@
     "modifier_volatile": 0,
     "modifier_virtual": 2,
     "modifier_override": 5,
-    "modifier_new": 25,
+    "modifier_new": 28,
     "modifier_partial": 0,
     "modifier_extern": 0,
     "modifier_unsafe": 0,
@@ -343,24 +343,48 @@
     ],
     "variable_names": [
         [
-            "List",
-            "sortedPieces"
+            "var",
+            "pieces"
         ],
         [
-            "Piece",
-            "pieceToPlay"
+            "List",
+            "sortedValues"
         ],
         [
             "var",
             "enumerable"
         ],
         [
-            "var",
-            "possiblePieces"
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "sortedPieces"
+        ],
+        [
+            "List",
+            "valuesPartner"
         ],
         [
             "double",
             "pieceValues"
+        ],
+        [
+            "Piece",
+            "pieceToPlay"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "valuesOpponent"
+        ],
+        [
+            "var",
+            "possiblePieces"
         ],
         [
             "var",
@@ -368,31 +392,11 @@
         ],
         [
             "List",
-            "valuesPartner"
-        ],
-        [
-            "List",
-            "sortedValues"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "valuesOpponent"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "var",
-            "pieces"
-        ],
-        [
-            "List",
             "hand"
+        ],
+        [
+            "Random",
+            "random"
         ],
         [
             "int",
@@ -400,27 +404,23 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "e"
         ],
         [
-            "Random",
-            "random"
+            "int",
+            "i"
         ],
         [
             "Move",
             "move"
         ],
         [
-            "bool",
-            "initialComparison"
-        ],
-        [
             "Piece",
             "p"
+        ],
+        [
+            "bool",
+            "initialComparison"
         ],
         [
             "bool",
@@ -431,60 +431,24 @@
             "side"
         ],
         [
-            "Random",
-            "rnd"
-        ],
-        [
             "var",
             "possiblePieces"
+        ],
+        [
+            "Random",
+            "rnd"
         ],
         [
             "int",
             "side"
         ],
         [
+            "var",
+            "possiblePieces"
+        ],
+        [
             "Random",
             "rnd"
-        ],
-        [
-            "var",
-            "possiblePieces"
-        ],
-        [
-            "bool",
-            "placedOnRight"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "Piece",
-            "p"
-        ],
-        [
-            "Piece",
-            "pieceToPlay"
-        ],
-        [
-            "var",
-            "possiblePieces"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "double",
-            "pieceValues"
-        ],
-        [
-            "var",
-            "smartPieces"
-        ],
-        [
-            "List",
-            "valuesPartner"
         ],
         [
             "List",
@@ -492,39 +456,83 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "List",
-            "valuesOpponent"
-        ],
-        [
-            "Dictionary",
-            "dict"
+            "index"
         ],
         [
             "int",
-            "j"
+            "k"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "bool",
+            "placedOnRight"
+        ],
+        [
+            "Piece",
+            "p"
+        ],
+        [
+            "List",
+            "valuesPartner"
         ],
         [
             "var",
             "p"
         ],
         [
+            "double",
+            "pieceValues"
+        ],
+        [
+            "Piece",
+            "pieceToPlay"
+        ],
+        [
+            "Dictionary",
+            "dict"
+        ],
+        [
             "var",
             "keys"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "valuesOpponent"
+        ],
+        [
+            "var",
+            "possiblePieces"
+        ],
+        [
+            "var",
+            "smartPieces"
         ],
         [
             "DominoPlayer",
             "smartAI_1"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
             "DominoPlayer",
             "smartAI_0"
         ],
         [
-            "int",
-            "i"
+            "DominoPlayer",
+            "smartAI_2"
+        ],
+        [
+            "IRules",
+            "classicRules"
         ],
         [
             "int",
@@ -535,74 +543,62 @@
             "passCount"
         ],
         [
-            "IRules",
-            "classicRules"
+            "var",
+            "players"
         ],
         [
             "DominoPlayer",
             "smartAI_3"
-        ],
-        [
-            "DominoPlayer",
-            "smartAI_2"
-        ],
-        [
-            "var",
-            "players"
         ]
     ],
     "method_names": [
         "SetOpponents",
-        "WatchMoves",
-        "GetValue",
-        "SetPartners",
         "GetScores",
+        "SetPartners",
+        "GetValue",
+        "WatchMoves",
         "StartGame",
         "CreateHand",
-        "GameOverCondition",
         "GetHandScore",
         "CanPiecesMatch",
-        "StartGame",
+        "GameOverCondition",
         "SetOpponents",
         "InternalGetMove",
+        "GetPartners",
+        "SetPartners",
+        "GetMove",
+        "StartGame",
         "GetOpponents",
         "GetPlayerScore",
-        "GetPartners",
-        "GetMove",
-        "SetPartners",
         "Reverse",
+        "CanMatch",
         "GetHashCode",
         "Equals",
-        "CanMatch",
         "InternalGetMove",
         "GetHand",
         "InternalGetMove",
-        "PointsForOpponnent",
+        "PointForPlaced",
         "InternalGetMove",
         "PointForDouble",
-        "WatchMoves",
-        "PointForPlaced",
+        "PointsForOpponnent",
         "PointsForTeamMate",
         "PointForSameNumber",
-        "CanPiecesMatch",
+        "WatchMoves",
         "Main",
+        "GameOverCondition",
         "GetHandScore",
         "DominoGameOver",
-        "PlayDomino",
-        "GameOverCondition"
+        "CanPiecesMatch",
+        "PlayDomino"
     ],
     "method_return_types": [
         [
-            "SetOpponents",
-            "List"
-        ],
-        [
-            "SetPartners",
-            "List"
-        ],
-        [
             "WatchMoves",
             "void"
+        ],
+        [
+            "SetOpponents",
+            "List"
         ],
         [
             "GetValue",
@@ -610,6 +606,10 @@
         ],
         [
             "GetScores",
+            "List"
+        ],
+        [
+            "SetPartners",
             "List"
         ],
         [
@@ -621,6 +621,10 @@
             "void"
         ],
         [
+            "GameOverCondition",
+            "bool"
+        ],
+        [
             "CanPiecesMatch",
             "bool"
         ],
@@ -629,35 +633,15 @@
             "double"
         ],
         [
-            "GameOverCondition",
-            "bool"
-        ],
-        [
-            "SetOpponents",
-            "void"
-        ],
-        [
-            "SetPartners",
-            "void"
+            "GetMove",
+            "Move"
         ],
         [
             "GetPlayerScore",
             "double"
         ],
         [
-            "StartGame",
-            "void"
-        ],
-        [
             "InternalGetMove",
-            "Move"
-        ],
-        [
-            "GetOpponents",
-            "List"
-        ],
-        [
-            "GetMove",
             "Move"
         ],
         [
@@ -665,12 +649,20 @@
             "List"
         ],
         [
-            "CanMatch",
-            "bool"
+            "SetPartners",
+            "void"
         ],
         [
-            "GetHashCode",
-            "int"
+            "StartGame",
+            "void"
+        ],
+        [
+            "SetOpponents",
+            "void"
+        ],
+        [
+            "GetOpponents",
+            "List"
         ],
         [
             "Equals",
@@ -679,6 +671,14 @@
         [
             "Reverse",
             "void"
+        ],
+        [
+            "CanMatch",
+            "bool"
+        ],
+        [
+            "GetHashCode",
+            "int"
         ],
         [
             "InternalGetMove",
@@ -693,14 +693,6 @@
             "Move"
         ],
         [
-            "PointForSameNumber",
-            "void"
-        ],
-        [
-            "PointForPlaced",
-            "void"
-        ],
-        [
             "WatchMoves",
             "void"
         ],
@@ -709,11 +701,11 @@
             "Move"
         ],
         [
-            "PointsForTeamMate",
+            "PointForSameNumber",
             "void"
         ],
         [
-            "PointsForOpponnent",
+            "PointsForTeamMate",
             "void"
         ],
         [
@@ -721,11 +713,15 @@
             "void"
         ],
         [
-            "GetHandScore",
-            "double"
+            "PointsForOpponnent",
+            "void"
         ],
         [
-            "PlayDomino",
+            "PointForPlaced",
+            "void"
+        ],
+        [
+            "DominoGameOver",
             "void"
         ],
         [
@@ -733,16 +729,20 @@
             "bool"
         ],
         [
-            "DominoGameOver",
-            "void"
+            "GetHandScore",
+            "double"
+        ],
+        [
+            "GameOverCondition",
+            "bool"
         ],
         [
             "Main",
             "void"
         ],
         [
-            "GameOverCondition",
-            "bool"
+            "PlayDomino",
+            "void"
         ]
     ],
     "class_names": [
@@ -765,17 +765,17 @@
         "Compilation_unitContext": 12,
         "Using_directivesContext": 9,
         "UsingNamespaceDirectiveContext": 16,
-        "TerminalNodeImpl": 5002,
-        "Namespace_or_type_nameContext": 236,
-        "IdentifierContext": 1507,
+        "TerminalNodeImpl": 5019,
+        "Namespace_or_type_nameContext": 239,
+        "IdentifierContext": 1510,
         "Namespace_member_declarationsContext": 23,
-        "Namespace_member_declarationContext": 39,
+        "Namespace_member_declarationContext": 50,
         "Namespace_declarationContext": 12,
         "Qualified_identifierContext": 12,
-        "Namespace_bodyContext": 12,
-        "Type_declarationContext": 27,
-        "All_member_modifiersContext": 125,
-        "All_member_modifierContext": 153,
+        "Namespace_bodyContext": 11,
+        "Type_declarationContext": 38,
+        "All_member_modifiersContext": 133,
+        "All_member_modifierContext": 161,
         "Class_definitionContext": 10,
         "Class_bodyContext": 11,
         "Class_member_declarationsContext": 11,
@@ -871,7 +871,7 @@
         "Struct_definitionContext": 2,
         "Struct_bodyContext": 2,
         "Struct_member_declarationContext": 28,
-        "ErrorNodeImpl": 915,
+        "ErrorNodeImpl": 898,
         "Tuple_typeContext": 3,
         "Tuple_elementContext": 6,
         "Indexer_declarationContext": 2,
@@ -884,10 +884,10 @@
         "Event_declarationContext": 1,
         "Parameter_arrayContext": 3,
         "Array_typeContext": 3,
-        "AttributesContext": 4,
-        "Attribute_sectionContext": 4,
-        "Attribute_listContext": 4,
-        "AttributeContext": 5,
+        "AttributesContext": 7,
+        "Attribute_sectionContext": 7,
+        "Attribute_listContext": 7,
+        "AttributeContext": 8,
         "Class_baseContext": 6,
         "Constructor_initializerContext": 7,
         "Interface_definitionContext": 1,

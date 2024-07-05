@@ -1,5 +1,5 @@
 {
-    "total_nodes": 4227,
+    "total_nodes": 4223,
     "max_depth": 189,
     "number_of_variables": 4,
     "number_of_constants": 0,
@@ -70,20 +70,20 @@
     ],
     "variable_names": [
         [
-            "var",
-            "res"
+            "Dictionary",
+            "areUsed"
         ],
         [
             "var",
-            "watch"
+            "res"
         ],
         [
             "var",
             "res2"
         ],
         [
-            "Dictionary",
-            "areUsed"
+            "var",
+            "watch"
         ]
     ],
     "method_names": [
@@ -119,7 +119,6 @@
         "Namespace_member_declarationContext": 8,
         "Namespace_declarationContext": 4,
         "Qualified_identifierContext": 4,
-        "Namespace_bodyContext": 4,
         "Type_declarationContext": 4,
         "All_member_modifiersContext": 15,
         "All_member_modifierContext": 17,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 11912,
+    "total_nodes": 11906,
     "max_depth": 391,
     "number_of_variables": 49,
     "number_of_constants": 0,
@@ -167,24 +167,56 @@
     ],
     "variable_names": [
         [
-            "string",
-            "sugerencia"
-        ],
-        [
             "SearchItem",
             "searchItem"
         ],
         [
+            "string",
+            "sugerencia"
+        ],
+        [
             "double",
-            "valorA"
+            "VectorQuery"
+        ],
+        [
+            "string",
+            "Sugerencia"
+        ],
+        [
+            "double",
+            "FrecuenciaAbsoluta"
+        ],
+        [
+            "string",
+            "vector"
         ],
         [
             "int",
             "indicesDeTextos"
         ],
         [
-            "int",
-            "contador"
+            "Dictionary",
+            "temp"
+        ],
+        [
+            "string",
+            "palabras"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
+            "double",
+            "temporal"
+        ],
+        [
+            "Dictionary",
+            "diccionario"
+        ],
+        [
+            "double",
+            "Indicador"
         ],
         [
             "int",
@@ -195,20 +227,44 @@
             "searchItems"
         ],
         [
-            "string",
-            "temp"
+            "double",
+            "valorA"
         ],
         [
             "double",
-            "FrecuenciaAbsoluta"
+            "valorB"
+        ],
+        [
+            "string",
+            "mejoresTitulos"
+        ],
+        [
+            "double",
+            "TheMatrix"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "Query",
+            "objetoQuery"
         ],
         [
             "double",
             "vectorScore"
         ],
         [
-            "double",
-            "valorB"
+            "List",
+            "CambiodeBase"
+        ],
+        [
+            "string",
+            "terminosQuery"
         ],
         [
             "int",
@@ -220,67 +276,11 @@
         ],
         [
             "string",
-            "palabras"
-        ],
-        [
-            "string",
-            "snippet"
-        ],
-        [
-            "List",
-            "CambiodeBase"
-        ],
-        [
-            "double",
             "temporal"
-        ],
-        [
-            "double",
-            "VectorQuery"
-        ],
-        [
-            "string",
-            "vector"
-        ],
-        [
-            "double",
-            "TheMatrix"
-        ],
-        [
-            "Query",
-            "objetoQuery"
-        ],
-        [
-            "string",
-            "terminosQuery"
         ],
         [
             "string",
             "palabra"
-        ],
-        [
-            "string",
-            "mejoresTitulos"
-        ],
-        [
-            "Dictionary",
-            "temp"
-        ],
-        [
-            "Dictionary",
-            "diccionario"
-        ],
-        [
-            "string",
-            "Sugerencia"
-        ],
-        [
-            "string",
-            "temporal"
-        ],
-        [
-            "double",
-            "Indicador"
         ],
         [
             "var",
@@ -291,16 +291,16 @@
         "Items",
         "Iniciar",
         "Query",
-        "Sugerencia",
-        "Levenshtein",
         "llenarDic",
-        "Matriz",
         "VectorQuerys",
-        "OrdenarQuery",
-        "NecesidadSugerencia",
-        "ObtenerSearchItems",
-        "ConstructorSugerencia",
         "Intercambiar",
+        "OrdenarQuery",
+        "ObtenerSearchItems",
+        "Levenshtein",
+        "Sugerencia",
+        "ConstructorSugerencia",
+        "Matriz",
+        "NecesidadSugerencia",
         "Snipet"
     ],
     "method_return_types": [
@@ -309,27 +309,31 @@
             "IEnumerable"
         ],
         [
-            "Iniciar",
-            "void"
-        ],
-        [
             "Query",
             "SearchResult"
         ],
         [
-            "OrdenarQuery",
-            "string"
+            "Iniciar",
+            "void"
         ],
         [
-            "ObtenerSearchItems",
-            "SearchItem"
+            "NecesidadSugerencia",
+            "bool"
         ],
         [
             "Levenshtein",
             "string"
         ],
         [
+            "Matriz",
+            "double"
+        ],
+        [
             "Sugerencia",
+            "string"
+        ],
+        [
+            "ConstructorSugerencia",
             "string"
         ],
         [
@@ -337,19 +341,15 @@
             "double"
         ],
         [
-            "NecesidadSugerencia",
-            "bool"
-        ],
-        [
             "llenarDic",
             "Dictionary"
         ],
         [
-            "Matriz",
-            "double"
+            "ObtenerSearchItems",
+            "SearchItem"
         ],
         [
-            "ConstructorSugerencia",
+            "OrdenarQuery",
             "string"
         ],
         [
@@ -383,7 +383,6 @@
         "Namespace_member_declarationContext": 12,
         "Namespace_declarationContext": 6,
         "Qualified_identifierContext": 6,
-        "Namespace_bodyContext": 6,
         "Type_declarationContext": 6,
         "All_member_modifiersContext": 40,
         "All_member_modifierContext": 46,

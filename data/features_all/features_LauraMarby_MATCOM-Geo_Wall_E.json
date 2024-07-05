@@ -1,5 +1,5 @@
 {
-    "total_nodes": 253007,
+    "total_nodes": 252999,
     "max_depth": 2527,
     "number_of_variables": 877,
     "number_of_constants": 2,
@@ -1134,35 +1134,27 @@
     "variable_names": [
         [
             "float",
-            "m1"
-        ],
-        [
-            "double",
-            "x"
-        ],
-        [
-            "int",
-            "i"
+            "Y"
         ],
         [
             "float",
-            "angle_2"
+            "X"
         ],
         [
             "var",
-            "x"
+            "points"
+        ],
+        [
+            "double",
+            "y4"
         ],
         [
             "double",
             "x3"
         ],
         [
-            "var",
-            "vector1"
-        ],
-        [
-            "float",
-            "Y"
+            "double",
+            "y3"
         ],
         [
             "string",
@@ -1170,7 +1162,67 @@
         ],
         [
             "double",
-            "y3"
+            "x4"
+        ],
+        [
+            "float",
+            "angle_2"
+        ],
+        [
+            "float",
+            "n"
+        ],
+        [
+            "float",
+            "m1"
+        ],
+        [
+            "double",
+            "db2"
+        ],
+        [
+            "var",
+            "vector"
+        ],
+        [
+            "var",
+            "vector2"
+        ],
+        [
+            "float",
+            "angle_1"
+        ],
+        [
+            "Vector2",
+            "traslation_vector"
+        ],
+        [
+            "float",
+            "m2"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "point"
+        ],
+        [
+            "var",
+            "vector3"
+        ],
+        [
+            "double",
+            "db1"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "double",
+            "x"
         ],
         [
             "float",
@@ -1182,58 +1234,6 @@
         ],
         [
             "var",
-            "vector3"
-        ],
-        [
-            "double",
-            "y4"
-        ],
-        [
-            "float",
-            "n"
-        ],
-        [
-            "float",
-            "m2"
-        ],
-        [
-            "var",
-            "vector"
-        ],
-        [
-            "double",
-            "db2"
-        ],
-        [
-            "float",
-            "X"
-        ],
-        [
-            "Vector2",
-            "traslation_vector"
-        ],
-        [
-            "float",
-            "angle_1"
-        ],
-        [
-            "var",
-            "point"
-        ],
-        [
-            "double",
-            "db1"
-        ],
-        [
-            "var",
-            "points"
-        ],
-        [
-            "double",
-            "x4"
-        ],
-        [
-            "var",
             "y"
         ],
         [
@@ -1242,23 +1242,7 @@
         ],
         [
             "var",
-            "vector2"
-        ],
-        [
-            "Parser",
-            "P"
-        ],
-        [
-            "string",
-            "mensaje"
-        ],
-        [
-            "var",
-            "drawables_2"
-        ],
-        [
-            "Semantic_Analyzer",
-            "sa"
+            "vector1"
         ],
         [
             "List",
@@ -1269,6 +1253,18 @@
             "T"
         ],
         [
+            "string",
+            "mensaje"
+        ],
+        [
+            "Semantic_Analyzer",
+            "sa"
+        ],
+        [
+            "Parser",
+            "P"
+        ],
+        [
             "List",
             "drawables"
         ],
@@ -1277,100 +1273,68 @@
             "N"
         ],
         [
+            "var",
+            "drawables_2"
+        ],
+        [
             "string",
             "ruta"
         ],
         [
-            "Node",
-            "node"
-        ],
-        [
-            "RaySequence",
-            "l"
-        ],
-        [
             "string",
-            "name_ld"
-        ],
-        [
-            "List",
-            "c_l"
-        ],
-        [
-            "StringSequence",
-            "l"
-        ],
-        [
-            "PointSequence",
-            "r"
-        ],
-        [
-            "string",
-            "name_c_seq"
+            "name_l"
         ],
         [
             "object",
-            "p3_a"
+            "sec"
+        ],
+        [
+            "Dictionary",
+            "Param"
+        ],
+        [
+            "object",
+            "left_and"
+        ],
+        [
+            "object",
+            "left_st"
+        ],
+        [
+            "var",
+            "f1"
         ],
         [
             "Dictionary",
             "Var"
         ],
         [
-            "object",
-            "m_a"
-        ],
-        [
-            "SegmentSequence",
-            "s_seq"
-        ],
-        [
             "dynamic",
-            "randoms"
+            "line"
         ],
         [
             "Point",
-            "pd1"
-        ],
-        [
-            "ArcSequence",
-            "arc_s"
-        ],
-        [
-            "CircleSequence",
-            "s"
-        ],
-        [
-            "dynamic",
-            "circle1"
-        ],
-        [
-            "Dictionary",
-            "Var_let_in"
-        ],
-        [
-            "IntSequence",
-            "i"
-        ],
-        [
-            "var",
-            "right_unknown"
-        ],
-        [
-            "SegmentSequence",
-            "ss"
-        ],
-        [
-            "int",
-            "sequence_type_1"
+            "p2"
         ],
         [
             "object",
-            "m_c"
+            "right_st"
         ],
         [
             "string",
-            "name_s_seq"
+            "name_c_seq"
+        ],
+        [
+            "SegmentSequence",
+            "l"
+        ],
+        [
+            "object",
+            "p1_r"
+        ],
+        [
+            "string",
+            "name_s"
         ],
         [
             "dynamic",
@@ -1378,279 +1342,127 @@
         ],
         [
             "object",
-            "p2_r"
-        ],
-        [
-            "List",
-            "i_l"
-        ],
-        [
-            "SegmentSequence",
-            "l"
-        ],
-        [
-            "Point",
-            "p1"
-        ],
-        [
-            "Dictionary",
-            "Scope_actual"
-        ],
-        [
-            "dynamic",
-            "point_def"
+            "right_and"
         ],
         [
             "object",
-            "p2_s"
+            "p2_r"
+        ],
+        [
+            "dynamic",
+            "line1"
+        ],
+        [
+            "LineSequence",
+            "s"
+        ],
+        [
+            "string",
+            "name_ld"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "object",
+            "m_a"
         ],
         [
             "List",
-            "r_l"
+            "c_l"
         ],
         [
-            "string",
-            "name_a_seq"
-        ],
-        [
-            "var",
-            "sequence"
-        ],
-        [
-            "string",
-            "name_rd"
+            "SegmentSequence",
+            "r"
         ],
         [
             "ArcSequence",
             "aa"
         ],
         [
-            "object",
-            "right_a"
-        ],
-        [
-            "object",
-            "p1_s"
-        ],
-        [
-            "CircleSequence",
-            "c"
-        ],
-        [
-            "PointSequence",
-            "s"
-        ],
-        [
-            "object",
-            "p1_r"
-        ],
-        [
-            "var",
-            "count_seq"
-        ],
-        [
-            "object",
-            "left_a"
-        ],
-        [
-            "string",
-            "name_pd"
-        ],
-        [
-            "string",
-            "name_ad"
-        ],
-        [
-            "StringSequence",
-            "string_s"
-        ],
-        [
-            "dynamic",
-            "m"
-        ],
-        [
-            "string",
-            "name_sd"
-        ],
-        [
-            "List",
-            "a_l"
-        ],
-        [
-            "LineSequence",
-            "s"
-        ],
-        [
-            "string",
-            "name_c"
-        ],
-        [
-            "string",
-            "m_name"
-        ],
-        [
-            "dynamic",
-            "samples"
-        ],
-        [
             "SegmentSequence",
             "a_seq"
         ],
         [
+            "ArcSequence",
+            "arc_s"
+        ],
+        [
+            "Dictionary",
+            "Scope_actual"
+        ],
+        [
             "PointSequence",
             "l"
-        ],
-        [
-            "StringSequence",
-            "sss"
-        ],
-        [
-            "object",
-            "condition"
-        ],
-        [
-            "object",
-            "p2_a"
-        ],
-        [
-            "List",
-            "string_l"
         ],
         [
             "SegmentSequence",
-            "seg_s"
-        ],
-        [
-            "string",
-            "name_a"
-        ],
-        [
-            "object",
-            "left_st"
-        ],
-        [
-            "Point",
-            "p2"
-        ],
-        [
-            "dynamic",
-            "value"
-        ],
-        [
-            "string",
-            "type_right"
-        ],
-        [
-            "PointSequence",
-            "ps"
-        ],
-        [
-            "string",
-            "name_r_seq"
-        ],
-        [
-            "dynamic",
-            "arc1"
-        ],
-        [
-            "FloatSequence",
-            "f_s"
-        ],
-        [
-            "LineSequence",
-            "l"
-        ],
-        [
-            "List",
-            "segm_l"
-        ],
-        [
-            "dynamic",
-            "segment"
+            "s"
         ],
         [
             "string",
             "name_p_seq"
         ],
         [
-            "SegmentSequence",
-            "c_seq"
-        ],
-        [
-            "dynamic",
-            "point"
-        ],
-        [
-            "FloatSequence",
-            "r"
-        ],
-        [
-            "IntSequence",
-            "r"
-        ],
-        [
-            "IDrawable",
-            "fig"
+            "List",
+            "p_l"
         ],
         [
             "string",
-            "_key"
+            "name_pd"
         ],
         [
-            "var",
-            "f2"
-        ],
-        [
-            "object",
-            "value_base"
+            "SegmentSequence",
+            "seg_s"
         ],
         [
             "object",
-            "value"
-        ],
-        [
-            "ArcSequence",
-            "r"
-        ],
-        [
-            "RaySequence",
-            "r"
+            "p1_l"
         ],
         [
             "var",
             "f"
         ],
         [
-            "CircleSequence",
+            "StringSequence",
             "l"
         ],
         [
-            "CircleSequence",
-            "cs"
+            "object",
+            "p2_p"
+        ],
+        [
+            "object",
+            "left_a"
+        ],
+        [
+            "object",
+            "value_base"
+        ],
+        [
+            "List",
+            "r_l"
         ],
         [
             "IntSequence",
-            "i_s"
+            "inf_seq"
         ],
         [
             "object",
             "p2_l"
         ],
         [
-            "Node",
-            "param_f"
+            "object",
+            "m_c"
         ],
         [
-            "StringSequence",
-            "r"
+            "string",
+            "name_rd"
         ],
         [
-            "int",
-            "f_position"
-        ],
-        [
-            "var",
-            "figures"
+            "List",
+            "f_l"
         ],
         [
             "LineSequence",
@@ -1658,99 +1470,59 @@
         ],
         [
             "LineSequence",
-            "ls"
-        ],
-        [
-            "SegmentSequence",
-            "r_seq"
-        ],
-        [
-            "object",
-            "value_sin"
-        ],
-        [
-            "Dictionary",
-            "Param"
-        ],
-        [
-            "string",
-            "name_l"
-        ],
-        [
-            "dynamic",
-            "arc"
-        ],
-        [
-            "string",
-            "name_p"
-        ],
-        [
-            "Point",
-            "pd2"
+            "l"
         ],
         [
             "dynamic",
             "ray"
         ],
         [
-            "string",
-            "name_cd"
-        ],
-        [
-            "bool",
-            "is_found"
-        ],
-        [
             "dynamic",
-            "segment1"
+            "m"
         ],
         [
-            "Node",
-            "fam"
+            "PointSequence",
+            "r"
         ],
         [
-            "FloatSequence",
-            "s"
+            "IntSequence",
+            "i"
         ],
         [
             "object",
-            "right_b"
+            "p1_s"
+        ],
+        [
+            "int",
+            "f_f"
+        ],
+        [
+            "PointSequence",
+            "s"
+        ],
+        [
+            "string",
+            "name_sd"
+        ],
+        [
+            "StringSequence",
+            "r"
+        ],
+        [
+            "StringSequence",
+            "s"
         ],
         [
             "RaySequence",
             "rs"
         ],
         [
-            "int",
-            "count"
-        ],
-        [
-            "dynamic",
-            "line1"
-        ],
-        [
-            "ArcSequence",
-            "s"
-        ],
-        [
-            "SegmentSequence",
-            "r"
+            "object",
+            "value"
         ],
         [
             "object",
-            "left_and"
-        ],
-        [
-            "RaySequence",
-            "s"
-        ],
-        [
-            "object",
-            "p_c"
-        ],
-        [
-            "dynamic",
-            "left_or"
+            "right_b"
         ],
         [
             "var",
@@ -1758,27 +1530,75 @@
         ],
         [
             "string",
-            "name_l_seq"
+            "name_s_seq"
         ],
         [
-            "FloatSequence",
-            "l"
-        ],
-        [
-            "StringSequence",
-            "s"
-        ],
-        [
-            "var",
-            "left_unknown"
+            "LineSequence",
+            "ls"
         ],
         [
             "object",
-            "p1_p"
+            "p2_a"
+        ],
+        [
+            "object",
+            "p1_a"
+        ],
+        [
+            "LineSequence",
+            "r"
+        ],
+        [
+            "Function_B",
+            "function"
+        ],
+        [
+            "PointSequence",
+            "p_seq"
         ],
         [
             "object",
             "not"
+        ],
+        [
+            "string",
+            "type_left"
+        ],
+        [
+            "Point",
+            "p1"
+        ],
+        [
+            "object",
+            "p2_s"
+        ],
+        [
+            "object",
+            "p_c"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "dynamic",
+            "point"
+        ],
+        [
+            "dynamic",
+            "randoms"
+        ],
+        [
+            "object",
+            "value_agrument"
+        ],
+        [
+            "CircleSequence",
+            "l"
+        ],
+        [
+            "string",
+            "name_r_seq"
         ],
         [
             "dynamic",
@@ -1786,91 +1606,91 @@
         ],
         [
             "dynamic",
-            "circle"
+            "samples"
         ],
         [
-            "var",
-            "sec_inf"
+            "CircleSequence",
+            "cs"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "object",
-            "left_b"
-        ],
-        [
-            "object",
-            "value_cos"
+            "StringSequence",
+            "string_s"
         ],
         [
             "string",
-            "type_left"
+            "_key"
         ],
         [
-            "object",
-            "p1_l"
+            "RaySequence",
+            "l"
         ],
         [
-            "dynamic",
-            "line"
-        ],
-        [
-            "object",
-            "value_agrument"
-        ],
-        [
-            "dynamic",
-            "result"
-        ],
-        [
-            "object",
-            "right_st"
-        ],
-        [
-            "LineSequence",
-            "r"
-        ],
-        [
-            "IntSequence",
-            "inf_seq"
+            "List",
+            "i_l"
         ],
         [
             "string",
-            "name"
+            "type_right"
+        ],
+        [
+            "string",
+            "name_p"
+        ],
+        [
+            "dynamic",
+            "circle1"
         ],
         [
             "SegmentSequence",
-            "s"
+            "c_seq"
         ],
         [
-            "PointSequence",
-            "p_seq"
+            "Dictionary",
+            "Var_let_in"
         ],
         [
-            "string",
-            "v1_type"
-        ],
-        [
-            "IntSequence",
-            "s"
-        ],
-        [
-            "object",
-            "p2_p"
-        ],
-        [
-            "var",
-            "f1"
+            "dynamic",
+            "circle"
         ],
         [
             "CircleSequence",
             "r"
         ],
         [
-            "List",
-            "p_l"
+            "FloatSequence",
+            "f_s"
+        ],
+        [
+            "string",
+            "name_ad"
+        ],
+        [
+            "CircleSequence",
+            "s"
+        ],
+        [
+            "StringSequence",
+            "sss"
+        ],
+        [
+            "object",
+            "p1_p"
+        ],
+        [
+            "string",
+            "name_a"
+        ],
+        [
+            "Node",
+            "fam"
+        ],
+        [
+            "object",
+            "value_cos"
+        ],
+        [
+            "FloatSequence",
+            "f"
         ],
         [
             "dynamic",
@@ -1878,63 +1698,239 @@
         ],
         [
             "string",
-            "name_r"
+            "name_c"
         ],
         [
-            "object",
-            "sec"
+            "RaySequence",
+            "r"
         ],
         [
-            "object",
-            "p1_a"
+            "dynamic",
+            "left_or"
+        ],
+        [
+            "var",
+            "count_seq"
         ],
         [
             "List",
             "l_l"
         ],
         [
-            "object",
-            "value_print"
+            "dynamic",
+            "arc1"
         ],
         [
-            "string",
-            "name_s"
-        ],
-        [
-            "IntSequence",
-            "l"
-        ],
-        [
-            "int",
-            "f_f"
-        ],
-        [
-            "Function_B",
-            "function"
-        ],
-        [
-            "object",
-            "right_and"
-        ],
-        [
-            "List",
-            "f_l"
-        ],
-        [
-            "FloatSequence",
-            "f"
+            "var",
+            "sec_inf"
         ],
         [
             "ArcSequence",
             "l"
         ],
         [
-            "int",
-            "dot_counter"
+            "List",
+            "a_l"
         ],
         [
-            "Token",
-            "currentToken"
+            "object",
+            "value_sin"
+        ],
+        [
+            "RaySequence",
+            "s"
+        ],
+        [
+            "string",
+            "name_l_seq"
+        ],
+        [
+            "Point",
+            "pd1"
+        ],
+        [
+            "var",
+            "figures"
+        ],
+        [
+            "SegmentSequence",
+            "s_seq"
+        ],
+        [
+            "SegmentSequence",
+            "r_seq"
+        ],
+        [
+            "string",
+            "name_a_seq"
+        ],
+        [
+            "dynamic",
+            "segment"
+        ],
+        [
+            "List",
+            "string_l"
+        ],
+        [
+            "IntSequence",
+            "l"
+        ],
+        [
+            "FloatSequence",
+            "s"
+        ],
+        [
+            "dynamic",
+            "arc"
+        ],
+        [
+            "object",
+            "p3_a"
+        ],
+        [
+            "dynamic",
+            "value"
+        ],
+        [
+            "List",
+            "segm_l"
+        ],
+        [
+            "ArcSequence",
+            "r"
+        ],
+        [
+            "SegmentSequence",
+            "ss"
+        ],
+        [
+            "var",
+            "left_unknown"
+        ],
+        [
+            "ArcSequence",
+            "s"
+        ],
+        [
+            "string",
+            "v1_type"
+        ],
+        [
+            "int",
+            "f_position"
+        ],
+        [
+            "dynamic",
+            "segment1"
+        ],
+        [
+            "bool",
+            "is_found"
+        ],
+        [
+            "CircleSequence",
+            "c"
+        ],
+        [
+            "IntSequence",
+            "r"
+        ],
+        [
+            "var",
+            "right_unknown"
+        ],
+        [
+            "Node",
+            "param_f"
+        ],
+        [
+            "IntSequence",
+            "s"
+        ],
+        [
+            "object",
+            "condition"
+        ],
+        [
+            "var",
+            "f2"
+        ],
+        [
+            "IDrawable",
+            "fig"
+        ],
+        [
+            "string",
+            "m_name"
+        ],
+        [
+            "FloatSequence",
+            "l"
+        ],
+        [
+            "string",
+            "name_r"
+        ],
+        [
+            "string",
+            "name_cd"
+        ],
+        [
+            "var",
+            "sequence"
+        ],
+        [
+            "Node",
+            "node"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "PointSequence",
+            "ps"
+        ],
+        [
+            "object",
+            "left_b"
+        ],
+        [
+            "object",
+            "right_a"
+        ],
+        [
+            "dynamic",
+            "point_def"
+        ],
+        [
+            "IntSequence",
+            "i_s"
+        ],
+        [
+            "int",
+            "sequence_type_1"
+        ],
+        [
+            "FloatSequence",
+            "r"
+        ],
+        [
+            "object",
+            "value_print"
+        ],
+        [
+            "dynamic",
+            "result"
+        ],
+        [
+            "Point",
+            "pd2"
+        ],
+        [
+            "string",
+            "value"
         ],
         [
             "List",
@@ -1942,7 +1938,23 @@
         ],
         [
             "string",
+            "op"
+        ],
+        [
+            "string",
+            "word"
+        ],
+        [
+            "Token",
+            "currentToken"
+        ],
+        [
+            "string",
             "s"
+        ],
+        [
+            "int",
+            "dot_counter"
         ],
         [
             "(",
@@ -1950,39 +1962,23 @@
         ],
         [
             "string",
-            "word"
+            "number"
+        ],
+        [
+            "dynamic",
+            "value"
+        ],
+        [
+            "dynamic",
+            "values"
         ],
         [
             "string",
             "op"
         ],
         [
-            "string",
-            "number"
-        ],
-        [
-            "string",
-            "value"
-        ],
-        [
-            "Node",
-            "node"
-        ],
-        [
-            "Node",
-            "valor"
-        ],
-        [
-            "bool",
-            "comma"
-        ],
-        [
-            "bool",
-            "d_comma"
-        ],
-        [
-            "Node",
-            "var"
+            "Parser",
+            "P"
         ],
         [
             "Node",
@@ -1990,19 +1986,71 @@
         ],
         [
             "Node",
+            "x"
+        ],
+        [
+            "Node",
+            "children"
+        ],
+        [
+            "Node",
+            "expression"
+        ],
+        [
+            "Node",
+            "right"
+        ],
+        [
+            "string",
+            "msg"
+        ],
+        [
+            "Node",
+            "f"
+        ],
+        [
+            "Node",
+            "var1"
+        ],
+        [
+            "Node",
+            "measure"
+        ],
+        [
+            "Node",
+            "y"
+        ],
+        [
+            "Node",
             "N"
         ],
         [
             "Node",
-            "p2"
+            "condition"
+        ],
+        [
+            "string",
+            "a"
+        ],
+        [
+            "Node",
+            "assigments"
+        ],
+        [
+            "string",
+            "dir"
         ],
         [
             "Node",
             "var4"
         ],
         [
-            "Node",
-            "var3"
+            "int",
+            "inf_count"
+        ],
+        [
+            "int",
+            "safe1"
         ],
         [
             "bool",
@@ -2010,15 +2058,11 @@
         ],
         [
             "Node",
-            "f1"
+            "p2"
         ],
         [
-            "Node",
-            "var2"
-        ],
-        [
-            "Node",
-            "var_value"
+            "Token",
+            "current_token"
         ],
         [
             "dynamic",
@@ -2026,7 +2070,127 @@
         ],
         [
             "string",
-            "msg"
+            "code"
+        ],
+        [
+            "Node",
+            "str"
+        ],
+        [
+            "Node",
+            "var2"
+        ],
+        [
+            "Node",
+            "variable"
+        ],
+        [
+            "Node",
+            "name"
+        ],
+        [
+            "Node",
+            "f1"
+        ],
+        [
+            "bool",
+            "d_comma"
+        ],
+        [
+            "Node",
+            "var_value"
+        ],
+        [
+            "Node",
+            "valor"
+        ],
+        [
+            "Node",
+            "var3"
+        ],
+        [
+            "Node",
+            "node"
+        ],
+        [
+            "int",
+            "safe2"
+        ],
+        [
+            "Node",
+            "valor2"
+        ],
+        [
+            "Import",
+            "imported"
+        ],
+        [
+            "Node",
+            "operations_if"
+        ],
+        [
+            "Node",
+            "param"
+        ],
+        [
+            "List",
+            "new_TS"
+        ],
+        [
+            "Lexer",
+            "T"
+        ],
+        [
+            "Node",
+            "operations"
+        ],
+        [
+            "Node",
+            "f2"
+        ],
+        [
+            "Node",
+            "conditional_if_else"
+        ],
+        [
+            "Node",
+            "n"
+        ],
+        [
+            "Node",
+            "action"
+        ],
+        [
+            "List",
+            "Children"
+        ],
+        [
+            "Node",
+            "point_1"
+        ],
+        [
+            "bool",
+            "comma"
+        ],
+        [
+            "int",
+            "first_pun"
+        ],
+        [
+            "Node",
+            "vars"
+        ],
+        [
+            "Node",
+            "sec"
+        ],
+        [
+            "Node",
+            "sequence"
+        ],
+        [
+            "Node",
+            "point_2"
         ],
         [
             "Node",
@@ -2038,83 +2202,11 @@
         ],
         [
             "Node",
-            "var1"
-        ],
-        [
-            "Node",
-            "y"
-        ],
-        [
-            "Node",
-            "f2"
-        ],
-        [
-            "int",
-            "inf_count"
-        ],
-        [
-            "Lexer",
-            "T"
-        ],
-        [
-            "Node",
-            "valor2"
-        ],
-        [
-            "Node",
-            "action"
-        ],
-        [
-            "Node",
-            "f"
-        ],
-        [
-            "Node",
-            "operations_if"
-        ],
-        [
-            "string",
-            "op"
-        ],
-        [
-            "Node",
-            "name"
-        ],
-        [
-            "dynamic",
-            "value"
-        ],
-        [
-            "Node",
-            "expression"
-        ],
-        [
-            "Node",
-            "children"
-        ],
-        [
-            "List",
-            "Children"
-        ],
-        [
-            "Node",
-            "sequence"
-        ],
-        [
-            "Node",
             "operation"
         ],
         [
-            "Parser",
-            "P"
-        ],
-        [
             "Node",
-            "point_2"
-        ],
-        [
-            "int",
-            "first_pun"
+            "save_variable"
         ],
         [
             "Node",
@@ -2122,107 +2214,11 @@
         ],
         [
             "Node",
-            "condition"
-        ],
-        [
-            "List",
-            "new_TS"
-        ],
-        [
-            "int",
-            "safe1"
-        ],
-        [
-            "Node",
-            "param"
-        ],
-        [
-            "Node",
-            "measure"
-        ],
-        [
-            "Node",
-            "vars"
-        ],
-        [
-            "Node",
-            "x"
-        ],
-        [
-            "Node",
-            "str"
-        ],
-        [
-            "string",
-            "a"
-        ],
-        [
-            "Node",
-            "right"
-        ],
-        [
-            "Import",
-            "imported"
-        ],
-        [
-            "Token",
-            "current_token"
-        ],
-        [
-            "Node",
-            "conditional_if_else"
-        ],
-        [
-            "Node",
-            "save_variable"
-        ],
-        [
-            "string",
-            "code"
-        ],
-        [
-            "string",
-            "dir"
-        ],
-        [
-            "Node",
-            "n"
-        ],
-        [
-            "dynamic",
-            "values"
-        ],
-        [
-            "Node",
-            "variable"
-        ],
-        [
-            "Node",
-            "operations"
-        ],
-        [
-            "Node",
-            "point_1"
-        ],
-        [
-            "int",
-            "safe2"
-        ],
-        [
-            "Node",
-            "assigments"
-        ],
-        [
-            "Node",
-            "sec"
+            "var"
         ],
         [
             "Point",
             "P2"
-        ],
-        [
-            "double",
-            "yDiff"
         ],
         [
             "double",
@@ -2231,6 +2227,10 @@
         [
             "Measure",
             "measure"
+        ],
+        [
+            "double",
+            "yDiff"
         ],
         [
             "System",
@@ -2242,7 +2242,55 @@
         ],
         [
             "double",
+            "angle2"
+        ],
+        [
+            "double",
+            "dy"
+        ],
+        [
+            "double",
+            "t"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
             "angle1"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "radius"
+        ],
+        [
+            "double",
+            "dx"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "PointSequence",
+            "ret"
+        ],
+        [
+            "double",
+            "distance"
+        ],
+        [
+            "double",
+            "angulo"
         ],
         [
             "List",
@@ -2254,63 +2302,95 @@
         ],
         [
             "var",
+            "w"
+        ],
+        [
+            "var",
+            "m"
+        ],
+        [
+            "double",
+            "A"
+        ],
+        [
+            "double",
+            "m"
+        ],
+        [
+            "var",
             "radius"
         ],
         [
-            "double",
-            "x"
+            "var",
+            "x_max_2"
         ],
         [
-            "int",
-            "i"
+            "var",
+            "y_min_2"
+        ],
+        [
+            "var",
+            "h"
+        ],
+        [
+            "var",
+            "x_min_2"
+        ],
+        [
+            "var",
+            "radius_1"
+        ],
+        [
+            "var",
+            "y_max_1"
+        ],
+        [
+            "var",
+            "s_m"
+        ],
+        [
+            "var",
+            "l2_n"
+        ],
+        [
+            "var",
+            "X"
+        ],
+        [
+            "var",
+            "y_min_1"
+        ],
+        [
+            "var",
+            "r_m"
+        ],
+        [
+            "var",
+            "Y"
+        ],
+        [
+            "var",
+            "y_min"
         ],
         [
             "double",
-            "angle"
+            "X"
         ],
         [
-            "double",
-            "dy"
-        ],
-        [
-            "double",
-            "dx"
-        ],
-        [
-            "double",
+            "var",
             "distance"
         ],
         [
             "double",
-            "angulo"
-        ],
-        [
-            "double",
-            "angle2"
-        ],
-        [
-            "PointSequence",
-            "ret"
-        ],
-        [
-            "var",
-            "random"
-        ],
-        [
-            "double",
-            "t"
-        ],
-        [
-            "var",
-            "Y"
-        ],
-        [
-            "double",
             "Y"
         ],
         [
             "var",
-            "w"
+            "y_max"
+        ],
+        [
+            "double",
+            "distance"
         ],
         [
             "List",
@@ -2318,11 +2398,95 @@
         ],
         [
             "var",
-            "xr"
+            "s1_m"
         ],
         [
             "var",
-            "radius"
+            "x_min"
+        ],
+        [
+            "double",
+            "Discriminante"
+        ],
+        [
+            "var",
+            "s1_n"
+        ],
+        [
+            "var",
+            "n"
+        ],
+        [
+            "var",
+            "l1_n"
+        ],
+        [
+            "double",
+            "C"
+        ],
+        [
+            "var",
+            "l1_m"
+        ],
+        [
+            "bool",
+            "acot_y"
+        ],
+        [
+            "double",
+            "n"
+        ],
+        [
+            "var",
+            "xr"
+        ],
+        [
+            "bool",
+            "acot_x"
+        ],
+        [
+            "var",
+            "yr"
+        ],
+        [
+            "var",
+            "y_max_2"
+        ],
+        [
+            "var",
+            "s_n"
+        ],
+        [
+            "var",
+            "l2_m"
+        ],
+        [
+            "var",
+            "a"
+        ],
+        [
+            "var",
+            "r_n"
+        ],
+        [
+            "var",
+            "s2_n"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "var",
+            "l_m"
+        ],
+        [
+            "var",
+            "l_n"
+        ],
+        [
+            "var",
+            "result"
         ],
         [
             "var",
@@ -2334,123 +2498,11 @@
         ],
         [
             "var",
-            "l1_m"
+            "x_min_1"
         ],
         [
             "var",
-            "m"
-        ],
-        [
-            "var",
-            "l2_n"
-        ],
-        [
-            "double",
-            "m"
-        ],
-        [
-            "var",
-            "s2_n"
-        ],
-        [
-            "var",
-            "x"
-        ],
-        [
-            "bool",
-            "acot_y"
-        ],
-        [
-            "var",
-            "a"
-        ],
-        [
-            "var",
-            "result"
-        ],
-        [
-            "var",
-            "h"
-        ],
-        [
-            "var",
-            "y_min_2"
-        ],
-        [
-            "var",
-            "y_max"
-        ],
-        [
-            "var",
-            "yr"
-        ],
-        [
-            "double",
-            "A"
-        ],
-        [
-            "var",
-            "n"
-        ],
-        [
-            "double",
-            "n"
-        ],
-        [
-            "var",
-            "X"
-        ],
-        [
-            "double",
-            "X"
-        ],
-        [
-            "var",
-            "y_max_2"
-        ],
-        [
-            "var",
-            "radius_1"
-        ],
-        [
-            "var",
-            "s2_m"
-        ],
-        [
-            "var",
-            "s1_n"
-        ],
-        [
-            "var",
-            "s1_m"
-        ],
-        [
-            "double",
-            "B"
-        ],
-        [
-            "double",
-            "distance"
-        ],
-        [
-            "var",
-            "distance"
-        ],
-        [
-            "var",
-            "l_m"
-        ],
-        [
-            "double",
-            "Discriminante"
-        ],
-        [
-            "var",
-            "x_max_2"
-        ],
-        [
-            "var",
-            "x_min_2"
+            "v"
         ],
         [
             "var",
@@ -2458,79 +2510,35 @@
         ],
         [
             "var",
-            "y_min"
-        ],
-        [
-            "var",
-            "v"
-        ],
-        [
-            "bool",
-            "acot_x"
-        ],
-        [
-            "var",
-            "y_max_1"
-        ],
-        [
-            "var",
-            "x_min_1"
-        ],
-        [
-            "var",
-            "r_m"
-        ],
-        [
-            "var",
-            "y_min_1"
+            "s2_m"
         ],
         [
             "double",
-            "C"
-        ],
-        [
-            "var",
-            "l1_n"
-        ],
-        [
-            "var",
-            "l_n"
-        ],
-        [
-            "var",
-            "s_n"
-        ],
-        [
-            "var",
-            "r_n"
-        ],
-        [
-            "var",
-            "s_m"
-        ],
-        [
-            "var",
-            "l2_m"
+            "B"
         ],
         [
             "var",
             "radius_2"
         ],
         [
-            "var",
-            "x_min"
-        ],
-        [
             "LineSequence",
             "s"
         ],
         [
-            "int",
-            "k"
+            "string",
+            "name"
         ],
         [
-            "int",
-            "i"
+            "var",
+            "golbal_sequence"
+        ],
+        [
+            "var",
+            "sequence"
+        ],
+        [
+            "var",
+            "l"
         ],
         [
             "int",
@@ -2541,36 +2549,28 @@
             "var_fam"
         ],
         [
-            "dynamic",
-            "var_value"
-        ],
-        [
-            "var",
-            "golbal_sequence"
-        ],
-        [
-            "var",
-            "l"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
             "int",
-            "index"
-        ],
-        [
-            "var",
-            "sequence"
+            "i"
         ],
         [
             "int",
             "j"
         ],
         [
+            "int",
+            "k"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
             "List",
             "concat_values"
+        ],
+        [
+            "dynamic",
+            "var_value"
         ],
         [
             "LineSequence",
@@ -2578,31 +2578,67 @@
         ],
         [
             "PointSequence",
-            "concat_sequence"
+            "s"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "var",
+            "golbal_sequence"
+        ],
+        [
+            "var",
+            "sequence"
+        ],
+        [
+            "var",
+            "l"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "Node",
+            "var_fam"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "int",
             "k"
+        ],
+        [
+            "int",
+            "index"
         ],
         [
             "PointSequence",
-            "s"
+            "concat_sequence"
         ],
         [
-            "int",
-            "i"
+            "List",
+            "concat_values"
+        ],
+        [
+            "dynamic",
+            "var_value"
         ],
         [
             "int",
             "count"
         ],
         [
-            "Node",
-            "var_fam"
-        ],
-        [
-            "dynamic",
-            "var_value"
+            "string",
+            "name"
         ],
         [
             "var",
@@ -2610,39 +2646,11 @@
         ],
         [
             "var",
-            "l"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "var",
             "sequence"
         ],
         [
-            "int",
-            "j"
-        ],
-        [
-            "List",
-            "concat_values"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "StringSequence",
-            "s"
+            "var",
+            "l"
         ],
         [
             "StringSequence",
@@ -2650,10 +2658,6 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "count"
         ],
         [
@@ -2661,39 +2665,15 @@
             "var_fam"
         ],
         [
-            "dynamic",
-            "var_value"
-        ],
-        [
-            "var",
-            "golbal_sequence"
-        ],
-        [
-            "var",
-            "l"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
             "int",
-            "index"
-        ],
-        [
-            "var",
-            "sequence"
+            "i"
         ],
         [
             "int",
             "j"
         ],
         [
-            "List",
-            "concat_values"
-        ],
-        [
-            "CircleSequence",
+            "StringSequence",
             "s"
         ],
         [
@@ -2702,19 +2682,19 @@
         ],
         [
             "int",
-            "i"
+            "index"
         ],
         [
-            "int",
-            "count"
-        ],
-        [
-            "Node",
-            "var_fam"
+            "List",
+            "concat_values"
         ],
         [
             "dynamic",
             "var_value"
+        ],
+        [
+            "string",
+            "name"
         ],
         [
             "var",
@@ -2722,27 +2702,19 @@
         ],
         [
             "var",
-            "l"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "int",
-            "index"
-        ],
-        [
-            "var",
             "sequence"
         ],
         [
-            "int",
-            "j"
+            "var",
+            "l"
         ],
         [
-            "List",
-            "concat_values"
+            "int",
+            "count"
+        ],
+        [
+            "CircleSequence",
+            "s"
         ],
         [
             "CircleSequence",
@@ -2750,23 +2722,35 @@
         ],
         [
             "int",
-            "k"
-        ],
-        [
-            "int",
             "i"
-        ],
-        [
-            "int",
-            "count"
         ],
         [
             "Node",
             "var_fam"
         ],
         [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "List",
+            "concat_values"
+        ],
+        [
             "dynamic",
             "var_value"
+        ],
+        [
+            "string",
+            "name"
         ],
         [
             "var",
@@ -2774,11 +2758,35 @@
         ],
         [
             "var",
+            "sequence"
+        ],
+        [
+            "var",
             "l"
         ],
         [
-            "string",
-            "name"
+            "int",
+            "count"
+        ],
+        [
+            "RaySequence",
+            "concat_sequence"
+        ],
+        [
+            "Node",
+            "var_fam"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "k"
         ],
         [
             "int",
@@ -2789,112 +2797,88 @@
             "s"
         ],
         [
-            "var",
-            "sequence"
-        ],
-        [
-            "RaySequence",
-            "concat_sequence"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
             "List",
             "concat_values"
         ],
         [
-            "IntSequence",
-            "concat_sequence"
+            "dynamic",
+            "var_value"
         ],
         [
-            "int",
-            "k"
+            "string",
+            "name"
         ],
         [
-            "IntSequence",
-            "s"
+            "var",
+            "golbal_sequence"
+        ],
+        [
+            "var",
+            "sequence"
+        ],
+        [
+            "var",
+            "l"
         ],
         [
             "var",
             "s"
         ],
         [
-            "int",
-            "i"
+            "IntSequence",
+            "concat_sequence"
         ],
         [
             "int",
             "count"
         ],
         [
+            "Node",
+            "var_fam"
+        ],
+        [
             "int",
-            "index"
+            "i"
         ],
         [
             "double",
             "i"
         ],
         [
-            "Node",
-            "var_fam"
-        ],
-        [
-            "var",
-            "l"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "dynamic",
-            "var_value"
-        ],
-        [
-            "var",
-            "golbal_sequence"
-        ],
-        [
-            "var",
-            "sequence"
-        ],
-        [
             "int",
             "j"
         ],
         [
-            "List",
-            "concat_values"
+            "IntSequence",
+            "s"
         ],
         [
             "int",
             "k"
         ],
         [
-            "var",
-            "sequence"
-        ],
-        [
             "int",
-            "i"
+            "index"
         ],
         [
-            "int",
-            "count"
-        ],
-        [
-            "Node",
-            "var_fam"
+            "List",
+            "concat_values"
         ],
         [
             "dynamic",
             "var_value"
         ],
         [
+            "string",
+            "name"
+        ],
+        [
             "var",
             "golbal_sequence"
+        ],
+        [
+            "var",
+            "sequence"
         ],
         [
             "var",
@@ -2905,8 +2889,20 @@
             "concat_sequence"
         ],
         [
-            "string",
-            "name"
+            "int",
+            "count"
+        ],
+        [
+            "Node",
+            "var_fam"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "ArcSequence",
@@ -2914,59 +2910,35 @@
         ],
         [
             "int",
-            "index"
+            "k"
         ],
         [
             "int",
-            "j"
+            "index"
         ],
         [
             "List",
             "concat_values"
         ],
         [
-            "SegmentSequence",
-            "s"
-        ],
-        [
-            "SegmentSequence",
-            "concat_sequence"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "Node",
-            "var_fam"
-        ],
-        [
             "dynamic",
             "var_value"
-        ],
-        [
-            "var",
-            "golbal_sequence"
-        ],
-        [
-            "var",
-            "l"
         ],
         [
             "string",
             "name"
         ],
         [
-            "int",
-            "index"
+            "var",
+            "golbal_sequence"
+        ],
+        [
+            "SegmentSequence",
+            "s"
+        ],
+        [
+            "var",
+            "l"
         ],
         [
             "var",
@@ -2974,19 +2946,15 @@
         ],
         [
             "int",
-            "j"
+            "count"
         ],
         [
-            "List",
-            "concat_values"
+            "SegmentSequence",
+            "concat_sequence"
         ],
         [
-            "FloatSequence",
-            "s"
-        ],
-        [
-            "int",
-            "k"
+            "Node",
+            "var_fam"
         ],
         [
             "int",
@@ -2994,15 +2962,27 @@
         ],
         [
             "int",
-            "count"
+            "j"
         ],
         [
-            "Node",
-            "var_fam"
+            "int",
+            "k"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "List",
+            "concat_values"
         ],
         [
             "dynamic",
             "var_value"
+        ],
+        [
+            "string",
+            "name"
         ],
         [
             "var",
@@ -3010,108 +2990,128 @@
         ],
         [
             "var",
-            "l"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "int",
-            "index"
+            "sequence"
         ],
         [
             "var",
-            "sequence"
+            "l"
+        ],
+        [
+            "int",
+            "count"
         ],
         [
             "FloatSequence",
             "concat_sequence"
         ],
         [
+            "Node",
+            "var_fam"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
             "int",
             "j"
         ],
         [
+            "int",
+            "k"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "FloatSequence",
+            "s"
+        ],
+        [
             "List",
             "concat_values"
+        ],
+        [
+            "dynamic",
+            "var_value"
         ]
     ],
     "method_names": [
-        "Paint",
+        "Limit_X",
         "RectIntersection",
-        "_Draw",
+        "Traslation",
+        "Find_Tras_Vector",
         "Changed",
+        "RayBorder",
+        "Paint",
+        "_Draw",
+        "_Process",
         "Is_Out_Of_Range",
+        "_Ready",
         "Operation_T",
         "Limit_Y",
-        "RayBorder",
-        "_Ready",
-        "Traslation",
-        "Limit_X",
-        "Find_Tras_Vector",
         "_Process",
         "_Ready",
         "Confirm_Button_Pressed",
         "Export_Button_Pressed",
-        "_Process",
-        "Function_Exist",
-        "Choice",
-        "Evaluate_Sequence_As_Boolean",
-        "IsSequence",
-        "Get_Var_Param",
-        "TryConvert",
-        "Evaluate",
-        "Expected",
-        "IsKind_Seq",
-        "Call_Function",
-        "IsInt",
-        "Draw_Sequence",
-        "Save_Value_Of_Sequence",
-        "Identify",
-        "Input_Error",
         "Sub_Save_Sequence_Value",
         "Read_Parser",
+        "TryConvert",
+        "Draw_Sequence",
+        "Function_Exist",
+        "IsInt",
+        "Get_Var_Param",
+        "Expected",
+        "Evaluate_Sequence_As_Boolean",
         "Type_Expected",
         "Save_Global_Var",
+        "Evaluate",
+        "IsKind_Seq",
+        "Call_Function",
+        "IsSequence",
         "Save_Var",
+        "Save_Value_Of_Sequence",
+        "Identify",
+        "Choice",
+        "Input_Error",
         "Move_on",
-        "Skip_Space",
-        "Read",
-        "Own_Words",
-        "String_Analyzer",
-        "Get_Sequency",
         "Int_Analyzer",
         "Get_token",
+        "Skip_Space",
+        "Input_Error",
         "Infinite_Analyzer",
-        "Input_Error",
-        "Intersect",
-        "Function",
-        "Layer_3",
-        "Layer_5",
-        "Randoms",
-        "Parse",
-        "Import_Code",
-        "Count",
-        "Layer_4",
-        "Layer_6",
-        "Samples",
-        "Drawable",
-        "Points",
-        "Exceptions_Missing",
-        "Layer_2",
-        "Input_Error",
+        "Get_Sequency",
+        "String_Analyzer",
+        "Own_Words",
+        "Read",
         "Layer_1",
-        "Measure",
+        "Import_Code",
+        "Parse",
         "Assigment",
-        "Conditional",
-        "Layer_0",
+        "Layer_6",
         "Factor",
+        "Measure",
+        "Exceptions_Missing",
+        "Function",
+        "Drawable",
+        "Count",
+        "Layer_0",
         "Global_Layer",
+        "Layer_4",
+        "Layer_3",
+        "Intersect",
+        "Points",
+        "Conditional",
+        "Layer_2",
+        "Layer_5",
+        "Input_Error",
+        "Randoms",
+        "Samples",
         "Export",
         "Export",
-        "CompareTo",
         "Execute",
+        "CompareTo",
         "Export",
         "Export",
         "Export",
@@ -3119,12 +3119,13 @@
         "Export",
         "Code",
         "Points",
-        "Intersect",
-        "Point_Line",
         "Point_Circle",
-        "Distancia_Punto_Recta",
-        "Is_Acot",
         "Ray_Acot",
+        "Point_Line",
+        "Distancia_Punto_Recta",
+        "Intersect",
+        "Is_Acot",
+        "Return_Global_Var",
         "Concat",
         "Return_Global_Var",
         "Concat",
@@ -3142,53 +3143,16 @@
         "Return_Global_Var",
         "Concat",
         "Return_Global_Var",
-        "Concat",
-        "Return_Global_Var"
+        "Concat"
     ],
     "method_return_types": [
         [
-            "RayBorder",
+            "Operation_T",
             "Vector2"
-        ],
-        [
-            "Limit_Y",
-            "int"
-        ],
-        [
-            "Traslation",
-            "Vector2"
-        ],
-        [
-            "Changed",
-            "void"
-        ],
-        [
-            "_Draw",
-            "void"
         ],
         [
             "Paint",
             "Color"
-        ],
-        [
-            "_Ready",
-            "void"
-        ],
-        [
-            "RectIntersection",
-            "List"
-        ],
-        [
-            "Find_Tras_Vector",
-            "Vector2"
-        ],
-        [
-            "Is_Out_Of_Range",
-            "bool"
-        ],
-        [
-            "Operation_T",
-            "Vector2"
         ],
         [
             "Limit_X",
@@ -3199,7 +3163,43 @@
             "void"
         ],
         [
-            "Export_Button_Pressed",
+            "_Draw",
+            "void"
+        ],
+        [
+            "Limit_Y",
+            "int"
+        ],
+        [
+            "Is_Out_Of_Range",
+            "bool"
+        ],
+        [
+            "Find_Tras_Vector",
+            "Vector2"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "RectIntersection",
+            "List"
+        ],
+        [
+            "RayBorder",
+            "Vector2"
+        ],
+        [
+            "Changed",
+            "void"
+        ],
+        [
+            "Traslation",
+            "Vector2"
+        ],
+        [
+            "_Process",
             "void"
         ],
         [
@@ -3207,19 +3207,47 @@
             "void"
         ],
         [
-            "_Process",
+            "Confirm_Button_Pressed",
             "void"
         ],
         [
-            "Confirm_Button_Pressed",
+            "Export_Button_Pressed",
             "void"
+        ],
+        [
+            "Save_Value_Of_Sequence",
+            "void"
+        ],
+        [
+            "Sub_Save_Sequence_Value",
+            "void"
+        ],
+        [
+            "Evaluate",
+            "object"
+        ],
+        [
+            "Evaluate_Sequence_As_Boolean",
+            "object"
+        ],
+        [
+            "Choice",
+            "List"
+        ],
+        [
+            "Type_Expected",
+            "void"
+        ],
+        [
+            "IsInt",
+            "bool"
         ],
         [
             "IsKind_Seq",
             "int"
         ],
         [
-            "Input_Error",
+            "TryConvert",
             "void"
         ],
         [
@@ -3227,23 +3255,11 @@
             "bool"
         ],
         [
-            "Save_Global_Var",
-            "void"
-        ],
-        [
             "Get_Var_Param",
             "Dictionary"
         ],
         [
-            "TryConvert",
-            "void"
-        ],
-        [
-            "IsSequence",
-            "("
-        ],
-        [
-            "Save_Value_Of_Sequence",
+            "Read_Parser",
             "void"
         ],
         [
@@ -3251,27 +3267,7 @@
             "string"
         ],
         [
-            "Call_Function",
-            "int"
-        ],
-        [
-            "Choice",
-            "List"
-        ],
-        [
-            "Evaluate",
-            "object"
-        ],
-        [
-            "IsInt",
-            "bool"
-        ],
-        [
-            "Sub_Save_Sequence_Value",
-            "void"
-        ],
-        [
-            "Draw_Sequence",
+            "Save_Global_Var",
             "void"
         ],
         [
@@ -3279,36 +3275,56 @@
             "void"
         ],
         [
-            "Type_Expected",
+            "Call_Function",
+            "int"
+        ],
+        [
+            "Input_Error",
             "void"
+        ],
+        [
+            "IsSequence",
+            "("
         ],
         [
             "Expected",
             "void"
         ],
         [
-            "Evaluate_Sequence_As_Boolean",
-            "object"
-        ],
-        [
-            "Read_Parser",
+            "Draw_Sequence",
             "void"
-        ],
-        [
-            "Infinite_Analyzer",
-            "string"
-        ],
-        [
-            "Get_token",
-            "Token"
         ],
         [
             "Move_on",
             "void"
         ],
         [
+            "Own_Words",
+            "Token"
+        ],
+        [
+            "Input_Error",
+            "void"
+        ],
+        [
+            "String_Analyzer",
+            "string"
+        ],
+        [
             "Read",
             "("
+        ],
+        [
+            "Infinite_Analyzer",
+            "string"
+        ],
+        [
+            "Int_Analyzer",
+            "double"
+        ],
+        [
+            "Get_token",
+            "Token"
         ],
         [
             "Skip_Space",
@@ -3319,23 +3335,19 @@
             "List"
         ],
         [
-            "Input_Error",
-            "void"
-        ],
-        [
-            "Int_Analyzer",
-            "double"
-        ],
-        [
-            "Own_Words",
-            "Token"
-        ],
-        [
-            "String_Analyzer",
-            "string"
+            "Assigment",
+            "Node"
         ],
         [
             "Global_Layer",
+            "Node"
+        ],
+        [
+            "Parse",
+            "Node"
+        ],
+        [
+            "Function",
             "Node"
         ],
         [
@@ -3343,11 +3355,39 @@
             "void"
         ],
         [
+            "Samples",
+            "Node"
+        ],
+        [
             "Randoms",
             "Node"
         ],
         [
+            "Layer_6",
+            "Node"
+        ],
+        [
             "Count",
+            "Node"
+        ],
+        [
+            "Layer_4",
+            "Node"
+        ],
+        [
+            "Intersect",
+            "Node"
+        ],
+        [
+            "Import_Code",
+            "Node"
+        ],
+        [
+            "Layer_1",
+            "Node"
+        ],
+        [
+            "Points",
             "Node"
         ],
         [
@@ -3359,31 +3399,7 @@
             "void"
         ],
         [
-            "Layer_5",
-            "Node"
-        ],
-        [
-            "Intersect",
-            "Node"
-        ],
-        [
             "Measure",
-            "Node"
-        ],
-        [
-            "Points",
-            "Node"
-        ],
-        [
-            "Factor",
-            "Node"
-        ],
-        [
-            "Conditional",
-            "Node"
-        ],
-        [
-            "Function",
             "Node"
         ],
         [
@@ -3391,7 +3407,19 @@
             "Node"
         ],
         [
-            "Import_Code",
+            "Layer_3",
+            "Node"
+        ],
+        [
+            "Layer_5",
+            "Node"
+        ],
+        [
+            "Conditional",
+            "Node"
+        ],
+        [
+            "Factor",
             "Node"
         ],
         [
@@ -3399,48 +3427,20 @@
             "Node"
         ],
         [
-            "Samples",
-            "Node"
-        ],
-        [
-            "Assigment",
-            "Node"
-        ],
-        [
-            "Layer_6",
-            "Node"
-        ],
-        [
-            "Parse",
-            "Node"
-        ],
-        [
-            "Layer_4",
-            "Node"
-        ],
-        [
-            "Layer_1",
-            "Node"
-        ],
-        [
-            "Layer_3",
-            "Node"
-        ],
-        [
             "Export",
             "DrawableProperties"
         ],
         [
             "Export",
             "DrawableProperties"
-        ],
-        [
-            "CompareTo",
-            "int"
         ],
         [
             "Execute",
             "double"
+        ],
+        [
+            "CompareTo",
+            "int"
         ],
         [
             "Export",
@@ -3471,23 +3471,7 @@
             "PointSequence"
         ],
         [
-            "Point_Line",
-            "bool"
-        ],
-        [
             "Point_Circle",
-            "bool"
-        ],
-        [
-            "Ray_Acot",
-            "bool"
-        ],
-        [
-            "Distancia_Punto_Recta",
-            "double"
-        ],
-        [
-            "Is_Acot",
             "bool"
         ],
         [
@@ -3495,8 +3479,20 @@
             "PointSequence"
         ],
         [
-            "Concat",
-            "LineSequence"
+            "Point_Line",
+            "bool"
+        ],
+        [
+            "Ray_Acot",
+            "bool"
+        ],
+        [
+            "Is_Acot",
+            "bool"
+        ],
+        [
+            "Distancia_Punto_Recta",
+            "double"
         ],
         [
             "Return_Global_Var",
@@ -3504,7 +3500,15 @@
         ],
         [
             "Concat",
+            "LineSequence"
+        ],
+        [
+            "Concat",
             "PointSequence"
+        ],
+        [
+            "Return_Global_Var",
+            "Node"
         ],
         [
             "Return_Global_Var",
@@ -3515,12 +3519,12 @@
             "StringSequence"
         ],
         [
-            "Return_Global_Var",
-            "Node"
-        ],
-        [
             "Concat",
             "CircleSequence"
+        ],
+        [
+            "Return_Global_Var",
+            "Node"
         ],
         [
             "Return_Global_Var",
@@ -3539,12 +3543,12 @@
             "void"
         ],
         [
-            "Return_Global_Var",
-            "Node"
-        ],
-        [
             "Concat",
             "IntSequence"
+        ],
+        [
+            "Return_Global_Var",
+            "Node"
         ],
         [
             "Concat",
@@ -3557,10 +3561,6 @@
         [
             "Concat",
             "SegmentSequence"
-        ],
-        [
-            "Return_Global_Var",
-            "Node"
         ],
         [
             "Return_Global_Var",
@@ -3709,7 +3709,7 @@
         "Specific_catch_clauseContext": 1,
         "Namespace_declarationContext": 27,
         "Qualified_identifierContext": 27,
-        "Namespace_bodyContext": 27,
+        "Namespace_bodyContext": 19,
         "Constructor_declarationContext": 56,
         "BodyContext": 64,
         "Object_or_collection_initializerContext": 213,

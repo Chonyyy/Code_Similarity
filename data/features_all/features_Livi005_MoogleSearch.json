@@ -1,5 +1,5 @@
 {
-    "total_nodes": 22586,
+    "total_nodes": 22583,
     "max_depth": 780,
     "number_of_variables": 109,
     "number_of_constants": 0,
@@ -396,12 +396,20 @@
             "lista"
         ],
         [
+            "int",
+            "posicion"
+        ],
+        [
+            "string",
+            "textos"
+        ],
+        [
             "List",
             "result"
         ],
         [
-            "string",
-            "directorio"
+            "List",
+            "textos"
         ],
         [
             "string",
@@ -409,23 +417,11 @@
         ],
         [
             "int",
-            "val"
-        ],
-        [
-            "int",
             "i"
         ],
         [
             "int",
-            "j"
-        ],
-        [
-            "List",
-            "txt"
-        ],
-        [
-            "int",
-            "posicion"
+            "val"
         ],
         [
             "StreamReader",
@@ -433,55 +429,31 @@
         ],
         [
             "string",
-            "recorte"
+            "textoSeparadoNOnormalizado"
         ],
         [
             "string",
             "titulos"
         ],
         [
-            "string",
-            "textoSeparadoNOnormalizado"
-        ],
-        [
-            "string",
-            "textos"
-        ],
-        [
-            "List",
-            "textos"
-        ],
-        [
-            "string",
-            "palabra"
-        ],
-        [
-            "int",
-            "contador"
-        ],
-        [
-            "List",
-            "aster"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "Repeticion"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
             "int",
             "j"
         ],
         [
+            "string",
+            "recorte"
+        ],
+        [
             "List",
-            "pico"
+            "txt"
+        ],
+        [
+            "string",
+            "directorio"
+        ],
+        [
+            "int",
+            "k"
         ],
         [
             "bool",
@@ -489,7 +461,31 @@
         ],
         [
             "List",
+            "aster"
+        ],
+        [
+            "List",
             "exc"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "ene"
+        ],
+        [
+            "List",
+            "pico"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "contador"
         ],
         [
             "string",
@@ -497,55 +493,11 @@
         ],
         [
             "List",
-            "ene"
+            "Repeticion"
         ],
         [
-            "SearchItem",
-            "busqueda"
-        ],
-        [
-            "(",
-            "txt"
-        ],
-        [
-            "List",
-            "txt1"
-        ],
-        [
-            "List",
-            "quary"
-        ],
-        [
-            "List",
-            "semejantes"
-        ],
-        [
-            "List",
-            "aster"
-        ],
-        [
-            "float",
-            "f"
-        ],
-        [
-            "List",
-            "quary1"
-        ],
-        [
-            "List",
-            "resultado"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "float",
-            "idf"
-        ],
-        [
-            "List",
-            "pico"
+            "string",
+            "palabra"
         ],
         [
             "bool",
@@ -553,11 +505,47 @@
         ],
         [
             "List",
-            "ene"
+            "txt2"
+        ],
+        [
+            "List",
+            "aster"
         ],
         [
             "string",
             "suggestion"
+        ],
+        [
+            "List",
+            "semejantes"
+        ],
+        [
+            "List",
+            "ene"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "SearchItem",
+            "busqueda"
+        ],
+        [
+            "float",
+            "idf"
+        ],
+        [
+            "List",
+            "quary"
+        ],
+        [
+            "List",
+            "pico"
+        ],
+        [
+            "(",
+            "txt"
         ],
         [
             "SearchItem",
@@ -569,59 +557,23 @@
         ],
         [
             "List",
-            "txt2"
-        ],
-        [
-            "int",
-            "frecuencia_idf"
-        ],
-        [
-            "int",
-            "frecuencia_tf"
-        ],
-        [
-            "int",
-            "suma_ene"
-        ],
-        [
-            "string",
-            "txt"
-        ],
-        [
-            "string",
-            "tit"
+            "resultado"
         ],
         [
             "float",
-            "valor"
+            "f"
         ],
         [
-            "int",
-            "i"
+            "List",
+            "quary1"
+        ],
+        [
+            "List",
+            "txt1"
         ],
         [
             "int",
             "k"
-        ],
-        [
-            "float",
-            "IDF"
-        ],
-        [
-            "float",
-            "Tf"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "float",
-            "Tf_IDF"
-        ],
-        [
-            "float",
-            "temp"
         ],
         [
             "string",
@@ -632,20 +584,56 @@
             "menor"
         ],
         [
-            "int",
-            "numero"
+            "float",
+            "valor"
         ],
         [
             "string",
-            "pibote"
+            "tit"
         ],
         [
             "int",
             "i"
         ],
         [
+            "float",
+            "temp"
+        ],
+        [
+            "float",
+            "Tf"
+        ],
+        [
+            "float",
+            "IDF"
+        ],
+        [
+            "int",
+            "suma_ene"
+        ],
+        [
+            "string",
+            "txt"
+        ],
+        [
+            "int",
+            "frecuencia_idf"
+        ],
+        [
             "int",
             "j"
+        ],
+        [
+            "int",
+            "frecuencia_tf"
+        ],
+        [
+            "float",
+            "Tf_IDF"
+        ],
+        [
+            "string",
+            "pibote"
         ],
         [
             "string",
@@ -656,40 +644,8 @@
             "b"
         ],
         [
-            "bool",
-            "esta"
-        ],
-        [
-            "int",
-            "menor_distancia"
-        ],
-        [
-            "string",
-            "temp"
-        ],
-        [
-            "int",
-            "distancia"
-        ],
-        [
             "int",
             "menor"
-        ],
-        [
-            "string",
-            "palabra"
-        ],
-        [
-            "int",
-            "c"
-        ],
-        [
-            "List",
-            "semejante"
-        ],
-        [
-            "int",
-            "value"
         ],
         [
             "int",
@@ -697,7 +653,31 @@
         ],
         [
             "int",
-            "cambios"
+            "distancia"
+        ],
+        [
+            "int",
+            "numero"
+        ],
+        [
+            "int",
+            "menor_distancia"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "bool",
+            "esta"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
+            "int",
+            "value"
         ],
         [
             "int",
@@ -705,39 +685,59 @@
         ],
         [
             "int",
+            "i"
+        ],
+        [
+            "int",
             "j"
+        ],
+        [
+            "int",
+            "c"
         ],
         [
             "string",
             "sugerir"
+        ],
+        [
+            "int",
+            "cambios"
+        ],
+        [
+            "List",
+            "semejante"
+        ],
+        [
+            "string",
+            "palabra"
         ]
     ],
     "method_names": [
         "Items",
-        "Procesar",
-        "Normalizar",
-        "CreateDictionary",
         "Leer",
-        "Separar",
-        "Recorte_de_textos",
+        "Normalizar",
         "Hazlo_todo",
-        "Dame_una_palabra",
-        "Operadores",
+        "Procesar",
+        "Recorte_de_textos",
+        "Separar",
+        "CreateDictionary",
         "Dame_una_palabra2",
+        "Operadores",
+        "Dame_una_palabra",
         "Repeticion_de_palabras",
-        "Resultado",
         "Query",
+        "Resultado",
         "OrdenarPalabrasQuery",
         "Resultado",
         "Ordenar",
-        "Menor_distancia",
         "Multiplicar",
+        "Menor_distancia",
         "Distancia",
         "Mascara",
-        "Levenshtein",
-        "Menor",
         "Palabras_semejantes",
-        "Sugerir"
+        "Menor",
+        "Sugerir",
+        "Levenshtein"
     ],
     "method_return_types": [
         [
@@ -745,15 +745,19 @@
             "IEnumerable"
         ],
         [
-            "Separar",
-            "string"
+            "Hazlo_todo",
+            "List"
         ],
         [
             "Leer",
             "("
         ],
         [
-            "Procesar",
+            "Separar",
+            "string"
+        ],
+        [
+            "CreateDictionary",
             "List"
         ],
         [
@@ -761,11 +765,7 @@
             "string"
         ],
         [
-            "Hazlo_todo",
-            "List"
-        ],
-        [
-            "CreateDictionary",
+            "Procesar",
             "List"
         ],
         [
@@ -773,8 +773,8 @@
             "string"
         ],
         [
-            "Operadores",
-            "("
+            "Dame_una_palabra2",
+            "string"
         ],
         [
             "Dame_una_palabra",
@@ -785,32 +785,28 @@
             "List"
         ],
         [
-            "Dame_una_palabra2",
-            "string"
-        ],
-        [
-            "Resultado",
-            "SearchItem"
+            "Operadores",
+            "("
         ],
         [
             "Query",
             "SearchResult"
         ],
         [
-            "OrdenarPalabrasQuery",
-            "void"
+            "Resultado",
+            "SearchItem"
         ],
         [
             "Resultado",
             "("
         ],
         [
-            "Ordenar",
+            "OrdenarPalabrasQuery",
             "void"
         ],
         [
-            "Mascara",
-            "bool"
+            "Ordenar",
+            "void"
         ],
         [
             "Multiplicar",
@@ -821,24 +817,28 @@
             "int"
         ],
         [
+            "Mascara",
+            "bool"
+        ],
+        [
             "Menor_distancia",
             "int"
-        ],
-        [
-            "Menor",
-            "void"
-        ],
-        [
-            "Palabras_semejantes",
-            "List"
         ],
         [
             "Sugerir",
             "string"
         ],
         [
+            "Menor",
+            "void"
+        ],
+        [
             "Levenshtein",
             "int"
+        ],
+        [
+            "Palabras_semejantes",
+            "List"
         ]
     ],
     "class_names": [
@@ -866,7 +866,6 @@
         "Namespace_member_declarationContext": 17,
         "Namespace_declarationContext": 8,
         "Qualified_identifierContext": 8,
-        "Namespace_bodyContext": 8,
         "Type_declarationContext": 9,
         "All_member_modifiersContext": 42,
         "All_member_modifierContext": 66,
@@ -944,6 +943,7 @@
         "Numeric_typeContext": 114,
         "Integral_typeContext": 81,
         "Floating_point_typeContext": 33,
+        "Namespace_bodyContext": 5,
         "DeclarationStatementContext": 75,
         "Local_variable_declarationContext": 109,
         "Local_variable_typeContext": 110,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 35186,
+    "total_nodes": 35430,
     "max_depth": 1634,
     "number_of_variables": 39,
     "number_of_constants": 0,
@@ -30,18 +30,18 @@
     "control_structures_for": 0,
     "control_structures_while": 3,
     "control_structures_dowhile": 0,
-    "access_modifiers_public": 244,
-    "access_modifiers_private": 46,
+    "access_modifiers_public": 245,
+    "access_modifiers_private": 59,
     "access_modifiers_protected": 0,
     "access_modifiers_internal": 28,
-    "access_modifiers_static": 12,
+    "access_modifiers_static": 13,
     "access_modifiers_protected_internal": 0,
     "access_modifiers_private_protected": 0,
     "modifier_readonly": 6,
     "modifier_volatile": 0,
     "modifier_virtual": 0,
     "modifier_override": 58,
-    "modifier_new": 18,
+    "modifier_new": 60,
     "modifier_partial": 0,
     "modifier_extern": 0,
     "modifier_unsafe": 0,
@@ -241,16 +241,16 @@
     ],
     "variable_names": [
         [
-            "var",
-            "expresion"
-        ],
-        [
             "List",
             "alfa"
         ],
         [
-            "var",
-            "semantic_expresion"
+            "ConsoleColor",
+            "amarillo"
+        ],
+        [
+            "Servidor",
+            "previous"
         ],
         [
             "var",
@@ -258,23 +258,11 @@
         ],
         [
             "ConsoleColor",
-            "amarillo"
-        ],
-        [
-            "ConsoleColor",
             "magenta"
-        ],
-        [
-            "ConsoleColor",
-            "rojo"
         ],
         [
             "var",
             "syntaxTree"
-        ],
-        [
-            "Servidor",
-            "previous"
         ],
         [
             "ConsoleColor",
@@ -285,48 +273,16 @@
             "variables"
         ],
         [
-            "string",
-            "name"
-        ],
-        [
-            "List",
-            "variables"
+            "var",
+            "semantic_expresion"
         ],
         [
             "var",
             "expresion"
         ],
         [
-            "var",
-            "condicion"
-        ],
-        [
-            "Semantic_Parser",
-            "semantic_object"
-        ],
-        [
-            "var",
-            "parentAmbito"
-        ],
-        [
-            "var",
-            "cuerpoElse"
-        ],
-        [
-            "Semantic_Ambito",
-            "parent"
-        ],
-        [
-            "var",
-            "cuerpoIf"
-        ],
-        [
-            "List",
-            "errores"
-        ],
-        [
-            "List",
-            "lista"
+            "ConsoleColor",
+            "rojo"
         ],
         [
             "var",
@@ -334,7 +290,55 @@
         ],
         [
             "var",
+            "variable"
+        ],
+        [
+            "List",
+            "errores"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "var",
+            "parentAmbito"
+        ],
+        [
+            "List",
+            "variables"
+        ],
+        [
+            "var",
+            "cuerpoIf"
+        ],
+        [
+            "var",
+            "cuerpoElse"
+        ],
+        [
+            "Semantic_Parser",
+            "semantic_object"
+        ],
+        [
+            "var",
+            "condicion"
+        ],
+        [
+            "List",
+            "lista"
+        ],
+        [
+            "Semantic_Ambito",
+            "parent"
+        ],
+        [
+            "var",
             "stack"
+        ],
+        [
+            "var",
+            "expresion"
         ],
         [
             "var",
@@ -342,27 +346,23 @@
         ],
         [
             "var",
-            "variable"
-        ],
-        [
-            "object",
-            "valorResultado"
-        ],
-        [
-            "IEnumerable",
-            "errores"
+            "ambitoGlobal"
         ],
         [
             "Evaluator",
             "resultado"
         ],
         [
+            "IEnumerable",
+            "errores"
+        ],
+        [
             "var",
             "semantic_Funcion"
         ],
         [
-            "var",
-            "ambitoGlobal"
+            "object",
+            "valorResultado"
         ],
         [
             "var",
@@ -377,11 +377,11 @@
         "Main",
         "ImprimeError",
         "ConectaIfDeclaracion",
-        "ConectaExpresionCondicion",
+        "ConectaAmbitoGlobal",
+        "ConectaVariableDeclaracion",
         "CreaAmbitoPadre",
         "ConectaExpresion",
-        "ConectaVariableDeclaracion",
-        "ConectaAmbitoGlobal",
+        "ConectaExpresionCondicion",
         "Try_DeclararVariable",
         "GetDeclaredVariables",
         "Try_AsignarVariable",
@@ -392,8 +392,8 @@
         "Evalua",
         "Sirve",
         "Parse",
-        "Take",
-        "NextToken"
+        "NextToken",
+        "Take"
     ],
     "method_return_types": [
         [
@@ -405,7 +405,7 @@
             "void"
         ],
         [
-            "ConectaIfDeclaracion",
+            "ConectaExpresionCondicion",
             "Semantic_Expresion"
         ],
         [
@@ -413,7 +413,7 @@
             "Semantic_Ambito"
         ],
         [
-            "ConectaExpresion",
+            "ConectaIfDeclaracion",
             "Semantic_Expresion"
         ],
         [
@@ -425,8 +425,12 @@
             "Semantic_GlobalAmbito"
         ],
         [
-            "ConectaExpresionCondicion",
+            "ConectaExpresion",
             "Semantic_Expresion"
+        ],
+        [
+            "Try_AsignarVariable",
+            "bool"
         ],
         [
             "Try_DeclararVariable",
@@ -435,10 +439,6 @@
         [
             "GetDeclaredVariables",
             "List"
-        ],
-        [
-            "Try_AsignarVariable",
-            "bool"
         ],
         [
             "Semantic_Parse_BO",
@@ -469,30 +469,30 @@
             "SyntaxTree"
         ],
         [
-            "NextToken",
-            "Token"
-        ],
-        [
             "Take",
             "char"
+        ],
+        [
+            "NextToken",
+            "Token"
         ]
     ],
     "class_names": [
         "Program",
         "Semantic_Parser",
         "Semantic_Ambito",
-        "Semantic_Declaracion",
-        "Semantic_VariableDeclaracion",
-        "Semantic_IF_Declaracion",
-        "Semantic_PrintExpresion",
-        "Semantic_DeclaracionExpresion",
         "Semantic_FuncionDeclaracion",
-        "Semantic_LogExpresion",
-        "Semantic_CosExpresion",
+        "Semantic_VariableDeclaracion",
+        "Semantic_Declaracion",
+        "Semantic_PrintExpresion",
+        "Semantic_IF_Declaracion",
+        "Semantic_DeclaracionExpresion",
         "Semantic_SqrtExpresion",
+        "Semantic_LogExpresion",
         "Semantic_SenExpresion",
-        "Semantic_BinaryOperador",
+        "Semantic_CosExpresion",
         "Semantic_BinaryExpresion",
+        "Semantic_BinaryOperador",
         "Semantic_Nodo",
         "Semantic_Expresion",
         "Semantic_UnaryExpresion",
@@ -510,9 +510,9 @@
         "FuncionSymbol",
         "VariableSymbol",
         "IFDeclaracionExpresion",
-        "ElseDeclaracion",
-        "DeclaracionExpresion",
         "DeclaracionNodo",
+        "DeclaracionExpresion",
+        "ElseDeclaracion",
         "BinaryExpresion",
         "Expresion",
         "PrintExpresion",
@@ -534,17 +534,17 @@
         "Compilation_unitContext": 34,
         "Using_directivesContext": 25,
         "UsingNamespaceDirectiveContext": 45,
-        "TerminalNodeImpl": 6693,
-        "Namespace_or_type_nameContext": 671,
-        "IdentifierContext": 2425,
+        "TerminalNodeImpl": 6760,
+        "Namespace_or_type_nameContext": 672,
+        "IdentifierContext": 2427,
         "Namespace_member_declarationsContext": 66,
-        "Namespace_member_declarationContext": 121,
+        "Namespace_member_declarationContext": 178,
         "Namespace_declarationContext": 32,
         "Qualified_identifierContext": 32,
         "Namespace_bodyContext": 32,
-        "Type_declarationContext": 89,
-        "All_member_modifiersContext": 327,
-        "All_member_modifierContext": 442,
+        "Type_declarationContext": 146,
+        "All_member_modifiersContext": 383,
+        "All_member_modifierContext": 499,
         "Class_definitionContext": 49,
         "Class_bodyContext": 49,
         "Class_member_declarationsContext": 48,
@@ -635,7 +635,11 @@
         "ReturnStatementContext": 37,
         "Cast_expressionContext": 16,
         "ParenthesisExpressionsContext": 1,
-        "ErrorNodeImpl": 2734,
+        "ErrorNodeImpl": 2668,
+        "AttributesContext": 13,
+        "Attribute_sectionContext": 14,
+        "Attribute_listContext": 9,
+        "AttributeContext": 9,
         "Accessor_declarationsContext": 98,
         "Accessor_bodyContext": 99,
         "Simple_typeContext": 16,
@@ -650,11 +654,7 @@
         "Accessor_modifierContext": 1,
         "Numeric_typeContext": 14,
         "Integral_typeContext": 14,
-        "ThrowStatementContext": 1,
-        "AttributesContext": 8,
-        "Attribute_sectionContext": 8,
-        "Attribute_listContext": 8,
-        "AttributeContext": 8
+        "ThrowStatementContext": 1
     },
     "project_name": "Pol472_HULK",
     "label": "original",

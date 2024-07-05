@@ -1,5 +1,5 @@
 {
-    "total_nodes": 8799,
+    "total_nodes": 8792,
     "max_depth": 522,
     "number_of_variables": 25,
     "number_of_constants": 0,
@@ -150,32 +150,32 @@
     ],
     "variable_names": [
         [
-            "Dictionary",
-            "queryOrdered"
+            "List",
+            "words"
         ],
         [
             "double",
             "score"
         ],
         [
-            "Vector",
-            "queryVector"
-        ],
-        [
-            "List",
-            "words"
-        ],
-        [
             "List",
             "result"
+        ],
+        [
+            "string",
+            "text"
         ],
         [
             "int",
             "maxTFIDFPos"
         ],
         [
-            "string",
-            "snippet"
+            "Vector",
+            "queryVector"
+        ],
+        [
+            "Dictionary",
+            "queryOrdered"
         ],
         [
             "int",
@@ -187,19 +187,11 @@
         ],
         [
             "string",
-            "text"
+            "snippet"
         ],
         [
             "List",
             "listWords"
-        ],
-        [
-            "string",
-            "files"
-        ],
-        [
-            "string",
-            "path"
         ],
         [
             "Vector",
@@ -210,12 +202,12 @@
             "text"
         ],
         [
-            "double",
-            "d"
+            "string",
+            "files"
         ],
         [
-            "double",
-            "idfWord"
+            "string",
+            "path"
         ],
         [
             "double",
@@ -223,7 +215,7 @@
         ],
         [
             "double",
-            "norma"
+            "idfWord"
         ],
         [
             "double",
@@ -231,36 +223,44 @@
         ],
         [
             "double",
-            "idf"
+            "norma"
+        ],
+        [
+            "double",
+            "d"
         ],
         [
             "int",
             "pointPos"
         ],
         [
+            "char",
+            "specialChars"
+        ],
+        [
             "int",
             "cont"
         ],
         [
-            "char",
-            "specialChars"
+            "double",
+            "idf"
         ]
     ],
     "method_names": [
         "Items",
-        "Search",
         "Query",
+        "Search",
         "Add",
         "GetData",
-        "GetName",
-        "CountWords",
         "NormaVector",
         "ProdEscalar",
-        "MakeList",
+        "CountWords",
+        "GetName",
         "NextDot",
         "CalculateTF",
         "CalculateIDF",
-        "PrevDot"
+        "PrevDot",
+        "MakeList"
     ],
     "method_return_types": [
         [
@@ -268,12 +268,12 @@
             "IEnumerable"
         ],
         [
-            "Search",
-            "SearchItem"
-        ],
-        [
             "Query",
             "SearchResult"
+        ],
+        [
+            "Search",
+            "SearchItem"
         ],
         [
             "Add",
@@ -284,19 +284,31 @@
             "void"
         ],
         [
-            "CountWords",
-            "void"
-        ],
-        [
             "ProdEscalar",
             "double"
+        ],
+        [
+            "NormaVector",
+            "double"
+        ],
+        [
+            "CountWords",
+            "void"
         ],
         [
             "GetName",
             "string"
         ],
         [
-            "NormaVector",
+            "MakeList",
+            "List"
+        ],
+        [
+            "PrevDot",
+            "int"
+        ],
+        [
+            "CalculateIDF",
             "double"
         ],
         [
@@ -306,18 +318,6 @@
         [
             "CalculateTF",
             "double"
-        ],
-        [
-            "CalculateIDF",
-            "double"
-        ],
-        [
-            "MakeList",
-            "List"
-        ],
-        [
-            "PrevDot",
-            "int"
         ]
     ],
     "class_names": [
@@ -343,7 +343,6 @@
         "Namespace_member_declarationContext": 14,
         "Namespace_declarationContext": 7,
         "Qualified_identifierContext": 7,
-        "Namespace_bodyContext": 7,
         "Type_declarationContext": 7,
         "All_member_modifiersContext": 38,
         "All_member_modifierContext": 51,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 15028,
+    "total_nodes": 15024,
     "max_depth": 517,
     "number_of_variables": 71,
     "number_of_constants": 0,
@@ -224,6 +224,38 @@
     ],
     "variable_names": [
         [
+            "string",
+            "terms"
+        ],
+        [
+            "var",
+            "matches"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "Dictionary",
+            "termsFreq"
+        ],
+        [
+            "double",
+            "idf"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "snipet"
+        ],
+        [
+            "double",
+            "tf"
+        ],
+        [
             "int",
             "indexTerm"
         ],
@@ -232,20 +264,148 @@
             "term"
         ],
         [
-            "int",
-            "i"
+            "double",
+            "vect"
         ],
         [
             "int",
             "count"
         ],
         [
-            "Dictionary",
-            "termsFreq"
+            "int",
+            "indexVect"
         ],
         [
             "double",
-            "vect"
+            "levenshteinDistance"
+        ],
+        [
+            "string",
+            "queryTerms"
+        ],
+        [
+            "double",
+            "leftValue"
+        ],
+        [
+            "double",
+            "cosSimilarityVector"
+        ],
+        [
+            "double",
+            "docVector"
+        ],
+        [
+            "string",
+            "terms"
+        ],
+        [
+            "double",
+            "rigthValue"
+        ],
+        [
+            "double",
+            "dotProduct"
+        ],
+        [
+            "int",
+            "costo"
+        ],
+        [
+            "int",
+            "d"
+        ],
+        [
+            "SearchItem",
+            "searchItems"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "double",
+            "best"
+        ],
+        [
+            "double",
+            "queryNorm"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "double",
+            "cosSimilarity"
+        ],
+        [
+            "List",
+            "searchItems"
+        ],
+        [
+            "Dictionary",
+            "docsFrequencyAndIndex"
+        ],
+        [
+            "double",
+            "porcentaje"
+        ],
+        [
+            "string",
+            "documentPaths"
+        ],
+        [
+            "double",
+            "docNorm"
+        ],
+        [
+            "Document",
+            "docs"
+        ],
+        [
+            "double",
+            "queryVector"
+        ],
+        [
+            "double",
+            "norm"
+        ],
+        [
+            "Query",
+            "queryDoc"
+        ],
+        [
+            "int",
+            "n"
+        ],
+        [
+            "string",
+            "suggestion"
+        ],
+        [
+            "List",
+            "suggestions"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
+            "tfIdf"
+        ],
+        [
+            "string",
+            "snipet"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
+            "var",
+            "importance"
         ],
         [
             "string",
@@ -254,158 +414,6 @@
         [
             "var",
             "matches"
-        ],
-        [
-            "double",
-            "idf"
-        ],
-        [
-            "string",
-            "snipet"
-        ],
-        [
-            "double",
-            "tf"
-        ],
-        [
-            "string",
-            "queryTerms"
-        ],
-        [
-            "double",
-            "levenshteinDistance"
-        ],
-        [
-            "double",
-            "best"
-        ],
-        [
-            "double",
-            "tfIdf"
-        ],
-        [
-            "int",
-            "indexVect"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
-            "searchItems"
-        ],
-        [
-            "string",
-            "suggestion"
-        ],
-        [
-            "Document",
-            "docs"
-        ],
-        [
-            "double",
-            "leftValue"
-        ],
-        [
-            "string",
-            "temp"
-        ],
-        [
-            "double",
-            "dotProduct"
-        ],
-        [
-            "string",
-            "documentPaths"
-        ],
-        [
-            "double",
-            "cosSimilarityVector"
-        ],
-        [
-            "double",
-            "queryVector"
-        ],
-        [
-            "int",
-            "n"
-        ],
-        [
-            "int",
-            "costo"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "double",
-            "docNorm"
-        ],
-        [
-            "double",
-            "rigthValue"
-        ],
-        [
-            "string",
-            "terms"
-        ],
-        [
-            "string",
-            "snipet"
-        ],
-        [
-            "SearchItem",
-            "searchItems"
-        ],
-        [
-            "double",
-            "queryNorm"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "double",
-            "norm"
-        ],
-        [
-            "Dictionary",
-            "docsFrequencyAndIndex"
-        ],
-        [
-            "List",
-            "suggestions"
-        ],
-        [
-            "Query",
-            "queryDoc"
-        ],
-        [
-            "double",
-            "cosSimilarity"
-        ],
-        [
-            "int",
-            "d"
-        ],
-        [
-            "double",
-            "porcentaje"
-        ],
-        [
-            "double",
-            "docVector"
-        ],
-        [
-            "int",
-            "m"
-        ],
-        [
-            "var",
-            "eliminate"
         ],
         [
             "string",
@@ -416,62 +424,54 @@
             "count"
         ],
         [
-            "Dictionary",
-            "termsFreq"
-        ],
-        [
-            "double",
-            "vect"
-        ],
-        [
             "var",
             "need"
-        ],
-        [
-            "string",
-            "terms"
-        ],
-        [
-            "var",
-            "matches"
         ],
         [
             "double",
             "idf"
         ],
         [
+            "var",
+            "eliminate"
+        ],
+        [
             "double",
             "tf"
         ],
         [
-            "var",
-            "importance"
+            "Dictionary",
+            "termsFreq"
+        ],
+        [
+            "double",
+            "vect"
         ]
     ],
     "method_names": [
         "Items",
         "Initialize",
         "Query",
-        "GetVector",
         "GetTerms",
         "GetTermsFrequency",
         "GetSnipet",
-        "SortQueryTerms",
-        "GetDocsFrecuencyAndIndex",
-        "GetSearchItems",
-        "GetSuggestion",
+        "GetVector",
         "LevenshteinDistance",
         "GetSuggestions",
-        "GetCosSimilarity",
-        "GetNorm",
+        "GetSearchItems",
+        "GetDocsFrecuencyAndIndex",
         "GetCosSimilarityVector",
-        "NeedSuggestion",
-        "GetDocuments",
+        "GetNorm",
         "GetTFIDFMatrix",
+        "GetSuggestion",
+        "GetDocuments",
+        "SortQueryTerms",
         "Query",
-        "GetVector",
+        "NeedSuggestion",
+        "GetCosSimilarity",
         "GetTerms",
-        "GetTermsFrequency"
+        "GetTermsFrequency",
+        "GetVector"
     ],
     "method_return_types": [
         [
@@ -479,20 +479,20 @@
             "IEnumerable"
         ],
         [
-            "Initialize",
-            "void"
-        ],
-        [
             "Query",
             "SearchResult"
         ],
         [
-            "GetVector",
-            "double"
+            "Initialize",
+            "void"
         ],
         [
             "GetTerms",
             "string"
+        ],
+        [
+            "GetVector",
+            "double"
         ],
         [
             "GetTermsFrequency",
@@ -503,28 +503,28 @@
             "string"
         ],
         [
-            "GetSuggestion",
-            "string"
-        ],
-        [
-            "SortQueryTerms",
-            "string"
-        ],
-        [
-            "GetCosSimilarityVector",
-            "double"
-        ],
-        [
-            "NeedSuggestion",
-            "bool"
-        ],
-        [
             "GetDocuments",
             "Document"
         ],
         [
+            "GetSuggestions",
+            "string"
+        ],
+        [
+            "GetSuggestion",
+            "string"
+        ],
+        [
+            "GetTFIDFMatrix",
+            "double"
+        ],
+        [
             "LevenshteinDistance",
             "int"
+        ],
+        [
+            "SortQueryTerms",
+            "string"
         ],
         [
             "GetCosSimilarity",
@@ -535,32 +535,32 @@
             "double"
         ],
         [
-            "Query",
-            "("
+            "GetSearchItems",
+            "SearchItem"
+        ],
+        [
+            "GetCosSimilarityVector",
+            "double"
         ],
         [
             "GetDocsFrecuencyAndIndex",
             "Dictionary"
         ],
         [
-            "GetSuggestions",
-            "string"
+            "Query",
+            "("
         ],
         [
-            "GetTFIDFMatrix",
-            "double"
-        ],
-        [
-            "GetSearchItems",
-            "SearchItem"
-        ],
-        [
-            "GetVector",
-            "double"
+            "NeedSuggestion",
+            "bool"
         ],
         [
             "GetTerms",
             "string"
+        ],
+        [
+            "GetVector",
+            "double"
         ],
         [
             "GetTermsFrequency",
@@ -589,7 +589,6 @@
         "Namespace_member_declarationContext": 12,
         "Namespace_declarationContext": 6,
         "Qualified_identifierContext": 6,
-        "Namespace_bodyContext": 6,
         "Type_declarationContext": 6,
         "All_member_modifiersContext": 52,
         "All_member_modifierContext": 57,
@@ -669,6 +668,7 @@
         "Floating_point_typeContext": 48,
         "TupleExpressionContext": 6,
         "Method_invocationContext": 59,
+        "Namespace_bodyContext": 2,
         "Tuple_typeContext": 13,
         "Tuple_elementContext": 26,
         "Variable_initializerContext": 3,

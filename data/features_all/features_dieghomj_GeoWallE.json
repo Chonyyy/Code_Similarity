@@ -81,13 +81,13 @@
         ]
     ],
     "method_names": [
+        "GetChildren",
         "ToString",
         "GetChildren",
-        "GetChildren",
-        "Peek",
         "ReadNumber",
-        "Next",
         "Lex",
+        "Peek",
+        "Next",
         "Reset",
         "Dispose",
         "MoveNext"
@@ -106,6 +106,14 @@
             "IEnumerable"
         ],
         [
+            "ReadNumber",
+            "void"
+        ],
+        [
+            "Lex",
+            "SyntaxToken"
+        ],
+        [
             "Next",
             "void"
         ],
@@ -114,20 +122,12 @@
             "char"
         ],
         [
-            "Lex",
-            "SyntaxToken"
-        ],
-        [
-            "ReadNumber",
-            "void"
+            "MoveNext",
+            "bool"
         ],
         [
             "Reset",
             "void"
-        ],
-        [
-            "MoveNext",
-            "bool"
         ],
         [
             "Dispose",

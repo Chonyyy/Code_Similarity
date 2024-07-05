@@ -1,5 +1,5 @@
 {
-    "total_nodes": 54765,
+    "total_nodes": 54711,
     "max_depth": 4298,
     "number_of_variables": 64,
     "number_of_constants": 0,
@@ -384,7 +384,7 @@
         ],
         [
             "double",
-            "x2"
+            "y2"
         ],
         [
             "double",
@@ -392,23 +392,23 @@
         ],
         [
             "double",
-            "y2"
+            "m"
         ],
         [
             "double",
-            "m"
+            "x2"
         ],
         [
             "Path",
             "ray"
         ],
         [
-            "Random",
-            "random"
-        ],
-        [
             "Path",
             "point"
+        ],
+        [
+            "Random",
+            "random"
         ],
         [
             "TextBlock",
@@ -416,11 +416,7 @@
         ],
         [
             "double",
-            "x2"
-        ],
-        [
-            "Path",
-            "line"
+            "y2"
         ],
         [
             "double",
@@ -428,19 +424,23 @@
         ],
         [
             "double",
-            "y1"
-        ],
-        [
-            "double",
-            "y2"
-        ],
-        [
-            "double",
             "m"
         ],
         [
             "double",
+            "x2"
+        ],
+        [
+            "double",
             "x1"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "Path",
+            "line"
         ],
         [
             "string",
@@ -451,60 +451,20 @@
             "union"
         ],
         [
-            "PathGeometry",
-            "pathGeometry"
-        ],
-        [
             "Point",
             "puntos"
         ],
         [
-            "Random",
-            "random"
+            "PathGeometry",
+            "pathGeometry"
         ],
         [
             "Random",
             "random"
         ],
         [
-            "double",
-            "x"
-        ],
-        [
-            "Stack",
-            "stack"
-        ],
-        [
-            "double",
-            "m"
-        ],
-        [
-            "double",
-            "x3"
-        ],
-        [
-            "double",
-            "b"
-        ],
-        [
-            "double",
-            "ub"
-        ],
-        [
-            "double",
-            "iy2"
-        ],
-        [
-            "double",
-            "a"
-        ],
-        [
-            "double",
-            "y3"
-        ],
-        [
-            "double",
-            "ua"
+            "Random",
+            "random"
         ],
         [
             "double",
@@ -512,31 +472,27 @@
         ],
         [
             "double",
-            "m2"
-        ],
-        [
-            "char",
-            "lastChar"
+            "m"
         ],
         [
             "double",
-            "ix1"
+            "xIntersection"
         ],
         [
             "double",
-            "B"
+            "x3"
         ],
         [
             "double",
-            "centerX"
+            "y3"
+        ],
+        [
+            "Stack",
+            "stack"
         ],
         [
             "double",
-            "y"
-        ],
-        [
-            "Dictionary",
-            "specials"
+            "ub"
         ],
         [
             "double",
@@ -548,11 +504,23 @@
         ],
         [
             "double",
-            "m1"
+            "iy1"
         ],
         [
             "double",
-            "iy1"
+            "ua"
+        ],
+        [
+            "Dictionary",
+            "specials"
+        ],
+        [
+            "double",
+            "ix1"
+        ],
+        [
+            "double",
+            "b"
         ],
         [
             "double",
@@ -560,15 +528,47 @@
         ],
         [
             "double",
-            "ix2"
+            "m1"
         ],
         [
             "double",
-            "xIntersection"
+            "ix2"
+        ],
+        [
+            "char",
+            "lastChar"
+        ],
+        [
+            "double",
+            "a"
         ],
         [
             "double",
             "discriminant"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
+            "m2"
+        ],
+        [
+            "double",
+            "iy2"
+        ],
+        [
+            "double",
+            "B"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "double",
+            "centerX"
         ],
         [
             "System",
@@ -595,20 +595,20 @@
             "tokens"
         ],
         [
-            "OpenFileDialog",
-            "openFileDialog"
+            "string",
+            "s"
         ],
         [
             "SaveFileDialog",
             "saveFileDialog"
         ],
         [
-            "string",
-            "s"
-        ],
-        [
             "IEnumerable",
             "listExpressions"
+        ],
+        [
+            "OpenFileDialog",
+            "openFileDialog"
         ]
     ],
     "method_names": [
@@ -636,12 +636,13 @@
         "Evaluate",
         "Evaluate",
         "Evaluate",
-        "Draw",
         "Evaluate",
         "Draw",
         "Evaluate",
+        "Draw",
         "Evaluate",
         "MoveNext",
+        "Evaluate",
         "Draw",
         "Evaluate",
         "Draw",
@@ -649,18 +650,17 @@
         "DrawLabel",
         "Evaluate",
         "Draw",
-        "Evaluate",
         "Draw",
         "Evaluate",
         "Evaluate",
         "Evaluate",
         "Evaluate",
+        "Evaluate",
+        "Reset",
+        "MoveNext",
         "Evaluate",
         "Dispose",
-        "MoveNext",
-        "Reset",
         "Draw",
-        "Evaluate",
         "PuntoAleatorio",
         "MoveNext",
         "MoveNext",
@@ -677,12 +677,12 @@
         "Main",
         "InitializeComponent",
         "Main",
-        "DrawButtonClicked",
+        "Zoom",
         "ScrollViewer_Loaded",
+        "DrawButtonClicked",
         "CleanCanvas",
-        "SaveCode",
         "ImportClicked",
-        "Zoom"
+        "SaveCode"
     ],
     "method_return_types": [
         [
@@ -782,10 +782,6 @@
             "string"
         ],
         [
-            "Evaluate",
-            "string"
-        ],
-        [
             "Draw",
             "void"
         ],
@@ -796,6 +792,10 @@
         [
             "Draw",
             "void"
+        ],
+        [
+            "Evaluate",
+            "string"
         ],
         [
             "MoveNext",
@@ -806,10 +806,6 @@
             "string"
         ],
         [
-            "Evaluate",
-            "string"
-        ],
-        [
             "Draw",
             "void"
         ],
@@ -820,6 +816,10 @@
         [
             "Draw",
             "void"
+        ],
+        [
+            "Evaluate",
+            "string"
         ],
         [
             "DrawLabel",
@@ -830,14 +830,6 @@
             "string"
         ],
         [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "Draw",
-            "void"
-        ],
-        [
             "Draw",
             "void"
         ],
@@ -846,24 +838,24 @@
             "string"
         ],
         [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "Evaluate",
-            "string"
-        ],
-        [
-            "Reset",
+            "Draw",
             "void"
+        ],
+        [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "Evaluate",
+            "string"
         ],
         [
             "Evaluate",
@@ -878,8 +870,20 @@
             "void"
         ],
         [
+            "Evaluate",
+            "string"
+        ],
+        [
+            "Reset",
+            "void"
+        ],
+        [
             "Dispose",
             "void"
+        ],
+        [
+            "MoveNext",
+            "bool"
         ],
         [
             "PuntoAleatorio",
@@ -894,26 +898,26 @@
             "bool"
         ],
         [
-            "MoveNext",
-            "bool"
+            "CircleLineIntersection",
+            "IEnumerator"
         ],
         [
             "IsBalanced",
             "bool"
         ],
         [
-            "CircleCircleIntersection",
-            "IEnumerator"
-        ],
-        [
-            "CircleLineIntersection",
-            "IEnumerator"
-        ],
-        [
             "LineLineIntersection",
             "IEnumerator"
         ],
         [
+            "CircleCircleIntersection",
+            "IEnumerator"
+        ],
+        [
+            "InitializeComponent",
+            "void"
+        ],
+        [
             "System",
             "void"
         ],
@@ -942,11 +946,7 @@
             "void"
         ],
         [
-            "InitializeComponent",
-            "void"
-        ],
-        [
-            "DrawButtonClicked",
+            "CleanCanvas",
             "void"
         ],
         [
@@ -958,7 +958,7 @@
             "void"
         ],
         [
-            "CleanCanvas",
+            "DrawButtonClicked",
             "void"
         ],
         [
@@ -975,9 +975,9 @@
         "Token",
         "UserFunction",
         "Color",
+        "SyntaxException",
         "SemanticException",
         "MyException",
-        "SyntaxException",
         "LexicalException",
         "MyExpression",
         "Product",
@@ -1073,7 +1073,6 @@
         "Namespace_member_declarationContext": 285,
         "Namespace_declarationContext": 59,
         "Qualified_identifierContext": 59,
-        "Namespace_bodyContext": 59,
         "Type_declarationContext": 226,
         "All_member_modifiersContext": 451,
         "All_member_modifierContext": 580,
@@ -1176,6 +1175,7 @@
         "ForeachStatementContext": 2,
         "YieldStatementContext": 6,
         "Qualified_alias_memberContext": 1,
+        "Namespace_bodyContext": 5,
         "SwitchStatementContext": 2,
         "Switch_sectionContext": 13,
         "Switch_labelContext": 13

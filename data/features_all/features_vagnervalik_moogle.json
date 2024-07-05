@@ -1,5 +1,5 @@
 {
-    "total_nodes": 10041,
+    "total_nodes": 10035,
     "max_depth": 349,
     "number_of_variables": 28,
     "number_of_constants": 0,
@@ -129,28 +129,8 @@
     ],
     "variable_names": [
         [
-            "List",
-            "AllWords"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "fileNames"
-        ],
-        [
             "string",
             "Files"
-        ],
-        [
-            "string",
-            "AllFiles"
-        ],
-        [
-            "int",
-            "j"
         ],
         [
             "string",
@@ -158,23 +138,55 @@
         ],
         [
             "string",
+            "fileNames"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
             "words"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "List",
+            "AllWords"
+        ],
+        [
+            "string",
+            "AllFiles"
         ],
         [
             "List",
             "wrds"
         ],
         [
-            "string",
-            "W"
-        ],
-        [
             "float",
             "tfidf"
         ],
         [
+            "float",
+            "query"
+        ],
+        [
+            "string",
+            "m"
+        ],
+        [
             "List",
             "matches"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "val"
         ],
         [
             "List",
@@ -182,63 +194,51 @@
         ],
         [
             "float",
-            "actual"
-        ],
-        [
-            "float",
-            "count"
-        ],
-        [
-            "int",
-            "val"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "float",
             "f"
+        ],
+        [
+            "string",
+            "W"
         ],
         [
             "float",
             "tf"
         ],
         [
-            "string",
-            "m"
-        ],
-        [
             "float",
-            "query"
+            "count"
         ],
         [
             "var",
             "x"
+        ],
+        [
+            "float",
+            "actual"
         ]
     ],
     "method_names": [
         "Items",
         "LoadDataBase",
-        "FileNames",
-        "GetWords",
+        "GetAddresses",
+        "Count",
+        "GetAllWords",
         "NumOfWords",
         "Get",
-        "GetAllWords",
-        "GetAllText",
         "GetFileNames",
-        "GetAddresses",
-        "Vocabulary",
-        "Count",
+        "FileNames",
         "GetWords",
-        "Multiply",
-        "Vectorize",
+        "GetAllText",
+        "Vocabulary",
         "GetQueryVector",
-        "GetTf",
-        "GetIdf",
-        "Size",
+        "Multiply",
         "Count",
-        "GetVal"
+        "Vectorize",
+        "GetTf",
+        "Size",
+        "GetVal",
+        "GetWords",
+        "GetIdf"
     ],
     "method_return_types": [
         [
@@ -246,24 +246,16 @@
             "IEnumerable"
         ],
         [
-            "GetAddresses",
-            "string"
-        ],
-        [
-            "LoadDataBase",
-            "string"
-        ],
-        [
-            "GetFileNames",
-            "string"
-        ],
-        [
-            "Vocabulary",
+            "GetWords",
             "string"
         ],
         [
             "NumOfWords",
             "int"
+        ],
+        [
+            "GetAddresses",
+            "string"
         ],
         [
             "GetAllWords",
@@ -274,15 +266,11 @@
             "string"
         ],
         [
-            "GetWords",
-            "string"
-        ],
-        [
             "Get",
             "string"
         ],
         [
-            "FileNames",
+            "GetFileNames",
             "string"
         ],
         [
@@ -290,28 +278,32 @@
             "int"
         ],
         [
-            "Multiply",
-            "("
+            "FileNames",
+            "string"
         ],
         [
-            "GetIdf",
-            "float"
+            "LoadDataBase",
+            "string"
+        ],
+        [
+            "Vocabulary",
+            "string"
+        ],
+        [
+            "GetWords",
+            "string"
         ],
         [
             "GetTf",
             "float"
         ],
         [
-            "GetVal",
+            "GetIdf",
             "float"
         ],
         [
-            "Vectorize",
+            "Multiply",
             "("
-        ],
-        [
-            "GetWords",
-            "string"
         ],
         [
             "GetQueryVector",
@@ -322,8 +314,16 @@
             "int"
         ],
         [
+            "GetVal",
+            "float"
+        ],
+        [
             "Size",
             "int"
+        ],
+        [
+            "Vectorize",
+            "("
         ]
     ],
     "class_names": [
@@ -346,7 +346,6 @@
         "Namespace_member_declarationContext": 10,
         "Namespace_declarationContext": 6,
         "Qualified_identifierContext": 6,
-        "Namespace_bodyContext": 6,
         "Type_declarationContext": 4,
         "All_member_modifiersContext": 49,
         "All_member_modifierContext": 49,

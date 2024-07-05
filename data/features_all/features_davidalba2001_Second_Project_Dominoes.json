@@ -1,12 +1,12 @@
 {
-    "total_nodes": 31018,
+    "total_nodes": 31244,
     "max_depth": 1391,
     "number_of_variables": 51,
     "number_of_constants": 0,
     "out_variables": 7,
     "ref_params": 0,
     "number_of_methods": 54,
-    "number_of_classes": 19,
+    "number_of_classes": 20,
     "number_of_interfaces": 6,
     "number_of_abstract_classes": 0,
     "number_of_sealed_classes": 0,
@@ -19,26 +19,26 @@
     "function_calls": 59,
     "enums_names": [
         "TypePlayer",
-        "TypeGame",
-        "VersionDomioes"
+        "VersionDomioes",
+        "TypeGame"
     ],
     "control_structures_if": 42,
     "control_structures_switch": 2,
     "control_structures_for": 7,
     "control_structures_while": 0,
     "control_structures_dowhile": 0,
-    "access_modifiers_public": 91,
-    "access_modifiers_private": 7,
+    "access_modifiers_public": 95,
+    "access_modifiers_private": 14,
     "access_modifiers_protected": 2,
     "access_modifiers_internal": 0,
-    "access_modifiers_static": 12,
+    "access_modifiers_static": 13,
     "access_modifiers_protected_internal": 0,
     "access_modifiers_private_protected": 0,
     "modifier_readonly": 0,
     "modifier_volatile": 0,
     "modifier_virtual": 0,
     "modifier_override": 0,
-    "modifier_new": 8,
+    "modifier_new": 13,
     "modifier_partial": 0,
     "modifier_extern": 0,
     "modifier_unsafe": 0,
@@ -53,7 +53,7 @@
     "library_call_console": 46,
     "library_call_math": 0,
     "number_of_lambdas": 4,
-    "number_of_getters": 15,
+    "number_of_getters": 17,
     "number_of_setters": 3,
     "number_of_tuples": 0,
     "number_of_namespaces": 19,
@@ -533,19 +533,19 @@
     "variable_names": [
         [
             "List",
-            "ValidMoves"
+            "Randomized"
         ],
         [
-            "Chip",
-            "BestRanked"
+            "List",
+            "ValidMoves"
         ],
         [
             "Random",
             "RDM"
         ],
         [
-            "List",
-            "Randomized"
+            "Chip",
+            "BestRanked"
         ],
         [
             "int",
@@ -560,18 +560,6 @@
             "chips"
         ],
         [
-            "bool",
-            "isFinal"
-        ],
-        [
-            "List",
-            "playerWin"
-        ],
-        [
-            "List",
-            "Chips"
-        ],
-        [
             "List",
             "playersWinners"
         ],
@@ -580,28 +568,68 @@
             "i"
         ],
         [
+            "bool",
+            "isFinal"
+        ],
+        [
+            "List",
+            "Chips"
+        ],
+        [
             "int",
             "j"
         ],
         [
+            "List",
+            "playerWin"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
             "bool",
-            "ValidMoveRight"
+            "isNumeric"
+        ],
+        [
+            "int",
+            "select"
+        ],
+        [
+            "int",
+            "countLinkedValues"
+        ],
+        [
+            "TypePlayer",
+            "player"
         ],
         [
             "int",
             "numChipForPlayer"
         ],
         [
-            "ICollection",
-            "versionDominoes"
+            "int",
+            "pos"
+        ],
+        [
+            "bool",
+            "ValidMoveLeft"
+        ],
+        [
+            "int",
+            "position"
         ],
         [
             "string",
             "banner"
         ],
         [
-            "Chip",
-            "move"
+            "List",
+            "Table"
+        ],
+        [
+            "bool",
+            "ValidMoveRight"
         ],
         [
             "int",
@@ -612,76 +640,48 @@
             "version"
         ],
         [
-            "int",
-            "selectCountChip"
-        ],
-        [
-            "bool",
-            "ValidMoveLeft"
-        ],
-        [
-            "int",
-            "countPlayer"
-        ],
-        [
-            "int",
-            "position"
-        ],
-        [
-            "int",
-            "countLinkedValues"
-        ],
-        [
             "string",
             "name"
-        ],
-        [
-            "TypePlayer",
-            "player"
-        ],
-        [
-            "ConsoleKey",
-            "key"
-        ],
-        [
-            "bool",
-            "IsValidMove"
-        ],
-        [
-            "bool",
-            "isNumeric"
-        ],
-        [
-            "ICollection",
-            "typesGames"
-        ],
-        [
-            "List",
-            "Table"
         ],
         [
             "int",
             "selectGameType"
         ],
         [
+            "ConsoleKey",
+            "key"
+        ],
+        [
+            "int",
+            "countPlayer"
+        ],
+        [
+            "bool",
+            "IsValidMove"
+        ],
+        [
             "float",
             "onechunk"
         ],
         [
+            "Chip",
+            "move"
+        ],
+        [
             "int",
-            "select"
+            "selectCountChip"
+        ],
+        [
+            "ICollection",
+            "typesGames"
         ],
         [
             "bool",
             "canPlay"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "pos"
+            "ICollection",
+            "versionDominoes"
         ],
         [
             "ControllerGame",
@@ -690,57 +690,53 @@
     ],
     "method_names": [
         "ValidMove",
+        "ChipScore",
         "GetBestRankedChip",
-        "ChipScore",
-        "ChipScore",
-        "IsFinal",
-        "HandScore",
         "IsWinner",
+        "HandScore",
+        "IsFinal",
+        "ChipScore",
         "IsFinal",
         "GetChipInPos",
-        "PlayChip",
-        "CanPlay",
-        "GetHand",
-        "TakeChip",
-        "NextPlay",
-        "GetValidPlay",
         "TakeHandChip",
-        "AddChip",
+        "NextPlay",
+        "CanPlay",
+        "TakeChip",
+        "GetHand",
+        "GetValidPlay",
+        "PlayChip",
         "GetBoard",
+        "AddChip",
         "CompareTo",
-        "Equals",
         "Rank",
-        "IsTurnToPlay",
-        "IsFinal",
+        "Equals",
         "IsWinner",
-        "PlayIsValid",
         "GenerateChips",
+        "IsTurnToPlay",
+        "PlayIsValid",
+        "IsFinal",
         "IsTie",
         "ValidMove",
-        "EndGame",
         "CurrentTurn",
         "ChangeValidCurrentPlayer",
+        "EndGame",
         "HandOutChips",
         "IsWinner",
         "Rank",
         "IsFinal",
+        "PrintGame",
         "Customitation",
         "VersionChips",
-        "PrintGame",
         "PrintTable",
-        "AskNextPlay",
+        "PrintHand",
+        "AddPlayer",
         "Front",
         "BarProgress",
+        "AskNextPlay",
         "PrintSelect",
-        "AddPlayer",
-        "PrintHand",
         "Main"
     ],
     "method_return_types": [
-        [
-            "GetBestRankedChip",
-            "Chip"
-        ],
         [
             "ChipScore",
             "int"
@@ -750,12 +746,20 @@
             "bool"
         ],
         [
-            "IsWinner",
-            "bool"
+            "GetBestRankedChip",
+            "Chip"
         ],
         [
             "ChipScore",
             "int"
+        ],
+        [
+            "IsWinner",
+            "bool"
+        ],
+        [
+            "IsFinal",
+            "bool"
         ],
         [
             "HandScore",
@@ -766,15 +770,27 @@
             "bool"
         ],
         [
-            "IsFinal",
-            "bool"
+            "TakeChip",
+            "void"
+        ],
+        [
+            "GetChipInPos",
+            "Chip"
         ],
         [
             "NextPlay",
             "bool"
         ],
         [
-            "TakeChip",
+            "GetValidPlay",
+            "List"
+        ],
+        [
+            "GetHand",
+            "List"
+        ],
+        [
+            "PlayChip",
             "void"
         ],
         [
@@ -786,19 +802,7 @@
             "bool"
         ],
         [
-            "PlayChip",
-            "void"
-        ],
-        [
-            "GetChipInPos",
-            "Chip"
-        ],
-        [
-            "GetHand",
-            "List"
-        ],
-        [
-            "GetValidPlay",
+            "GetBoard",
             "List"
         ],
         [
@@ -806,23 +810,19 @@
             "void"
         ],
         [
-            "GetBoard",
-            "List"
+            "Equals",
+            "bool"
         ],
         [
             "CompareTo",
             "int"
         ],
         [
-            "Equals",
-            "bool"
-        ],
-        [
             "Rank",
             "int"
         ],
         [
-            "IsTurnToPlay",
+            "IsFinal",
             "bool"
         ],
         [
@@ -830,7 +830,15 @@
             "bool"
         ],
         [
-            "IsFinal",
+            "IsTie",
+            "bool"
+        ],
+        [
+            "IsTurnToPlay",
+            "bool"
+        ],
+        [
+            "IsWinner",
             "bool"
         ],
         [
@@ -838,19 +846,7 @@
             "List"
         ],
         [
-            "IsWinner",
-            "bool"
-        ],
-        [
-            "IsTie",
-            "bool"
-        ],
-        [
             "ValidMove",
-            "bool"
-        ],
-        [
-            "EndGame",
             "bool"
         ],
         [
@@ -860,6 +856,10 @@
         [
             "CurrentTurn",
             "void"
+        ],
+        [
+            "EndGame",
+            "bool"
         ],
         [
             "ChangeValidCurrentPlayer",
@@ -878,35 +878,19 @@
             "bool"
         ],
         [
-            "Front",
-            "void"
+            "Customitation",
+            "("
         ],
         [
             "AddPlayer",
             "void"
         ],
         [
-            "PrintHand",
-            "void"
-        ],
-        [
-            "PrintTable",
-            "void"
-        ],
-        [
-            "Customitation",
-            "("
-        ],
-        [
             "VersionChips",
             "int"
         ],
         [
-            "PrintGame",
-            "void"
-        ],
-        [
-            "BarProgress",
+            "PrintTable",
             "void"
         ],
         [
@@ -914,8 +898,24 @@
             "bool"
         ],
         [
+            "PrintGame",
+            "void"
+        ],
+        [
+            "Front",
+            "void"
+        ],
+        [
+            "BarProgress",
+            "void"
+        ],
+        [
             "PrintSelect",
             "int"
+        ],
+        [
+            "PrintHand",
+            "void"
         ],
         [
             "Main",
@@ -923,19 +923,20 @@
         ]
     ],
     "class_names": [
-        "RandomStrategies",
-        "BotaGordaStategies",
         "HumanStrategies",
+        "BotaGordaStategies",
+        "MoveWeighter",
         "AlmostCleverStrategies",
+        "RandomStrategies",
+        "WinnerByChips",
         "WinnerByPuntos",
         "PlayAllChips",
-        "WinnerByChips",
         "IsLocked",
         "Player",
         "Board",
         "Chip",
-        "Emojis",
         "Numeric",
+        "Emojis",
         "Rules",
         "Team",
         "InterPrints",
@@ -961,75 +962,75 @@
         "Compilation_unitContext": 31,
         "Using_directivesContext": 31,
         "UsingNamespaceDirectiveContext": 110,
-        "TerminalNodeImpl": 6190,
-        "Namespace_or_type_nameContext": 690,
-        "IdentifierContext": 2031,
+        "TerminalNodeImpl": 6264,
+        "Namespace_or_type_nameContext": 700,
+        "IdentifierContext": 2049,
         "Namespace_member_declarationsContext": 38,
-        "Namespace_member_declarationContext": 49,
+        "Namespace_member_declarationContext": 63,
         "Namespace_declarationContext": 19,
         "Qualified_identifierContext": 19,
         "Namespace_bodyContext": 19,
-        "Type_declarationContext": 30,
-        "All_member_modifiersContext": 103,
-        "All_member_modifierContext": 114,
-        "Class_definitionContext": 19,
+        "Type_declarationContext": 44,
+        "All_member_modifiersContext": 120,
+        "All_member_modifierContext": 131,
+        "Class_definitionContext": 20,
         "Type_parameter_listContext": 18,
         "Type_parameterContext": 36,
         "Class_baseContext": 10,
-        "Class_typeContext": 540,
-        "Type_argument_listContext": 191,
-        "Type_Context": 612,
-        "Base_typeContext": 613,
+        "Class_typeContext": 548,
+        "Type_argument_listContext": 193,
+        "Type_Context": 624,
+        "Base_typeContext": 625,
         "Type_parameter_constraints_clausesContext": 23,
         "Type_parameter_constraints_clauseContext": 23,
         "Type_parameter_constraintsContext": 23,
         "Primary_constraintContext": 23,
-        "Class_bodyContext": 25,
-        "Class_member_declarationsContext": 25,
-        "Class_member_declarationContext": 92,
-        "Common_member_declarationContext": 92,
-        "Typed_member_declarationContext": 71,
+        "Class_bodyContext": 26,
+        "Class_member_declarationsContext": 26,
+        "Class_member_declarationContext": 95,
+        "Common_member_declarationContext": 95,
+        "Typed_member_declarationContext": 73,
         "Field_declarationContext": 11,
         "Variable_declaratorsContext": 11,
         "Variable_declaratorContext": 11,
-        "Constructor_declarationContext": 7,
-        "Formal_parameter_listContext": 52,
-        "Fixed_parametersContext": 51,
-        "Fixed_parameterContext": 93,
-        "Arg_declarationContext": 93,
-        "BodyContext": 7,
-        "BlockContext": 115,
-        "Statement_listContext": 124,
-        "StatementContext": 293,
-        "Embedded_statementContext": 272,
-        "ExpressionStatementContext": 126,
-        "ExpressionContext": 713,
-        "AssignmentContext": 61,
-        "Unary_expressionContext": 814,
-        "Primary_expressionContext": 795,
-        "SimpleNameExpressionContext": 478,
-        "Assignment_operatorContext": 61,
-        "Non_assignment_expressionContext": 646,
-        "Conditional_expressionContext": 642,
-        "Null_coalescing_expressionContext": 642,
-        "Conditional_or_expressionContext": 642,
-        "Conditional_and_expressionContext": 655,
-        "Inclusive_or_expressionContext": 657,
-        "Exclusive_or_expressionContext": 657,
-        "And_expressionContext": 657,
-        "Equality_expressionContext": 657,
-        "Relational_expressionContext": 674,
-        "Shift_expressionContext": 696,
-        "Additive_expressionContext": 696,
-        "Multiplicative_expressionContext": 728,
-        "Switch_expressionContext": 734,
-        "Range_expressionContext": 734,
-        "Simple_typeContext": 92,
+        "Constructor_declarationContext": 8,
+        "Formal_parameter_listContext": 53,
+        "Fixed_parametersContext": 52,
+        "Fixed_parameterContext": 95,
+        "Arg_declarationContext": 95,
+        "BodyContext": 8,
+        "BlockContext": 116,
+        "Statement_listContext": 125,
+        "StatementContext": 295,
+        "Embedded_statementContext": 274,
+        "ExpressionStatementContext": 128,
+        "ExpressionContext": 717,
+        "AssignmentContext": 63,
+        "Unary_expressionContext": 818,
+        "Primary_expressionContext": 799,
+        "SimpleNameExpressionContext": 480,
+        "Assignment_operatorContext": 63,
+        "Non_assignment_expressionContext": 648,
+        "Conditional_expressionContext": 644,
+        "Null_coalescing_expressionContext": 644,
+        "Conditional_or_expressionContext": 644,
+        "Conditional_and_expressionContext": 657,
+        "Inclusive_or_expressionContext": 659,
+        "Exclusive_or_expressionContext": 659,
+        "And_expressionContext": 659,
+        "Equality_expressionContext": 659,
+        "Relational_expressionContext": 676,
+        "Shift_expressionContext": 698,
+        "Additive_expressionContext": 698,
+        "Multiplicative_expressionContext": 730,
+        "Switch_expressionContext": 736,
+        "Range_expressionContext": 736,
+        "Simple_typeContext": 94,
         "Method_declarationContext": 54,
         "Method_member_nameContext": 54,
         "Parameter_modifierContext": 9,
-        "Tuple_typeContext": 12,
-        "Tuple_elementContext": 26,
+        "Tuple_typeContext": 14,
+        "Tuple_elementContext": 30,
         "Method_bodyContext": 54,
         "ReturnStatementContext": 61,
         "Method_invocationContext": 148,
@@ -1040,7 +1041,7 @@
         "Local_variable_typeContext": 62,
         "Local_variable_declaratorContext": 51,
         "Local_variable_initializerContext": 37,
-        "Member_accessContext": 268,
+        "Member_accessContext": 270,
         "IfStatementContext": 42,
         "LiteralExpressionContext": 212,
         "LiteralContext": 212,
@@ -1059,18 +1060,21 @@
         "DefaultValueExpressionContext": 5,
         "Secondary_constraintsContext": 3,
         "ForeachStatementContext": 11,
-        "Numeric_typeContext": 60,
+        "Numeric_typeContext": 62,
         "Integral_typeContext": 59,
         "Variable_initializerContext": 45,
-        "ErrorNodeImpl": 1996,
+        "ErrorNodeImpl": 1921,
+        "AttributesContext": 2,
+        "Attribute_sectionContext": 2,
+        "Property_declarationContext": 20,
+        "Member_nameContext": 20,
+        "Accessor_declarationsContext": 17,
+        "Accessor_bodyContext": 20,
+        "Floating_point_typeContext": 3,
+        "ThisReferenceExpressionContext": 15,
         "ParenthesisExpressionsContext": 11,
-        "Property_declarationContext": 18,
-        "Member_nameContext": 18,
-        "Accessor_declarationsContext": 15,
-        "Accessor_bodyContext": 18,
         "Set_accessor_declarationContext": 3,
         "Accessor_modifierContext": 2,
-        "ThisReferenceExpressionContext": 13,
         "MemberAccessExpressionContext": 5,
         "Predefined_typeContext": 5,
         "Cast_expressionContext": 3,
@@ -1097,7 +1101,6 @@
         "Enum_definitionContext": 3,
         "Enum_bodyContext": 3,
         "Enum_member_declarationContext": 11,
-        "Floating_point_typeContext": 1,
         "DoStatementContext": 5,
         "SwitchStatementContext": 2,
         "Switch_sectionContext": 9,

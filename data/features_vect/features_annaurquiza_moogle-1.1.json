@@ -1,5 +1,5 @@
 {
-    "total_nodes": 1398,
+    "total_nodes": 1395,
     "max_depth": 195,
     "number_of_variables": 1,
     "number_of_constants": 0,
@@ -64,7 +64,6 @@
         "Namespace_member_declarationContext": 6,
         "Namespace_declarationContext": 3,
         "Qualified_identifierContext": 3,
-        "Namespace_bodyContext": 3,
         "Type_declarationContext": 3,
         "All_member_modifiersContext": 14,
         "All_member_modifierContext": 16,
@@ -255,7 +254,7 @@
         0.0016926819225773215,
         -0.0055652400478720665
     ],
-    "delegate_names_vector": [],
+    "delegate_names_vector": NaN,
     "method_return_types_vector": [
         -0.004050095099955797,
         0.00205512554384768,
@@ -562,8 +561,8 @@
         -0.00265152077190578,
         -0.001771415933035314
     ],
-    "interface_names_vector": [],
-    "enums_names_vector": [],
+    "interface_names_vector": NaN,
+    "enums_names_vector": NaN,
     "method_parameters_vector": [
         -0.0005362413940019906,
         0.00023641364532522857,

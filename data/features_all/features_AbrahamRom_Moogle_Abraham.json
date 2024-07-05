@@ -1,5 +1,5 @@
 {
-    "total_nodes": 3244,
+    "total_nodes": 3243,
     "max_depth": 7,
     "number_of_variables": 0,
     "number_of_constants": 0,
@@ -68,7 +68,6 @@
         "TerminalNodeImpl": 3,
         "Qualified_identifierContext": 1,
         "IdentifierContext": 1,
-        "Namespace_bodyContext": 1,
         "ErrorNodeImpl": 3234
     },
     "project_name": "AbrahamRom_Moogle_Abraham",

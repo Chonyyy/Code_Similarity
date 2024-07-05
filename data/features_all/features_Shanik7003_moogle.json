@@ -1,5 +1,5 @@
 {
-    "total_nodes": 9643,
+    "total_nodes": 9640,
     "max_depth": 356,
     "number_of_variables": 24,
     "number_of_constants": 0,
@@ -88,40 +88,16 @@
     ],
     "variable_names": [
         [
-            "int",
-            "num_rep"
+            "Dictionary",
+            "Content"
         ],
         [
             "char",
             "separador"
         ],
         [
-            "Dictionary",
-            "Content"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "Dictionary",
-            "TfxIDf"
-        ],
-        [
             "int",
             "k"
-        ],
-        [
-            "Dictionary",
-            "tf"
-        ],
-        [
-            "string",
-            "files"
-        ],
-        [
-            "int",
-            "j"
         ],
         [
             "Dictionary",
@@ -132,36 +108,48 @@
             "Idf"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Dictionary",
+            "tf"
+        ],
+        [
+            "string",
+            "files"
+        ],
+        [
+            "Dictionary",
+            "TfxIDf"
+        ],
+        [
             "Dictionary",
             "iDF"
+        ],
+        [
+            "int",
+            "num_rep"
+        ],
+        [
+            "int",
+            "startIndex"
         ],
         [
             "int",
             "startindex"
         ],
         [
-            "int",
-            "op_index"
-        ],
-        [
-            "int",
-            "finalIndex"
-        ],
-        [
-            "int",
-            "num_rep_imp"
-        ],
-        [
-            "bool",
-            "search_for_space"
+            "Dictionary",
+            "words_with_operators"
         ],
         [
             "int",
             "i"
-        ],
-        [
-            "Dictionary",
-            "words_with_operators"
         ],
         [
             "List",
@@ -169,24 +157,40 @@
         ],
         [
             "int",
-            "startIndex"
+            "op_index"
+        ],
+        [
+            "bool",
+            "search_for_space"
+        ],
+        [
+            "int",
+            "num_rep_imp"
+        ],
+        [
+            "int",
+            "finalIndex"
         ]
     ],
     "method_names": [
         "Items",
-        "Splitear",
-        "Calc_IDF",
-        "TermFrecuency",
-        "Normalizar",
-        "TermFrecuency_InverseDocFrecuency",
         "InverseDocFrecuency",
         "Snippet",
+        "TermFrecuency",
+        "Splitear",
+        "Normalizar",
+        "TermFrecuency_InverseDocFrecuency",
+        "Calc_IDF",
         "Words_with_Operator"
     ],
     "method_return_types": [
         [
             "Items",
             "IEnumerable"
+        ],
+        [
+            "Calc_IDF",
+            "float"
         ],
         [
             "Snippet",
@@ -197,15 +201,11 @@
             "void"
         ],
         [
+            "Splitear",
+            "string"
+        ],
+        [
             "Normalizar",
-            "void"
-        ],
-        [
-            "Calc_IDF",
-            "float"
-        ],
-        [
-            "TermFrecuency_InverseDocFrecuency",
             "void"
         ],
         [
@@ -213,8 +213,8 @@
             "void"
         ],
         [
-            "Splitear",
-            "string"
+            "TermFrecuency_InverseDocFrecuency",
+            "void"
         ],
         [
             "Words_with_Operator",
@@ -241,7 +241,6 @@
         "Namespace_member_declarationContext": 9,
         "Namespace_declarationContext": 5,
         "Qualified_identifierContext": 5,
-        "Namespace_bodyContext": 5,
         "Type_declarationContext": 4,
         "All_member_modifiersContext": 32,
         "All_member_modifierContext": 49,
@@ -319,6 +318,7 @@
         "Numeric_typeContext": 54,
         "Integral_typeContext": 31,
         "Floating_point_typeContext": 23,
+        "Namespace_bodyContext": 2,
         "Variable_initializerContext": 39,
         "DeclarationStatementContext": 17,
         "Local_variable_declarationContext": 24,

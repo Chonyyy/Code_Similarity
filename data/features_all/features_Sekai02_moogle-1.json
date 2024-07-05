@@ -1,5 +1,5 @@
 {
-    "total_nodes": 29868,
+    "total_nodes": 29861,
     "max_depth": 806,
     "number_of_variables": 103,
     "number_of_constants": 3,
@@ -261,15 +261,23 @@
         ],
         [
             "bool",
-            "wordNeedsToBeKeeped"
-        ],
-        [
-            "bool",
             "isValid"
         ],
         [
-            "char",
-            "c"
+            "bool",
+            "lastIsTilde"
+        ],
+        [
+            "bool",
+            "wordNeedsToBeKeeped"
+        ],
+        [
+            "string",
+            "newWord"
+        ],
+        [
+            "int",
+            "idx"
         ],
         [
             "bool",
@@ -280,34 +288,6 @@
             "i"
         ],
         [
-            "char",
-            "d"
-        ],
-        [
-            "bool",
-            "curIsAlphanumeric"
-        ],
-        [
-            "string",
-            "newWord"
-        ],
-        [
-            "string",
-            "words"
-        ],
-        [
-            "int",
-            "validWords"
-        ],
-        [
-            "int",
-            "idx"
-        ],
-        [
-            "bool",
-            "curIsOperator"
-        ],
-        [
             "int",
             "pos"
         ],
@@ -316,20 +296,28 @@
             "numberOfAsters"
         ],
         [
-            "bool",
-            "lastIsTilde"
+            "string",
+            "words"
         ],
         [
-            "string",
-            "currentTitle"
+            "bool",
+            "curIsOperator"
         ],
         [
             "char",
             "c"
         ],
         [
-            "Document",
-            "allDocuments"
+            "char",
+            "d"
+        ],
+        [
+            "int",
+            "validWords"
+        ],
+        [
+            "bool",
+            "curIsAlphanumeric"
         ],
         [
             "var",
@@ -337,7 +325,11 @@
         ],
         [
             "string",
-            "ignoreASCII"
+            "currentTitle"
+        ],
+        [
+            "Document",
+            "allDocuments"
         ],
         [
             "int",
@@ -346,6 +338,14 @@
         [
             "string",
             "currentText"
+        ],
+        [
+            "char",
+            "c"
+        ],
+        [
+            "string",
+            "ignoreASCII"
         ],
         [
             "int",
@@ -357,19 +357,15 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "editDistance"
         ],
         [
-            "bool",
-            "containsValidWords"
+            "int",
+            "i"
         ],
         [
-            "int",
-            "charsInCommon"
+            "float",
+            "bestDistance"
         ],
         [
             "float",
@@ -377,19 +373,43 @@
         ],
         [
             "string",
-            "suggestion"
+            "bestSuggestion"
+        ],
+        [
+            "bool",
+            "containsInvalidWords"
+        ],
+        [
+            "int",
+            "r"
+        ],
+        [
+            "List",
+            "results"
+        ],
+        [
+            "int",
+            "endTime"
         ],
         [
             "List",
             "wordList"
         ],
         [
-            "int",
-            "bestDistance"
+            "float",
+            "score"
+        ],
+        [
+            "string",
+            "string2"
+        ],
+        [
+            "string",
+            "words"
         ],
         [
             "int",
-            "i"
+            "l"
         ],
         [
             "var",
@@ -397,51 +417,71 @@
         ],
         [
             "float",
-            "time"
-        ],
-        [
-            "string",
-            "snippet"
-        ],
-        [
-            "string",
-            "bestSuggestion"
+            "newRelevance"
         ],
         [
             "int",
-            "curCommonChars"
-        ],
-        [
-            "int",
-            "r"
-        ],
-        [
-            "string",
-            "string1"
-        ],
-        [
-            "bool",
-            "isStopWord"
+            "curDistance"
         ],
         [
             "int",
             "indexOfWord"
         ],
         [
-            "float",
+            "int",
             "bestDistance"
         ],
         [
+            "int",
+            "numberOfAsters"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
             "bool",
-            "containsInvalidWords"
+            "containsValidWords"
+        ],
+        [
+            "string",
+            "pattern"
+        ],
+        [
+            "float",
+            "time"
+        ],
+        [
+            "float",
+            "extraRelevance"
+        ],
+        [
+            "string",
+            "suggestion"
+        ],
+        [
+            "int",
+            "curCommonChars"
         ],
         [
             "float",
             "distance"
         ],
         [
-            "List",
-            "results"
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "string1"
+        ],
+        [
+            "int",
+            "startTime"
         ],
         [
             "List",
@@ -449,63 +489,15 @@
         ],
         [
             "int",
-            "endTime"
+            "charsInCommon"
         ],
         [
-            "float",
-            "extraRelevance"
-        ],
-        [
-            "int",
-            "numberOfAsters"
-        ],
-        [
-            "SearchItem",
-            "items"
-        ],
-        [
-            "int",
-            "curDistance"
-        ],
-        [
-            "float",
-            "newRelevance"
-        ],
-        [
-            "int",
-            "l"
-        ],
-        [
-            "string",
-            "pattern"
-        ],
-        [
-            "int",
-            "startTime"
-        ],
-        [
-            "string",
-            "string2"
+            "bool",
+            "isStopWord"
         ],
         [
             "bool",
             "emptyStringsRemaining"
-        ],
-        [
-            "string",
-            "words"
-        ],
-        [
-            "float",
-            "score"
-        ],
-        [
-            "var",
-            "j"
-        ],
-        [
-            "var",
-            "result"
         ],
         [
             "T",
@@ -513,27 +505,19 @@
         ],
         [
             "var",
+            "k"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "var",
             "i"
         ],
         [
             "var",
-            "k"
-        ],
-        [
-            "float",
-            "TFScore"
-        ],
-        [
-            "float",
-            "docWordScore"
-        ],
-        [
-            "float",
-            "IDFScore"
-        ],
-        [
-            "int",
-            "i"
+            "j"
         ],
         [
             "float",
@@ -545,6 +529,22 @@
         ],
         [
             "float",
+            "score"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "float",
+            "IDFScore"
+        ],
+        [
+            "float",
+            "TFScore"
+        ],
+        [
+            "float",
             "ret"
         ],
         [
@@ -553,7 +553,7 @@
         ],
         [
             "float",
-            "score"
+            "docWordScore"
         ]
     ],
     "method_names": [
@@ -561,37 +561,37 @@
         "CompareTo",
         "ValidQuery",
         "Update",
+        "InvalidWord",
         "IsAlphanumeric",
+        "IsOperator",
+        "IgnoreASCII",
         "ReadDocumentsFromFolder",
         "IgnoreASCIIQuery",
-        "IsOperator",
-        "InvalidWord",
-        "IgnoreASCII",
         "EditDistance",
         "LongestCommonSubsequence",
-        "CalculateNewRelevance",
-        "ResetGlobalVariables",
-        "UpdateNewRelevance",
-        "BuildSnippet",
-        "FindSearchResults",
-        "FindWordsToBeNear",
-        "BuildSuggestion",
         "Preproccess",
+        "CalculateNewRelevance",
+        "FindSearchResults",
+        "BuildSnippet",
+        "BuildSuggestion",
+        "FindWordsToBeNear",
+        "UpdateNewRelevance",
         "Query",
-        "ProductByScalar",
+        "ResetGlobalVariables",
         "Multiply",
-        "Add",
-        "DeterminantOrder1",
-        "DeterminantOrder2",
         "DeterminantOrder3",
-        "Determinant",
+        "DeterminantOrder2",
+        "ProductByScalar",
+        "DeterminantOrder1",
+        "Add",
         "Print",
+        "Determinant",
         "ComputeRelevance",
-        "CalculateTFIDFVector",
-        "CalculateIDFVector",
-        "CalculateDocumentsWithTerm",
         "Norm",
-        "CalculateTFVector"
+        "CalculateIDFVector",
+        "CalculateTFIDFVector",
+        "CalculateTFVector",
+        "CalculateDocumentsWithTerm"
     ],
     "method_return_types": [
         [
@@ -603,28 +603,28 @@
             "int"
         ],
         [
-            "ValidQuery",
-            "bool"
-        ],
-        [
             "Update",
             "void"
         ],
         [
-            "ReadDocumentsFromFolder",
-            "Document"
+            "ValidQuery",
+            "bool"
         ],
         [
             "IsAlphanumeric",
             "bool"
         ],
         [
-            "IgnoreASCIIQuery",
-            "string"
-        ],
-        [
             "InvalidWord",
             "bool"
+        ],
+        [
+            "ReadDocumentsFromFolder",
+            "Document"
+        ],
+        [
+            "IgnoreASCIIQuery",
+            "string"
         ],
         [
             "IgnoreASCII",
@@ -635,31 +635,19 @@
             "bool"
         ],
         [
-            "EditDistance",
-            "int"
-        ],
-        [
             "LongestCommonSubsequence",
             "int"
         ],
         [
-            "FindWordsToBeNear",
-            "List"
-        ],
-        [
-            "ResetGlobalVariables",
-            "void"
-        ],
-        [
-            "Preproccess",
-            "void"
+            "EditDistance",
+            "int"
         ],
         [
             "CalculateNewRelevance",
             "void"
         ],
         [
-            "UpdateNewRelevance",
+            "ResetGlobalVariables",
             "void"
         ],
         [
@@ -667,8 +655,8 @@
             "string"
         ],
         [
-            "Query",
-            "SearchResult"
+            "Preproccess",
+            "void"
         ],
         [
             "BuildSuggestion",
@@ -679,20 +667,24 @@
             "void"
         ],
         [
-            "Determinant",
-            "double"
+            "FindWordsToBeNear",
+            "List"
         ],
         [
-            "DeterminantOrder2",
-            "double"
+            "Query",
+            "SearchResult"
         ],
         [
-            "Multiply",
-            "Matrix"
+            "UpdateNewRelevance",
+            "void"
         ],
         [
             "Print",
             "void"
+        ],
+        [
+            "DeterminantOrder2",
+            "double"
         ],
         [
             "Add",
@@ -711,11 +703,19 @@
             "double"
         ],
         [
-            "Norm",
-            "float"
+            "Determinant",
+            "double"
+        ],
+        [
+            "Multiply",
+            "Matrix"
         ],
         [
             "CalculateTFIDFVector",
+            "void"
+        ],
+        [
+            "CalculateDocumentsWithTerm",
             "void"
         ],
         [
@@ -731,8 +731,8 @@
             "float"
         ],
         [
-            "CalculateDocumentsWithTerm",
-            "void"
+            "Norm",
+            "float"
         ]
     ],
     "class_names": [
@@ -759,7 +759,6 @@
         "Namespace_member_declarationContext": 15,
         "Namespace_declarationContext": 7,
         "Qualified_identifierContext": 7,
-        "Namespace_bodyContext": 7,
         "Type_declarationContext": 8,
         "All_member_modifiersContext": 81,
         "All_member_modifierContext": 114,

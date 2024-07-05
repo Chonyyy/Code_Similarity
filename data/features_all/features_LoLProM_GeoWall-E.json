@@ -1,5 +1,5 @@
 {
-    "total_nodes": 26314,
+    "total_nodes": 26286,
     "max_depth": 1486,
     "number_of_variables": 15,
     "number_of_constants": 0,
@@ -175,12 +175,12 @@
     ],
     "variable_names": [
         [
-            "GSharpEvaluator",
-            "evaluator"
+            "var",
+            "uvs"
         ],
         [
             "var",
-            "code"
+            "codeEdit"
         ],
         [
             "object",
@@ -188,15 +188,11 @@
         ],
         [
             "var",
-            "codeEdit"
+            "code"
         ],
         [
             "List",
             "tree"
-        ],
-        [
-            "var",
-            "uvs"
         ],
         [
             "var",
@@ -205,6 +201,10 @@
         [
             "var",
             "colors"
+        ],
+        [
+            "GSharpEvaluator",
+            "evaluator"
         ],
         [
             "var",
@@ -224,11 +224,11 @@
         ],
         [
             "var",
-            "lexer"
+            "currentToken"
         ],
         [
             "var",
-            "currentToken"
+            "lexer"
         ],
         [
             "var",
@@ -236,30 +236,34 @@
         ]
     ],
     "method_names": [
-        "_Ready",
         "_on_run_button_pressed",
-        "_Draw",
         "_Process",
-        "Sqrt",
-        "GetStandardLibraryFunctions",
+        "_Draw",
+        "_Ready",
         "GetStandardLibraryVariables",
-        "GetUnaryOperatorPrecedence",
+        "GetStandardLibraryFunctions",
+        "Sqrt",
         "GetBinaryOperatorPrecedence",
+        "GetUnaryOperatorPrecedence",
         "GetUnaryExpressionType",
         "GetExpressionType",
         "Eval",
-        "EvaluateExpression",
         "Evaluate",
+        "EvaluateExpression",
         "Create",
-        "GetValue",
-        "BuildChildScope",
         "AddVariable",
         "Contains",
-        "LookAhead",
+        "BuildChildScope",
+        "GetValue",
         "TokenAhead",
-        "MatchToken"
+        "MatchToken",
+        "LookAhead"
     ],
     "method_return_types": [
+        [
+            "_Process",
+            "void"
+        ],
         [
             "_Draw",
             "void"
@@ -273,20 +277,16 @@
             "void"
         ],
         [
-            "_Process",
-            "void"
-        ],
-        [
             "GetStandardLibraryVariables",
             "Scope"
         ],
         [
-            "Sqrt",
-            "("
-        ],
-        [
             "GetStandardLibraryFunctions",
             "Dictionary"
+        ],
+        [
+            "Sqrt",
+            "("
         ],
         [
             "GetBinaryOperatorPrecedence",
@@ -309,11 +309,11 @@
             "object"
         ],
         [
-            "Evaluate",
+            "EvaluateExpression",
             "object"
         ],
         [
-            "EvaluateExpression",
+            "Evaluate",
             "object"
         ],
         [
@@ -321,27 +321,27 @@
             "List"
         ],
         [
-            "AddVariable",
-            "void"
+            "Contains",
+            "bool"
         ],
         [
-            "GetValue",
-            "object"
+            "AddVariable",
+            "void"
         ],
         [
             "BuildChildScope",
             "Scope"
         ],
         [
-            "Contains",
-            "bool"
-        ],
-        [
-            "TokenAhead",
-            "Token"
+            "GetValue",
+            "object"
         ],
         [
             "LookAhead",
+            "Token"
+        ],
+        [
+            "TokenAhead",
             "Token"
         ],
         [
@@ -369,18 +369,18 @@
         "GSharpBinaryExpression",
         "FunctionReference",
         "GSharpLiteralExpression",
-        "GSharpFiniteSequence",
+        "GSharpLiteralSequence",
         "GSharpInfiniteSequence",
         "GSharpSequence",
-        "GSharpLiteralSequence",
+        "GSharpFiniteSequence",
         "GSharpPointExpression",
         "GSharpLineExpression",
-        "Line",
-        "Ray",
+        "Segment",
         "Point",
+        "Line",
         "Circle",
         "Arc",
-        "Segment",
+        "Ray",
         "GSharpSegmentExpression",
         "GSharpRayExpression",
         "GSharpArcExpression",
@@ -471,7 +471,6 @@
         "Assignment_operatorContext": 113,
         "Namespace_declarationContext": 32,
         "Qualified_identifierContext": 32,
-        "Namespace_bodyContext": 32,
         "Constructor_declarationContext": 48,
         "BodyContext": 44,
         "Typed_member_declarationContext": 116,
@@ -500,6 +499,7 @@
         "Tuple_typeContext": 5,
         "Tuple_elementContext": 7,
         "Integral_typeContext": 8,
+        "Namespace_bodyContext": 4,
         "Constructor_initializerContext": 3,
         "Set_accessor_declarationContext": 1,
         "Accessor_modifierContext": 1,

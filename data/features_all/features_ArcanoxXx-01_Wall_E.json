@@ -1,5 +1,5 @@
 {
-    "total_nodes": 129448,
+    "total_nodes": 129418,
     "max_depth": 3057,
     "number_of_variables": 338,
     "number_of_constants": 0,
@@ -1502,10 +1502,6 @@
     ],
     "variable_names": [
         [
-            "Paint",
-            "paint"
-        ],
-        [
             "StreamWriter",
             "file"
         ],
@@ -1518,12 +1514,92 @@
             "map"
         ],
         [
+            "Paint",
+            "paint"
+        ],
+        [
+            "float",
+            "ycentro"
+        ],
+        [
+            "float",
+            "xinicio"
+        ],
+        [
+            "float",
+            "r"
+        ],
+        [
+            "float",
+            "xFinal"
+        ],
+        [
+            "SolidBrush",
+            "brush"
+        ],
+        [
+            "Point",
+            "p2"
+        ],
+        [
+            "float",
+            "yinicio"
+        ],
+        [
+            "int",
+            "grados"
+        ],
+        [
+            "float",
+            "y2"
+        ],
+        [
+            "float",
+            "n"
+        ],
+        [
+            "float",
+            "xInicio"
+        ],
+        [
+            "int",
+            "AInicGrados"
+        ],
+        [
+            "float",
+            "x1"
+        ],
+        [
+            "float",
+            "yFinal"
+        ],
+        [
+            "float",
+            "pendiente"
+        ],
+        [
+            "float",
+            "x"
+        ],
+        [
+            "Font",
+            "drawFont"
+        ],
+        [
+            "float",
+            "yInicio"
+        ],
+        [
             "float",
             "y1"
         ],
         [
             "float",
-            "y2"
+            "y"
+        ],
+        [
+            "Point",
+            "p1"
         ],
         [
             "float",
@@ -1534,112 +1610,28 @@
             "x2"
         ],
         [
-            "string",
-            "DrawString"
-        ],
-        [
-            "float",
-            "yInicio"
+            "double",
+            "AngleInicio"
         ],
         [
             "int",
             "AFinGrados"
         ],
         [
-            "float",
-            "x"
-        ],
-        [
-            "float",
-            "yFinal"
-        ],
-        [
-            "Point",
-            "p2"
-        ],
-        [
-            "double",
-            "AngleFinal"
-        ],
-        [
-            "float",
-            "n"
-        ],
-        [
-            "float",
-            "ycentro"
-        ],
-        [
-            "int",
-            "grados"
-        ],
-        [
-            "SolidBrush",
-            "brush"
-        ],
-        [
-            "float",
-            "x1"
-        ],
-        [
-            "float",
-            "r"
-        ],
-        [
-            "float",
-            "pendiente"
-        ],
-        [
-            "int",
-            "AInicGrados"
-        ],
-        [
-            "float",
-            "xInicio"
+            "string",
+            "DrawString"
         ],
         [
             "StringFormat",
             "drawFormat"
         ],
         [
-            "float",
-            "yinicio"
-        ],
-        [
-            "float",
-            "xFinal"
-        ],
-        [
-            "Point",
-            "p1"
-        ],
-        [
             "double",
-            "AngleInicio"
-        ],
-        [
-            "float",
-            "y"
-        ],
-        [
-            "float",
-            "xinicio"
-        ],
-        [
-            "Font",
-            "drawFont"
+            "AngleFinal"
         ],
         [
             "Functions",
             "f"
-        ],
-        [
-            "List",
-            "seq"
-        ],
-        [
-            "List",
-            "obj"
         ],
         [
             "int",
@@ -1647,7 +1639,11 @@
         ],
         [
             "List",
-            "list"
+            "obj"
+        ],
+        [
+            "List",
+            "seq"
         ],
         [
             "Point",
@@ -1659,14 +1655,6 @@
         ],
         [
             "int",
-            "radio"
-        ],
-        [
-            "Point",
-            "p1"
-        ],
-        [
-            "int",
             "count"
         ],
         [
@@ -1683,19 +1671,19 @@
         ],
         [
             "int",
-            "ContadorDePuntos"
+            "radio"
         ],
         [
-            "bool",
-            "Add"
+            "List",
+            "list"
         ],
         [
-            "bool",
-            "valido"
+            "Point",
+            "p1"
         ],
         [
             "int",
-            "i"
+            "ContadorDePuntos"
         ],
         [
             "string",
@@ -1706,12 +1694,60 @@
             "error"
         ],
         [
+            "string",
+            "a"
+        ],
+        [
+            "bool",
+            "valido"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
             "int",
             "j"
         ],
         [
+            "bool",
+            "Add"
+        ],
+        [
             "string",
-            "a"
+            "b"
+        ],
+        [
+            "Expression",
+            "value"
+        ],
+        [
+            "List",
+            "list1"
+        ],
+        [
+            "Sequence",
+            "seq"
+        ],
+        [
+            "int",
+            "aux"
+        ],
+        [
+            "Token",
+            "arg"
+        ],
+        [
+            "Function",
+            "function"
+        ],
+        [
+            "Expression",
+            "arg"
+        ],
+        [
+            "Import",
+            "import"
         ],
         [
             "Expression",
@@ -1719,11 +1755,59 @@
         ],
         [
             "List",
-            "list1"
+            "args"
+        ],
+        [
+            "Expression",
+            "condicion"
+        ],
+        [
+            "Sequence",
+            "sequence"
+        ],
+        [
+            "string",
+            "a"
+        ],
+        [
+            "List",
+            "answer"
         ],
         [
             "Token",
             "name"
+        ],
+        [
+            "string",
+            "color"
+        ],
+        [
+            "Expression",
+            "expr"
+        ],
+        [
+            "string",
+            "type"
+        ],
+        [
+            "string",
+            "message"
+        ],
+        [
+            "List",
+            "list2"
+        ],
+        [
+            "List",
+            "letBody"
+        ],
+        [
+            "Expression",
+            "auxseq"
+        ],
+        [
+            "int",
+            "count"
         ],
         [
             "int",
@@ -1734,8 +1818,48 @@
             "left"
         ],
         [
+            "Expression",
+            "rigth"
+        ],
+        [
             "string",
             "path"
+        ],
+        [
+            "Token",
+            "operador"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "Function",
+            "exp"
+        ],
+        [
+            "Expression",
+            "final"
+        ],
+        [
+            "Token",
+            "a"
+        ],
+        [
+            "Expression",
+            "aux"
+        ],
+        [
+            "Expression",
+            "inBody"
+        ],
+        [
+            "List",
+            "arguments"
+        ],
+        [
+            "List",
+            "list"
         ],
         [
             "Expression",
@@ -1743,191 +1867,31 @@
         ],
         [
             "Expression",
-            "expr"
-        ],
-        [
-            "List",
-            "letBody"
-        ],
-        [
-            "string",
-            "color"
-        ],
-        [
-            "Function",
-            "function"
-        ],
-        [
-            "string",
-            "type"
-        ],
-        [
-            "List",
-            "args"
-        ],
-        [
-            "Expression",
-            "inBody"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "Token",
-            "a"
-        ],
-        [
-            "Function",
-            "exp"
-        ],
-        [
-            "Token",
-            "operador"
-        ],
-        [
-            "Expression",
-            "auxseq"
-        ],
-        [
-            "Expression",
-            "condicion"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "Expression",
             "thenBody"
-        ],
-        [
-            "Expression",
-            "aux"
-        ],
-        [
-            "Expression",
-            "rigth"
-        ],
-        [
-            "Expression",
-            "final"
-        ],
-        [
-            "string",
-            "b"
-        ],
-        [
-            "string",
-            "a"
-        ],
-        [
-            "List",
-            "list2"
-        ],
-        [
-            "Token",
-            "arg"
-        ],
-        [
-            "string",
-            "message"
-        ],
-        [
-            "List",
-            "list"
-        ],
-        [
-            "Sequence",
-            "seq"
-        ],
-        [
-            "Sequence",
-            "sequence"
-        ],
-        [
-            "List",
-            "answer"
-        ],
-        [
-            "Expression",
-            "value"
-        ],
-        [
-            "int",
-            "aux"
-        ],
-        [
-            "Expression",
-            "arg"
-        ],
-        [
-            "List",
-            "arguments"
-        ],
-        [
-            "Import",
-            "import"
-        ],
-        [
-            "float",
-            "y1"
-        ],
-        [
-            "float",
-            "y2"
-        ],
-        [
-            "float",
-            "m1"
-        ],
-        [
-            "float",
-            "C"
-        ],
-        [
-            "float",
-            "n1"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "float",
-            "x2"
-        ],
-        [
-            "float",
-            "razon"
-        ],
-        [
-            "List",
-            "listc1"
-        ],
-        [
-            "Line",
-            "l1"
-        ],
-        [
-            "Point",
-            "p3"
-        ],
-        [
-            "Random",
-            "random"
         ],
         [
             "float",
             "x3"
         ],
         [
-            "float",
-            "x"
+            "Point",
+            "p3"
         ],
         [
             "float",
-            "m"
+            "x4"
+        ],
+        [
+            "Point",
+            "p4"
+        ],
+        [
+            "Point",
+            "p2"
+        ],
+        [
+            "float",
+            "razon"
         ],
         [
             "float",
@@ -1935,71 +1899,19 @@
         ],
         [
             "float",
-            "q"
-        ],
-        [
-            "List",
-            "points"
-        ],
-        [
-            "Point",
-            "p2"
-        ],
-        [
-            "int",
-            "y"
+            "y2"
         ],
         [
             "float",
-            "n"
-        ],
-        [
-            "float",
-            "A"
-        ],
-        [
-            "float",
-            "A1"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "float",
-            "x1"
-        ],
-        [
-            "float",
-            "B"
-        ],
-        [
-            "float",
-            "B1"
-        ],
-        [
-            "float",
-            "absisa"
-        ],
-        [
-            "Point",
-            "p1"
-        ],
-        [
-            "float",
-            "x4"
-        ],
-        [
-            "int",
-            "x"
+            "C"
         ],
         [
             "float",
             "Dis1"
         ],
         [
-            "List",
-            "result"
+            "float",
+            "n"
         ],
         [
             "List",
@@ -2007,19 +1919,111 @@
         ],
         [
             "float",
+            "m1"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "float",
+            "x1"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "List",
+            "listc1"
+        ],
+        [
+            "float",
+            "absisa"
+        ],
+        [
+            "int",
             "y"
+        ],
+        [
+            "float",
+            "x"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "float",
+            "y1"
+        ],
+        [
+            "List",
+            "points"
+        ],
+        [
+            "float",
+            "B"
+        ],
+        [
+            "Line",
+            "l1"
+        ],
+        [
+            "float",
+            "y"
+        ],
+        [
+            "float",
+            "A1"
+        ],
+        [
+            "Point",
+            "p1"
+        ],
+        [
+            "float",
+            "A"
+        ],
+        [
+            "float",
+            "x2"
+        ],
+        [
+            "float",
+            "B1"
+        ],
+        [
+            "float",
+            "m"
         ],
         [
             "float",
             "C1"
         ],
         [
-            "Point",
-            "p4"
+            "float",
+            "n1"
+        ],
+        [
+            "float",
+            "q"
         ],
         [
             "Random",
             "random"
+        ],
+        [
+            "int",
+            "x"
         ],
         [
             "double",
@@ -2027,15 +2031,7 @@
         ],
         [
             "int",
-            "x"
-        ],
-        [
-            "int",
             "count"
-        ],
-        [
-            "List",
-            "points"
         ],
         [
             "int",
@@ -2044,6 +2040,10 @@
         [
             "List",
             "result"
+        ],
+        [
+            "List",
+            "points"
         ],
         [
             "Line",
@@ -2058,20 +2058,20 @@
             "random"
         ],
         [
+            "int",
+            "x"
+        ],
+        [
             "double",
             "n"
         ],
         [
             "int",
-            "x"
+            "count"
         ],
         [
             "int",
             "i"
-        ],
-        [
-            "int",
-            "count"
         ],
         [
             "List",
@@ -2082,20 +2082,24 @@
             "points"
         ],
         [
-            "int",
-            "y"
-        ],
-        [
             "Line",
             "line"
         ],
         [
-            "List",
-            "points"
+            "int",
+            "y"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "Circle",
             "c1"
+        ],
+        [
+            "List",
+            "points"
         ],
         [
             "double",
@@ -2106,36 +2110,32 @@
             "i"
         ],
         [
-            "List",
-            "points"
-        ],
-        [
             "double",
             "n"
         ],
         [
-            "int",
-            "i"
+            "List",
+            "points"
         ],
         [
             "float",
             "dist"
         ],
         [
-            "Random",
-            "random"
-        ],
-        [
-            "float",
-            "y1"
-        ],
-        [
             "float",
             "x"
         ],
         [
             "float",
-            "m"
+            "n"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "x"
         ],
         [
             "double",
@@ -2143,19 +2143,23 @@
         ],
         [
             "float",
-            "n1"
+            "n2"
         ],
         [
             "int",
             "count"
         ],
         [
-            "int",
-            "i"
+            "float",
+            "x1"
+        ],
+        [
+            "float",
+            "m"
         ],
         [
             "int",
-            "x"
+            "i"
         ],
         [
             "List",
@@ -2163,15 +2167,11 @@
         ],
         [
             "float",
-            "x1"
+            "y1"
         ],
         [
             "List",
             "points"
-        ],
-        [
-            "float",
-            "y"
         ],
         [
             "int",
@@ -2179,11 +2179,11 @@
         ],
         [
             "float",
-            "n2"
+            "y"
         ],
         [
             "float",
-            "n"
+            "n1"
         ],
         [
             "List",
@@ -2198,44 +2198,36 @@
             "rigth"
         ],
         [
-            "object",
-            "inicio"
+            "bool",
+            "isnull"
         ],
         [
             "object",
-            "final"
+            "inicio"
         ],
         [
             "double",
             "i"
         ],
         [
-            "bool",
-            "isnull"
-        ],
-        [
             "List",
             "ints"
         ],
         [
-            "Token",
-            "type"
-        ],
-        [
             "object",
-            "left"
+            "final"
         ],
         [
             "object",
             "rigth"
         ],
         [
-            "int",
-            "i"
+            "object",
+            "left"
         ],
         [
-            "List",
-            "value"
+            "Token",
+            "type"
         ],
         [
             "object",
@@ -2246,16 +2238,20 @@
             "value"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
             "List",
             "obj"
         ],
         [
-            "object",
+            "List",
             "value"
         ],
         [
             "object",
-            "condicion"
+            "value"
         ],
         [
             "object",
@@ -2266,19 +2262,11 @@
             "elsebody"
         ],
         [
-            "Seq",
-            "seq"
+            "object",
+            "condicion"
         ],
         [
             "Ray",
-            "f1"
-        ],
-        [
-            "Circle",
-            "f1"
-        ],
-        [
-            "Line",
             "f1"
         ],
         [
@@ -2286,11 +2274,23 @@
             "f1"
         ],
         [
-            "Arc",
+            "Seq",
+            "seq"
+        ],
+        [
+            "Line",
             "f1"
         ],
         [
             "Point",
+            "f1"
+        ],
+        [
+            "Circle",
+            "f1"
+        ],
+        [
+            "Arc",
             "f1"
         ],
         [
@@ -2302,8 +2302,8 @@
             "variables"
         ],
         [
-            "Token",
-            "tok"
+            "int",
+            "i"
         ],
         [
             "List",
@@ -2314,162 +2314,162 @@
             "value"
         ],
         [
-            "int",
-            "i"
+            "Token",
+            "tok"
         ]
     ],
     "method_names": [
-        "InitializeComponent",
         "Dispose",
+        "InitializeComponent",
+        "Run_Click",
+        "Save_Click",
         "PrintError",
         "Clean_Click",
         "PrintErrors",
-        "Save_Click",
         "Print",
-        "Run_Click",
-        "DrawCircle",
+        "DrawLine",
         "DrawString",
         "DrawArc",
-        "DrawSeq",
-        "DrawLine",
-        "DrawPoint",
         "DrawRay",
+        "DrawCircle",
         "DrawSegment",
+        "DrawPoint",
+        "DrawSeq",
         "Main",
+        "Draw",
+        "Rest",
+        "SumaSeq",
         "IEnumerable",
         "GetEnumerator",
-        "Draw",
-        "SumaSeq",
-        "Rest",
-        "DrawCircle",
-        "Intersect",
-        "DrawString",
-        "PrintError",
-        "Visit",
+        "DrawLine",
+        "RaySeq",
+        "SegmentSeq",
+        "DrawSegment",
+        "GeneratePoint",
         "GenerateArc",
+        "DrawString",
         "GenerateRay",
-        "GenerateLine",
-        "ArcSeq",
+        "DrawArc",
+        "CircleSeq",
+        "GenerateCircle",
         "PrintErrors",
         "LineSeq",
-        "GeneratePoint",
-        "DrawLine",
         "DrawPoint",
-        "Draw",
-        "Print",
-        "GenerateCircle",
-        "DrawSegment",
-        "RaySeq",
-        "GenerateSegment",
-        "CircleSeq",
         "DrawSeq",
-        "randoms",
-        "Points",
+        "Intersect",
+        "PrintError",
         "DrawRay",
-        "SegmentSeq",
-        "DrawArc",
-        "PointSeq",
-        "GenerateSegment",
-        "SegmentSeq",
-        "CircleSeq",
+        "Points",
+        "DrawCircle",
+        "GenerateLine",
+        "randoms",
         "ArcSeq",
+        "Print",
+        "GenerateSegment",
         "PointSeq",
+        "Draw",
+        "Visit",
+        "GenerateSegment",
+        "GenerateArc",
+        "PointSeq",
+        "GenerateRay",
+        "RaySeq",
+        "ArcSeq",
+        "CircleSeq",
+        "GenerateCircle",
+        "Points",
+        "SegmentSeq",
+        "GenerateLine",
+        "randoms",
         "LineSeq",
         "GeneratePoint",
-        "randoms",
-        "Points",
-        "GenerateArc",
-        "GenerateRay",
-        "GenerateLine",
-        "GenerateCircle",
-        "RaySeq",
         "ToString",
         "GetTokens",
-        "color",
-        "seq",
-        "call",
-        "consume",
+        "ifStatement",
         "check",
         "Parse",
         "primary",
-        "range",
-        "ifStatement",
+        "mod",
         "factor",
+        "call",
         "var",
+        "import",
         "stm",
+        "term",
+        "Variables",
+        "logical",
+        "color",
+        "match",
+        "comparison",
+        "advance",
         "expression",
         "checkValue",
-        "logical",
-        "unary",
-        "advance",
+        "seq",
         "letStatement",
-        "Variables",
-        "import",
-        "mod",
-        "match",
-        "term",
-        "comparison",
+        "consume",
+        "unary",
+        "range",
+        "RandomPoints",
         "Intersect",
-        "Draw",
         "Equals",
-        "RandomPoints",
-        "Intersect",
         "Draw",
         "RandomPoints",
         "Intersect",
         "Draw",
+        "RandomPoints",
+        "Intersect",
         "Equals",
-        "RandomPoints",
-        "Intersect",
         "Draw",
-        "Equals",
         "RandomPoints",
         "Intersect",
+        "Equals",
         "Draw",
-        "Equals",
         "RandomPoints",
         "Intersect",
+        "Equals",
+        "Draw",
+        "RandomPoints",
+        "Intersect",
+        "Equals",
         "Measure",
-        "Equals",
         "Draw",
         "RandomPoints",
         "Intersect",
-        "Measure",
         "Equals",
+        "Measure",
         "Draw",
-        "RandomPoints",
         "Visit",
         "Visit",
         "Visit",
         "Visit",
         "Visit",
         "Visit",
-        "IgualIgual",
-        "Mayor",
-        "Menor",
-        "Visit",
-        "Suma",
-        "And",
-        "Division",
         "MenorIgual",
-        "Resta",
-        "Modulo",
-        "MayorIgual",
         "NoIgual",
-        "Multiplicacion",
+        "MayorIgual",
+        "Menor",
+        "And",
+        "Modulo",
+        "Mayor",
+        "Suma",
+        "Division",
+        "IgualIgual",
         "Or",
-        "FunCircle",
-        "Intersect",
-        "FunPoint",
+        "Visit",
+        "Multiplicacion",
+        "Resta",
         "FunPoints",
+        "VisitFuncion",
+        "FunSegment",
+        "FunPoint",
+        "Intersect",
+        "FunRay",
+        "FunCircle",
+        "FunArc",
         "Measure",
         "FunLine",
-        "Visit",
-        "VisitFuncion",
-        "FunRay",
-        "FunArc",
-        "FunSegment",
         "FunDraw",
+        "Visit",
         "Visit",
         "Visit",
         "Visit",
@@ -2488,18 +2488,6 @@
             "void"
         ],
         [
-            "PrintError",
-            "void"
-        ],
-        [
-            "Run_Click",
-            "void"
-        ],
-        [
-            "Clean_Click",
-            "void"
-        ],
-        [
             "Print",
             "void"
         ],
@@ -2512,6 +2500,30 @@
             "void"
         ],
         [
+            "PrintError",
+            "void"
+        ],
+        [
+            "Run_Click",
+            "void"
+        ],
+        [
+            "Clean_Click",
+            "void"
+        ],
+        [
+            "DrawSeq",
+            "void"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawArc",
+            "void"
+        ],
+        [
             "DrawRay",
             "void"
         ],
@@ -2524,15 +2536,7 @@
             "void"
         ],
         [
-            "DrawLine",
-            "void"
-        ],
-        [
             "DrawPoint",
-            "void"
-        ],
-        [
-            "DrawArc",
             "void"
         ],
         [
@@ -2540,16 +2544,12 @@
             "void"
         ],
         [
-            "DrawSeq",
-            "void"
-        ],
-        [
             "Main",
             "void"
         ],
         [
-            "Rest",
-            "Seq"
+            "Draw",
+            "void"
         ],
         [
             "SumaSeq",
@@ -2560,27 +2560,35 @@
             "IEnumerator"
         ],
         [
-            "Draw",
-            "void"
+            "Rest",
+            "Seq"
         ],
         [
             "GetEnumerator",
             "IEnumerator"
         ],
         [
+            "SegmentSeq",
+            "Seq"
+        ],
+        [
+            "LineSeq",
+            "Seq"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawRay",
+            "void"
+        ],
+        [
             "Visit",
             "object"
         ],
         [
-            "GenerateSegment",
-            "Segment"
-        ],
-        [
-            "PrintError",
-            "void"
-        ],
-        [
-            "SegmentSeq",
+            "CircleSeq",
             "Seq"
         ],
         [
@@ -2588,7 +2596,75 @@
             "Circle"
         ],
         [
+            "DrawString",
+            "void"
+        ],
+        [
+            "ArcSeq",
+            "Seq"
+        ],
+        [
             "DrawSeq",
+            "void"
+        ],
+        [
+            "PointSeq",
+            "Seq"
+        ],
+        [
+            "randoms",
+            "Seq"
+        ],
+        [
+            "Intersect",
+            "List"
+        ],
+        [
+            "DrawPoint",
+            "void"
+        ],
+        [
+            "GenerateRay",
+            "Ray"
+        ],
+        [
+            "GenerateSegment",
+            "Segment"
+        ],
+        [
+            "GeneratePoint",
+            "Point"
+        ],
+        [
+            "Points",
+            "Seq"
+        ],
+        [
+            "DrawArc",
+            "void"
+        ],
+        [
+            "PrintError",
+            "void"
+        ],
+        [
+            "DrawSegment",
+            "void"
+        ],
+        [
+            "DrawCircle",
+            "void"
+        ],
+        [
+            "RaySeq",
+            "Seq"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "Print",
             "void"
         ],
         [
@@ -2596,38 +2672,6 @@
             "void"
         ],
         [
-            "CircleSeq",
-            "Seq"
-        ],
-        [
-            "DrawCircle",
-            "void"
-        ],
-        [
-            "LineSeq",
-            "Seq"
-        ],
-        [
-            "Draw",
-            "void"
-        ],
-        [
-            "DrawArc",
-            "void"
-        ],
-        [
-            "randoms",
-            "Seq"
-        ],
-        [
-            "DrawSegment",
-            "void"
-        ],
-        [
-            "DrawLine",
-            "void"
-        ],
-        [
             "GenerateArc",
             "Arc"
         ],
@@ -2636,91 +2680,31 @@
             "Line"
         ],
         [
-            "Print",
-            "void"
-        ],
-        [
-            "Intersect",
-            "List"
-        ],
-        [
-            "DrawRay",
-            "void"
-        ],
-        [
-            "PointSeq",
-            "Seq"
-        ],
-        [
-            "GeneratePoint",
-            "Point"
-        ],
-        [
-            "DrawPoint",
-            "void"
-        ],
-        [
-            "ArcSeq",
-            "Seq"
-        ],
-        [
             "RaySeq",
             "Seq"
         ],
         [
-            "DrawString",
-            "void"
-        ],
-        [
-            "Points",
-            "Seq"
-        ],
-        [
-            "GenerateRay",
-            "Ray"
-        ],
-        [
-            "GenerateSegment",
-            "Segment"
-        ],
-        [
-            "CircleSeq",
-            "Seq"
-        ],
-        [
-            "PointSeq",
-            "Seq"
-        ],
-        [
             "GeneratePoint",
             "Point"
-        ],
-        [
-            "GenerateArc",
-            "Arc"
-        ],
-        [
-            "LineSeq",
-            "Seq"
         ],
         [
             "SegmentSeq",
             "Seq"
         ],
         [
-            "ArcSeq",
+            "Points",
             "Seq"
         ],
         [
-            "GenerateLine",
-            "Line"
+            "PointSeq",
+            "Seq"
+        ],
+        [
+            "LineSeq",
+            "Seq"
         ],
         [
             "randoms",
-            "Seq"
-        ],
-        [
-            "RaySeq",
             "Seq"
         ],
         [
@@ -2728,12 +2712,28 @@
             "Circle"
         ],
         [
-            "Points",
+            "GenerateRay",
+            "Ray"
+        ],
+        [
+            "GenerateArc",
+            "Arc"
+        ],
+        [
+            "CircleSeq",
             "Seq"
         ],
         [
-            "GenerateRay",
-            "Ray"
+            "GenerateSegment",
+            "Segment"
+        ],
+        [
+            "GenerateLine",
+            "Line"
+        ],
+        [
+            "ArcSeq",
+            "Seq"
         ],
         [
             "ToString",
@@ -2744,11 +2744,43 @@
             "void"
         ],
         [
+            "expression",
+            "Expression"
+        ],
+        [
+            "stm",
+            "Expression"
+        ],
+        [
+            "logical",
+            "Expression"
+        ],
+        [
+            "match",
+            "bool"
+        ],
+        [
+            "Variables",
+            "List"
+        ],
+        [
+            "letStatement",
+            "Expression"
+        ],
+        [
+            "mod",
+            "Expression"
+        ],
+        [
             "var",
             "Expression"
         ],
         [
-            "comparison",
+            "primary",
+            "Expression"
+        ],
+        [
+            "seq",
             "Expression"
         ],
         [
@@ -2756,7 +2788,31 @@
             "void"
         ],
         [
-            "logical",
+            "advance",
+            "Token"
+        ],
+        [
+            "check",
+            "bool"
+        ],
+        [
+            "import",
+            "Expression"
+        ],
+        [
+            "range",
+            "Expression"
+        ],
+        [
+            "checkValue",
+            "bool"
+        ],
+        [
+            "factor",
+            "Expression"
+        ],
+        [
+            "ifStatement",
             "Expression"
         ],
         [
@@ -2764,7 +2820,11 @@
             "Expression"
         ],
         [
-            "seq",
+            "consume",
+            "Token"
+        ],
+        [
+            "comparison",
             "Expression"
         ],
         [
@@ -2776,76 +2836,12 @@
             "Expression"
         ],
         [
-            "expression",
-            "Expression"
-        ],
-        [
-            "ifStatement",
-            "Expression"
-        ],
-        [
-            "check",
-            "bool"
-        ],
-        [
-            "stm",
-            "Expression"
-        ],
-        [
             "unary",
             "Expression"
         ],
         [
-            "match",
-            "bool"
-        ],
-        [
-            "advance",
-            "Token"
-        ],
-        [
-            "consume",
-            "Token"
-        ],
-        [
-            "import",
-            "Expression"
-        ],
-        [
-            "checkValue",
-            "bool"
-        ],
-        [
-            "range",
-            "Expression"
-        ],
-        [
-            "mod",
-            "Expression"
-        ],
-        [
-            "primary",
-            "Expression"
-        ],
-        [
-            "factor",
-            "Expression"
-        ],
-        [
-            "letStatement",
-            "Expression"
-        ],
-        [
-            "Variables",
-            "List"
-        ],
-        [
             "Equals",
             "bool"
-        ],
-        [
-            "Intersect",
-            "List"
         ],
         [
             "RandomPoints",
@@ -2854,6 +2850,10 @@
         [
             "Draw",
             "void"
+        ],
+        [
+            "Intersect",
+            "List"
         ],
         [
             "RandomPoints",
@@ -2872,48 +2872,60 @@
             "bool"
         ],
         [
-            "Intersect",
-            "List"
-        ],
-        [
             "RandomPoints",
             "List"
         ],
         [
             "Draw",
             "void"
+        ],
+        [
+            "Intersect",
+            "List"
         ],
         [
             "Equals",
             "bool"
         ],
         [
-            "Intersect",
-            "List"
-        ],
-        [
             "RandomPoints",
             "List"
         ],
         [
             "Draw",
             "void"
+        ],
+        [
+            "Intersect",
+            "List"
         ],
         [
             "Equals",
             "bool"
         ],
         [
-            "Intersect",
-            "List"
-        ],
-        [
             "RandomPoints",
             "List"
         ],
         [
             "Draw",
             "void"
+        ],
+        [
+            "Intersect",
+            "List"
+        ],
+        [
+            "Equals",
+            "bool"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "Intersect",
+            "List"
         ],
         [
             "Measure",
@@ -2937,18 +2949,6 @@
         ],
         [
             "RandomPoints",
-            "List"
-        ],
-        [
-            "Equals",
-            "bool"
-        ],
-        [
-            "Draw",
-            "void"
-        ],
-        [
-            "Intersect",
             "List"
         ],
         [
@@ -2980,7 +2980,15 @@
             "object"
         ],
         [
-            "Visit",
+            "IgualIgual",
+            "object"
+        ],
+        [
+            "MayorIgual",
+            "object"
+        ],
+        [
+            "Menor",
             "object"
         ],
         [
@@ -2992,19 +3000,7 @@
             "object"
         ],
         [
-            "Multiplicacion",
-            "object"
-        ],
-        [
-            "Division",
-            "object"
-        ],
-        [
-            "Resta",
-            "object"
-        ],
-        [
-            "Modulo",
+            "NoIgual",
             "object"
         ],
         [
@@ -3012,27 +3008,19 @@
             "object"
         ],
         [
-            "IgualIgual",
-            "object"
-        ],
-        [
-            "Menor",
-            "object"
-        ],
-        [
-            "NoIgual",
-            "object"
-        ],
-        [
             "Suma",
             "object"
         ],
         [
-            "And",
+            "Multiplicacion",
             "object"
         ],
         [
-            "MayorIgual",
+            "Modulo",
+            "object"
+        ],
+        [
+            "Division",
             "object"
         ],
         [
@@ -3040,19 +3028,11 @@
             "object"
         ],
         [
-            "FunPoints",
+            "Resta",
             "object"
         ],
         [
-            "Intersect",
-            "object"
-        ],
-        [
-            "FunArc",
-            "object"
-        ],
-        [
-            "FunPoint",
+            "And",
             "object"
         ],
         [
@@ -3060,19 +3040,7 @@
             "object"
         ],
         [
-            "Measure",
-            "object"
-        ],
-        [
-            "FunLine",
-            "object"
-        ],
-        [
-            "FunDraw",
-            "object"
-        ],
-        [
-            "VisitFuncion",
+            "FunArc",
             "object"
         ],
         [
@@ -3080,7 +3048,39 @@
             "object"
         ],
         [
+            "FunPoints",
+            "object"
+        ],
+        [
             "FunSegment",
+            "object"
+        ],
+        [
+            "FunDraw",
+            "object"
+        ],
+        [
+            "Measure",
+            "object"
+        ],
+        [
+            "FunPoint",
+            "object"
+        ],
+        [
+            "Visit",
+            "object"
+        ],
+        [
+            "FunLine",
+            "object"
+        ],
+        [
+            "VisitFuncion",
+            "object"
+        ],
+        [
+            "Intersect",
             "object"
         ],
         [
@@ -3152,12 +3152,12 @@
         "DecSequence"
     ],
     "interface_names": [
-        "IGenerateRandom",
+        "IIntersectable",
+        "IPaint",
         "IVisitor",
         "IAplication",
         "IDrawable",
-        "IPaint",
-        "IIntersectable"
+        "IGenerateRandom"
     ],
     "delegate_names": [],
     "node_count": {
@@ -3168,7 +3168,6 @@
         "TerminalNodeImpl": 22795,
         "Qualified_identifierContext": 38,
         "IdentifierContext": 7076,
-        "Namespace_bodyContext": 38,
         "Type_declarationContext": 75,
         "All_member_modifiersContext": 376,
         "All_member_modifierContext": 423,
@@ -3256,13 +3255,14 @@
         "Type_argument_listContext": 160,
         "Using_directivesContext": 8,
         "UsingNamespaceDirectiveContext": 11,
+        "Namespace_bodyContext": 9,
         "Property_declarationContext": 66,
         "Member_nameContext": 66,
         "Accessor_declarationsContext": 65,
         "Accessor_bodyContext": 124,
         "Set_accessor_declarationContext": 59,
         "Accessor_modifierContext": 59,
-        "ErrorNodeImpl": 982,
+        "ErrorNodeImpl": 981,
         "Lambda_expressionContext": 32,
         "Anonymous_function_signatureContext": 32,
         "Right_arrowContext": 34,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 27838,
+    "total_nodes": 27835,
     "max_depth": 1178,
     "number_of_variables": 104,
     "number_of_constants": 0,
@@ -299,15 +299,7 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
             "count"
-        ],
-        [
-            "int",
-            "j"
         ],
         [
             "string",
@@ -319,39 +311,19 @@
         ],
         [
             "int",
-            "index_Of_BestWord"
-        ],
-        [
-            "int",
-            "cost"
-        ],
-        [
-            "List",
-            "resultwords"
-        ],
-        [
-            "int",
-            "c"
-        ],
-        [
-            "int",
-            "costo"
-        ],
-        [
-            "int",
             "i"
-        ],
-        [
-            "bool",
-            "makeSugg"
-        ],
-        [
-            "int",
-            "f"
         ],
         [
             "int",
             "j"
+        ],
+        [
+            "int",
+            "index_Of_BestWord"
+        ],
+        [
+            "List",
+            "resultwords"
         ],
         [
             "string",
@@ -359,11 +331,11 @@
         ],
         [
             "int",
-            "m"
+            "result"
         ],
         [
             "int",
-            "tempCost"
+            "cost"
         ],
         [
             "string",
@@ -371,7 +343,35 @@
         ],
         [
             "int",
-            "result"
+            "costo"
+        ],
+        [
+            "int",
+            "c"
+        ],
+        [
+            "int",
+            "f"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "bool",
+            "makeSugg"
+        ],
+        [
+            "int",
+            "tempCost"
+        ],
+        [
+            "int",
+            "m"
         ],
         [
             "List",
@@ -387,10 +387,6 @@
         ],
         [
             "int",
-            "j"
-        ],
-        [
-            "int",
             "TotalDePalabrasDelDocumento"
         ],
         [
@@ -398,8 +394,12 @@
             "words"
         ],
         [
-            "Dictionary",
-            "VectorQuery"
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "suggestion"
         ],
         [
             "List",
@@ -414,12 +414,44 @@
             "i"
         ],
         [
-            "string",
-            "suggestion"
-        ],
-        [
             "SearchItem",
             "items"
+        ],
+        [
+            "Dictionary",
+            "VectorQuery"
+        ],
+        [
+            "int",
+            "result"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "int",
+            "rg"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "int",
+            "c"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "f"
+        ],
+        [
+            "int",
+            "a"
         ],
         [
             "int",
@@ -430,136 +462,108 @@
             "det"
         ],
         [
-            "int",
-            "rg"
-        ],
-        [
-            "int",
-            "c"
-        ],
-        [
-            "List",
-            "values"
-        ],
-        [
             "double",
             "result"
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "int",
-            "f"
-        ],
-        [
-            "int",
             "j"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "int",
-            "b"
-        ],
-        [
-            "int",
-            "a"
         ],
         [
             "int",
             "Temp"
         ],
         [
-            "int",
-            "result"
-        ],
-        [
-            "Dictionary",
-            "vectorquery"
+            "List",
+            "values"
         ],
         [
             "int",
-            "i"
+            "b"
         ],
         [
             "List",
             "WordsOfQuery"
         ],
         [
-            "double",
-            "tempMinDistance"
+            "int",
+            "i"
         ],
         [
-            "List",
-            "result"
+            "Dictionary",
+            "vectorquery"
         ],
         [
             "List",
             "words"
         ],
         [
-            "List",
-            "matches"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "j"
+            "double",
+            "tempMinDistance"
         ],
         [
             "Dictionary",
             "WordIndexs"
         ],
         [
+            "List",
+            "matches"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
             "double",
             "minDistance"
-        ],
-        [
-            "string",
-            "temp"
-        ],
-        [
-            "string",
-            "words"
         ],
         [
             "Dictionary",
             "WordsPositions"
         ],
         [
+            "string",
+            "words"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
             "double",
             "MultiplicacionDeVectores"
         ],
         [
-            "List",
-            "ScoreTxT"
-        ],
-        [
-            "double",
-            "ModuloVectorQuery"
+            "float",
+            "score"
         ],
         [
             "int",
-            "ScoreTxtLength"
+            "i"
+        ],
+        [
+            "List",
+            "NoWords"
         ],
         [
             "(",
             "x"
         ],
         [
-            "int",
-            "i"
+            "double",
+            "ModuloVectorQuery"
+        ],
+        [
+            "Dictionary",
+            "queryTfIdf"
         ],
         [
             "List",
@@ -570,40 +574,36 @@
             "ModuloVectorDoc"
         ],
         [
-            "Dictionary",
-            "queryTfIdf"
+            "int",
+            "ScoreTxtLength"
         ],
         [
             "List",
-            "NoWords"
-        ],
-        [
-            "float",
-            "score"
+            "ScoreTxT"
         ]
     ],
     "method_names": [
         "Items",
-        "BestWord",
         "snippet",
+        "BestWord",
         "LevenshteinDistance",
         "Suggestion",
-        "GetValues",
         "Separar_palabras",
+        "GetValues",
         "Query",
-        "PrintMatrix",
-        "Transpuesta",
-        "Determinante2",
         "Menor",
-        "Product",
-        "Suma",
+        "PrintMatrix",
+        "Determinante2",
+        "Transpuesta",
         "Determinante",
+        "Suma",
         "MultEscalar",
+        "Product",
         "Calcular_Tf_Idf_query",
         "ClosedWords",
+        "Priority",
         "ImportantWord",
         "DontShowWord",
-        "Priority",
         "Calcular_Similitud_Coseno",
         "ScoreTop"
     ],
@@ -629,28 +629,20 @@
             "int"
         ],
         [
-            "GetValues",
-            "void"
-        ],
-        [
             "Separar_palabras",
             "List"
+        ],
+        [
+            "GetValues",
+            "void"
         ],
         [
             "Query",
             "SearchResult"
         ],
         [
-            "Determinante",
+            "Menor",
             "double"
-        ],
-        [
-            "Determinante2",
-            "double"
-        ],
-        [
-            "Suma",
-            "int"
         ],
         [
             "PrintMatrix",
@@ -661,7 +653,11 @@
             "int"
         ],
         [
-            "Menor",
+            "Transpuesta",
+            "int"
+        ],
+        [
+            "Determinante",
             "double"
         ],
         [
@@ -669,12 +665,20 @@
             "int"
         ],
         [
-            "Transpuesta",
+            "Suma",
             "int"
+        ],
+        [
+            "Determinante2",
+            "double"
         ],
         [
             "Calcular_Tf_Idf_query",
             "Dictionary"
+        ],
+        [
+            "ImportantWord",
+            "List"
         ],
         [
             "Priority",
@@ -689,16 +693,12 @@
             "double"
         ],
         [
-            "ImportantWord",
+            "ScoreTop",
             "List"
         ],
         [
             "Calcular_Similitud_Coseno",
             "double"
-        ],
-        [
-            "ScoreTop",
-            "List"
         ]
     ],
     "class_names": [
@@ -757,7 +757,6 @@
         "Namespace_member_declarationContext": 20,
         "Namespace_declarationContext": 10,
         "Qualified_identifierContext": 10,
-        "Namespace_bodyContext": 10,
         "Type_declarationContext": 10,
         "All_member_modifiersContext": 50,
         "All_member_modifierContext": 82,
@@ -811,6 +810,7 @@
         "Numeric_typeContext": 141,
         "Integral_typeContext": 97,
         "Floating_point_typeContext": 44,
+        "Namespace_bodyContext": 7,
         "DeclarationStatementContext": 67,
         "Local_variable_declarationContext": 104,
         "Local_variable_typeContext": 118,

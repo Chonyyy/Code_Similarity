@@ -1,5 +1,5 @@
 {
-    "total_nodes": 71720,
+    "total_nodes": 71716,
     "max_depth": 2897,
     "number_of_variables": 101,
     "number_of_constants": 0,
@@ -510,6 +510,58 @@
     ],
     "variable_names": [
         [
+            "int",
+            "xLeft"
+        ],
+        [
+            "double",
+            "m"
+        ],
+        [
+            "SolidBrush",
+            "brush"
+        ],
+        [
+            "System",
+            "color"
+        ],
+        [
+            "Line",
+            "l"
+        ],
+        [
+            "float",
+            "sweepAngle"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "Geo_Wall_E",
+            "point"
+        ],
+        [
+            "Sequence",
+            "sequence"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "Arc",
+            "a"
+        ],
+        [
+            "Ray",
+            "r"
+        ],
+        [
+            "float",
+            "startAngle"
+        ],
+        [
             "float",
             "endAngle"
         ],
@@ -518,64 +570,8 @@
             "font"
         ],
         [
-            "System",
-            "color"
-        ],
-        [
-            "double",
-            "m"
-        ],
-        [
-            "Line",
-            "l"
-        ],
-        [
-            "Ray",
-            "r"
-        ],
-        [
-            "string",
-            "text"
-        ],
-        [
-            "Random",
-            "random"
-        ],
-        [
-            "int",
-            "yLeft"
-        ],
-        [
-            "string",
-            "userInput"
-        ],
-        [
-            "int",
-            "xRight"
-        ],
-        [
-            "float",
-            "startAngle"
-        ],
-        [
             "int",
             "y"
-        ],
-        [
-            "float",
-            "sweepAngle"
-        ],
-        [
-            "Geo_Wall_E",
-            "point"
-        ],
-        [
-            "SolidBrush",
-            "brush"
-        ],
-        [
-            "Segment",
-            "s"
         ],
         [
             "int",
@@ -583,47 +579,51 @@
         ],
         [
             "int",
-            "xLeft"
-        ],
-        [
-            "Arc",
-            "a"
-        ],
-        [
-            "Sequence",
-            "sequence"
-        ],
-        [
-            "Compiler",
-            "compiler"
-        ],
-        [
-            "int",
-            "x"
-        ],
-        [
-            "Circle",
-            "c"
-        ],
-        [
-            "Pen",
-            "pen"
-        ],
-        [
-            "object",
-            "obj"
-        ],
-        [
-            "global",
-            "temp"
+            "yLeft"
         ],
         [
             "Random",
             "random"
         ],
         [
+            "Compiler",
+            "compiler"
+        ],
+        [
+            "Circle",
+            "c"
+        ],
+        [
+            "string",
+            "userInput"
+        ],
+        [
+            "Segment",
+            "s"
+        ],
+        [
+            "int",
+            "xRight"
+        ],
+        [
+            "Pen",
+            "pen"
+        ],
+        [
+            "global",
+            "temp"
+        ],
+        [
+            "object",
+            "obj"
+        ],
+        [
             "int",
             "MaxPointCoordinate"
+        ],
+        [
+            "Random",
+            "random"
         ],
         [
             "double",
@@ -631,11 +631,15 @@
         ],
         [
             "Type",
+            "radius"
+        ],
+        [
+            "Type",
             "center"
         ],
         [
             "Type",
-            "radius"
+            "end"
         ],
         [
             "Type",
@@ -643,15 +647,11 @@
         ],
         [
             "Type",
-            "end"
+            "result"
         ],
         [
             "List",
             "todraw"
-        ],
-        [
-            "Type",
-            "result"
         ],
         [
             "Type",
@@ -667,11 +667,11 @@
         ],
         [
             "Type",
-            "right"
+            "left"
         ],
         [
             "Type",
-            "left"
+            "right"
         ],
         [
             "Type",
@@ -683,27 +683,11 @@
         ],
         [
             "double",
-            "end"
-        ],
-        [
-            "List",
-            "elements"
-        ],
-        [
-            "List",
-            "seq"
+            "start"
         ],
         [
             "Sequence",
             "first"
-        ],
-        [
-            "List",
-            "sequence"
-        ],
-        [
-            "Undefined",
-            "undefined"
         ],
         [
             "var",
@@ -714,28 +698,44 @@
             "second"
         ],
         [
-            "double",
-            "start"
+            "List",
+            "sequence"
         ],
         [
-            "Dictionary",
-            "arguments"
+            "double",
+            "end"
+        ],
+        [
+            "List",
+            "elements"
+        ],
+        [
+            "Undefined",
+            "undefined"
+        ],
+        [
+            "List",
+            "seq"
         ],
         [
             "Type",
             "result"
         ],
         [
-            "Type",
-            "function"
+            "VariableExpression",
+            "variable"
         ],
         [
             "int",
             "i"
         ],
         [
-            "VariableExpression",
-            "variable"
+            "Type",
+            "function"
+        ],
+        [
+            "Dictionary",
+            "arguments"
         ],
         [
             "Type",
@@ -751,71 +751,71 @@
         ],
         [
             "Type",
-            "value"
-        ],
-        [
-            "Type",
             "base_"
         ],
         [
             "Type",
-            "fig"
-        ],
-        [
-            "Random",
-            "random"
-        ],
-        [
-            "Type",
-            "sequence"
-        ],
-        [
-            "List",
-            "randoms"
-        ],
-        [
-            "double",
-            "intercept"
-        ],
-        [
-            "double",
-            "arcPointsDistance"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "double",
-            "distance"
-        ],
-        [
-            "double",
-            "starPointDistance"
-        ],
-        [
-            "double",
-            "endPointDistance"
+            "value"
         ],
         [
             "bool",
             "isInFigure"
         ],
         [
+            "Random",
+            "random"
+        ],
+        [
+            "List",
+            "randoms"
+        ],
+        [
+            "Type",
+            "fig"
+        ],
+        [
+            "double",
+            "arcPointsDistance"
+        ],
+        [
+            "double",
+            "starPointDistance"
+        ],
+        [
             "Point",
             "point"
+        ],
+        [
+            "Type",
+            "sequence"
+        ],
+        [
+            "double",
+            "intercept"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Random",
+            "numbers"
         ],
         [
             "Random",
             "cant"
         ],
         [
+            "double",
+            "endPointDistance"
+        ],
+        [
             "List",
             "points"
         ],
         [
-            "Random",
-            "numbers"
+            "double",
+            "distance"
         ],
         [
             "Type",
@@ -827,7 +827,7 @@
         ],
         [
             "Type",
-            "start"
+            "end"
         ],
         [
             "Type",
@@ -835,25 +835,25 @@
         ],
         [
             "Type",
-            "end"
+            "start"
         ]
     ],
     "method_names": [
-        "DrawCircle",
-        "RunButton_Click",
-        "DrawSequence",
-        "AddDrawable",
-        "DrawArc",
-        "DrawRay",
-        "DrawPoint",
         "DrawLine",
-        "StopDrawing_Click",
-        "Main",
         "TextBoxInput_TextChanged",
         "SearchColor",
-        "drawingBox_Paint",
-        "DrawSegment",
         "CompileButton_Click",
+        "DrawSequence",
+        "AddDrawable",
+        "StopDrawing_Click",
+        "DrawArc",
+        "drawingBox_Paint",
+        "DrawRay",
+        "RunButton_Click",
+        "DrawCircle",
+        "Main",
+        "DrawSegment",
+        "DrawPoint",
         "HandleException",
         "Check",
         "RandomCoordinateX",
@@ -872,45 +872,17 @@
         "Check",
         "Check",
         "Check",
-        "GenerateSamples",
         "CreateRandomPoints",
+        "GenerateSamples",
         "Belongs",
-        "Check",
         "GenerateRandom",
+        "Check",
         "Check",
         "Check"
     ],
     "method_return_types": [
         [
-            "SearchColor",
-            "System"
-        ],
-        [
-            "DrawRay",
-            "void"
-        ],
-        [
-            "DrawSegment",
-            "void"
-        ],
-        [
-            "CompileButton_Click",
-            "void"
-        ],
-        [
-            "DrawCircle",
-            "void"
-        ],
-        [
-            "DrawLine",
-            "void"
-        ],
-        [
-            "DrawPoint",
-            "void"
-        ],
-        [
-            "DrawSequence",
+            "StopDrawing_Click",
             "void"
         ],
         [
@@ -918,11 +890,7 @@
             "void"
         ],
         [
-            "StopDrawing_Click",
-            "void"
-        ],
-        [
-            "TextBoxInput_TextChanged",
+            "CompileButton_Click",
             "void"
         ],
         [
@@ -930,7 +898,35 @@
             "void"
         ],
         [
+            "SearchColor",
+            "System"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawRay",
+            "void"
+        ],
+        [
+            "drawingBox_Paint",
+            "void"
+        ],
+        [
+            "TextBoxInput_TextChanged",
+            "void"
+        ],
+        [
             "DrawArc",
+            "void"
+        ],
+        [
+            "DrawSequence",
+            "void"
+        ],
+        [
+            "DrawSegment",
             "void"
         ],
         [
@@ -938,7 +934,11 @@
             "void"
         ],
         [
-            "drawingBox_Paint",
+            "DrawCircle",
+            "void"
+        ],
+        [
+            "DrawPoint",
             "void"
         ],
         [
@@ -950,11 +950,11 @@
             "Type"
         ],
         [
-            "RandomCoordinateY",
+            "RandomCoordinateX",
             "int"
         ],
         [
-            "RandomCoordinateX",
+            "RandomCoordinateY",
             "int"
         ],
         [
@@ -1014,24 +1014,24 @@
             "Type"
         ],
         [
-            "CreateRandomPoints",
-            "List"
-        ],
-        [
-            "GenerateSamples",
-            "List"
-        ],
-        [
-            "Belongs",
-            "bool"
-        ],
-        [
             "GenerateRandom",
             "List"
         ],
         [
             "Check",
             "Type"
+        ],
+        [
+            "Belongs",
+            "bool"
+        ],
+        [
+            "CreateRandomPoints",
+            "List"
+        ],
+        [
+            "GenerateSamples",
+            "List"
         ],
         [
             "Check",
@@ -1045,17 +1045,17 @@
     "class_names": [
         "MainForm",
         "Resources",
-        "Node",
+        "Stmt",
         "Expressions",
         "Empty",
-        "Stmt",
+        "Node",
         "Interpreter",
         "Drawable",
-        "LexicalError",
-        "SemanticError",
         "SyntaxError",
-        "TypeCheckerError",
+        "SemanticError",
+        "LexicalError",
         "Error",
+        "TypeCheckerError",
         "Scope",
         "Parser",
         "Compiler",
@@ -1074,8 +1074,8 @@
         "Undefined",
         "Line",
         "Circle",
-        "Number",
         "String",
+        "Number",
         "Boolean",
         "Point",
         "Segment",
@@ -1088,23 +1088,23 @@
         "MeasureExpression",
         "BinaryExpression",
         "LineExpression",
+        "SequenceExpression",
         "InfiniteSequenceExpression",
         "ConcatenatedSequenceExpression",
-        "SequenceExpression",
         "FunctionCallExpression",
         "ConditionalExpression",
         "RayExpression",
         "LogExpression",
-        "Randoms",
-        "Samples",
-        "Count",
-        "BetweenParenExpressions",
         "RandomPoints",
+        "BetweenParenExpressions",
+        "Randoms",
+        "Count",
+        "Samples",
         "StringExpression",
         "EExpression",
-        "PIExpression",
-        "VariableExpression",
         "NumberExpression",
+        "VariableExpression",
+        "PIExpression",
         "ArcExpression"
     ],
     "interface_names": [
@@ -1220,7 +1220,7 @@
         "Global_attribute_sectionContext": 32,
         "Global_attribute_targetContext": 32,
         "Attribute_argumentContext": 38,
-        "ErrorNodeImpl": 8570,
+        "ErrorNodeImpl": 8566,
         "Qualified_alias_memberContext": 18,
         "MemberAccessExpressionContext": 4,
         "Property_declarationContext": 186,

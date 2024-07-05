@@ -1,5 +1,5 @@
 {
-    "total_nodes": 19730,
+    "total_nodes": 19727,
     "max_depth": 619,
     "number_of_variables": 87,
     "number_of_constants": 0,
@@ -254,24 +254,28 @@
     ],
     "variable_names": [
         [
-            "char",
-            "separator"
+            "string",
+            "text"
         ],
         [
-            "int",
-            "j"
+            "string",
+            "raw"
         ],
         [
             "double",
             "max"
         ],
         [
-            "Vector",
-            "tf"
+            "int",
+            "cnt"
+        ],
+        [
+            "Dictionary",
+            "Vocabulary"
         ],
         [
             "int",
-            "n"
+            "wordIndex"
         ],
         [
             "int",
@@ -279,35 +283,7 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "bool",
-            "idf"
-        ],
-        [
-            "int",
-            "wordIndex"
-        ],
-        [
-            "Vector",
-            "result"
-        ],
-        [
-            "Dictionary",
-            "Vocabulary"
-        ],
-        [
-            "string",
-            "title"
-        ],
-        [
-            "int",
-            "document"
-        ],
-        [
-            "string",
-            "text"
+            "d"
         ],
         [
             "int",
@@ -315,7 +291,39 @@
         ],
         [
             "string",
-            "raw"
+            "words"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "bool",
+            "idf"
+        ],
+        [
+            "char",
+            "separator"
+        ],
+        [
+            "Vector",
+            "tf"
+        ],
+        [
+            "int",
+            "document"
+        ],
+        [
+            "Vector",
+            "result"
+        ],
+        [
+            "int",
+            "n"
         ],
         [
             "bool",
@@ -323,15 +331,7 @@
         ],
         [
             "int",
-            "d"
-        ],
-        [
-            "int",
-            "cnt"
-        ],
-        [
-            "int",
-            "m"
+            "i"
         ],
         [
             "double",
@@ -339,31 +339,27 @@
         ],
         [
             "string",
-            "words"
+            "title"
         ],
         [
-            "Dictionary",
-            "vocabulary"
+            "Matrix",
+            "TFIDF"
+        ],
+        [
+            "Vector",
+            "idf"
         ],
         [
             "string",
             "s"
         ],
         [
-            "bool",
-            "mk"
-        ],
-        [
-            "TimeSpan",
-            "ts"
-        ],
-        [
-            "double",
-            "Scores"
-        ],
-        [
             "string",
-            "word"
+            "suggestion"
+        ],
+        [
+            "Vector",
+            "tfidf"
         ],
         [
             "int",
@@ -374,36 +370,12 @@
             "i"
         ],
         [
-            "Matrix",
-            "TFIDF"
-        ],
-        [
-            "Vector",
-            "tfidf"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "Vector",
-            "doc"
-        ],
-        [
-            "string",
-            "suggestion"
-        ],
-        [
             "Stopwatch",
             "stopwatch"
         ],
         [
-            "string",
-            "words"
-        ],
-        [
-            "Vector",
-            "idf"
+            "bool",
+            "mk"
         ],
         [
             "double",
@@ -411,7 +383,23 @@
         ],
         [
             "double",
+            "Scores"
+        ],
+        [
+            "Vector",
+            "doc"
+        ],
+        [
+            "double",
             "docMod"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "Dictionary",
@@ -419,7 +407,15 @@
         ],
         [
             "string",
-            "s"
+            "word"
+        ],
+        [
+            "TimeSpan",
+            "ts"
+        ],
+        [
+            "Dictionary",
+            "vocabulary"
         ],
         [
             "string",
@@ -427,19 +423,7 @@
         ],
         [
             "int",
-            "leftSpace"
-        ],
-        [
-            "string",
-            "sugg"
-        ],
-        [
-            "int",
-            "c"
-        ],
-        [
-            "int",
-            "rightSpace"
+            "index"
         ],
         [
             "int",
@@ -447,31 +431,11 @@
         ],
         [
             "string",
-            "temp_sugg"
-        ],
-        [
-            "int",
-            "i"
+            "s"
         ],
         [
             "string",
-            "w"
-        ],
-        [
-            "int",
-            "edit_distance"
-        ],
-        [
-            "string",
-            "snippet"
-        ],
-        [
-            "string",
-            "substring"
-        ],
-        [
-            "int",
-            "index"
+            "sugg"
         ],
         [
             "string",
@@ -479,15 +443,7 @@
         ],
         [
             "int",
-            "j"
-        ],
-        [
-            "int",
-            "columns"
-        ],
-        [
-            "double",
-            "result"
+            "rightSpace"
         ],
         [
             "int",
@@ -495,40 +451,84 @@
         ],
         [
             "int",
+            "c"
+        ],
+        [
+            "int",
+            "leftSpace"
+        ],
+        [
+            "string",
+            "w"
+        ],
+        [
+            "string",
+            "temp_sugg"
+        ],
+        [
+            "int",
+            "edit_distance"
+        ],
+        [
+            "string",
+            "substring"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
+            "mod"
+        ],
+        [
+            "int",
             "rows"
+        ],
+        [
+            "double",
+            "result"
         ],
         [
             "double",
             "max"
         ],
         [
-            "double",
-            "mod"
+            "int",
+            "columns"
         ]
     ],
     "method_names": [
         "Items",
-        "GetWords",
-        "ReadText",
-        "GetTitle",
-        "NormalForm",
-        "WordsInDoc",
+        "GetVocabulary",
         "CalculateTF",
         "ComputeDocuments",
+        "ReadText",
+        "GetTitle",
         "GetDocuments",
+        "NormalForm",
         "EditDistance",
-        "GetVocabulary",
+        "WordsInDoc",
+        "GetWords",
         "query",
         "Query",
-        "Suggestion",
-        "FindWord",
         "GetSubstring",
+        "FindWord",
+        "Suggestion",
         "Snippet",
         "Debug",
-        "Max",
-        "Sort",
         "DotProduct",
+        "Sort",
         "Cosine",
+        "Max",
         "Module"
     ],
     "method_return_types": [
@@ -537,11 +537,15 @@
             "IEnumerable"
         ],
         [
-            "WordsInDoc",
-            "bool"
+            "GetWords",
+            "string"
         ],
         [
-            "GetTitle",
+            "ReadText",
+            "string"
+        ],
+        [
+            "NormalForm",
             "string"
         ],
         [
@@ -549,31 +553,27 @@
             "Vector"
         ],
         [
-            "EditDistance",
-            "int"
-        ],
-        [
-            "NormalForm",
-            "string"
-        ],
-        [
             "ComputeDocuments",
             "void"
         ],
         [
-            "GetWords",
-            "string"
+            "EditDistance",
+            "int"
+        ],
+        [
+            "WordsInDoc",
+            "bool"
         ],
         [
             "GetVocabulary",
             "Dictionary"
         ],
         [
-            "ReadText",
+            "GetDocuments",
             "string"
         ],
         [
-            "GetDocuments",
+            "GetTitle",
             "string"
         ],
         [
@@ -589,7 +589,7 @@
             "string"
         ],
         [
-            "GetSubstring",
+            "Snippet",
             "string"
         ],
         [
@@ -597,7 +597,7 @@
             "int"
         ],
         [
-            "Snippet",
+            "GetSubstring",
             "string"
         ],
         [
@@ -605,7 +605,7 @@
             "void"
         ],
         [
-            "Cosine",
+            "DotProduct",
             "double"
         ],
         [
@@ -613,11 +613,11 @@
             "void"
         ],
         [
-            "Module",
+            "Cosine",
             "double"
         ],
         [
-            "DotProduct",
+            "Module",
             "double"
         ],
         [
@@ -648,7 +648,6 @@
         "Namespace_member_declarationContext": 14,
         "Namespace_declarationContext": 7,
         "Qualified_identifierContext": 7,
-        "Namespace_bodyContext": 7,
         "Type_declarationContext": 7,
         "All_member_modifiersContext": 63,
         "All_member_modifierContext": 85,
@@ -726,6 +725,7 @@
         "Numeric_typeContext": 113,
         "Integral_typeContext": 82,
         "Floating_point_typeContext": 31,
+        "Namespace_bodyContext": 4,
         "Variable_initializerContext": 13,
         "DeclarationStatementContext": 62,
         "Local_variable_declarationContext": 87,

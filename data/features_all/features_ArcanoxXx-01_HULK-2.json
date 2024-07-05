@@ -1,5 +1,5 @@
 {
-    "total_nodes": 50031,
+    "total_nodes": 50022,
     "max_depth": 590,
     "number_of_variables": 81,
     "number_of_constants": 0,
@@ -428,24 +428,36 @@
     ],
     "variable_names": [
         [
-            "Funcion",
-            "funcion"
-        ],
-        [
-            "string",
-            "resultado"
+            "Dictionary",
+            "value"
         ],
         [
             "int",
             "i"
         ],
         [
-            "Dictionary",
-            "value"
+            "string",
+            "resultado"
         ],
         [
             "List",
             "parametros"
+        ],
+        [
+            "Funcion",
+            "funcion"
+        ],
+        [
+            "bool",
+            "valido"
+        ],
+        [
+            "int",
+            "ContadorDePuntos"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "string",
@@ -461,19 +473,67 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "bool",
-            "valido"
-        ],
-        [
-            "int",
             "j"
         ],
         [
+            "Expresion",
+            "inCuerpo"
+        ],
+        [
+            "Expresion",
+            "expres"
+        ],
+        [
+            "Token",
+            "name"
+        ],
+        [
+            "List",
+            "answer"
+        ],
+        [
+            "Expresion",
+            "ifcuerpo"
+        ],
+        [
+            "Expresion",
+            "expr"
+        ],
+        [
+            "Token",
+            "operador"
+        ],
+        [
+            "List",
+            "letCuerpo"
+        ],
+        [
+            "Expresion",
+            "expresion"
+        ],
+        [
             "int",
-            "ContadorDePuntos"
+            "i"
+        ],
+        [
+            "Expresion",
+            "funcionCuerpo"
+        ],
+        [
+            "Token",
+            "nombre"
+        ],
+        [
+            "Expresion",
+            "rigth"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "Expresion",
+            "elsecuerpo"
         ],
         [
             "Expresion",
@@ -484,68 +544,24 @@
             "argument"
         ],
         [
-            "Expresion",
-            "inCuerpo"
-        ],
-        [
-            "string",
-            "name"
-        ],
-        [
-            "Expresion",
-            "expr"
-        ],
-        [
-            "Token",
-            "nombre"
-        ],
-        [
-            "Expresion",
-            "ifcuerpo"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "Expresion",
-            "expres"
-        ],
-        [
             "TokenType",
             "a"
         ],
         [
-            "Token",
-            "operador"
-        ],
-        [
-            "Expresion",
-            "rigth"
-        ],
-        [
-            "Expresion",
-            "funcionCuerpo"
-        ],
-        [
-            "List",
-            "answer"
-        ],
-        [
-            "Token",
-            "name"
-        ],
-        [
-            "List",
-            "letCuerpo"
-        ],
-        [
-            "Expresion",
-            "elsecuerpo"
+            "object",
+            "respuesta"
         ],
         [
             "Expresion",
             "expresion"
+        ],
+        [
+            "Dictionary",
+            "value"
+        ],
+        [
+            "Parser",
+            "parser"
         ],
         [
             "string",
@@ -556,134 +572,70 @@
             "evaluador"
         ],
         [
-            "object",
-            "respuesta"
-        ],
-        [
-            "Dictionary",
-            "value"
-        ],
-        [
             "Lexer",
             "tokens"
-        ],
-        [
-            "Parser",
-            "parser"
-        ],
-        [
-            "Expresion",
-            "expresion"
         ]
     ],
     "method_names": [
-        "Mayor",
-        "Menor",
-        "Concatenar",
-        "Print",
-        "Resta",
-        "Suma",
-        "NoIgual",
+        "IgualIgual",
         "Pow",
+        "Or",
+        "VisitExprUnaria",
+        "Concatenar",
         "Multiplicacion",
+        "MenorIgual",
+        "EvaluarLiteral",
+        "Division",
+        "Modulo",
+        "Print",
+        "EvaluarFuncion",
+        "And",
+        "Menor",
+        "MayorIgual",
+        "Mayor",
+        "Resta",
+        "Sin",
+        "NoIgual",
+        "Suma",
         "Sqrt",
+        "Cos",
         "Log",
         "EvaluarVariable",
-        "VisitExprBinaria",
-        "EvaluarFuncion",
-        "Or",
-        "And",
-        "Sin",
-        "IgualIgual",
-        "EvaluarLiteral",
-        "Modulo",
-        "MenorIgual",
         "EvaluarLlamada",
-        "VisitExprUnaria",
-        "MayorIgual",
-        "Cos",
-        "Division",
+        "VisitExprBinaria",
         "Tokenizar",
-        "Multiplicacion_Division",
-        "If_Let",
-        "Suma_Resta",
-        "Concatenar",
-        "Asignacion",
-        "Primaria",
-        "Logica",
-        "Igualdad",
+        "Expression",
+        "Avanzar",
         "Comparacion",
+        "Concatenar",
+        "Potencia",
+        "If_Let",
+        "Asignacion",
+        "Multiplicacion_Division",
+        "Logica",
+        "Parsear",
+        "Suma_Resta",
+        "Verificar",
+        "Primaria",
+        "Igualdad",
+        "Modulo",
         "Match",
         "Anterior",
-        "Parsear",
-        "Verificar",
-        "Expression",
-        "Potencia",
         "Unaria",
-        "Avanzar",
-        "Modulo",
-        "Main",
-        "Run"
+        "Run",
+        "Main"
     ],
     "method_return_types": [
         [
-            "EvaluarVariable",
+            "Mayor",
             "object"
         ],
         [
-            "Resta",
+            "Concatenar",
             "object"
         ],
         [
-            "VisitExprUnaria",
-            "object"
-        ],
-        [
-            "Sqrt",
-            "object"
-        ],
-        [
-            "Menor",
-            "object"
-        ],
-        [
-            "EvaluarLlamada",
-            "object"
-        ],
-        [
-            "Cos",
-            "object"
-        ],
-        [
-            "Log",
-            "object"
-        ],
-        [
-            "MayorIgual",
-            "object"
-        ],
-        [
-            "Or",
-            "object"
-        ],
-        [
-            "Suma",
-            "object"
-        ],
-        [
-            "EvaluarFuncion",
-            "object"
-        ],
-        [
-            "Multiplicacion",
-            "object"
-        ],
-        [
-            "MenorIgual",
-            "object"
-        ],
-        [
-            "And",
+            "IgualIgual",
             "object"
         ],
         [
@@ -691,7 +643,11 @@
             "object"
         ],
         [
-            "NoIgual",
+            "MayorIgual",
+            "object"
+        ],
+        [
+            "EvaluarLiteral",
             "object"
         ],
         [
@@ -699,11 +655,23 @@
             "object"
         ],
         [
-            "Mayor",
+            "EvaluarLlamada",
             "object"
         ],
         [
-            "IgualIgual",
+            "VisitExprUnaria",
+            "object"
+        ],
+        [
+            "NoIgual",
+            "object"
+        ],
+        [
+            "Log",
+            "object"
+        ],
+        [
+            "MenorIgual",
             "object"
         ],
         [
@@ -715,6 +683,26 @@
             "object"
         ],
         [
+            "Suma",
+            "object"
+        ],
+        [
+            "And",
+            "object"
+        ],
+        [
+            "Resta",
+            "object"
+        ],
+        [
+            "Multiplicacion",
+            "object"
+        ],
+        [
+            "Menor",
+            "object"
+        ],
+        [
             "Division",
             "object"
         ],
@@ -723,16 +711,52 @@
             "object"
         ],
         [
-            "EvaluarLiteral",
+            "EvaluarFuncion",
             "object"
         ],
         [
-            "Concatenar",
+            "Cos",
+            "object"
+        ],
+        [
+            "Sqrt",
+            "object"
+        ],
+        [
+            "EvaluarVariable",
+            "object"
+        ],
+        [
+            "Or",
             "object"
         ],
         [
             "Tokenizar",
             "void"
+        ],
+        [
+            "Avanzar",
+            "Token"
+        ],
+        [
+            "Suma_Resta",
+            "Expresion"
+        ],
+        [
+            "Igualdad",
+            "Expresion"
+        ],
+        [
+            "Comparacion",
+            "Expresion"
+        ],
+        [
+            "Multiplicacion_Division",
+            "Expresion"
+        ],
+        [
+            "Concatenar",
+            "Expresion"
         ],
         [
             "Primaria",
@@ -743,15 +767,7 @@
             "bool"
         ],
         [
-            "Expression",
-            "Expresion"
-        ],
-        [
-            "Asignacion",
-            "List"
-        ],
-        [
-            "Potencia",
+            "Logica",
             "Expresion"
         ],
         [
@@ -759,39 +775,7 @@
             "Token"
         ],
         [
-            "If_Let",
-            "Expresion"
-        ],
-        [
-            "Logica",
-            "Expresion"
-        ],
-        [
-            "Avanzar",
-            "Token"
-        ],
-        [
             "Parsear",
-            "Expresion"
-        ],
-        [
-            "Comparacion",
-            "Expresion"
-        ],
-        [
-            "Suma_Resta",
-            "Expresion"
-        ],
-        [
-            "Verificar",
-            "Token"
-        ],
-        [
-            "Multiplicacion_Division",
-            "Expresion"
-        ],
-        [
-            "Concatenar",
             "Expresion"
         ],
         [
@@ -803,8 +787,24 @@
             "Expresion"
         ],
         [
-            "Igualdad",
+            "Asignacion",
+            "List"
+        ],
+        [
+            "Expression",
             "Expresion"
+        ],
+        [
+            "If_Let",
+            "Expresion"
+        ],
+        [
+            "Potencia",
+            "Expresion"
+        ],
+        [
+            "Verificar",
+            "Token"
         ],
         [
             "Run",
@@ -818,17 +818,17 @@
     "class_names": [
         "Token",
         "ERROR",
-        "ExprVariable",
-        "Funcion",
         "ExprBinaria",
-        "If",
+        "ExprAsignar",
+        "Vacia",
+        "ExprLLamadaFuncion",
         "Expresion",
+        "ExprUnaria",
         "LetIn",
         "ExprLiteral",
-        "ExprAsignar",
-        "ExprLLamadaFuncion",
-        "Vacia",
-        "ExprUnaria",
+        "ExprVariable",
+        "Funcion",
+        "If",
         "Lexer",
         "Parser",
         "Funciones",
@@ -845,7 +845,6 @@
         "TerminalNodeImpl": 8062,
         "Qualified_identifierContext": 9,
         "IdentifierContext": 2439,
-        "Namespace_bodyContext": 9,
         "Type_declarationContext": 24,
         "All_member_modifiersContext": 127,
         "All_member_modifierContext": 138,
@@ -968,5 +967,5 @@
     },
     "project_name": "ArcanoxXx-01_HULK-2",
     "label": "original",
-    "project_type": "hulk"
+    "project_type": "moogle"
 }

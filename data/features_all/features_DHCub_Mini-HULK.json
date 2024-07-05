@@ -1,5 +1,5 @@
 {
-    "total_nodes": 28543,
+    "total_nodes": 28535,
     "max_depth": 703,
     "number_of_variables": 29,
     "number_of_constants": 27,
@@ -133,19 +133,7 @@
         ],
         [
             "var",
-            "callRecord"
-        ],
-        [
-            "var",
             "answ"
-        ],
-        [
-            "var",
-            "original_Record"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "var",
@@ -153,7 +141,7 @@
         ],
         [
             "var",
-            "call"
+            "callRecord"
         ],
         [
             "var",
@@ -161,15 +149,15 @@
         ],
         [
             "var",
-            "actual_return"
+            "call"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "var",
-            "original_global_context"
-        ],
-        [
-            "var",
-            "return_type"
+            "original_Record"
         ],
         [
             "var",
@@ -181,11 +169,27 @@
         ],
         [
             "var",
-            "inPos"
+            "original_global_context"
+        ],
+        [
+            "var",
+            "return_type"
+        ],
+        [
+            "var",
+            "actual_return"
         ],
         [
             "var",
             "node"
+        ],
+        [
+            "var",
+            "statement_Node"
+        ],
+        [
+            "var",
+            "inPos"
         ],
         [
             "var",
@@ -196,8 +200,8 @@
             "declarations_Node"
         ],
         [
-            "var",
-            "statement_Node"
+            "Command_Node",
+            "tree"
         ],
         [
             "string",
@@ -208,31 +212,27 @@
             "output"
         ],
         [
-            "Command_Node",
-            "tree"
-        ],
-        [
-            "Lexer",
-            "lexer"
+            "var",
+            "analyzer"
         ],
         [
             "Parser",
             "parser"
         ],
         [
-            "var",
-            "analyzer"
+            "Lexer",
+            "lexer"
         ]
     ],
     "method_names": [
+        "Lookup",
         "Define",
         "ToString",
         "Lookup",
         "getBuiltins",
-        "Lookup",
         "Store",
-        "eval",
         "Evaluate",
+        "eval",
         "Define_Function",
         "RevertToGlobal",
         "peek",
@@ -246,16 +246,20 @@
     ],
     "method_return_types": [
         [
-            "Define",
-            "void"
-        ],
-        [
             "Lookup",
             "Symbol"
         ],
         [
             "ToString",
             "string"
+        ],
+        [
+            "Define",
+            "void"
+        ],
+        [
+            "getBuiltins",
+            "Dictionary"
         ],
         [
             "Lookup",
@@ -266,10 +270,6 @@
             "void"
         ],
         [
-            "getBuiltins",
-            "Dictionary"
-        ],
-        [
             "eval",
             "object"
         ],
@@ -278,20 +278,16 @@
             "object"
         ],
         [
-            "RevertToGlobal",
+            "Define_Function",
             "void"
         ],
         [
-            "Define_Function",
+            "RevertToGlobal",
             "void"
         ],
         [
             "jumpSpaces",
             "void"
-        ],
-        [
-            "peek",
-            "char"
         ],
         [
             "getNextToken",
@@ -302,16 +298,20 @@
             "void"
         ],
         [
+            "peek",
+            "char"
+        ],
+        [
             "Get_Command_AST",
             "Command_Node"
         ],
         [
-            "let_in_statement",
-            "Let_In_Node"
-        ],
-        [
             "statement",
             "AST_Treenode"
+        ],
+        [
+            "let_in_statement",
+            "Let_In_Node"
         ],
         [
             "Main",
@@ -320,25 +320,25 @@
     ],
     "class_names": [
         "Symbol",
-        "Function_Symbol",
         "Variable_Symbol",
         "Context",
+        "Function_Symbol",
         "SimpleType",
         "Activation_Record",
         "Interpreter",
-        "If_Else_Node",
-        "Command_Node",
-        "Let_In_Node",
-        "Function_Declaration_Node",
         "UnOp_Node",
-        "BinOp_Node",
-        "NUMBER_Node",
-        "Variable_Node",
-        "AST_Treenode",
+        "Function_Declaration_Node",
         "BOOLEAN_Node",
-        "Function_Call_Node",
-        "STRING_Node",
+        "NUMBER_Node",
+        "Command_Node",
         "Variable_Declaration_Node",
+        "Variable_Node",
+        "Function_Call_Node",
+        "AST_Treenode",
+        "BinOp_Node",
+        "STRING_Node",
+        "Let_In_Node",
+        "If_Else_Node",
         "Semantic_Analizer",
         "Token",
         "Lexer",
@@ -355,7 +355,6 @@
         "TerminalNodeImpl": 3639,
         "Qualified_identifierContext": 8,
         "IdentifierContext": 1089,
-        "Namespace_bodyContext": 8,
         "Type_declarationContext": 135,
         "Class_definitionContext": 25,
         "Class_bodyContext": 25,

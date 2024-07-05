@@ -1,5 +1,5 @@
 {
-    "total_nodes": 9764,
+    "total_nodes": 9756,
     "max_depth": 575,
     "number_of_variables": 32,
     "number_of_constants": 0,
@@ -123,11 +123,11 @@
     "variable_names": [
         [
             "int",
-            "CantidadDeFilasDeB"
+            "k"
         ],
         [
-            "double",
-            "MatrixSuma"
+            "int",
+            "CantidadDeColumnasDeB"
         ],
         [
             "int",
@@ -139,14 +139,6 @@
         ],
         [
             "int",
-            "k"
-        ],
-        [
-            "int",
-            "CantidadDeColumnasDeB"
-        ],
-        [
-            "int",
             "CantidadDeFilasDeA"
         ],
         [
@@ -154,8 +146,20 @@
             "j"
         ],
         [
+            "int",
+            "CantidadDeFilasDeB"
+        ],
+        [
+            "double",
+            "MatrixSuma"
+        ],
+        [
             "double",
             "MatrixProducto"
+        ],
+        [
+            "Documento",
+            "documentos"
         ],
         [
             "int",
@@ -166,40 +170,36 @@
             "archivos"
         ],
         [
-            "Documento",
-            "documentos"
-        ],
-        [
             "string",
-            "palabra"
-        ],
-        [
-            "double",
-            "score"
-        ],
-        [
-            "int",
-            "i"
+            "palabrasQuery"
         ],
         [
             "int",
             "k"
         ],
         [
-            "int",
-            "j"
+            "double",
+            "score"
         ],
         [
             "double",
             "Producto"
         ],
         [
+            "int",
+            "i"
+        ],
+        [
             "double",
             "tf"
         ],
         [
+            "int",
+            "j"
+        ],
+        [
             "string",
-            "palabrasQuery"
+            "palabra"
         ],
         [
             "Dictionary",
@@ -207,7 +207,7 @@
         ],
         [
             "double",
-            "tf"
+            "idf"
         ],
         [
             "int",
@@ -215,14 +215,14 @@
         ],
         [
             "double",
-            "idf"
+            "tf"
         ]
     ],
     "method_names": [
         "Items",
+        "MatrixSuma",
         "MatrixPorUnEscalar",
         "MatrixPorMatrix",
-        "MatrixSuma",
         "Leer",
         "MultiplicarVectores",
         "SimilitudDeCoseno"
@@ -233,11 +233,11 @@
             "IEnumerable"
         ],
         [
-            "MatrixPorMatrix",
+            "MatrixPorUnEscalar",
             "double"
         ],
         [
-            "MatrixPorUnEscalar",
+            "MatrixPorMatrix",
             "double"
         ],
         [
@@ -281,7 +281,6 @@
         "Namespace_member_declarationContext": 16,
         "Namespace_declarationContext": 8,
         "Qualified_identifierContext": 8,
-        "Namespace_bodyContext": 8,
         "Type_declarationContext": 8,
         "All_member_modifiersContext": 42,
         "All_member_modifierContext": 53,

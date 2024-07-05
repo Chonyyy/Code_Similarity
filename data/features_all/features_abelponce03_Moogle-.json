@@ -1,5 +1,5 @@
 {
-    "total_nodes": 23558,
+    "total_nodes": 23549,
     "max_depth": 1006,
     "number_of_variables": 122,
     "number_of_constants": 0,
@@ -177,15 +177,39 @@
     "variable_names": [
         [
             "double",
-            "Todoscores"
+            "similitud"
         ],
         [
             "string",
-            "levenshtein"
+            "parrafitos"
         ],
         [
             "int",
-            "contador"
+            "min"
+        ],
+        [
+            "List",
+            "palabrasquery"
+        ],
+        [
+            "double",
+            "temporal"
+        ],
+        [
+            "double",
+            "Todoscores"
+        ],
+        [
+            "double",
+            "scores"
+        ],
+        [
+            "string",
+            "titulos"
+        ],
+        [
+            "string",
+            "archivos"
         ],
         [
             "int",
@@ -196,52 +220,16 @@
             "ordenado"
         ],
         [
-            "List",
-            "palabrasquery"
+            "SearchItem",
+            "items"
         ],
         [
             "int",
-            "min"
+            "contador"
         ],
         [
             "string",
             "parrafitosOrdenados"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "string",
-            "parrafitos"
-        ],
-        [
-            "double",
-            "similitud"
-        ],
-        [
-            "string",
-            "titulos"
-        ],
-        [
-            "string",
-            "snipet"
-        ],
-        [
-            "double",
-            "scores"
-        ],
-        [
-            "double",
-            "temporal"
-        ],
-        [
-            "string",
-            "candela"
-        ],
-        [
-            "SearchItem",
-            "items"
         ],
         [
             "string",
@@ -249,11 +237,23 @@
         ],
         [
             "string",
+            "levenshtein"
+        ],
+        [
+            "string",
             "Todostitulos"
         ],
         [
             "string",
-            "archivos"
+            "candela"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "snipet"
         ],
         [
             "string",
@@ -264,8 +264,8 @@
             "sugerencia"
         ],
         [
-            "string",
-            "palabra"
+            "int",
+            "k"
         ],
         [
             "bool",
@@ -273,19 +273,11 @@
         ],
         [
             "int",
-            "matriz"
+            "distanciaLevenshtein"
         ],
         [
             "int",
-            "diagonal"
-        ],
-        [
-            "int",
-            "columnas"
-        ],
-        [
-            "string",
-            "final"
+            "i"
         ],
         [
             "string",
@@ -293,15 +285,35 @@
         ],
         [
             "int",
-            "i"
+            "matriz"
+        ],
+        [
+            "bool",
+            "NoMostrar"
+        ],
+        [
+            "char",
+            "comparacionLista"
+        ],
+        [
+            "string",
+            "final"
         ],
         [
             "int",
-            "distanciaLevenshtein"
+            "filas"
         ],
         [
             "int",
-            "k"
+            "columnas"
+        ],
+        [
+            "char",
+            "comparacionQuery"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "int",
@@ -309,23 +321,15 @@
         ],
         [
             "int",
-            "j"
+            "diagonal"
         ],
         [
-            "char",
-            "comparacionLista"
+            "string",
+            "palabra"
         ],
         [
-            "int",
-            "filas"
-        ],
-        [
-            "char",
-            "comparacionQuery"
-        ],
-        [
-            "bool",
-            "NoMostrar"
+            "string",
+            "palabrasEnString"
         ],
         [
             "Dictionary",
@@ -333,11 +337,11 @@
         ],
         [
             "int",
-            "i"
+            "posicion"
         ],
         [
-            "string",
-            "palabrasEnString"
+            "int",
+            "cantidadDePalabras"
         ],
         [
             "List",
@@ -345,15 +349,7 @@
         ],
         [
             "int",
-            "cantidadDePalabras"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "posicion"
+            "i"
         ],
         [
             "int",
@@ -365,7 +361,7 @@
         ],
         [
             "int",
-            "i"
+            "j"
         ],
         [
             "double",
@@ -373,7 +369,7 @@
         ],
         [
             "int",
-            "j"
+            "i"
         ],
         [
             "double",
@@ -384,32 +380,44 @@
             "magnitud"
         ],
         [
-            "string",
-            "unido"
+            "int",
+            "j"
         ],
         [
-            "string",
-            "palabraMaxTFIDF"
+            "double",
+            "mayor"
+        ],
+        [
+            "int",
+            "posicion"
         ],
         [
             "double",
             "temporal"
         ],
         [
-            "int",
-            "z"
+            "Dictionary",
+            "candela"
         ],
         [
             "int",
             "i"
         ],
         [
-            "Dictionary",
-            "candela"
+            "string",
+            "palabraMaxTFIDF"
+        ],
+        [
+            "int",
+            "z"
         ],
         [
             "string",
-            "palabrasquery"
+            "snipet"
+        ],
+        [
+            "string",
+            "parrafito"
         ],
         [
             "int",
@@ -417,23 +425,19 @@
         ],
         [
             "int",
-            "posicion"
-        ],
-        [
-            "int",
             "resta"
         ],
         [
             "string",
-            "parrafito"
+            "unido"
         ],
         [
             "string",
-            "snipet"
+            "palabrasquery"
         ],
         [
-            "double",
-            "mayor"
+            "int",
+            "i"
         ],
         [
             "string",
@@ -444,24 +448,28 @@
             "documentos"
         ],
         [
-            "int",
-            "i"
+            "string",
+            "ruta"
         ],
         [
             "string",
             "rutaDeEjecucion"
         ],
         [
-            "string",
-            "ruta"
-        ],
-        [
-            "string",
-            "palabra"
+            "double",
+            "similitud"
         ],
         [
             "double",
-            "vectorNum"
+            "contador"
+        ],
+        [
+            "double",
+            "productoPunto"
+        ],
+        [
+            "string",
+            "vector"
         ],
         [
             "double",
@@ -469,15 +477,27 @@
         ],
         [
             "double",
-            "productoPunto"
-        ],
-        [
-            "double",
-            "contador"
+            "idf"
         ],
         [
             "int",
             "i"
+        ],
+        [
+            "Dictionary",
+            "diccionario"
+        ],
+        [
+            "double",
+            "vectorNum"
+        ],
+        [
+            "int",
+            "contador1"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "double",
@@ -488,42 +508,22 @@
             "cantDePalabras"
         ],
         [
-            "string",
-            "vector"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "contador1"
-        ],
-        [
             "double",
             "aparicion"
         ],
         [
-            "double",
-            "similitud"
-        ],
-        [
-            "Dictionary",
-            "diccionario"
-        ],
-        [
-            "double",
-            "idf"
+            "string",
+            "palabra"
         ]
     ],
     "method_names": [
         "Items",
-        "Query",
-        "Resultado",
+        "Parrafillos",
         "Mostrar",
         "Intercambiar",
         "Iniciar",
-        "Parrafillos",
+        "Query",
+        "Resultado",
         "Ordenar",
         "sugerencia",
         "Listilla",
@@ -543,20 +543,20 @@
             "string"
         ],
         [
-            "Resultado",
-            "string"
-        ],
-        [
-            "Ordenar",
-            "double"
-        ],
-        [
             "Mostrar",
             "Tuple"
         ],
         [
             "Query",
             "SearchResult"
+        ],
+        [
+            "Resultado",
+            "string"
+        ],
+        [
+            "Ordenar",
+            "double"
         ],
         [
             "Iniciar",
@@ -583,11 +583,11 @@
             "string"
         ],
         [
-            "QuitarPuntuacion",
+            "Documentos",
             "string"
         ],
         [
-            "Documentos",
+            "QuitarPuntuacion",
             "string"
         ],
         [
@@ -650,7 +650,6 @@
         "Namespace_member_declarationContext": 18,
         "Namespace_declarationContext": 9,
         "Qualified_identifierContext": 9,
-        "Namespace_bodyContext": 9,
         "Type_declarationContext": 9,
         "All_member_modifiersContext": 46,
         "All_member_modifierContext": 71,

@@ -1,5 +1,5 @@
 {
-    "total_nodes": 9497,
+    "total_nodes": 9493,
     "max_depth": 452,
     "number_of_variables": 46,
     "number_of_constants": 0,
@@ -124,23 +124,11 @@
     "variable_names": [
         [
             "var",
-            "app"
-        ],
-        [
-            "var",
             "builder"
         ],
         [
-            "Dictionary",
-            "TF"
-        ],
-        [
-            "string",
-            "actualWords"
-        ],
-        [
-            "string",
-            "filesAdresses"
+            "var",
+            "app"
         ],
         [
             "double",
@@ -148,35 +136,23 @@
         ],
         [
             "Dictionary",
-            "TXTcontent"
-        ],
-        [
-            "Stopwatch",
-            "crono"
-        ],
-        [
-            "int",
-            "t"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "char",
-            "separators"
-        ],
-        [
-            "Dictionary",
-            "iDF"
-        ],
-        [
-            "int",
-            "j"
+            "TXTsContent"
         ],
         [
             "int",
             "totalTXTs"
+        ],
+        [
+            "Dictionary",
+            "TXTcontent"
+        ],
+        [
+            "int",
+            "TxtQuant"
+        ],
+        [
+            "string",
+            "filesAdresses"
         ],
         [
             "string",
@@ -188,7 +164,19 @@
         ],
         [
             "Dictionary",
-            "TXTsContent"
+            "TF"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "char",
+            "separators"
+        ],
+        [
+            "Stopwatch",
+            "crono"
         ],
         [
             "string",
@@ -196,19 +184,47 @@
         ],
         [
             "int",
-            "TxtQuant"
+            "j"
+        ],
+        [
+            "Dictionary",
+            "iDF"
+        ],
+        [
+            "int",
+            "t"
         ],
         [
             "string",
-            "queryWords"
+            "actualWords"
+        ],
+        [
+            "(",
+            "nonPresent"
+        ],
+        [
+            "int",
+            "count"
         ],
         [
             "string",
             "filesAdresses"
         ],
         [
+            "string",
+            "queryWords"
+        ],
+        [
             "double",
             "anguleCos"
+        ],
+        [
+            "SearchItem",
+            "emptySearch"
+        ],
+        [
+            "int",
+            "validMatches"
         ],
         [
             "int",
@@ -216,51 +232,31 @@
         ],
         [
             "double",
-            "queryTF"
-        ],
-        [
-            "SearchItem",
-            "emptySearch"
-        ],
-        [
-            "double",
             "TXTvectorLength"
-        ],
-        [
-            "int",
-            "count"
-        ],
-        [
-            "var",
-            "results"
-        ],
-        [
-            "(",
-            "nonPresent"
-        ],
-        [
-            "(",
-            "Match"
-        ],
-        [
-            "SearchItem",
-            "items"
-        ],
-        [
-            "double",
-            "queryiDF"
-        ],
-        [
-            "int",
-            "validMatches"
         ],
         [
             "var",
             "sortedMatches"
         ],
         [
-            "string",
-            "affectedWords"
+            "(",
+            "Match"
+        ],
+        [
+            "double",
+            "queryiDF"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
+            "var",
+            "results"
+        ],
+        [
+            "double",
+            "queryTF"
         ],
         [
             "List",
@@ -271,12 +267,16 @@
             "s"
         ],
         [
-            "int",
-            "c"
-        ],
-        [
             "(",
             "nonPresent"
+        ],
+        [
+            "string",
+            "affectedWords"
+        ],
+        [
+            "int",
+            "c"
         ],
         [
             "string",
@@ -286,13 +286,13 @@
     "method_names": [
         "Main",
         "Items",
-        "iDF",
-        "LoadTexts",
         "TF",
         "SplitInWords",
+        "iDF",
+        "LoadTexts",
         "Query",
-        "nonPresent",
-        "OperatorAffects"
+        "OperatorAffects",
+        "nonPresent"
     ],
     "method_return_types": [
         [
@@ -304,12 +304,12 @@
             "IEnumerable"
         ],
         [
-            "LoadTexts",
-            "Dictionary"
-        ],
-        [
             "SplitInWords",
             "string"
+        ],
+        [
+            "LoadTexts",
+            "Dictionary"
         ],
         [
             "TF",
@@ -353,7 +353,6 @@
         "Namespace_member_declarationContext": 11,
         "Namespace_declarationContext": 5,
         "Qualified_identifierContext": 5,
-        "Namespace_bodyContext": 5,
         "Type_declarationContext": 6,
         "Class_definitionContext": 6,
         "Class_bodyContext": 6,
@@ -460,6 +459,7 @@
         "Orderby_clauseContext": 1,
         "OrderingContext": 1,
         "Select_or_group_clauseContext": 1,
+        "Namespace_bodyContext": 1,
         "TupleExpressionContext": 1,
         "Boolean_literalContext": 2
     },
