@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  5 JUL 2024 21:34
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  6 JUL 2024 15:16
 entering extended mode
 **Thesis.tex
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.tex
@@ -1197,11 +1197,6 @@ LaTeX Info: Redefining \addtolength on input line 77.
 )
 \c@@todonotes@numberoftodonotes=\count306
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cite\cite.sty"
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count307
 \lst@gtempboxa=\box46
@@ -1279,48 +1274,13 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 )
-
-! Package Listings Error: Couldn't load requested style.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 \lstset{style=mystyle}
-                           
-The following styles weren't loadable:
-    ,mystyle$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: style mystyle undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48 \lstset{style=mystyle}
-                           
-The style is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 \@nomenclaturefile=\write5
+
 Writing nomenclature file Thesis.nlo
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-
-! Package biblatex Error: Incompatible package 'cite'.
-
-See the biblatex package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 \begin{document}
-                     
-The 'cite' package and biblatex are incompatible.
-
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\lbx\spanish.lbx"
@@ -1329,7 +1289,7 @@ File: spanish.lbx 2011/07/29 v1.6 biblatex localization
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'firstinits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 78.
+(biblatex)                Setting 'uniquename=init' on input line 75.
 
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.aux
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Abstract.aux)
@@ -1341,21 +1301,21 @@ Package biblatex Warning: Conflicting options.
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Bibliography.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 75.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1384,12 +1344,13 @@ Package biblatex Warning: Data encoding is 'utf8'.
 (biblatex)                Use backend=biber.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Thesis.bbl' not found.
-No file Thesis.bbl.
-Package biblatex Info: Reference section=0 on input line 78.
-Package biblatex Info: Reference segment=0 on input line 78.
+Package biblatex Info: ... file 'Thesis.bbl' found.
+(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.bbl)
+Package biblatex Info: Reference section=0 on input line 75.
+Package biblatex Info: Reference segment=0 on input line 75.
 \AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring ON on input line 78.
+Package hyperref Info: Link coloring ON on input line 75.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -1398,9 +1359,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.out)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.out)
@@ -1408,23 +1369,23 @@ LaTeX Info: Redefining \nameref on input line 78.
 
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count326
-LaTeX Info: Redefining \selectfont on input line 78.
+LaTeX Info: Redefining \selectfont on input line 75.
 
-<Graphics/uhlogo.pdf, id=62, 375.98297pt x 481.67456pt>
+<Graphics/uhlogo.pdf, id=70, 375.98297pt x 481.67456pt>
 File: Graphics/uhlogo.pdf Graphic file (type pdf)
 
 <use Graphics/uhlogo.pdf>
-Package pdftex.def Info: Graphics/uhlogo.pdf used on input line 81.
+Package pdftex.def Info: Graphics/uhlogo.pdf used on input line 78.
 (pdftex.def)             Requested size: 49.79231pt x 63.7885pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 81.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 78.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 81.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 78.
 
 ! Undefined control sequence.
 <recently read> \@advisor 
                           
-l.81 \maketitle
+l.78 \maketitle
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1516,25 +1477,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 ] [2]) [3]
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Background.tex
 Cap\'{\i }tulo 1.
-
-LaTeX Warning: Reference `knuth1977fast' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Citation `boyer1977fast' on page 4 undefined on input line 7.
-
 [4
 
 
 
 ]
-
-LaTeX Warning: Citation `aiken1994moss' on page 5 undefined on input line 9.
-
-
-LaTeX Warning: Citation `aho1986compilers' on page 5 undefined on input line 17
-.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -1545,44 +1492,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
  []
 
 
-LaTeX Warning: Citation `muchnick1997advanced' on page 5 undefined on input lin
-e 21.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
- []
-
-
-LaTeX Warning: Citation `kam2005analyzing' on page 6 undefined on input line 26
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
+LaTeX Warning: Citation 'smith2020enhanced' on page 6 undefined on input line 2
+5.
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+LaTeX Warning: Citation 'duracik2018source' on page 7 undefined on input line 3
+2.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
@@ -1592,30 +1525,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-
-LaTeX Warning: Citation `alon2019code2vec' on page 7 undefined on input line 43
-.
-
-
-LaTeX Warning: Citation `alon2019code2seq' on page 7 undefined on input line 43
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
-
 [7]
-
-LaTeX Warning: Citation `vaswani2017attention' on page 8 undefined on input lin
-e 48.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-) [8] (C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Proposal.tex
+
+LaTeX Warning: Citation 'zou2010cluster' on page 8 undefined on input line 41.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+LaTeX Warning: Citation 'smith2020enhanced' on page 8 undefined on input line 4
+7.
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[9]) [10] (C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Proposal.tex
 Cap\'{\i }tulo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
@@ -1632,11 +1574,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-[9
+[11
 
 
 
-] [10]
+] [12]
 Overfull \hbox (0.3353pt too wide) in paragraph at lines 71--72
 []\T1/ppl/b/n/12 access_modifiers_protected_internal: \T1/ppl/m/n/12 Nú-me-ro d
 e ele-men-tos pro-te-gi-dos
@@ -1648,20 +1590,7 @@ Overfull \hbox (10.35524pt too wide) in paragraph at lines 72--73
  ele-men-tos pri-va-dos pro-
  []
 
-[11] [12]
-! You can't use `macro parameter character #' in horizontal mode.
-l.122 ...gama de aspectos del cÃ³digo fuente en C#
-                                                  , desde su estructura y co...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Citation `mikolov2013efficient' on page 13 undefined on input li
-ne 126.
-
-
+[13] [14]
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
@@ -1671,31 +1600,156 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[13] [14]) [15]
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Implementation.tex
-Cap\'{\i }tulo 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
-) [16
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+[17]) [18]
+(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Implementation.tex
+Cap\'{\i }tulo 3.
+) [19
 
 
 
-] (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.tex) [17
+] (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.tex) [20
 
 
 
 
 ]
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.tex)
-[18
+[21
 
 
 
 
 ] (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Bibliography.tex
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 2.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (3.20384pt too wide) in paragraph at lines 2--2
+\T1/ppl/m/sl/12 Pro-cee-dings of the 19th an-nual sym-po-sium on swit-ching and
+ au-to-ma-ta theory
+ []
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 ! Package biblatex Error: '\bibliographystyle' invalid.
 
@@ -1703,30 +1757,18 @@ See the biblatex package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \bibliographystyle{plain}
+l.3 \bibliographystyle{plain}
                              
 Use the package option 'style' instead.
 I'm ignoring this command.
 
+) [22
 
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 \bibliography
-                 {Bibliography}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [19
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
  (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.aux
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Abstract.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Contents.aux)
@@ -1737,32 +1779,40 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F02B837A940326CC3F2FD7EC2D2E2770;875.
+(rerunfilecheck)             Checksum: 39820B5D8725FF07F9669770C506C94C;1012.
 
 
 LaTeX Warning: There were undefined references.
 
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                Thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 24140 strings out of 494045
- 407979 string characters out of 3145970
- 651718 words of memory out of 3000000
- 26844 multiletter control sequences out of 15000+200000
- 29914 words of font info for 62 fonts, out of 3000000 for 9000
+ 24258 strings out of 494045
+ 410553 string characters out of 3145970
+ 653172 words of memory out of 3000000
+ 26938 multiletter control sequences out of 15000+200000
+ 32230 words of font info for 67 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 63i,12n,72p,834b,1541s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Thesis.pdf (23 pages, 223781 bytes).
+ 63i,12n,72p,1123b,1539s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/p
+alatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/
+uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.
+pfb>
+Output written on Thesis.pdf (26 pages, 279183 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

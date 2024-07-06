@@ -4,7 +4,7 @@ La implementacion  de este trabajo esta dividida en dos partes fundamentales: Ex
 
 - Extraccion del AST: En esta parte se utiliza la herramienta ANTLR de C\# para crear el ast de los proyectos. Luego de este ast se extraen los features para su posterior uso.
 
-- Trabajo con machine learning: Se utiliza el modelo ---------- para determinar la semejanza entre 2 proyectos.
+- Trabajo con machine learning: Se estudian diferentes modelos para determinar la semejanza entre 2 proyectos.
 
 
 \section{Extraccion del AST}
@@ -119,7 +119,7 @@ En el análisis de similitud de código y detección de patrones, es crucial ext
 \end{enumerate}
     
         
-La extracción de características con FeatureExtractorListener permite capturar una amplia gama de aspectos del código fuente en C#, desde su estructura y complejidad hasta los patrones de diseño y las prácticas de programación. Esta información es crucial para tareas como la detección de similitudes de código, la evaluación de la calidad del código y la identificación de posibles plagios. La implementación y el análisis detallado de estas características proporcionan una base sólida para mejorar la precisión y efectividad de las herramientas de análisis de código.
+La extracción de características con FeatureExtractorListener permite capturar una amplia gama de aspectos del código fuente en C\#, desde su estructura y complejidad hasta los patrones de diseño y las prácticas de programación. Esta información es crucial para tareas como la detección de similitudes de código, la evaluación de la calidad del código y la identificación de posibles plagios. La implementación y el análisis detallado de estas características proporcionan una base sólida para mejorar la precisión y efectividad de las herramientas de análisis de código.
 
 \section{Preparacion del dataset}
 
@@ -157,9 +157,34 @@ Este enfoque tiene varias ventajas significativas:
 
 En resumen, la creación de este nuevo dataset con todos los pares posibles y sus diferencias vectoriales no solo aumenta la cantidad de datos disponibles, sino que también enriquece la información sobre las relaciones entre proyectos, mejorando así la capacidad del modelo para detectar similitudes de manera precisa y eficiente.  
 
-\subsubsection{Algo mas sobre la preparacion del dataset}
+\section{Probando diferentes modelos}
+
+\subsubsection{SNN}
+La primera solución abordada fue implementar una red neuronal siamesa para comparar dos proyectos. Estas redes funcionan con dos entradas, procesando cada una a través de la misma arquitectura de red para obtener representaciones vectoriales comparables. La red neuronal siamesa mide la distancia entre estos vectores para determinar la similitud entre los proyectos.\\
+
+Para esta solución, se separaron todos los posibles pares de proyectos y se les asignó una etiqueta: 0 si los proyectos no son copias (ambos originales) y 1 si los proyectos son copias. Los datos se convirtieron en vectores de características y el conjunto de datos se constituyó con los pares de vectores correspondientes y sus etiquetas.\\
+
+Sin embargo, surgió el problema de la generación de copias de proyectos para etiquetar correctamente los datos. Esto llevó a la necesidad de buscar otra solución más efectiva a la carencia de datos etiquetados.
 
 
-\section{Clustering}
+\subsubsection{Clustering}
+
+El clustering es un proceso de aprendizaje no supervisado, utilizado para agrupar datos sin conocer de antemano la etiqueta o categoría de cada dato. En lugar de depender de etiquetas predefinidas, los algoritmos de clustering analizan la proximidad y similitud entre los datos para formar grupos o clústeres basados en características compartidas. Cada clúster agrupa datos que son similares entre sí, pero que difieren de los datos en otros clústeres. Este enfoque es particularmente útil en situaciones donde se quiere descubrir patrones, estructuras o relaciones inherentes sin la necesidad de etiquetas predefinidas.
+
+Se aplicaron distintos enfoques de clustering, entre ellos:
+\begin{itemize}
+    \item \textbf{K-Means}: Agrupa datos en \(k\) clústeres basándose en la distancia euclidiana a los centroides, que se ajustan iterativamente. Aquí se hizo uso del método del codo para determinar el parámetro \(k\) a utilizar.
+    \item \textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)}: Identifica clústeres basados en la densidad de puntos, permitiendo descubrir clústeres de forma arbitraria y detectar ruido.
+    \item \textbf{Agglomerative Clustering}: Un enfoque jerárquico que une iterativamente los puntos o clústeres más cercanos, formando un dendrograma.
+    \item \textbf{MeanShift}: Agrupa datos desplazando iterativamente los puntos hacia la densidad máxima de puntos más cercana, identificando modos en la densidad de datos.
+\end{itemize}
+
+Aunque algunos de estos algoritmos mostraron buenas métricas en ciertos aspectos, no lograron resolver completamente el problema planteado. 
+
+\section{Modelos utilizados}
+
+\subsubsection{One-Class SVM}
+
+\subsubsection{Isolation forest}
 
 
