@@ -63,7 +63,7 @@ En el análisis de similitud de código y detección de patrones, es crucial ext
 
     \item Modificadores y Accesibilidad:
     \begin{itemize}
-        \item {\bf acces\s_modifiers\_public:} Número de elementos públicos.
+        \item {\bf access\_modifiers\_public:} Número de elementos públicos.
         \item {\bf access\_modifiers\_private:} Número de elementos privados.
         \item {\bf access\_modifiers\_protected:} Número de elementos protegidos.
         \item {\bf access\_modifiers\_internal:} Número de elementos internos.
@@ -123,7 +123,7 @@ La extracción de características con FeatureExtractorListener permite capturar
 
 \section{Preparacion del dataset}
 
-Para preparar el dataset utilizado en el análisis de similitud de código, se requirió convertir los nombres de variables, métodos y otros identificadores en vectores de características numéricas. Este proceso se llevó a cabo utilizando la técnica de embeddings con Word2Vec. A continuación, se explica qué es Word2Vec, cómo funciona y por qué se eligió para esta tarea.\\
+Para preparar el dataset utilizado en el análisis de similitud de código, se requirió convertir los nombres de variables, métodos y otros identificadores en vectores de características numéricas. Este proceso se llevó a cabo utilizando la técnica de embeddings con Word2Vec. A continuación, se explica qué es Word2Vec, cómo funciona y por qué se eligió para esta tarea \cite{mikolov2013efficient}. \\
 
 \subsubsection{Uso de Word2Vec en la Preparación del Dataset}
 Word2Vec es una técnica de aprendizaje profundo que transforma palabras en vectores de números de alta dimensión, conocidos como embeddings. Los modelos Word2Vec se entrenan utilizando grandes corpus de texto y capturan relaciones semánticas entre las palabras.  \\
