@@ -4,7 +4,7 @@ La implementacion  de este trabajo esta dividida en dos partes fundamentales: Ex
 
 - Extraccion del AST: En esta parte se utiliza la herramienta ANTLR de C\# para crear el ast de los proyectos. Luego de este ast se extraen los features para su posterior uso.
 
-- Trabajo con machine learning: Se estudian diferentes modelos para determinar la semejanza entre 2 proyectos.
+- Trabajo con machine learning: Se estudian diferentes técnicas para determinar la semejanza entre 2 proyectos. El uso de modelos de deteccion de oulayers para agrupar los vectores de similitud de los proyectos que son distintos entre si.
 
 
 \section{Extraccion del AST}
@@ -146,6 +146,8 @@ Este enfoque tiene varias ventajas significativas:
 
 \begin{itemize}
 	\item {\bf Incremento en la Cantidad de Datos:} Generar todos los pares posibles de proyectos incrementa exponencialmente el número de instancias en el dataset, proporcionando una base de datos más rica y diversa para entrenar modelos de aprendizaje automático.
+	
+	\item {\bf Etiquetado Automático de Datos:} Una ventaja adicional de calcular la distancia entre los datos es que permite disponer de algunos datos etiquetados. Aunque no se puede afirmar si un proyecto individual es original o una copia, al calcular las distancias dos a dos, se puede asegurar que un par de proyectos provenientes de diferentes tipos de proyectos no son copias uno del otro. Esto proporciona etiquetas adicionales que mejoran la calidad del entrenamiento del modelo.
 
 	\item {\bf Captura de Relaciones Detalladas:} Al almacenar la diferencia entre los vectores de cada par de proyectos, se capturan las distancias y relaciones específicas entre todos los proyectos. Esto permite que el modelo de machine learning pueda aprender las sutilezas de las similitudes y diferencias entre distintos proyectos.
 	
@@ -185,6 +187,128 @@ Aunque algunos de estos algoritmos mostraron buenas métricas en ciertos aspecto
 
 \subsubsection{One-Class SVM}
 
+One-Class Support Vector Machine (One-Class SVM) es una variante del algoritmo SVM (Support Vector Machine) diseñada para la detección de anomalías y para identificar datos que difieren del conjunto de datos de entrenamiento. One-Class SVM es particularmente útil en escenarios donde solo se dispone de datos de una clase (la clase "normal") y se desea detectar cualquier dato que sea diferente o anómalo.\\
+
+One-Class SVM se basa en la idea de encontrar una función que sea positiva en la región donde se encuentran la mayoría de los datos de entrenamiento y negativa en otras regiones. Este enfoque ayuda a identificar las regiones del espacio de características donde se encuentran los datos \"normales\" y marcar como anómalos los datos que caen fuera de estas regiones.\\
+
+\textbf{Funcionamiento:}
+
+\begin{enumerate}
+    \item \textbf{Transformación del Espacio de Características:}
+    \begin{itemize}
+        \item Se utiliza una función de kernel para mapear los datos de entrada a un espacio de características de mayor dimensión.
+        \item Los kernels comunes incluyen el kernel lineal, polinómico, radial (RBF) y sigmoide.
+    \end{itemize}
+
+    \item \textbf{Maximización del Margen:}
+    \begin{itemize}
+        \item One-Class SVM trata de encontrar un hiperplano en el espacio de características transformado que maximice la distancia de los puntos de datos a este hiperplano.
+        \item La mayoría de los datos de entrenamiento deben estar en un lado del hiperplano (considerados normales) y los puntos fuera de este margen son considerados anomalías.
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Fórmula Matemática}
+
+El problema de optimización para One-Class SVM se define como:
+
+\[ \min_{\mathbf{w}, \rho, \xi} \frac{1}{2} \|\mathbf{w}\|^2 + \frac{1}{\nu n} \sum_{i=1}^{n} \xi_i - \rho \]
+
+sujeto a:
+
+\[ (\mathbf{w} \cdot \phi(\mathbf{x}_i)) \geq \rho - \xi_i, \quad \xi_i \geq 0, \quad i = 1, \ldots, n \]
+
+Donde:
+\begin{itemize}
+    \item \( \mathbf{w} \) es el vector de pesos.
+    \item \( \phi(\mathbf{x}_i) \) es la transformación del espacio de características mediante el kernel.
+    \item \( \rho \) es el umbral que separa los datos normales de las anomalías.
+    \item \( \xi_i \) son las variables de holgura que permiten que algunos puntos estén en el lado equivocado del margen.
+    \item \( \nu \) es un parámetro que controla el trade-off entre la fracción de puntos de datos que son permitidos estar en el lado equivocado del margen y la regularización del modelo.
+\end{itemize}
+
+
+\textbf{Ventajas:}
+\begin{itemize}
+    \item Efectivo en escenarios donde solo se dispone de datos de una clase.
+    \item Flexible con el uso de diferentes kernels para capturar la estructura de datos no lineales.
+\end{itemize}
+
+
 \subsubsection{Isolation forest}
+
+Isolation Forest es un algoritmo de aprendizaje automático no supervisado diseñado para detectar anomalías en datos. Fue introducido por Fei Tony Liu, Kai Ming Ting y Zhi-Hua Zhou en 2008 \cite{liu2008isolation}. A diferencia de muchos algoritmos de detección de anomalías que se basan en la densidad o la distancia, Isolation Forest se basa en el concepto de \"aislamiento\".\\
+
+La idea central de Isolation Forest es que las anomalías son puntos de datos que son "fáciles de aislar". Dado que los valores anómalos son raros y diferentes del resto de los datos, deben requerir menos divisiones para ser aislados. \\
+
+\textbf{Funcionamiento: }
+
+\begin{enumerate}
+    \item \textbf{Construcción de Árboles de Aislamiento:}
+    \begin{itemize}
+        \item Se construyen múltiples árboles de aislamiento (iTrees). Cada árbol se construye seleccionando aleatoriamente una característica y luego eligiendo aleatoriamente un valor de división entre los valores mínimo y máximo de esa característica.
+        \item Este proceso se repite hasta que cada punto de datos esté aislado en una hoja del árbol o hasta que se alcance una profundidad máxima predefinida.
+    \end{itemize}
+
+    \item \textbf{Cálculo de la Longitud del Camino:}
+    \begin{itemize}
+        \item La longitud del camino de un punto de datos es el número de divisiones necesarias para aislar ese punto.
+        \item Las anomalías, siendo más fáciles de aislar, tienden a tener caminos más cortos.
+    \end{itemize}
+
+    \item \textbf{Puntuación de Anomalía:}
+    \begin{itemize}
+        \item La puntuación de anomalía se basa en la longitud del camino.
+        \item Si un punto tiene una puntuación de anomalía alta, es considerado una anomalía.
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Fórmula Matemática}
+
+Para calcular la puntuación de anomalía, se utiliza la siguiente fórmula:
+
+\[
+s(x, n) = 2^{-\frac{E(h(x))}{c(n)}}
+\]
+
+Donde:
+\begin{itemize}
+    \item \( s(x, n) \) es la puntuación de anomalía del punto \( x \) en un conjunto de datos de tamaño \( n \).
+    \item \( E(h(x)) \) es la longitud media del camino de aislamiento para el punto \( x \) calculada sobre múltiples árboles.
+    \item \( c(n) \) es una constante de normalización calculada como:
+\end{itemize}
+
+\[
+c(n) = 2H(n-1) - \left( \frac{2(n-1)}{n} \right)
+\]
+
+Aquí, \( H(i) \) es la \( i \)-ésima armónica:
+
+\[
+H(i) = \sum_{k=1}^{i} \frac{1}{k}
+\]
+
+\textbf{Ventajas:}
+\begin{itemize}
+    \item Eficiente y escalable a grandes conjuntos de datos.
+    \item No requiere un modelo previo de datos normales o anómalos.
+    \item Puede manejar datos de alta dimensionalidad.
+\end{itemize}
+
+
+\subsubsection{Por que elegir estos modelos?}
+
+Ambos métodos, Isolation Forest y One-Class SVM, fueron entrenados con pares de proyectos que son diferentes entre sí. Esto significa que aprendieron las diferencias inherentes entre proyectos que podrían contener anomalías o fraudes. Al entrenar con proyectos que representan variabilidad y diversidad en términos de estructuras de código, estilos de programación y lógica implementada, los modelos pueden capturar mejor las características que distinguen un proyecto legítimo de uno potencialmente fraudulento.
+
+\subsection*{Descripción de la Región de Similitud}
+
+El objetivo de detectar fraude entre proyectos de C\# de primer año implica identificar anomalías en la similitud estructural y lógica entre dos proyectos. Isolation Forest y One-Class SVM son adecuados para este propósito porque:
+
+\begin{itemize}
+    \item \textbf{Isolation Forest:} Al modelar la estructura de los datos mediante la creación de múltiples árboles de decisión, Isolation Forest identifica anomalías como puntos que son fáciles de aislar en el espacio de características. Esto es efectivo para detectar proyectos que se desvían significativamente de la norma en términos de estructura y contenido.
+    
+    \item \textbf{One-Class SVM:} Al encontrar una frontera que encapsula la mayoría de los datos normales en el espacio de características, One-Class SVM puede detectar puntos de datos que están muy lejos de esta frontera. Esto es útil para identificar proyectos que muestran características inusuales o no esperadas en comparación con los proyectos normales.
+\end{itemize}
+
+El dominio específico de proyectos de C\# de primer año facilita el uso de estos algoritmos. Dado que los proyectos son de un nivel académico inicial, es probable que existan variaciones predecibles pero distintivas entre los proyectos legítimos y aquellos que podrían contener fraude o anomalías. Esto hace que describir la región de los vectores de similitud entre proyectos distintos sea más accesible y factible, ya que las diferencias entre proyectos normales y anómalos pueden ser más discernibles y significativas en este contexto específico.
 
 

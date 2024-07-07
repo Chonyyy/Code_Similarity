@@ -170,6 +170,61 @@
   \field{year}{1977}
 \endentry
 
+\entry{duracik2018source}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Duracik}{D.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kirsak}{K.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hrkut}{H.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DM+1}
+  \strng{fullhash}{DMKEHP1}
+  \field{labelyear}{2018}
+  \field{sortinit}{D}
+  \field{booktitle}{Springer International Publishing AG, part of Springer
+  Nature: CCIS 870}
+  \field{pages}{61\bibrangedash 69}
+  \field{title}{Source Code Representations for Plagiarism Detection}
+  \field{year}{2018}
+\endentry
+
+\entry{smith2020enhanced}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Hadiza Lawal~Abba}{H.~L.~A.}%
+     {Aminu B. Muhammad Abba~Almu}{A.~B. M. A.~A.}%
+     {}{}%
+     {Abubakar~Roko}{A.~R.}}%
+    {{}%
+     {Usman}{U.}%
+     {Abdulgafar}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HLAARABMAAUA1}
+  \strng{fullhash}{HLAARABMAAUA1}
+  \field{labelyear}{2022}
+  \field{sortinit}{H}
+  \field{number}{2}
+  \field{pages}{5353\bibrangedash 5360}
+  \field{title}{Enhanced Semantic Similarity Detection of Program Code Using
+  Siamese Neural Network}
+  \field{volume}{14}
+  \field{journaltitle}{Int. J. Advanced Networking and Applications}
+  \field{year}{2022}
+\endentry
+
 \entry{kam2005analyzing}{inproceedings}{}
   \name{author}{1}{}{%
     {{}%
@@ -326,6 +381,35 @@
   \field{pages}{5998\bibrangedash 6008}
   \field{title}{Attention is All You Need}
   \field{year}{2017}
+\endentry
+
+\entry{zou2010cluster}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zou}{Z.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Long}{L.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ling}{L.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZD+1}
+  \strng{fullhash}{ZDLWLZ1}
+  \field{labelyear}{2010}
+  \field{sortinit}{Z}
+  \field{booktitle}{Proceedings of the 4th Workshop on Uncovering Plagiarism,
+  Authorship, and Social Software Misuse}
+  \field{title}{A cluster-based plagiarism detection method - Lab report for
+  PAN at CLEF}
+  \field{year}{2010}
 \endentry
 
 \lossort

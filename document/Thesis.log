@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  6 JUL 2024 15:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  6 JUL 2024 17:52
 entering extended mode
 **Thesis.tex
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.tex
@@ -1289,7 +1289,7 @@ File: spanish.lbx 2011/07/29 v1.6 biblatex localization
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                'firstinits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 75.
+(biblatex)                Setting 'uniquename=init' on input line 74.
 
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.aux
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Abstract.aux)
@@ -1301,21 +1301,21 @@ Package biblatex Warning: Conflicting options.
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Bibliography.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 74.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1346,10 +1346,10 @@ Package biblatex Warning: Data encoding is 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 75.
-Package biblatex Info: Reference segment=0 on input line 75.
+Package biblatex Info: Reference section=0 on input line 74.
+Package biblatex Info: Reference segment=0 on input line 74.
 \AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring ON on input line 75.
+Package hyperref Info: Link coloring ON on input line 74.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1359,9 +1359,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
 
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.out)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.out)
@@ -1369,23 +1369,23 @@ LaTeX Info: Redefining \nameref on input line 75.
 
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count326
-LaTeX Info: Redefining \selectfont on input line 75.
+LaTeX Info: Redefining \selectfont on input line 74.
 
 <Graphics/uhlogo.pdf, id=70, 375.98297pt x 481.67456pt>
 File: Graphics/uhlogo.pdf Graphic file (type pdf)
 
 <use Graphics/uhlogo.pdf>
-Package pdftex.def Info: Graphics/uhlogo.pdf used on input line 78.
+Package pdftex.def Info: Graphics/uhlogo.pdf used on input line 77.
 (pdftex.def)             Requested size: 49.79231pt x 63.7885pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 78.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 78.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 77.
 
 ! Undefined control sequence.
 <recently read> \@advisor 
                           
-l.78 \maketitle
+l.77 \maketitle
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1496,12 +1496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-[5]
-
-LaTeX Warning: Citation 'smith2020enhanced' on page 6 undefined on input line 2
-5.
-
-[6]
+[5] [6]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
@@ -1510,10 +1505,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
-
-
-LaTeX Warning: Citation 'duracik2018source' on page 7 undefined on input line 3
-2.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
@@ -1531,9 +1522,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
  []
 
 
-LaTeX Warning: Citation 'zou2010cluster' on page 8 undefined on input line 41.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
@@ -1542,10 +1530,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
-
-
-LaTeX Warning: Citation 'smith2020enhanced' on page 8 undefined on input line 4
-7.
 
 [8]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
@@ -1601,30 +1585,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
  []
 
 [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
-[17]) [18]
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 210.
+[19]
+
+LaTeX Warning: Citation 'liu2008isolation' on page 20 undefined on input line 2
+39.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+[20] [21]) [22]
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Implementation.tex
 Cap\'{\i }tulo 3.
-) [19
+) [23
 
 
 
-] (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.tex) [20
+] (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.tex) [24
 
 
 
 
 ]
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.tex)
-[21
+[25
 
 
 
@@ -1750,6 +1761,44 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[26
+
+
+
+]
+! Undefined control sequence.
+<argument> \mkbibdateapalongextra 
+                                  {year}{month}{day}\iffieldundef {endyear}{...
+l.2 \printbibliography[heading=bibintoc]
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 ! Package biblatex Error: '\bibliographystyle' invalid.
 
@@ -1762,13 +1811,9 @@ l.3 \bibliographystyle{plain}
 Use the package option 'style' instead.
 I'm ignoring this command.
 
-) [22
-
-
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
+) [27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
  (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.aux
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Abstract.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Contents.aux)
@@ -1779,10 +1824,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.aux)
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 39820B5D8725FF07F9669770C506C94C;1012.
+(rerunfilecheck)             Checksum: 8B94C55949C27E14FA35094EDF137AFE;1012.
 
 
 LaTeX Warning: There were undefined references.
@@ -1795,24 +1840,28 @@ Package biblatex Warning: Please (re)run BibTeX on the file(s):
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 24258 strings out of 494045
- 410553 string characters out of 3145970
- 653172 words of memory out of 3000000
- 26938 multiletter control sequences out of 15000+200000
- 32230 words of font info for 67 fonts, out of 3000000 for 9000
+ 24329 strings out of 494045
+ 411315 string characters out of 3145970
+ 654172 words of memory out of 3000000
+ 26965 multiletter control sequences out of 15000+200000
+ 43490 words of font info for 97 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 63i,12n,72p,1123b,1539s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,12n,72p,1123b,1541s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/p
-alatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/
-uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.
-pfb>
-Output written on Thesis.pdf (26 pages, 279183 bytes).
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/mathpazo/fplmr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/mathpazo/fplmri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmtt12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncn
+trsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/up
+lb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Thesis.pdf (31 pages, 332225 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
