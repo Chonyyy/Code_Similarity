@@ -1,21 +1,23 @@
 \chapter{Propuesta de solución}\label{chapter:proposal}
 
-La implementacion  de este trabajo esta dividida en dos partes fundamentales: Extraccion del AST y trabajo con machine learning.
+La implementacion  de este trabajo esta dividida en tres partes fundamentales: Extraccion del AST, trabajo con los datos y trabajo con machine learning.
 
 - Extraccion del AST: En esta parte se utiliza la herramienta ANTLR de C\# para crear el ast de los proyectos. Luego de este ast se extraen los features para su posterior uso.
+
+- Trabajo con los datos: 
 
 - Trabajo con machine learning: Se estudian diferentes técnicas para determinar la semejanza entre 2 proyectos. El uso de modelos de deteccion de oulayers para agrupar los vectores de similitud de los proyectos que son distintos entre si.
 
 
 \section{Extraccion del AST}
 
-ANTLR (Another Tool for Language Recognition) es una poderosa herramienta que se utiliza para generar analizadores léxicos y sintácticos a partir de gramáticas definidas por el usuario. Es ampliamente utilizada en la compilación y el procesamiento de lenguajes, ya que permite transformar el código fuente en estructuras de datos que pueden ser fácilmente manipuladas. En este caso, ANTLR se emplea para extraer Árboles de Sintaxis Abstracta (AST) a partir del código fuente de programas escritos en C\#. Fue necesario hacer ligeras modificaciones sobre la gramática, pues ANTLR tenia una gramatica desactualizada. \\
+ANTLR (Another Tool for Language Recognition) es herramienta que se utiliza para generar analizadores léxicos y sintácticos a partir de gramáticas definidas por el usuario. Es ampliamente utilizada en la compilación y el procesamiento de lenguajes, ya que permite transformar el código fuente en estructuras de datos que pueden ser fácilmente manipuladas. En este caso, ANTLR se emplea para extraer Árboles de Sintaxis Abstracta (AST) a partir del código fuente de programas escritos en C\#. Fue necesario hacer ligeras modificaciones sobre la gramática, pues ANTLR tenia una gramatica desactualizada. \\
 
 Una vez que se ha generado el AST, se puede manipular y analizar utilizando las estructuras de datos proporcionadas por ANTLR. Por ejemplo, se pueden recorrer los nodos del árbol, extraer información específica o transformar el AST para diferentes propósitos, en este caso se utilizó el listener proporcionado por ANTLR para recorrer el árbol y extraer los featurues. \\
 
 \section{Extraccion de features}
 
-En el análisis de similitud de código y detección de patrones, es crucial extraer características relevantes que capturen la estructura y el comportamiento del código. Para este propósito, se implementó una clase denominada {\bf FeatureExtractorListener}, que extiende la funcionalidad de ANTLR para analizar el código fuente en C\#. A continuación, se presenta una descripción detallada del proceso de extracción de características y la importancia de cada característica extraída. \\
+En el análisis de similitud de código y detección de patrones, es crucial extraer características relevantes que capturen la estructura y el comportamiento del código. Para este propósito, se implementó una clase denominada {\bf FeatureExtractorListener}, que extiende la funcionalidad de ANTLR para analizar el código fuente en C\#. A continuación, se presenta una descripción detallada del proceso de extracción de características y la importancia de cada característica. \\
 
 \begin{enumerate}
 	\item Estructura del AST:
@@ -123,7 +125,7 @@ La extracción de características con FeatureExtractorListener permite capturar
 
 \section{Preparacion del dataset}
 
-Para preparar el dataset utilizado en el análisis de similitud de código, se requirió convertir los nombres de variables, métodos y otros identificadores en vectores de características numéricas. Este proceso se llevó a cabo utilizando la técnica de embeddings con Word2Vec. A continuación, se explica qué es Word2Vec, cómo funciona y por qué se eligió para esta tarea \cite{mikolov2013efficient}. \\
+Para preparar el dataset utilizado en el análisis de similitud de código, se convierten los nombres de variables, métodos y otros identificadores en vectores de características numéricas. Este proceso se llevó a cabo utilizando la técnica de embeddings con Word2Vec \cite{mikolov2013efficient}. \\
 
 \subsubsection{Uso de Word2Vec en la Preparación del Dataset}
 Word2Vec es una técnica de aprendizaje profundo que transforma palabras en vectores de números de alta dimensión, conocidos como embeddings. Los modelos Word2Vec se entrenan utilizando grandes corpus de texto y capturan relaciones semánticas entre las palabras.  \\
@@ -139,30 +141,30 @@ En el contexto del análisis de similitud de código, los nombres de variables, 
 	 
 \end{enumerate}
 
-\subsubsection{Nuevo dataset}
-Para maximizar la cantidad de datos disponibles y reflejar de manera efectiva la similitud entre proyectos, se creó un nuevo dataset que contiene todos los pares posibles (2 a 2) de proyectos del conjunto de datos original. En este proceso, para cada par de proyectos, se calcula y almacena la diferencia entre sus vectores correspondientes.
+\subsubsection{Dataset de diferencias}
+Para maximizar la cantidad de datos disponibles y reflejar de manera efectiva la similitud entre proyectos, se creó un dataset que contiene todos los pares posibles (2 a 2) de proyectos del conjunto de datos original. En este proceso, para cada par de proyectos, se calcula y almacena la diferencia entre sus vectores correspondientes.\\
 
 Este enfoque tiene varias ventajas significativas:
 
 \begin{itemize}
 	\item {\bf Incremento en la Cantidad de Datos:} Generar todos los pares posibles de proyectos incrementa exponencialmente el número de instancias en el dataset, proporcionando una base de datos más rica y diversa para entrenar modelos de aprendizaje automático.
 	
-	\item {\bf Etiquetado Automático de Datos:} Una ventaja adicional de calcular la distancia entre los datos es que permite disponer de algunos datos etiquetados. Aunque no se puede afirmar si un proyecto individual es original o una copia, al calcular las distancias dos a dos, se puede asegurar que un par de proyectos provenientes de diferentes tipos de proyectos no son copias uno del otro. Esto proporciona etiquetas adicionales que mejoran la calidad del entrenamiento del modelo.
+	\item {\bf Etiquetado Automático de Datos:} Una ventaja de calcular la distancia entre los datos es que permite disponer de algunos datos etiquetados. Aunque no se puede afirmar si un proyecto individual es original o una copia de otro proyecto, al calcular las distancias dos a dos, se puede asegurar que un par de proyectos provenientes de diferentes tipos de proyectos no son copias uno del otro. Esto proporciona etiquetas adicionales que mejoran la calidad del entrenamiento del modelo.
 
 	\item {\bf Captura de Relaciones Detalladas:} Al almacenar la diferencia entre los vectores de cada par de proyectos, se capturan las distancias y relaciones específicas entre todos los proyectos. Esto permite que el modelo de machine learning pueda aprender las sutilezas de las similitudes y diferencias entre distintos proyectos.
 	
 	\item {\bf Mejora en la Precisión del Modelo:} Con un mayor volumen de datos y la inclusión de las distancias entre pares, se espera que el modelo tenga un mejor desempeño en la tarea de detección de similitudes. La precisión del modelo se ve beneficiada al disponer de más ejemplos que reflejan una amplia gama de variaciones y similitudes.
 	
-	\item {\bf Refinamiento de las Métricas de Similitud:} Este método permite que se utilicen métricas de similitud más refinadas y precisas, ya que cada par de proyectos se compara de manera detallada. 
+	\item {\bf Refinamiento de las Métricas de Similitud:} Este método permite que se utilicen métricas de similitud precisas, ya que cada par de proyectos se compara de manera detallada. 
 
 \end{itemize}
 
-En resumen, la creación de este nuevo dataset con todos los pares posibles y sus diferencias vectoriales no solo aumenta la cantidad de datos disponibles, sino que también enriquece la información sobre las relaciones entre proyectos, mejorando así la capacidad del modelo para detectar similitudes de manera precisa y eficiente.  
+En resumen, la creación de este dataset con todos los pares posibles y sus diferencias vectoriales no solo aumenta la cantidad de datos disponibles, sino que también enriquece la información sobre las relaciones entre proyectos, mejorando así la capacidad del modelo para detectar similitudes de manera precisa y eficiente.  
 
-\section{Probando diferentes modelos}
+\section{Probando modelos}
 
 \subsubsection{SNN}
-La primera solución abordada fue implementar una red neuronal siamesa para comparar dos proyectos. Estas redes funcionan con dos entradas, procesando cada una a través de la misma arquitectura de red para obtener representaciones vectoriales comparables. La red neuronal siamesa mide la distancia entre estos vectores para determinar la similitud entre los proyectos.\\
+La primera solución fue implementar una red neuronal siamesa para comparar dos proyectos. Estas redes funcionan con dos entradas, procesando cada una a través de la misma arquitectura de red para obtener representaciones vectoriales comparables. La red neuronal siamesa mide la distancia entre estos vectores para determinar la similitud entre los proyectos.\\
 
 Para esta solución, se separaron todos los posibles pares de proyectos y se les asignó una etiqueta: 0 si los proyectos no son copias (ambos originales) y 1 si los proyectos son copias. Los datos se convirtieron en vectores de características y el conjunto de datos se constituyó con los pares de vectores correspondientes y sus etiquetas.\\
 
@@ -171,19 +173,21 @@ Sin embargo, surgió el problema de la generación de copias de proyectos para e
 
 \subsubsection{Clustering}
 
-El clustering es un proceso de aprendizaje no supervisado, utilizado para agrupar datos sin conocer de antemano la etiqueta o categoría de cada dato. En lugar de depender de etiquetas predefinidas, los algoritmos de clustering analizan la proximidad y similitud entre los datos para formar grupos o clústeres basados en características compartidas. Cada clúster agrupa datos que son similares entre sí, pero que difieren de los datos en otros clústeres. Este enfoque es particularmente útil en situaciones donde se quiere descubrir patrones, estructuras o relaciones inherentes sin la necesidad de etiquetas predefinidas.
+El clustering es un proceso de aprendizaje no supervisado, utilizado para agrupar datos sin conocer de antemano la etiqueta o categoría de cada dato. En lugar de depender de etiquetas predefinidas, los algoritmos de clustering analizan la proximidad y similitud entre los datos para formar grupos o clústeres basados en características compartidas. Cada clúster agrupa datos que son similares entre sí, pero que difieren de los datos en otros clústeres. Este enfoque es particularmente útil en situaciones donde se quiere descubrir patrones, estructuras o relaciones inherentes sin la necesidad de etiquetas predefinidas.\\
 
-Se aplicaron distintos enfoques de clustering, entre ellos:
+Se aplicaron distintos enfoques de clustering:
 \begin{itemize}
-    \item \textbf{K-Means}: Agrupa datos en \(k\) clústeres basándose en la distancia euclidiana a los centroides, que se ajustan iterativamente. Aquí se hizo uso del método del codo para determinar el parámetro \(k\) a utilizar.
+    \item \textbf{K-Means}: Agrupa datos en \(k\) clústeres basándose en la distancia euclidiana a los centroides, que se ajustan iterativamente.
+    
     \item \textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)}: Identifica clústeres basados en la densidad de puntos, permitiendo descubrir clústeres de forma arbitraria y detectar ruido.
-    \item \textbf{Agglomerative Clustering}: Un enfoque jerárquico que une iterativamente los puntos o clústeres más cercanos, formando un dendrograma.
+    \item \textbf{Agglomerative Clustering}: Un enfoque jerárquico que une iterativamente los puntos o clústeres más cercanos, formando un dendrograma.  Aquí se hizo uso del método del codo para determinar el parámetro \(k\) a utilizar.
+    
     \item \textbf{MeanShift}: Agrupa datos desplazando iterativamente los puntos hacia la densidad máxima de puntos más cercana, identificando modos en la densidad de datos.
 \end{itemize}
 
 Aunque algunos de estos algoritmos mostraron buenas métricas en ciertos aspectos, no lograron resolver completamente el problema planteado. 
 
-\section{Modelos utilizados}
+\section{Modelos}
 
 \subsubsection{One-Class SVM}
 
@@ -207,7 +211,7 @@ One-Class SVM se basa en la idea de encontrar una función que sea positiva en l
     \end{itemize}
 \end{enumerate}
 
-\subsection*{Fórmula Matemática}
+\texbf{Fórmula Matemática} \\
 
 El problema de optimización para One-Class SVM se define como:
 
@@ -236,7 +240,7 @@ Donde:
 
 \subsubsection{Isolation forest}
 
-Isolation Forest es un algoritmo de aprendizaje automático no supervisado diseñado para detectar anomalías en datos. Fue introducido por Fei Tony Liu, Kai Ming Ting y Zhi-Hua Zhou en 2008 \cite{liu2008isolation}. A diferencia de muchos algoritmos de detección de anomalías que se basan en la densidad o la distancia, Isolation Forest se basa en el concepto de \"aislamiento\".\\
+Isolation Forest es un algoritmo de aprendizaje automático no supervisado diseñado para detectar anomalías en datos. Fue introducido por Fei Tony Liu, Kai Ming Ting y Zhi-Hua Zhou en 2008 \cite{liu2008isolation}. A diferencia de muchos algoritmos de detección de anomalías que se basan en la densidad o la distancia, Isolation Forest se basa en el concepto de "aislamiento\".\\
 
 La idea central de Isolation Forest es que las anomalías son puntos de datos que son "fáciles de aislar". Dado que los valores anómalos son raros y diferentes del resto de los datos, deben requerir menos divisiones para ser aislados. \\
 
@@ -295,11 +299,11 @@ H(i) = \sum_{k=1}^{i} \frac{1}{k}
 \end{itemize}
 
 
-\subsubsection{Por que elegir estos modelos?}
+\subsubsection{¿Por que elegir estos modelos?}
 
 Ambos métodos, Isolation Forest y One-Class SVM, fueron entrenados con pares de proyectos que son diferentes entre sí. Esto significa que aprendieron las diferencias inherentes entre proyectos que podrían contener anomalías o fraudes. Al entrenar con proyectos que representan variabilidad y diversidad en términos de estructuras de código, estilos de programación y lógica implementada, los modelos pueden capturar mejor las características que distinguen un proyecto legítimo de uno potencialmente fraudulento.
 
-\subsection*{Descripción de la Región de Similitud}
+\textbf de la Región de Similitud}
 
 El objetivo de detectar fraude entre proyectos de C\# de primer año implica identificar anomalías en la similitud estructural y lógica entre dos proyectos. Isolation Forest y One-Class SVM son adecuados para este propósito porque:
 

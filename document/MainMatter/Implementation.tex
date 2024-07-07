@@ -1,1 +1,19 @@
 \chapter{Detalles de Implementación y Experimentos}\label{chapter:implementation}
+
+En este capítulo se presentan las pruebas que se hicieron para evaluar
+ el desempeño de los modelos. Para estas pruebas se utilizaron datos...
+
+\begin{table}[ht]
+    \centering
+    \caption{Resultados de Clustering}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Método} & \textbf{Silhouette} & \textbf{Calinski Harabaz} & \textbf{Davies Bouldin} \\
+        \midrule
+        Agglomerative Clustering & 0.2236 & 186.1952 & 1.4984 \\
+        DBSCAN & 0.4641 & 25.136239627069884 & 1.6503 \\
+        K-Mean & - & - & \\
+        Mean-Shift & - & - &
+        \bottomrule
+    \end{tabular}
+\end{table}
