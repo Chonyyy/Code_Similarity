@@ -277,6 +277,41 @@
   \field{year}{1977}
 \endentry
 
+\entry{liu2008isolation}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Liu}{L.}%
+     {Fei~Tony}{F.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ting}{T.}%
+     {Kai~Ming}{K.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhou}{Z.}%
+     {Zhi-Hua}{Z.-H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{LFT+1}
+  \strng{fullhash}{LFTTKMZZH1}
+  \field{labelyear}{2008}
+  \field{sortinit}{L}
+  \field{booktitle}{Data Mining, 2008. ICDM'08. Eighth IEEE International
+  Conference on}
+  \verb{doi}
+  \verb 10.1109/ICDM.2008.17
+  \endverb
+  \field{pages}{413\bibrangedash 422}
+  \field{title}{Isolation Forest}
+  \field{year}{2008}
+\endentry
+
 \entry{mikolov2013efficient}{article}{}
   \name{author}{4}{}{%
     {{}%

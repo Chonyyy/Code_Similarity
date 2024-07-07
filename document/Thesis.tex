@@ -9,14 +9,16 @@
 \usepackage{braket}
 \setlength {\marginparwidth }{3cm}
 \usepackage{todonotes}
+\usepackage{cite}     % Para manejar citas
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
-\addbibresource{Bibliography.bib} 
+\addbibresource{Bibliography.bib} % Incluir archivo .bib
 \usepackage{listings}
 \usepackage{color}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{ragged2e}
+
 \floatstyle{ruled}
 \restylefloat{table}
 \usepackage{listings}
@@ -42,7 +44,7 @@
 	numbersep=5pt
 }
 
-
+\renewcommand{\tablename}{Tabla}
 \title{Code Similarity}
 \author{\\\vspace{0.25cm}
 María de Lourdes Choy Fernández \\
@@ -52,29 +54,16 @@ Alejandro Yero Valdéz}
 \faculty{Facultad de Matemática y Computación}
 \date{julio de 2022\\\vspace{0.25cm}\href{https://github.com/Chonyyy/Code_Similarity}{github.com/Chonyyy/Code\_Similarity}}
 \logo{Graphics/uhlogo}
-\makenomenclature
 
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 \newcommand{\diff}[1]{\ensuremath{\mathrm{d}#1}}
-\newcommand{\me}[1]{\mathrm{e}^{#1}}
-\newcommand{\pf}{\mathfrak{p}}
-\newcommand{\qf}{\mathfrak{q}}
-%\newcommand{\kf}{\mathfrak{k}}
-\newcommand{\kt}{\mathtt{k}}
-\newcommand{\mf}{\mathfrak{m}}
-\newcommand{\hf}{\mathfrak{h}}
-\newcommand{\fac}{\mathrm{fac}}
-\newcommand{\maxx}[1]{\max\left\{ #1 \right\} }
-\newcommand{\minn}[1]{\min\left\{ #1 \right\} }
-\newcommand{\lldpcf}{1.25}
-\newcommand{\nnorm}[1]{\left\lvert #1 \right\rvert }
-\renewcommand{\lstlistingname}{Ejemplo de código}
-\renewcommand{\lstlistlistingname}{Ejemplos de código}
 
 \begin{document}
+\selectlanguage{spanish}
 
-\frontmatter
+%\frontmatter
 \maketitle
+
 %\include{FrontMatter/Dedication}
 %\include{FrontMatter/Thanks}
 %\include{FrontMatter/SupervisorOpinion}
@@ -93,5 +82,6 @@ Alejandro Yero Valdéz}
 \include{BackMatter/Conclusions}
 \include{BackMatter/Recomendations}
 \include{BackMatter/Bibliography}
+
 
 \end{document}
