@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  7 JUL 2024 00:05
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  7 JUL 2024 14:59
 entering extended mode
 **Abstract.tex
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter\Abstract.tex
@@ -14,14 +14,14 @@ romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
 
-! LaTeX Error: Environment resumen undefined.
+! LaTeX Error: Environment abstract undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \begin{resumen}
-                   
+l.1 \begin{abstract}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -913,14 +913,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: \begin{document} ended by \end{resumen}.
+! LaTeX Error: \begin{document} ended by \end{abstract}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 \end{resumen}
-                 
+l.3 \end{abstract}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -931,14 +931,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 2--4
  []
 
 
-! LaTeX Error: Environment abstract undefined.
+! LaTeX Error: Environment enabstract undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 \begin{abstract}
-                    
+l.5 \begin{enabstract}
+                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1725,14 +1725,14 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: \begin{document} ended by \end{abstract}.
+! LaTeX Error: \begin{document} ended by \end{enabstract}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 \end{abstract}
-                  
+l.7 \end{enabstract}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1746,7 +1746,7 @@ or  <return>  to continue without it.
  
 Here is how much of TeX's memory you used:
  11 strings out of 494045
- 296 string characters out of 3145970
+ 302 string characters out of 3145970
  48890 words of memory out of 3000000
  3403 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000

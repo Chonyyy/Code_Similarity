@@ -1,453 +1,89 @@
-% $ biblatex auxiliary file $
-% $ biblatex version 1.6 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{10}
 
-\entry{aho1986compilers}{book}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Aho}{A.}%
-     {Alfred~V.}{A.~V.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sethi}{S.}%
-     {Ravi}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ullman}{U.}%
-     {Jeffrey~D.}{J.~D.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Addison-Wesley}%
-  }
-  \strng{namehash}{AAV+1}
-  \strng{fullhash}{AAVSRUJD1}
-  \field{labelyear}{1986}
-  \field{sortinit}{A}
-  \field{title}{Compilers: Principles, Techniques, and Tools}
-  \field{year}{1986}
-\endentry
+\bibitem{aho1986compilers}
+Alfred~V. Aho, Ravi Sethi, and Jeffrey~D. Ullman.
+\newblock {\em Compilers: Principles, Techniques, and Tools}.
+\newblock Addison-Wesley, 1986.
 
-\entry{aiken1994moss}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Aiken}{A.}%
-     {Alex}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AA1}
-  \strng{fullhash}{AA1}
-  \field{labelyear}{1994}
-  \field{sortinit}{A}
-  \field{note}{\url{https://theory.stanford.edu/~aiken/moss/}}
-  \field{title}{MOSS (Measure of Software Similarity)}
-  \field{journaltitle}{University of California, Berkeley}
-  \field{year}{1994}
-\endentry
+\bibitem{aiken1994moss}
+Alex Aiken.
+\newblock Moss (measure of software similarity).
+\newblock {\em University of California, Berkeley}, 1994.
+\newblock \url{https://theory.stanford.edu/~aiken/moss/}.
 
-\entry{alon2019code2seq}{inproceedings}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Alon}{A.}%
-     {Uri}{U.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Zilberstein}{Z.}%
-     {Matan}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Levy}{L.}%
-     {Omer}{O.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Yahav}{Y.}%
-     {Eran}{E.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AU+1}
-  \strng{fullhash}{AUZMLOYE1}
-  \field{labelyear}{2019}
-  \field{extrayear}{1}
-  \field{sortinit}{A}
-  \field{booktitle}{International Conference on Learning Representations
-  (ICLR)}
-  \verb{doi}
-  \verb 10.1023/A:1020518621128
-  \endverb
-  \field{title}{code2seq: Generating Sequences from Structured Representations
-  of Code}
-  \field{year}{2019}
-\endentry
+\bibitem{alon2019code2vec}
+Uri Alon, Meital Brody, Omer Levy, and Eran Yahav.
+\newblock code2vec: Learning distributed representations of code.
+\newblock {\em Proceedings of the ACM on Programming Languages}, 3(POPL):1--29,
+  2019.
 
-\entry{alon2019code2vec}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Alon}{A.}%
-     {Uri}{U.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Brody}{B.}%
-     {Meital}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Levy}{L.}%
-     {Omer}{O.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Yahav}{Y.}%
-     {Eran}{E.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {ACM}%
-  }
-  \strng{namehash}{AU+1}
-  \strng{fullhash}{AUBMLOYE1}
-  \field{labelyear}{2019}
-  \field{extrayear}{2}
-  \field{sortinit}{A}
-  \verb{doi}
-  \verb 10.1145/3290353
-  \endverb
-  \field{number}{POPL}
-  \field{pages}{1\bibrangedash 29}
-  \field{title}{code2vec: Learning Distributed Representations of Code}
-  \field{volume}{3}
-  \field{journaltitle}{Proceedings of the ACM on Programming Languages}
-  \field{year}{2019}
-\endentry
+\bibitem{alon2019code2seq}
+Uri Alon, Matan Zilberstein, Omer Levy, and Eran Yahav.
+\newblock code2seq: Generating sequences from structured representations of
+  code.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2019.
 
-\entry{boyer1977fast}{inproceedings}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Boyer}{B.}%
-     {Robert~S}{R.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Moore}{M.}%
-     {J~Strother}{J.~S.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{organization}{1}{%
-    {IEEE}%
-  }
-  \strng{namehash}{BRSMJS1}
-  \strng{fullhash}{BRSMJS1}
-  \field{labelyear}{1977}
-  \field{sortinit}{B}
-  \field{booktitle}{Proceedings of the 19th Annual Symposium on Switching and
-  Automata Theory (swat 1978)}
-  \field{pages}{62\bibrangedash 72}
-  \field{title}{A fast string searching algorithm}
-  \field{year}{1977}
-\endentry
+\bibitem{boyer1977fast}
+Robert~S Boyer and J~Strother Moore.
+\newblock A fast string searching algorithm.
+\newblock In {\em Proceedings of the 19th Annual Symposium on Switching and
+  Automata Theory (swat 1978)}, pages 62--72. IEEE, 1977.
 
-\entry{duracik2018source}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Duracik}{D.}%
-     {M.}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kirsak}{K.}%
-     {E.}{E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hrkut}{H.}%
-     {P.}{P.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{DM+1}
-  \strng{fullhash}{DMKEHP1}
-  \field{labelyear}{2018}
-  \field{sortinit}{D}
-  \field{booktitle}{Springer International Publishing AG, part of Springer
-  Nature: CCIS 870}
-  \field{pages}{61\bibrangedash 69}
-  \field{title}{Source Code Representations for Plagiarism Detection}
-  \field{year}{2018}
-\endentry
+\bibitem{duracik2018source}
+M.~Duracik, E.~Kirsak, and P.~Hrkut.
+\newblock Source code representations for plagiarism detection.
+\newblock In {\em Springer International Publishing AG, part of Springer
+  Nature: CCIS 870}, pages 61--69, 2018.
 
-\entry{smith2020enhanced}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Hadiza Lawal~Abba}{H.~L.~A.}%
-     {Aminu B. Muhammad Abba~Almu}{A.~B. M. A.~A.}%
-     {}{}%
-     {Abubakar~Roko}{A.~R.}}%
-    {{}%
-     {Usman}{U.}%
-     {Abdulgafar}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{HLAARABMAAUA1}
-  \strng{fullhash}{HLAARABMAAUA1}
-  \field{labelyear}{2022}
-  \field{sortinit}{H}
-  \field{number}{2}
-  \field{pages}{5353\bibrangedash 5360}
-  \field{title}{Enhanced Semantic Similarity Detection of Program Code Using
-  Siamese Neural Network}
-  \field{volume}{14}
-  \field{journaltitle}{Int. J. Advanced Networking and Applications}
-  \field{year}{2022}
-\endentry
+\bibitem{smith2020enhanced}
+Aminu B. Muhammad Abba~Almu Hadiza Lawal~Abba, Abubakar~Roko and Abdulgafar
+  Usman.
+\newblock Enhanced semantic similarity detection of program code using siamese
+  neural network.
+\newblock {\em Int. J. Advanced Networking and Applications}, 14(2):5353--5360,
+  2022.
 
-\entry{kam2005analyzing}{inproceedings}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Kam}{K.}%
-     {Timothy}{T.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{KT1}
-  \strng{fullhash}{KT1}
-  \field{labelyear}{2005}
-  \field{sortinit}{K}
-  \field{booktitle}{Proceedings of the 2005 International Conference on
-  Software Engineering Research and Practice}
-  \field{title}{Analyzing and Understanding Software Artifacts with Abstract
-  Syntax Trees}
-  \field{year}{2005}
-\endentry
+\bibitem{kam2005analyzing}
+Timothy Kam.
+\newblock Analyzing and understanding software artifacts with abstract syntax
+  trees.
+\newblock In {\em Proceedings of the 2005 International Conference on Software
+  Engineering Research and Practice}, 2005.
 
-\entry{knuth1977fast}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Knuth}{K.}%
-     {Donald~E}{D.~E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Morris~Jr}{M.~J.}%
-     {James~H}{J.~H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Pratt}{P.}%
-     {Vaughan~R}{V.~R.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {SIAM}%
-  }
-  \strng{namehash}{KDE+1}
-  \strng{fullhash}{KDEMJJHPVR1}
-  \field{labelyear}{1977}
-  \field{sortinit}{K}
-  \field{number}{2}
-  \field{pages}{323\bibrangedash 350}
-  \field{title}{Fast pattern matching in strings}
-  \field{volume}{6}
-  \field{journaltitle}{SIAM journal on computing}
-  \field{year}{1977}
-\endentry
+\bibitem{knuth1977fast}
+Donald~E Knuth, James~H Morris~Jr, and Vaughan~R Pratt.
+\newblock Fast pattern matching in strings.
+\newblock {\em SIAM journal on computing}, 6(2):323--350, 1977.
 
-\entry{liu2008isolation}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Liu}{L.}%
-     {Fei~Tony}{F.~T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ting}{T.}%
-     {Kai~Ming}{K.~M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Zhou}{Z.}%
-     {Zhi-Hua}{Z.-H.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{organization}{1}{%
-    {IEEE}%
-  }
-  \strng{namehash}{LFT+1}
-  \strng{fullhash}{LFTTKMZZH1}
-  \field{labelyear}{2008}
-  \field{sortinit}{L}
-  \field{booktitle}{Data Mining, 2008. ICDM'08. Eighth IEEE International
-  Conference on}
-  \verb{doi}
-  \verb 10.1109/ICDM.2008.17
-  \endverb
-  \field{pages}{413\bibrangedash 422}
-  \field{title}{Isolation Forest}
-  \field{year}{2008}
-\endentry
+\bibitem{liu2008isolation}
+Fei~Tony Liu, Kai~Ming Ting, and Zhi-Hua Zhou.
+\newblock Isolation forest.
+\newblock In {\em Data Mining, 2008. ICDM'08. Eighth IEEE International
+  Conference on}, pages 413--422. IEEE, 2008.
 
-\entry{mikolov2013efficient}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Mikolov}{M.}%
-     {Tomas}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Chen}{C.}%
-     {Kai}{K.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Corrado}{C.}%
-     {Greg}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dean}{D.}%
-     {Jeffrey}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{MT+1}
-  \strng{fullhash}{MTCKCGDJ1}
-  \field{labelyear}{2013}
-  \field{sortinit}{M}
-  \verb{doi}
-  \verb 10.48550/arXiv.1301.3781
-  \endverb
-  \field{title}{Efficient Estimation of Word Representations in Vector Space}
-  \field{journaltitle}{arXiv preprint arXiv:1301.3781}
-  \field{year}{2013}
-\endentry
+\bibitem{mikolov2013efficient}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
 
-\entry{muchnick1997advanced}{book}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Muchnick}{M.}%
-     {Steven~S.}{S.~S.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Morgan Kaufmann Publishers}%
-  }
-  \strng{namehash}{MSS1}
-  \strng{fullhash}{MSS1}
-  \field{labelyear}{1997}
-  \field{sortinit}{M}
-  \field{title}{Advanced Compiler Design and Implementation}
-  \field{year}{1997}
-\endentry
+\bibitem{muchnick1997advanced}
+Steven~S. Muchnick.
+\newblock {\em Advanced Compiler Design and Implementation}.
+\newblock Morgan Kaufmann Publishers, 1997.
 
-\entry{vaswani2017attention}{inproceedings}{}
-  \name{author}{7}{}{%
-    {{}%
-     {Vaswani}{V.}%
-     {Ashish}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Shazeer}{S.}%
-     {Noam}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Parmar}{P.}%
-     {Niki}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Uszkoreit}{U.}%
-     {Jakob}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Jones}{J.}%
-     {Llion}{L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Gomez}{G.}%
-     {Aidan~N}{A.~N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Polosukhin}{P.}%
-     {Illia}{I.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{VA+1}
-  \strng{fullhash}{VASNPNUJJLGANPI1}
-  \field{labelyear}{2017}
-  \field{sortinit}{V}
-  \field{booktitle}{Advances in Neural Information Processing Systems
-  (NeurIPS)}
-  \verb{doi}
-  \verb 10.48550/arXiv.1706.03762
-  \endverb
-  \field{pages}{5998\bibrangedash 6008}
-  \field{title}{Attention is All You Need}
-  \field{year}{2017}
-\endentry
+\bibitem{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  pages 5998--6008, 2017.
 
-\entry{zou2010cluster}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Zou}{Z.}%
-     {D.}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Long}{L.}%
-     {W.}{W.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ling}{L.}%
-     {Z.}{Z.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{ZD+1}
-  \strng{fullhash}{ZDLWLZ1}
-  \field{labelyear}{2010}
-  \field{sortinit}{Z}
-  \field{booktitle}{Proceedings of the 4th Workshop on Uncovering Plagiarism,
-  Authorship, and Social Software Misuse}
-  \field{title}{A cluster-based plagiarism detection method - Lab report for
-  PAN at CLEF}
-  \field{year}{2010}
-\endentry
+\bibitem{zou2010cluster}
+D.~Zou, W.~Long, and Z.~Ling.
+\newblock A cluster-based plagiarism detection method - lab report for pan at
+  clef.
+\newblock In {\em Proceedings of the 4th Workshop on Uncovering Plagiarism,
+  Authorship, and Social Software Misuse}, 2010.
 
-\lossort
-\endlossort
-
-\endinput
+\end{thebibliography}

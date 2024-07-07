@@ -1,9 +1,14 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
 \select@language {spanish}
-\defcounter {refsection}{0}\relax 
+\select@language {spanish}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \IeC {\'A}rbol de vecindad asociado a $rarb$.}}{24}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Nodos que representan elementos de la soluci\IeC {\'o}n $s_1$ de VRP b\IeC {\'a}sico.}}{27}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Grafo de evaluaci\IeC {\'o}n que representa la soluci\IeC {\'o}n $s1$ de VRP b\IeC {\'a}sico.}}{27}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Grafo de evaluaci\IeC {\'o}n que representa la soluci\IeC {\'o}n $s1$ de VRP b\IeC {\'a}sico luego de mover el cliente $c2$}}{29}{figure.2.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Grafo de evaluaci\IeC {\'o}n que representa la soluci\IeC {\'o}n $s1$ de VRP b\IeC {\'a}sico.}}{37}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Grafo de evaluaci\IeC {\'o}n que representa la soluci\IeC {\'o}n $s1$ de VRP b\IeC {\'a}sico luego de mover el cliente $c2$}}{37}{figure.3.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
