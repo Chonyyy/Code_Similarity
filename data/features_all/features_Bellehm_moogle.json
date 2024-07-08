@@ -1,0 +1,1241 @@
+{
+    "total_nodes": 41928,
+    "max_depth": 652,
+    "number_of_variables": 180,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 38,
+    "number_of_classes": 7,
+    "number_of_interfaces": 0,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 1,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 2,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 45,
+    "enums_names": [],
+    "control_structures_if": 89,
+    "control_structures_switch": 0,
+    "control_structures_for": 53,
+    "control_structures_while": 10,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 42,
+    "access_modifiers_private": 1,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 34,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 0,
+    "modifier_new": 25,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 11,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 17,
+    "number_of_lambdas": 0,
+    "number_of_getters": 10,
+    "number_of_setters": 8,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 7,
+    "method_parameters": [
+        [
+            "Partition",
+            [
+                [
+                    "string[]",
+                    "words"
+                ],
+                [
+                    "int",
+                    "stratindex"
+                ],
+                [
+                    "int",
+                    "endindex"
+                ]
+            ]
+        ],
+        [
+            "WordsImportant",
+            [
+                [
+                    "string[]",
+                    "words"
+                ],
+                [
+                    "float[]",
+                    "words_idfs"
+                ]
+            ]
+        ],
+        [
+            "FragmentWithWords",
+            [
+                [
+                    "string[]",
+                    "query"
+                ],
+                [
+                    "string",
+                    "file"
+                ],
+                [
+                    "float[]",
+                    "words_idfs"
+                ]
+            ]
+        ],
+        [
+            "SearchInFolder",
+            [
+                [
+                    "string",
+                    "word"
+                ]
+            ]
+        ],
+        [
+            "MaxIndexCoincidences",
+            [
+                [
+                    "string",
+                    "word1"
+                ],
+                [
+                    "string",
+                    "word2"
+                ]
+            ]
+        ],
+        [
+            "MaxIndexCoincidence",
+            [
+                [
+                    "string",
+                    "word1"
+                ],
+                [
+                    "string",
+                    "word2"
+                ],
+                [
+                    "bool[]",
+                    "matched"
+                ],
+                [
+                    "int",
+                    "remain"
+                ],
+                [
+                    "float",
+                    "maxindex"
+                ]
+            ]
+        ],
+        [
+            "IsInFile",
+            [
+                [
+                    "string",
+                    "word"
+                ],
+                [
+                    "string",
+                    "file"
+                ]
+            ]
+        ],
+        [
+            "FilePosition",
+            [
+                [
+                    "string",
+                    "file"
+                ]
+            ]
+        ],
+        [
+            "File",
+            [
+                [
+                    "int",
+                    "position"
+                ]
+            ]
+        ],
+        [
+            "FilesWithWord",
+            [
+                [
+                    "string",
+                    "word"
+                ]
+            ]
+        ],
+        [
+            "MinDistance",
+            [
+                [
+                    "string",
+                    "word1"
+                ],
+                [
+                    "string",
+                    "word2"
+                ],
+                [
+                    "int",
+                    "file_position"
+                ]
+            ]
+        ],
+        [
+            "ExtractOperators",
+            [
+                [
+                    "string[]",
+                    "query"
+                ],
+                [
+                    "char[]",
+                    "operators"
+                ]
+            ]
+        ],
+        [
+            "WordsExtractor",
+            [
+                [
+                    "string[]",
+                    "Query"
+                ],
+                [
+                    "char[]",
+                    "operators"
+                ]
+            ]
+        ],
+        [
+            "SetValidQuery",
+            [
+                [
+                    "string",
+                    "query"
+                ],
+                [
+                    "char[]",
+                    "operators"
+                ]
+            ]
+        ],
+        [
+            "SetQueryWithOperators",
+            [
+                [
+                    "string",
+                    "query"
+                ],
+                [
+                    "char[]",
+                    "operators"
+                ]
+            ]
+        ],
+        [
+            "Query",
+            [
+                [
+                    "string",
+                    "query"
+                ]
+            ]
+        ],
+        [
+            "TFS",
+            [
+                [
+                    "string[]",
+                    "words"
+                ]
+            ]
+        ],
+        [
+            "Sort",
+            [
+                [
+                    "SearchItem[]",
+                    "items"
+                ]
+            ]
+        ],
+        [
+            "IDFS",
+            [
+                [
+                    "float[,]",
+                    "tfs"
+                ]
+            ]
+        ],
+        [
+            "Query_TFS_IDFS",
+            [
+                [
+                    "float[]",
+                    "idfs"
+                ],
+                [
+                    "float[,]",
+                    "tfs"
+                ]
+            ]
+        ],
+        [
+            "Query_tf_idf",
+            [
+                [
+                    "string[]",
+                    "query"
+                ]
+            ]
+        ],
+        [
+            "Scores",
+            [
+                [
+                    "float[]",
+                    "query_tf_idf"
+                ],
+                [
+                    "float[,]",
+                    "tfs_idfs"
+                ]
+            ]
+        ],
+        [
+            "SearchParentIn",
+            [
+                [
+                    "string",
+                    "word"
+                ],
+                [
+                    "string",
+                    "file"
+                ]
+            ]
+        ],
+        [
+            "ParentIndex",
+            [
+                [
+                    "string",
+                    "root"
+                ],
+                [
+                    "string",
+                    "word"
+                ]
+            ]
+        ],
+        [
+            "TF_IDF_With_Operators",
+            [
+                [
+                    "string[]",
+                    "Query"
+                ],
+                [
+                    "string[]",
+                    "Words"
+                ],
+                [
+                    "string[]",
+                    "Operators"
+                ]
+            ]
+        ],
+        [
+            "Query",
+            [
+                [
+                    "string[]",
+                    "query"
+                ],
+                [
+                    "string[]",
+                    "Words"
+                ],
+                [
+                    "string[]",
+                    "Operators"
+                ]
+            ]
+        ],
+        [
+            "EnumerateFiles",
+            [
+                [
+                    "string",
+                    "location"
+                ]
+            ]
+        ],
+        [
+            "Max",
+            [
+                [
+                    "float[]",
+                    "vector"
+                ]
+            ]
+        ],
+        [
+            "Transform",
+            [
+                [
+                    "string",
+                    "value"
+                ]
+            ]
+        ],
+        [
+            "IndexOf",
+            [
+                [
+                    "string",
+                    "word"
+                ],
+                [
+                    "string[]",
+                    "words"
+                ],
+                [
+                    "int",
+                    "start_position"
+                ],
+                [
+                    "int",
+                    "end_position"
+                ]
+            ]
+        ],
+        [
+            "IsNull",
+            [
+                [
+                    "float[]",
+                    "values"
+                ]
+            ]
+        ],
+        [
+            "DeleteDuplicated",
+            [
+                [
+                    "string[]",
+                    "words"
+                ]
+            ]
+        ],
+        [
+            "Contains",
+            [
+                [
+                    "string",
+                    "word"
+                ],
+                [
+                    "string[]",
+                    "words"
+                ],
+                [
+                    "int",
+                    "start"
+                ],
+                [
+                    "int",
+                    "end"
+                ]
+            ]
+        ],
+        [
+            "ClearSpaces",
+            [
+                [
+                    "string",
+                    "text"
+                ]
+            ]
+        ],
+        [
+            "Merge",
+            [
+                [
+                    "int[]",
+                    "a"
+                ],
+                [
+                    "int[]",
+                    "b"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "string",
+            "words"
+        ],
+        [
+            "string",
+            "temp"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "string",
+            "word"
+        ],
+        [
+            "StreamReader",
+            "reader"
+        ],
+        [
+            "string",
+            "part1"
+        ],
+        [
+            "string",
+            "part2"
+        ],
+        [
+            "string",
+            "line"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "string",
+            "content"
+        ],
+        [
+            "int",
+            "current_distance"
+        ],
+        [
+            "float",
+            "coincidence"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "int",
+            "part2"
+        ],
+        [
+            "int",
+            "part1"
+        ],
+        [
+            "string",
+            "longerword"
+        ],
+        [
+            "int",
+            "position"
+        ],
+        [
+            "string",
+            "Query"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "string",
+            "Part1"
+        ],
+        [
+            "bool",
+            "matched"
+        ],
+        [
+            "string",
+            "Part2"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "int",
+            "min_distance"
+        ],
+        [
+            "StreamReader",
+            "reader"
+        ],
+        [
+            "float",
+            "result"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "float",
+            "max_index_coincidence"
+        ],
+        [
+            "bool",
+            "active"
+        ],
+        [
+            "string",
+            "shorterword"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "string",
+            "new_query"
+        ],
+        [
+            "bool",
+            "active"
+        ],
+        [
+            "string",
+            "Operators"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "string",
+            "oper"
+        ],
+        [
+            "bool",
+            "Is"
+        ],
+        [
+            "SearchResult",
+            "result"
+        ],
+        [
+            "bool",
+            "next_position"
+        ],
+        [
+            "string",
+            "part1"
+        ],
+        [
+            "char",
+            "operators"
+        ],
+        [
+            "char",
+            "init"
+        ],
+        [
+            "int",
+            "diference"
+        ],
+        [
+            "string",
+            "part2"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "position"
+        ],
+        [
+            "string",
+            "Query"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "Word"
+        ],
+        [
+            "float",
+            "sum"
+        ],
+        [
+            "int",
+            "file_position"
+        ],
+        [
+            "SearchItem",
+            "Items"
+        ],
+        [
+            "string",
+            "sinonumous"
+        ],
+        [
+            "float",
+            "max"
+        ],
+        [
+            "int",
+            "position1"
+        ],
+        [
+            "int",
+            "distance"
+        ],
+        [
+            "bool",
+            "nulo"
+        ],
+        [
+            "int",
+            "position"
+        ],
+        [
+            "string",
+            "words"
+        ],
+        [
+            "float",
+            "tf_idf"
+        ],
+        [
+            "SearchItem",
+            "temp"
+        ],
+        [
+            "int",
+            "max_parent_index"
+        ],
+        [
+            "int",
+            "position2"
+        ],
+        [
+            "float",
+            "query_square"
+        ],
+        [
+            "string",
+            "Words_Copy"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "List",
+            "items"
+        ],
+        [
+            "float",
+            "squares"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "float",
+            "documents_score"
+        ],
+        [
+            "float",
+            "query_tf_idf"
+        ],
+        [
+            "float",
+            "vector"
+        ],
+        [
+            "float",
+            "scores"
+        ],
+        [
+            "SearchItem",
+            "item"
+        ],
+        [
+            "float",
+            "result"
+        ],
+        [
+            "float",
+            "idfs"
+        ],
+        [
+            "string",
+            "suggestion"
+        ],
+        [
+            "float",
+            "tfs"
+        ],
+        [
+            "int",
+            "parent_index"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "string",
+            "parent"
+        ],
+        [
+            "string",
+            "title"
+        ],
+        [
+            "string",
+            "Root"
+        ],
+        [
+            "float",
+            "tf"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
+            "int",
+            "docs_with_word"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "count"
+        ],
+        [
+            "int",
+            "result"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "char",
+            "guide"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "int",
+            "pos_b"
+        ],
+        [
+            "string",
+            "FileLocation"
+        ],
+        [
+            "bool",
+            "aux"
+        ],
+        [
+            "List",
+            "Files"
+        ],
+        [
+            "float",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "int",
+            "temp"
+        ]
+    ],
+    "method_names": [
+        "Items",
+        "File",
+        "WordsImportant",
+        "MaxFreqFiles",
+        "Partition",
+        "MinDistance",
+        "MaxIndexCoincidence",
+        "SearchInFolder",
+        "MaxIndexCoincidences",
+        "FilesWithWord",
+        "FilePosition",
+        "FragmentWithWords",
+        "IsInFile",
+        "ExtractOperators",
+        "SetValidQuery",
+        "WordsExtractor",
+        "Query",
+        "SetQueryWithOperators",
+        "Init",
+        "TFS",
+        "Query_TFS_IDFS",
+        "Scores",
+        "IDFS",
+        "Query_tf_idf",
+        "Query",
+        "Sort",
+        "TF_IDF_With_Operators",
+        "SearchParentIn",
+        "ParentIndex",
+        "EnumerateFiles",
+        "ClearSpaces",
+        "Max",
+        "IndexOf",
+        "DeleteDuplicated",
+        "IsNull",
+        "Merge",
+        "Contains",
+        "Transform"
+    ],
+    "method_return_types": [
+        [
+            "Items",
+            "IEnumerable"
+        ],
+        [
+            "WordsImportant",
+            "string"
+        ],
+        [
+            "File",
+            "string"
+        ],
+        [
+            "MinDistance",
+            "int"
+        ],
+        [
+            "FragmentWithWords",
+            "string"
+        ],
+        [
+            "FilesWithWord",
+            "int"
+        ],
+        [
+            "MaxIndexCoincidences",
+            "float"
+        ],
+        [
+            "MaxFreqFiles",
+            "void"
+        ],
+        [
+            "MaxIndexCoincidence",
+            "float"
+        ],
+        [
+            "Partition",
+            "string"
+        ],
+        [
+            "FilePosition",
+            "int"
+        ],
+        [
+            "SearchInFolder",
+            "string"
+        ],
+        [
+            "IsInFile",
+            "bool"
+        ],
+        [
+            "Query",
+            "SearchResult"
+        ],
+        [
+            "WordsExtractor",
+            "string"
+        ],
+        [
+            "SetQueryWithOperators",
+            "string"
+        ],
+        [
+            "ExtractOperators",
+            "string"
+        ],
+        [
+            "SetValidQuery",
+            "string"
+        ],
+        [
+            "Query",
+            "SearchResult"
+        ],
+        [
+            "IDFS",
+            "float"
+        ],
+        [
+            "SearchParentIn",
+            "string"
+        ],
+        [
+            "ParentIndex",
+            "int"
+        ],
+        [
+            "Scores",
+            "float"
+        ],
+        [
+            "TF_IDF_With_Operators",
+            "float"
+        ],
+        [
+            "TFS",
+            "float"
+        ],
+        [
+            "Query_TFS_IDFS",
+            "float"
+        ],
+        [
+            "Init",
+            "void"
+        ],
+        [
+            "Sort",
+            "SearchItem"
+        ],
+        [
+            "Query_tf_idf",
+            "float"
+        ],
+        [
+            "IsNull",
+            "bool"
+        ],
+        [
+            "ClearSpaces",
+            "string"
+        ],
+        [
+            "Transform",
+            "string"
+        ],
+        [
+            "EnumerateFiles",
+            "string"
+        ],
+        [
+            "Merge",
+            "int"
+        ],
+        [
+            "Contains",
+            "bool"
+        ],
+        [
+            "Max",
+            "float"
+        ],
+        [
+            "DeleteDuplicated",
+            "string"
+        ],
+        [
+            "IndexOf",
+            "int"
+        ]
+    ],
+    "class_names": [
+        "SearchResult",
+        "SearchItem",
+        "Dictionary",
+        "DataFolder",
+        "Moogle",
+        "Egine",
+        "Utils"
+    ],
+    "interface_names": [],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 8,
+        "Using_directivesContext": 1,
+        "UsingNamespaceDirectiveContext": 2,
+        "TerminalNodeImpl": 6827,
+        "Namespace_or_type_nameContext": 66,
+        "IdentifierContext": 1927,
+        "ErrorNodeImpl": 86,
+        "Namespace_member_declarationsContext": 7,
+        "Namespace_member_declarationContext": 14,
+        "Namespace_declarationContext": 7,
+        "Qualified_identifierContext": 7,
+        "Namespace_bodyContext": 7,
+        "Type_declarationContext": 7,
+        "All_member_modifiersContext": 60,
+        "All_member_modifierContext": 77,
+        "Class_definitionContext": 7,
+        "Class_bodyContext": 7,
+        "Class_member_declarationsContext": 7,
+        "Class_member_declarationContext": 63,
+        "Common_member_declarationContext": 63,
+        "Typed_member_declarationContext": 56,
+        "Type_Context": 416,
+        "Base_typeContext": 416,
+        "Class_typeContext": 206,
+        "Rank_specifierContext": 103,
+        "Field_declarationContext": 10,
+        "Variable_declaratorsContext": 10,
+        "Variable_declaratorContext": 10,
+        "Constructor_declarationContext": 5,
+        "Formal_parameter_listContext": 41,
+        "Fixed_parametersContext": 41,
+        "Fixed_parameterContext": 76,
+        "Arg_declarationContext": 76,
+        "ExpressionContext": 1362,
+        "Non_assignment_expressionContext": 1210,
+        "Conditional_expressionContext": 1210,
+        "Null_coalescing_expressionContext": 1210,
+        "Conditional_or_expressionContext": 1210,
+        "Conditional_and_expressionContext": 1212,
+        "Inclusive_or_expressionContext": 1228,
+        "Exclusive_or_expressionContext": 1228,
+        "And_expressionContext": 1228,
+        "Equality_expressionContext": 1228,
+        "Relational_expressionContext": 1264,
+        "Shift_expressionContext": 1347,
+        "Additive_expressionContext": 1347,
+        "Multiplicative_expressionContext": 1405,
+        "Switch_expressionContext": 1424,
+        "Range_expressionContext": 1424,
+        "Unary_expressionContext": 1615,
+        "Primary_expressionContext": 1576,
+        "LiteralExpressionContext": 331,
+        "LiteralContext": 331,
+        "String_literalContext": 44,
+        "BodyContext": 5,
+        "BlockContext": 194,
+        "Statement_listContext": 193,
+        "StatementContext": 509,
+        "Embedded_statementContext": 464,
+        "IfStatementContext": 89,
+        "SimpleNameExpressionContext": 1183,
+        "If_bodyContext": 111,
+        "ThrowStatementContext": 3,
+        "ObjectCreationExpressionContext": 45,
+        "Object_creation_expressionContext": 23,
+        "Argument_listContext": 202,
+        "ArgumentContext": 302,
+        "ExpressionStatementContext": 190,
+        "AssignmentContext": 152,
+        "ThisReferenceExpressionContext": 7,
+        "Member_accessContext": 332,
+        "Assignment_operatorContext": 152,
+        "Constructor_initializerContext": 1,
+        "Expression_listContext": 21,
+        "Property_declarationContext": 8,
+        "Member_nameContext": 8,
+        "Accessor_declarationsContext": 10,
+        "Accessor_bodyContext": 18,
+        "Set_accessor_declarationContext": 8,
+        "Accessor_modifierContext": 6,
+        "Type_argument_listContext": 16,
+        "Method_declarationContext": 38,
+        "Method_member_nameContext": 38,
+        "Method_bodyContext": 38,
+        "ReturnStatementContext": 53,
+        "Simple_typeContext": 210,
+        "Numeric_typeContext": 196,
+        "Integral_typeContext": 121,
+        "Floating_point_typeContext": 75,
+        "DeclarationStatementContext": 127,
+        "Local_variable_declarationContext": 180,
+        "Local_variable_typeContext": 198,
+        "Local_variable_declaratorContext": 180,
+        "Local_variable_initializerContext": 180,
+        "Method_invocationContext": 212,
+        "WhileStatementContext": 10,
+        "ForStatementContext": 53,
+        "For_initializerContext": 53,
+        "For_iteratorContext": 53,
+        "Bracket_expressionContext": 194,
+        "Indexer_argumentContext": 210,
+        "Indexer_declarationContext": 2,
+        "ForeachStatementContext": 18,
+        "Cast_expressionContext": 18,
+        "Boolean_literalContext": 22,
+        "MemberAccessExpressionContext": 3,
+        "Predefined_typeContext": 3,
+        "ParenthesisExpressionsContext": 7,
+        "BreakStatementContext": 5,
+        "ContinueStatementContext": 8,
+        "DoStatementContext": 1,
+        "Array_initializerContext": 2,
+        "Variable_initializerContext": 18
+    },
+    "project_name": "Bellehm_moogle",
+    "label": "original"
+}

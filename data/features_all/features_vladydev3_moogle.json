@@ -1,0 +1,795 @@
+{
+    "total_nodes": 40659,
+    "max_depth": 865,
+    "number_of_variables": 92,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 1,
+    "number_of_methods": 26,
+    "number_of_classes": 10,
+    "number_of_interfaces": 0,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 5,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 0,
+    "number_of_dictionaries": 3,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 87,
+    "enums_names": [],
+    "control_structures_if": 43,
+    "control_structures_switch": 1,
+    "control_structures_for": 28,
+    "control_structures_while": 1,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 87,
+    "access_modifiers_private": 10,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 66,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 0,
+    "modifier_new": 23,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 1,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 1,
+    "linq_queries_join": 1,
+    "linq_queries_sum": 9,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 9,
+    "number_of_lambdas": 9,
+    "number_of_getters": 10,
+    "number_of_setters": 6,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 10,
+    "method_parameters": [
+        [
+            "DistanciaLev",
+            [
+                [
+                    "string",
+                    "a"
+                ],
+                [
+                    "string",
+                    "b"
+                ]
+            ]
+        ],
+        [
+            "DistanciaLev",
+            [
+                [
+                    "string",
+                    "a"
+                ],
+                [
+                    "string",
+                    "b"
+                ],
+                [
+                    "int",
+                    "indexA"
+                ],
+                [
+                    "int",
+                    "indexB"
+                ],
+                [
+                    "int",
+                    "Cambios"
+                ],
+                [
+                    "int",
+                    "best"
+                ]
+            ]
+        ],
+        [
+            "CosineSimilarity",
+            [
+                [
+                    "Dictionary<string,double>",
+                    "vector1"
+                ],
+                [
+                    "Dictionary<string,double>",
+                    "vector2"
+                ]
+            ]
+        ],
+        [
+            "DotProduct",
+            [
+                [
+                    "Dictionary<string,double>",
+                    "vector1"
+                ],
+                [
+                    "Dictionary<string,double>",
+                    "vector2"
+                ]
+            ]
+        ],
+        [
+            "RelevantDoc",
+            [
+                [
+                    "Dictionary<string,double>",
+                    "docTFIDF"
+                ],
+                [
+                    "int",
+                    "i"
+                ]
+            ]
+        ],
+        [
+            "GetIndex",
+            [
+                [
+                    "string",
+                    "word"
+                ],
+                [
+                    "int",
+                    "indexDoc"
+                ]
+            ]
+        ],
+        [
+            "TF",
+            [
+                [
+                    "int",
+                    "frec"
+                ],
+                [
+                    "int",
+                    "mostCommonWord"
+                ]
+            ]
+        ],
+        [
+            "NormalizeVector",
+            [
+                [
+                    "Dictionary<string,double>",
+                    "vector"
+                ]
+            ]
+        ],
+        [
+            "Stemming",
+            [
+                [
+                    "string",
+                    "word"
+                ]
+            ]
+        ],
+        [
+            "StemmingText",
+            [
+                [
+                    "string[]",
+                    "words"
+                ]
+            ]
+        ],
+        [
+            "CreateSnippet",
+            [
+                [
+                    "int",
+                    "indexDoc"
+                ],
+                [
+                    "Dictionary<string,double>",
+                    "query"
+                ]
+            ]
+        ],
+        [
+            "QueryProcess",
+            [
+                [
+                    "string",
+                    "query"
+                ]
+            ]
+        ],
+        [
+            "GetRow",
+            [
+                [
+                    "int",
+                    "index"
+                ]
+            ]
+        ],
+        [
+            "GetCol",
+            [
+                [
+                    "int",
+                    "index"
+                ]
+            ]
+        ],
+        [
+            "SimilarWord",
+            [
+                [
+                    "string",
+                    "NotFound"
+                ]
+            ]
+        ],
+        [
+            "AnyOperator",
+            [
+                [
+                    "string[]",
+                    "query"
+                ]
+            ]
+        ],
+        [
+            "ImportanceOperator",
+            [
+                [
+                    "string",
+                    "queryWord"
+                ]
+            ]
+        ],
+        [
+            "EliminaAcento",
+            [
+                [
+                    "char",
+                    "c"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "int",
+            "sucio"
+        ],
+        [
+            "string",
+            "word2"
+        ],
+        [
+            "double",
+            "dotProduct"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "string",
+            "word1"
+        ],
+        [
+            "double",
+            "magnitude2"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "double",
+            "similarity"
+        ],
+        [
+            "double",
+            "magnitude1"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "querykeys"
+        ],
+        [
+            "string",
+            "content"
+        ],
+        [
+            "string",
+            "wordsStem"
+        ],
+        [
+            "string",
+            "files"
+        ],
+        [
+            "Stemmer",
+            "stemmer"
+        ],
+        [
+            "int",
+            "SnipLeng"
+        ],
+        [
+            "Dictionary",
+            "docCount"
+        ],
+        [
+            "int",
+            "mostCommon"
+        ],
+        [
+            "var",
+            "groupedWords"
+        ],
+        [
+            "double",
+            "sumOfSquares"
+        ],
+        [
+            "string",
+            "stemmedwords"
+        ],
+        [
+            "int",
+            "N"
+        ],
+        [
+            "string",
+            "strippedContent"
+        ],
+        [
+            "StreamReader",
+            "reader"
+        ],
+        [
+            "Encoding",
+            "encoding"
+        ],
+        [
+            "string",
+            "name"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "int",
+            "middle"
+        ],
+        [
+            "HashSet",
+            "uniqueWords"
+        ],
+        [
+            "Dictionary",
+            "wordCounts"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "HashSet",
+            "wordSet"
+        ],
+        [
+            "DateTime",
+            "start"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "int",
+            "resultsCount"
+        ],
+        [
+            "var",
+            "temp"
+        ],
+        [
+            "VectorModel",
+            "vectorModel"
+        ],
+        [
+            "SearchItem",
+            "items"
+        ],
+        [
+            "Query",
+            "queryprocessed"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "aDevolver"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Vector",
+            "result"
+        ],
+        [
+            "Vector",
+            "elements"
+        ],
+        [
+            "Matrix",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "int",
+            "shortestDistance"
+        ],
+        [
+            "string",
+            "similar"
+        ],
+        [
+            "string",
+            "word"
+        ],
+        [
+            "Dictionary",
+            "temp"
+        ],
+        [
+            "var",
+            "temp"
+        ],
+        [
+            "double",
+            "tfidf"
+        ],
+        [
+            "int",
+            "distance"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "pos"
+        ],
+        [
+            "double",
+            "mag"
+        ],
+        [
+            "double",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "char",
+            "res"
+        ]
+    ],
+    "method_names": [
+        "Items",
+        "DistanciaLev",
+        "GetIndex",
+        "DotProduct",
+        "CosineSimilarity",
+        "RelevantDoc",
+        "TF",
+        "CreateTF_IDF_Matrix",
+        "IDFCorpus",
+        "LoadDocs",
+        "StemmingText",
+        "Stemming",
+        "CreateSnippet",
+        "NormalizeVector",
+        "QueryProcess",
+        "Transpose",
+        "GetCol",
+        "GetRow",
+        "QueryProcessed",
+        "ImportanceOperator",
+        "SimilarWord",
+        "AnyOperator",
+        "Magnitude",
+        "Normalize",
+        "EliminaAcento"
+    ],
+    "method_return_types": [
+        [
+            "Items",
+            "IEnumerable"
+        ],
+        [
+            "DistanciaLev",
+            "int"
+        ],
+        [
+            "DistanciaLev",
+            "void"
+        ],
+        [
+            "CosineSimilarity",
+            "double"
+        ],
+        [
+            "GetIndex",
+            "int"
+        ],
+        [
+            "DotProduct",
+            "double"
+        ],
+        [
+            "RelevantDoc",
+            "bool"
+        ],
+        [
+            "StemmingText",
+            "string"
+        ],
+        [
+            "CreateSnippet",
+            "string"
+        ],
+        [
+            "Stemming",
+            "string"
+        ],
+        [
+            "LoadDocs",
+            "void"
+        ],
+        [
+            "IDFCorpus",
+            "void"
+        ],
+        [
+            "NormalizeVector",
+            "Dictionary"
+        ],
+        [
+            "TF",
+            "double"
+        ],
+        [
+            "CreateTF_IDF_Matrix",
+            "void"
+        ],
+        [
+            "QueryProcess",
+            "SearchResult"
+        ],
+        [
+            "GetCol",
+            "Vector"
+        ],
+        [
+            "Transpose",
+            "Matrix"
+        ],
+        [
+            "GetRow",
+            "Vector"
+        ],
+        [
+            "ImportanceOperator",
+            "string"
+        ],
+        [
+            "SimilarWord",
+            "string"
+        ],
+        [
+            "QueryProcessed",
+            "void"
+        ],
+        [
+            "AnyOperator",
+            "void"
+        ],
+        [
+            "Normalize",
+            "Vector"
+        ],
+        [
+            "Magnitude",
+            "double"
+        ],
+        [
+            "EliminaAcento",
+            "char"
+        ]
+    ],
+    "class_names": [
+        "SearchResult",
+        "SearchItem",
+        "Levenshtein",
+        "VectorModel",
+        "Documents",
+        "Moogle",
+        "Matrix",
+        "Query",
+        "Vector",
+        "Specials"
+    ],
+    "interface_names": [],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 11,
+        "Using_directivesContext": 5,
+        "UsingNamespaceDirectiveContext": 11,
+        "TerminalNodeImpl": 6099,
+        "Namespace_or_type_nameContext": 188,
+        "IdentifierContext": 1405,
+        "ErrorNodeImpl": 92,
+        "Namespace_member_declarationsContext": 12,
+        "Namespace_member_declarationContext": 20,
+        "Namespace_declarationContext": 10,
+        "Qualified_identifierContext": 10,
+        "Namespace_bodyContext": 10,
+        "Type_declarationContext": 10,
+        "All_member_modifiersContext": 102,
+        "All_member_modifierContext": 163,
+        "Class_definitionContext": 10,
+        "Class_bodyContext": 10,
+        "Class_member_declarationsContext": 10,
+        "Class_member_declarationContext": 94,
+        "Common_member_declarationContext": 94,
+        "Typed_member_declarationContext": 81,
+        "Type_Context": 456,
+        "Base_typeContext": 457,
+        "Class_typeContext": 294,
+        "Rank_specifierContext": 28,
+        "Field_declarationContext": 41,
+        "Variable_declaratorsContext": 41,
+        "Variable_declaratorContext": 41,
+        "Constructor_declarationContext": 7,
+        "Formal_parameter_listContext": 26,
+        "Fixed_parametersContext": 25,
+        "Fixed_parameterContext": 42,
+        "Arg_declarationContext": 62,
+        "ExpressionContext": 834,
+        "Non_assignment_expressionContext": 1301,
+        "Conditional_expressionContext": 1292,
+        "Null_coalescing_expressionContext": 1292,
+        "Conditional_or_expressionContext": 1292,
+        "Conditional_and_expressionContext": 1297,
+        "Inclusive_or_expressionContext": 1302,
+        "Exclusive_or_expressionContext": 1302,
+        "And_expressionContext": 1302,
+        "Equality_expressionContext": 1302,
+        "Relational_expressionContext": 1317,
+        "Shift_expressionContext": 1362,
+        "Additive_expressionContext": 1362,
+        "Multiplicative_expressionContext": 1389,
+        "Switch_expressionContext": 1411,
+        "Range_expressionContext": 1411,
+        "Unary_expressionContext": 1510,
+        "Primary_expressionContext": 1491,
+        "LiteralExpressionContext": 705,
+        "LiteralContext": 705,
+        "String_literalContext": 544,
+        "BodyContext": 17,
+        "BlockContext": 123,
+        "Statement_listContext": 127,
+        "StatementContext": 298,
+        "Embedded_statementContext": 277,
+        "IfStatementContext": 43,
+        "SimpleNameExpressionContext": 676,
+        "If_bodyContext": 48,
+        "ThrowStatementContext": 9,
+        "ObjectCreationExpressionContext": 87,
+        "Object_creation_expressionContext": 64,
+        "Argument_listContext": 113,
+        "ArgumentContext": 187,
+        "ExpressionStatementContext": 102,
+        "AssignmentContext": 80,
+        "ThisReferenceExpressionContext": 11,
+        "Member_accessContext": 251,
+        "Assignment_operatorContext": 80,
+        "Constructor_initializerContext": 1,
+        "Expression_listContext": 22,
+        "Property_declarationContext": 8,
+        "Member_nameContext": 8,
+        "Accessor_declarationsContext": 10,
+        "Accessor_bodyContext": 16,
+        "Set_accessor_declarationContext": 6,
+        "Accessor_modifierContext": 4,
+        "Type_argument_listContext": 88,
+        "Method_declarationContext": 26,
+        "Method_member_nameContext": 26,
+        "Method_bodyContext": 26,
+        "ReturnStatementContext": 51,
+        "Simple_typeContext": 157,
+        "Numeric_typeContext": 153,
+        "Integral_typeContext": 91,
+        "Floating_point_typeContext": 62,
+        "DeclarationStatementContext": 63,
+        "Local_variable_declarationContext": 92,
+        "Local_variable_typeContext": 104,
+        "Local_variable_declaratorContext": 92,
+        "Local_variable_initializerContext": 92,
+        "MemberAccessExpressionContext": 2,
+        "Predefined_typeContext": 2,
+        "Method_invocationContext": 97,
+        "Parameter_modifierContext": 1,
+        "WhileStatementContext": 1,
+        "Bracket_expressionContext": 94,
+        "Indexer_argumentContext": 112,
+        "Tuple_typeContext": 6,
+        "Tuple_elementContext": 12,
+        "Variable_initializerContext": 41,
+        "ForStatementContext": 28,
+        "For_initializerContext": 28,
+        "For_iteratorContext": 28,
+        "ContinueStatementContext": 2,
+        "ParenthesisExpressionsContext": 4,
+        "ForeachStatementContext": 12,
+        "TupleExpressionContext": 6,
+        "Lambda_expressionContext": 9,
+        "Anonymous_function_signatureContext": 9,
+        "Right_arrowContext": 9,
+        "Anonymous_function_bodyContext": 9,
+        "Throwable_expressionContext": 7,
+        "Boolean_literalContext": 14,
+        "Implicit_anonymous_function_parameter_listContext": 2,
+        "UsingStatementContext": 1,
+        "Resource_acquisitionContext": 1,
+        "Array_initializerContext": 1,
+        "Cast_expressionContext": 5,
+        "Indexer_declarationContext": 2,
+        "Operator_declarationContext": 10,
+        "Overloadable_operatorContext": 10,
+        "Parameter_arrayContext": 1,
+        "Array_typeContext": 1,
+        "Object_or_collection_initializerContext": 19,
+        "Collection_initializerContext": 19,
+        "Element_initializerContext": 547,
+        "SwitchStatementContext": 1,
+        "Switch_sectionContext": 5,
+        "Switch_labelContext": 15,
+        "BreakStatementContext": 5
+    },
+    "project_name": "vladydev3_moogle",
+    "label": "original"
+}

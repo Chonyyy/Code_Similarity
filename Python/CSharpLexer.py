@@ -1338,22 +1338,26 @@ class CSharpLexer(CSharpLexerBase):
 
     def REGULAR_CHAR_INSIDE_sempred(self, localctx:RuleContext, predIndex:int):
             if predIndex == 0:
-                return  this.IsRegularCharInside() 
+                # return  this.IsRegularCharInside() 
+                return self.is_regular_char_inside
          
 
     def VERBATIUM_DOUBLE_QUOTE_INSIDE_sempred(self, localctx:RuleContext, predIndex:int):
             if predIndex == 1:
-                return  this.IsVerbatiumDoubleQuoteInside() 
+                # return  this.IsVerbatiumDoubleQuoteInside()
+                return self.is_verbatium_double_quote_inside 
+
          
 
     def REGULAR_STRING_INSIDE_sempred(self, localctx:RuleContext, predIndex:int):
             if predIndex == 2:
-                return  this.IsRegularCharInside() 
+                # return  this.IsRegularCharInside() 
+                return self.is_regular_char_inside
          
 
     def VERBATIUM_INSIDE_STRING_sempred(self, localctx:RuleContext, predIndex:int):
             if predIndex == 3:
-                return  this.IsVerbatiumDoubleQuoteInside() 
+                # return  this.IsVerbatiumDoubleQuoteInside() 
+                return self.is_verbatium_double_quote_inside
          
-
 
