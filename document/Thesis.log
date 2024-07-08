@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  7 JUL 2024 17:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  7 JUL 2024 19:17
 entering extended mode
 **Thesis.tex
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.tex
@@ -1655,47 +1655,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
 
 
-] [28]
-<Graphics/isolation_forest_Tsne.png, id=289, 574.5465pt x 450.9648pt>
+] <Graphics/isolation_forest_Tsne.png, id=285, 574.5465pt x 450.9648pt>
 File: Graphics/isolation_forest_Tsne.png Graphic file (type png)
 
 <use Graphics/isolation_forest_Tsne.png>
 Package pdftex.def Info: Graphics/isolation_forest_Tsne.png used on input line 
-44.
+34.
 (pdftex.def)             Requested size: 175.49881pt x 137.74706pt.
 
-<Graphics/one_class_svm_Tsne.png, id=291, 574.5465pt x 450.9648pt>
+<Graphics/one_class_svm_Tsne.png, id=287, 574.5465pt x 450.9648pt>
 File: Graphics/one_class_svm_Tsne.png Graphic file (type png)
 
 <use Graphics/one_class_svm_Tsne.png>
-Package pdftex.def Info: Graphics/one_class_svm_Tsne.png used on input line 50.
+Package pdftex.def Info: Graphics/one_class_svm_Tsne.png used on input line 40.
 
 (pdftex.def)             Requested size: 175.49881pt x 137.74706pt.
 
-<Graphics/isolation_forest_PCA.png, id=292, 574.5465pt x 450.9648pt>
+<Graphics/isolation_forest_PCA.png, id=288, 574.5465pt x 450.9648pt>
 File: Graphics/isolation_forest_PCA.png Graphic file (type png)
 
 <use Graphics/isolation_forest_PCA.png>
-Package pdftex.def Info: Graphics/isolation_forest_PCA.png used on input line 6
+Package pdftex.def Info: Graphics/isolation_forest_PCA.png used on input line 5
 0.
 (pdftex.def)             Requested size: 175.49881pt x 137.74706pt.
 
-<Graphics/one_class_svm_PCA.png, id=293, 574.5465pt x 450.9648pt>
+<Graphics/one_class_svm_PCA.png, id=289, 574.5465pt x 450.9648pt>
 File: Graphics/one_class_svm_PCA.png Graphic file (type png)
 
 <use Graphics/one_class_svm_PCA.png>
-Package pdftex.def Info: Graphics/one_class_svm_PCA.png used on input line 66.
+Package pdftex.def Info: Graphics/one_class_svm_PCA.png used on input line 56.
 (pdftex.def)             Requested size: 175.49881pt x 137.74706pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-[29 <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/isolation_forest_Tsne
+[28 <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/isolation_forest_Tsne
 .png> <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/one_class_svm_Tsne.
 png> <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/isolation_forest_PCA
 .png> <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/one_class_svm_PCA.p
-ng>]) [30]
+ng>]) [29]
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -1721,7 +1720,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[31
+[30
 
 
 
@@ -1731,9 +1730,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-) [32]
+) [31]
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.tex)
-[33
+[32
 
 
 
@@ -1746,11 +1745,11 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 13.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [34
+) [33
 
 
 
-])) [35]
+])) [34]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
 
@@ -1768,12 +1767,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D51F8CBF2402D709D86A3A07A8F3D939;723.
-Package rerunfilecheck Info: File `Thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 4092D8F99F1729E9D67C512EAE39ABDC;814.
+
+
+Package rerunfilecheck Warning: File `Thesis.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `Thesis.brf':
+(rerunfilecheck)             Before: 4092D8F99F1729E9D67C512EAE39ABDC;814
+(rerunfilecheck)             After:  7333E2044884058102D69ACDE4B8E7DA;814.
  ) 
 Here is how much of TeX's memory you used:
- 19760 strings out of 494045
- 333085 string characters out of 3145970
+ 19759 strings out of 494045
+ 333078 string characters out of 3145970
  438729 words of memory out of 3000000
  22416 multiletter control sequences out of 15000+200000
  58625 words of font info for 130 fonts, out of 3000000 for 9000
@@ -1791,9 +1796,9 @@ trsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/up
 lb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (39 pages, 675280 bytes).
+Output written on Thesis.pdf (38 pages, 673168 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 109 named destinations out of 1000 (max. 500000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
  134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
