@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  7 JUL 2024 16:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  7 JUL 2024 17:58
 entering extended mode
 **Implementation.tex
 (C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter\Implementation.tex
@@ -392,20 +392,8 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no - in font nullfont!
-Missing character: There is no M in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
 ! Undefined control sequence.
-l.17         \bottomrule
+l.16         \bottomrule
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -420,19 +408,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 \end{table}
+l.18 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 6--20
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--19
 []
  []
 
 
-Overfull \hbox (247.18193pt too wide) in paragraph at lines 6--20
+Overfull \hbox (247.18193pt too wide) in paragraph at lines 6--19
 []
  []
 
@@ -443,7 +431,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21 A
+l.20 A
        continuación se presentan las gráficas de los dos modelos implement...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -748,7 +736,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 21--22
+Overfull \hbox (20.0pt too wide) in paragraph at lines 20--21
 []
  []
 
@@ -759,13 +747,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 \begin{itemize}
+l.22 \begin{itemize}
                     
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 23--23
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--22
 [] 
  []
 
@@ -1393,47 +1381,47 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (33.73868pt too wide) in paragraph at lines 24--25
+Overfull \hbox (33.73868pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 Anlisis
  []
 
 
-Overfull \hbox (11.65967pt too wide) in paragraph at lines 24--25
+Overfull \hbox (11.65967pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 de
  []
 
 
-Overfull \hbox (27.47208pt too wide) in paragraph at lines 24--25
+Overfull \hbox (27.47208pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 Com-
  []
 
 
-Overfull \hbox (16.29158pt too wide) in paragraph at lines 24--25
+Overfull \hbox (16.29158pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 po-
  []
 
 
-Overfull \hbox (32.00816pt too wide) in paragraph at lines 24--25
+Overfull \hbox (32.00816pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 nentes
  []
 
 
-Overfull \hbox (26.01376pt too wide) in paragraph at lines 24--25
+Overfull \hbox (26.01376pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 Prin-
  []
 
 
-Overfull \hbox (12.13882pt too wide) in paragraph at lines 24--25
+Overfull \hbox (12.13882pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 ci-
  []
 
 
-Overfull \hbox (24.9804pt too wide) in paragraph at lines 24--25
+Overfull \hbox (24.9804pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 pales
  []
 
 
-Overfull \hbox (36.9998pt too wide) in paragraph at lines 24--25
+Overfull \hbox (36.9998pt too wide) in paragraph at lines 23--24
 \OT1/cmr/bx/n/10 (PCA):
  []
 
@@ -1528,57 +1516,57 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (8.30551pt too wide) in paragraph at lines 26--28
+Overfull \hbox (8.30551pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 t-
  []
 
 
-Overfull \hbox (57.8622pt too wide) in paragraph at lines 26--28
+Overfull \hbox (57.8622pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 Distributed
  []
 
 
-Overfull \hbox (42.07057pt too wide) in paragraph at lines 26--28
+Overfull \hbox (42.07057pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 Stochas-
  []
 
 
-Overfull \hbox (12.77771pt too wide) in paragraph at lines 26--28
+Overfull \hbox (12.77771pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 tic
  []
 
 
-Overfull \hbox (33.43733pt too wide) in paragraph at lines 26--28
+Overfull \hbox (33.43733pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 Neigh-
  []
 
 
-Overfull \hbox (17.19437pt too wide) in paragraph at lines 26--28
+Overfull \hbox (17.19437pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 bor
  []
 
 
-Overfull \hbox (20.9721pt too wide) in paragraph at lines 26--28
+Overfull \hbox (20.9721pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 Em-
  []
 
 
-Overfull \hbox (22.20128pt too wide) in paragraph at lines 26--28
+Overfull \hbox (22.20128pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 bed-
  []
 
 
-Overfull \hbox (21.7221pt too wide) in paragraph at lines 26--28
+Overfull \hbox (21.7221pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 ding
  []
 
 
-Overfull \hbox (12.77771pt too wide) in paragraph at lines 26--28
+Overfull \hbox (12.77771pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 (t-
  []
 
 
-Overfull \hbox (30.61095pt too wide) in paragraph at lines 26--28
+Overfull \hbox (30.61095pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 SNE):
  []
 
