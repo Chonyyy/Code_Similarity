@@ -34,7 +34,7 @@ class FeatureVectorizer:
         
         self.sentences = [all_words]
     
-    def train_word2vec_model(self, vector_size=100, window=5, min_count=1, sg=1):
+    def train_word2vec_model(self, vector_size=20, window=5, min_count=1, sg=1):
         self.model = Word2Vec(self.sentences, vector_size=vector_size, window=window, min_count=min_count, sg=sg)
     
     def vectorize_strings_list(self, strings_list):

@@ -923,22 +923,6 @@
     ],
     "variable_names": [
         [
-            "Node",
-            "currentPlayer"
-        ],
-        [
-            "int",
-            "points"
-        ],
-        [
-            "Dictionary",
-            "finalPuntuation"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "int",
             "value"
         ],
@@ -947,8 +931,16 @@
             "i"
         ],
         [
+            "Dictionary",
+            "finalPuntuation"
+        ],
+        [
             "Node",
-            "player"
+            "currentPlayer"
+        ],
+        [
+            "int",
+            "points"
         ],
         [
             "bool",
@@ -959,24 +951,20 @@
             "playedToken"
         ],
         [
-            "Random",
-            "random"
+            "Node",
+            "player"
         ],
         [
             "int",
             "i"
         ],
         [
-            "Team",
-            "winner"
-        ],
-        [
             "int",
             "value"
         ],
         [
-            "IPlayer",
-            "currentPlayer"
+            "int",
+            "i"
         ],
         [
             "int",
@@ -987,16 +975,24 @@
             "pointsPerPlayer"
         ],
         [
+            "IPlayer",
+            "currentPlayer"
+        ],
+        [
+            "Team",
+            "winner"
+        ],
+        [
             "Random",
             "random"
         ],
         [
-            "List",
-            "playersCountTokens"
+            "bool",
+            "isDouble"
         ],
         [
             "int",
-            "max"
+            "aux"
         ],
         [
             "int",
@@ -1011,36 +1007,16 @@
             "inner"
         ],
         [
-            "IPlayer",
-            "players"
-        ],
-        [
-            "int",
-            "numbers"
+            "Random",
+            "random"
         ],
         [
             "Token",
             "currentBigger"
         ],
         [
-            "int",
-            "aux"
-        ],
-        [
-            "Token",
-            "token"
-        ],
-        [
-            "int",
-            "result"
-        ],
-        [
-            "IPlayer",
-            "result"
-        ],
-        [
-            "bool",
-            "isDouble"
+            "List",
+            "playersCountTokens"
         ],
         [
             "int",
@@ -1048,91 +1024,63 @@
         ],
         [
             "int",
-            "index"
-        ],
-        [
-            "Node",
-            "current"
+            "max"
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "T",
-            "arr"
-        ],
-        [
-            "T",
-            "items"
-        ],
-        [
-            "CircularList",
             "result"
         ],
         [
-            "Node",
-            "node"
-        ],
-        [
-            "T",
-            "result"
+            "Token",
+            "token"
         ],
         [
             "int",
-            "i"
+            "numbers"
         ],
         [
-            "List",
-            "gameTokens"
-        ],
-        [
-            "Stopwatch",
-            "crono"
+            "IPlayer",
+            "result"
         ],
         [
             "IPlayer",
             "players"
         ],
         [
-            "Token",
-            "selectionToken"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
-            "allTokens"
-        ],
-        [
-            "Dictionary",
-            "scores"
-        ],
-        [
-            "ConsoleColor",
-            "colors"
-        ],
-        [
-            "Random",
-            "r"
-        ],
-        [
-            "Dictionary",
-            "assignation"
-        ],
-        [
-            "GameStatus",
-            "newGameStatus"
-        ],
-        [
             "int",
             "index"
         ],
         [
-            "Dictionary",
-            "playersTokens"
+            "T",
+            "result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Node",
+            "current"
+        ],
+        [
+            "Node",
+            "node"
+        ],
+        [
+            "CircularList",
+            "result"
+        ],
+        [
+            "T",
+            "items"
+        ],
+        [
+            "T",
+            "arr"
+        ],
+        [
+            "int",
+            "j"
         ],
         [
             "int",
@@ -1140,23 +1088,75 @@
         ],
         [
             "Dictionary",
-            "teamsScore"
+            "scores"
+        ],
+        [
+            "Stopwatch",
+            "crono"
+        ],
+        [
+            "Token",
+            "selectionToken"
+        ],
+        [
+            "List",
+            "allTokens"
+        ],
+        [
+            "ConsoleColor",
+            "colors"
+        ],
+        [
+            "List",
+            "gameTokens"
+        ],
+        [
+            "Dictionary",
+            "assignation"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "IPlayer",
+            "players"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "LinkedList",
+            "newBoardTokens"
         ],
         [
             "List",
             "boardTokens"
         ],
         [
-            "Token_onBoard",
-            "token"
+            "List",
+            "teams"
         ],
         [
             "CircularList",
             "players"
         ],
         [
-            "LinkedList",
-            "newBoardTokens"
+            "int",
+            "i"
+        ],
+        [
+            "GameStatus",
+            "newGameStatus"
+        ],
+        [
+            "Dictionary",
+            "teamsScore"
+        ],
+        [
+            "Dictionary",
+            "playersTokens"
         ],
         [
             "int",
@@ -1167,32 +1167,52 @@
             "plays"
         ],
         [
-            "List",
-            "teams"
+            "Token_onBoard",
+            "token"
+        ],
+        [
+            "(",
+            "winner"
+        ],
+        [
+            "Round",
+            "round"
         ],
         [
             "RoundSetting",
             "rs"
         ],
         [
-            "int",
-            "points"
+            "WinnerStatus",
+            "result"
         ],
         [
             "Team",
             "winner"
         ],
         [
+            "int",
+            "points"
+        ],
+        [
             "GameStatus",
             "lastStatus"
         ],
         [
-            "WinnerStatus",
-            "result"
+            "List",
+            "playerTokens"
         ],
         [
-            "Round",
-            "round"
+            "int",
+            "wrongPlays"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "(",
@@ -1203,44 +1223,36 @@
             "playersTokens"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
             "IPlay",
             "play"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
-            "playerTokens"
-        ],
-        [
-            "(",
-            "winner"
-        ],
-        [
-            "int",
-            "wrongPlays"
-        ],
-        [
-            "List",
-            "boardTokens"
         ],
         [
             "LinkedList",
             "newBoardTokens"
         ],
         [
+            "List",
+            "boardTokens"
+        ],
+        [
             "Dictionary",
             "playersTokensLeft"
         ],
         [
+            "bool",
+            "playRight"
+        ],
+        [
             "Token",
             "current"
+        ],
+        [
+            "int",
+            "value"
+        ],
+        [
+            "int",
+            "points"
         ],
         [
             "Token_onBoard",
@@ -1248,7 +1260,11 @@
         ],
         [
             "int",
-            "points"
+            "aux"
+        ],
+        [
+            "Token",
+            "current"
         ],
         [
             "bool",
@@ -1256,11 +1272,19 @@
         ],
         [
             "int",
-            "value"
+            "i"
         ],
         [
-            "Token",
+            "List",
+            "auxTokens"
+        ],
+        [
+            "int",
             "current"
+        ],
+        [
+            "int",
+            "maxToken"
         ],
         [
             "int",
@@ -1280,115 +1304,39 @@
         ],
         [
             "int",
-            "i"
+            "currentMax"
         ],
         [
             "bool",
             "playRight"
         ],
         [
-            "List",
-            "auxTokens"
-        ],
-        [
-            "int",
-            "maxToken"
-        ],
-        [
-            "int",
-            "aux"
-        ],
-        [
-            "int",
-            "current"
-        ],
-        [
-            "int",
-            "currentMax"
-        ],
-        [
             "Token",
             "current"
+        ],
+        [
+            "List",
+            "result"
         ],
         [
             "Random",
             "random"
         ],
         [
-            "Token_onBoard",
-            "result"
-        ],
-        [
-            "bool",
-            "playRight"
-        ],
-        [
-            "List",
-            "result"
-        ],
-        [
             "List",
             "aux"
         ],
         [
-            "bool",
-            "playRight"
-        ],
-        [
-            "QuickScreen",
-            "quickScreen"
-        ],
-        [
-            "CustomizeGame",
-            "customizer"
-        ],
-        [
-            "SimpleOption",
-            "playRightOption"
-        ],
-        [
-            "SimpleOption",
-            "quitOption"
-        ],
-        [
-            "IPlay",
-            "lastPlay"
-        ],
-        [
-            "bool",
-            "first"
-        ],
-        [
-            "bool",
-            "firstInRound"
-        ],
-        [
-            "int",
-            "roundNumber"
-        ],
-        [
             "Token_onBoard",
-            "play"
+            "result"
         ],
         [
-            "Tournament",
-            "tournament"
+            "PlaySelectorMenu",
+            "tokenSelectorMenu"
         ],
         [
-            "SimpleOption",
-            "playAgainOption"
-        ],
-        [
-            "Token",
-            "selectedToken"
-        ],
-        [
-            "SingleSelectionMenu",
-            "playSidedSelectorMenu"
-        ],
-        [
-            "SingleSelectionMenu",
-            "menu"
+            "bool",
+            "agreeCustomization"
         ],
         [
             "List",
@@ -1399,8 +1347,44 @@
             "options"
         ],
         [
-            "PlaySelectorMenu",
-            "tokenSelectorMenu"
+            "SimpleOption",
+            "quitOption"
+        ],
+        [
+            "IPlay",
+            "lastPlay"
+        ],
+        [
+            "Token",
+            "selectedToken"
+        ],
+        [
+            "CustomizeGame",
+            "customizer"
+        ],
+        [
+            "SingleSelectionMenu",
+            "playSidedSelectorMenu"
+        ],
+        [
+            "SimpleOption",
+            "playAgainOption"
+        ],
+        [
+            "int",
+            "roundNumber"
+        ],
+        [
+            "SingleSelectionMenu",
+            "menu"
+        ],
+        [
+            "Token_onBoard",
+            "play"
+        ],
+        [
+            "SimpleOption",
+            "playLeftOption"
         ],
         [
             "ITemplate",
@@ -1408,14 +1392,62 @@
         ],
         [
             "bool",
-            "agreeCustomization"
+            "playRight"
+        ],
+        [
+            "bool",
+            "first"
+        ],
+        [
+            "QuickScreen",
+            "quickScreen"
+        ],
+        [
+            "bool",
+            "firstInRound"
+        ],
+        [
+            "Tournament",
+            "tournament"
         ],
         [
             "SimpleOption",
-            "playLeftOption"
+            "playRightOption"
         ],
         [
             "ConsoleApp",
+            "menu"
+        ],
+        [
+            "SimpleOption",
+            "innerSelector"
+        ],
+        [
+            "SimpleOption",
+            "justRoundMenu"
+        ],
+        [
+            "QuickScreen",
+            "screen"
+        ],
+        [
+            "SimpleOption",
+            "teamsMenu"
+        ],
+        [
+            "SimpleOption",
+            "overRoundMenu"
+        ],
+        [
+            "SimpleOption",
+            "playersMenu"
+        ],
+        [
+            "List",
+            "options"
+        ],
+        [
+            "SingleSelectionMenu",
             "menu"
         ],
         [
@@ -1424,39 +1456,19 @@
         ],
         [
             "SimpleOption",
-            "innerSelector"
-        ],
-        [
-            "SimpleOption",
             "maxTokenMenu"
         ],
         [
-            "SimpleOption",
-            "teamsMenu"
-        ],
-        [
-            "SimpleOption",
-            "getWinnerMenu"
-        ],
-        [
-            "List",
-            "options"
-        ],
-        [
-            "SimpleOption",
-            "justRoundMenu"
-        ],
-        [
-            "SingleSelectionMenu",
-            "menu"
-        ],
-        [
-            "QuickScreen",
-            "screen"
+            "WriteMenu",
+            "scoreWriteMenu"
         ],
         [
             "SimpleOption",
             "handOutMenu"
+        ],
+        [
+            "SimpleOption",
+            "getWinnerMenu"
         ],
         [
             "SimpleOption",
@@ -1467,76 +1479,24 @@
             "r"
         ],
         [
-            "SimpleOption",
-            "playersMenu"
-        ],
-        [
-            "SimpleOption",
-            "overRoundMenu"
-        ],
-        [
-            "WriteMenu",
-            "scoreWriteMenu"
-        ],
-        [
-            "SimpleOption",
-            "humanOption"
-        ],
-        [
-            "List",
-            "tbSelectionables"
-        ],
-        [
             "ITemplate",
-            "classic_6"
-        ],
-        [
-            "ITemplate",
-            "crazyToken"
-        ],
-        [
-            "List",
-            "tSelectionables"
-        ],
-        [
-            "List",
-            "hpSelectionables"
-        ],
-        [
-            "ITemplate",
-            "classic_9"
-        ],
-        [
-            "SingleSelectionMenu",
-            "menu"
-        ],
-        [
-            "int",
-            "i"
+            "classic_9noTeams"
         ],
         [
             "SimpleOption",
             "boardOption"
         ],
         [
-            "ITemplate",
-            "classic_9noTeams"
-        ],
-        [
-            "List",
-            "maxTokensList"
-        ],
-        [
-            "string",
-            "optionName"
-        ],
-        [
             "List",
             "teams"
         ],
         [
-            "SimpleOption",
-            "pcOption"
+            "ITemplate",
+            "crazyToken"
+        ],
+        [
+            "ITemplate",
+            "classic_9"
         ],
         [
             "SimpleOption",
@@ -1544,27 +1504,7 @@
         ],
         [
             "int",
-            "number"
-        ],
-        [
-            "string",
-            "writed"
-        ],
-        [
-            "int",
-            "numberOfTeams"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "int",
             "i"
-        ],
-        [
-            "List",
-            "options"
         ],
         [
             "SingleSelectionMenu",
@@ -1572,7 +1512,43 @@
         ],
         [
             "List",
-            "tempTeam"
+            "maxTokensList"
+        ],
+        [
+            "SimpleOption",
+            "pcOption"
+        ],
+        [
+            "SimpleOption",
+            "humanOption"
+        ],
+        [
+            "List",
+            "hpSelectionables"
+        ],
+        [
+            "List",
+            "tbSelectionables"
+        ],
+        [
+            "List",
+            "tSelectionables"
+        ],
+        [
+            "string",
+            "optionName"
+        ],
+        [
+            "ITemplate",
+            "classic_6"
+        ],
+        [
+            "string",
+            "writed"
+        ],
+        [
+            "int",
+            "number"
         ],
         [
             "List",
@@ -1580,15 +1556,15 @@
         ],
         [
             "List",
-            "restPlayers"
+            "teams"
         ],
         [
             "int",
-            "numberOfPlayers"
+            "numberOfTeams"
         ],
         [
-            "SingleSelectionMenu",
-            "teamsMenu"
+            "int",
+            "i"
         ],
         [
             "int",
@@ -1596,19 +1572,43 @@
         ],
         [
             "List",
-            "teams"
+            "restPlayers"
         ],
         [
             "int",
-            "currentTeamIndex"
+            "k"
+        ],
+        [
+            "List",
+            "options"
+        ],
+        [
+            "SimpleOption",
+            "singlePlayer"
+        ],
+        [
+            "SingleSelectionMenu",
+            "menu"
         ],
         [
             "QuickScreen",
             "q"
         ],
         [
-            "SimpleOption",
-            "singlePlayer"
+            "SingleSelectionMenu",
+            "teamsMenu"
+        ],
+        [
+            "int",
+            "numberOfPlayers"
+        ],
+        [
+            "List",
+            "tempTeam"
+        ],
+        [
+            "int",
+            "currentTeamIndex"
         ],
         [
             "int",
@@ -1616,15 +1616,11 @@
         ],
         [
             "int",
-            "upArrow"
-        ],
-        [
-            "int",
             "leftArrow"
         ],
         [
             "int",
-            "downArrow"
+            "upArrow"
         ],
         [
             "int",
@@ -1635,44 +1631,48 @@
             "pressedKey"
         ],
         [
-            "Random",
-            "rand"
+            "int",
+            "downArrow"
         ],
         [
             "Judge",
             "judge"
         ],
         [
-            "List",
-            "gameTokens"
-        ],
-        [
-            "List",
-            "listPlayers"
-        ],
-        [
-            "CircularList",
-            "players"
-        ],
-        [
             "InnerGetter",
             "innerSelector"
-        ],
-        [
-            "HandOut",
-            "handOut"
         ],
         [
             "PointsGetter",
             "pointsGetter"
         ],
         [
+            "Random",
+            "rand"
+        ],
+        [
             "WinnerRoundGetter",
             "winnerB"
         ],
         [
+            "List",
+            "listPlayers"
+        ],
+        [
+            "List",
+            "gameTokens"
+        ],
+        [
+            "HandOut",
+            "handOut"
+        ],
+        [
             "OverRound",
             "winB"
+        ],
+        [
+            "CircularList",
+            "players"
         ],
         [
             "string",
@@ -1683,51 +1683,43 @@
             "judge"
         ],
         [
-            "Tournament",
-            "t"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
             "List",
-            "gameTokens"
-        ],
-        [
-            "Round",
-            "r"
-        ],
-        [
-            "int",
-            "nameChoice"
-        ],
-        [
-            "RoundSetting",
-            "rS"
-        ],
-        [
-            "List",
-            "players"
+            "teams"
         ],
         [
             "int",
             "strategyChoice"
         ],
         [
-            "CircularList",
-            "players"
+            "int",
+            "nameChoice"
         ],
         [
-            "List",
-            "teams"
+            "int",
+            "i"
         ],
         [
             "bool",
             "repeated"
         ],
         [
-            "Random",
+            "Tournament",
+            "t"
+        ],
+        [
+            "RoundSetting",
+            "rS"
+        ],
+        [
+            "TournamentSetting",
+            "tS"
+        ],
+        [
+            "List",
+            "players"
+        ],
+        [
+            "Round",
             "r"
         ],
         [
@@ -1735,98 +1727,106 @@
             "usedNames"
         ],
         [
-            "TournamentSetting",
-            "tS"
-        ],
-        [
-            "Random",
-            "rand"
-        ],
-        [
-            "Judge",
-            "judge"
-        ],
-        [
             "List",
             "gameTokens"
-        ],
-        [
-            "List",
-            "listPlayers"
         ],
         [
             "CircularList",
             "players"
         ],
         [
-            "InnerGetter",
-            "innerSelector"
+            "Random",
+            "r"
         ],
         [
-            "HandOut",
-            "handOut"
+            "Judge",
+            "judge"
+        ],
+        [
+            "InnerGetter",
+            "innerSelector"
         ],
         [
             "PointsGetter",
             "pointsGetter"
         ],
         [
+            "Random",
+            "rand"
+        ],
+        [
             "WinnerRoundGetter",
             "winnerB"
         ],
         [
+            "List",
+            "listPlayers"
+        ],
+        [
+            "List",
+            "gameTokens"
+        ],
+        [
+            "HandOut",
+            "handOut"
+        ],
+        [
             "OverRound",
             "winB"
+        ],
+        [
+            "CircularList",
+            "players"
         ]
     ],
     "method_names": [
         "IsValid",
+        "PresetPlayerPoints",
+        "Get5MultiplesPoints",
         "ClassicGetPoints",
         "GetPlayerScore",
-        "Get5MultiplesPoints",
-        "PresetPlayerPoints",
-        "PlayerWithoutToken",
-        "ClassicOverRound",
-        "CrazyTokenOverRound",
         "AllPass",
-        "Smallest5MultipleGetWinner",
-        "GetRandomWinner",
+        "PlayerWithoutToken",
+        "CrazyTokenOverRound",
+        "ClassicOverRound",
         "ClassicGetWinner",
-        "PlayersCountTokens",
+        "GetRandomWinner",
+        "Smallest5MultipleGetWinner",
         "Max_NumberToken",
-        "Bigger_Token",
-        "Random_Inner",
         "Max_Data",
+        "PlayersCountTokens",
+        "Random_Inner",
         "Min_Double",
+        "Bigger_Token",
         "Dispose",
         "MoveNext",
         "Reset",
-        "AddFirst",
-        "IEnumerable",
-        "RotateTill",
         "ToArray",
-        "FindNode",
-        "AddLast",
-        "GetEnumerator",
         "Clone",
-        "GenerateTokens",
-        "DecideTokensPerPlayer",
+        "AddLast",
+        "AddFirst",
+        "GetEnumerator",
+        "IEnumerable",
+        "FindNode",
+        "RotateTill",
+        "AssignColors",
         "RandomTokenGenerator",
         "Lapse",
-        "GetAllTokens",
-        "AssignColors",
         "SetTeamsScore",
+        "GetAllTokens",
+        "DecideTokensPerPlayer",
+        "GenerateTokens",
+        "Clone",
         "ResetEnds",
         "RefreshHands",
-        "UpdateTournamentStatus",
         "UpdateRoundStatus",
-        "Clone",
-        "IsOver",
+        "UpdateTournamentStatus",
         "GetWinner",
         "NextMove",
+        "IsOver",
         "HaveToken",
-        "GetPlay",
         "NextMove",
+        "GetPlay",
         "Play",
         "ToString",
         "Play",
@@ -1845,47 +1845,47 @@
         "Clone",
         "Play",
         "Play",
-        "Playable",
         "ToString",
+        "Playable",
         "Play",
         "TokenMostAmountHand",
         "ToString",
         "CurrentMaximum",
         "Play",
-        "Possible_TokensPlay",
         "ToString",
+        "Possible_TokensPlay",
         "ShowPlayerTokens",
+        "PlayAgainMenu",
         "ShowRound",
         "RunRound",
-        "HumanMenu",
         "RunTournament",
-        "PlayAgainMenu",
+        "HumanMenu",
         "MainSkipIntro",
         "Main",
         "SayHiDommie",
+        "Start",
         "CustomizeTeams",
         "CustomizePlayers",
-        "Start",
         "TemplateMenu",
-        "GameModeMenu",
         "MaxTokenMenu",
+        "GameModeMenu",
         "HumanPlayMenu",
         "Show",
-        "IsValid",
         "Print",
+        "IsValid",
         "ToString",
-        "GenerateUnitaryTeams",
-        "AssignTeamsMenu",
-        "CustomizeTeams",
         "SinglePlayerOrTeamMenu",
-        "Show",
+        "GenerateUnitaryTeams",
+        "CustomizeTeams",
+        "AssignTeamsMenu",
         "Modify",
         "Print",
+        "Show",
         "ToString",
-        "ToCircularList",
-        "GeneratePlayers",
         "GetRandomPlayer",
         "BuildTemplate",
+        "GeneratePlayers",
+        "ToCircularList",
         "AssignTeamsClassic",
         "ToString",
         "ToString"
@@ -1900,10 +1900,6 @@
             "int"
         ],
         [
-            "PresetPlayerPoints",
-            "Dictionary"
-        ],
-        [
             "GetPlayerScore",
             "int"
         ],
@@ -1912,11 +1908,11 @@
             "int"
         ],
         [
-            "CrazyTokenOverRound",
-            "bool"
+            "PresetPlayerPoints",
+            "Dictionary"
         ],
         [
-            "ClassicOverRound",
+            "AllPass",
             "bool"
         ],
         [
@@ -1924,15 +1920,19 @@
             "bool"
         ],
         [
-            "AllPass",
+            "ClassicOverRound",
             "bool"
         ],
         [
-            "GetRandomWinner",
-            "("
+            "CrazyTokenOverRound",
+            "bool"
         ],
         [
             "Smallest5MultipleGetWinner",
+            "("
+        ],
+        [
+            "GetRandomWinner",
             "("
         ],
         [
@@ -1940,11 +1940,15 @@
             "("
         ],
         [
+            "Max_NumberToken",
+            "int"
+        ],
+        [
             "PlayersCountTokens",
             "List"
         ],
         [
-            "Bigger_Token",
+            "Min_Double",
             "IPlayer"
         ],
         [
@@ -1952,16 +1956,12 @@
             "IPlayer"
         ],
         [
-            "Min_Double",
-            "IPlayer"
-        ],
-        [
             "Random_Inner",
             "IPlayer"
         ],
         [
-            "Max_NumberToken",
-            "int"
+            "Bigger_Token",
+            "IPlayer"
         ],
         [
             "MoveNext",
@@ -1976,8 +1976,12 @@
             "void"
         ],
         [
-            "FindNode",
-            "Node"
+            "AddFirst",
+            "void"
+        ],
+        [
+            "ToArray",
+            "T"
         ],
         [
             "RotateTill",
@@ -1988,32 +1992,32 @@
             "IEnumerator"
         ],
         [
-            "AddFirst",
-            "void"
-        ],
-        [
-            "ToArray",
-            "T"
-        ],
-        [
-            "AddLast",
-            "void"
+            "Clone",
+            "CircularList"
         ],
         [
             "GetEnumerator",
             "IEnumerator"
         ],
         [
-            "Clone",
-            "CircularList"
+            "AddLast",
+            "void"
+        ],
+        [
+            "FindNode",
+            "Node"
+        ],
+        [
+            "GetAllTokens",
+            "List"
         ],
         [
             "GenerateTokens",
             "List"
         ],
         [
-            "RandomTokenGenerator",
-            "Token"
+            "SetTeamsScore",
+            "Dictionary"
         ],
         [
             "DecideTokensPerPlayer",
@@ -2024,28 +2028,12 @@
             "Dictionary"
         ],
         [
-            "SetTeamsScore",
-            "Dictionary"
-        ],
-        [
-            "GetAllTokens",
-            "List"
+            "RandomTokenGenerator",
+            "Token"
         ],
         [
             "Lapse",
             "void"
-        ],
-        [
-            "ResetEnds",
-            "void"
-        ],
-        [
-            "RefreshHands",
-            "void"
-        ],
-        [
-            "Clone",
-            "GameStatus"
         ],
         [
             "UpdateRoundStatus",
@@ -2056,36 +2044,48 @@
             "GameStatus"
         ],
         [
-            "NextMove",
-            "IEnumerable"
+            "Clone",
+            "GameStatus"
+        ],
+        [
+            "RefreshHands",
+            "void"
+        ],
+        [
+            "ResetEnds",
+            "void"
         ],
         [
             "IsOver",
             "bool"
         ],
         [
-            "GetWinner",
-            "("
-        ],
-        [
             "NextMove",
             "IEnumerable"
+        ],
+        [
+            "GetWinner",
+            "("
         ],
         [
             "GetPlay",
             "IPlay"
         ],
         [
+            "NextMove",
+            "IEnumerable"
+        ],
+        [
             "HaveToken",
             "bool"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
             "Play",
             "Token_onBoard"
+        ],
+        [
+            "ToString",
+            "string"
         ],
         [
             "Play",
@@ -2096,16 +2096,8 @@
             "Dictionary"
         ],
         [
-            "ToString",
-            "string"
-        ],
-        [
             "Play",
             "Token_onBoard"
-        ],
-        [
-            "CompareTo",
-            "int"
         ],
         [
             "ToString",
@@ -2114,6 +2106,14 @@
         [
             "EqualTokens",
             "bool"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "CompareTo",
+            "int"
         ],
         [
             "Clone",
@@ -2146,10 +2146,6 @@
         [
             "Play",
             "Token_onBoard"
-        ],
-        [
-            "ToString",
-            "string"
         ],
         [
             "Play",
@@ -2164,10 +2160,6 @@
             "string"
         ],
         [
-            "CurrentMaximum",
-            "int"
-        ],
-        [
             "Play",
             "Token_onBoard"
         ],
@@ -2176,8 +2168,8 @@
             "Token"
         ],
         [
-            "Possible_TokensPlay",
-            "List"
+            "CurrentMaximum",
+            "int"
         ],
         [
             "ToString",
@@ -2188,19 +2180,15 @@
             "Token_onBoard"
         ],
         [
+            "ToString",
+            "string"
+        ],
+        [
+            "Possible_TokensPlay",
+            "List"
+        ],
+        [
             "ShowPlayerTokens",
-            "void"
-        ],
-        [
-            "ShowRound",
-            "void"
-        ],
-        [
-            "HumanMenu",
-            "Token_onBoard"
-        ],
-        [
-            "RunTournament",
             "void"
         ],
         [
@@ -2208,12 +2196,20 @@
             "void"
         ],
         [
+            "RunTournament",
+            "void"
+        ],
+        [
+            "ShowRound",
+            "void"
+        ],
+        [
             "PlayAgainMenu",
             "bool"
         ],
         [
-            "SayHiDommie",
-            "void"
+            "HumanMenu",
+            "Token_onBoard"
         ],
         [
             "Main",
@@ -2221,6 +2217,14 @@
         ],
         [
             "MainSkipIntro",
+            "void"
+        ],
+        [
+            "SayHiDommie",
+            "void"
+        ],
+        [
+            "CustomizePlayers",
             "void"
         ],
         [
@@ -2232,18 +2236,6 @@
             "void"
         ],
         [
-            "CustomizePlayers",
-            "void"
-        ],
-        [
-            "TemplateMenu",
-            "ITemplate"
-        ],
-        [
-            "MaxTokenMenu",
-            "int"
-        ],
-        [
             "HumanPlayMenu",
             "bool"
         ],
@@ -2252,8 +2244,12 @@
             "bool"
         ],
         [
-            "Show",
-            "void"
+            "MaxTokenMenu",
+            "int"
+        ],
+        [
+            "TemplateMenu",
+            "ITemplate"
         ],
         [
             "IsValid",
@@ -2264,27 +2260,31 @@
             "void"
         ],
         [
-            "ToString",
-            "string"
+            "Show",
+            "void"
         ],
         [
-            "GenerateUnitaryTeams",
-            "List"
+            "ToString",
+            "string"
         ],
         [
             "SinglePlayerOrTeamMenu",
             "bool"
         ],
         [
-            "AssignTeamsMenu",
-            "List"
-        ],
-        [
             "CustomizeTeams",
             "List"
         ],
         [
-            "Modify",
+            "GenerateUnitaryTeams",
+            "List"
+        ],
+        [
+            "AssignTeamsMenu",
+            "List"
+        ],
+        [
+            "Print",
             "void"
         ],
         [
@@ -2292,7 +2292,7 @@
             "void"
         ],
         [
-            "Print",
+            "Modify",
             "void"
         ],
         [
@@ -2300,24 +2300,24 @@
             "string"
         ],
         [
-            "GetRandomPlayer",
-            "IPlayer"
+            "AssignTeamsClassic",
+            "List"
         ],
         [
             "BuildTemplate",
             "ITemplate"
         ],
         [
-            "GeneratePlayers",
-            "List"
-        ],
-        [
-            "AssignTeamsClassic",
-            "List"
-        ],
-        [
             "ToCircularList",
             "CircularList"
+        ],
+        [
+            "GetRandomPlayer",
+            "IPlayer"
+        ],
+        [
+            "GeneratePlayers",
+            "List"
         ],
         [
             "ToString",
@@ -2339,8 +2339,8 @@
         "RoundWinners",
         "InnerPlayer",
         "Node",
-        "ClassicEnumerator",
         "CircularEnumerator",
+        "ClassicEnumerator",
         "CircularList",
         "Utils",
         "GameStatus",
@@ -2361,8 +2361,8 @@
         "CustomizeGame",
         "Menus",
         "WriteMenu",
-        "SimpleOption",
         "GenericOption",
+        "SimpleOption",
         "QuickScreen",
         "Menus",
         "SingleSelectionMenu",

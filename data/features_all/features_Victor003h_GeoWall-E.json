@@ -1,0 +1,660 @@
+{
+    "total_nodes": 41916,
+    "max_depth": 982,
+    "number_of_variables": 36,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 36,
+    "number_of_classes": 25,
+    "number_of_interfaces": 0,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 20,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 5,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 1,
+    "number_of_delegates": 0,
+    "function_calls": 38,
+    "enums_names": [
+        "TokenType"
+    ],
+    "control_structures_if": 34,
+    "control_structures_switch": 1,
+    "control_structures_for": 1,
+    "control_structures_while": 2,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 113,
+    "access_modifiers_private": 32,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 21,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 2,
+    "modifier_override": 22,
+    "modifier_new": 13,
+    "modifier_partial": 8,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 6,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 0,
+    "number_of_lambdas": 0,
+    "number_of_getters": 14,
+    "number_of_setters": 2,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 17,
+    "method_parameters": [
+        [
+            "_Process",
+            [
+                [
+                    "double",
+                    "delta"
+                ]
+            ]
+        ],
+        [
+            "_on_open_file_dialog_file_selected",
+            [
+                [
+                    "string",
+                    "path"
+                ]
+            ]
+        ],
+        [
+            "_on_save_file_dialog_file_selected",
+            [
+                [
+                    "string",
+                    "path"
+                ]
+            ]
+        ],
+        [
+            "Draw",
+            [
+                [
+                    "DrawFunction",
+                    "d"
+                ]
+            ]
+        ],
+        [
+            "_Process",
+            [
+                [
+                    "double",
+                    "delta"
+                ]
+            ]
+        ],
+        [
+            "_Process",
+            [
+                [
+                    "double",
+                    "delta"
+                ]
+            ]
+        ],
+        [
+            "_Process",
+            [
+                [
+                    "double",
+                    "delta"
+                ]
+            ]
+        ],
+        [
+            "_Process",
+            [
+                [
+                    "double",
+                    "delta"
+                ]
+            ]
+        ],
+        [
+            "_Process",
+            [
+                [
+                    "double",
+                    "delta"
+                ]
+            ]
+        ],
+        [
+            "_Process",
+            [
+                [
+                    "double",
+                    "delta"
+                ]
+            ]
+        ],
+        [
+            "_Process",
+            [
+                [
+                    "double",
+                    "delta"
+                ]
+            ]
+        ],
+        [
+            "Evaluator",
+            [
+                [
+                    "Expressions",
+                    "tree"
+                ]
+            ]
+        ],
+        [
+            "IsDeclaration",
+            [
+                [
+                    "int",
+                    "position"
+                ]
+            ]
+        ],
+        [
+            "GetPrecendece",
+            [
+                [
+                    "TokenType",
+                    "type"
+                ]
+            ]
+        ],
+        [
+            "GetValue",
+            [
+                [
+                    "IdentifierExpression",
+                    "identifier"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "Vector2",
+            "vector"
+        ],
+        [
+            "var",
+            "tree"
+        ],
+        [
+            "var",
+            "canvas"
+        ],
+        [
+            "DrawFunction",
+            "s"
+        ],
+        [
+            "List",
+            "figures"
+        ],
+        [
+            "string",
+            "f"
+        ],
+        [
+            "CodeEdit",
+            "codeEdit"
+        ],
+        [
+            "string",
+            "code"
+        ],
+        [
+            "GraphEdit",
+            "graph"
+        ],
+        [
+            "Parser",
+            "parser"
+        ],
+        [
+            "var",
+            "r"
+        ],
+        [
+            "FileDialog",
+            "file"
+        ],
+        [
+            "var",
+            "resul"
+        ],
+        [
+            "string",
+            "text"
+        ],
+        [
+            "GraphEdit1",
+            "graph"
+        ],
+        [
+            "List",
+            "figures"
+        ],
+        [
+            "TokenType",
+            "fi"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "bool",
+            "first"
+        ],
+        [
+            "Errors",
+            "Err"
+        ],
+        [
+            "Token",
+            "generico"
+        ],
+        [
+            "List",
+            "new_secuen"
+        ],
+        [
+            "List",
+            "lines"
+        ],
+        [
+            "var",
+            "token"
+        ],
+        [
+            "List",
+            "token_list"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "Lexer",
+            "lexer"
+        ],
+        [
+            "Expressions",
+            "expr"
+        ],
+        [
+            "var",
+            "l"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Errors",
+            "Error"
+        ],
+        [
+            "Errors",
+            "Error"
+        ]
+    ],
+    "method_names": [
+        "AllDraw",
+        "_on_button_4_pressed",
+        "_Ready",
+        "_Process",
+        "Draw",
+        "_on_button_3_pressed",
+        "_on_button_pressed",
+        "_on_button_2_pressed",
+        "_on_graph_edit_draw",
+        "_on_open_file_dialog_file_selected",
+        "_on_save_file_dialog_file_selected",
+        "CheckError",
+        "_Ready",
+        "_Process",
+        "_Ready",
+        "_Process",
+        "_Ready",
+        "_Process",
+        "_Ready",
+        "_Process",
+        "_draw",
+        "_Ready",
+        "_Process",
+        "_Ready",
+        "_Process",
+        "_Ready",
+        "_Process",
+        "_draw",
+        "Evaluator",
+        "Scanner",
+        "NextLine",
+        "Parse",
+        "NextToken",
+        "GetPrecendece",
+        "IsDeclaration",
+        "GetValue"
+    ],
+    "method_return_types": [
+        [
+            "_on_button_3_pressed",
+            "void"
+        ],
+        [
+            "_on_save_file_dialog_file_selected",
+            "void"
+        ],
+        [
+            "_on_button_pressed",
+            "void"
+        ],
+        [
+            "_Process",
+            "void"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "_on_open_file_dialog_file_selected",
+            "void"
+        ],
+        [
+            "CheckError",
+            "bool"
+        ],
+        [
+            "_on_button_4_pressed",
+            "void"
+        ],
+        [
+            "_on_button_2_pressed",
+            "void"
+        ],
+        [
+            "_on_graph_edit_draw",
+            "void"
+        ],
+        [
+            "AllDraw",
+            "DrawFunction"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
+            "void"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
+            "void"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
+            "void"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
+            "void"
+        ],
+        [
+            "_draw",
+            "void"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
+            "void"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
+            "void"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "_Process",
+            "void"
+        ],
+        [
+            "_draw",
+            "void"
+        ],
+        [
+            "_Ready",
+            "void"
+        ],
+        [
+            "Evaluator",
+            "Result"
+        ],
+        [
+            "Scanner",
+            "List"
+        ],
+        [
+            "NextLine",
+            "void"
+        ],
+        [
+            "GetPrecendece",
+            "int"
+        ],
+        [
+            "IsDeclaration",
+            "bool"
+        ],
+        [
+            "Parse",
+            "Expressions"
+        ],
+        [
+            "NextToken",
+            "Token"
+        ],
+        [
+            "GetValue",
+            "Expressions"
+        ]
+    ],
+    "class_names": [
+        "control",
+        "ButtonCompiler",
+        "TextEdit1",
+        "RichTextLabel1",
+        "GraphEdit1",
+        "Nodo2D",
+        "CodeEdit1",
+        "Node2D",
+        "Execute",
+        "Figures",
+        "Lexer",
+        "Parser",
+        "Identifiers",
+        "IdentifierExpression",
+        "UnaryExpression",
+        "BinaryExpression",
+        "Sequence",
+        "LetExpression",
+        "ParenthesesExpression",
+        "NumberExpression",
+        "StringExpression",
+        "BoolExpression",
+        "ReservedFunction",
+        "Expressions",
+        "Context"
+    ],
+    "interface_names": [],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 26,
+        "Using_directivesContext": 20,
+        "UsingNamespaceDirectiveContext": 50,
+        "TerminalNodeImpl": 3158,
+        "Namespace_or_type_nameContext": 289,
+        "IdentifierContext": 1005,
+        "Namespace_member_declarationsContext": 25,
+        "Namespace_member_declarationContext": 55,
+        "Type_declarationContext": 38,
+        "All_member_modifiersContext": 145,
+        "All_member_modifierContext": 203,
+        "Class_definitionContext": 25,
+        "Class_baseContext": 20,
+        "Class_typeContext": 239,
+        "Class_bodyContext": 25,
+        "Class_member_declarationsContext": 24,
+        "Class_member_declarationContext": 147,
+        "Common_member_declarationContext": 147,
+        "Typed_member_declarationContext": 87,
+        "Type_Context": 247,
+        "Base_typeContext": 250,
+        "Type_argument_listContext": 59,
+        "Field_declarationContext": 51,
+        "Variable_declaratorsContext": 51,
+        "Variable_declaratorContext": 51,
+        "Variable_initializerContext": 25,
+        "ExpressionContext": 385,
+        "Non_assignment_expressionContext": 317,
+        "Conditional_expressionContext": 317,
+        "Null_coalescing_expressionContext": 317,
+        "Conditional_or_expressionContext": 317,
+        "Conditional_and_expressionContext": 318,
+        "Inclusive_or_expressionContext": 320,
+        "Exclusive_or_expressionContext": 320,
+        "And_expressionContext": 320,
+        "Equality_expressionContext": 320,
+        "Relational_expressionContext": 345,
+        "Shift_expressionContext": 348,
+        "Additive_expressionContext": 348,
+        "Multiplicative_expressionContext": 360,
+        "Switch_expressionContext": 360,
+        "Range_expressionContext": 360,
+        "Unary_expressionContext": 403,
+        "Primary_expressionContext": 401,
+        "ObjectCreationExpressionContext": 38,
+        "Object_creation_expressionContext": 37,
+        "Method_declarationContext": 36,
+        "Method_member_nameContext": 36,
+        "Method_bodyContext": 36,
+        "BlockContext": 73,
+        "Formal_parameter_listContext": 22,
+        "Fixed_parametersContext": 22,
+        "Fixed_parameterContext": 28,
+        "Arg_declarationContext": 28,
+        "Simple_typeContext": 27,
+        "Numeric_typeContext": 18,
+        "Floating_point_typeContext": 8,
+        "Statement_listContext": 66,
+        "StatementContext": 243,
+        "DeclarationStatementContext": 52,
+        "Local_variable_declarationContext": 36,
+        "Local_variable_typeContext": 40,
+        "Local_variable_declaratorContext": 36,
+        "Local_variable_initializerContext": 36,
+        "SimpleNameExpressionContext": 241,
+        "Method_invocationContext": 59,
+        "Argument_listContext": 50,
+        "ArgumentContext": 89,
+        "LiteralExpressionContext": 104,
+        "LiteralContext": 104,
+        "String_literalContext": 23,
+        "Embedded_statementContext": 170,
+        "ExpressionStatementContext": 105,
+        "BaseAccessExpressionContext": 1,
+        "Member_accessContext": 144,
+        "AssignmentContext": 41,
+        "Assignment_operatorContext": 41,
+        "IfStatementContext": 34,
+        "If_bodyContext": 39,
+        "ReturnStatementContext": 28,
+        "MemberAccessExpressionContext": 3,
+        "Predefined_typeContext": 3,
+        "WhileStatementContext": 2,
+        "ContinueStatementContext": 4,
+        "IsTypeContext": 3,
+        "ForeachStatementContext": 4,
+        "Bracket_expressionContext": 13,
+        "Indexer_argumentContext": 13,
+        "ErrorNodeImpl": 26800,
+        "AttributesContext": 1,
+        "Attribute_sectionContext": 1,
+        "ThisReferenceExpressionContext": 14,
+        "Tuple_typeContext": 3,
+        "Tuple_elementContext": 3,
+        "Namespace_declarationContext": 17,
+        "Qualified_identifierContext": 17,
+        "Enum_definitionContext": 1,
+        "Enum_bodyContext": 1,
+        "Enum_member_declarationContext": 62,
+        "Integral_typeContext": 10,
+        "Boolean_literalContext": 9,
+        "Property_declarationContext": 15,
+        "Member_nameContext": 15,
+        "Accessor_declarationsContext": 14,
+        "Accessor_bodyContext": 16,
+        "Set_accessor_declarationContext": 2,
+        "Constructor_declarationContext": 7,
+        "BodyContext": 7,
+        "Expression_listContext": 1,
+        "ForStatementContext": 1,
+        "For_initializerContext": 1,
+        "For_iteratorContext": 1,
+        "SwitchStatementContext": 1,
+        "Switch_sectionContext": 8,
+        "Switch_labelContext": 12,
+        "Right_arrowContext": 1,
+        "Throwable_expressionContext": 1
+    },
+    "project_name": "Victor003h_GeoWall-E",
+    "label": "original",
+    "project_type": "wallE"
+}

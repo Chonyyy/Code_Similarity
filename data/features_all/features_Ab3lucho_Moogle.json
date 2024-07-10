@@ -1,0 +1,647 @@
+{
+    "total_nodes": 21839,
+    "max_depth": 515,
+    "number_of_variables": 89,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 24,
+    "number_of_classes": 5,
+    "number_of_interfaces": 0,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 5,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 2,
+    "number_of_dictionaries": 14,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 44,
+    "enums_names": [],
+    "control_structures_if": 21,
+    "control_structures_switch": 0,
+    "control_structures_for": 20,
+    "control_structures_while": 0,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 56,
+    "access_modifiers_private": 2,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 6,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 0,
+    "modifier_new": 19,
+    "modifier_partial": 0,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 1,
+    "linq_queries_sum": 1,
+    "linq_queries_count": 0,
+    "library_call_console": 14,
+    "library_call_math": 8,
+    "number_of_lambdas": 1,
+    "number_of_getters": 10,
+    "number_of_setters": 9,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 6,
+    "method_parameters": [
+        [
+            "Cargar",
+            [
+                [
+                    "string",
+                    "Query"
+                ]
+            ]
+        ],
+        [
+            "LevenshteinDistance",
+            [
+                [
+                    "string",
+                    "s1"
+                ],
+                [
+                    "string",
+                    "s2"
+                ]
+            ]
+        ],
+        [
+            "Query",
+            [
+                [
+                    "string",
+                    "query"
+                ]
+            ]
+        ],
+        [
+            "ContadorPalabra",
+            [
+                [
+                    "string",
+                    "Palabra"
+                ],
+                [
+                    "Dictionary<string,string[]>",
+                    "NombrevsPalabras"
+                ],
+                [
+                    "string[]",
+                    "ArchivosTxt"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "double",
+            "idf"
+        ],
+        [
+            "string",
+            "PalabrasNoRepetidasTemporales"
+        ],
+        [
+            "Dictionary",
+            "IDFTemp"
+        ],
+        [
+            "HashSet",
+            "palabras"
+        ],
+        [
+            "double",
+            "contador"
+        ],
+        [
+            "string",
+            "palabras"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "Dictionary",
+            "wordCounts"
+        ],
+        [
+            "double",
+            "documentoLength"
+        ],
+        [
+            "Dictionary",
+            "fakenameVsTF"
+        ],
+        [
+            "Dictionary",
+            "fakenameVsTFIDF"
+        ],
+        [
+            "Dictionary",
+            "NombrevsIDFTemp"
+        ],
+        [
+            "Dictionary",
+            "PalabravsTF"
+        ],
+        [
+            "string",
+            "PalabrasTemporales"
+        ],
+        [
+            "Dictionary",
+            "TF"
+        ],
+        [
+            "Dictionary",
+            "PalabravsIDF"
+        ],
+        [
+            "double",
+            "documentosTotales"
+        ],
+        [
+            "double",
+            "tfidf"
+        ],
+        [
+            "Dictionary",
+            "fakenameVsITF"
+        ],
+        [
+            "Dictionary",
+            "PalabrasvsTFIDF"
+        ],
+        [
+            "double",
+            "tf"
+        ],
+        [
+            "SearchItem",
+            "items4"
+        ],
+        [
+            "SearchItem",
+            "items2"
+        ],
+        [
+            "int",
+            "curr"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "prev"
+        ],
+        [
+            "int",
+            "Distancias"
+        ],
+        [
+            "int",
+            "n"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "mypath"
+        ],
+        [
+            "Dictionary",
+            "Results"
+        ],
+        [
+            "string",
+            "suggestion"
+        ],
+        [
+            "List",
+            "items"
+        ],
+        [
+            "var",
+            "ResultadosOrdenados"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "int",
+            "temp"
+        ],
+        [
+            "Busqueda",
+            "objeto3"
+        ],
+        [
+            "string",
+            "tempath"
+        ],
+        [
+            "TF_IDF",
+            "objeto2"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "int",
+            "min"
+        ],
+        [
+            "double",
+            "idf"
+        ],
+        [
+            "int",
+            "contador"
+        ],
+        [
+            "char",
+            "delimitadores"
+        ],
+        [
+            "string",
+            "SnippetFinal"
+        ],
+        [
+            "double",
+            "contador"
+        ],
+        [
+            "string",
+            "palabras"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "string",
+            "Documento"
+        ],
+        [
+            "Dictionary",
+            "Results"
+        ],
+        [
+            "Dictionary",
+            "DiccionarioTFIDF_Query"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "double",
+            "contador3"
+        ],
+        [
+            "var",
+            "items"
+        ],
+        [
+            "string",
+            "snippet"
+        ],
+        [
+            "double",
+            "DocumentosDodeExiste"
+        ],
+        [
+            "double",
+            "sum"
+        ],
+        [
+            "double",
+            "cantidad_total_documentos"
+        ],
+        [
+            "double",
+            "contador2"
+        ],
+        [
+            "string",
+            "PathTemporal"
+        ],
+        [
+            "string",
+            "path"
+        ],
+        [
+            "string",
+            "StringTexto"
+        ],
+        [
+            "List",
+            "Puente"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "palabraFalsa"
+        ],
+        [
+            "char",
+            "delimitadores"
+        ],
+        [
+            "string",
+            "text"
+        ]
+    ],
+    "method_names": [
+        "Items",
+        "TF_IDF",
+        "Motor_TF_IDF",
+        "TF",
+        "IDF",
+        "LevenshteinDistance",
+        "Query",
+        "Cargar",
+        "IDF_Query",
+        "Similitud_TFIDF_Query",
+        "TF_Query",
+        "TF_IDF_Query",
+        "ContadorPalabra",
+        "TokenizarQuery",
+        "Motor_Busqueda",
+        "Motor_Resultados",
+        "Motor_Snippet",
+        "Snippet_",
+        "ObtenerPalabras",
+        "Obtenerpalabrasstring",
+        "Motor_Manejo",
+        "FakeData",
+        "ObtenerTextos",
+        "LimpiarNombre"
+    ],
+    "method_return_types": [
+        [
+            "Items",
+            "IEnumerable"
+        ],
+        [
+            "IDF",
+            "void"
+        ],
+        [
+            "TF",
+            "void"
+        ],
+        [
+            "TF_IDF",
+            "void"
+        ],
+        [
+            "Motor_TF_IDF",
+            "void"
+        ],
+        [
+            "Cargar",
+            "Dictionary"
+        ],
+        [
+            "LevenshteinDistance",
+            "int"
+        ],
+        [
+            "Query",
+            "SearchResult"
+        ],
+        [
+            "TF_Query",
+            "void"
+        ],
+        [
+            "Motor_Snippet",
+            "void"
+        ],
+        [
+            "ContadorPalabra",
+            "double"
+        ],
+        [
+            "Motor_Busqueda",
+            "void"
+        ],
+        [
+            "IDF_Query",
+            "void"
+        ],
+        [
+            "Snippet_",
+            "void"
+        ],
+        [
+            "Similitud_TFIDF_Query",
+            "void"
+        ],
+        [
+            "TokenizarQuery",
+            "string"
+        ],
+        [
+            "TF_IDF_Query",
+            "void"
+        ],
+        [
+            "Motor_Resultados",
+            "void"
+        ],
+        [
+            "LimpiarNombre",
+            "string"
+        ],
+        [
+            "ObtenerPalabras",
+            "void"
+        ],
+        [
+            "ObtenerTextos",
+            "string"
+        ],
+        [
+            "Obtenerpalabrasstring",
+            "string"
+        ],
+        [
+            "FakeData",
+            "void"
+        ],
+        [
+            "Motor_Manejo",
+            "string"
+        ]
+    ],
+    "class_names": [
+        "SearchResult",
+        "TFIDF",
+        "Moogle",
+        "busqueda",
+        "archivos"
+    ],
+    "interface_names": [],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 7,
+        "Using_directivesContext": 5,
+        "UsingNamespaceDirectiveContext": 21,
+        "TerminalNodeImpl": 3948,
+        "Namespace_or_type_nameContext": 134,
+        "IdentifierContext": 1016,
+        "ErrorNodeImpl": 162,
+        "Namespace_member_declarationsContext": 9,
+        "Namespace_member_declarationContext": 11,
+        "Namespace_declarationContext": 6,
+        "Qualified_identifierContext": 6,
+        "Type_declarationContext": 5,
+        "All_member_modifiersContext": 61,
+        "All_member_modifierContext": 64,
+        "Class_definitionContext": 5,
+        "Class_bodyContext": 5,
+        "Class_member_declarationsContext": 5,
+        "Class_member_declarationContext": 59,
+        "Common_member_declarationContext": 59,
+        "Typed_member_declarationContext": 40,
+        "Type_Context": 356,
+        "Base_typeContext": 356,
+        "Class_typeContext": 252,
+        "Rank_specifierContext": 49,
+        "Field_declarationContext": 20,
+        "Variable_declaratorsContext": 20,
+        "Variable_declaratorContext": 20,
+        "Constructor_declarationContext": 5,
+        "Formal_parameter_listContext": 9,
+        "Fixed_parametersContext": 9,
+        "Fixed_parameterContext": 19,
+        "Arg_declarationContext": 19,
+        "ExpressionContext": 651,
+        "Non_assignment_expressionContext": 597,
+        "Conditional_expressionContext": 595,
+        "Null_coalescing_expressionContext": 595,
+        "Conditional_or_expressionContext": 595,
+        "Conditional_and_expressionContext": 595,
+        "Inclusive_or_expressionContext": 595,
+        "Exclusive_or_expressionContext": 595,
+        "And_expressionContext": 595,
+        "Equality_expressionContext": 595,
+        "Relational_expressionContext": 608,
+        "Shift_expressionContext": 631,
+        "Additive_expressionContext": 631,
+        "Multiplicative_expressionContext": 648,
+        "Switch_expressionContext": 657,
+        "Range_expressionContext": 657,
+        "Unary_expressionContext": 713,
+        "Primary_expressionContext": 711,
+        "LiteralExpressionContext": 149,
+        "LiteralContext": 149,
+        "String_literalContext": 44,
+        "BodyContext": 5,
+        "BlockContext": 99,
+        "Statement_listContext": 98,
+        "StatementContext": 267,
+        "Embedded_statementContext": 240,
+        "IfStatementContext": 21,
+        "SimpleNameExpressionContext": 457,
+        "If_bodyContext": 29,
+        "ThrowStatementContext": 1,
+        "ObjectCreationExpressionContext": 44,
+        "Object_creation_expressionContext": 38,
+        "Argument_listContext": 86,
+        "ArgumentContext": 135,
+        "ExpressionStatementContext": 120,
+        "AssignmentContext": 54,
+        "ThisReferenceExpressionContext": 60,
+        "Member_accessContext": 205,
+        "Assignment_operatorContext": 54,
+        "Constructor_initializerContext": 1,
+        "Expression_listContext": 6,
+        "Property_declarationContext": 10,
+        "Member_nameContext": 10,
+        "Accessor_declarationsContext": 10,
+        "Accessor_bodyContext": 19,
+        "Set_accessor_declarationContext": 9,
+        "Accessor_modifierContext": 1,
+        "Type_argument_listContext": 84,
+        "Method_declarationContext": 24,
+        "Method_member_nameContext": 24,
+        "Method_bodyContext": 24,
+        "ReturnStatementContext": 13,
+        "Simple_typeContext": 104,
+        "Numeric_typeContext": 104,
+        "Integral_typeContext": 38,
+        "Namespace_bodyContext": 3,
+        "Floating_point_typeContext": 66,
+        "Variable_initializerContext": 55,
+        "DeclarationStatementContext": 70,
+        "Local_variable_declarationContext": 89,
+        "Local_variable_typeContext": 112,
+        "Local_variable_declaratorContext": 89,
+        "Local_variable_initializerContext": 88,
+        "ForeachStatementContext": 23,
+        "Method_invocationContext": 105,
+        "Bracket_expressionContext": 94,
+        "Indexer_argumentContext": 94,
+        "ForStatementContext": 20,
+        "For_initializerContext": 20,
+        "For_iteratorContext": 20,
+        "BreakStatementContext": 3,
+        "Lambda_expressionContext": 1,
+        "Anonymous_function_signatureContext": 1,
+        "Right_arrowContext": 1,
+        "Anonymous_function_bodyContext": 1,
+        "Throwable_expressionContext": 1,
+        "Cast_expressionContext": 1,
+        "Local_function_declarationContext": 1,
+        "Local_function_headerContext": 1,
+        "Local_function_modifiersContext": 1,
+        "Return_typeContext": 1,
+        "Local_function_bodyContext": 1,
+        "Array_initializerContext": 4,
+        "Boolean_literalContext": 2,
+        "Query_expressionContext": 1,
+        "From_clauseContext": 1,
+        "Query_bodyContext": 1,
+        "Query_body_clauseContext": 1,
+        "Orderby_clauseContext": 1,
+        "OrderingContext": 1,
+        "Select_or_group_clauseContext": 1,
+        "MemberAccessExpressionContext": 1,
+        "Predefined_typeContext": 1
+    },
+    "project_name": "Ab3lucho_Moogle",
+    "label": "original",
+    "project_type": "moogle"
+}

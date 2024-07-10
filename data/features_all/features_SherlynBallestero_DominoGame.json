@@ -298,28 +298,8 @@
     ],
     "variable_names": [
         [
-            "Referee",
-            "referee"
-        ],
-        [
-            "Player",
-            "challengers"
-        ],
-        [
             "int",
             "index"
-        ],
-        [
-            "int",
-            "max"
-        ],
-        [
-            "InformationForPlayer",
-            "info"
-        ],
-        [
-            "bool",
-            "keepPlaying"
         ],
         [
             "IPrinter",
@@ -327,27 +307,43 @@
         ],
         [
             "int",
-            "playercount"
+            "numberOfOptions"
         ],
         [
             "string",
             "answer"
         ],
         [
+            "Player",
+            "challengers"
+        ],
+        [
             "GameInformation",
             "gi"
+        ],
+        [
+            "bool",
+            "keepPlaying"
         ],
         [
             "jugada",
             "jugadaAux"
         ],
         [
+            "string",
+            "aux"
+        ],
+        [
             "LinkedList",
             "table"
         ],
         [
-            "string",
-            "aux"
+            "Referee",
+            "referee"
+        ],
+        [
+            "int",
+            "playercount"
         ],
         [
             "int",
@@ -359,15 +355,59 @@
         ],
         [
             "int",
-            "numberOfOptions"
+            "max"
+        ],
+        [
+            "InformationForPlayer",
+            "info"
+        ],
+        [
+            "int",
+            "cont"
+        ],
+        [
+            "int",
+            "option"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "temp"
+        ],
+        [
+            "int",
+            "max"
+        ],
+        [
+            "bool",
+            "mark"
+        ],
+        [
+            "bool",
+            "sol"
+        ],
+        [
+            "string",
+            "aux"
+        ],
+        [
+            "Records",
+            "auxRecord"
         ],
         [
             "Records",
             "move"
         ],
         [
-            "int",
-            "option"
+            "Records",
+            "rd"
         ],
         [
             "int",
@@ -379,55 +419,15 @@
         ],
         [
             "int",
-            "max"
-        ],
-        [
-            "Records",
-            "auxRecord"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
             "answer"
-        ],
-        [
-            "int",
-            "j"
         ],
         [
             "Random",
             "r"
         ],
         [
-            "int",
-            "temp"
-        ],
-        [
-            "bool",
-            "sol"
-        ],
-        [
-            "Records",
-            "rd"
-        ],
-        [
-            "string",
-            "aux"
-        ],
-        [
-            "bool",
-            "mark"
-        ],
-        [
-            "int",
-            "cont"
-        ],
-        [
-            "int",
-            "result"
+            "Dictionary",
+            "turnPlayed"
         ],
         [
             "int",
@@ -438,24 +438,12 @@
             "turnPass"
         ],
         [
-            "Dictionary",
-            "turnPlayed"
-        ],
-        [
             "int",
-            "aux2"
+            "result"
         ],
         [
             "Dictionary",
             "turnPlayed"
-        ],
-        [
-            "List",
-            "OPtions"
-        ],
-        [
-            "(",
-            "t"
         ],
         [
             "List",
@@ -466,56 +454,60 @@
             "turnPass"
         ],
         [
+            "int",
+            "aux2"
+        ],
+        [
+            "(",
+            "t"
+        ],
+        [
             "List",
             "matchedRec"
+        ],
+        [
+            "List",
+            "OPtions"
         ]
     ],
     "method_names": [
-        "WaysToPLay1",
         "referee",
+        "WaysToPLay1",
         "Main",
         "System",
         "RulesCheck",
-        "IsIn",
         "GiveMeRecords",
         "Swap",
         "MarkData",
+        "IsIn",
         "Rearrange",
         "PointsInGame",
-        "PlayTtt",
         "shuffledPoints",
+        "PlayTtt",
         "Play",
         "ProvidedInformation",
         "HavesARecord"
     ],
     "method_return_types": [
         [
-            "System",
-            "ConsoleColor"
-        ],
-        [
-            "referee",
-            "ConsoleColor"
+            "WaysToPLay1",
+            "void"
         ],
         [
             "Main",
             "void"
         ],
         [
-            "WaysToPLay1",
-            "void"
+            "referee",
+            "ConsoleColor"
         ],
         [
-            "RulesCheck",
-            "int"
+            "System",
+            "ConsoleColor"
         ],
         [
             "IsIn",
             "bool"
-        ],
-        [
-            "GiveMeRecords",
-            "jugada"
         ],
         [
             "Rearrange",
@@ -526,11 +518,15 @@
             "bool"
         ],
         [
+            "GiveMeRecords",
+            "jugada"
+        ],
+        [
             "Swap",
             "void"
         ],
         [
-            "shuffledPoints",
+            "RulesCheck",
             "int"
         ],
         [
@@ -538,16 +534,20 @@
             "void"
         ],
         [
+            "shuffledPoints",
+            "int"
+        ],
+        [
             "PointsInGame",
             "int"
         ],
         [
-            "ProvidedInformation",
-            "InformationForPlayer"
-        ],
-        [
             "Play",
             "void"
+        ],
+        [
+            "ProvidedInformation",
+            "InformationForPlayer"
         ],
         [
             "HavesARecord",
@@ -559,9 +559,9 @@
         "jugada",
         "Records",
         "DataPlayer",
-        "RandomPlayer",
         "Player",
         "GreedyPlayer",
+        "RandomPlayer",
         "ManualPlayer",
         "InformationForPlayer",
         "GameInformation",

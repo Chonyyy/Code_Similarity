@@ -1,6 +1,6 @@
 from antlr4 import *
 import os
-from listener import FeatureExtractorListener, walk_tree
+from parser.listener import FeatureExtractorListener, walk_tree
 from antlr4 import CommonTokenStream
 from Python.CSharpLexer import CSharpLexer
 from Python.CSharpParser import CSharpParser

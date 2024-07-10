@@ -344,23 +344,7 @@
     "variable_names": [
         [
             "var",
-            "pieces"
-        ],
-        [
-            "List",
-            "sortedValues"
-        ],
-        [
-            "var",
-            "enumerable"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "List",
-            "sortedPieces"
+            "smartPieces"
         ],
         [
             "List",
@@ -371,16 +355,20 @@
             "pieceValues"
         ],
         [
-            "Piece",
-            "pieceToPlay"
+            "int",
+            "i"
         ],
         [
             "int",
             "j"
         ],
         [
-            "List",
-            "valuesOpponent"
+            "var",
+            "pieces"
+        ],
+        [
+            "Piece",
+            "pieceToPlay"
         ],
         [
             "var",
@@ -388,15 +376,19 @@
         ],
         [
             "var",
-            "smartPieces"
+            "enumerable"
         ],
         [
             "List",
-            "hand"
+            "valuesOpponent"
         ],
         [
-            "Random",
-            "random"
+            "List",
+            "sortedPieces"
+        ],
+        [
+            "List",
+            "sortedValues"
         ],
         [
             "int",
@@ -404,19 +396,23 @@
         ],
         [
             "int",
-            "e"
+            "i"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "List",
+            "hand"
         ],
         [
             "int",
-            "i"
+            "e"
         ],
         [
             "Move",
             "move"
-        ],
-        [
-            "Piece",
-            "p"
         ],
         [
             "bool",
@@ -427,12 +423,8 @@
             "nonReversedComparison"
         ],
         [
-            "int",
-            "side"
-        ],
-        [
-            "var",
-            "possiblePieces"
+            "Piece",
+            "p"
         ],
         [
             "Random",
@@ -451,60 +443,8 @@
             "rnd"
         ],
         [
-            "List",
-            "sortedValues"
-        ],
-        [
             "int",
-            "index"
-        ],
-        [
-            "int",
-            "k"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "bool",
-            "placedOnRight"
-        ],
-        [
-            "Piece",
-            "p"
-        ],
-        [
-            "List",
-            "valuesPartner"
-        ],
-        [
-            "var",
-            "p"
-        ],
-        [
-            "double",
-            "pieceValues"
-        ],
-        [
-            "Piece",
-            "pieceToPlay"
-        ],
-        [
-            "Dictionary",
-            "dict"
-        ],
-        [
-            "var",
-            "keys"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
-            "valuesOpponent"
+            "side"
         ],
         [
             "var",
@@ -515,24 +455,92 @@
             "smartPieces"
         ],
         [
-            "DominoPlayer",
-            "smartAI_1"
+            "int",
+            "index"
+        ],
+        [
+            "bool",
+            "placedOnRight"
+        ],
+        [
+            "List",
+            "valuesPartner"
         ],
         [
             "int",
             "i"
         ],
         [
+            "double",
+            "pieceValues"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "var",
+            "keys"
+        ],
+        [
+            "Piece",
+            "p"
+        ],
+        [
+            "Piece",
+            "pieceToPlay"
+        ],
+        [
+            "var",
+            "possiblePieces"
+        ],
+        [
+            "List",
+            "valuesOpponent"
+        ],
+        [
+            "var",
+            "p"
+        ],
+        [
+            "Dictionary",
+            "dict"
+        ],
+        [
+            "List",
+            "sortedValues"
+        ],
+        [
             "DominoPlayer",
             "smartAI_0"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "IRules",
+            "classicRules"
         ],
         [
             "DominoPlayer",
             "smartAI_2"
         ],
         [
-            "IRules",
-            "classicRules"
+            "DominoPlayer",
+            "smartAI_3"
+        ],
+        [
+            "var",
+            "players"
+        ],
+        [
+            "DominoPlayer",
+            "smartAI_1"
         ],
         [
             "int",
@@ -541,64 +549,60 @@
         [
             "int",
             "passCount"
-        ],
-        [
-            "var",
-            "players"
-        ],
-        [
-            "DominoPlayer",
-            "smartAI_3"
         ]
     ],
     "method_names": [
-        "SetOpponents",
-        "GetScores",
-        "SetPartners",
-        "GetValue",
         "WatchMoves",
-        "StartGame",
-        "CreateHand",
-        "GetHandScore",
-        "CanPiecesMatch",
-        "GameOverCondition",
         "SetOpponents",
-        "InternalGetMove",
-        "GetPartners",
         "SetPartners",
-        "GetMove",
+        "GetScores",
+        "GetValue",
+        "CreateHand",
         "StartGame",
-        "GetOpponents",
+        "GameOverCondition",
+        "CanPiecesMatch",
+        "GetHandScore",
+        "GetMove",
+        "SetPartners",
         "GetPlayerScore",
-        "Reverse",
-        "CanMatch",
+        "StartGame",
+        "GetPartners",
+        "InternalGetMove",
+        "SetOpponents",
+        "GetOpponents",
         "GetHashCode",
+        "CanMatch",
         "Equals",
+        "Reverse",
         "InternalGetMove",
         "GetHand",
         "InternalGetMove",
+        "WatchMoves",
         "PointForPlaced",
+        "PointsForTeamMate",
         "InternalGetMove",
         "PointForDouble",
-        "PointsForOpponnent",
-        "PointsForTeamMate",
         "PointForSameNumber",
-        "WatchMoves",
-        "Main",
-        "GameOverCondition",
-        "GetHandScore",
-        "DominoGameOver",
+        "PointsForOpponnent",
         "CanPiecesMatch",
+        "GetHandScore",
+        "GameOverCondition",
+        "DominoGameOver",
+        "Main",
         "PlayDomino"
     ],
     "method_return_types": [
         [
-            "WatchMoves",
-            "void"
-        ],
-        [
             "SetOpponents",
             "List"
+        ],
+        [
+            "SetPartners",
+            "List"
+        ],
+        [
+            "WatchMoves",
+            "void"
         ],
         [
             "GetValue",
@@ -609,16 +613,16 @@
             "List"
         ],
         [
-            "SetPartners",
-            "List"
+            "StartGame",
+            "void"
         ],
         [
             "CreateHand",
             "List"
         ],
         [
-            "StartGame",
-            "void"
+            "GetHandScore",
+            "double"
         ],
         [
             "GameOverCondition",
@@ -629,8 +633,8 @@
             "bool"
         ],
         [
-            "GetHandScore",
-            "double"
+            "SetPartners",
+            "void"
         ],
         [
             "GetMove",
@@ -641,23 +645,7 @@
             "double"
         ],
         [
-            "InternalGetMove",
-            "Move"
-        ],
-        [
-            "GetPartners",
-            "List"
-        ],
-        [
-            "SetPartners",
-            "void"
-        ],
-        [
             "StartGame",
-            "void"
-        ],
-        [
-            "SetOpponents",
             "void"
         ],
         [
@@ -665,12 +653,24 @@
             "List"
         ],
         [
-            "Equals",
-            "bool"
+            "GetPartners",
+            "List"
+        ],
+        [
+            "InternalGetMove",
+            "Move"
+        ],
+        [
+            "SetOpponents",
+            "void"
         ],
         [
             "Reverse",
             "void"
+        ],
+        [
+            "Equals",
+            "bool"
         ],
         [
             "CanMatch",
@@ -693,6 +693,26 @@
             "Move"
         ],
         [
+            "PointForSameNumber",
+            "void"
+        ],
+        [
+            "PointForPlaced",
+            "void"
+        ],
+        [
+            "PointsForTeamMate",
+            "void"
+        ],
+        [
+            "PointsForOpponnent",
+            "void"
+        ],
+        [
+            "PointForDouble",
+            "void"
+        ],
+        [
             "WatchMoves",
             "void"
         ],
@@ -701,39 +721,15 @@
             "Move"
         ],
         [
-            "PointForSameNumber",
+            "PlayDomino",
             "void"
-        ],
-        [
-            "PointsForTeamMate",
-            "void"
-        ],
-        [
-            "PointForDouble",
-            "void"
-        ],
-        [
-            "PointsForOpponnent",
-            "void"
-        ],
-        [
-            "PointForPlaced",
-            "void"
-        ],
-        [
-            "DominoGameOver",
-            "void"
-        ],
-        [
-            "CanPiecesMatch",
-            "bool"
         ],
         [
             "GetHandScore",
             "double"
         ],
         [
-            "GameOverCondition",
+            "CanPiecesMatch",
             "bool"
         ],
         [
@@ -741,8 +737,12 @@
             "void"
         ],
         [
-            "PlayDomino",
+            "DominoGameOver",
             "void"
+        ],
+        [
+            "GameOverCondition",
+            "bool"
         ]
     ],
     "class_names": [

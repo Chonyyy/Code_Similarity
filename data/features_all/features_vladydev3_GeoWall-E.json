@@ -1,0 +1,2007 @@
+{
+    "total_nodes": 93435,
+    "max_depth": 4257,
+    "number_of_variables": 183,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 85,
+    "number_of_classes": 67,
+    "number_of_interfaces": 4,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 15,
+    "number_of_try_blocks": 1,
+    "number_of_lists": 5,
+    "number_of_dictionaries": 1,
+    "number_of_enums": 3,
+    "number_of_delegates": 0,
+    "function_calls": 165,
+    "enums_names": [
+        "TypeInfered",
+        "ObjectTypes",
+        "TokenType"
+    ],
+    "control_structures_if": 120,
+    "control_structures_switch": 7,
+    "control_structures_for": 17,
+    "control_structures_while": 7,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 394,
+    "access_modifiers_private": 97,
+    "access_modifiers_protected": 0,
+    "access_modifiers_internal": 10,
+    "access_modifiers_static": 12,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 17,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 52,
+    "modifier_new": 277,
+    "modifier_partial": 2,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 2,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 26,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 18,
+    "number_of_lambdas": 21,
+    "number_of_getters": 113,
+    "number_of_setters": 93,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 71,
+    "method_parameters": [
+        [
+            "Start",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Commands",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Import",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Button_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "About",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "HandleAsignationLet",
+            [
+                [
+                    "AsignationStatement",
+                    "asignation"
+                ]
+            ]
+        ],
+        [
+            "HandleMultipleAsignationNode",
+            [
+                [
+                    "MultipleAsignationStatement",
+                    "asignation"
+                ]
+            ]
+        ],
+        [
+            "HandleAsignationNode",
+            [
+                [
+                    "AsignationStatement",
+                    "asignation"
+                ]
+            ]
+        ],
+        [
+            "HandleLetInAsignationExpression",
+            [
+                [
+                    "LetInExpression",
+                    "letin"
+                ],
+                [
+                    "AsignationStatement",
+                    "asignation"
+                ]
+            ]
+        ],
+        [
+            "HandleVariableExpression",
+            [
+                [
+                    "VariableExpression",
+                    "variable"
+                ],
+                [
+                    "string",
+                    "text"
+                ]
+            ]
+        ],
+        [
+            "HandleDrawNode",
+            [
+                [
+                    "Draw",
+                    "draw"
+                ],
+                [
+                    "List<Tuple<Type,Color>>",
+                    "toDraw"
+                ]
+            ]
+        ],
+        [
+            "InferType",
+            [
+                [
+                    "Node",
+                    "node"
+                ]
+            ]
+        ],
+        [
+            "InferType",
+            [
+                [
+                    "Type",
+                    "type"
+                ]
+            ]
+        ],
+        [
+            "CheckSequenceType",
+            [
+                [
+                    "Sequence",
+                    "sequence"
+                ]
+            ]
+        ],
+        [
+            "SetName",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "SetName",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "GetElement",
+            [
+                [
+                    "int",
+                    "index"
+                ]
+            ]
+        ],
+        [
+            "RestOfElements",
+            [
+                [
+                    "int",
+                    "start"
+                ]
+            ]
+        ],
+        [
+            "SetName",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "GetPointOnRay",
+            [
+                [
+                    "Point",
+                    "origin"
+                ],
+                [
+                    "Point",
+                    "direction"
+                ],
+                [
+                    "double",
+                    "distance"
+                ]
+            ]
+        ],
+        [
+            "SetName",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "SetName",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "SetName",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "SetName",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "AsignX",
+            [
+                [
+                    "double",
+                    "x"
+                ]
+            ]
+        ],
+        [
+            "AsignY",
+            [
+                [
+                    "double",
+                    "y"
+                ]
+            ]
+        ],
+        [
+            "SetName",
+            [
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Slope",
+            [
+                [
+                    "Point",
+                    "p1"
+                ],
+                [
+                    "Point",
+                    "p2"
+                ]
+            ]
+        ],
+        [
+            "SlopeAndEquation",
+            [
+                [
+                    "Point",
+                    "p1"
+                ],
+                [
+                    "Point",
+                    "p2"
+                ]
+            ]
+        ],
+        [
+            "ReorderNodes",
+            [
+                [
+                    "List<Node>",
+                    "nodes"
+                ]
+            ]
+        ],
+        [
+            "SetErrors",
+            [
+                [
+                    "string",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Peek",
+            [
+                [
+                    "int",
+                    "offset"
+                ]
+            ]
+        ],
+        [
+            "SetError",
+            [
+                [
+                    "string",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "errors"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "HandleSequenceExpression",
+            [
+                [
+                    "List<Tuple<Type,Color>>",
+                    "toDraw"
+                ],
+                [
+                    "Error",
+                    "errors"
+                ],
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Color",
+                    "color"
+                ],
+                [
+                    "string",
+                    "name"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "table"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "table"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "table"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "errors"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "GenerateRandomPointsOnLine",
+            [
+                [
+                    "Line",
+                    "line"
+                ]
+            ]
+        ],
+        [
+            "GenerateRandomPointsOnSegment",
+            [
+                [
+                    "Segment",
+                    "segment"
+                ]
+            ]
+        ],
+        [
+            "GenerateRandomPointsOnRay",
+            [
+                [
+                    "Ray",
+                    "ray"
+                ]
+            ]
+        ],
+        [
+            "GenerateRandomPointsOnCircle",
+            [
+                [
+                    "Circle",
+                    "circle"
+                ]
+            ]
+        ],
+        [
+            "GenerateRandomPointsOnArc",
+            [
+                [
+                    "Circle",
+                    "circle"
+                ],
+                [
+                    "double",
+                    "startAngle"
+                ],
+                [
+                    "double",
+                    "endAngle"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "SymbolTable",
+                    "symbolTable"
+                ],
+                [
+                    "Error",
+                    "error"
+                ]
+            ]
+        ],
+        [
+            "AddError",
+            [
+                [
+                    "string",
+                    "error"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "System",
+            "openFileDialog"
+        ],
+        [
+            "string",
+            "subfolder"
+        ],
+        [
+            "string",
+            "contenido"
+        ],
+        [
+            "string",
+            "folderPath"
+        ],
+        [
+            "string",
+            "currentDirectory"
+        ],
+        [
+            "MainWindow",
+            "mainWindow"
+        ],
+        [
+            "var",
+            "mainWindow"
+        ],
+        [
+            "var",
+            "psi"
+        ],
+        [
+            "string",
+            "projectDirectory"
+        ],
+        [
+            "var",
+            "parser"
+        ],
+        [
+            "var",
+            "lexer"
+        ],
+        [
+            "var",
+            "intersect"
+        ],
+        [
+            "var",
+            "sequence"
+        ],
+        [
+            "var",
+            "checker"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "var",
+            "points"
+        ],
+        [
+            "List",
+            "toDraw"
+        ],
+        [
+            "var",
+            "randomPoints"
+        ],
+        [
+            "var",
+            "variableFound"
+        ],
+        [
+            "var",
+            "evaluator"
+        ],
+        [
+            "var",
+            "evaluatedIn"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "right"
+        ],
+        [
+            "var",
+            "symbol"
+        ],
+        [
+            "var",
+            "left"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "point1"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "segments"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "var",
+            "point2"
+        ],
+        [
+            "var",
+            "point1"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "lines"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "var",
+            "point2"
+        ],
+        [
+            "var",
+            "point1"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "rays"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "var",
+            "point2"
+        ],
+        [
+            "var",
+            "point"
+        ],
+        [
+            "var",
+            "points"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "var",
+            "currentPath"
+        ],
+        [
+            "var",
+            "fileName"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "measures"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "circle"
+        ],
+        [
+            "var",
+            "point"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "circles"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "count"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "Point",
+            "newPoint"
+        ],
+        [
+            "int",
+            "drawingCanvasWidth"
+        ],
+        [
+            "double",
+            "pointCenterY"
+        ],
+        [
+            "int",
+            "drawingCanvasHeight"
+        ],
+        [
+            "double",
+            "pointCenterX"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "double",
+            "measure"
+        ],
+        [
+            "double",
+            "b"
+        ],
+        [
+            "double",
+            "m"
+        ],
+        [
+            "List",
+            "newNodes"
+        ],
+        [
+            "List",
+            "importNodes"
+        ],
+        [
+            "List",
+            "functionNodes"
+        ],
+        [
+            "List",
+            "otherNodes"
+        ],
+        [
+            "var",
+            "radius"
+        ],
+        [
+            "var",
+            "center"
+        ],
+        [
+            "var",
+            "end"
+        ],
+        [
+            "var",
+            "start"
+        ],
+        [
+            "var",
+            "result"
+        ],
+        [
+            "var",
+            "evaluator"
+        ],
+        [
+            "var",
+            "evaluatedIn"
+        ],
+        [
+            "var",
+            "number"
+        ],
+        [
+            "var",
+            "evaluatedOperand"
+        ],
+        [
+            "var",
+            "operandResult"
+        ],
+        [
+            "var",
+            "p1"
+        ],
+        [
+            "var",
+            "p2"
+        ],
+        [
+            "var",
+            "p1"
+        ],
+        [
+            "var",
+            "p2"
+        ],
+        [
+            "var",
+            "elementEvaluable"
+        ],
+        [
+            "int",
+            "lowerBound"
+        ],
+        [
+            "var",
+            "sequenceElementsEvaluated"
+        ],
+        [
+            "var",
+            "evaluatedElement"
+        ],
+        [
+            "TypeInference",
+            "typeInference"
+        ],
+        [
+            "Sequence",
+            "sequence"
+        ],
+        [
+            "var",
+            "type"
+        ],
+        [
+            "int",
+            "upperBound"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "point"
+        ],
+        [
+            "var",
+            "points"
+        ],
+        [
+            "var",
+            "variable"
+        ],
+        [
+            "var",
+            "function"
+        ],
+        [
+            "Dictionary",
+            "argumentsDefined"
+        ],
+        [
+            "var",
+            "functionDefined"
+        ],
+        [
+            "var",
+            "arg"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "evaluatedArgument"
+        ],
+        [
+            "var",
+            "exp"
+        ],
+        [
+            "var",
+            "f1"
+        ],
+        [
+            "var",
+            "point1"
+        ],
+        [
+            "var",
+            "f2"
+        ],
+        [
+            "var",
+            "point2"
+        ],
+        [
+            "var",
+            "randoms"
+        ],
+        [
+            "var",
+            "random"
+        ],
+        [
+            "var",
+            "end"
+        ],
+        [
+            "var",
+            "start"
+        ],
+        [
+            "Point",
+            "point"
+        ],
+        [
+            "IEnumerable",
+            "points"
+        ],
+        [
+            "double",
+            "startAngle"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "Circle",
+            "circle1"
+        ],
+        [
+            "double",
+            "temp"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "var",
+            "figure"
+        ],
+        [
+            "double",
+            "r"
+        ],
+        [
+            "double",
+            "endAngle"
+        ],
+        [
+            "double",
+            "t"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "var",
+            "sequenceEvaluated"
+        ],
+        [
+            "var",
+            "measure"
+        ],
+        [
+            "var",
+            "center"
+        ],
+        [
+            "var",
+            "end"
+        ],
+        [
+            "var",
+            "start"
+        ],
+        [
+            "var",
+            "sequence"
+        ],
+        [
+            "var",
+            "evaluatedThen"
+        ],
+        [
+            "var",
+            "evaluatedIf"
+        ],
+        [
+            "var",
+            "number"
+        ],
+        [
+            "var",
+            "evaluatedElse"
+        ],
+        [
+            "var",
+            "evaluatedIfResult"
+        ]
+    ],
+    "method_names": [
+        "Draw",
+        "Import",
+        "Commands",
+        "About",
+        "Start",
+        "Button_Click",
+        "HandleLexer",
+        "HandleParse",
+        "HandleEvaluate",
+        "CheckErrors",
+        "HandleSemantic",
+        "HandleMultipleAsignationNode",
+        "EvaluateLetBlock",
+        "HandleLetInAsignationExpression",
+        "HandleDrawNode",
+        "HandleAsignationLet",
+        "HandleAsignationNode",
+        "HandleVariableExpression",
+        "Evaluate",
+        "InferType",
+        "CheckSequenceType",
+        "CreateSequence",
+        "CreateSequence",
+        "CreateSequence",
+        "CreateSequence",
+        "Import",
+        "CreateSequence",
+        "CreateSequence",
+        "CreateSequence",
+        "SetName",
+        "Evaluate",
+        "RestOfElements",
+        "Count",
+        "SetName",
+        "GetElement",
+        "GetPointOnRay",
+        "SetName",
+        "SetName",
+        "SetName",
+        "SetName",
+        "SetName",
+        "SetX",
+        "AsignY",
+        "SetY",
+        "AsignX",
+        "SetName",
+        "GetMeasure",
+        "Slope",
+        "ReorderNodes",
+        "OrderByType",
+        "SlopeAndEquation",
+        "SetErrors",
+        "SetError",
+        "Peek",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "HandleSequenceExpression",
+        "Evaluate",
+        "CreatePoints",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "CreateRandoms",
+        "Evaluate",
+        "Evaluate",
+        "GenerateRandomPointsOnLine",
+        "GenerateRandomPointsOnSegment",
+        "GenerateRandomPointsOnCircle",
+        "GenerateRandomPointsOnArc",
+        "GenerateRandomPointsOnRay",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "Evaluate",
+        "AddError"
+    ],
+    "method_return_types": [
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "About",
+            "void"
+        ],
+        [
+            "Start",
+            "void"
+        ],
+        [
+            "Import",
+            "void"
+        ],
+        [
+            "Commands",
+            "void"
+        ],
+        [
+            "Button_Click",
+            "void"
+        ],
+        [
+            "HandleSemantic",
+            "void"
+        ],
+        [
+            "HandleParse",
+            "void"
+        ],
+        [
+            "HandleLexer",
+            "void"
+        ],
+        [
+            "HandleEvaluate",
+            "void"
+        ],
+        [
+            "CheckErrors",
+            "bool"
+        ],
+        [
+            "HandleDrawNode",
+            "void"
+        ],
+        [
+            "Evaluate",
+            "List"
+        ],
+        [
+            "HandleAsignationLet",
+            "Type"
+        ],
+        [
+            "HandleLetInAsignationExpression",
+            "void"
+        ],
+        [
+            "HandleMultipleAsignationNode",
+            "void"
+        ],
+        [
+            "HandleVariableExpression",
+            "void"
+        ],
+        [
+            "EvaluateLetBlock",
+            "void"
+        ],
+        [
+            "HandleAsignationNode",
+            "void"
+        ],
+        [
+            "CheckSequenceType",
+            "TypeInfered"
+        ],
+        [
+            "InferType",
+            "TypeInfered"
+        ],
+        [
+            "CreateSequence",
+            "Sequence"
+        ],
+        [
+            "CreateSequence",
+            "Sequence"
+        ],
+        [
+            "CreateSequence",
+            "Sequence"
+        ],
+        [
+            "CreateSequence",
+            "Sequence"
+        ],
+        [
+            "Import",
+            "SymbolTable"
+        ],
+        [
+            "CreateSequence",
+            "Sequence"
+        ],
+        [
+            "CreateSequence",
+            "Sequence"
+        ],
+        [
+            "CreateSequence",
+            "Sequence"
+        ],
+        [
+            "SetName",
+            "void"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "GetElement",
+            "Type"
+        ],
+        [
+            "Count",
+            "int"
+        ],
+        [
+            "SetName",
+            "void"
+        ],
+        [
+            "RestOfElements",
+            "IEnumerable"
+        ],
+        [
+            "GetPointOnRay",
+            "Point"
+        ],
+        [
+            "SetName",
+            "void"
+        ],
+        [
+            "SetName",
+            "void"
+        ],
+        [
+            "SetName",
+            "void"
+        ],
+        [
+            "SetName",
+            "void"
+        ],
+        [
+            "SetX",
+            "double"
+        ],
+        [
+            "SetName",
+            "void"
+        ],
+        [
+            "AsignY",
+            "void"
+        ],
+        [
+            "SetY",
+            "double"
+        ],
+        [
+            "AsignX",
+            "void"
+        ],
+        [
+            "SetName",
+            "void"
+        ],
+        [
+            "GetMeasure",
+            "double"
+        ],
+        [
+            "OrderByType",
+            "("
+        ],
+        [
+            "Slope",
+            "double"
+        ],
+        [
+            "SlopeAndEquation",
+            "("
+        ],
+        [
+            "ReorderNodes",
+            "List"
+        ],
+        [
+            "SetErrors",
+            "void"
+        ],
+        [
+            "Peek",
+            "char"
+        ],
+        [
+            "SetError",
+            "void"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "HandleSequenceExpression",
+            "void"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "CreatePoints",
+            "IEnumerable"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "CreateRandoms",
+            "IEnumerable"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "GenerateRandomPointsOnCircle",
+            "IEnumerable"
+        ],
+        [
+            "GenerateRandomPointsOnRay",
+            "IEnumerable"
+        ],
+        [
+            "GenerateRandomPointsOnArc",
+            "IEnumerable"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "GenerateRandomPointsOnLine",
+            "IEnumerable"
+        ],
+        [
+            "GenerateRandomPointsOnSegment",
+            "IEnumerable"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "Evaluate",
+            "Type"
+        ],
+        [
+            "AddError",
+            "void"
+        ]
+    ],
+    "class_names": [
+        "Window1",
+        "App",
+        "Handler",
+        "Evaluator",
+        "SemanticChecker",
+        "SymbolTable",
+        "TypeInference",
+        "SegmentStatement",
+        "LineStatement",
+        "RayStatement",
+        "Draw",
+        "PointStatement",
+        "ErrorStatement",
+        "ImportStatement",
+        "MeasureStatement",
+        "AsignationStatement",
+        "MultipleAsignationStatement",
+        "CircleStatement",
+        "FunctionDeclaration",
+        "Sequence",
+        "Arc",
+        "Type",
+        "Ray",
+        "Intersect",
+        "Function",
+        "Undefined",
+        "ErrorType",
+        "NumberLiteral",
+        "Constant",
+        "Line",
+        "Circle",
+        "StringLiteral",
+        "Point",
+        "Segment",
+        "Measure",
+        "Error",
+        "Utils",
+        "AST",
+        "Parser",
+        "Token",
+        "Lexer",
+        "CircleExpression",
+        "SegmentExpression",
+        "LetInExpression",
+        "UnaryExpression",
+        "MeasureExpression",
+        "LineExpression",
+        "SequenceExpression",
+        "Samples",
+        "VariableExpression",
+        "NumberExpression",
+        "FunctionCallExpression",
+        "StringExpression",
+        "ParenExpression",
+        "IntersectExpression",
+        "Randoms",
+        "RayExpression",
+        "RandomPointsInFigure",
+        "UndefinedExpression",
+        "ErrorExpression",
+        "Count",
+        "ArcExpression",
+        "IfExpression",
+        "Expression",
+        "Node",
+        "EmptyNode",
+        "Statement"
+    ],
+    "interface_names": [
+        "IDrawable",
+        "IFigureStatement",
+        "IDraw",
+        "IEvaluable"
+    ],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 75,
+        "Using_directivesContext": 15,
+        "UsingNamespaceDirectiveContext": 53,
+        "TerminalNodeImpl": 15179,
+        "Namespace_or_type_nameContext": 1317,
+        "IdentifierContext": 5237,
+        "Global_attribute_sectionContext": 1,
+        "Global_attribute_targetContext": 1,
+        "Attribute_listContext": 5,
+        "AttributeContext": 5,
+        "Attribute_argumentContext": 2,
+        "ExpressionContext": 2100,
+        "Non_assignment_expressionContext": 1877,
+        "Conditional_expressionContext": 1856,
+        "Null_coalescing_expressionContext": 1858,
+        "Conditional_or_expressionContext": 1858,
+        "Conditional_and_expressionContext": 1876,
+        "Inclusive_or_expressionContext": 1946,
+        "Exclusive_or_expressionContext": 1946,
+        "And_expressionContext": 1946,
+        "Equality_expressionContext": 1946,
+        "Relational_expressionContext": 2101,
+        "Shift_expressionContext": 2126,
+        "Additive_expressionContext": 2126,
+        "Multiplicative_expressionContext": 2177,
+        "Switch_expressionContext": 2199,
+        "Range_expressionContext": 2199,
+        "Unary_expressionContext": 2412,
+        "Primary_expressionContext": 2350,
+        "SimpleNameExpressionContext": 1946,
+        "Member_accessContext": 1014,
+        "ErrorNodeImpl": 13965,
+        "Namespace_member_declarationsContext": 130,
+        "Namespace_member_declarationContext": 410,
+        "Namespace_declarationContext": 71,
+        "Qualified_identifierContext": 71,
+        "Namespace_bodyContext": 59,
+        "Type_declarationContext": 339,
+        "All_member_modifiersContext": 734,
+        "All_member_modifierContext": 812,
+        "Interface_definitionContext": 4,
+        "Class_bodyContext": 71,
+        "Class_member_declarationsContext": 70,
+        "Class_member_declarationContext": 488,
+        "Common_member_declarationContext": 488,
+        "Method_declarationContext": 85,
+        "Method_member_nameContext": 85,
+        "Method_bodyContext": 84,
+        "Class_definitionContext": 67,
+        "Class_baseContext": 54,
+        "Class_typeContext": 1037,
+        "Constructor_declarationContext": 53,
+        "BodyContext": 53,
+        "BlockContext": 247,
+        "Statement_listContext": 323,
+        "StatementContext": 913,
+        "Embedded_statementContext": 704,
+        "ExpressionStatementContext": 403,
+        "Method_invocationContext": 349,
+        "AssignmentContext": 151,
+        "ThisReferenceExpressionContext": 8,
+        "Assignment_operatorContext": 151,
+        "Formal_parameter_listContext": 115,
+        "Fixed_parametersContext": 115,
+        "Fixed_parameterContext": 216,
+        "Arg_declarationContext": 216,
+        "Type_Context": 1103,
+        "Base_typeContext": 1143,
+        "DeclarationStatementContext": 168,
+        "Local_variable_declarationContext": 183,
+        "Local_variable_typeContext": 191,
+        "Local_variable_declaratorContext": 183,
+        "Local_variable_initializerContext": 181,
+        "ObjectCreationExpressionContext": 165,
+        "Object_creation_expressionContext": 164,
+        "Argument_listContext": 373,
+        "ArgumentContext": 650,
+        "LiteralExpressionContext": 183,
+        "LiteralContext": 183,
+        "String_literalContext": 36,
+        "IfStatementContext": 120,
+        "If_bodyContext": 167,
+        "Object_or_collection_initializerContext": 3,
+        "Object_initializerContext": 1,
+        "Member_initializer_listContext": 1,
+        "Member_initializerContext": 2,
+        "Initializer_valueContext": 2,
+        "Boolean_literalContext": 15,
+        "Typed_member_declarationContext": 377,
+        "Field_declarationContext": 29,
+        "Variable_declaratorsContext": 29,
+        "Variable_declaratorContext": 29,
+        "Type_argument_listContext": 126,
+        "ReturnStatementContext": 123,
+        "Simple_typeContext": 144,
+        "Property_declarationContext": 274,
+        "Member_nameContext": 274,
+        "Right_arrowContext": 199,
+        "Throwable_expressionContext": 192,
+        "Accessor_declarationsContext": 113,
+        "Accessor_bodyContext": 206,
+        "Set_accessor_declarationContext": 93,
+        "ForeachStatementContext": 8,
+        "SwitchStatementContext": 7,
+        "Switch_sectionContext": 76,
+        "Switch_labelContext": 84,
+        "BreakStatementContext": 59,
+        "IsTypeContext": 40,
+        "ForStatementContext": 17,
+        "For_initializerContext": 17,
+        "Numeric_typeContext": 124,
+        "Integral_typeContext": 76,
+        "For_iteratorContext": 17,
+        "Bracket_expressionContext": 43,
+        "Indexer_argumentContext": 43,
+        "ContinueStatementContext": 6,
+        "ParenthesisExpressionsContext": 40,
+        "Cast_expressionContext": 59,
+        "Switch_expression_armsContext": 2,
+        "Switch_expression_armContext": 26,
+        "Lambda_expressionContext": 21,
+        "Anonymous_function_signatureContext": 21,
+        "Anonymous_function_bodyContext": 21,
+        "Variable_initializerContext": 11,
+        "Tuple_typeContext": 11,
+        "Tuple_elementContext": 14,
+        "AttributesContext": 25,
+        "Attribute_sectionContext": 40,
+        "Enum_definitionContext": 3,
+        "Enum_bodyContext": 3,
+        "Enum_member_declarationContext": 89,
+        "YieldStatementContext": 8,
+        "Floating_point_typeContext": 48,
+        "Type_parameter_listContext": 1,
+        "Type_parameterContext": 2,
+        "Type_parameter_constraints_clausesContext": 1,
+        "Type_parameter_constraints_clauseContext": 2,
+        "Type_parameter_constraintsContext": 2,
+        "Primary_constraintContext": 2,
+        "TupleExpressionContext": 3,
+        "Labeled_StatementContext": 13,
+        "MemberAccessExpressionContext": 5,
+        "Predefined_typeContext": 5,
+        "WhileStatementContext": 7,
+        "Interpolated_regular_stringContext": 5,
+        "Interpolated_regular_string_partContext": 5,
+        "TryStatementContext": 1,
+        "Catch_clausesContext": 1,
+        "Specific_catch_clauseContext": 1,
+        "Collection_initializerContext": 2,
+        "Element_initializerContext": 2,
+        "UsingStaticDirectiveContext": 1
+    },
+    "project_name": "vladydev3_GeoWall-E",
+    "label": "original",
+    "project_type": "wallE"
+}

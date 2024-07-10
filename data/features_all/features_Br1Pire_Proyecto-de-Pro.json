@@ -275,36 +275,16 @@
             "aux"
         ],
         [
-            "Token",
-            "returner"
-        ],
-        [
             "int",
             "index"
-        ],
-        [
-            "Random",
-            "y"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "indexToRemove"
-        ],
-        [
-            "Random",
-            "x"
         ],
         [
             "int",
             "j"
         ],
         [
-            "List",
-            "aux"
+            "int",
+            "i"
         ],
         [
             "Token",
@@ -312,23 +292,27 @@
         ],
         [
             "int",
-            "stateSelector"
+            "indexToRemove"
         ],
         [
-            "int",
-            "endGame"
+            "Token",
+            "returner"
+        ],
+        [
+            "List",
+            "aux"
+        ],
+        [
+            "Random",
+            "y"
+        ],
+        [
+            "Random",
+            "x"
         ],
         [
             "int",
             "i"
-        ],
-        [
-            "string",
-            "handBeforePlay"
-        ],
-        [
-            "string",
-            "ret"
         ],
         [
             "ConsoleKeyInfo",
@@ -336,7 +320,31 @@
         ],
         [
             "int",
+            "endGame"
+        ],
+        [
+            "string",
+            "ret"
+        ],
+        [
+            "string",
+            "handBeforePlay"
+        ],
+        [
+            "int",
+            "stateSelector"
+        ],
+        [
+            "int",
             "index"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "Selector",
@@ -344,15 +352,15 @@
         ],
         [
             "int",
-            "maxAmountTokens"
-        ],
-        [
-            "Random",
-            "y"
+            "sum"
         ],
         [
             "int",
-            "i"
+            "maxAmountTokens"
+        ],
+        [
+            "int",
+            "amount"
         ],
         [
             "string",
@@ -364,30 +372,6 @@
         ],
         [
             "int",
-            "sum"
-        ],
-        [
-            "int",
-            "amount"
-        ],
-        [
-            "Random",
-            "x"
-        ],
-        [
-            "string",
-            "ret"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
-            "ret"
-        ],
-        [
-            "int",
             "count"
         ],
         [
@@ -396,31 +380,23 @@
         ],
         [
             "string",
-            "retMessage"
+            "ret"
         ],
         [
-            "int",
-            "amountOfPlayers"
-        ],
-        [
-            "string",
+            "Random",
             "y"
         ],
         [
-            "int",
-            "selectorValue"
+            "List",
+            "ret"
         ],
         [
-            "bool",
-            "final"
-        ],
-        [
-            "VisualInterface",
+            "Random",
             "x"
         ],
         [
             "int",
-            "selectroValue"
+            "amountOfPlayers"
         ],
         [
             "string",
@@ -431,8 +407,32 @@
             "z"
         ],
         [
+            "bool",
+            "final"
+        ],
+        [
+            "int",
+            "selectroValue"
+        ],
+        [
             "string",
             "messagee"
+        ],
+        [
+            "string",
+            "retMessage"
+        ],
+        [
+            "int",
+            "selectorValue"
+        ],
+        [
+            "VisualInterface",
+            "x"
+        ],
+        [
+            "string",
+            "y"
         ],
         [
             "int",
@@ -440,49 +440,41 @@
         ]
     ],
     "method_names": [
-        "Rotate",
-        "Higher",
         "ToString",
-        "Contains",
         "Lower",
+        "Higher",
+        "Contains",
+        "Rotate",
         "Play",
-        "TurnsPassed",
         "SortHand",
         "AssignToken",
+        "TurnsPassed",
         "PrintHand",
-        "TableStatus",
         "Run",
+        "TableStatus",
         "FancySelector",
-        "GenerateTokens",
-        "CreateStates",
+        "GetTurnOrder",
         "DistributeTokens",
         "CheckIfTheGameIsOver",
-        "GetTurnOrder",
-        "RunVisual",
-        "Main",
-        "SelectGameEnder",
+        "CreateStates",
+        "GenerateTokens",
         "InicializeGame",
-        "SelectPlayers",
-        "SelectTokenDistributor",
-        "SelectTokenGenerator",
         "PrintMessage",
-        "SelectTurnSelector"
+        "SelectGameEnder",
+        "RunVisual",
+        "SelectTokenDistributor",
+        "Main",
+        "SelectPlayers",
+        "SelectTurnSelector",
+        "SelectTokenGenerator"
     ],
     "method_return_types": [
-        [
-            "Higher",
-            "int"
-        ],
-        [
-            "Contains",
-            "bool"
-        ],
         [
             "ToString",
             "string"
         ],
         [
-            "Lower",
+            "Higher",
             "int"
         ],
         [
@@ -490,12 +482,12 @@
             "void"
         ],
         [
-            "AssignToken",
-            "void"
+            "Lower",
+            "int"
         ],
         [
-            "SortHand",
-            "void"
+            "Contains",
+            "bool"
         ],
         [
             "TurnsPassed",
@@ -506,28 +498,28 @@
             "Token"
         ],
         [
-            "TableStatus",
-            "string"
+            "SortHand",
+            "void"
         ],
         [
-            "PrintHand",
-            "string"
-        ],
-        [
-            "Run",
-            "string"
+            "AssignToken",
+            "void"
         ],
         [
             "FancySelector",
             "int"
         ],
         [
-            "DistributeTokens",
-            "void"
+            "PrintHand",
+            "string"
         ],
         [
-            "CheckIfTheGameIsOver",
-            "int"
+            "TableStatus",
+            "string"
+        ],
+        [
+            "Run",
+            "string"
         ],
         [
             "GenerateTokens",
@@ -542,15 +534,15 @@
             "string"
         ],
         [
-            "InicializeGame",
+            "DistributeTokens",
             "void"
+        ],
+        [
+            "CheckIfTheGameIsOver",
+            "int"
         ],
         [
             "SelectGameEnder",
-            "void"
-        ],
-        [
-            "SelectTokenGenerator",
             "void"
         ],
         [
@@ -558,11 +550,15 @@
             "void"
         ],
         [
-            "Main",
+            "SelectTokenDistributor",
             "void"
         ],
         [
-            "SelectTokenDistributor",
+            "PrintMessage",
+            "string"
+        ],
+        [
+            "Main",
             "void"
         ],
         [
@@ -574,39 +570,43 @@
             "void"
         ],
         [
-            "PrintMessage",
-            "string"
+            "SelectTokenGenerator",
+            "void"
+        ],
+        [
+            "InicializeGame",
+            "void"
         ]
     ],
     "class_names": [
-        "Token",
-        "InToken",
         "Animal",
         "AnimalToken",
+        "InToken",
+        "Token",
         "LowScoreDropperPlayer",
         "HighScoreDropperPlayer",
         "RandomPlayer",
         "Selector",
         "Game",
-        "ExpelEnd",
-        "RadomTokenDistributor",
-        "DoubleSixInToken",
         "GetAllPLayersRandom",
-        "DoubleNineAnimalToken",
-        "DoubleNineInToken",
-        "DoubleSixAnimalToken",
+        "GetRandomFirstPlayer",
         "SelectedTokenDistributor",
         "CommonEnd",
-        "GetRandomFirstPlayer",
+        "DoubleNineAnimalToken",
+        "DoubleNineInToken",
+        "ExpelEnd",
+        "DoubleSixAnimalToken",
+        "RadomTokenDistributor",
+        "DoubleSixInToken",
         "Class1",
-        "Printer",
-        "VisualInterface"
+        "VisualInterface",
+        "Printer"
     ],
     "interface_names": [
         "IPlayer",
-        "GameEnder",
         "TurnOrderSelector",
         "TokenAmountGenerator",
+        "GameEnder",
         "TokensDistributor"
     ],
     "delegate_names": [],

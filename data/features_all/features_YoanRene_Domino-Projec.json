@@ -515,20 +515,24 @@
             "temp"
         ],
         [
-            "List",
-            "total"
+            "int",
+            "j"
         ],
         [
             "int",
             "i"
         ],
         [
+            "List",
+            "total"
+        ],
+        [
             "double",
             "score"
         ],
         [
-            "List",
-            "tokensToSub"
+            "HashSet",
+            "okPlayed"
         ],
         [
             "List",
@@ -536,19 +540,15 @@
         ],
         [
             "List",
-            "tokensToAdd"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "List",
             "smartTokens"
         ],
         [
-            "HashSet",
-            "okPlayed"
+            "List",
+            "tokensToSub"
+        ],
+        [
+            "List",
+            "tokensToAdd"
         ],
         [
             "List",
@@ -557,10 +557,6 @@
         [
             "int",
             "countPass"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "List",
@@ -579,36 +575,48 @@
             "smartValues"
         ],
         [
-            "BotagordaStrategy",
-            "botagordaStrategy"
-        ],
-        [
-            "Dictionary",
-            "statsAux"
+            "int",
+            "piecesNotGame"
         ],
         [
             "int",
-            "piecesNotGame"
+            "i"
         ],
         [
             "double",
             "probabilities"
         ],
         [
+            "IStrategy",
+            "strategy"
+        ],
+        [
             "List",
             "valuesToPlay"
+        ],
+        [
+            "BotagordaStrategy",
+            "botagordaStrategy"
         ],
         [
             "List",
             "values"
         ],
         [
-            "IStrategy",
-            "strategy"
+            "List",
+            "intelligentplays"
         ],
         [
             "double",
             "min"
+        ],
+        [
+            "Dictionary",
+            "statsAux"
+        ],
+        [
+            "List",
+            "smartTokens"
         ],
         [
             "Dictionary",
@@ -619,32 +627,24 @@
             "indexAux"
         ],
         [
-            "List",
-            "smartTokens"
-        ],
-        [
-            "List",
-            "intelligentplays"
-        ],
-        [
-            "List",
-            "doubleTokens"
+            "int",
+            "j"
         ],
         [
             "int",
             "i"
         ],
         [
-            "ClassicDistributionTen",
-            "classicDistribution"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
             "Token",
             "token"
+        ],
+        [
+            "List",
+            "doubleTokens"
+        ],
+        [
+            "ClassicDistributionTen",
+            "classicDistribution"
         ],
         [
             "int",
@@ -655,108 +655,96 @@
             "stats"
         ],
         [
-            "int",
-            "i"
+            "string",
+            "key"
         ],
         [
-            "bool",
-            "isOkKey"
+            "int",
+            "i"
         ],
         [
             "IForm",
             "mainForm"
         ],
         [
-            "string",
-            "key"
-        ],
-        [
-            "PlayerForm",
-            "playerForm"
-        ],
-        [
             "ItemToSelectForm",
             "itemToSelectForm"
-        ],
-        [
-            "GameForm",
-            "gameForm"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "ItemToSelectForm",
-            "distributionForm"
-        ],
-        [
-            "string",
-            "key"
-        ],
-        [
-            "List",
-            "printeablesToPlay"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "MainForm",
-            "mainForm"
-        ],
-        [
-            "ConsoleKeyInfo",
-            "key"
-        ],
-        [
-            "GameForm",
-            "gameForm"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "bool",
             "isOkKey"
         ],
         [
-            "List",
-            "players"
-        ],
-        [
-            "string",
-            "key"
-        ],
-        [
-            "bool",
-            "arePlaying"
+            "PlayerForm",
+            "playerForm"
         ],
         [
             "int",
             "i"
         ],
         [
+            "string",
+            "key"
+        ],
+        [
+            "GameForm",
+            "gameForm"
+        ],
+        [
+            "ItemToSelectForm",
+            "distributionForm"
+        ],
+        [
+            "List",
+            "printeablesToPlay"
+        ],
+        [
+            "ConsoleKeyInfo",
+            "key"
+        ],
+        [
             "MainForm",
             "mainForm"
         ],
         [
-            "bool",
-            "strategyIsSelected"
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "string",
             "key"
         ],
         [
-            "IStrategy",
-            "strategy"
+            "List",
+            "players"
+        ],
+        [
+            "GameForm",
+            "gameForm"
+        ],
+        [
+            "bool",
+            "isOkKey"
+        ],
+        [
+            "bool",
+            "strategyIsSelected"
         ],
         [
             "int",
             "j"
+        ],
+        [
+            "string",
+            "key"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "LogForm",
@@ -765,53 +753,65 @@
         [
             "MainForm",
             "mainForm"
+        ],
+        [
+            "bool",
+            "arePlaying"
+        ],
+        [
+            "IStrategy",
+            "strategy"
+        ],
+        [
+            "MainForm",
+            "mainForm"
         ]
     ],
     "method_names": [
-        "IndexNextPlayer",
-        "TokensToAddThatItIsOk",
-        "TokenToPlay",
         "ToDistribute",
+        "ToCalculateScore",
+        "TokensToSubThatItIsNotOk",
+        "Print",
+        "TokensToAddThatItIsOk",
+        "IndexFirstPlayer",
+        "IsEndGame",
+        "Stats",
+        "TokenToPlay",
         "IsEndRound",
         "Generated",
-        "IsEndGame",
-        "ToCalculateScore",
-        "IndexFirstPlayer",
-        "Print",
-        "Stats",
-        "TokensToSubThatItIsNotOk",
         "IndexNextPlayer",
         "Print",
-        "ToTurn",
+        "IndexNextPlayer",
         "ToString",
+        "ToTurn",
         "Equals",
-        "BasicTokensGenerator",
-        "ScoreCalculate",
-        "WinnerTokens",
         "ValidTokensToPlay",
+        "ScoreCalculate",
         "ValuesToPlay",
+        "WinnerTokens",
+        "BasicTokensGenerator",
+        "Print",
         "TokensToAddThatItIsOk",
-        "Print",
         "TokensToSubThatItIsNotOk",
-        "Print",
         "IsEndGame",
-        "IsEndRound",
         "Print",
+        "IsEndRound",
         "TokenToPlay",
+        "Print",
         "Clone",
-        "ToDistributeRandomForOne",
         "ToDistribute",
         "Print",
-        "Stats",
+        "ToDistributeRandomForOne",
         "Print",
+        "Stats",
         "Generated",
         "Print",
         "IndexFirstPlayer",
         "Print",
         "ToCalculateScore",
-        "Show",
         "Show",
         "KeyIncorrect",
+        "Show",
         "Show",
         "Show",
         "CreationOfPlayers",
@@ -821,12 +821,36 @@
     ],
     "method_return_types": [
         [
+            "IsEndGame",
+            "("
+        ],
+        [
             "ToDistribute",
             "void"
         ],
         [
-            "IsEndGame",
-            "("
+            "IndexNextPlayer",
+            "int"
+        ],
+        [
+            "ToCalculateScore",
+            "void"
+        ],
+        [
+            "IndexFirstPlayer",
+            "int"
+        ],
+        [
+            "TokensToSubThatItIsNotOk",
+            "List"
+        ],
+        [
+            "Print",
+            "string"
+        ],
+        [
+            "Stats",
+            "Dictionary"
         ],
         [
             "TokenToPlay",
@@ -837,36 +861,12 @@
             "List"
         ],
         [
-            "Print",
-            "string"
-        ],
-        [
-            "TokensToSubThatItIsNotOk",
-            "List"
-        ],
-        [
-            "ToCalculateScore",
-            "void"
-        ],
-        [
-            "IndexNextPlayer",
-            "int"
-        ],
-        [
             "IsEndRound",
             "("
         ],
         [
-            "Stats",
-            "Dictionary"
-        ],
-        [
             "Generated",
             "List"
-        ],
-        [
-            "IndexFirstPlayer",
-            "int"
         ],
         [
             "Print",
@@ -881,12 +881,24 @@
             "void"
         ],
         [
+            "ToString",
+            "string"
+        ],
+        [
             "Equals",
             "bool"
         ],
         [
-            "ToString",
-            "string"
+            "BasicTokensGenerator",
+            "List"
+        ],
+        [
+            "ValidTokensToPlay",
+            "List"
+        ],
+        [
+            "ScoreCalculate",
+            "void"
         ],
         [
             "ValuesToPlay",
@@ -897,27 +909,15 @@
             "List"
         ],
         [
-            "ScoreCalculate",
-            "void"
-        ],
-        [
-            "ValidTokensToPlay",
-            "List"
-        ],
-        [
-            "BasicTokensGenerator",
-            "List"
-        ],
-        [
             "Print",
             "string"
         ],
         [
-            "TokensToSubThatItIsNotOk",
+            "TokensToAddThatItIsOk",
             "List"
         ],
         [
-            "TokensToAddThatItIsOk",
+            "TokensToSubThatItIsNotOk",
             "List"
         ],
         [
@@ -933,16 +933,16 @@
             "("
         ],
         [
-            "Clone",
-            "Dictionary"
-        ],
-        [
             "Print",
             "string"
         ],
         [
             "TokenToPlay",
             "Token"
+        ],
+        [
+            "Clone",
+            "Dictionary"
         ],
         [
             "Print",
@@ -961,12 +961,12 @@
             "List"
         ],
         [
-            "Stats",
-            "Dictionary"
-        ],
-        [
             "Print",
             "string"
+        ],
+        [
+            "Stats",
+            "Dictionary"
         ],
         [
             "Print",
@@ -989,11 +989,11 @@
             "void"
         ],
         [
-            "Show",
+            "KeyIncorrect",
             "void"
         ],
         [
-            "KeyIncorrect",
+            "Show",
             "void"
         ],
         [
@@ -1022,23 +1022,23 @@
         ]
     ],
     "class_names": [
-        "ChangeDirectionWithPassStep",
         "ClassicStep",
+        "ChangeDirectionWithPassStep",
         "Token",
         "Auxiliar",
-        "ClassicActionToAdd",
-        "DoubleWhiteActionToAdd",
         "ClassicActionToSub",
-        "TwicePassesEndGame",
-        "ClassicEndRound",
+        "DoubleWhiteActionToAdd",
+        "ClassicActionToAdd",
         "ChickenEndGame",
         "ClassicEndGame",
+        "ClassicEndRound",
+        "TwicePassesEndGame",
         "Table",
-        "RandomStrategy",
-        "IntelligentRandomStrategy",
-        "BotagordaStrategy",
         "IntelligentStrategy",
+        "BotagordaStrategy",
+        "IntelligentRandomStrategy",
         "IntelligentBotagordaStrategy",
+        "RandomStrategy",
         "ObjectWithRandom",
         "ClassicDistributionTen",
         "DoublesToTrashDistribution",
@@ -1046,8 +1046,8 @@
         "Generator_6_Variant",
         "Game",
         "FirstPlayerA",
-        "ScoreCalculatorA",
         "ScoreCalculatorB",
+        "ScoreCalculatorA",
         "ItemToSelectForm",
         "MainForm",
         "LogForm",
@@ -1056,17 +1056,17 @@
         "Program"
     ],
     "interface_names": [
-        "IEndRound",
-        "IDistribution",
-        "IFirstPlayer",
         "IStrategy",
+        "IEndGame",
+        "IPrinteable",
+        "IFirstPlayer",
+        "IEndRound",
         "ITokensGenerator",
+        "IActionModeratorToSub",
+        "IScoreCalculator",
+        "IDistribution",
         "IActionModeratorToAdd",
         "IStep",
-        "IActionModeratorToSub",
-        "IPrinteable",
-        "IScoreCalculator",
-        "IEndGame",
         "IForm"
     ],
     "delegate_names": [],

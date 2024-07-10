@@ -1,0 +1,1690 @@
+{
+    "total_nodes": 62092,
+    "max_depth": 2365,
+    "number_of_variables": 111,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 0,
+    "number_of_methods": 93,
+    "number_of_classes": 90,
+    "number_of_interfaces": 5,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 26,
+    "number_of_try_blocks": 1,
+    "number_of_lists": 9,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 5,
+    "number_of_delegates": 0,
+    "function_calls": 28,
+    "enums_names": [
+        "TypeSequence",
+        "TokenType",
+        "ExpressionType",
+        "Color",
+        "SyntaxErrorType"
+    ],
+    "control_structures_if": 104,
+    "control_structures_switch": 0,
+    "control_structures_for": 3,
+    "control_structures_while": 0,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 558,
+    "access_modifiers_private": 118,
+    "access_modifiers_protected": 5,
+    "access_modifiers_internal": 0,
+    "access_modifiers_static": 35,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 1,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 100,
+    "modifier_new": 166,
+    "modifier_partial": 4,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 7,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 17,
+    "number_of_lambdas": 7,
+    "number_of_getters": 97,
+    "number_of_setters": 16,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 43,
+    "method_parameters": [
+        [
+            "Draw",
+            [
+                [
+                    "ICanvas",
+                    "canvas"
+                ],
+                [
+                    "RectF",
+                    "dirtyRect"
+                ]
+            ]
+        ],
+        [
+            "Draw",
+            [
+                [
+                    "ICanvas",
+                    "canvas"
+                ],
+                [
+                    "RectF",
+                    "dirtyRect"
+                ]
+            ]
+        ],
+        [
+            "Draw",
+            [
+                [
+                    "ICanvas",
+                    "canvas"
+                ],
+                [
+                    "RectF",
+                    "dirtyRect"
+                ]
+            ]
+        ],
+        [
+            "GetAngle",
+            [
+                [
+                    "Interpreter.Point",
+                    "p1"
+                ],
+                [
+                    "Interpreter.Point",
+                    "p2"
+                ]
+            ]
+        ],
+        [
+            "Draw",
+            [
+                [
+                    "ICanvas",
+                    "canvas"
+                ],
+                [
+                    "RectF",
+                    "dirtyRect"
+                ]
+            ]
+        ],
+        [
+            "Draw",
+            [
+                [
+                    "ICanvas",
+                    "canvas"
+                ],
+                [
+                    "RectF",
+                    "dirtyRect"
+                ]
+            ]
+        ],
+        [
+            "Draw",
+            [
+                [
+                    "ICanvas",
+                    "canvas"
+                ],
+                [
+                    "RectF",
+                    "dirtyRect"
+                ]
+            ]
+        ],
+        [
+            "Draw",
+            [
+                [
+                    "ICanvas",
+                    "canvas"
+                ],
+                [
+                    "RectF",
+                    "dirtyRect"
+                ]
+            ]
+        ],
+        [
+            "Main",
+            [
+                [
+                    "string[]",
+                    "args"
+                ]
+            ]
+        ],
+        [
+            "Main",
+            [
+                [
+                    "string[]",
+                    "args"
+                ]
+            ]
+        ],
+        [
+            "Main",
+            [
+                [
+                    "string[]",
+                    "args"
+                ]
+            ]
+        ],
+        [
+            "Accept",
+            [
+                [
+                    "IVisitor",
+                    "visitor"
+                ]
+            ]
+        ],
+        [
+            "Accept",
+            [
+                [
+                    "IVisitor",
+                    "visitor"
+                ]
+            ]
+        ],
+        [
+            "Accept",
+            [
+                [
+                    "IVisitor",
+                    "visitor"
+                ]
+            ]
+        ],
+        [
+            "Accept",
+            [
+                [
+                    "IVisitor",
+                    "visitor"
+                ]
+            ]
+        ],
+        [
+            "RunInterpreter",
+            [
+                [
+                    "string",
+                    "input"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Atom",
+                    "expr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.ID",
+                    "idExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Let_In",
+                    "letInExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Conditional",
+                    "conditionalExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.FunctionCall",
+                    "functionCallExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Atom",
+                    "expr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.ID",
+                    "idExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Let_In",
+                    "letInExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Conditional",
+                    "conditionalExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.FunctionCall",
+                    "functionCallExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.FunctionDeclaration",
+                    "functionDeclaration"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.VariableDeclaration",
+                    "variableDeclaration"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.RandomPoint",
+                    "point"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.PointDeclaration",
+                    "point"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.RandomLine",
+                    "line"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.LineDeclaration",
+                    "line"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.RandomCircle",
+                    "circle"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.CircleDeclaration",
+                    "circle"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.ArcDeclaration",
+                    "arc"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.Restore",
+                    "restore"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.SetColor",
+                    "setColor"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.MeasureExpression",
+                    "measure"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.Draw",
+                    "draw"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Atom.Undefined",
+                    "undefined"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "ValuesSecquence",
+                    "valuesSecquence"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "InfinitySequence",
+                    "infinitySequence"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "RangeSequence",
+                    "rangeSequence"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.VariableSequenceDeclaration",
+                    "variableSequenceDeclaration"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Addition",
+                    "addition"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Subtraction",
+                    "subtraction"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Multiplication",
+                    "multiplication"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Division",
+                    "division"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Module",
+                    "module"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Power",
+                    "power"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "LogicAND",
+                    "logicAND"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "LogicOR",
+                    "logicOR"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Equality",
+                    "equality"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "NotEquality",
+                    "notEquality"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "ComparisonGREATER",
+                    "comparisonGREATER"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "ComparisonLESS",
+                    "comparisonLESS"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "ComparisonGREATER_EQUAL",
+                    "comparisonGREATER_EQUAL"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "ComparisonLESS_EQUAL",
+                    "comparisonLESS_EQUAL"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Negation",
+                    "negation"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Negative",
+                    "negative"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Atom",
+                    "expr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.ID",
+                    "idExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Let_In",
+                    "letInExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.Conditional",
+                    "conditionalExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "Expression.FunctionCall",
+                    "functionCallExpr"
+                ]
+            ]
+        ],
+        [
+            "Visit",
+            [
+                [
+                    "StatementExpression.FunctionDeclaration",
+                    "functionDeclaration"
+                ]
+            ]
+        ],
+        [
+            "Evaluate",
+            [
+                [
+                    "Evaluator",
+                    "evaluator"
+                ],
+                [
+                    "List<Figure?>",
+                    "arguments"
+                ]
+            ]
+        ],
+        [
+            "IsInRange",
+            [
+                [
+                    "double",
+                    "parameter"
+                ]
+            ]
+        ],
+        [
+            "AcceptConstrains",
+            [
+                [
+                    "double",
+                    "parameter"
+                ],
+                [
+                    "Constrains?[]",
+                    "constrains"
+                ]
+            ]
+        ],
+        [
+            "Filter",
+            [
+                [
+                    "IEnumerable<Point>",
+                    "PosibleSolutions"
+                ],
+                [
+                    "Equation",
+                    "circle_st"
+                ],
+                [
+                    "Equation",
+                    "circle_nd"
+                ]
+            ]
+        ],
+        [
+            "SolveLineal",
+            [
+                [
+                    "Equation",
+                    "lineal_st"
+                ],
+                [
+                    "Equation",
+                    "lineal_nd"
+                ]
+            ]
+        ],
+        [
+            "SolveCircularSystem",
+            [
+                [
+                    "Equation",
+                    "circle_st"
+                ],
+                [
+                    "Equation",
+                    "circle_nd"
+                ]
+            ]
+        ],
+        [
+            "SolveCircleAndLineal",
+            [
+                [
+                    "Equation",
+                    "circle"
+                ],
+                [
+                    "Equation",
+                    "lineal"
+                ]
+            ]
+        ],
+        [
+            "Substitute",
+            [
+                [
+                    "Equation",
+                    "parameter"
+                ],
+                [
+                    "Equation",
+                    "equation"
+                ],
+                [
+                    "bool",
+                    "isXval"
+                ]
+            ]
+        ],
+        [
+            "GetAngle",
+            [
+                [
+                    "Point",
+                    "p1"
+                ],
+                [
+                    "Point",
+                    "p2"
+                ]
+            ]
+        ],
+        [
+            "DrawPoint",
+            [
+                [
+                    "Point",
+                    "point"
+                ]
+            ]
+        ],
+        [
+            "DrawLine",
+            [
+                [
+                    "Line",
+                    "line"
+                ]
+            ]
+        ],
+        [
+            "DrawSegment",
+            [
+                [
+                    "Segment",
+                    "segment"
+                ]
+            ]
+        ],
+        [
+            "DrawCircle",
+            [
+                [
+                    "Circle",
+                    "circle"
+                ]
+            ]
+        ],
+        [
+            "DrawArc",
+            [
+                [
+                    "Arc",
+                    "arc"
+                ]
+            ]
+        ],
+        [
+            "DrawRay",
+            [
+                [
+                    "Ray",
+                    "ray"
+                ]
+            ]
+        ],
+        [
+            "token",
+            [
+                [
+                    "line",
+                    ":{"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "var",
+            "builder"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "DrawPoint",
+            "toDraw"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "DrawRay",
+            "toDraw"
+        ],
+        [
+            "DrawCircle",
+            "toDraw"
+        ],
+        [
+            "DrawArc",
+            "toDraw"
+        ],
+        [
+            "DrawLine",
+            "toDraw"
+        ],
+        [
+            "DrawSegment",
+            "toDraw"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "double",
+            "n"
+        ],
+        [
+            "double",
+            "m"
+        ],
+        [
+            "double",
+            "n"
+        ],
+        [
+            "double",
+            "m"
+        ],
+        [
+            "var",
+            "app"
+        ],
+        [
+            "List",
+            "expressions"
+        ],
+        [
+            "object",
+            "result"
+        ],
+        [
+            "object",
+            "condition"
+        ],
+        [
+            "object",
+            "checkThen"
+        ],
+        [
+            "object",
+            "check"
+        ],
+        [
+            "object",
+            "checkElse"
+        ],
+        [
+            "string",
+            "functionName"
+        ],
+        [
+            "object",
+            "exprType"
+        ],
+        [
+            "object",
+            "checkIF"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Context",
+            "functionContext"
+        ],
+        [
+            "Figure",
+            "argument1"
+        ],
+        [
+            "Figure",
+            "argument2"
+        ],
+        [
+            "Equation",
+            "equation1"
+        ],
+        [
+            "List",
+            "points"
+        ],
+        [
+            "Equation",
+            "equation2"
+        ],
+        [
+            "List",
+            "results"
+        ],
+        [
+            "double",
+            "a2"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "a1"
+        ],
+        [
+            "List",
+            "y_"
+        ],
+        [
+            "double",
+            "b1"
+        ],
+        [
+            "Constrains",
+            "thetaConstrain"
+        ],
+        [
+            "double",
+            "b2"
+        ],
+        [
+            "double",
+            "yc"
+        ],
+        [
+            "double",
+            "discriminant"
+        ],
+        [
+            "double",
+            "c1"
+        ],
+        [
+            "double",
+            "c2"
+        ],
+        [
+            "double",
+            "c"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "var",
+            "aloneX"
+        ],
+        [
+            "var",
+            "thetaConstrain"
+        ],
+        [
+            "double",
+            "theta"
+        ],
+        [
+            "List",
+            "result"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "double",
+            "a"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "Constrains",
+            "constrainsX"
+        ],
+        [
+            "Constrains",
+            "constrainsY"
+        ],
+        [
+            "CuadraticEquation",
+            "cuadratic"
+        ],
+        [
+            "double",
+            "b"
+        ],
+        [
+            "List",
+            "xi"
+        ],
+        [
+            "double",
+            "xc"
+        ],
+        [
+            "double",
+            "determinant"
+        ],
+        [
+            "Equation",
+            "equation"
+        ],
+        [
+            "var",
+            "aloneY"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
+            "y"
+        ],
+        [
+            "Constrains",
+            "XconstrainsX"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "Constrains",
+            "YconstrainsY"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "Constrains",
+            "XconstrainsX"
+        ],
+        [
+            "double",
+            "y1"
+        ],
+        [
+            "double",
+            "y2"
+        ],
+        [
+            "double",
+            "x1"
+        ],
+        [
+            "double",
+            "XlimitX"
+        ],
+        [
+            "Constrains",
+            "YconstrainsY"
+        ],
+        [
+            "double",
+            "x2"
+        ],
+        [
+            "double",
+            "YlimitY"
+        ],
+        [
+            "double",
+            "x"
+        ],
+        [
+            "double",
+            "startAngle"
+        ],
+        [
+            "double",
+            "endAngle"
+        ],
+        [
+            "Constrains",
+            "AngleConstrain"
+        ],
+        [
+            "double",
+            "angle"
+        ],
+        [
+            "double",
+            "y"
+        ]
+    ],
+    "method_names": [
+        "CreateMauiApp",
+        "Draw",
+        "Draw",
+        "Draw",
+        "Draw",
+        "GetAngle",
+        "Draw",
+        "Draw",
+        "Draw",
+        "CreateMauiApp",
+        "Main",
+        "CreateMauiApp",
+        "Main",
+        "CreateMauiApp",
+        "CreateMauiApp",
+        "CreateMauiApp",
+        "Main",
+        "Accept",
+        "Accept",
+        "RunInterpreter",
+        "Visit",
+        "Visit",
+        "Visit",
+        "Evaluate",
+        "SolveEquation",
+        "Filter",
+        "IsInRange",
+        "SolveCircleAndLineal",
+        "Substitute",
+        "SolveLineal",
+        "SolveCircularSystem",
+        "AcceptConstrains",
+        "VectorRuled",
+        "GetAngle",
+        "DrawArc",
+        "DrawLine",
+        "DrawPoint",
+        "DrawCircle",
+        "DrawSegment",
+        "DrawRay",
+        "token",
+        "PrintError"
+    ],
+    "method_return_types": [
+        [
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "GetAngle",
+            "double"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "Draw",
+            "void"
+        ],
+        [
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "Main",
+            "void"
+        ],
+        [
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "Main",
+            "void"
+        ],
+        [
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "CreateMauiApp",
+            "MauiApp"
+        ],
+        [
+            "Main",
+            "void"
+        ],
+        [
+            "Accept",
+            "object"
+        ],
+        [
+            "Accept",
+            "object"
+        ],
+        [
+            "RunInterpreter",
+            "void"
+        ],
+        [
+            "Visit",
+            "object"
+        ],
+        [
+            "Visit",
+            "object"
+        ],
+        [
+            "Visit",
+            "object"
+        ],
+        [
+            "Evaluate",
+            "Object"
+        ],
+        [
+            "AcceptConstrains",
+            "bool"
+        ],
+        [
+            "IsInRange",
+            "bool"
+        ],
+        [
+            "Filter",
+            "IEnumerable"
+        ],
+        [
+            "SolveCircleAndLineal",
+            "List"
+        ],
+        [
+            "SolveCircularSystem",
+            "IEnumerable"
+        ],
+        [
+            "Substitute",
+            "CuadraticEquation"
+        ],
+        [
+            "SolveLineal",
+            "List"
+        ],
+        [
+            "SolveEquation",
+            "List"
+        ],
+        [
+            "VectorRuled",
+            "Vector"
+        ],
+        [
+            "GetAngle",
+            "double"
+        ],
+        [
+            "DrawCircle",
+            "void"
+        ],
+        [
+            "DrawLine",
+            "void"
+        ],
+        [
+            "DrawArc",
+            "void"
+        ],
+        [
+            "DrawSegment",
+            "void"
+        ],
+        [
+            "DrawRay",
+            "void"
+        ],
+        [
+            "DrawPoint",
+            "void"
+        ],
+        [
+            "token",
+            "valid"
+        ],
+        [
+            "PrintError",
+            "string"
+        ]
+    ],
+    "class_names": [
+        "MauiProgram",
+        "MainPage",
+        "AppShell",
+        "App",
+        "DrawCircle",
+        "DrawPrints",
+        "DrawPoint",
+        "DrawArc",
+        "DrawRay",
+        "DrawSegment",
+        "DrawLine",
+        "AppDelegate",
+        "Program",
+        "App",
+        "Program",
+        "MainApplication",
+        "MainActivity",
+        "AppDelegate",
+        "Program",
+        "LogicOR",
+        "ComparisonGREATER_EQUAL",
+        "ComparisonGREATER",
+        "ComparisonLESS",
+        "Addition",
+        "Subtraction",
+        "Equality",
+        "Module",
+        "Division",
+        "ComparisonLESS_EQUAL",
+        "Multiplication",
+        "Power",
+        "NotEquality",
+        "LogicAND",
+        "Negation",
+        "Negative",
+        "FigureDeclaration",
+        "Conditional",
+        "FunctionCall",
+        "Number",
+        "ArcDeclaration",
+        "CircleDeclaration",
+        "Expression",
+        "Function",
+        "LineDeclaration",
+        "Let_In",
+        "ID",
+        "String",
+        "PointDeclaration",
+        "Atom",
+        "Boolean",
+        "MeasureExpression",
+        "Undefined",
+        "StatementExpression",
+        "Import",
+        "FunctionDeclaration",
+        "RandomLine",
+        "RandomCircle",
+        "Draw",
+        "VariableDeclaration",
+        "Restore",
+        "RandomPoint",
+        "SetColor",
+        "VariableSequenceDeclaration",
+        "RangeSequence",
+        "ValuesSecquence",
+        "Sequence",
+        "InfinitySequence",
+        "GSharpInterpreter",
+        "Lexer",
+        "Token",
+        "Context",
+        "Evaluator",
+        "Analizer",
+        "Intersect",
+        "Constrains",
+        "CuadraticEquation",
+        "Solver",
+        "Equation",
+        "Measure",
+        "Figure",
+        "Vector",
+        "Circle",
+        "Segment",
+        "Ray",
+        "Arc",
+        "Point",
+        "Line",
+        "InterpreterErrors",
+        "SyntaxErrors",
+        "LexicalErrors"
+    ],
+    "interface_names": [
+        "IBinaryExpression",
+        "IUnaryExpression",
+        "IExpression",
+        "IVisitor",
+        "IDraw"
+    ],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 43,
+        "Using_directivesContext": 26,
+        "UsingNamespaceDirectiveContext": 52,
+        "TerminalNodeImpl": 9376,
+        "Namespace_or_type_nameContext": 686,
+        "IdentifierContext": 3020,
+        "Namespace_member_declarationsContext": 68,
+        "Namespace_member_declarationContext": 681,
+        "Namespace_declarationContext": 43,
+        "Qualified_identifierContext": 43,
+        "Type_declarationContext": 638,
+        "All_member_modifiersContext": 829,
+        "All_member_modifierContext": 982,
+        "Class_definitionContext": 90,
+        "Class_bodyContext": 95,
+        "Class_member_declarationsContext": 93,
+        "Class_member_declarationContext": 406,
+        "Common_member_declarationContext": 406,
+        "Typed_member_declarationContext": 283,
+        "Type_Context": 678,
+        "Base_typeContext": 688,
+        "Class_typeContext": 545,
+        "Method_declarationContext": 93,
+        "Method_member_nameContext": 93,
+        "Method_bodyContext": 86,
+        "BlockContext": 129,
+        "Statement_listContext": 128,
+        "StatementContext": 468,
+        "DeclarationStatementContext": 114,
+        "Local_variable_declarationContext": 111,
+        "Local_variable_typeContext": 118,
+        "Local_variable_declaratorContext": 111,
+        "Local_variable_initializerContext": 104,
+        "ExpressionContext": 1032,
+        "Non_assignment_expressionContext": 793,
+        "Conditional_expressionContext": 786,
+        "Null_coalescing_expressionContext": 786,
+        "Conditional_or_expressionContext": 786,
+        "Conditional_and_expressionContext": 788,
+        "Inclusive_or_expressionContext": 793,
+        "Exclusive_or_expressionContext": 798,
+        "And_expressionContext": 798,
+        "Equality_expressionContext": 798,
+        "Relational_expressionContext": 868,
+        "Shift_expressionContext": 881,
+        "Additive_expressionContext": 881,
+        "Multiplicative_expressionContext": 929,
+        "Switch_expressionContext": 982,
+        "Range_expressionContext": 982,
+        "Unary_expressionContext": 1213,
+        "Primary_expressionContext": 1156,
+        "SimpleNameExpressionContext": 916,
+        "Member_accessContext": 544,
+        "Method_invocationContext": 126,
+        "Embedded_statementContext": 322,
+        "ExpressionStatementContext": 264,
+        "Type_argument_listContext": 33,
+        "Argument_listContext": 116,
+        "ArgumentContext": 227,
+        "Lambda_expressionContext": 7,
+        "Anonymous_function_signatureContext": 7,
+        "Right_arrowContext": 16,
+        "Anonymous_function_bodyContext": 7,
+        "LiteralExpressionContext": 142,
+        "LiteralContext": 142,
+        "String_literalContext": 63,
+        "ReturnStatementContext": 43,
+        "Class_baseContext": 74,
+        "Field_declarationContext": 92,
+        "Variable_declaratorsContext": 92,
+        "Variable_declaratorContext": 92,
+        "Variable_initializerContext": 21,
+        "ObjectCreationExpressionContext": 28,
+        "Object_creation_expressionContext": 28,
+        "Simple_typeContext": 171,
+        "Numeric_typeContext": 164,
+        "Integral_typeContext": 19,
+        "Constructor_declarationContext": 28,
+        "BodyContext": 30,
+        "AssignmentContext": 174,
+        "Assignment_operatorContext": 174,
+        "ForStatementContext": 3,
+        "For_initializerContext": 3,
+        "For_iteratorContext": 3,
+        "ErrorNodeImpl": 18370,
+        "Namespace_bodyContext": 25,
+        "Formal_parameter_listContext": 107,
+        "Fixed_parametersContext": 107,
+        "Fixed_parameterContext": 147,
+        "Arg_declarationContext": 151,
+        "IfStatementContext": 104,
+        "If_bodyContext": 171,
+        "Cast_expressionContext": 32,
+        "Floating_point_typeContext": 145,
+        "Bracket_expressionContext": 27,
+        "Indexer_argumentContext": 27,
+        "IsTypeContext": 10,
+        "ParenthesisExpressionsContext": 27,
+        "Boolean_literalContext": 10,
+        "AttributesContext": 101,
+        "Attribute_sectionContext": 101,
+        "Attribute_listContext": 98,
+        "AttributeContext": 98,
+        "Attribute_argumentContext": 5,
+        "Throwable_expressionContext": 15,
+        "Rank_specifierContext": 6,
+        "TypeofExpressionContext": 2,
+        "Unbound_type_nameContext": 2,
+        "ThisReferenceExpressionContext": 30,
+        "Constructor_initializerContext": 1,
+        "Interface_definitionContext": 5,
+        "Property_declarationContext": 100,
+        "Member_nameContext": 100,
+        "Accessor_declarationsContext": 97,
+        "Accessor_bodyContext": 113,
+        "Tuple_typeContext": 10,
+        "Tuple_elementContext": 35,
+        "Set_accessor_declarationContext": 16,
+        "Enum_definitionContext": 5,
+        "Enum_bodyContext": 5,
+        "Enum_member_declarationContext": 83,
+        "ThrowStatementContext": 10,
+        "ForeachStatementContext": 7,
+        "Labeled_StatementContext": 1,
+        "TryStatementContext": 1,
+        "Catch_clausesContext": 1,
+        "Specific_catch_clauseContext": 1,
+        "Local_function_declarationContext": 2,
+        "Local_function_headerContext": 2,
+        "Return_typeContext": 2,
+        "Local_function_bodyContext": 2,
+        "Array_initializerContext": 2,
+        "ContinueStatementContext": 4,
+        "TupleExpressionContext": 7,
+        "TheEmptyStatementContext": 3,
+        "Operator_declarationContext": 2,
+        "Overloadable_operatorContext": 2,
+        "MemberAccessExpressionContext": 4,
+        "Predefined_typeContext": 4
+    },
+    "project_name": "DiegoViera1511_GeoWallE",
+    "label": "original",
+    "project_type": "wallE"
+}

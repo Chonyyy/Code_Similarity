@@ -2902,19 +2902,19 @@
     "variable_names": [
         [
             "var",
-            "i"
-        ],
-        [
-            "var",
             "players"
         ],
         [
             "var",
-            "teams"
+            "j"
         ],
         [
             "var",
-            "j"
+            "i"
+        ],
+        [
+            "var",
+            "teams"
         ],
         [
             "var",
@@ -2926,7 +2926,7 @@
         ],
         [
             "var",
-            "index"
+            "j"
         ],
         [
             "var",
@@ -2934,7 +2934,7 @@
         ],
         [
             "var",
-            "players"
+            "index"
         ],
         [
             "var",
@@ -2942,15 +2942,15 @@
         ],
         [
             "var",
-            "j"
-        ],
-        [
-            "var",
-            "b"
+            "players"
         ],
         [
             "var",
             "a"
+        ],
+        [
+            "var",
+            "b"
         ],
         [
             "var",
@@ -2970,11 +2970,7 @@
         ],
         [
             "var",
-            "sum"
-        ],
-        [
-            "var",
-            "condition"
+            "j"
         ],
         [
             "var",
@@ -2982,7 +2978,7 @@
         ],
         [
             "var",
-            "id"
+            "sum"
         ],
         [
             "var",
@@ -2990,7 +2986,11 @@
         ],
         [
             "var",
-            "j"
+            "id"
+        ],
+        [
+            "var",
+            "condition"
         ],
         [
             "var",
@@ -3002,7 +3002,7 @@
         ],
         [
             "var",
-            "cant"
+            "j"
         ],
         [
             "var",
@@ -3010,15 +3010,15 @@
         ],
         [
             "var",
-            "visited"
-        ],
-        [
-            "var",
             "aux"
         ],
         [
             "var",
-            "j"
+            "visited"
+        ],
+        [
+            "var",
+            "cant"
         ],
         [
             "var",
@@ -3027,10 +3027,6 @@
         [
             "var",
             "activate"
-        ],
-        [
-            "var",
-            "i"
         ],
         [
             "var",
@@ -3041,7 +3037,35 @@
             "team"
         ],
         [
+            "var",
+            "i"
+        ],
+        [
             "List",
+            "aux"
+        ],
+        [
+            "var",
+            "tableGeometry"
+        ],
+        [
+            "var",
+            "value"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "j"
+        ],
+        [
+            "var",
+            "values"
+        ],
+        [
+            "var",
             "aux"
         ],
         [
@@ -3050,23 +3074,7 @@
         ],
         [
             "var",
-            "ind"
-        ],
-        [
-            "var",
             "connection"
-        ],
-        [
-            "var",
-            "i"
-        ],
-        [
-            "var",
-            "tableGeometry"
-        ],
-        [
-            "var",
-            "valuesNode"
         ],
         [
             "var",
@@ -3074,11 +3082,7 @@
         ],
         [
             "var",
-            "values"
-        ],
-        [
-            "var",
-            "value"
+            "valuesNode"
         ],
         [
             "var",
@@ -3086,15 +3090,11 @@
         ],
         [
             "var",
-            "aux"
+            "ind"
         ],
         [
             "var",
             "nodeGeometry"
-        ],
-        [
-            "var",
-            "j"
         ],
         [
             "var",
@@ -3114,11 +3114,11 @@
         ],
         [
             "var",
-            "rnd"
+            "aux"
         ],
         [
             "var",
-            "aux"
+            "rnd"
         ],
         [
             "var",
@@ -3126,11 +3126,11 @@
         ],
         [
             "var",
-            "activate"
+            "play"
         ],
         [
             "var",
-            "play"
+            "activate"
         ],
         [
             "var",
@@ -3139,10 +3139,6 @@
         [
             "var",
             "win"
-        ],
-        [
-            "var",
-            "i"
         ],
         [
             "var",
@@ -3158,10 +3154,6 @@
         ],
         [
             "var",
-            "change"
-        ],
-        [
-            "var",
             "j"
         ],
         [
@@ -3170,11 +3162,7 @@
         ],
         [
             "var",
-            "rnd"
-        ],
-        [
-            "var",
-            "aux"
+            "change"
         ],
         [
             "var",
@@ -3182,6 +3170,18 @@
         ],
         [
             "var",
+            "aux"
+        ],
+        [
+            "var",
+            "rnd"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
             "i"
         ],
         [
@@ -3218,7 +3218,7 @@
         ],
         [
             "var",
-            "i"
+            "score"
         ],
         [
             "double",
@@ -3226,11 +3226,11 @@
         ],
         [
             "var",
-            "score"
+            "j"
         ],
         [
             "var",
-            "j"
+            "i"
         ],
         [
             "var",
@@ -3250,11 +3250,11 @@
         ],
         [
             "var",
-            "ind"
+            "aux"
         ],
         [
             "var",
-            "id"
+            "rnd"
         ],
         [
             "IBeginGame",
@@ -3262,15 +3262,15 @@
         ],
         [
             "var",
-            "rnd"
+            "id"
         ],
         [
             "var",
-            "aux"
+            "ind"
         ],
         [
-            "var",
-            "val"
+            "Token",
+            "tokenPer"
         ],
         [
             "var",
@@ -3278,19 +3278,11 @@
         ],
         [
             "var",
-            "permutation"
-        ],
-        [
-            "var",
-            "tokens"
-        ],
-        [
-            "var",
             "values"
         ],
         [
-            "Token",
-            "tokenPer"
+            "var",
+            "r"
         ],
         [
             "Token",
@@ -3298,7 +3290,15 @@
         ],
         [
             "var",
-            "r"
+            "val"
+        ],
+        [
+            "var",
+            "tokens"
+        ],
+        [
+            "var",
+            "permutation"
         ],
         [
             "var",
@@ -3310,15 +3310,7 @@
         ],
         [
             "var",
-            "rnd"
-        ],
-        [
-            "var",
-            "min"
-        ],
-        [
-            "double",
-            "sum"
+            "j"
         ],
         [
             "var",
@@ -3326,7 +3318,15 @@
         ],
         [
             "var",
-            "max"
+            "aux"
+        ],
+        [
+            "double",
+            "sum"
+        ],
+        [
+            "var",
+            "rnd"
         ],
         [
             "var",
@@ -3334,11 +3334,11 @@
         ],
         [
             "var",
-            "aux"
+            "min"
         ],
         [
             "var",
-            "j"
+            "max"
         ],
         [
             "var",
@@ -3353,28 +3353,24 @@
             "i"
         ],
         [
-            "double",
-            "max"
+            "var",
+            "i"
         ],
         [
             "var",
             "index"
         ],
         [
-            "var",
-            "i"
-        ],
-        [
-            "var",
-            "max"
-        ],
-        [
             "double",
             "sum"
         ],
         [
+            "double",
+            "max"
+        ],
+        [
             "var",
-            "i"
+            "max"
         ],
         [
             "var",
@@ -3394,7 +3390,7 @@
         ],
         [
             "var",
-            "strategiesMoves"
+            "i"
         ],
         [
             "var",
@@ -3403,10 +3399,6 @@
         [
             "var",
             "move"
-        ],
-        [
-            "var",
-            "myHand"
         ],
         [
             "var",
@@ -3414,47 +3406,11 @@
         ],
         [
             "var",
-            "index"
+            "myHand"
         ],
         [
             "var",
-            "ind"
-        ],
-        [
-            "var",
-            "teamId"
-        ],
-        [
-            "var",
-            "i"
-        ],
-        [
-            "var",
-            "playerTeams"
-        ],
-        [
-            "var",
-            "init"
-        ],
-        [
-            "var",
-            "players"
-        ],
-        [
-            "var",
-            "judge"
-        ],
-        [
-            "var",
-            "teams"
-        ],
-        [
-            "var",
-            "value"
-        ],
-        [
-            "var",
-            "aux"
+            "strategiesMoves"
         ],
         [
             "var",
@@ -3462,23 +3418,7 @@
         ],
         [
             "var",
-            "teamGame"
-        ],
-        [
-            "var",
             "i"
-        ],
-        [
-            "var",
-            "game"
-        ],
-        [
-            "var",
-            "playersInfo"
-        ],
-        [
-            "var",
-            "tokens"
         ],
         [
             "var",
@@ -3486,23 +3426,35 @@
         ],
         [
             "var",
-            "turns"
+            "index"
         ],
         [
             "var",
             "aux"
         ],
         [
-            "List",
-            "aux"
+            "var",
+            "judge"
         ],
         [
             "var",
-            "hand"
+            "init"
         ],
         [
             "var",
-            "copy"
+            "teams"
+        ],
+        [
+            "var",
+            "playerTeams"
+        ],
+        [
+            "var",
+            "teamId"
+        ],
+        [
+            "var",
+            "players"
         ],
         [
             "var",
@@ -3510,7 +3462,7 @@
         ],
         [
             "var",
-            "possible"
+            "value"
         ],
         [
             "var",
@@ -3518,23 +3470,39 @@
         ],
         [
             "var",
-            "player"
+            "aux"
         ],
         [
             "var",
-            "id"
+            "playersInfo"
         ],
         [
             "var",
-            "play"
+            "teamGame"
         ],
         [
             "var",
-            "move"
+            "turns"
+        ],
+        [
+            "List",
+            "aux"
         ],
         [
             "var",
-            "rulesCopy"
+            "game"
+        ],
+        [
+            "var",
+            "tokens"
+        ],
+        [
+            "var",
+            "hand"
+        ],
+        [
+            "var",
+            "i"
         ],
         [
             "var",
@@ -3546,7 +3514,47 @@
         ],
         [
             "var",
+            "copy"
+        ],
+        [
+            "var",
+            "possible"
+        ],
+        [
+            "var",
+            "play"
+        ],
+        [
+            "var",
+            "move"
+        ],
+        [
+            "var",
+            "player"
+        ],
+        [
+            "var",
+            "id"
+        ],
+        [
+            "var",
+            "ind"
+        ],
+        [
+            "var",
+            "rulesCopy"
+        ],
+        [
+            "var",
+            "indColumn"
+        ],
+        [
+            "var",
             "i"
+        ],
+        [
+            "var",
+            "values"
         ],
         [
             "var",
@@ -3558,19 +3566,7 @@
         ],
         [
             "var",
-            "values"
-        ],
-        [
-            "var",
-            "location"
-        ],
-        [
-            "var",
-            "indColumn"
-        ],
-        [
-            "var",
-            "playerInfo"
+            "indRow"
         ],
         [
             "var",
@@ -3578,7 +3574,15 @@
         ],
         [
             "var",
-            "indRow"
+            "playerInfo"
+        ],
+        [
+            "var",
+            "location"
+        ],
+        [
+            "var",
+            "type"
         ],
         [
             "var",
@@ -3586,43 +3590,15 @@
         ],
         [
             "var",
-            "type"
+            "first"
         ],
         [
             "IEnumerable",
             "aux"
         ],
         [
-            "var",
-            "first"
-        ],
-        [
             "IEnumerable",
             "locations"
-        ],
-        [
-            "var",
-            "cant"
-        ],
-        [
-            "var",
-            "head"
-        ],
-        [
-            "var",
-            "condition"
-        ],
-        [
-            "Parity",
-            "func"
-        ],
-        [
-            "string",
-            "values"
-        ],
-        [
-            "var",
-            "actualhead"
         ],
         [
             "var",
@@ -3634,23 +3610,39 @@
         ],
         [
             "var",
+            "head"
+        ],
+        [
+            "string",
+            "values"
+        ],
+        [
+            "Parity",
+            "func"
+        ],
+        [
+            "var",
+            "cant"
+        ],
+        [
+            "var",
+            "actualhead"
+        ],
+        [
+            "var",
+            "condition"
+        ],
+        [
+            "var",
+            "locationGui"
+        ],
+        [
+            "var",
+            "type"
+        ],
+        [
+            "var",
             "top"
-        ],
-        [
-            "var",
-            "left"
-        ],
-        [
-            "var",
-            "n"
-        ],
-        [
-            "var",
-            "m"
-        ],
-        [
-            "var",
-            "ind"
         ],
         [
             "var",
@@ -3658,11 +3650,23 @@
         ],
         [
             "var",
+            "ind"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "values"
+        ],
+        [
+            "var",
             "auxValues"
         ],
         [
             "var",
-            "type"
+            "minY"
         ],
         [
             "var",
@@ -3674,31 +3678,19 @@
         ],
         [
             "var",
-            "values"
+            "n"
         ],
         [
             "var",
-            "locationGui"
+            "left"
         ],
         [
             "var",
-            "aux"
-        ],
-        [
-            "var",
-            "minY"
+            "m"
         ],
         [
             "T",
             "a"
-        ],
-        [
-            "var",
-            "i"
-        ],
-        [
-            "var",
-            "node"
         ],
         [
             "INode",
@@ -3706,63 +3698,15 @@
         ],
         [
             "var",
-            "aux"
-        ],
-        [
-            "var",
-            "nodeGeometry"
-        ],
-        [
-            "var",
             "j"
         ],
         [
-            "int",
-            "y"
-        ],
-        [
-            "TableGame",
-            "table"
-        ],
-        [
-            "var",
-            "center"
-        ],
-        [
             "var",
             "i"
-        ],
-        [
-            "var",
-            "y"
-        ],
-        [
-            "var",
-            "expand"
-        ],
-        [
-            "int",
-            "x"
-        ],
-        [
-            "var",
-            "x"
-        ],
-        [
-            "var",
-            "geometry"
         ],
         [
             "var",
             "aux"
-        ],
-        [
-            "var",
-            "i"
-        ],
-        [
-            "TableGame",
-            "table"
         ],
         [
             "var",
@@ -3770,15 +3714,7 @@
         ],
         [
             "var",
-            "i"
-        ],
-        [
-            "var",
-            "values"
-        ],
-        [
-            "var",
-            "token"
+            "nodeGeometry"
         ],
         [
             "TableGame",
@@ -3786,7 +3722,75 @@
         ],
         [
             "var",
-            "nodeDimension"
+            "i"
+        ],
+        [
+            "int",
+            "y"
+        ],
+        [
+            "var",
+            "expand"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "geometry"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "var",
+            "center"
+        ],
+        [
+            "TableGame",
+            "table"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "node"
+        ],
+        [
+            "var",
+            "values"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "var",
+            "token"
+        ],
+        [
+            "INode",
+            "node"
+        ],
+        [
+            "TableGame",
+            "table"
+        ],
+        [
+            "var",
+            "i"
         ],
         [
             "var",
@@ -3794,23 +3798,15 @@
         ],
         [
             "var",
-            "i"
+            "nodeDimension"
         ],
         [
             "var",
             "node"
         ],
         [
-            "INode",
-            "node"
-        ],
-        [
             "var",
             "i"
-        ],
-        [
-            "int",
-            "y"
         ],
         [
             "TableGame",
@@ -3818,14 +3814,10 @@
         ],
         [
             "var",
-            "center"
-        ],
-        [
-            "var",
             "i"
         ],
         [
-            "var",
+            "int",
             "y"
         ],
         [
@@ -3833,6 +3825,18 @@
             "expand"
         ],
         [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "geometry"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
             "int",
             "x"
         ],
@@ -3842,23 +3846,19 @@
         ],
         [
             "var",
-            "geometry"
+            "center"
         ],
         [
             "var",
             "aux"
-        ],
-        [
-            "var",
-            "aux"
-        ],
-        [
-            "var",
-            "i"
         ],
         [
             "var",
             "valuesAux"
+        ],
+        [
+            "var",
+            "i"
         ],
         [
             "TableGame",
@@ -3866,7 +3866,27 @@
         ],
         [
             "var",
+            "sw"
+        ],
+        [
+            "var",
             "i"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "geometry"
+        ],
+        [
+            "var",
+            "ne"
+        ],
+        [
+            "var",
+            "w"
         ],
         [
             "var",
@@ -3878,7 +3898,7 @@
         ],
         [
             "var",
-            "coord2"
+            "coord3"
         ],
         [
             "var",
@@ -3886,11 +3906,7 @@
         ],
         [
             "var",
-            "ne"
-        ],
-        [
-            "var",
-            "aux"
+            "nw"
         ],
         [
             "var",
@@ -3898,31 +3914,23 @@
         ],
         [
             "var",
-            "nw"
-        ],
-        [
-            "var",
-            "geometry"
-        ],
-        [
-            "var",
-            "w"
-        ],
-        [
-            "var",
-            "sw"
-        ],
-        [
-            "var",
-            "coord3"
-        ],
-        [
-            "var",
-            "equal"
+            "coord2"
         ],
         [
             "var",
             "i"
+        ],
+        [
+            "var",
+            "aux"
+        ],
+        [
+            "var",
+            "listCopy1"
+        ],
+        [
+            "var",
+            "equal"
         ],
         [
             "var",
@@ -3934,7 +3942,11 @@
         ],
         [
             "var",
-            "listCopy1"
+            "tableGeometry"
+        ],
+        [
+            "var",
+            "i"
         ],
         [
             "var",
@@ -3946,43 +3958,31 @@
         ],
         [
             "var",
-            "i"
-        ],
-        [
-            "var",
-            "tableGeometry"
-        ],
-        [
-            "var",
             "node"
-        ],
-        [
-            "var",
-            "aux"
         ]
     ],
     "method_names": [
-        "FindPLayerById",
         "FindTeamPlayer",
+        "FindPLayerById",
+        "Clone",
         "FindTeamById",
         "Clone",
-        "Clone",
-        "IEnumerable",
-        "Add",
         "GetEnumerator",
-        "Clone",
-        "IsAPass",
-        "Mata",
-        "Clone",
         "Add",
-        "Remove",
-        "HowManyTokensContains",
         "IEnumerable",
-        "Contains",
-        "Clear",
+        "Clone",
+        "Mata",
+        "IsAPass",
+        "Clone",
+        "Clone",
         "CopyTo",
         "GetEnumerator",
-        "Clone",
+        "Contains",
+        "Clear",
+        "Add",
+        "Remove",
+        "IEnumerable",
+        "HowManyTokensContains",
         "Clone",
         "Compare",
         "GCD",
@@ -3995,29 +3995,29 @@
         "DeterminateDistribution",
         "RunRule",
         "Clone",
-        "DeterminateWinner",
-        "AssignValues",
-        "AssignScore",
-        "Turn",
-        "MakeTokens",
-        "Visibility",
-        "Winner",
-        "Compare",
         "ValidPlay",
-        "DeterminateDistribution",
-        "DeterminateTeams",
-        "DeterminatePlayers",
-        "ToPass",
-        "Steal",
         "Deal",
+        "MakeTokens",
+        "AssignScore",
+        "Steal",
+        "DeterminatePlayers",
+        "DeterminateTeams",
+        "DeterminateDistribution",
         "Reorganize",
         "ScoreToken",
+        "Compare",
+        "Winner",
+        "AssignValues",
+        "Visibility",
+        "DeterminateWinner",
         "Start",
+        "ToPass",
+        "Turn",
         "RunRule",
         "Clone",
         "Visibility",
-        "ValuesEquals",
         "ValidPlay",
+        "ValuesEquals",
         "AssignValues",
         "RunRule",
         "Clone",
@@ -4044,9 +4044,9 @@
         "Clone",
         "ScoreToken",
         "Start",
-        "Comb",
-        "MakeTokens",
         "CircularComb",
+        "MakeTokens",
+        "Comb",
         "RunRule",
         "Clone",
         "Winner",
@@ -4054,146 +4054,138 @@
         "Clone",
         "Compare",
         "DeterminateWinner",
+        "Clone",
+        "AssignValues",
+        "ValidPlays",
         "RunRule",
         "ValidPlayPlayer",
-        "ValidPlays",
-        "AssignValues",
-        "Clone",
         "ToPass",
         "Compare",
-        "DeterminateTeams",
         "Combinations",
+        "DeterminateTeams",
         "Play",
         "Play",
-        "GetValidMoves",
         "GetStrategiesMoves",
-        "MostPopular",
+        "GetValidMoves",
         "RandomScorer",
+        "MostPopular",
         "Reset",
+        "PostGame",
+        "EndTournament",
         "TournamentGame",
         "CreateTournament",
-        "EndTournament",
         "DeterminatePlayerTeams",
-        "PostGame",
         "SortTeam",
         "PreGame",
+        "DeterminateLongana",
         "StartGame",
         "DeterminateTeams",
         "Reset",
-        "DeterminateLongana",
-        "TokensPlayNode",
         "Reset",
-        "LocationTable",
         "LocationHand",
+        "LocationTable",
+        "TokensPlayNode",
+        "GuiJudge",
+        "Game",
+        "EndGame",
+        "HistoryPlayer",
+        "PlayToken",
         "StartGame",
         "PlayPlayer",
-        "PlayToken",
-        "GuiJudge",
-        "EndGame",
-        "PrePlay",
-        "HistoryPlayer",
-        "NoValid",
         "PostPlay",
-        "Game",
-        "IReset",
-        "ExecuteMessageEvent",
-        "ExecuteResetEvent",
-        "LocationTable",
-        "Reset",
-        "DeterminateLocationHand",
-        "ExecuteTableEvent",
+        "PrePlay",
+        "NoValid",
         "ExecuteHandEvent",
-        "AssignValues",
-        "LocationHand",
+        "ExecuteTableEvent",
+        "ExecuteResetEvent",
+        "ExecuteMessageEvent",
         "Reset",
+        "LocationHand",
+        "IReset",
+        "AssignValues",
+        "DeterminateLocationHand",
         "LocationTable",
-        "DeterminateHead",
         "LocationTable",
         "Reset",
         "DeterminateLocation",
-        "LocationHand",
-        "CreateLocationTable",
-        "LocationTable",
         "Reset",
-        "ReorganizeCoordinates",
-        "AssignFindLocationGui",
-        "DeterminateTypeToken",
         "LocationHand",
+        "DeterminateHead",
+        "LocationTable",
+        "DeterminateTypeToken",
+        "ReorganizeCoordinates",
+        "Reset",
+        "LocationHand",
+        "AssignFindLocationGui",
+        "LocationTable",
+        "CreateLocationTable",
+        "Build",
         "Build",
         "Injection",
-        "Build",
-        "ValuesNodeTable",
         "CreateNode",
+        "AssignCoordinates",
         "ExpandGeometry",
         "AssignValues",
-        "AssignCoordinates",
+        "ValuesNodeTable",
+        "Clone",
+        "Reset",
+        "Expand",
         "FindCenter",
-        "Expand",
-        "Reset",
-        "FindCenterExpand",
         "ExpandGeometry",
-        "Clone",
+        "FindCenterExpand",
         "AssignCantPlayers",
-        "Expand",
         "Clone",
         "Reset",
+        "Expand",
         "UnionNode",
-        "IEnumerable",
-        "GetHashCode",
         "ToString",
         "Clone",
-        "GetEnumerator",
+        "GetHashCode",
         "Equals",
+        "GetEnumerator",
+        "IEnumerable",
         "AssignValueConnection",
-        "Expand",
-        "ValuesNodeTable",
+        "Clone",
         "Reset",
         "CreateNode",
+        "Expand",
         "AssignValues",
-        "Clone",
+        "ValuesNodeTable",
         "Reset",
         "Connection",
+        "Clone",
+        "Reset",
+        "Expand",
         "FindCenter",
-        "Expand",
-        "Reset",
+        "ExpandGeometry",
         "FindCenterExpand",
-        "ExpandGeometry",
-        "Clone",
         "GetHashCode",
         "Equals",
-        "AuxClone",
-        "IReset",
+        "Clone",
+        "Reset",
+        "Expand",
         "FreeTable",
+        "IReset",
+        "AuxClone",
         "MoveTable",
-        "UnionNode",
-        "Expand",
-        "AssignFathers",
-        "Reset",
-        "ValuesNodeTable",
-        "PlayTable",
         "AssignValues",
-        "Clone",
+        "AssignFathers",
+        "PlayTable",
+        "ValuesNodeTable",
+        "UnionNode",
         "ExpandGeometry",
         "Expand",
-        "Reset",
         "Clone",
+        "Reset",
         "GetHashCode",
         "Equals",
         "Clone",
-        "CircularArray",
-        "SumConnectionFree"
+        "SumConnectionFree",
+        "CircularArray"
     ],
     "method_return_types": [
         [
-            "Clone",
-            "GameStatus"
-        ],
-        [
             "FindTeamPlayer",
-            "int"
-        ],
-        [
-            "FindPLayerById",
             "int"
         ],
         [
@@ -4201,8 +4193,20 @@
             "int"
         ],
         [
+            "FindPLayerById",
+            "int"
+        ],
+        [
+            "Clone",
+            "GameStatus"
+        ],
+        [
             "Clone",
             "InfoPlayer"
+        ],
+        [
+            "IEnumerable",
+            "IEnumerator"
         ],
         [
             "Add",
@@ -4213,16 +4217,8 @@
             "IEnumerator"
         ],
         [
-            "IEnumerable",
-            "IEnumerator"
-        ],
-        [
             "Clone",
             "InfoPlayerTournament"
-        ],
-        [
-            "Mata",
-            "bool"
         ],
         [
             "Clone",
@@ -4233,7 +4229,15 @@
             "bool"
         ],
         [
+            "Mata",
+            "bool"
+        ],
+        [
             "Clear",
+            "void"
+        ],
+        [
+            "CopyTo",
             "void"
         ],
         [
@@ -4241,32 +4245,28 @@
             "int"
         ],
         [
-            "CopyTo",
-            "void"
-        ],
-        [
-            "Contains",
+            "Remove",
             "bool"
-        ],
-        [
-            "Add",
-            "void"
-        ],
-        [
-            "Clone",
-            "Hand"
         ],
         [
             "IEnumerable",
             "IEnumerator"
         ],
         [
-            "Remove",
-            "bool"
+            "Clone",
+            "Hand"
         ],
         [
             "GetEnumerator",
             "IEnumerator"
+        ],
+        [
+            "Add",
+            "void"
+        ],
+        [
+            "Contains",
+            "bool"
         ],
         [
             "Clone",
@@ -4309,35 +4309,15 @@
             "void"
         ],
         [
-            "RunRule",
-            "void"
-        ],
-        [
             "Clone",
             "WinnerGameRule"
         ],
         [
-            "Turn",
+            "RunRule",
             "void"
         ],
         [
-            "Deal",
-            "Hand"
-        ],
-        [
-            "DeterminateWinner",
-            "void"
-        ],
-        [
-            "ValidPlay",
-            "bool"
-        ],
-        [
-            "Reorganize",
-            "void"
-        ],
-        [
-            "Steal",
+            "Visibility",
             "void"
         ],
         [
@@ -4345,15 +4325,47 @@
             "IEnumerable"
         ],
         [
+            "Deal",
+            "Hand"
+        ],
+        [
+            "AssignScore",
+            "void"
+        ],
+        [
+            "Steal",
+            "void"
+        ],
+        [
             "AssignValues",
             "T"
         ],
         [
-            "MakeTokens",
-            "List"
+            "Reorganize",
+            "void"
+        ],
+        [
+            "DeterminateDistribution",
+            "void"
+        ],
+        [
+            "ScoreToken",
+            "int"
         ],
         [
             "Start",
+            "void"
+        ],
+        [
+            "ValidPlay",
+            "bool"
+        ],
+        [
+            "ToPass",
+            "bool"
+        ],
+        [
+            "DeterminateWinner",
             "void"
         ],
         [
@@ -4361,23 +4373,7 @@
             "void"
         ],
         [
-            "Compare",
-            "bool"
-        ],
-        [
-            "DeterminateDistribution",
-            "void"
-        ],
-        [
-            "ToPass",
-            "bool"
-        ],
-        [
-            "ScoreToken",
-            "int"
-        ],
-        [
-            "Visibility",
+            "Turn",
             "void"
         ],
         [
@@ -4385,12 +4381,16 @@
             "void"
         ],
         [
-            "AssignScore",
-            "void"
+            "MakeTokens",
+            "List"
         ],
         [
             "Winner",
             "void"
+        ],
+        [
+            "Compare",
+            "bool"
         ],
         [
             "Clone",
@@ -4417,24 +4417,24 @@
             "T"
         ],
         [
-            "Clone",
-            "TurnPlayerRule"
-        ],
-        [
             "RunRule",
             "void"
+        ],
+        [
+            "Clone",
+            "TurnPlayerRule"
         ],
         [
             "Reorganize",
             "void"
         ],
         [
-            "RunRule",
-            "void"
-        ],
-        [
             "Clone",
             "StealTokenRule"
+        ],
+        [
+            "RunRule",
+            "void"
         ],
         [
             "Clone",
@@ -4457,10 +4457,6 @@
             "void"
         ],
         [
-            "RunRule",
-            "void"
-        ],
-        [
             "Clone",
             "WinnerTournamentRule"
         ],
@@ -4471,6 +4467,10 @@
         [
             "Clone",
             "VisibilityPlayerRule"
+        ],
+        [
+            "RunRule",
+            "void"
         ],
         [
             "Clone",
@@ -4489,12 +4489,12 @@
             "ToPassTokenRule"
         ],
         [
-            "RunRule",
-            "void"
-        ],
-        [
             "Clone",
             "BeginGameRule"
+        ],
+        [
+            "RunRule",
+            "void"
         ],
         [
             "AssignScore",
@@ -4517,15 +4517,15 @@
             "void"
         ],
         [
-            "Comb",
-            "void"
-        ],
-        [
             "MakeTokens",
             "List"
         ],
         [
             "CircularComb",
+            "void"
+        ],
+        [
+            "Comb",
             "void"
         ],
         [
@@ -4561,20 +4561,20 @@
             "void"
         ],
         [
-            "ValidPlays",
-            "List"
+            "ValidPlayPlayer",
+            "bool"
         ],
         [
             "Clone",
             "IsValidRule"
         ],
         [
-            "ValidPlayPlayer",
-            "bool"
-        ],
-        [
             "AssignValues",
             "T"
+        ],
+        [
+            "ValidPlays",
+            "List"
         ],
         [
             "ToPass",
@@ -4585,11 +4585,11 @@
             "bool"
         ],
         [
-            "Combinations",
+            "DeterminateTeams",
             "void"
         ],
         [
-            "DeterminateTeams",
+            "Combinations",
             "void"
         ],
         [
@@ -4609,11 +4609,11 @@
             "Move"
         ],
         [
-            "RandomScorer",
+            "MostPopular",
             "double"
         ],
         [
-            "MostPopular",
+            "RandomScorer",
             "double"
         ],
         [
@@ -4621,15 +4621,7 @@
             "BuildGame"
         ],
         [
-            "EndTournament",
-            "bool"
-        ],
-        [
-            "CreateTournament",
-            "TournamentStatus"
-        ],
-        [
-            "SortTeam",
+            "PreGame",
             "void"
         ],
         [
@@ -4637,40 +4629,48 @@
             "void"
         ],
         [
-            "DeterminatePlayerTeams",
-            "List"
-        ],
-        [
-            "PreGame",
-            "void"
-        ],
-        [
             "PostGame",
             "void"
         ],
         [
-            "Reset",
-            "InitializerGame"
-        ],
-        [
-            "StartGame",
-            "GameStatus"
-        ],
-        [
-            "DeterminateLongana",
+            "SortTeam",
             "void"
+        ],
+        [
+            "CreateTournament",
+            "TournamentStatus"
+        ],
+        [
+            "EndTournament",
+            "bool"
+        ],
+        [
+            "DeterminatePlayerTeams",
+            "List"
         ],
         [
             "DeterminateTeams",
             "List"
         ],
         [
-            "LocationHand",
+            "DeterminateLongana",
             "void"
+        ],
+        [
+            "StartGame",
+            "GameStatus"
+        ],
+        [
+            "Reset",
+            "InitializerGame"
         ],
         [
             "TokensPlayNode",
             "IEnumerable"
+        ],
+        [
+            "LocationHand",
+            "void"
         ],
         [
             "LocationTable",
@@ -4681,32 +4681,8 @@
             "Printer"
         ],
         [
-            "Game",
-            "void"
-        ],
-        [
-            "HistoryPlayer",
-            "void"
-        ],
-        [
-            "PlayToken",
-            "void"
-        ],
-        [
-            "PlayPlayer",
-            "void"
-        ],
-        [
-            "NoValid",
+            "EndGame",
             "bool"
-        ],
-        [
-            "GuiJudge",
-            "void"
-        ],
-        [
-            "PostPlay",
-            "void"
         ],
         [
             "StartGame",
@@ -4717,39 +4693,31 @@
             "bool"
         ],
         [
-            "EndGame",
+            "PlayPlayer",
+            "void"
+        ],
+        [
+            "HistoryPlayer",
+            "void"
+        ],
+        [
+            "Game",
+            "void"
+        ],
+        [
+            "NoValid",
             "bool"
         ],
         [
-            "AssignValues",
-            "IEnumerable"
-        ],
-        [
-            "DeterminateLocationHand",
+            "PlayToken",
             "void"
         ],
         [
-            "LocationTable",
+            "PostPlay",
             "void"
         ],
         [
-            "Reset",
-            "Printer"
-        ],
-        [
-            "ExecuteResetEvent",
-            "void"
-        ],
-        [
-            "ExecuteHandEvent",
-            "void"
-        ],
-        [
-            "LocationHand",
-            "void"
-        ],
-        [
-            "ExecuteMessageEvent",
+            "GuiJudge",
             "void"
         ],
         [
@@ -4765,12 +4733,32 @@
             "void"
         ],
         [
+            "LocationHand",
+            "void"
+        ],
+        [
+            "ExecuteHandEvent",
+            "void"
+        ],
+        [
+            "AssignValues",
+            "IEnumerable"
+        ],
+        [
+            "ExecuteMessageEvent",
+            "void"
+        ],
+        [
+            "DeterminateLocationHand",
+            "void"
+        ],
+        [
             "Reset",
             "Printer"
         ],
         [
-            "DeterminateLocation",
-            "IEnumerable"
+            "ExecuteResetEvent",
+            "void"
         ],
         [
             "LocationTable",
@@ -4779,12 +4767,28 @@
         [
             "Reset",
             "Printer"
+        ],
+        [
+            "LocationHand",
+            "void"
+        ],
+        [
+            "LocationTable",
+            "void"
         ],
         [
             "DeterminateHead",
             "INode"
         ],
         [
+            "DeterminateLocation",
+            "IEnumerable"
+        ],
+        [
+            "Reset",
+            "Printer"
+        ],
+        [
             "LocationHand",
             "void"
         ],
@@ -4793,16 +4797,8 @@
             "void"
         ],
         [
-            "Reset",
-            "Printer"
-        ],
-        [
             "AssignFindLocationGui",
             "IEnumerable"
-        ],
-        [
-            "LocationHand",
-            "void"
         ],
         [
             "DeterminateTypeToken",
@@ -4813,6 +4809,10 @@
             "LocationGui"
         ],
         [
+            "Reset",
+            "Printer"
+        ],
+        [
             "ReorganizeCoordinates",
             "int"
         ],
@@ -4821,24 +4821,16 @@
             "InfoRules"
         ],
         [
-            "Build",
-            "InfoRulesTournament"
-        ],
-        [
             "Injection",
             "void"
         ],
         [
-            "ValuesNodeTable",
-            "ValuesNode"
+            "Build",
+            "InfoRulesTournament"
         ],
         [
             "CreateNode",
             "NodeGeometry"
-        ],
-        [
-            "AssignValues",
-            "void"
         ],
         [
             "AssignCoordinates",
@@ -4849,100 +4841,108 @@
             "("
         ],
         [
-            "Reset",
-            "TableGame"
-        ],
-        [
-            "Clone",
-            "TableGame"
-        ],
-        [
-            "FindCenterExpand",
-            "("
-        ],
-        [
-            "Expand",
-            "void"
-        ],
-        [
-            "FindCenter",
-            "("
-        ],
-        [
-            "ExpandGeometry",
-            "("
-        ],
-        [
-            "Reset",
-            "TableGame"
-        ],
-        [
-            "AssignCantPlayers",
-            "void"
-        ],
-        [
-            "UnionNode",
-            "void"
-        ],
-        [
-            "Clone",
-            "TableGame"
-        ],
-        [
-            "Expand",
-            "void"
-        ],
-        [
-            "Clone",
-            "Token"
-        ],
-        [
-            "Equals",
-            "bool"
-        ],
-        [
-            "IEnumerable",
-            "IEnumerator"
-        ],
-        [
-            "ToString",
-            "string"
-        ],
-        [
-            "GetEnumerator",
-            "IEnumerator"
-        ],
-        [
-            "GetHashCode",
-            "int"
-        ],
-        [
-            "Reset",
-            "TableGame"
-        ],
-        [
-            "Clone",
-            "TableGame"
-        ],
-        [
             "ValuesNodeTable",
             "ValuesNode"
-        ],
-        [
-            "Expand",
-            "void"
         ],
         [
             "AssignValues",
             "void"
         ],
         [
-            "AssignValueConnection",
+            "Clone",
+            "TableGame"
+        ],
+        [
+            "ExpandGeometry",
+            "("
+        ],
+        [
+            "FindCenter",
+            "("
+        ],
+        [
+            "Reset",
+            "TableGame"
+        ],
+        [
+            "Expand",
             "void"
+        ],
+        [
+            "FindCenterExpand",
+            "("
+        ],
+        [
+            "AssignCantPlayers",
+            "void"
+        ],
+        [
+            "Clone",
+            "TableGame"
+        ],
+        [
+            "UnionNode",
+            "void"
+        ],
+        [
+            "Reset",
+            "TableGame"
+        ],
+        [
+            "Expand",
+            "void"
+        ],
+        [
+            "GetHashCode",
+            "int"
+        ],
+        [
+            "Equals",
+            "bool"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "Clone",
+            "Token"
+        ],
+        [
+            "IEnumerable",
+            "IEnumerator"
+        ],
+        [
+            "GetEnumerator",
+            "IEnumerator"
+        ],
+        [
+            "Clone",
+            "TableGame"
+        ],
+        [
+            "Reset",
+            "TableGame"
+        ],
+        [
+            "Expand",
+            "void"
+        ],
+        [
+            "ValuesNodeTable",
+            "ValuesNode"
         ],
         [
             "CreateNode",
             "INode"
+        ],
+        [
+            "AssignValueConnection",
+            "void"
+        ],
+        [
+            "AssignValues",
+            "void"
         ],
         [
             "Reset",
@@ -4953,27 +4953,27 @@
             "int"
         ],
         [
-            "Reset",
-            "TableGame"
-        ],
-        [
             "Clone",
             "TableGame"
         ],
         [
-            "FindCenterExpand",
+            "ExpandGeometry",
             "("
-        ],
-        [
-            "Expand",
-            "void"
         ],
         [
             "FindCenter",
             "("
         ],
         [
-            "ExpandGeometry",
+            "Reset",
+            "TableGame"
+        ],
+        [
+            "Expand",
+            "void"
+        ],
+        [
+            "FindCenterExpand",
             "("
         ],
         [
@@ -4985,15 +4985,7 @@
             "int"
         ],
         [
-            "Reset",
-            "TableGame"
-        ],
-        [
             "Clone",
-            "TableGame"
-        ],
-        [
-            "IReset",
             "TableGame"
         ],
         [
@@ -5001,12 +4993,40 @@
             "void"
         ],
         [
+            "AuxClone",
+            "TableGame"
+        ],
+        [
             "FreeTable",
+            "void"
+        ],
+        [
+            "Reset",
+            "TableGame"
+        ],
+        [
+            "Expand",
             "void"
         ],
         [
             "ValuesNodeTable",
             "ValuesNode"
+        ],
+        [
+            "IReset",
+            "TableGame"
+        ],
+        [
+            "PlayTable",
+            "void"
+        ],
+        [
+            "AssignFathers",
+            "void"
+        ],
+        [
+            "AssignValues",
+            "void"
         ],
         [
             "MoveTable",
@@ -5017,23 +5037,7 @@
             "void"
         ],
         [
-            "AssignFathers",
-            "void"
-        ],
-        [
-            "AuxClone",
-            "TableGame"
-        ],
-        [
-            "AssignValues",
-            "void"
-        ],
-        [
-            "PlayTable",
-            "void"
-        ],
-        [
-            "Reset",
+            "Clone",
             "TableGame"
         ],
         [
@@ -5041,11 +5045,7 @@
             "("
         ],
         [
-            "Expand",
-            "void"
-        ],
-        [
-            "Clone",
+            "Reset",
             "TableGame"
         ],
         [
@@ -5078,42 +5078,42 @@
         "Move",
         "Hand",
         "TournamentStatus",
-        "HighNumberComparison",
-        "SmallNumberComparison",
-        "CongruenceComparison",
         "DivisibleComparison",
-        "GcdComparison",
+        "HighNumberComparison",
         "ComodinComparison",
+        "SmallNumberComparison",
+        "GcdComparison",
+        "CongruenceComparison",
         "EvenPlayerGame",
         "ClassicPlayerGame",
         "OddPlayerGame",
         "ScorePlayerTournamentRule",
+        "ImmediatePass",
+        "CantToPassTeam",
+        "CantToPass",
+        "ClassicTeamWin",
+        "NoValidPlay",
+        "PostRoundCondition",
+        "ConditionDefault",
+        "NoValidPlayFirstPlayerPass",
+        "SumFreeNode",
+        "CantGamesTournament",
+        "HigherThanScoreHandCondition",
         "SecondRoundTournament",
         "MaxScoreTeamTournament",
-        "ImmediatePass",
-        "CantGamesTournament",
-        "NoValidPlayFirstPlayerPass",
-        "PostRoundCondition",
         "ClassicWin",
-        "CantToPassTeam",
-        "HigherThanScoreHandCondition",
-        "ClassicTeamWin",
-        "ConditionDefault",
-        "CantToPass",
-        "SumFreeNode",
-        "NoValidPlay",
         "ReorganizeHandsRule",
         "ClassicDistribution",
         "TeamDistribution",
         "WinnerGameRule",
         "DistributionPlayerRule",
-        "TeamVisibilityPlayer",
         "ClassicVisibilityPlayer",
-        "ComodinToken",
-        "ValidPlayDimension",
+        "TeamVisibilityPlayer",
         "ValidPlayLongana",
+        "ValidPlayDimension",
         "ValidPlayGeometry",
         "ValidPlayLonganaComplement",
+        "ComodinToken",
         "TurnPlayerRule",
         "ClassicReorganize",
         "HandsTeamWin",
@@ -5121,17 +5121,17 @@
         "InfoRules",
         "ClassicScorePlayerTournament",
         "GameScorePlayerTournament",
-        "AssignScoreSumFreeNode",
         "AssignScoreHands",
-        "AssignScoreHandsSmallCant",
         "AssignScoreClassic",
+        "AssignScoreSumFreeNode",
+        "AssignScoreHandsSmallCant",
         "AssignScoreHandsHighCant",
-        "TurnPlayerInvert",
         "TurnPlayerRepeatPlay",
         "TurnPlayerClassic",
+        "TurnPlayerInvert",
         "InfoRulesTournament",
-        "NoStealToken",
         "ClassicStealToken",
+        "NoStealToken",
         "ChooseStealToken",
         "WinnerTournamentRule",
         "VisibilityPlayerRule",
@@ -5139,37 +5139,37 @@
         "ActionConditionRule",
         "ToPassTokenRule",
         "BeginGameRule",
-        "ClassicScoreTeamTournament",
-        "PlayersScoreTeamTournament",
         "PointForTeam",
+        "PlayersScoreTeamTournament",
+        "ClassicScoreTeamTournament",
         "PlayerGameRule",
         "AssignScoreTokenMax",
-        "AssignScoreTokenMin",
-        "AssignScoreTokenClassic",
         "AssignScoreTokenLetter",
+        "AssignScoreTokenClassic",
         "AssignScoreTokenGcd",
-        "BeginGameRandom",
+        "AssignScoreTokenMin",
         "BeginGameToken",
         "BeginGameLastWinner",
+        "BeginGameRandom",
         "RandomDealer",
         "CircularTokensMaker",
         "ClassicTokensMaker",
         "ScoreTeamTournamentRule",
+        "WinnerGameSmall",
+        "WinnerGameTeamSmall",
         "WinnerGameHigh",
         "WinnerGameTeamHigh",
-        "WinnerGameTeamSmall",
-        "WinnerGameSmall",
         "AssignScorePlayerRule",
-        "LetterComparisonVocalsComodin",
         "LetterComparisonAlphabet",
-        "ClassicWinnerTournament",
+        "LetterComparisonVocalsComodin",
         "MaxPlayerScore",
+        "ClassicWinnerTournament",
         "IsValidRule",
         "NoToPassToken",
         "YesToPassToken",
         "ClassicComparison",
-        "LeagueTeam",
         "ClassicTeam",
+        "LeagueTeam",
         "RandomPlayer",
         "Player",
         "Scorer",
@@ -5229,25 +5229,25 @@
     ],
     "interface_names": [
         "ICondition",
-        "IValidPlay",
-        "IScorePlayerTournament",
+        "IReorganizeHands",
+        "IAssignScorePlayer",
         "IPlayerGame",
+        "IDealer",
+        "IScoreTeamTournament",
+        "IBeginGame",
+        "IWinnerGame",
         "ITeamsGame",
+        "ITurnPlayer",
+        "IValidPlay",
+        "IVisibilityPlayer",
         "ITokensMaker",
+        "IAssignScoreToken",
         "IComparison",
         "IToPassToken",
-        "IReorganizeHands",
-        "IAssignScoreToken",
-        "IStealToken",
-        "IScoreTeamTournament",
-        "IWinnerGame",
         "IDistributionPlayer",
-        "IAssignScorePlayer",
-        "IVisibilityPlayer",
-        "IBeginGame",
         "IWinnerTournament",
-        "ITurnPlayer",
-        "IDealer",
+        "IStealToken",
+        "IScorePlayerTournament",
         "IStrategy",
         "IVariant",
         "INode",
@@ -5264,15 +5264,15 @@
             "void"
         ],
         [
-            "GameOver",
-            "void"
-        ],
-        [
             "BindLocationHand",
             "void"
         ],
         [
             "BindMessage",
+            "void"
+        ],
+        [
+            "GameOver",
             "void"
         ],
         [

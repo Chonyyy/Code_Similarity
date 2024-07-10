@@ -608,10 +608,6 @@
             "piezasValidas"
         ],
         [
-            "int",
-            "i"
-        ],
-        [
             "List",
             "list"
         ],
@@ -625,7 +621,7 @@
         ],
         [
             "int",
-            "min"
+            "puntP"
         ],
         [
             "int",
@@ -633,7 +629,11 @@
         ],
         [
             "int",
-            "puntP"
+            "min"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "int",
@@ -665,43 +665,23 @@
         ],
         [
             "List",
-            "fichasValidas"
-        ],
-        [
-            "List",
             "pasa"
         ],
         [
-            "Random",
-            "random"
-        ],
-        [
-            "int",
-            "tempValue"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "maxvalue"
-        ],
-        [
             "List",
             "fichasValidas"
         ],
         [
-            "IFicha",
-            "ficha"
+            "List",
+            "fichasValidas"
         ],
         [
             "int",
             "num"
         ],
         [
-            "List",
-            "pasa"
+            "IFicha",
+            "ficha"
         ],
         [
             "int",
@@ -709,7 +689,19 @@
         ],
         [
             "int",
+            "tempValue"
+        ],
+        [
+            "List",
+            "pasa"
+        ],
+        [
+            "int",
             "maxvalue"
+        ],
+        [
+            "Random",
+            "random"
         ],
         [
             "IFicha",
@@ -721,11 +713,19 @@
         ],
         [
             "int",
+            "i"
+        ],
+        [
+            "int",
             "tempValue"
         ],
         [
             "List",
             "pasa"
+        ],
+        [
+            "int",
+            "maxvalue"
         ],
         [
             "List",
@@ -737,11 +737,7 @@
         ],
         [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "min"
+            "puntP"
         ],
         [
             "int",
@@ -749,7 +745,11 @@
         ],
         [
             "int",
-            "puntP"
+            "min"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "Random",
@@ -768,28 +768,28 @@
             "valores"
         ],
         [
-            "int",
-            "i"
+            "IPlayer",
+            "player"
         ],
         [
             "int",
             "pasesMayor"
         ],
         [
-            "IPlayer",
-            "player"
+            "int",
+            "i"
         ]
     ],
     "method_names": [
-        "Value",
         "ToString",
-        "JugadaValida",
+        "Value",
         "PiezasValidas",
+        "JugadaValida",
         "CreacionFichas",
         "PuntuacionJugador",
         "PuntuacionMinima",
-        "PasadoDoble",
         "Finalizo",
+        "PasadoDoble",
         "Repartir",
         "Salida",
         "Finalizo",
@@ -797,27 +797,27 @@
         "OrdenNormal",
         "ProximoTurno",
         "Main",
-        "Jugada",
         "ToString",
         "Jugada",
-        "FichaGorda",
         "ToString",
-        "JugadaGorda",
         "JugadaRandom",
-        "FichaGorda",
+        "JugadaGorda",
         "Jugada",
+        "FichaGorda",
         "ToString",
-        "JugadaValida",
+        "Jugada",
+        "FichaGorda",
         "PiezasValidas",
-        "Actualizar",
+        "JugadaValida",
         "ToString",
+        "Actualizar",
         "PuntuacionJugador",
         "PuntuacionMinima",
         "ProximoTurno",
         "Repartir",
         "Ganador",
-        "Actualizar",
         "ToString",
+        "Actualizar",
         "MayorPases",
         "Ganador",
         "ProximoTurno",
@@ -825,8 +825,8 @@
         "Actualizar",
         "PuntuacionJugador",
         "PuntuacionMinima",
-        "JugadaValida",
         "PiezasValidas",
+        "JugadaValida",
         "Ganador",
         "Finalizo",
         "Jugada",
@@ -837,20 +837,20 @@
     ],
     "method_return_types": [
         [
-            "ToString",
-            "string"
-        ],
-        [
             "Value",
             "int"
         ],
         [
-            "PiezasValidas",
-            "List"
+            "ToString",
+            "string"
         ],
         [
             "JugadaValida",
             "bool"
+        ],
+        [
+            "PiezasValidas",
+            "List"
         ],
         [
             "CreacionFichas",
@@ -865,11 +865,11 @@
             "void"
         ],
         [
-            "Finalizo",
+            "PasadoDoble",
             "bool"
         ],
         [
-            "PasadoDoble",
+            "Finalizo",
             "bool"
         ],
         [
@@ -889,11 +889,11 @@
             "IPlayer"
         ],
         [
-            "OrdenNormal",
+            "ProximoTurno",
             "IPlayer"
         ],
         [
-            "ProximoTurno",
+            "OrdenNormal",
             "IPlayer"
         ],
         [
@@ -909,6 +909,22 @@
             "string"
         ],
         [
+            "JugadaRandom",
+            "IFicha"
+        ],
+        [
+            "FichaGorda",
+            "IFicha"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "Jugada",
+            "IFicha"
+        ],
+        [
             "JugadaGorda",
             "IFicha"
         ],
@@ -917,44 +933,28 @@
             "IFicha"
         ],
         [
-            "JugadaRandom",
+            "FichaGorda",
             "IFicha"
         ],
         [
             "ToString",
             "string"
-        ],
-        [
-            "FichaGorda",
-            "IFicha"
-        ],
-        [
-            "FichaGorda",
-            "IFicha"
-        ],
-        [
-            "Jugada",
-            "IFicha"
-        ],
-        [
-            "ToString",
-            "string"
-        ],
-        [
-            "PiezasValidas",
-            "List"
         ],
         [
             "JugadaValida",
             "bool"
         ],
         [
-            "Actualizar",
-            "void"
+            "PiezasValidas",
+            "List"
         ],
         [
             "ToString",
             "string"
+        ],
+        [
+            "Actualizar",
+            "void"
         ],
         [
             "PuntuacionJugador",
@@ -977,22 +977,22 @@
             "IPlayer"
         ],
         [
+            "ToString",
+            "string"
+        ],
+        [
             "Actualizar",
             "void"
         ],
         [
-            "ToString",
-            "string"
+            "Ganador",
+            "IPlayer"
         ],
         [
             "MayorPases",
             "IPlayer"
         ],
         [
-            "Ganador",
-            "IPlayer"
-        ],
-        [
             "ProximoTurno",
             "IPlayer"
         ],
@@ -1013,12 +1013,12 @@
             "void"
         ],
         [
-            "PiezasValidas",
-            "List"
-        ],
-        [
             "JugadaValida",
             "bool"
+        ],
+        [
+            "PiezasValidas",
+            "List"
         ],
         [
             "Ganador",

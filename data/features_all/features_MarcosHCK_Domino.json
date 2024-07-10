@@ -2470,20 +2470,12 @@
     ],
     "variable_names": [
         [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "temp"
-        ],
-        [
             "string",
             "retorno"
         ],
         [
-            "Equipo",
-            "otro"
+            "int",
+            "temp"
         ],
         [
             "int",
@@ -2496,6 +2488,14 @@
         [
             "List",
             "otro_miembros"
+        ],
+        [
+            "Equipo",
+            "otro"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "int",
@@ -2530,16 +2530,20 @@
             "descartes"
         ],
         [
-            "Jugada",
-            "jugada"
-        ],
-        [
             "int",
-            "cara"
+            "num_d_descartes"
         ],
         [
             "string",
             "entrada"
+        ],
+        [
+            "Cambiador_Por_Balance",
+            "Cambiador"
+        ],
+        [
+            "Jugada",
+            "jugada"
         ],
         [
             "Cambiador_por_Cant_de_Fichas",
@@ -2550,24 +2554,24 @@
             "cabeza"
         ],
         [
+            "int",
+            "cara"
+        ],
+        [
             "Ficha",
             "ficha"
         ],
         [
-            "int",
-            "num_d_descartes"
-        ],
-        [
-            "Cambiador_Por_Balance",
-            "Cambiador"
+            "(",
+            "MejorJugada"
         ],
         [
             "(",
             "Actual"
         ],
         [
-            "(",
-            "MejorJugada"
+            "Jugada",
+            "jugada"
         ],
         [
             "bool",
@@ -2578,28 +2582,24 @@
             "acciones"
         ],
         [
-            "Jugada",
-            "jugada"
+            "(",
+            "MejorJugada"
         ],
         [
             "(",
             "Actual"
         ],
         [
-            "(",
-            "MejorJugada"
-        ],
-        [
-            "Ficha",
-            "ficha"
+            "Cambiador_Por_Balance",
+            "cambiador"
         ],
         [
             "List",
             "descartes"
         ],
         [
-            "Cambiador_Por_Balance",
-            "cambiador"
+            "Ficha",
+            "ficha"
         ],
         [
             "Cambiador_por_Cant_de_Fichas",
@@ -2623,7 +2623,19 @@
         ],
         [
             "int",
+            "aux"
+        ],
+        [
+            "int",
             "i"
+        ],
+        [
+            "double",
+            "retorno"
+        ],
+        [
+            "int",
+            "mayor"
         ],
         [
             "List",
@@ -2631,47 +2643,27 @@
         ],
         [
             "int",
-            "aux"
-        ],
-        [
-            "int",
-            "mayor"
-        ],
-        [
-            "int",
             "actual"
-        ],
-        [
-            "double",
-            "retorno"
-        ],
-        [
-            "Dictionary",
-            "retorno"
         ],
         [
             "int",
             "index"
         ],
         [
-            "Jugada",
-            "jugada"
-        ],
-        [
-            "List",
-            "acciones"
-        ],
-        [
             "Jugador",
             "jugador"
+        ],
+        [
+            "Dictionary",
+            "retorno"
         ],
         [
             "List",
             "mano"
         ],
         [
-            "List",
-            "fichas"
+            "Jugada",
+            "jugada"
         ],
         [
             "string",
@@ -2679,27 +2671,15 @@
         ],
         [
             "List",
-            "descartes"
+            "acciones"
         ],
         [
-            "Dictionary",
-            "fichas_por_mano"
+            "List",
+            "fichas"
         ],
         [
             "Cambiador",
             "Cambiador_de_Robo"
-        ],
-        [
-            "List",
-            "jugadores"
-        ],
-        [
-            "Cambiador_Por_Balance",
-            "cambiador"
-        ],
-        [
-            "List",
-            "recogidas"
         ],
         [
             "int",
@@ -2708,6 +2688,26 @@
         [
             "Cambiador",
             "Cambiador_de_Descarte"
+        ],
+        [
+            "Dictionary",
+            "fichas_por_mano"
+        ],
+        [
+            "List",
+            "descartes"
+        ],
+        [
+            "List",
+            "recogidas"
+        ],
+        [
+            "Cambiador_Por_Balance",
+            "cambiador"
+        ],
+        [
+            "List",
+            "jugadores"
         ],
         [
             "Cambiador_por_Cant_de_Fichas",
@@ -2722,40 +2722,8 @@
             "jugada"
         ],
         [
-            "bool",
-            "flag"
-        ],
-        [
             "int",
             "index"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "int",
-            "punt"
-        ],
-        [
-            "List",
-            "retorno"
-        ],
-        [
-            "int",
-            "diferencia"
-        ],
-        [
-            "int",
-            "j"
-        ],
-        [
-            "int",
-            "suma"
-        ],
-        [
-            "HashSet",
-            "datas"
         ],
         [
             "int",
@@ -2763,15 +2731,67 @@
         ],
         [
             "int",
-            "actual"
+            "j"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "retorno"
         ],
         [
             "Ficha",
             "temp"
         ],
         [
+            "HashSet",
+            "datas"
+        ],
+        [
+            "bool",
+            "flag"
+        ],
+        [
+            "int",
+            "punt"
+        ],
+        [
+            "int",
+            "diferencia"
+        ],
+        [
+            "int",
+            "actual"
+        ],
+        [
+            "int",
+            "suma"
+        ],
+        [
+            "string",
+            "ultimo_en_jugar"
+        ],
+        [
+            "bool",
+            "contado"
+        ],
+        [
             "Jugada",
             "jugada"
+        ],
+        [
+            "bool",
+            "listo"
+        ],
+        [
+            "List",
+            "acciones"
+        ],
+        [
+            "string",
+            "autor"
         ],
         [
             "int",
@@ -2782,36 +2802,8 @@
             "pases_consecutivos"
         ],
         [
-            "List",
-            "acciones"
-        ],
-        [
-            "bool",
-            "contado"
-        ],
-        [
-            "string",
-            "autor"
-        ],
-        [
-            "string",
-            "ultimo_en_jugar"
-        ],
-        [
-            "bool",
-            "listo"
-        ],
-        [
             "Jugada",
             "ultima"
-        ],
-        [
-            "int",
-            "cabezas"
-        ],
-        [
-            "int",
-            "i"
         ],
         [
             "int",
@@ -2819,7 +2811,15 @@
         ],
         [
             "int",
+            "cabezas"
+        ],
+        [
+            "int",
             "cant_bruta"
+        ],
+        [
+            "int",
+            "i"
         ],
         [
             "int",
@@ -2838,44 +2838,16 @@
             "jugadores"
         ],
         [
-            "Juego",
-            "juego"
-        ],
-        [
-            "string",
-            "retorno"
-        ],
-        [
-            "Reglas_del_Juego",
-            "Reglas"
-        ],
-        [
             "int",
-            "i"
-        ],
-        [
-            "int",
-            "indices"
-        ],
-        [
-            "string",
-            "entrada"
-        ],
-        [
-            "StreamReader",
-            "Sr"
-        ],
-        [
-            "string",
-            "nombre"
+            "cont"
         ],
         [
             "List",
             "miembros"
         ],
         [
-            "List",
-            "jugadores"
+            "int",
+            "i"
         ],
         [
             "List",
@@ -2883,23 +2855,83 @@
         ],
         [
             "string",
-            "partida"
+            "entrada"
         ],
         [
-            "int",
-            "cont"
+            "Reglas_del_Juego",
+            "Reglas"
+        ],
+        [
+            "string",
+            "retorno"
+        ],
+        [
+            "List",
+            "jugadores"
+        ],
+        [
+            "string",
+            "nombre"
         ],
         [
             "Equipo",
             "aux"
         ],
         [
-            "GLib",
-            "data"
+            "string",
+            "partida"
+        ],
+        [
+            "int",
+            "indices"
+        ],
+        [
+            "Juego",
+            "juego"
+        ],
+        [
+            "StreamReader",
+            "Sr"
         ],
         [
             "GLib",
             "stream"
+        ],
+        [
+            "GLib",
+            "file"
+        ],
+        [
+            "GLib",
+            "data"
+        ],
+        [
+            "bool",
+            "has"
+        ],
+        [
+            "var",
+            "team"
+        ],
+        [
+            "ulong",
+            "length"
+        ],
+        [
+            "var",
+            "i"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "GLib",
+            "stream"
+        ],
+        [
+            "var",
+            "inputs"
         ],
         [
             "GLib",
@@ -2911,47 +2943,7 @@
         ],
         [
             "var",
-            "humans"
-        ],
-        [
-            "GLib",
-            "stream"
-        ],
-        [
-            "var",
-            "team"
-        ],
-        [
-            "var",
-            "ais"
-        ],
-        [
-            "GLib",
-            "file"
-        ],
-        [
-            "GLib",
-            "data"
-        ],
-        [
-            "var",
-            "i"
-        ],
-        [
-            "ulong",
-            "length"
-        ],
-        [
-            "int",
-            "i"
-        ],
-        [
-            "var",
-            "inputs"
-        ],
-        [
-            "var",
-            "player"
+            "teams"
         ],
         [
             "var",
@@ -2959,15 +2951,7 @@
         ],
         [
             "var",
-            "teams"
-        ],
-        [
-            "bool",
-            "has"
-        ],
-        [
-            "var",
-            "players_"
+            "ais"
         ],
         [
             "var",
@@ -2975,7 +2959,19 @@
         ],
         [
             "var",
-            "template"
+            "player"
+        ],
+        [
+            "var",
+            "players_"
+        ],
+        [
+            "var",
+            "humans"
+        ],
+        [
+            "GLib",
+            "data"
         ],
         [
             "var",
@@ -2983,7 +2979,7 @@
         ],
         [
             "var",
-            "code"
+            "type"
         ],
         [
             "var",
@@ -2991,7 +2987,7 @@
         ],
         [
             "var",
-            "type"
+            "builder"
         ],
         [
             "var",
@@ -2999,7 +2995,11 @@
         ],
         [
             "var",
-            "builder"
+            "g_type"
+        ],
+        [
+            "var",
+            "template"
         ],
         [
             "var",
@@ -3007,11 +3007,31 @@
         ],
         [
             "var",
+            "code"
+        ],
+        [
+            "var",
             "path"
         ],
         [
             "var",
-            "g_type"
+            "app"
+        ],
+        [
+            "var",
+            "rulename"
+        ],
+        [
+            "var",
+            "window"
+        ],
+        [
+            "var",
+            "rule"
+        ],
+        [
+            "var",
+            "engine"
         ],
         [
             "var",
@@ -3023,7 +3043,7 @@
         ],
         [
             "var",
-            "app"
+            "result"
         ],
         [
             "var",
@@ -3035,23 +3055,43 @@
         ],
         [
             "var",
-            "rulename"
-        ],
-        [
-            "var",
             "flags"
         ],
         [
             "var",
-            "engine"
+            "basedir"
         ],
         [
             "var",
-            "window"
+            "name"
         ],
         [
             "var",
-            "result"
+            "files"
+        ],
+        [
+            "var",
+            "file"
+        ],
+        [
+            "var",
+            "args"
+        ],
+        [
+            "var",
+            "info"
+        ],
+        [
+            "var",
+            "cancel"
+        ],
+        [
+            "var",
+            "row_"
+        ],
+        [
+            "var",
+            "domain"
         ],
         [
             "var",
@@ -3063,39 +3103,7 @@
         ],
         [
             "var",
-            "args"
-        ],
-        [
-            "var",
-            "row_"
-        ],
-        [
-            "var",
-            "dialog"
-        ],
-        [
-            "var",
-            "files"
-        ],
-        [
-            "var",
-            "space"
-        ],
-        [
-            "var",
             "row"
-        ],
-        [
-            "var",
-            "file"
-        ],
-        [
-            "var",
-            "name"
-        ],
-        [
-            "var",
-            "info"
         ],
         [
             "Gtk",
@@ -3103,15 +3111,7 @@
         ],
         [
             "var",
-            "cancel"
-        ],
-        [
-            "var",
-            "path"
-        ],
-        [
-            "var",
-            "rule"
+            "dialog"
         ],
         [
             "var",
@@ -3119,39 +3119,15 @@
         ],
         [
             "var",
+            "space"
+        ],
+        [
+            "var",
+            "path"
+        ],
+        [
+            "var",
             "basedir"
-        ],
-        [
-            "var",
-            "domain"
-        ],
-        [
-            "var",
-            "box3"
-        ],
-        [
-            "var",
-            "place"
-        ],
-        [
-            "Gtk",
-            "place"
-        ],
-        [
-            "var",
-            "box1"
-        ],
-        [
-            "var",
-            "box6"
-        ],
-        [
-            "var",
-            "box5"
-        ],
-        [
-            "var",
-            "box4"
         ],
         [
             "var",
@@ -3159,19 +3135,43 @@
         ],
         [
             "var",
-            "builder"
-        ],
-        [
-            "var",
-            "basedir"
-        ],
-        [
-            "var",
             "object_"
         ],
         [
             "var",
-            "types"
+            "box6"
+        ],
+        [
+            "var",
+            "box4"
+        ],
+        [
+            "var",
+            "box5"
+        ],
+        [
+            "var",
+            "builder"
+        ],
+        [
+            "var",
+            "place"
+        ],
+        [
+            "var",
+            "box3"
+        ],
+        [
+            "var",
+            "box1"
+        ],
+        [
+            "Gtk",
+            "place"
+        ],
+        [
+            "var",
+            "type"
         ],
         [
             "var",
@@ -3179,11 +3179,7 @@
         ],
         [
             "var",
-            "entry"
-        ],
-        [
-            "var",
-            "type"
+            "types"
         ],
         [
             "var",
@@ -3194,6 +3190,14 @@
             "toggle"
         ],
         [
+            "var",
+            "entry"
+        ],
+        [
+            "var",
+            "__file"
+        ],
+        [
             "int",
             "i"
         ],
@@ -3202,12 +3206,8 @@
             "__hint"
         ],
         [
-            "var",
-            "class_abi"
-        ],
-        [
-            "var",
-            "span"
+            "IntPtr",
+            "raw_ptr"
         ],
         [
             "var",
@@ -3215,15 +3215,19 @@
         ],
         [
             "var",
-            "__file"
-        ],
-        [
-            "var",
             "__files"
         ],
         [
-            "IntPtr",
-            "raw_ptr"
+            "var",
+            "span"
+        ],
+        [
+            "var",
+            "class_abi"
+        ],
+        [
+            "var",
+            "mat"
         ],
         [
             "var",
@@ -3231,7 +3235,7 @@
         ],
         [
             "var",
-            "v2"
+            "x"
         ],
         [
             "var",
@@ -3239,27 +3243,19 @@
         ],
         [
             "var",
-            "x"
-        ],
-        [
-            "var",
-            "mat"
-        ],
-        [
-            "float",
-            "angle"
-        ],
-        [
-            "Vector3",
-            "angles"
+            "v2"
         ],
         [
             "Vector3",
             "vector"
         ],
         [
-            "var",
-            "size"
+            "Vector3",
+            "angles"
+        ],
+        [
+            "float",
+            "angle"
         ],
         [
             "var",
@@ -3270,8 +3266,8 @@
             "array"
         ],
         [
-            "int",
-            "i"
+            "var",
+            "size"
         ],
         [
             "var",
@@ -3280,6 +3276,18 @@
         [
             "var",
             "offset"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "var",
+            "relative"
+        ],
+        [
+            "var",
+            "camera"
         ],
         [
             "var",
@@ -3291,23 +3299,15 @@
         ],
         [
             "var",
-            "camera"
-        ],
-        [
-            "var",
-            "relative"
-        ],
-        [
-            "var",
             "data"
         ],
         [
             "var",
-            "offset"
+            "pname"
         ],
         [
             "var",
-            "pname"
+            "offset"
         ],
         [
             "IntPtr",
@@ -3323,23 +3323,11 @@
         ],
         [
             "var",
-            "ar"
-        ],
-        [
-            "var",
             "span"
         ],
         [
             "var",
-            "shaders"
-        ],
-        [
-            "uint",
-            "i"
-        ],
-        [
-            "var",
-            "code"
+            "ar"
         ],
         [
             "var",
@@ -3347,23 +3335,15 @@
         ],
         [
             "var",
-            "length"
-        ],
-        [
-            "var",
             "shader"
         ],
         [
-            "var",
-            "result"
-        ],
-        [
-            "string",
-            "infoLog"
+            "uint",
+            "i"
         ],
         [
             "var",
-            "message"
+            "shaders"
         ],
         [
             "int",
@@ -3371,15 +3351,31 @@
         ],
         [
             "var",
+            "result"
+        ],
+        [
+            "var",
+            "code"
+        ],
+        [
+            "var",
+            "message"
+        ],
+        [
+            "var",
+            "length"
+        ],
+        [
+            "string",
+            "infoLog"
+        ],
+        [
+            "var",
             "vertices"
         ],
         [
             "var",
-            "pencil"
-        ],
-        [
-            "var",
-            "target"
+            "counts"
         ],
         [
             "var",
@@ -3391,7 +3387,15 @@
         ],
         [
             "var",
-            "counts"
+            "pencil"
+        ],
+        [
+            "var",
+            "target"
+        ],
+        [
+            "var",
+            "other"
         ],
         [
             "var",
@@ -3403,39 +3407,11 @@
         ],
         [
             "var",
-            "other"
-        ],
-        [
-            "var",
-            "losses_"
-        ],
-        [
-            "var",
-            "list"
-        ],
-        [
-            "var",
-            "player"
-        ],
-        [
-            "var",
-            "message"
-        ],
-        [
-            "var",
-            "proc_"
-        ],
-        [
-            "var",
-            "action"
+            "match"
         ],
         [
             "var",
             "takes_"
-        ],
-        [
-            "DataReceivedEventHandler",
-            "handler"
         ],
         [
             "ActionArgs",
@@ -3443,11 +3419,19 @@
         ],
         [
             "var",
-            "losses"
+            "action"
         ],
         [
             "var",
-            "takes"
+            "list"
+        ],
+        [
+            "var",
+            "proc_"
+        ],
+        [
+            "var",
+            "losses_"
         ],
         [
             "var",
@@ -3455,99 +3439,27 @@
         ],
         [
             "var",
-            "match"
+            "player"
         ],
         [
             "var",
             "line"
         ],
         [
-            "var",
-            "engine_"
+            "DataReceivedEventHandler",
+            "handler"
         ],
         [
             "var",
-            "a"
+            "message"
         ],
         [
             "var",
-            "context"
+            "takes"
         ],
         [
             "var",
-            "mods"
-        ],
-        [
-            "var",
-            "atril_"
-        ],
-        [
-            "var",
-            "leap"
-        ],
-        [
-            "var",
-            "fovy"
-        ],
-        [
-            "var",
-            "teamed"
-        ],
-        [
-            "int",
-            "heads"
-        ],
-        [
-            "var",
-            "distance"
-        ],
-        [
-            "var",
-            "builder"
-        ],
-        [
-            "var",
-            "press"
-        ],
-        [
-            "var",
-            "head"
-        ],
-        [
-            "var",
-            "headerbar"
-        ],
-        [
-            "var",
-            "putat"
-        ],
-        [
-            "var",
-            "glarea1_"
-        ],
-        [
-            "var",
-            "piece"
-        ],
-        [
-            "var",
-            "board_"
-        ],
-        [
-            "var",
-            "renderer_"
-        ],
-        [
-            "var",
-            "x"
-        ],
-        [
-            "var",
-            "started"
-        ],
-        [
-            "var",
-            "msg"
+            "losses"
         ],
         [
             "var",
@@ -3555,7 +3467,7 @@
         ],
         [
             "var",
-            "leaps"
+            "head"
         ],
         [
             "var",
@@ -3563,15 +3475,99 @@
         ],
         [
             "var",
+            "fovy"
+        ],
+        [
+            "var",
+            "mods"
+        ],
+        [
+            "var",
+            "engine_"
+        ],
+        [
+            "var",
+            "piece"
+        ],
+        [
+            "var",
+            "started"
+        ],
+        [
+            "var",
+            "press"
+        ],
+        [
+            "var",
+            "leaps"
+        ],
+        [
+            "var",
+            "glarea1_"
+        ],
+        [
+            "var",
+            "a"
+        ],
+        [
+            "var",
+            "builder"
+        ],
+        [
+            "var",
+            "msg"
+        ],
+        [
+            "var",
+            "board_"
+        ],
+        [
+            "int",
+            "heads"
+        ],
+        [
+            "var",
+            "putat"
+        ],
+        [
+            "var",
+            "distance"
+        ],
+        [
+            "var",
+            "teamed"
+        ],
+        [
+            "var",
+            "headerbar"
+        ],
+        [
+            "var",
+            "context"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "var",
+            "leap"
+        ],
+        [
+            "var",
+            "renderer_"
+        ],
+        [
+            "var",
+            "atril_"
+        ],
+        [
+            "var",
             "last"
         ],
         [
             "var",
-            "height"
-        ],
-        [
-            "var",
-            "stride"
+            "relative"
         ],
         [
             "int",
@@ -3579,19 +3575,47 @@
         ],
         [
             "var",
-            "slant"
+            "parent"
+        ],
+        [
+            "var",
+            "fmtr"
+        ],
+        [
+            "var",
+            "stride"
+        ],
+        [
+            "var",
+            "weight"
+        ],
+        [
+            "var",
+            "tio"
         ],
         [
             "var",
             "intr"
         ],
         [
+            "double",
+            "fontSize"
+        ],
+        [
             "var",
             "image"
         ],
         [
-            "Cairo",
-            "ext"
+            "int",
+            "reduces"
+        ],
+        [
+            "var",
+            "buffer"
+        ],
+        [
+            "var",
+            "height"
         ],
         [
             "var",
@@ -3603,35 +3627,19 @@
         ],
         [
             "var",
-            "buffer"
-        ],
-        [
-            "double",
             "fontSize"
         ],
         [
-            "int",
-            "reduces"
+            "Cairo",
+            "ext"
         ],
         [
             "var",
-            "fontSize"
-        ],
-        [
-            "var",
-            "fmtr"
-        ],
-        [
-            "var",
-            "relative"
+            "slant"
         ],
         [
             "var",
             "width"
-        ],
-        [
-            "var",
-            "tio"
         ],
         [
             "double",
@@ -3639,15 +3647,7 @@
         ],
         [
             "var",
-            "weight"
-        ],
-        [
-            "var",
-            "parent"
-        ],
-        [
-            "var",
-            "head"
+            "tmp"
         ],
         [
             "var",
@@ -3655,31 +3655,7 @@
         ],
         [
             "var",
-            "current"
-        ],
-        [
-            "var",
-            "list"
-        ],
-        [
-            "var",
-            "size"
-        ],
-        [
-            "PieceObject",
-            "piece"
-        ],
-        [
-            "var",
             "relative"
-        ],
-        [
-            "var",
-            "irot"
-        ],
-        [
-            "var",
-            "position"
         ],
         [
             "var",
@@ -3687,11 +3663,39 @@
         ],
         [
             "var",
-            "tmp"
+            "current"
+        ],
+        [
+            "var",
+            "head"
+        ],
+        [
+            "var",
+            "list"
+        ],
+        [
+            "PieceObject",
+            "piece"
+        ],
+        [
+            "var",
+            "irot"
         ],
         [
             "var",
             "piece"
+        ],
+        [
+            "var",
+            "size"
+        ],
+        [
+            "var",
+            "position"
+        ],
+        [
+            "var",
+            "other"
         ],
         [
             "var",
@@ -3700,10 +3704,6 @@
         [
             "var",
             "a"
-        ],
-        [
-            "var",
-            "other"
         ]
     ],
     "method_names": [
@@ -3715,40 +3715,40 @@
         "Reemplazar",
         "Criterio",
         "Evaluar",
+        "Descartar",
         "Jugar",
         "Iniciar",
         "Descartar",
         "Jugar",
-        "Descartar",
         "Jugar",
         "Actualizar",
         "Jugar",
-        "Valorar_Datas",
+        "Descartar",
         "Apertura",
         "Valorar",
+        "Valorar_Datas",
         "Descartar",
-        "Descartar",
-        "Actualizar",
         "SePasoAData",
-        "Valorar_Datas",
+        "Actualizar",
         "Apertura",
+        "Valorar_Datas",
         "Valorar",
-        "Valorar_Datas",
         "Apertura",
+        "Valorar_Datas",
         "Valorar",
         "MostrarMano",
-        "MostrarCaras",
         "MostrarEquipos",
-        "Repartir",
-        "Actualizar",
-        "GetMano",
+        "MostrarCaras",
         "Refrescar",
         "DarMano",
-        "Get_Cambiadores_de_Repartir",
-        "Actualizar_Cambiadores",
-        "PasarTurno",
+        "GetMano",
+        "Repartir",
         "Actualizar",
         "Get_Cambiador_de_Refrescar",
+        "PasarTurno",
+        "Get_Cambiadores_de_Repartir",
+        "Actualizar",
+        "Actualizar_Cambiadores",
         "EsValidoColocar",
         "Reemplazar",
         "Iniciar",
@@ -3763,18 +3763,18 @@
         "ToString",
         "ToString",
         "MoveNext",
-        "Get_Cambiadores_de_Repartir",
         "EsValidoColocar",
         "Puntuar",
-        "EsValida",
-        "GameOver",
         "Get_Cambiador_de_Refrescar",
+        "GameOver",
         "fichas_fuera",
+        "EsValida",
+        "Get_Cambiadores_de_Repartir",
         "Puntuar",
         "Reemplazar",
         "Reemplazar",
-        "Get_Cambiadores_de_Repartir",
         "Get_Cambiador_de_Refrescar",
+        "Get_Cambiadores_de_Repartir",
         "Reemplazar",
         "EsValidoColocar",
         "Puntuar",
@@ -3785,8 +3785,8 @@
         "Ordenar",
         "fichas",
         "cant_de_fichas",
-        "Partida",
         "GetJugadores",
+        "Partida",
         "Save",
         "Load",
         "Save",
@@ -3798,24 +3798,24 @@
         "OnOpen",
         "Main",
         "_Value",
-        "UpdateRules",
-        "OnRemovedRule",
         "OnNameChanged",
-        "EditPlayers",
-        "AddRule",
-        "DeleteDeep",
-        "OnAddedRule",
-        "EditRule",
+        "OnRemovedRule",
         "RemoveRule",
+        "AddRule",
+        "UpdateRules",
+        "DeleteDeep",
         "StartRule",
-        "GetPlace",
+        "EditPlayers",
+        "EditRule",
+        "OnAddedRule",
         "Apply",
+        "GetPlace",
         "Cancel",
         "Save",
         "Warning",
         "Error",
-        "Question",
         "Notification",
+        "Question",
         "Exception",
         "OnChanged",
         "OverrideOpen",
@@ -3825,61 +3825,61 @@
         "Pack",
         "Pack",
         "Pack",
-        "Update",
-        "IEnumerable",
+        "CopyTo",
+        "Unfreeze",
         "Freeze",
+        "GetEnumerator",
         "Thaw",
         "Contains",
         "Clear",
-        "Unfreeze",
-        "CopyTo",
-        "GetEnumerator",
+        "IEnumerable",
+        "Update",
         "IndexOf",
         "BindBuffer",
-        "BindArray",
         "UnbindBuffer",
+        "BindArray",
         "Pack",
         "Draw",
         "Update",
-        "LoadLibrary",
+        "GetProcAddress",
+        "dlopen",
         "LoadFunction",
-        "LoadLibraryW",
+        "LoadLibrary",
         "uname",
         "dlsym",
-        "dlopen",
-        "GetProcAddress",
+        "LoadLibraryW",
         "Pack",
         "SetUniform",
-        "Link",
         "Uniform",
         "Compile",
+        "Link",
         "Use",
         "Draw",
         "GetHashCode",
         "ToString",
         "Equals",
         "MakeTeam",
-        "RollBack",
         "IsBreak",
-        "OnOutput",
-        "MakePiece",
         "PollNext",
-        "OnRender",
-        "SmoothMove",
+        "MakePiece",
+        "RollBack",
+        "OnOutput",
         "OnResize",
-        "OnRealize",
-        "OnKeyPressed",
+        "SmoothMove",
         "OnCreateContext",
+        "OnKeyPressed",
+        "OnRealize",
+        "OnRender",
         "Last",
+        "Append",
         "Prepend",
-        "Append",
         "DrawText",
-        "Append",
-        "AppendHead",
-        "SetPosition",
-        "AppendDouble",
-        "Draw",
         "AppendSimple",
+        "Draw",
+        "SetPosition",
+        "Append",
+        "AppendDouble",
+        "AppendHead",
         "GetHashCode",
         "ToString",
         "Equals"
@@ -3922,12 +3922,12 @@
             "Jugada"
         ],
         [
-            "Iniciar",
-            "void"
-        ],
-        [
             "Descartar",
             "List"
+        ],
+        [
+            "Iniciar",
+            "void"
         ],
         [
             "Jugar",
@@ -3946,16 +3946,16 @@
             "void"
         ],
         [
-            "Descartar",
-            "List"
-        ],
-        [
             "Apertura",
             "Jugada"
         ],
         [
             "Jugar",
             "Jugada"
+        ],
+        [
+            "Descartar",
+            "List"
         ],
         [
             "Valorar_Datas",
@@ -3968,18 +3968,26 @@
         [
             "Descartar",
             "List"
-        ],
-        [
-            "Actualizar",
-            "void"
         ],
         [
             "SePasoAData",
             "bool"
         ],
         [
+            "Actualizar",
+            "void"
+        ],
+        [
             "Apertura",
             "Jugada"
+        ],
+        [
+            "Valorar",
+            "double"
+        ],
+        [
+            "Valorar_Datas",
+            "double"
         ],
         [
             "Valorar_Datas",
@@ -3992,14 +4000,6 @@
         [
             "Apertura",
             "Jugada"
-        ],
-        [
-            "Valorar_Datas",
-            "double"
-        ],
-        [
-            "Valorar",
-            "double"
         ],
         [
             "MostrarEquipos",
@@ -4014,7 +4014,19 @@
             "void"
         ],
         [
+            "Refrescar",
+            "void"
+        ],
+        [
             "GetMano",
+            "List"
+        ],
+        [
+            "DarMano",
+            "Intercambio"
+        ],
+        [
+            "Actualizar",
             "List"
         ],
         [
@@ -4023,19 +4035,11 @@
         ],
         [
             "Actualizar",
-            "List"
-        ],
-        [
-            "Refrescar",
             "void"
         ],
         [
-            "DarMano",
-            "Intercambio"
-        ],
-        [
-            "Actualizar",
-            "void"
+            "Get_Cambiadores_de_Repartir",
+            "("
         ],
         [
             "PasarTurno",
@@ -4044,10 +4048,6 @@
         [
             "Get_Cambiador_de_Refrescar",
             "Cambiador"
-        ],
-        [
-            "Get_Cambiadores_de_Repartir",
-            "("
         ],
         [
             "Actualizar_Cambiadores",
@@ -4062,7 +4062,7 @@
             "List"
         ],
         [
-            "Evaluar",
+            "Comparar",
             "bool"
         ],
         [
@@ -4070,7 +4070,7 @@
             "void"
         ],
         [
-            "Comparar",
+            "Evaluar",
             "bool"
         ],
         [
@@ -4104,6 +4104,18 @@
         [
             "ToString",
             "string"
+        ],
+        [
+            "Puntuar",
+            "int"
+        ],
+        [
+            "Get_Cambiadores_de_Repartir",
+            "("
+        ],
+        [
+            "EsValidoColocar",
+            "bool"
         ],
         [
             "fichas_fuera",
@@ -4114,28 +4126,16 @@
             "bool"
         ],
         [
-            "Get_Cambiador_de_Refrescar",
-            "Cambiador"
-        ],
-        [
-            "EsValidoColocar",
-            "bool"
-        ],
-        [
             "EsValida",
             "bool"
         ],
         [
-            "Get_Cambiadores_de_Repartir",
-            "("
+            "Get_Cambiador_de_Refrescar",
+            "Cambiador"
         ],
         [
             "MoveNext",
             "string"
-        ],
-        [
-            "Puntuar",
-            "int"
         ],
         [
             "Puntuar",
@@ -4198,11 +4198,11 @@
             "List"
         ],
         [
-            "GetJugadores",
+            "Partida",
             "void"
         ],
         [
-            "Partida",
+            "GetJugadores",
             "void"
         ],
         [
@@ -4250,11 +4250,11 @@
             "("
         ],
         [
-            "AddRule",
+            "UpdateRules",
             "void"
         ],
         [
-            "OnNameChanged",
+            "StartRule",
             "void"
         ],
         [
@@ -4266,11 +4266,11 @@
             "void"
         ],
         [
-            "OnRemovedRule",
+            "RemoveRule",
             "void"
         ],
         [
-            "StartRule",
+            "OnNameChanged",
             "void"
         ],
         [
@@ -4278,19 +4278,15 @@
             "void"
         ],
         [
-            "RemoveRule",
-            "void"
-        ],
-        [
-            "UpdateRules",
-            "void"
-        ],
-        [
             "OnAddedRule",
             "void"
         ],
         [
-            "Save",
+            "AddRule",
+            "void"
+        ],
+        [
+            "OnRemovedRule",
             "void"
         ],
         [
@@ -4298,19 +4294,15 @@
             "Gtk"
         ],
         [
-            "Cancel",
-            "void"
-        ],
-        [
             "Apply",
             "void"
         ],
         [
-            "Error",
+            "Save",
             "void"
         ],
         [
-            "Notification",
+            "Cancel",
             "void"
         ],
         [
@@ -4322,7 +4314,15 @@
             "void"
         ],
         [
+            "Notification",
+            "void"
+        ],
+        [
             "Exception",
+            "void"
+        ],
+        [
+            "Error",
             "void"
         ],
         [
@@ -4362,10 +4362,6 @@
             "void"
         ],
         [
-            "Contains",
-            "bool"
-        ],
-        [
             "CopyTo",
             "void"
         ],
@@ -4374,16 +4370,24 @@
             "void"
         ],
         [
+            "Thaw",
+            "void"
+        ],
+        [
             "Update",
             "void"
         ],
         [
-            "IEnumerable",
-            "IEnumerator"
+            "Contains",
+            "bool"
         ],
         [
-            "Thaw",
-            "void"
+            "IndexOf",
+            "int"
+        ],
+        [
+            "IEnumerable",
+            "IEnumerator"
         ],
         [
             "GetEnumerator",
@@ -4394,8 +4398,8 @@
             "void"
         ],
         [
-            "IndexOf",
-            "int"
+            "UnbindBuffer",
+            "void"
         ],
         [
             "BindArray",
@@ -4403,10 +4407,6 @@
         ],
         [
             "BindBuffer",
-            "void"
-        ],
-        [
-            "UnbindBuffer",
             "void"
         ],
         [
@@ -4422,11 +4422,19 @@
             "void"
         ],
         [
+            "GetProcAddress",
+            "IntPtr"
+        ],
+        [
+            "LoadLibraryW",
+            "IntPtr"
+        ],
+        [
             "LoadFunction",
             "T"
         ],
         [
-            "LoadLibraryW",
+            "dlopen",
             "IntPtr"
         ],
         [
@@ -4434,20 +4442,12 @@
             "IntPtr"
         ],
         [
-            "dlopen",
+            "dlsym",
             "IntPtr"
         ],
         [
             "uname",
             "int"
-        ],
-        [
-            "GetProcAddress",
-            "IntPtr"
-        ],
-        [
-            "dlsym",
-            "IntPtr"
         ],
         [
             "Pack",
@@ -4458,19 +4458,19 @@
             "void"
         ],
         [
-            "Uniform",
-            "int"
-        ],
-        [
-            "Use",
-            "void"
-        ],
-        [
             "Compile",
             "void"
         ],
         [
             "SetUniform",
+            "void"
+        ],
+        [
+            "Uniform",
+            "int"
+        ],
+        [
+            "Use",
             "void"
         ],
         [
@@ -4498,15 +4498,11 @@
             "string"
         ],
         [
-            "MakePiece",
-            "int"
-        ],
-        [
-            "OnOutput",
+            "PollNext",
             "void"
         ],
         [
-            "PollNext",
+            "OnOutput",
             "void"
         ],
         [
@@ -4514,20 +4510,8 @@
             "void"
         ],
         [
-            "OnRealize",
-            "void"
-        ],
-        [
-            "OnCreateContext",
-            "void"
-        ],
-        [
-            "OnKeyPressed",
-            "void"
-        ],
-        [
-            "OnRender",
-            "void"
+            "MakePiece",
+            "int"
         ],
         [
             "OnResize",
@@ -4538,11 +4522,27 @@
             "void"
         ],
         [
-            "Last",
-            "PieceObject"
+            "OnRender",
+            "void"
+        ],
+        [
+            "OnRealize",
+            "void"
+        ],
+        [
+            "OnKeyPressed",
+            "void"
+        ],
+        [
+            "OnCreateContext",
+            "void"
         ],
         [
             "Prepend",
+            "PieceObject"
+        ],
+        [
+            "Last",
             "PieceObject"
         ],
         [
@@ -4554,7 +4554,7 @@
             "void"
         ],
         [
-            "Append",
+            "Draw",
             "void"
         ],
         [
@@ -4562,11 +4562,11 @@
             "void"
         ],
         [
-            "Draw",
+            "AppendDouble",
             "void"
         ],
         [
-            "AppendDouble",
+            "SetPosition",
             "void"
         ],
         [
@@ -4574,7 +4574,7 @@
             "void"
         ],
         [
-            "SetPosition",
+            "Append",
             "void"
         ],
         [
@@ -4608,35 +4608,35 @@
         "Estado",
         "Portal_del_Banquero",
         "Organizador",
-        "Emparejador_Usual",
-        "Emparejador_Permisivo",
         "Emparejador_DobleModular",
         "Emparejador_Pro_Dobles",
+        "Emparejador_Permisivo",
         "Emparejador_Sucesor",
+        "Emparejador_Usual",
         "Intercambio_DoblarFicha",
-        "Intercambio_Dos_Que_Sumen",
         "Intercambio_Variado",
-        "Intercambio_Sobrevalor",
         "Intercambio_Random",
-        "Pases_Consecutivos",
+        "Intercambio_Dos_Que_Sumen",
+        "Intercambio_Sobrevalor",
         "NoSeHaRepartido",
-        "Nunca",
+        "Pases_Consecutivos",
         "Jugador_Mas",
+        "Pegada",
+        "JuegoNoIniciado",
+        "Nunca",
+        "TodosDoblesJugados",
         "Jugador_Mas_Atrasado",
         "Siempre",
-        "Tranque",
-        "JuegoNoIniciado",
-        "NoFichasFuera",
-        "FaseFinal",
-        "TodosDoblesJugados",
-        "Pegada",
         "Jugador_Mas_Adelantado",
+        "NoFichasFuera",
+        "Tranque",
+        "FaseFinal",
         "Validador_Paridad_Diferente",
         "Validador_Usual",
         "Creador_Usual",
         "Ordenador_Usual",
-        "MismoJugador",
         "MoverDerecha",
+        "MismoJugador",
         "Action",
         "Reparticion",
         "Intercambio",
@@ -4659,74 +4659,74 @@
         "TemplateBuilder",
         "Application",
         "ListBox",
-        "Window",
         "RuleListBoxRow",
+        "Window",
         "RuleDialog",
         "Message",
-        "TeamDialog",
-        "PlayerRow",
         "TeamRow",
+        "PlayerRow",
+        "TeamDialog",
         "Application",
-        "Gl",
         "Gl",
         "Gl",
         "Camera",
         "Gl",
         "SpotLight",
+        "Gl",
+        "Gl",
         "Outliner",
-        "Gl",
-        "Gl",
         "DirLight",
+        "Gl",
         "Gl",
         "SingleObject",
         "Gl",
         "Gl",
-        "Gl",
         "PointLight",
         "Gl",
-        "Object",
         "Gl",
+        "Object",
         "Ssbo",
         "Gl",
         "Pencil",
         "Gl",
         "Light",
         "Gl",
+        "Gl",
         "Skybox",
         "Gl",
         "Ubo",
+        "Gl",
+        "Linux",
         "OSX",
         "Windows",
-        "Linux",
         "Loader",
         "Gl",
-        "Gl",
         "Shader",
-        "ProgramException",
         "ShaderException",
+        "ProgramException",
         "Program",
-        "Gl",
         "Gl",
         "SingleModel",
         "Gl",
+        "Gl",
         "Piece",
         "Pieces",
-        "ExchangeArgs",
+        "MoveArgs",
         "ActionArgs",
-        "GameOverArgs",
         "EmitHandArgs",
+        "ExchangeArgs",
         "Backend",
         "EmitTeamArgs",
         "EngineException",
-        "MoveArgs",
+        "GameOverArgs",
         "Window",
-        "PieceObject",
         "PieceObjectListException",
+        "PieceObject",
         "PieceModel",
-        "Board",
         "PieceBoard",
-        "AtrilObject",
-        "Piece"
+        "Board",
+        "Piece",
+        "AtrilObject"
     ],
     "interface_names": [
         "ICriterio_de_Intercambio",

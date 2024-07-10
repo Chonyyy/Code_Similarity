@@ -1,13 +1,10 @@
 from antlr4 import *
-from antlr4.tree.Tree import ErrorNodeImpl
 import json, os
 from parser.parser import *
 from Word2Vec.word2vec import FeatureVectorizer
-import networkx as nx
-from node2vec import Node2Vec
 from collections import deque
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/wallE/'
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/hulk/'
 
 DATA_FOLDER = f'{os.getcwd()}/data/features_all/'
                                                           
@@ -37,7 +34,6 @@ for f in os.scandir(PROJECTS_FOLDER):
         features = process_project(PROJECTS_FOLDER + f.name)
         features['project_name'] = f.name
         features['label'] = "original"
-        
         
         
         if folder_name == "moogle":
