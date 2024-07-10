@@ -7,7 +7,7 @@ import networkx as nx
 from node2vec import Node2Vec
 from collections import deque
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/All/'
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/wallE/'
 
 DATA_FOLDER = f'{os.getcwd()}/data/features_all/'
                                                           
@@ -21,16 +21,33 @@ for f in os.scandir(PROJECTS_FOLDER):
         
         output_json_path = os.path.join(DATA_FOLDER, f"features_{f.name}.json")
         output_json_path_vect = f'data/features_vect/features_{f.name}.json'
+        # Dividimos la ruta en sus componentes
+        components = PROJECTS_FOLDER.split(os.sep)
+        folder_name = components[-2]
         
         if os.path.exists(output_json_path):
             if not os.path.exists(output_json_path_vect):
-                fv = FeatureVectorizer(output_json_path)
-                fv.vectorize_features_and_save(output_json_path_vect)
+                try:
+                    fv = FeatureVectorizer(output_json_path)
+                    fv.vectorize_features_and_save(output_json_path_vect)
+                except:
+                    print("ERRRROOOOOORRRRR WORD2VEC")
             continue
         
         features = process_project(PROJECTS_FOLDER + f.name)
         features['project_name'] = f.name
         features['label'] = "original"
+        
+        
+        
+        if folder_name == "moogle":
+            features['project_type'] = "moogle"
+        elif folder_name == "wallE":
+            features['project_type'] = "wallE"
+        elif folder_name == "domino":
+            features['project_type'] = "domino"
+        elif folder_name == "hulk":
+            features['project_type'] = "hulk"
         
         # Guardar los features en un archivo JSON
         with open(output_json_path, 'w', encoding='utf-8') as json_file:
@@ -38,9 +55,11 @@ for f in os.scandir(PROJECTS_FOLDER):
         
         print("Archivo JSON guardado correctamente.")
         
-        fv = FeatureVectorizer(output_json_path)
-        fv.vectorize_features_and_save(output_json_path_vect)
-
+        try:
+            fv = FeatureVectorizer(output_json_path)
+            fv.vectorize_features_and_save(output_json_path_vect)
+        except:
+            print("ERRRROOOOOORRRRR WORD2VEC")
 
 # Lista para almacenar todos los datos de los archivos JSON
 datos_combinados = []

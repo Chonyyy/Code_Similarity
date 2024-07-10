@@ -1,0 +1,1669 @@
+{
+    "total_nodes": 61052,
+    "max_depth": 1990,
+    "number_of_variables": 74,
+    "number_of_constants": 0,
+    "out_variables": 6,
+    "ref_params": 0,
+    "number_of_methods": 104,
+    "number_of_classes": 40,
+    "number_of_interfaces": 7,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 24,
+    "number_of_try_blocks": 2,
+    "number_of_lists": 7,
+    "number_of_dictionaries": 1,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 211,
+    "enums_names": [],
+    "control_structures_if": 41,
+    "control_structures_switch": 2,
+    "control_structures_for": 22,
+    "control_structures_while": 1,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 183,
+    "access_modifiers_private": 83,
+    "access_modifiers_protected": 4,
+    "access_modifiers_internal": 5,
+    "access_modifiers_static": 38,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 7,
+    "modifier_override": 2,
+    "modifier_new": 68,
+    "modifier_partial": 3,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 19,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 0,
+    "number_of_lambdas": 2,
+    "number_of_getters": 39,
+    "number_of_setters": 22,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 5,
+    "method_parameters": [
+        [
+            "Validate",
+            [
+                [
+                    "Token<T>",
+                    "Token"
+                ],
+                [
+                    "T",
+                    "OnTable"
+                ],
+                [
+                    "int",
+                    "index"
+                ]
+            ]
+        ],
+        [
+            "Validate",
+            [
+                [
+                    "Token<T>",
+                    "Token"
+                ],
+                [
+                    "T",
+                    "OnTable"
+                ],
+                [
+                    "int",
+                    "index"
+                ]
+            ]
+        ],
+        [
+            "Validate",
+            [
+                [
+                    "Token<T>",
+                    "Token"
+                ],
+                [
+                    "T",
+                    "OnTable"
+                ],
+                [
+                    "int",
+                    "index"
+                ]
+            ]
+        ],
+        [
+            "Condition",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "Condition",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "Condition",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "NoLLevaDetectado",
+            [
+                [
+                    "int",
+                    "Jugador"
+                ],
+                [
+                    "BaseState<T>",
+                    "State"
+                ]
+            ]
+        ],
+        [
+            "RestablecerNoLLeva",
+            [
+                [
+                    "int",
+                    "Jugadores"
+                ]
+            ]
+        ],
+        [
+            "Dispose",
+            [
+                [
+                    "bool",
+                    "disposing"
+                ]
+            ]
+        ],
+        [
+            "GetAll",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ],
+                [
+                    "BaseState<T>",
+                    "State"
+                ],
+                [
+                    "IValidateMove<T>",
+                    "Validator"
+                ]
+            ]
+        ],
+        [
+            "GetAll",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ],
+                [
+                    "T",
+                    "Face"
+                ],
+                [
+                    "IValidateMove<T>",
+                    "Validator"
+                ],
+                [
+                    "int",
+                    "IndexOnTable"
+                ]
+            ]
+        ],
+        [
+            "ValidarPrimeraMove",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ],
+                [
+                    "BaseState<T>",
+                    "State"
+                ]
+            ]
+        ],
+        [
+            "Next",
+            [
+                [
+                    "Player<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "Actualizar",
+            [
+                [
+                    "Move<T>",
+                    "Move"
+                ],
+                [
+                    "Player<T>",
+                    "player"
+                ]
+            ]
+        ],
+        [
+            "Next",
+            [
+                [
+                    "Player<T>[]",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "Actualizar",
+            [
+                [
+                    "Move<T>",
+                    "Move"
+                ],
+                [
+                    "Player<T>",
+                    "player"
+                ]
+            ]
+        ],
+        [
+            "Next",
+            [
+                [
+                    "Player<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "Actualizar",
+            [
+                [
+                    "Move<T>",
+                    "Move"
+                ],
+                [
+                    "Player<T>",
+                    "player"
+                ]
+            ]
+        ],
+        [
+            "Opciones",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Siguiente_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Plus_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Less_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Incluir_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "PlusIA_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "PlusTeam_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "EventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "ValoratePlayer",
+            [
+                [
+                    "Player<T>",
+                    "P1"
+                ],
+                [
+                    "IValorateToken<T>",
+                    "valorator"
+                ]
+            ]
+        ],
+        [
+            "ConvertToInt",
+            [
+                [
+                    "T",
+                    "Face"
+                ]
+            ]
+        ],
+        [
+            "ConvertToInt",
+            [
+                [
+                    "T[]",
+                    "Faces"
+                ]
+            ]
+        ],
+        [
+            "Mezclar",
+            [
+                [
+                    "List<Token<T>>",
+                    "miset"
+                ]
+            ]
+        ],
+        [
+            "PrepararJugadores",
+            [
+                [
+                    "int",
+                    "n"
+                ],
+                [
+                    "Player<T>[]",
+                    "players"
+                ],
+                [
+                    "List<Token<T>>",
+                    "Tokens"
+                ]
+            ]
+        ],
+        [
+            "Take",
+            [
+                [
+                    "List<Token<T>>",
+                    "Tokens"
+                ]
+            ]
+        ],
+        [
+            "NoCanPlayNum",
+            [
+                [
+                    "PlayerDates<T>[]",
+                    "dates"
+                ]
+            ]
+        ],
+        [
+            "PrintPlayerHand",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ]
+            ]
+        ],
+        [
+            "PrintTokens",
+            [
+                [
+                    "List<Token<T>>",
+                    "Tokens"
+                ]
+            ]
+        ],
+        [
+            "PrintNumTokens",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ]
+            ]
+        ],
+        [
+            "PrintTokens",
+            [
+                [
+                    "Token<T>[]",
+                    "Tokens"
+                ]
+            ]
+        ],
+        [
+            "PrintAll",
+            [
+                [
+                    "Player<T>[]",
+                    "players"
+                ]
+            ]
+        ],
+        [
+            "ValidateSttings",
+            [
+                [
+                    "T[]",
+                    "PosiblesCaras"
+                ],
+                [
+                    "int[]",
+                    "IAs"
+                ],
+                [
+                    "int[]",
+                    "Teams"
+                ],
+                [
+                    "int",
+                    "TokensByPlayer"
+                ],
+                [
+                    "int",
+                    "NumPlayers"
+                ],
+                [
+                    "ProgramedRules<T>",
+                    "PR"
+                ],
+                [
+                    "string",
+                    "Error"
+                ],
+                [
+                    "Player<T>[]",
+                    "gamers"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "Valorate",
+            [
+                [
+                    "Token<T>",
+                    "Token"
+                ]
+            ]
+        ],
+        [
+            "Valorate",
+            [
+                [
+                    "Token<T>",
+                    "Token"
+                ]
+            ]
+        ],
+        [
+            "Valorate",
+            [
+                [
+                    "Token<T>",
+                    "Token"
+                ]
+            ]
+        ],
+        [
+            "MCD",
+            [
+                [
+                    "int",
+                    "x"
+                ],
+                [
+                    "int",
+                    "y"
+                ]
+            ]
+        ],
+        [
+            "MoveValue",
+            [
+                [
+                    "IValorateToken<T>",
+                    "valorator"
+                ]
+            ]
+        ],
+        [
+            "SetDeTokens",
+            [
+                [
+                    "T[]",
+                    "Tokenactual"
+                ],
+                [
+                    "T[]",
+                    "PosiblesCaras"
+                ],
+                [
+                    "int",
+                    "indice"
+                ],
+                [
+                    "int",
+                    "menor"
+                ]
+            ]
+        ],
+        [
+            "Get",
+            [
+                [
+                    "List<Token<T>>",
+                    "Tokens"
+                ],
+                [
+                    "int",
+                    "TokensByPlayer"
+                ],
+                [
+                    "int",
+                    "CantJugadores"
+                ],
+                [
+                    "ProgramedRules<T>",
+                    "PR"
+                ]
+            ]
+        ],
+        [
+            "ModificateMoveScore",
+            [
+                [
+                    "Move<T>[]",
+                    "Moves"
+                ],
+                [
+                    "int[]",
+                    "scores"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "ModificateMoveScore",
+            [
+                [
+                    "Move<T>[]",
+                    "Moves"
+                ],
+                [
+                    "int[]",
+                    "scores"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "ModificateMoveScore",
+            [
+                [
+                    "Move<T>[]",
+                    "Moves"
+                ],
+                [
+                    "int[]",
+                    "scores"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "ModificateMoveScore",
+            [
+                [
+                    "Move<T>[]",
+                    "Moves"
+                ],
+                [
+                    "int[]",
+                    "scores"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "ModificateMoveScore",
+            [
+                [
+                    "Move<T>[]",
+                    "Moves"
+                ],
+                [
+                    "int[]",
+                    "scores"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "ModificateMoveScore",
+            [
+                [
+                    "T",
+                    "Face"
+                ],
+                [
+                    "int[]",
+                    "scores"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ],
+                [
+                    "int",
+                    "index"
+                ]
+            ]
+        ],
+        [
+            "Actualizar",
+            [
+                [
+                    "Player<T>",
+                    "player"
+                ],
+                [
+                    "Move<T>",
+                    "Move"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ],
+                [
+                    "GameRecord<T>",
+                    "Record"
+                ]
+            ]
+        ],
+        [
+            "Single",
+            [
+                [
+                    "GameRules<T>",
+                    "rules"
+                ],
+                [
+                    "Player<T>[]",
+                    "gamers"
+                ]
+            ]
+        ],
+        [
+            "Winner",
+            [
+                [
+                    "Player<T>[]",
+                    "players"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "Winner",
+            [
+                [
+                    "Player<T>[]",
+                    "players"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "Winner",
+            [
+                [
+                    "Player<T>[]",
+                    "players"
+                ],
+                [
+                    "GameRules<T>",
+                    "rules"
+                ]
+            ]
+        ],
+        [
+            "Upper",
+            [
+                [
+                    "string",
+                    "x"
+                ]
+            ]
+        ],
+        [
+            "Upper",
+            [
+                [
+                    "int",
+                    "i"
+                ],
+                [
+                    "int",
+                    "lenth"
+                ]
+            ]
+        ],
+        [
+            "CreateRandom",
+            [
+                [
+                    "int",
+                    "i"
+                ],
+                [
+                    "int",
+                    "team"
+                ]
+            ]
+        ],
+        [
+            "Create",
+            [
+                [
+                    "int[]",
+                    "Types"
+                ],
+                [
+                    "int[]",
+                    "teams"
+                ]
+            ]
+        ],
+        [
+            "CreatePlayer",
+            [
+                [
+                    "int",
+                    "i"
+                ],
+                [
+                    "int",
+                    "Type"
+                ],
+                [
+                    "int",
+                    "team"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "TokenNum"
+        ],
+        [
+            "int",
+            "TableNum"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "Name"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "MovesValidas"
+        ],
+        [
+            "int",
+            "index"
+        ],
+        [
+            "Move",
+            "MovesValidas"
+        ],
+        [
+            "IDescribable",
+            "des"
+        ],
+        [
+            "Token",
+            "misetaux"
+        ],
+        [
+            "Random",
+            "random"
+        ],
+        [
+            "int",
+            "total"
+        ],
+        [
+            "int",
+            "NecessaryTokens"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Token",
+            "Token"
+        ],
+        [
+            "int",
+            "values"
+        ],
+        [
+            "var",
+            "y"
+        ],
+        [
+            "int",
+            "value"
+        ],
+        [
+            "TokensCreator",
+            "creator"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "var",
+            "x"
+        ],
+        [
+            "int",
+            "v1"
+        ],
+        [
+            "int",
+            "NumTokens"
+        ],
+        [
+            "int",
+            "guide"
+        ],
+        [
+            "int",
+            "val"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "values"
+        ],
+        [
+            "Token",
+            "TokenActual"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "List",
+            "P_Order"
+        ],
+        [
+            "BaseState",
+            "State"
+        ],
+        [
+            "List",
+            "P_GameFinisher"
+        ],
+        [
+            "List",
+            "P_ValorateToken"
+        ],
+        [
+            "List",
+            "P_ValidateMove"
+        ],
+        [
+            "ControladorDeDesarrollo",
+            "controler"
+        ],
+        [
+            "List",
+            "P_Result"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "x"
+        ],
+        [
+            "int",
+            "rand"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "GameRecord",
+            "Record"
+        ],
+        [
+            "Move",
+            "validas"
+        ],
+        [
+            "int",
+            "InTurn"
+        ],
+        [
+            "bool",
+            "end"
+        ],
+        [
+            "Move",
+            "actual"
+        ],
+        [
+            "Dictionary",
+            "Puntuations"
+        ],
+        [
+            "Player",
+            "win"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "points"
+        ],
+        [
+            "int",
+            "keys"
+        ],
+        [
+            "int",
+            "teams"
+        ],
+        [
+            "string",
+            "result"
+        ],
+        [
+            "Player",
+            "temp"
+        ],
+        [
+            "char",
+            "i"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Player",
+            "players"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "global",
+            "temp"
+        ]
+    ],
+    "method_names": [
+        "Name",
+        "Description",
+        "Validate",
+        "Name",
+        "Condition",
+        "Description",
+        "ToString",
+        "RestablecerNoLLeva",
+        "NoLLevaDetectado",
+        "RestablecerNoLLevaCompleto",
+        "ReseatNoHaveFaces",
+        "NoOneHas",
+        "Dispose",
+        "InitializeComponent",
+        "ValidarPrimeraMove",
+        "GetAll",
+        "Next",
+        "Name",
+        "Description",
+        "Actualizar",
+        "PlusTeam_Click",
+        "Siguiente_Click",
+        "PlusIA_Click",
+        "Incluir_Click",
+        "Less_Click",
+        "Plus_Click",
+        "Opciones",
+        "Name",
+        "Description",
+        "ValoratePlayer",
+        "PrintNumTokens",
+        "ValidateSttings",
+        "Mezclar",
+        "PrintTokens",
+        "Take",
+        "PrintAll",
+        "NoCanPlayNum",
+        "PrintPlayerHand",
+        "PrepararJugadores",
+        "ConvertToInt",
+        "Valorate",
+        "MCD",
+        "Name",
+        "Description",
+        "MoveValue",
+        "SetDeTokens",
+        "Get",
+        "GetGameFinisher",
+        "GetValorateToken",
+        "GetOrder",
+        "GetValidateMove",
+        "GetResult",
+        "BuildProgramedRules",
+        "Name",
+        "ModificateMoveScore",
+        "Description",
+        "Actualizar",
+        "Registro",
+        "Single",
+        "Name",
+        "Description",
+        "Winner",
+        "Upper",
+        "CreatePlayer",
+        "CreateRandom",
+        "Create",
+        "Main"
+    ],
+    "method_return_types": [
+        [
+            "Validate",
+            "bool"
+        ],
+        [
+            "Name",
+            "string"
+        ],
+        [
+            "Description",
+            "string"
+        ],
+        [
+            "Condition",
+            "bool"
+        ],
+        [
+            "Description",
+            "string"
+        ],
+        [
+            "Name",
+            "string"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "RestablecerNoLLevaCompleto",
+            "void"
+        ],
+        [
+            "NoLLevaDetectado",
+            "void"
+        ],
+        [
+            "RestablecerNoLLeva",
+            "void"
+        ],
+        [
+            "ReseatNoHaveFaces",
+            "void"
+        ],
+        [
+            "NoOneHas",
+            "bool"
+        ],
+        [
+            "Dispose",
+            "void"
+        ],
+        [
+            "InitializeComponent",
+            "void"
+        ],
+        [
+            "GetAll",
+            "Move"
+        ],
+        [
+            "ValidarPrimeraMove",
+            "Move"
+        ],
+        [
+            "Name",
+            "string"
+        ],
+        [
+            "Next",
+            "int"
+        ],
+        [
+            "Actualizar",
+            "void"
+        ],
+        [
+            "Description",
+            "string"
+        ],
+        [
+            "PlusTeam_Click",
+            "void"
+        ],
+        [
+            "Plus_Click",
+            "void"
+        ],
+        [
+            "Opciones",
+            "void"
+        ],
+        [
+            "PlusIA_Click",
+            "void"
+        ],
+        [
+            "Less_Click",
+            "void"
+        ],
+        [
+            "Siguiente_Click",
+            "void"
+        ],
+        [
+            "Incluir_Click",
+            "void"
+        ],
+        [
+            "Name",
+            "string"
+        ],
+        [
+            "Description",
+            "string"
+        ],
+        [
+            "ValoratePlayer",
+            "int"
+        ],
+        [
+            "PrintTokens",
+            "void"
+        ],
+        [
+            "NoCanPlayNum",
+            "int"
+        ],
+        [
+            "PrepararJugadores",
+            "void"
+        ],
+        [
+            "ConvertToInt",
+            "int"
+        ],
+        [
+            "PrintNumTokens",
+            "void"
+        ],
+        [
+            "ValidateSttings",
+            "bool"
+        ],
+        [
+            "PrintAll",
+            "void"
+        ],
+        [
+            "Mezclar",
+            "List"
+        ],
+        [
+            "PrintPlayerHand",
+            "void"
+        ],
+        [
+            "Take",
+            "Token"
+        ],
+        [
+            "MCD",
+            "int"
+        ],
+        [
+            "Name",
+            "string"
+        ],
+        [
+            "Valorate",
+            "int"
+        ],
+        [
+            "Description",
+            "string"
+        ],
+        [
+            "MoveValue",
+            "double"
+        ],
+        [
+            "SetDeTokens",
+            "void"
+        ],
+        [
+            "BuildProgramedRules",
+            "ProgramedRules"
+        ],
+        [
+            "GetResult",
+            "List"
+        ],
+        [
+            "GetOrder",
+            "List"
+        ],
+        [
+            "GetGameFinisher",
+            "List"
+        ],
+        [
+            "Get",
+            "GameRules"
+        ],
+        [
+            "GetValidateMove",
+            "List"
+        ],
+        [
+            "GetValorateToken",
+            "List"
+        ],
+        [
+            "Name",
+            "string"
+        ],
+        [
+            "ModificateMoveScore",
+            "void"
+        ],
+        [
+            "Description",
+            "string"
+        ],
+        [
+            "Registro",
+            "HEAD"
+        ],
+        [
+            "Actualizar",
+            "void"
+        ],
+        [
+            "Single",
+            "GameRecord"
+        ],
+        [
+            "Winner",
+            "string"
+        ],
+        [
+            "Description",
+            "string"
+        ],
+        [
+            "Name",
+            "string"
+        ],
+        [
+            "Upper",
+            "IDescribable"
+        ],
+        [
+            "Upper",
+            "int"
+        ],
+        [
+            "CreatePlayer",
+            "Player"
+        ],
+        [
+            "CreateRandom",
+            "Player"
+        ],
+        [
+            "Create",
+            "Player"
+        ],
+        [
+            "Main",
+            "void"
+        ]
+    ],
+    "class_names": [
+        "ValidadorNormal",
+        "ValidadorEscalera",
+        "GameRules",
+        "PlayerCounter",
+        "PlayerGreedy",
+        "PlayerRandom",
+        "Player",
+        "OneTimePassFinisher",
+        "NormalFinisher",
+        "Token",
+        "PlayerDates",
+        "ControladorDeDesarrollo",
+        "Form1",
+        "ProgramedPlayers",
+        "ValidMoves",
+        "VariableOrder",
+        "NormalOrder",
+        "GameRecord",
+        "DatosNecesarios",
+        "Form1",
+        "Auxiliares",
+        "MCDValorator",
+        "NormalValorator",
+        "Move",
+        "TokensCreator",
+        "GetGameRules",
+        "GreedyStrategy",
+        "RandomStrategy",
+        "PrioritizeDoubleStrategy",
+        "HaveStrategy",
+        "BaseState",
+        "Game",
+        "TeamPuntuation",
+        "IndividualPuntuation",
+        "ProgramedRules",
+        "PlayerCreator",
+        "Program",
+        "Settings",
+        "Resources"
+    ],
+    "interface_names": [
+        "IValidateMove",
+        "IGameFinisher",
+        "IOrder",
+        "IDescribable",
+        "IValorateToken",
+        "Strategy",
+        "IResult"
+    ],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 30,
+        "Using_directivesContext": 24,
+        "UsingNamespaceDirectiveContext": 122,
+        "TerminalNodeImpl": 12337,
+        "Namespace_or_type_nameContext": 994,
+        "IdentifierContext": 3795,
+        "Namespace_member_declarationsContext": 31,
+        "Namespace_member_declarationContext": 141,
+        "Type_declarationContext": 136,
+        "All_member_modifiersContext": 324,
+        "All_member_modifierContext": 372,
+        "Interface_definitionContext": 7,
+        "Variant_type_parameter_listContext": 6,
+        "Variant_type_parameterContext": 6,
+        "Interface_baseContext": 6,
+        "Interface_type_listContext": 6,
+        "Class_bodyContext": 45,
+        "Class_member_declarationsContext": 45,
+        "Class_member_declarationContext": 248,
+        "Common_member_declarationContext": 248,
+        "Typed_member_declarationContext": 195,
+        "Type_Context": 968,
+        "Base_typeContext": 969,
+        "Simple_typeContext": 145,
+        "Method_declarationContext": 104,
+        "Method_member_nameContext": 104,
+        "Formal_parameter_listContext": 73,
+        "Fixed_parametersContext": 72,
+        "Fixed_parameterContext": 160,
+        "Arg_declarationContext": 160,
+        "Class_typeContext": 845,
+        "Type_argument_listContext": 310,
+        "Parameter_modifierContext": 6,
+        "Numeric_typeContext": 131,
+        "Integral_typeContext": 130,
+        "Method_bodyContext": 103,
+        "Class_definitionContext": 40,
+        "Type_parameter_listContext": 34,
+        "Type_parameterContext": 34,
+        "Class_baseContext": 21,
+        "BlockContext": 182,
+        "Statement_listContext": 184,
+        "StatementContext": 691,
+        "Embedded_statementContext": 664,
+        "ReturnStatementContext": 107,
+        "ExpressionContext": 1723,
+        "Non_assignment_expressionContext": 1336,
+        "Conditional_expressionContext": 1334,
+        "Null_coalescing_expressionContext": 1334,
+        "Conditional_or_expressionContext": 1334,
+        "Conditional_and_expressionContext": 1336,
+        "Inclusive_or_expressionContext": 1337,
+        "Exclusive_or_expressionContext": 1337,
+        "And_expressionContext": 1337,
+        "Equality_expressionContext": 1337,
+        "Relational_expressionContext": 1359,
+        "Shift_expressionContext": 1388,
+        "Additive_expressionContext": 1388,
+        "Multiplicative_expressionContext": 1405,
+        "Switch_expressionContext": 1409,
+        "Range_expressionContext": 1409,
+        "Unary_expressionContext": 1811,
+        "Primary_expressionContext": 1796,
+        "LiteralExpressionContext": 527,
+        "LiteralContext": 527,
+        "String_literalContext": 148,
+        "ForStatementContext": 22,
+        "For_initializerContext": 22,
+        "Local_variable_declarationContext": 74,
+        "Local_variable_typeContext": 78,
+        "Local_variable_declaratorContext": 74,
+        "Local_variable_initializerContext": 71,
+        "SimpleNameExpressionContext": 626,
+        "Member_accessContext": 987,
+        "For_iteratorContext": 22,
+        "IfStatementContext": 41,
+        "Method_invocationContext": 161,
+        "Argument_listContext": 259,
+        "ArgumentContext": 441,
+        "Bracket_expressionContext": 64,
+        "Indexer_argumentContext": 64,
+        "If_bodyContext": 51,
+        "ExpressionStatementContext": 483,
+        "AssignmentContext": 387,
+        "Assignment_operatorContext": 387,
+        "Boolean_literalContext": 57,
+        "DeclarationStatementContext": 54,
+        "Rank_specifierContext": 57,
+        "Property_declarationContext": 39,
+        "Member_nameContext": 39,
+        "Accessor_declarationsContext": 39,
+        "Accessor_bodyContext": 61,
+        "Set_accessor_declarationContext": 22,
+        "Constructor_declarationContext": 16,
+        "BodyContext": 15,
+        "ThisReferenceExpressionContext": 411,
+        "ErrorNodeImpl": 2657,
+        "AttributesContext": 31,
+        "Attribute_sectionContext": 36,
+        "Attribute_listContext": 42,
+        "AttributeContext": 43,
+        "Constructor_initializerContext": 3,
+        "ObjectCreationExpressionContext": 211,
+        "Object_creation_expressionContext": 201,
+        "Expression_listContext": 10,
+        "Field_declarationContext": 81,
+        "Variable_declaratorsContext": 81,
+        "Variable_declaratorContext": 81,
+        "Variable_initializerContext": 22,
+        "Lambda_expressionContext": 2,
+        "Anonymous_function_signatureContext": 2,
+        "Right_arrowContext": 2,
+        "Anonymous_function_bodyContext": 2,
+        "Throwable_expressionContext": 2,
+        "Accessor_modifierContext": 5,
+        "Parameter_arrayContext": 1,
+        "Array_typeContext": 1,
+        "Namespace_declarationContext": 5,
+        "Qualified_identifierContext": 5,
+        "Namespace_bodyContext": 5,
+        "ParenthesisExpressionsContext": 16,
+        "BaseAccessExpressionContext": 1,
+        "Cast_expressionContext": 10,
+        "TryStatementContext": 2,
+        "Catch_clausesContext": 2,
+        "General_catch_clauseContext": 2,
+        "ForeachStatementContext": 4,
+        "ThrowStatementContext": 2,
+        "Floating_point_typeContext": 1,
+        "WhileStatementContext": 1,
+        "BreakStatementContext": 1,
+        "SwitchStatementContext": 2,
+        "Switch_sectionContext": 9,
+        "Switch_labelContext": 10,
+        "Qualified_alias_memberContext": 18,
+        "Attribute_argumentContext": 20,
+        "MemberAccessExpressionContext": 3,
+        "Global_attribute_sectionContext": 12,
+        "Global_attribute_targetContext": 12,
+        "TypeofExpressionContext": 1,
+        "Unbound_type_nameContext": 1
+    },
+    "project_name": "LuciferEvil01_Domino-Projec",
+    "label": "original",
+    "project_type": "domino"
+}

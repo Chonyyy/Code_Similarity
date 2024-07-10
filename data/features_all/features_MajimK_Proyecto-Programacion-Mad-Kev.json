@@ -1,0 +1,1558 @@
+{
+    "total_nodes": 292900,
+    "max_depth": 1345,
+    "number_of_variables": 122,
+    "number_of_constants": 0,
+    "out_variables": 0,
+    "ref_params": 1,
+    "number_of_methods": 78,
+    "number_of_classes": 26,
+    "number_of_interfaces": 6,
+    "number_of_abstract_classes": 0,
+    "number_of_sealed_classes": 0,
+    "import_statements": 17,
+    "number_of_try_blocks": 0,
+    "number_of_lists": 8,
+    "number_of_dictionaries": 0,
+    "number_of_enums": 0,
+    "number_of_delegates": 0,
+    "function_calls": 86,
+    "enums_names": [],
+    "control_structures_if": 93,
+    "control_structures_switch": 2,
+    "control_structures_for": 30,
+    "control_structures_while": 5,
+    "control_structures_dowhile": 0,
+    "access_modifiers_public": 127,
+    "access_modifiers_private": 25,
+    "access_modifiers_protected": 1,
+    "access_modifiers_internal": 1043,
+    "access_modifiers_static": 37,
+    "access_modifiers_protected_internal": 0,
+    "access_modifiers_private_protected": 0,
+    "modifier_readonly": 0,
+    "modifier_volatile": 0,
+    "modifier_virtual": 0,
+    "modifier_override": 1,
+    "modifier_new": 26,
+    "modifier_partial": 7,
+    "modifier_extern": 0,
+    "modifier_unsafe": 0,
+    "modifier_async": 0,
+    "linq_querie_select": 0,
+    "linq_queries_where": 0,
+    "linq_queries_orderBy": 0,
+    "linq_queries_groupBy": 0,
+    "linq_queries_join": 0,
+    "linq_queries_sum": 52,
+    "linq_queries_count": 0,
+    "library_call_console": 0,
+    "library_call_math": 0,
+    "number_of_lambdas": 0,
+    "number_of_getters": 32,
+    "number_of_setters": 4,
+    "number_of_tuples": 0,
+    "number_of_namespaces": 16,
+    "method_parameters": [
+        [
+            "AddRight",
+            [
+                [
+                    "T",
+                    "jugada"
+                ]
+            ]
+        ],
+        [
+            "AddLeft",
+            [
+                [
+                    "T",
+                    "jugada"
+                ]
+            ]
+        ],
+        [
+            "Add",
+            [
+                [
+                    "T",
+                    "piece"
+                ]
+            ]
+        ],
+        [
+            "ValidFirst",
+            [
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ],
+                [
+                    "T",
+                    "jugada"
+                ]
+            ]
+        ],
+        [
+            "ValidLast",
+            [
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ],
+                [
+                    "T",
+                    "jugada"
+                ]
+            ]
+        ],
+        [
+            "Posibilities",
+            [
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ]
+            ]
+        ],
+        [
+            "Strategy",
+            [
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ]
+            ]
+        ],
+        [
+            "Strategy",
+            [
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ]
+            ]
+        ],
+        [
+            "Strategy",
+            [
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ]
+            ]
+        ],
+        [
+            "Strategy",
+            [
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ]
+            ]
+        ],
+        [
+            "WinnerCoditions",
+            [
+                [
+                    "int",
+                    "j"
+                ],
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "Tranco",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "WinnerCoditions",
+            [
+                [
+                    "int",
+                    "j"
+                ],
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "Tranco",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "WinnerCoditions",
+            [
+                [
+                    "int",
+                    "j"
+                ],
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "TrancoI",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "Tranco",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "Strategy",
+            [
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ]
+            ]
+        ],
+        [
+            "Add",
+            [
+                [
+                    "T",
+                    "piece"
+                ]
+            ]
+        ],
+        [
+            "WinnerCoditions",
+            [
+                [
+                    "int",
+                    "i"
+                ],
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "Tranco",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ]
+            ]
+        ],
+        [
+            "Play",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "players"
+                ],
+                [
+                    "IWin<T>",
+                    "cond"
+                ],
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ],
+                [
+                    "List<T>",
+                    "pieces"
+                ]
+            ]
+        ],
+        [
+            "Repartir",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "players"
+                ],
+                [
+                    "List<T>",
+                    "pieces"
+                ],
+                [
+                    "int",
+                    "numero"
+                ]
+            ]
+        ],
+        [
+            "Conect",
+            [
+                [
+                    "IPieces",
+                    "r"
+                ]
+            ]
+        ],
+        [
+            "AddCooRx",
+            [
+                [
+                    "int",
+                    "a"
+                ]
+            ]
+        ],
+        [
+            "AddCooRy",
+            [
+                [
+                    "int",
+                    "a"
+                ]
+            ]
+        ],
+        [
+            "AddValues",
+            [
+                [
+                    "object",
+                    "a"
+                ],
+                [
+                    "object",
+                    "b"
+                ]
+            ]
+        ],
+        [
+            "AddRight",
+            [
+                [
+                    "T",
+                    "jugada"
+                ]
+            ]
+        ],
+        [
+            "AddLeft",
+            [
+                [
+                    "T",
+                    "jugada"
+                ]
+            ]
+        ],
+        [
+            "ValidarText",
+            [
+                [
+                    "string",
+                    "text"
+                ]
+            ]
+        ],
+        [
+            "Salir",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Jugar_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Comenzar_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButtonClass_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButtonAll_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButtonClas_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButtonThi_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButtonKeep_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButtonCla_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButtonInv_Click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButtonHand_Click_1",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButton_Num",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButton_Letr",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButton_Emoj",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Move_click",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Para_Move",
+            [
+                [
+                    "List<IPieces>",
+                    "n"
+                ]
+            ]
+        ],
+        [
+            "Salir1",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButton_Matrix",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "RadioButton_Abstract",
+            [
+                [
+                    "object",
+                    "sender"
+                ],
+                [
+                    "RoutedEventArgs",
+                    "e"
+                ]
+            ]
+        ],
+        [
+            "Stat",
+            [
+                [
+                    "IPieces",
+                    "ficha"
+                ]
+            ]
+        ],
+        [
+            "Finish",
+            [
+                [
+                    "int",
+                    "i"
+                ]
+            ]
+        ],
+        [
+            "Play",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ],
+                [
+                    "IWin<T>",
+                    "cond"
+                ],
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ],
+                [
+                    "List<T>",
+                    "pieces"
+                ]
+            ]
+        ],
+        [
+            "Play",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ],
+                [
+                    "IWin<T>",
+                    "cond"
+                ],
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ],
+                [
+                    "List<T>",
+                    "pieces"
+                ]
+            ]
+        ],
+        [
+            "Play",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ],
+                [
+                    "IWin<T>",
+                    "cond"
+                ],
+                [
+                    "Mesa<T>",
+                    "mesa"
+                ],
+                [
+                    "List<T>",
+                    "pieces"
+                ]
+            ]
+        ],
+        [
+            "Repartir",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ],
+                [
+                    "List<T>",
+                    "pieces"
+                ],
+                [
+                    "int",
+                    "modalidad"
+                ]
+            ]
+        ],
+        [
+            "Repartir",
+            [
+                [
+                    "IPlayers<T>[]",
+                    "jugadores"
+                ],
+                [
+                    "List<T>",
+                    "pieces"
+                ],
+                [
+                    "int",
+                    "modalidad"
+                ]
+            ]
+        ],
+        [
+            "Conect",
+            [
+                [
+                    "IPieces",
+                    "obj"
+                ]
+            ]
+        ],
+        [
+            "System",
+            [
+                [
+                    "int",
+                    "connectionId"
+                ],
+                [
+                    "object",
+                    "target"
+                ]
+            ]
+        ],
+        [
+            "System",
+            [
+                [
+                    "int",
+                    "connectionId"
+                ],
+                [
+                    "object",
+                    "target"
+                ]
+            ]
+        ]
+    ],
+    "variable_names": [
+        [
+            "string",
+            "a"
+        ],
+        [
+            "bool",
+            "Fichacom"
+        ],
+        [
+            "int",
+            "max"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "T",
+            "jugar"
+        ],
+        [
+            "IPieces",
+            "g"
+        ],
+        [
+            "List",
+            "posibles"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "mejor"
+        ],
+        [
+            "int",
+            "puntos"
+        ],
+        [
+            "int",
+            "v"
+        ],
+        [
+            "int",
+            "mas"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "bool",
+            "mesacom"
+        ],
+        [
+            "int",
+            "y"
+        ],
+        [
+            "int",
+            "max"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "min"
+        ],
+        [
+            "int",
+            "ganador"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "string",
+            "dom"
+        ],
+        [
+            "var",
+            "Moda"
+        ],
+        [
+            "Dominoes",
+            "juego"
+        ],
+        [
+            "List",
+            "ListaG"
+        ],
+        [
+            "string",
+            "letras"
+        ],
+        [
+            "string",
+            "dos"
+        ],
+        [
+            "List",
+            "listextIzq"
+        ],
+        [
+            "string",
+            "junto"
+        ],
+        [
+            "int",
+            "h"
+        ],
+        [
+            "Ruler",
+            "juez"
+        ],
+        [
+            "string",
+            "tres"
+        ],
+        [
+            "double",
+            "cantFich"
+        ],
+        [
+            "string",
+            "uno"
+        ],
+        [
+            "string",
+            "emojis"
+        ],
+        [
+            "string",
+            "cuatro"
+        ],
+        [
+            "IPieces",
+            "g"
+        ],
+        [
+            "IPlayers",
+            "g"
+        ],
+        [
+            "int",
+            "k"
+        ],
+        [
+            "List",
+            "listextDer"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "int",
+            "f"
+        ],
+        [
+            "int",
+            "juego"
+        ],
+        [
+            "bool",
+            "hubojugada"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "int",
+            "ganador"
+        ],
+        [
+            "int",
+            "n"
+        ],
+        [
+            "int",
+            "ganad"
+        ],
+        [
+            "int",
+            "m"
+        ],
+        [
+            "int",
+            "u"
+        ],
+        [
+            "int",
+            "cant"
+        ],
+        [
+            "int",
+            "p"
+        ],
+        [
+            "int",
+            "e"
+        ],
+        [
+            "int",
+            "i"
+        ],
+        [
+            "int",
+            "j"
+        ],
+        [
+            "Random",
+            "r"
+        ],
+        [
+            "int",
+            "f"
+        ],
+        [
+            "int",
+            "b"
+        ],
+        [
+            "int",
+            "a"
+        ],
+        [
+            "System",
+            "resourceLocater"
+        ],
+        [
+            "System",
+            "resourceLocater"
+        ],
+        [
+            "EntregaOficial",
+            "app"
+        ],
+        [
+            "EntregaOficial",
+            "app"
+        ],
+        [
+            "global",
+            "temp"
+        ]
+    ],
+    "method_names": [
+        "Paint",
+        "AddRight",
+        "AddLeft",
+        "Add",
+        "Posibilities",
+        "Pase",
+        "Strategy",
+        "ValidLast",
+        "ValidFirst",
+        "WinnerCoditions",
+        "TrancoI",
+        "Tranco",
+        "Repartir",
+        "Add",
+        "WinnerCoditions",
+        "Play",
+        "Tranco",
+        "Rotar",
+        "Pase",
+        "Strategy",
+        "ToString",
+        "AddCooRy",
+        "Conect",
+        "AddCooRx",
+        "AddLeft",
+        "Addp",
+        "Paint",
+        "AddRight",
+        "AddValues",
+        "Salir",
+        "Todo",
+        "ValidarText",
+        "Juegar",
+        "RadioButton_Matrix",
+        "RadioButton_Emoj",
+        "RadioButton_Letr",
+        "Jugar_Click",
+        "Salir1",
+        "RadioButtonThi_Click",
+        "RadioButton_Num",
+        "RadioButtonAll_Click",
+        "Comenzar_Click",
+        "RadioButtonKeep_Click",
+        "RadioButton_Abstract",
+        "RadioButtonCla_Click",
+        "Para_Move",
+        "RadioButtonClass_Click",
+        "Move_click",
+        "RadioButtonInv_Click",
+        "RadioButtonHand_Click_1",
+        "Jugadores",
+        "RadioButtonClas_Click",
+        "Finish",
+        "Stat",
+        "Repartir",
+        "Play",
+        "Play",
+        "Repartir",
+        "Conect",
+        "ToString",
+        "InitializeComponent",
+        "System",
+        "InitializeComponent",
+        "System",
+        "InitializeComponent",
+        "Main",
+        "InitializeComponent",
+        "Main"
+    ],
+    "method_return_types": [
+        [
+            "AddLeft",
+            "void"
+        ],
+        [
+            "AddRight",
+            "void"
+        ],
+        [
+            "Paint",
+            "void"
+        ],
+        [
+            "Pase",
+            "void"
+        ],
+        [
+            "Add",
+            "void"
+        ],
+        [
+            "Posibilities",
+            "List"
+        ],
+        [
+            "ValidFirst",
+            "bool"
+        ],
+        [
+            "Strategy",
+            "void"
+        ],
+        [
+            "ValidLast",
+            "bool"
+        ],
+        [
+            "TrancoI",
+            "int"
+        ],
+        [
+            "Tranco",
+            "int"
+        ],
+        [
+            "WinnerCoditions",
+            "bool"
+        ],
+        [
+            "AddLeft",
+            "void"
+        ],
+        [
+            "Pase",
+            "void"
+        ],
+        [
+            "Repartir",
+            "void"
+        ],
+        [
+            "AddRight",
+            "void"
+        ],
+        [
+            "Paint",
+            "void"
+        ],
+        [
+            "AddCooRy",
+            "void"
+        ],
+        [
+            "Add",
+            "void"
+        ],
+        [
+            "AddCooRx",
+            "void"
+        ],
+        [
+            "AddValues",
+            "void"
+        ],
+        [
+            "Addp",
+            "void"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "Play",
+            "void"
+        ],
+        [
+            "Rotar",
+            "void"
+        ],
+        [
+            "WinnerCoditions",
+            "bool"
+        ],
+        [
+            "Strategy",
+            "void"
+        ],
+        [
+            "Conect",
+            "bool"
+        ],
+        [
+            "Tranco",
+            "int"
+        ],
+        [
+            "RadioButtonAll_Click",
+            "void"
+        ],
+        [
+            "Todo",
+            "void"
+        ],
+        [
+            "RadioButtonClass_Click",
+            "void"
+        ],
+        [
+            "RadioButton_Matrix",
+            "void"
+        ],
+        [
+            "RadioButton_Letr",
+            "void"
+        ],
+        [
+            "RadioButtonCla_Click",
+            "void"
+        ],
+        [
+            "Jugar_Click",
+            "void"
+        ],
+        [
+            "RadioButton_Abstract",
+            "void"
+        ],
+        [
+            "Move_click",
+            "void"
+        ],
+        [
+            "RadioButtonKeep_Click",
+            "void"
+        ],
+        [
+            "Salir",
+            "void"
+        ],
+        [
+            "Salir1",
+            "void"
+        ],
+        [
+            "Comenzar_Click",
+            "void"
+        ],
+        [
+            "RadioButtonClas_Click",
+            "void"
+        ],
+        [
+            "RadioButtonInv_Click",
+            "void"
+        ],
+        [
+            "Juegar",
+            "void"
+        ],
+        [
+            "RadioButtonThi_Click",
+            "void"
+        ],
+        [
+            "Jugadores",
+            "void"
+        ],
+        [
+            "ValidarText",
+            "void"
+        ],
+        [
+            "RadioButton_Num",
+            "void"
+        ],
+        [
+            "RadioButtonHand_Click_1",
+            "void"
+        ],
+        [
+            "RadioButton_Emoj",
+            "void"
+        ],
+        [
+            "Para_Move",
+            "void"
+        ],
+        [
+            "Stat",
+            "void"
+        ],
+        [
+            "Finish",
+            "void"
+        ],
+        [
+            "Repartir",
+            "void"
+        ],
+        [
+            "Play",
+            "void"
+        ],
+        [
+            "Play",
+            "void"
+        ],
+        [
+            "Repartir",
+            "void"
+        ],
+        [
+            "Conect",
+            "bool"
+        ],
+        [
+            "ToString",
+            "string"
+        ],
+        [
+            "System",
+            "void"
+        ],
+        [
+            "InitializeComponent",
+            "void"
+        ],
+        [
+            "System",
+            "void"
+        ],
+        [
+            "InitializeComponent",
+            "void"
+        ],
+        [
+            "Main",
+            "void"
+        ],
+        [
+            "InitializeComponent",
+            "void"
+        ],
+        [
+            "Main",
+            "void"
+        ],
+        [
+            "InitializeComponent",
+            "void"
+        ]
+    ],
+    "class_names": [
+        "MesaC",
+        "BankPlayer",
+        "LightPlayer",
+        "RandomPlayer",
+        "TrollPlayer",
+        "Players",
+        "Pasado",
+        "ClasicC",
+        "Inverter",
+        "MainWindow",
+        "Painter",
+        "Dominoes",
+        "Ruler",
+        "KeepPlaying",
+        "Thief",
+        "ClasicF",
+        "ClasicR",
+        "All",
+        "Fichas",
+        "App",
+        "MainWindow",
+        "MainWindow",
+        "App",
+        "App",
+        "Settings",
+        "Resources"
+    ],
+    "interface_names": [
+        "IWin",
+        "Mesa",
+        "IRepartir",
+        "IPieces",
+        "IPlay",
+        "IPlayers"
+    ],
+    "delegate_names": [],
+    "node_count": {
+        "Compilation_unitContext": 19,
+        "Using_directivesContext": 17,
+        "UsingNamespaceDirectiveContext": 162,
+        "TerminalNodeImpl": 60931,
+        "Namespace_or_type_nameContext": 3815,
+        "IdentifierContext": 19261,
+        "Namespace_member_declarationsContext": 33,
+        "Namespace_member_declarationContext": 52,
+        "Namespace_declarationContext": 16,
+        "Qualified_identifierContext": 16,
+        "Namespace_bodyContext": 16,
+        "Type_declarationContext": 36,
+        "All_member_modifiersContext": 1198,
+        "All_member_modifierContext": 1242,
+        "Class_definitionContext": 26,
+        "Type_parameter_listContext": 17,
+        "Type_parameterContext": 17,
+        "Class_baseContext": 21,
+        "Class_typeContext": 2579,
+        "Type_argument_listContext": 162,
+        "Type_Context": 2692,
+        "Base_typeContext": 2692,
+        "Type_parameter_constraints_clausesContext": 9,
+        "Type_parameter_constraints_clauseContext": 9,
+        "Type_parameter_constraintsContext": 9,
+        "Primary_constraintContext": 9,
+        "Class_bodyContext": 32,
+        "Class_member_declarationsContext": 31,
+        "Class_member_declarationContext": 1197,
+        "Common_member_declarationContext": 1197,
+        "Typed_member_declarationContext": 1124,
+        "Property_declarationContext": 32,
+        "Member_nameContext": 32,
+        "Accessor_declarationsContext": 32,
+        "Accessor_bodyContext": 36,
+        "Variable_initializerContext": 64,
+        "ExpressionContext": 8615,
+        "Non_assignment_expressionContext": 7942,
+        "Conditional_expressionContext": 7942,
+        "Null_coalescing_expressionContext": 7942,
+        "Conditional_or_expressionContext": 7942,
+        "Conditional_and_expressionContext": 7951,
+        "Inclusive_or_expressionContext": 7960,
+        "Exclusive_or_expressionContext": 7960,
+        "And_expressionContext": 7960,
+        "Equality_expressionContext": 7960,
+        "Relational_expressionContext": 8016,
+        "Shift_expressionContext": 8073,
+        "Additive_expressionContext": 8073,
+        "Multiplicative_expressionContext": 8107,
+        "Switch_expressionContext": 8116,
+        "Range_expressionContext": 8116,
+        "Unary_expressionContext": 10375,
+        "Primary_expressionContext": 9288,
+        "ObjectCreationExpressionContext": 86,
+        "Object_creation_expressionContext": 81,
+        "Field_declarationContext": 1073,
+        "Variable_declaratorsContext": 1073,
+        "Variable_declaratorContext": 1073,
+        "Simple_typeContext": 139,
+        "Numeric_typeContext": 124,
+        "Integral_typeContext": 116,
+        "BlockContext": 231,
+        "Statement_listContext": 1302,
+        "StatementContext": 2652,
+        "Embedded_statementContext": 2595,
+        "ReturnStatementContext": 1110,
+        "SimpleNameExpressionContext": 2465,
+        "Member_accessContext": 1575,
+        "Method_invocationContext": 229,
+        "Method_declarationContext": 78,
+        "Method_member_nameContext": 78,
+        "Formal_parameter_listContext": 61,
+        "Fixed_parametersContext": 61,
+        "Fixed_parameterContext": 111,
+        "Arg_declarationContext": 111,
+        "Method_bodyContext": 78,
+        "IfStatementContext": 93,
+        "LiteralExpressionContext": 3466,
+        "LiteralContext": 3466,
+        "If_bodyContext": 134,
+        "ExpressionStatementContext": 1327,
+        "Argument_listContext": 219,
+        "ArgumentContext": 288,
+        "ForeachStatementContext": 3,
+        "Local_variable_typeContext": 125,
+        "DeclarationStatementContext": 92,
+        "Local_variable_declarationContext": 122,
+        "Local_variable_declaratorContext": 122,
+        "Local_variable_initializerContext": 122,
+        "ErrorNodeImpl": 1223,
+        "Tuple_typeContext": 3,
+        "Tuple_elementContext": 5,
+        "Set_accessor_declarationContext": 4,
+        "ForStatementContext": 30,
+        "For_initializerContext": 30,
+        "For_iteratorContext": 30,
+        "AssignmentContext": 1172,
+        "Assignment_operatorContext": 1172,
+        "Bracket_expressionContext": 92,
+        "Indexer_argumentContext": 92,
+        "Constructor_declarationContext": 9,
+        "BodyContext": 9,
+        "Boolean_literalContext": 23,
+        "BaseAccessExpressionContext": 4,
+        "ThisReferenceExpressionContext": 1094,
+        "Rank_specifierContext": 25,
+        "MemberAccessExpressionContext": 17,
+        "Predefined_typeContext": 14,
+        "Interface_definitionContext": 6,
+        "Variant_type_parameter_listContext": 5,
+        "Variant_type_parameterContext": 5,
+        "Array_initializerContext": 5,
+        "Expression_listContext": 2,
+        "Object_or_collection_initializerContext": 3,
+        "Collection_initializerContext": 3,
+        "Element_initializerContext": 507,
+        "String_literalContext": 2184,
+        "ContinueStatementContext": 1,
+        "Parameter_modifierContext": 1,
+        "Floating_point_typeContext": 8,
+        "ParenthesisExpressionsContext": 2154,
+        "Cast_expressionContext": 1083,
+        "Accessor_modifierContext": 2,
+        "WhileStatementContext": 5,
+        "BreakStatementContext": 9,
+        "DoStatementContext": 1,
+        "TupleExpressionContext": 1,
+        "AttributesContext": 1051,
+        "Attribute_sectionContext": 1072,
+        "Attribute_listContext": 1085,
+        "AttributeContext": 1085,
+        "Attribute_argumentContext": 2129,
+        "SwitchStatementContext": 2,
+        "Switch_sectionContext": 1072,
+        "Switch_labelContext": 1072,
+        "Global_attribute_sectionContext": 13,
+        "Global_attribute_targetContext": 13,
+        "Qualified_alias_memberContext": 19,
+        "TypeofExpressionContext": 1,
+        "Unbound_type_nameContext": 1
+    },
+    "project_name": "MajimK_Proyecto-Programacion-Mad-Kev",
+    "label": "original",
+    "project_type": "domino"
+}
