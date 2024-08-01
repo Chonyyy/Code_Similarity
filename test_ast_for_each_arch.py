@@ -2,9 +2,8 @@ from antlr4 import *
 from antlr4.tree.Tree import ErrorNodeImpl
 import json, os
 from parser.parser import *
-from Word2Vec.word2vec import FeatureVectorizer
+from embedding.word2vec import FeatureVectorizer
 import networkx as nx
-from node2vec import Node2Vec
 from collections import deque
 
 PROJECTS_FOLDER = f'{os.getcwd()}/Projects/All/'

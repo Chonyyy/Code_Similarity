@@ -4,8 +4,6 @@ from listener import FeatureExtractorListener, walk_tree
 from antlr4 import CommonTokenStream
 from Python.CSharpLexer import CSharpLexer
 from Python.CSharpParser import CSharpParser
-import networkx as nx
-from node2vec import Node2Vec
 
 def extract_features_from_file(file_path):
     input_stream = FileStream(file_path, encoding='utf-8')
