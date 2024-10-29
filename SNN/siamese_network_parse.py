@@ -2,11 +2,7 @@ import json, os
 import itertools
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-import json, os
-import itertools
-import numpy as np
-from sklearn.preprocessing import StandardScaler
-
+import pickle
 
 class PrepareDataSNN:
     def __init__(self):
@@ -112,13 +108,13 @@ class PrepareDataSNN:
         labels = np.array([pair["similarity_flag"] for pair in pairs])
 
         # Normalizar los datos
-        # scaler = StandardScaler()
-        # data_a = scaler.fit_transform(data_a)
-        # data_b = scaler.transform(data_b)
+        scaler = StandardScaler()
+        data_a = scaler.fit_transform(data_a)
+        data_b = scaler.transform(data_b)
 
         # Guardar los pares en un archivo JSON
-        # with open('training_pairs.json', 'w') as f:
-        #     json.dump(pairs, f, indent=4)
+        with open('training_pairs.json', 'wb') as f:
+            pickle.dump(pairs, f)
         
         return data_a, data_b, labels
 
