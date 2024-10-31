@@ -1,17 +1,39 @@
 import tensorflow as tf
-from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Dense, Lambda
 from tensorflow.keras.optimizers import Adam
 import tensorflow.keras.backend as K
+from keras.layers import Input, Lambda, Dense, Dropout, Convolution2D,Conv1D, MaxPooling2D, Flatten,Activation, Flatten, Reshape, Conv1D, MaxPooling1D
+from keras.models import Sequential, Model
 from siamese_network_parse import PrepareDataSNN
+
 
 # Definir la arquitectura base
 def create_base_network(input_shape):
-    input = Input(shape=input_shape)
-    x = Dense(128, activation='relu')(input)
-    x = Dense(128, activation='relu')(x)
-    x = Dense(128, activation='relu')(x)
-    return Model(input, x)
+    # input = Input(shape=input_shape)
+    # x = Dense(128, activation='relu')(input)
+    # x = Dense(128, activation='relu')(x)
+    # x = Dense(128, activation='relu')(x)
+
+    model = Sequential()
+    
+    # Reshape the input to be compatible with Conv1D
+    model.add(Reshape((65, 1), input_shape=input_shape))
+    
+    # Replace Convolution2D with Conv1D
+    model.add(Conv1D(16, 8, strides=1, activation="relu"))
+    model.add(MaxPooling1D(pool_size=2))
+    
+    model.add(Conv1D(32, 4, strides=1, activation="relu"))
+    model.add(MaxPooling1D(pool_size=2))
+    
+    model.add(Flatten())
+    model.add(Dense(512, activation="relu"))
+    model.add(Dense(256, activation="relu"))
+    model.add(Dense(10, activation='softmax'))
+
+    return model
+    
+    # return Model(input, x)
 
 # Definir la función de distancia
 def euclidean_distance(vects):
