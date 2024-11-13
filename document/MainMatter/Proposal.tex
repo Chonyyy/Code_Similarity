@@ -1,23 +1,47 @@
 \chapter{Propuesta de solución}\label{chapter:proposal}
 
-La implementacion  de este trabajo esta dividida en tres partes fundamentales: Extraccion del AST, trabajo con los datos y trabajo con machine learning.
+La implementacion  de este trabajo esta dividida en tres partes fundamentales: Extraccion del AST, trabajo con los datos y explicación del modelo.
 
 - Extraccion del AST: En esta parte se utiliza la herramienta ANTLR de C\# para crear el ast de los proyectos. Luego de este ast se extraen los features para su posterior uso.
 
-- Trabajo con los datos: 
+- Trabajo con los datos: Los conjuntos de features de cada proyecto se convierten en vectores de características.
 
-- Trabajo con machine learning: Se estudian diferentes técnicas para determinar la semejanza entre 2 proyectos. El uso de modelos de deteccion de oulayers para agrupar los vectores de similitud de los proyectos que son distintos entre si.
+- Modelo utilizado: Se implementa el modelo de Red Neuronal Siamesa para determinar la semejanza entre 2 proyectos.
 
-
+\chapter{Extracción de features del AST}\label{chapter:proposal}
 \section{Extraccion del AST}
 
-ANTLR (Another Tool for Language Recognition) es herramienta que se utiliza para generar analizadores léxicos y sintácticos a partir de gramáticas definidas por el usuario. Es ampliamente utilizada en la compilación y el procesamiento de lenguajes, ya que permite transformar el código fuente en estructuras de datos que pueden ser fácilmente manipuladas. En este caso, ANTLR se emplea para extraer Árboles de Sintaxis Abstracta (AST) a partir del código fuente de programas escritos en C\#. Fue necesario hacer ligeras modificaciones sobre la gramática, pues ANTLR tenia una gramatica desactualizada. \\
+ Se emplea ANTLR para extraer Árboles de Sintaxis Abstracta (AST) a partir del código fuente de programas escritos en C\#. Convierte una gramática de lenguaje en código que puede generar un árbol de sintaxis. Fue necesario hacer ligeras modificaciones sobre la gramática, pues ANTLR cuenta con la gramatica 8.0 de C\#. \\
+ A continuación, se explica su funcionamiento y las etapas principales en su flujo de trabajo:
+ 
+ \begin{enumerate}
+    \item \textbf{Definición de la Gramática:}
+    Primero, se define la gramática del lenguaje en un archivo \texttt{.g4}. Este archivo incluye:
+    \begin{itemize}
+        \item \textbf{Reglas léxicas (tokens):} especifican los elementos más básicos, como palabras clave, identificadores, operadores, números, etc.
+        \item \textbf{Reglas sintácticas:} describen cómo se combinan los tokens para formar sentencias válidas en el lenguaje.
+    \end{itemize}
+    Cada regla léxica o sintáctica tiene un nombre y una expresión que define qué secuencias de caracteres o estructuras pueden corresponderse con esa regla.
 
-Una vez que se ha generado el AST, se puede manipular y analizar utilizando las estructuras de datos proporcionadas por ANTLR. Por ejemplo, se pueden recorrer los nodos del árbol, extraer información específica o transformar el AST para diferentes propósitos, en este caso se utilizó el listener proporcionado por ANTLR para recorrer el árbol y extraer los featurues. \\
+    \item \textbf{Generación del Lexer y el Parser:}
+    ANTLR toma el archivo de gramática \texttt{.g4} y genera clases en un lenguaje de programación (como Java, Python, C\#, etc.) que implementan el lexer (analizador léxico) y el parser (analizador sintáctico).
+    \begin{itemize}
+        \item \textbf{Lexer:} identifica tokens en el texto de entrada. Por ejemplo, en una expresión matemática, reconoce números, operadores, paréntesis, etc.
+        \item \textbf{Parser:} usa estos tokens para construir una estructura jerárquica que representa la gramática definida, lo cual permite reconocer la estructura completa del código o texto de entrada.
+    \end{itemize}
+
+    \item \textbf{Análisis del Código o Texto de Entrada:} Con el lexer y parser generados, se puede analizar el código fuente. Este proceso produce un árbol de sintaxis que representa la estructura jerárquica del código según la gramática.
+
+    \item \textbf{Creación del Árbol de Sintaxis Abstracta (AST):} ANTLR facilita la creación de un AST, una representación simplificada que retiene la estructura lógica del código, omitiendo detalles innecesarios para ciertos tipos de análisis.
+
+    \item \textbf{Recorridos y Transformaciones en el AST:} Una vez construido el AST, es posible recorrerlo para realizar análisis adicionales, transformaciones o para interpretar el código. ANTLR proporciona métodos para recorrer este árbol y manipular los nodos según las reglas definidas en la gramática, en este caso se utilizó el listener proporcionado por ANTLR para recorrer el árbol y extraer los features.
+\end{enumerate}
+
+
 
 \section{Extraccion de features}
 
-En el análisis de similitud de código y detección de patrones, es crucial extraer características relevantes que capturen la estructura y el comportamiento del código. Para este propósito, se implementó una clase denominada {\bf FeatureExtractorListener}, que extiende la funcionalidad de ANTLR para analizar el código fuente en C\#. A continuación, se presenta una descripción detallada del proceso de extracción de características y la importancia de cada característica. \\
+En el análisis de similitud de código y detección de patrones, es necesario extraer características relevantes que capturen la estructura y el comportamiento del código. Estas características, conocidas como {\bf features}, representan los aspectos más importantes de los datos, permitiendo analizar y comparar fragmentos de código de manera efectiva. Para este propósito, se implementó una clase denominada {\bf FeatureExtractorListener}, que extiende la funcionalidad de ANTLR para analizar el código fuente en C\#. A continuación, se presenta una descripción detallada del proceso de extracción de características y la importancia de cada una. \\
 
 \begin{enumerate}
 	\item Estructura del AST:
@@ -35,7 +59,10 @@ En el análisis de similitud de código y detección de patrones, es crucial ext
         \item {\bf lists:} Número de listas declaradas.
         \item {\bf dicts:} Número de diccionarios declarados.
     \end{itemize}
-    Las variables y las constantes son fundamentales para entender el estado y el flujo de datos en el código. La variedad y el tipo de estructuras de datos utilizadas (tuplas, listas, diccionarios) también proporcionan información sobre el estilo de programación y la complejidad del código.
+    
+Las variables y constantes son elementos clave en cualquier programa, ya que almacenan y mantienen valores que pueden cambiar o permanecer fijos durante la ejecución. Comprender el uso de estas entidades en el código permite analizar cómo se manipulan los datos, identificar el flujo de información y observar cómo evolucionan los valores a lo largo del programa. Las variables revelan el comportamiento dinámico del código, mientras que las constantes indican valores fijos que definen parámetros o condiciones estables dentro del flujo de ejecución.\\
+
+Además, la variedad y el tipo de estructuras de datos empleadas, como tuplas, listas y diccionarios, aportan información importante sobre el enfoque y la complejidad del código. Por ejemplo, el uso de estructuras de datos más avanzadas, como diccionarios anidados o listas de objetos, puede reflejar una mayor abstracción y modularidad en el diseño, mientras que estructuras más simples pueden indicar un código directo y menos complejo. Estas elecciones también proporcionan información sobre el estilo de programación del autor y sus preferencias en cuanto a la organización y manipulación de datos.
 
     \item Declaraciones de Métodos y Clases:
     \begin{itemize}
@@ -50,7 +77,12 @@ En el análisis de similitud de código y detección de patrones, es crucial ext
         \item {\bf interfaces:} Número de interfaces declaradas.
         \item {\bf interface\_names:} Conjunto de nombres de interfaces.
     \end{itemize}
-    La estructura y los nombres de los métodos y clases proporcionan información sobre la organización y modularidad del código. Los métodos y sus parámetros son esenciales para entender la funcionalidad del código, mientras que las clases y sus tipos (abstractas, selladas) indican la arquitectura de la aplicación.
+    
+    La estructura y los nombres de los métodos y clases ofrecen información clave sobre la organización, modularidad y legibilidad del código. Los nombres de métodos y clases, cuando están bien definidos y siguen convenciones de nomenclatura clara, actúan como una especie de documentación implícita, ayudando a comprender la función y el propósito de cada componente sin necesidad de examinar cada detalle interno. 
+
+Los métodos y sus parámetros son esenciales para entender la funcionalidad del código. Los métodos representan acciones específicas y los parámetros definen los datos con los que esas acciones trabajan. Al analizar los métodos y los tipos de parámetros que aceptan, se puede deducir cómo las distintas partes del código interactúan y colaboran para realizar tareas. La estructura de los métodos, su nivel de abstracción, y la forma en que interactúan con otros componentes del código revelan la profundidad de la modularidad y el diseño de la aplicación, lo que facilita el análisis de patrones y la identificación de similitudes entre diferentes fragmentos de código.
+
+Por otro lado, las clases y sus tipos (como clases abstractas o selladas) indican la arquitectura y el paradigma de diseño de la aplicación. Las clases abstractas, por ejemplo, representan conceptos generales que definen una estructura básica sin implementación completa, alentando la reutilización y la extensibilidad en el diseño del sistema. Las clases selladas (sealed) limitan la herencia, sugiriendo un diseño más controlado y dirigido a la especificidad. Estas elecciones de diseño reflejan la intención del desarrollador en cuanto a la extensibilidad, la reutilización y la encapsulación, todos ellos principios fundamentales en la programación orientada a objetos.
 
     \item Estructuras de Control:
     \begin{itemize}
@@ -61,6 +93,7 @@ En el análisis de similitud de código y detección de patrones, es crucial ext
         \item {\bf control\_structures\_dowhile:} Número de bucles do-while.
         \item {\bf try\_catch\_blocks:} Número de bloques try-catch.
     \end{itemize}
+    
     Las estructuras de control son fundamentales para comprender el flujo del programa y su lógica. Un mayor número de estructuras de control indica una lógica más compleja y ramificada.
 
     \item Modificadores y Accesibilidad:
@@ -87,9 +120,10 @@ En el análisis de similitud de código y detección de patrones, es crucial ext
         \item {\bf modifier\_unsafe:} Número de elementos unsafe.
         \item {\bf modifier\_async:} Número de elementos async.
     \end{itemize}
-    Estos modificadores específicos indican características avanzadas y patrones de diseño en el código, como la concurrencia (async), la seguridad (unsafe) y la herencia (override, virtual).
+    
+    Estos modificadores específicos reflejan patrones de diseño, control y comportamiento que van más allá de la simple estructura superficial del código. Al analizar modificadores como readonly, volatile o async, se capturan detalles sobre cómo el código maneja la concurrencia, la inmutabilidad y la asincronía, se utilizan para identificar similitudes en la lógica y el flujo de ejecución. Modificadores como virtual y override indican una arquitectura orientada a objetos, esto permite comparar el grado de extensibilidad y personalización en diferentes fragmentos de código. Además, la presencia de unsafe y extern sugiere que el código interactúa con recursos de bajo nivel o externos, lo que proporciona información sobre la complejidad y las dependencias de cada implementación.\\
 
-    \item Llamadas a Librerías y LINQ:
+    \item Llamadas a Librerías y LINQ(Language Integrated Query):
     \begin{itemize}
         \item {\bf library\_call\_console:} Número de llamadas a la librería Console.
         \item {\bf library\_call\_math:} Número de llamadas a la librería Math.
@@ -101,7 +135,10 @@ En el análisis de similitud de código y detección de patrones, es crucial ext
         \item {\bf linq\_queries\_sum:} Número de consultas LINQ Sum.
         \item {\bf linq\_queries\_count:} Número de consultas LINQ Count.
     \end{itemize}
-    Las llamadas a librerías y consultas LINQ proporcionan información sobre el uso de funcionalidades estándar y el manejo de colecciones de datos en el código.
+    
+    Las llamadas a librerías y las consultas LINQ ofrecen información sobre cómo el código aprovecha las funcionalidades estándar y gestiona la manipulación de datos. Al utilizar llamadas a librerías, el código accede a un conjunto de herramientas predefinidas y optimizadas. Esto permite deducir la experiencia y el estilo del programador en términos de modularidad y adaptabilidad, aspectos clave en la estructura y lógica del código.\\
+
+Por otro lado, el uso de consultas LINQ para manipular y consultar colecciones de datos refleja un enfoque específico en la optimización y claridad de la manipulación de datos en .NET. LINQ permite un acceso eficiente a estructuras de datos complejas, proporcionando una sintaxis uniforme para realizar operaciones como filtrado, proyección, agrupación y ordenación. La presencia de consultas LINQ en el código puede indicar la preferencia del desarrollador por una sintaxis declarativa y una gestión avanzada de colecciones, que resulta fundamental para identificar similitudes en la forma en que diferentes fragmentos de código manejan datos.
 
     \item Otras Características:
     \begin{itemize}
@@ -115,22 +152,25 @@ En el análisis de similitud de código y detección de patrones, es crucial ext
         \item {\bf delegate\_names:} Conjunto de nombres de delegados.
         \item {\bf node\_count:} Conteo de nodos por tipo.
     \end{itemize}
-    Estas características adicionales proporcionan una visión más completa de las capacidades del código, su organización y las prácticas de programación utilizadas.
-
+    Estas características adicionales permiten analizar el código desde distintas perspectivas que revelan aspectos de diseño y organización. Por ejemplo, el número de expresiones lambda indica la frecuencia de uso de funciones anónimas, lo cual puede reflejar una orientación hacia la programación funcional. La cantidad de métodos de acceso ofrece una idea del manejo de encapsulamiento y control de atributos en las clases. La presencia de espacios de nombres sugiere la estructura modular del código y la separación de responsabilidades, lo que facilita la organización y evita conflictos de nombres. Las enumeraciones y los delegados muestran la variedad de estructuras y tipos personalizados utilizados. Finalmente, el conteo de nodos por tipo permite una visión detallada de los elementos específicos del árbol de sintaxis abstracta, lo cual es útil para evaluar la complejidad y el tipo de construcciones empleadas.
  
 \end{enumerate}
     
         
-La extracción de características con FeatureExtractorListener permite capturar una amplia gama de aspectos del código fuente en C\#, desde su estructura y complejidad hasta los patrones de diseño y las prácticas de programación. Esta información es crucial para tareas como la detección de similitudes de código, la evaluación de la calidad del código y la identificación de posibles plagios. La implementación y el análisis detallado de estas características proporcionan una base sólida para mejorar la precisión y efectividad de las herramientas de análisis de código.
+La extracción de características con FeatureExtractorListener permite capturar aspectos relevantes del código fuente en C\#, desde su estructura y complejidad hasta los patrones de diseño y las prácticas de programación. La implementación y el análisis detallado de estas características proporcionan una base sólida para mejorar la precisión de las herramientas de análisis de código.
 
-\section{Preparacion del dataset}
 
-Para preparar el dataset utilizado en el análisis de similitud de código, se convierten los nombres de variables, métodos y otros identificadores en vectores de características numéricas. Este proceso se llevó a cabo utilizando la técnica de embeddings con Word2Vec \cite{mikolov2013efficient}. \\
 
-\subsubsection{Uso de Word2Vec en la Preparación del Dataset}
-Word2Vec es una técnica de aprendizaje profundo que transforma palabras en vectores de números de alta dimensión, conocidos como embeddings. Los modelos Word2Vec se entrenan utilizando grandes corpus de texto y capturan relaciones semánticas entre las palabras.  \\
+\chapter{Preparacion del dataset}\label{chapter:proposal}
 
-En el contexto del análisis de similitud de código, los nombres de variables, métodos y otros identificadores en el código fuente juegan un papel crucial. Estos nombres pueden proporcionar información semántica valiosa sobre la funcionalidad y el propósito de diferentes partes del código. Por ejemplo, los identificadores que se usan de manera similar en diferentes contextos tendrán embeddings\footnote{Los embeddings son una técnica de procesamiento de lenguaje natural que convierte el lenguaje humano en vectores matemáticos. Estos vectores son una representación del significado subyacente de las palabras, lo que permite que las computadoras procesen el lenguaje de manera más efectiva.} similares. Sin embargo, los identificadores en el código no están estructurados de manera que las máquinas puedan comprender fácilmente sus relaciones semánticas. Para abordar este desafío, se utilizó Word2Vec para convertir estos identificadores en embeddings. El proceso involucró los siguientes pasos:
+Para preparar el dataset, se convierten los nombres de variables, métodos y otros identificadores de tipo string en vectores de características numéricas, lo cual permite que un modelo de machine learning procese el código de manera efectiva. Este proceso de transformación se realiza utilizando embeddings, una técnica de procesamiento del lenguaje natural, mediante el modelo Word2Vec \cite{mikolov2013efficient}. Estos embeddings se combinan luego con otras características numéricas extraídas del código, como el número de métodos o la cantidad de expresiones lambda, lo cual forma un vector de características completo. Este vector integrado proporciona una descripción multidimensional del código, capturando tanto la estructura como la semántica en una única representación, lo que mejora la capacidad del modelo para detectar patrones y realizar comparaciones entre diferentes fragmentos de código.
+
+\section{Construcción del dataset}
+bla bla bla
+
+\section{Word2Vec}
+
+En el contexto del análisis de similitud de código, los nombres de variables, métodos y otros identificadores en el código fuente proporcionan información semántica sobre la funcionalidad y el propósito de diferentes partes del código. Por ejemplo, los identificadores que se usan de manera similar en diferentes contextos tendrán embeddings\footnote{Los embeddings son una técnica de procesamiento de lenguaje natural que convierte el lenguaje humano en vectores matemáticos. Estos vectores son una representación del significado subyacente de las palabras, lo que permite que las computadoras procesen el lenguaje de manera más efectiva.} similares. Sin embargo, los identificadores en el código no están estructurados de manera que las máquinas puedan comprender fácilmente sus relaciones semánticas, para esto se utilizó Word2Vec. El proceso involucró los siguientes pasos:
 
 \begin{enumerate}
 	\item Extracción de Identificadores: Se extrajeron todos los nombres de variables, métodos, clases, interfaces, enumeraciones y delegados del código fuente utilizando la clase FeatureExtractorListener.
@@ -141,7 +181,8 @@ En el contexto del análisis de similitud de código, los nombres de variables, 
 	 
 \end{enumerate}
 
-\subsubsection{Dataset de diferencias}
+\section{Dataset de diferencias}
+
 Para maximizar la cantidad de datos disponibles y reflejar de manera efectiva la similitud entre proyectos, se creó un dataset que contiene todos los pares posibles (2 a 2) de proyectos del conjunto de datos original. En este proceso, para cada par de proyectos, se calcula y almacena la diferencia entre sus vectores correspondientes.\\
 
 Este enfoque tiene varias ventajas significativas:
@@ -161,158 +202,48 @@ Este enfoque tiene varias ventajas significativas:
 
 En resumen, la creación de este dataset con todos los pares posibles y sus diferencias vectoriales no solo aumenta la cantidad de datos disponibles, sino que también enriquece la información sobre las relaciones entre proyectos, mejorando así la capacidad del modelo para detectar similitudes de manera precisa y eficiente.  
 
-\section{Probando modelos}
 
-\subsubsection{SNN}
-La primera solución fue implementar una red neuronal siamesa para comparar dos proyectos. Estas redes funcionan con dos entradas, procesando cada una a través de la misma arquitectura de red para obtener representaciones vectoriales comparables. La red neuronal siamesa mide la distancia entre estos vectores para determinar la similitud entre los proyectos.\\
+\chapter{Redes Neuronales Siamesas para la Similitud de Código}\label{chapter:proposal}
 
-Para esta solución, se separaron todos los posibles pares de proyectos y se les asignó una etiqueta: 0 si los proyectos no son copias (ambos originales) y 1 si los proyectos son copias. Los datos se convirtieron en vectores de características y el conjunto de datos se constituyó con los pares de vectores correspondientes y sus etiquetas.\\
+Las redes neuronales siamesas han demostrado ser efectivas en el análisis de similitud de código, debido a su estructura que permite aprender relaciones semánticas profundas entre pares de datos de entrada. En este capítulo se describen los componentes fundamentales de esta arquitectura y su proceso de entrenamiento.
 
-Sin embargo, surgió el problema de la generación de copias de proyectos para etiquetar correctamente los datos. Esto llevó a la necesidad de buscar otra solución más efectiva a la carencia de datos etiquetados.
+\section{Estructura de una Red Neuronal Siamesa}
 
+La red neuronal siamesa consta de dos subredes idénticas que comparten los mismos parámetros y pesos. Cada subred toma como entrada un fragmento de código, que es representado a través de vectores de características derivados de su Árbol de Sintaxis Abstracta (AST). Las salidas de ambas subredes son vectores de alta dimensión que capturan características semánticas y estructurales del código procesado. Posteriormente, estos vectores se comparan mediante una función de distancia, la similitud de coseno, que cuantifica el grado de similitud entre los fragmentos de código.\\
 
-\subsubsection{Clustering}
+Esta red esta compuesta por tres capas densas.\\
 
-El clustering es un proceso de aprendizaje no supervisado, utilizado para agrupar datos sin conocer de antemano la etiqueta o categoría de cada dato. En lugar de depender de etiquetas predefinidas, los algoritmos de clustering analizan la proximidad y similitud entre los datos para formar grupos o clústeres basados en características compartidas. Cada clúster agrupa datos que son similares entre sí, pero que difieren de los datos en otros clústeres. Este enfoque es particularmente útil en situaciones donde se quiere descubrir patrones, estructuras o relaciones inherentes sin la necesidad de etiquetas predefinidas.\\
+Al emplear una red siamesa, el modelo puede determinar qué tan “cercanos” o “distantes” son dos fragmentos de código en el espacio semántico aprendido, lo cual es crucial en aplicaciones donde se busca identificar equivalencias estructurales o funcionales.
 
-Se aplicaron distintos enfoques de clustering:
-\begin{itemize}
-    \item \textbf{K-Means}: Agrupa datos en \(k\) clústeres basándose en la distancia euclidiana a los centroides, que se ajustan iterativamente.
-    
-    \item \textbf{DBSCAN (Density-Based Spatial Clustering of Applications with Noise)}: Identifica clústeres basados en la densidad de puntos, permitiendo descubrir clústeres de forma arbitraria y detectar ruido.
-    \item \textbf{Agglomerative Clustering}: Un enfoque jerárquico que une iterativamente los puntos o clústeres más cercanos, formando un dendrograma.  Aquí se hizo uso del método del codo para determinar el parámetro \(k\) a utilizar.
-    
-    \item \textbf{MeanShift}: Agrupa datos desplazando iterativamente los puntos hacia la densidad máxima de puntos más cercana, identificando modos en la densidad de datos.
-\end{itemize}
+\section{Proceso de Entrenamiento y Función de Pérdida}
 
-Aunque algunos de estos algoritmos mostraron buenas métricas en ciertos aspectos, no lograron resolver completamente el problema planteado. 
-
-\section{Modelos}
-
-\subsubsection{One-Class SVM}
-
-One-Class Support Vector Machine (One-Class SVM) es una variante del algoritmo SVM (Support Vector Machine) diseñada para la detección de anomalías y para identificar datos que difieren del conjunto de datos de entrenamiento. One-Class SVM es particularmente útil en escenarios donde solo se dispone de datos de una clase (la clase "normal") y se desea detectar cualquier dato que sea diferente o anómalo.\\
-
-One-Class SVM se basa en la idea de encontrar una función que sea positiva en la región donde se encuentran la mayoría de los datos de entrenamiento y negativa en otras regiones. Este enfoque ayuda a identificar las regiones del espacio de características donde se encuentran los datos \"normales\" y marcar como anómalos los datos que caen fuera de estas regiones.\\
-
-\textbf{Funcionamiento:}
-
-\begin{enumerate}
-    \item \textbf{Transformación del Espacio de Características:}
-    \begin{itemize}
-        \item Se utiliza una función de kernel para mapear los datos de entrada a un espacio de características de mayor dimensión.
-        \item Los kernels comunes incluyen el kernel lineal, polinómico, radial (RBF) y sigmoide.
-    \end{itemize}
-
-    \item \textbf{Maximización del Margen:}
-    \begin{itemize}
-        \item One-Class SVM trata de encontrar un hiperplano en el espacio de características transformado que maximice la distancia de los puntos de datos a este hiperplano.
-        \item La mayoría de los datos de entrenamiento deben estar en un lado del hiperplano (considerados normales) y los puntos fuera de este margen son considerados anomalías.
-    \end{itemize}
-\end{enumerate}
-
-\texbf{Fórmula Matemática} \\
-
-El problema de optimización para One-Class SVM se define como:
-
-\[ \min_{\mathbf{w}, \rho, \xi} \frac{1}{2} \|\mathbf{w}\|^2 + \frac{1}{\nu n} \sum_{i=1}^{n} \xi_i - \rho \]
-
-sujeto a:
-
-\[ (\mathbf{w} \cdot \phi(\mathbf{x}_i)) \geq \rho - \xi_i, \quad \xi_i \geq 0, \quad i = 1, \ldots, n \]
-
-Donde:
-\begin{itemize}
-    \item \( \mathbf{w} \) es el vector de pesos.
-    \item \( \phi(\mathbf{x}_i) \) es la transformación del espacio de características mediante el kernel.
-    \item \( \rho \) es el umbral que separa los datos normales de las anomalías.
-    \item \( \xi_i \) son las variables de holgura que permiten que algunos puntos estén en el lado equivocado del margen.
-    \item \( \nu \) es un parámetro que controla el trade-off entre la fracción de puntos de datos que son permitidos estar en el lado equivocado del margen y la regularización del modelo.
-\end{itemize}
+El entrenamiento de una red neuronal siamesa para la detección de similitud de código generalmente se lleva a cabo mediante la \textit{pérdida de contraste} (contrastive loss) o la \textit{pérdida de triplete} (triplet loss). Estas funciones de pérdida están diseñadas para reducir la distancia entre los vectores de fragmentos de código que cumplen la misma funcionalidad (pares similares) y aumentar la distancia entre los vectores de fragmentos de código que cumplen funciones diferentes (pares disimilares), en este trabajo se utilizará la tecnica de \textit{pérdida de contraste}. Esta función minimiza la distancia entre representaciones de fragmentos de código similares y maximiza la distancia entre representaciones de fragmentos disímiles. Para cada par de fragmentos de código, esta función penaliza la red de acuerdo con la cercanía o lejanía de las representaciones generadas.
 
 
-\textbf{Ventajas:}
-\begin{itemize}
-    \item Efectivo en escenarios donde solo se dispone de datos de una clase.
-    \item Flexible con el uso de diferentes kernels para capturar la estructura de datos no lineales.
-\end{itemize}
+\section{Aplicación de Redes Siamesas en la Similitud de Código en C\#}
 
+Para aplicar redes siamesas en la detección de similitud de código en C\#, cada fragmento de código se transforma en un vector de características utilizando su AST. Este árbol captura la estructura sintáctica y lógica del código, permitiendo que el modelo aprenda relaciones más profundas que las posibles mediante representaciones textuales o léxicas. Los vectores de características pueden incluir información sobre las operaciones, los flujos de control, los nombres de funciones, y otros elementos sintácticos relevantes del código en C\#. \\
 
-\subsubsection{Isolation forest}
+La representación vectorial del AST es crítica, ya que permite que la red siamés se enfoque en aspectos estructurales y funcionales del código, ignorando variaciones superficiales, como cambios en el nombre de variables o formato. De esta forma, el modelo se vuelve robusto frente a modificaciones superficiales que no alteran la lógica del programa, pero susceptibles de engañar métodos más básicos de detección de similitud.
 
-Isolation Forest es un algoritmo de aprendizaje automático no supervisado diseñado para detectar anomalías en datos. Fue introducido por Fei Tony Liu, Kai Ming Ting y Zhi-Hua Zhou en 2008 \cite{liu2008isolation}. A diferencia de muchos algoritmos de detección de anomalías que se basan en la densidad o la distancia, Isolation Forest se basa en el concepto de "aislamiento\".\\
+\section{Futuras Direcciones}
 
-La idea central de Isolation Forest es que las anomalías son puntos de datos que son "fáciles de aislar". Dado que los valores anómalos son raros y diferentes del resto de los datos, deben requerir menos divisiones para ser aislados. \\
+ Se me ocurre la idea de entrenar el modelo con codigo de java(existe mas dataset con java que C\#) para que vaya teniendo una base de que es una copia de codigo y luego especializarlo con codigos de C\#, porque pienso que esto funcionaria? Los vectores vas a tener la misma estructura tanto para C# como para Java (cantidad de if, de while etc.) . Aqui tendria que investigar las diferencias entre C\# y Java, generar el AST con ANTLR para Java hacer de nuevo la extraccion de caracteristicas si los ast no tienen la misma estructura que es lo mas probable, muy pesado de hacer... y ya despues de esto tendria el vector de caracteristicas para Java y a entrenar el modelo con java, luego investigar como se reutiliza un modelo ya entrenado y especializarlo, esto tiene el nombre en ML como fine tuning. Tambien puede que aparezca magicamente el modelo ya entrenado con Java y sea cargarlo.  Segun ChatGPT:
+ 
+ Este método implica dos fases principales:
+Pre-entrenamiento (Pre-training):
+En esta fase, el modelo se entrena con un conjunto de datos grande y general. Este entrenamiento inicial permite al modelo aprender características generales y representaciones útiles de los datos.
+Fine-tuning (Ajuste fino):
+Después del pre-entrenamiento, el modelo se vuelve a entrenar con un conjunto de datos más pequeño y específico para la tarea en cuestión. Durante este proceso, se ajustan los pesos del modelo para adaptarse mejor a la tarea específica.
+Características clave del transfer learning:
+Eficiencia: Permite aprovechar el conocimiento adquirido en tareas generales para mejorar el rendimiento en tareas específicas.
+Menor necesidad de datos: Requiere menos datos para la tarea específica, ya que el modelo ya ha aprendido características generales útiles.
+Tiempo de entrenamiento reducido: El fine-tuning suele ser más rápido que entrenar un modelo desde cero.
+Mejor rendimiento: A menudo resulta en un mejor rendimiento en la tarea específica, especialmente cuando los datos específicos son limitados.
+Versatilidad: Se puede aplicar en diversos campos como visión por computadora, procesamiento de lenguaje natural, y reconocimiento de voz.
+En el contexto de tu proyecto de similitud de código, podrías considerar pre-entrenar tu modelo siamés en un conjunto grande de proyectos de código de diversos lenguajes, y luego hacer fine-tuning con un conjunto más pequeño de proyectos C# específicos. Esto podría ayudar a tu modelo a capturar características generales de la estructura del código y luego especializarse en las particularidades del C#.
 
-\textbf{Funcionamiento: }
+Despues de esta maravillosa idea que no se si funcione esta seguir probando con chatGPT a ver si me quiere dar codigos plagueados bien, entrenar a algun LLM hacerle prompt ingeeniering para ensennarle a plaguear y que luego nos de el codigo que queremos.
 
-\begin{enumerate}
-    \item \textbf{Construcción de Árboles de Aislamiento:}
-    \begin{itemize}
-        \item Se construyen múltiples árboles de aislamiento (iTrees). Cada árbol se construye seleccionando aleatoriamente una característica y luego eligiendo aleatoriamente un valor de división entre los valores mínimo y máximo de esa característica.
-        \item Este proceso se repite hasta que cada punto de datos esté aislado en una hoja del árbol o hasta que se alcance una profundidad máxima predefinida.
-    \end{itemize}
-
-    \item \textbf{Cálculo de la Longitud del Camino:}
-    \begin{itemize}
-        \item La longitud del camino de un punto de datos es el número de divisiones necesarias para aislar ese punto.
-        \item Las anomalías, siendo más fáciles de aislar, tienden a tener caminos más cortos.
-    \end{itemize}
-
-    \item \textbf{Puntuación de Anomalía:}
-    \begin{itemize}
-        \item La puntuación de anomalía se basa en la longitud del camino.
-        \item Si un punto tiene una puntuación de anomalía alta, es considerado una anomalía.
-    \end{itemize}
-\end{enumerate}
-
-\subsection*{Fórmula Matemática}
-
-Para calcular la puntuación de anomalía, se utiliza la siguiente fórmula:
-
-\[
-s(x, n) = 2^{-\frac{E(h(x))}{c(n)}}
-\]
-
-Donde:
-\begin{itemize}
-    \item \( s(x, n) \) es la puntuación de anomalía del punto \( x \) en un conjunto de datos de tamaño \( n \).
-    \item \( E(h(x)) \) es la longitud media del camino de aislamiento para el punto \( x \) calculada sobre múltiples árboles.
-    \item \( c(n) \) es una constante de normalización calculada como:
-\end{itemize}
-
-\[
-c(n) = 2H(n-1) - \left( \frac{2(n-1)}{n} \right)
-\]
-
-Aquí, \( H(i) \) es la \( i \)-ésima armónica:
-
-\[
-H(i) = \sum_{k=1}^{i} \frac{1}{k}
-\]
-
-\textbf{Ventajas:}
-\begin{itemize}
-    \item Eficiente y escalable a grandes conjuntos de datos.
-    \item No requiere un modelo previo de datos normales o anómalos.
-    \item Puede manejar datos de alta dimensionalidad.
-\end{itemize}
-
-
-\subsubsection{¿Por que elegir estos modelos?}
-
-Ambos métodos, Isolation Forest y One-Class SVM, fueron entrenados con pares de proyectos que son diferentes entre sí. Esto significa que aprendieron las diferencias inherentes entre proyectos que podrían contener anomalías o fraudes. Al entrenar con proyectos que representan variabilidad y diversidad en términos de estructuras de código, estilos de programación y lógica implementada, los modelos pueden capturar mejor las características que distinguen un proyecto legítimo de uno potencialmente fraudulento.
-
-\textbf de la Región de Similitud}
-
-El objetivo de detectar fraude entre proyectos de C\# de primer año implica identificar anomalías en la similitud estructural y lógica entre dos proyectos. Isolation Forest y One-Class SVM son adecuados para este propósito porque:
-
-\begin{itemize}
-    \item \textbf{Isolation Forest:} Al modelar la estructura de los datos mediante la creación de múltiples árboles de decisión, Isolation Forest identifica anomalías como puntos que son fáciles de aislar en el espacio de características. Esto es efectivo para detectar proyectos que se desvían significativamente de la norma en términos de estructura y contenido.
-    
-    \item \textbf{One-Class SVM:} Al encontrar una frontera que encapsula la mayoría de los datos normales en el espacio de características, One-Class SVM puede detectar puntos de datos que están muy lejos de esta frontera. Esto es útil para identificar proyectos que muestran características inusuales o no esperadas en comparación con los proyectos normales.
-\end{itemize}
-
-El dominio específico de proyectos de C\# de primer año facilita el uso de estos algoritmos. Dado que los proyectos son de un nivel académico inicial, es probable que existan variaciones predecibles pero distintivas entre los proyectos legítimos y aquellos que podrían contener fraude o anomalías. Esto hace que describir la región de los vectores de similitud entre proyectos distintos sea más accesible y factible, ya que las diferencias entre proyectos normales y anómalos pueden ser más discernibles y significativas en este contexto específico.
-
+No se me ocurre mas nada para el dataset.
 

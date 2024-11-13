@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  7 JUL 2024 19:17
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2024.7.2)  12 NOV 2024 17:07
 entering extended mode
 **Thesis.tex
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.tex
+("C:\Users\Chony\Desktop\Tesis\new docc\document\Thesis.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\uhthesis.cls
+("C:\Users\Chony\Desktop\Tesis\new docc\document\uhthesis.cls"
 Document Class: uhthesis 2011/04/12 0.1 uhthesis
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
@@ -1078,33 +1078,46 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 )
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.aux
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Abstract.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Contents.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Introduction.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Background.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Proposal.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Implementation.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Bibliography.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 62.
+("C:\Users\Chony\Desktop\Tesis\new docc\document\Thesis.aux"
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Dedication.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Thanks.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/SupervisorOpinion.
+aux") ("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Abstract.aux
+") ("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Contents.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Introduction.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Background.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Proposal.aux"
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
+LaTeX Warning: Label `chapter:proposal' multiply defined.
+
+
+LaTeX Warning: Label `chapter:proposal' multiply defined.
+
+
+LaTeX Warning: Label `chapter:proposal' multiply defined.
+
+) ("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Implementation.au
+x") ("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Conclusions.aux
+")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Recomendations.aux"
+) ("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Bibliography.aux"
+))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 60.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 babelbib: Set bibliography fall-back language to spanish
@@ -1130,7 +1143,7 @@ babelbib: Set language for keywords in the bibliography fixed to spanish
 \everyMPtoPDFconversion=\toks40
 )
 \AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring ON on input line 62.
+Package hyperref Info: Link coloring ON on input line 60.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -1139,58 +1152,43 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 62.
-LaTeX Info: Redefining \pageref on input line 62.
-LaTeX Info: Redefining \nameref on input line 62.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
 
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.out)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.out)
+("C:\Users\Chony\Desktop\Tesis\new docc\document\Thesis.out")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\Thesis.out")
 \@outlinefile=\write4
 
 babelbib: Add a command to \bibsspanish
 babelbib: Set language for keywords in the bibliography fixed to spanish
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 62.
+(hyperref)                removing `\\' on input line 60.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 62.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 62.
+(hyperref)                removing `\new@ifnextchar' on input line 60.
 
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count169
-LaTeX Info: Redefining \selectfont on input line 62.
+LaTeX Info: Redefining \selectfont on input line 60.
 
-<Graphics/uhlogo.pdf, id=54, 375.98297pt x 481.67456pt>
+<Graphics/uhlogo.pdf, id=82, 375.98297pt x 481.67456pt>
 File: Graphics/uhlogo.pdf Graphic file (type pdf)
 
 <use Graphics/uhlogo.pdf>
-Package pdftex.def Info: Graphics/uhlogo.pdf used on input line 66.
+Package pdftex.def Info: Graphics/uhlogo.pdf used on input line 64.
 (pdftex.def)             Requested size: 49.79231pt x 63.7885pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 66.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 66.
-
-! Undefined control sequence.
-<recently read> \@advisor 
-                          
-l.66 \maketitle
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 64.
 
 ! Undefined control sequence.
 <recently read> \@coadvisor 
                             
-l.66 \maketitle
+l.64 \maketitle
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1205,7 +1203,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 \maketitle
+l.64 \maketitle
                
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -1215,13 +1213,32 @@ If that doesn't work, type  X <return>  to quit.
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Chony/Desktop/Te
-sis/Tesis/document/Graphics/uhlogo.pdf>]
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Abstract.tex
+sis/new docc/document/Graphics/uhlogo.pdf>]
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Dedication.tex")
+[2
+
+
+] ("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Thanks.tex"
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
+)
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 5.
- [2
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 67.
+
+[3
+
+
+
+]
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/SupervisorOpinion.
+tex") [4
+
+
+
+]
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Abstract.tex"
+[5
+
 
 
 ]
@@ -1233,65 +1250,65 @@ I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-) [3
+) [6
 
-] (C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Contents.tex
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.toc
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 5.
+] ("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Contents.tex" ("
+C:\Users\Chony\Desktop\Tesis\new docc\document\Thesis.toc"
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 6.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 5.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 6.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 5.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 6.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 5.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 6.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 5.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 6.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 5.
+(Font)              scaled to size 12.50409pt on input line 6.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 5.
+(Font)              scaled to size 9.37807pt on input line 6.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 5.
+(Font)              scaled to size 7.29405pt on input line 6.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 5.
+(Font)              scaled to size 12.50409pt on input line 6.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 5.
+(Font)              scaled to size 9.37807pt on input line 6.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 5.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 5.
+(Font)              scaled to size 7.29405pt on input line 6.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 6.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 ))
 \tf@toc=\write5
-) [4
+) [7
 
 
 
 ]
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Introduction.tex
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Introduction.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
@@ -1326,40 +1343,61 @@ l.36
 e.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76 \include{MainMatter/Introduction}
+l.74 \include{MainMatter/Introduction}
                                        [4]
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Background.tex
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Background.tex"
 Cap\'{\i }tulo 1.
-[5
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 
+     [5
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 
+      [6]
+Overfull \hbox (149.41757pt too wide) in paragraph at lines 21--22
+\T1/ppl/m/n/12 truc-tu-ras de da-tos que pue-den ser ma-ni-pu-la-das.??????????
+???????????????????????????????????????????? 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[7]
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 
+      [7]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
@@ -1370,13 +1408,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 [8]
-Overfull \hbox (1.71806pt too wide) in paragraph at lines 35--35
-[][]\T1/ppl/b/n/17.28 Integración del apren-di-za-je au-to-má-ti-co (dé-ca-da d
-e
+Overfull \hbox (109.67403pt too wide) in paragraph at lines 35--36
+\T1/ppl/m/n/12 tex-to y cap-tu-ran re-la-cio-nes se-mán-ti-cas en-tre las pa-la
+-bras.?????????????????????????????????????? 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
@@ -1390,171 +1428,151 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-[10]
-Overfull \hbox (8.82063pt too wide) in paragraph at lines 54--54
-[][]\T1/ppl/b/n/17.28 Tendencias e in-no-va-cio-nes ac-tua-les (dé-ca-da de 202
-0
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-[11]) [12] (C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Proposal.tex
+) [10] ("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Proposal.tex
+"
 Cap\'{\i }tulo 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-[13
+[11
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Cap\'{\i }tulo 3.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 19.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [12
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 [14] [15]
-Overfull \hbox (9.15576pt too wide) in paragraph at lines 73--74
+Overfull \hbox (9.15576pt too wide) in paragraph at lines 106--107
 []\T1/ppl/b/n/12 access_modifiers_protected_internal: \T1/ppl/m/n/12 Nú-me-ro d
 e ele-men-tos pro-
  []
 
 
-Overfull \hbox (1.65561pt too wide) in paragraph at lines 74--75
+Overfull \hbox (1.65561pt too wide) in paragraph at lines 107--108
 []\T1/ppl/b/n/12 access_modifiers_private_protected: \T1/ppl/m/n/12 Nú-me-ro de
  ele-men-tos pri-
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
+[17] [18] [19]
+Cap\'{\i }tulo 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 173.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 173.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 173.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 133.
+(Font)              scaled to size 10.42007pt on input line 173.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 133.
+(Font)              scaled to size 7.91925pt on input line 173.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 133.
+(Font)              scaled to size 6.25204pt on input line 173.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 133.
+(Font)              scaled to size 10.42007pt on input line 173.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 133.
+(Font)              scaled to size 7.91925pt on input line 173.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 133.
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+(Font)              scaled to size 6.25204pt on input line 173.
+[20
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+[21] [22]
+Cap\'{\i }tulo 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-[20]
-Overfull \hbox (0.87352pt too wide) in paragraph at lines 185--186
-[]\T1/ppl/b/n/12 MeanShift\T1/ppl/m/n/12 : Agru-pa da-tos des-pla-zan-do ite-ra
--ti-va-men-te los pun-tos ha-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-[21]
-! Undefined control sequence.
-l.214 \texbf
-            {FÃ³rmula MatemÃ¡tica} \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+[23
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
+[24]
+! You can't use `macro parameter character #' in horizontal mode.
+l.231 ...a tener la misma estructura tanto para C#
+                                                   como para Java (cantidad ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+! You can't use `macro parameter character #' in horizontal mode.
+l.244 ...un conjunto mÃ¡s pequeÃ±o de proyectos C#
+                                                   especÃ­ficos. Esto podrÃ­...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
+! You can't use `macro parameter character #' in horizontal mode.
+l.244 ...cializarse en las particularidades del C#
+                                                  .
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (26.13055pt too wide) in paragraph at lines 233--245
+[]\T1/ppl/m/n/12 Este mé-to-do im-pli-ca dos fa-ses prin-ci-pa-les: Pre-entrena
+miento (Pre-training):
  []
-
-[23]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 269.
- [24]
-! Too many }'s.
-l.306 \textbf de la RegiÃ³n de Similitud}
-                                         
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
 
 [25]) [26]
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Implementation.tex
-Cap\'{\i }tulo 3.
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Implementation.tex"
+Cap\'{\i }tulo 6.
 ! Misplaced \noalign.
 <recently read> \noalign 
                          
-l.16         \bottomrule
+l.17         \bottomrule
                         
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1562,7 +1580,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.17     \end
+l.18     \end
              {tabular}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1573,7 +1591,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.17     \end
+l.18     \end
              {tabular}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1584,7 +1602,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.17     \end
+l.18     \end
              {tabular}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1595,14 +1613,14 @@ my insertion and my current dilemma will both disappear.
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.17     \end
+l.18     \end
              {tabular}
 I'm guessing that you meant to end an alignment here.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.17     \end
+l.18     \end
              {tabular}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1611,7 +1629,7 @@ Try to go on, since this might almost work.
 ! Misplaced \crcr.
 \endtabular ->\crcr 
                     \egroup \egroup $\egroup 
-l.17     \end{tabular}
+l.18     \end{tabular}
                       
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -1622,7 +1640,7 @@ might try typing `S' now just to see what is salvageable.
 ! Extra }, or forgotten $.
 \endtabular ->\crcr \egroup 
                             \egroup $\egroup 
-l.17     \end{tabular}
+l.18     \end{tabular}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1633,7 +1651,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \endtabular ->\crcr \egroup \egroup 
                                     $\egroup 
-l.17     \end{tabular}
+l.18     \end{tabular}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1642,60 +1660,16 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Overfull \hbox (43.91716pt too wide) in paragraph at lines 9--18
+Overfull \hbox (43.91716pt too wide) in paragraph at lines 9--19
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-[27
+) [27
 
 
 
-] <Graphics/isolation_forest_Tsne.png, id=285, 574.5465pt x 450.9648pt>
-File: Graphics/isolation_forest_Tsne.png Graphic file (type png)
-
-<use Graphics/isolation_forest_Tsne.png>
-Package pdftex.def Info: Graphics/isolation_forest_Tsne.png used on input line 
-34.
-(pdftex.def)             Requested size: 175.49881pt x 137.74706pt.
-
-<Graphics/one_class_svm_Tsne.png, id=287, 574.5465pt x 450.9648pt>
-File: Graphics/one_class_svm_Tsne.png Graphic file (type png)
-
-<use Graphics/one_class_svm_Tsne.png>
-Package pdftex.def Info: Graphics/one_class_svm_Tsne.png used on input line 40.
-
-(pdftex.def)             Requested size: 175.49881pt x 137.74706pt.
-
-<Graphics/isolation_forest_PCA.png, id=288, 574.5465pt x 450.9648pt>
-File: Graphics/isolation_forest_PCA.png Graphic file (type png)
-
-<use Graphics/isolation_forest_PCA.png>
-Package pdftex.def Info: Graphics/isolation_forest_PCA.png used on input line 5
-0.
-(pdftex.def)             Requested size: 175.49881pt x 137.74706pt.
-
-<Graphics/one_class_svm_PCA.png, id=289, 574.5465pt x 450.9648pt>
-File: Graphics/one_class_svm_PCA.png Graphic file (type png)
-
-<use Graphics/one_class_svm_PCA.png>
-Package pdftex.def Info: Graphics/one_class_svm_PCA.png used on input line 56.
-(pdftex.def)             Requested size: 175.49881pt x 137.74706pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-
- []
-
-[28 <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/isolation_forest_Tsne
-.png> <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/one_class_svm_Tsne.
-png> <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/isolation_forest_PCA
-.png> <C:/Users/Chony/Desktop/Tesis/Tesis/document/Graphics/one_class_svm_PCA.p
-ng>]) [29]
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.tex
+]
+("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Conclusions.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1720,7 +1694,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[30
+[28
 
 
 
@@ -1730,75 +1704,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-) [31]
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.tex)
-[32
+) [29]
+("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Recomendations.tex"
+) [30
 
 
 
 
-] (C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Bibliography.tex
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.bbl
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.brf)
+]
+("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Bibliography.tex"
+("C:\Users\Chony\Desktop\Tesis\new docc\document\Thesis.bbl"
+("C:\Users\Chony\Desktop\Tesis\new docc\document\Thesis.brf")
 \tf@brf=\write6
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 13.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [33
+ [31
 
 
 
-])) [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+])) [32]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
 
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\Thesis.aux
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Abstract.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\FrontMatter/Contents.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Introduction.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Background.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Proposal.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\MainMatter/Implementation.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Conclusions.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Recomendations.aux)
-(C:\Users\Chony\Desktop\Tesis\Tesis\document\BackMatter/Bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D51F8CBF2402D709D86A3A07A8F3D939;723.
+("C:\Users\Chony\Desktop\Tesis\new docc\document\Thesis.aux"
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Dedication.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Thanks.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/SupervisorOpinion.
+aux") ("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Abstract.aux
+") ("C:\Users\Chony\Desktop\Tesis\new docc\document\FrontMatter/Contents.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Introduction.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Background.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Proposal.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\MainMatter/Implementation.aux"
+) ("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Conclusions.aux")
+("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Recomendations.aux"
+) ("C:\Users\Chony\Desktop\Tesis\new docc\document\BackMatter/Bibliography.aux"
+))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: 8E7A8E21F7D1FB7DF216A88B9FC15417;1323
+(rerunfilecheck)             After:  6411AE7661CCC65C32C530CE4DFA07A8;1323.
 
 Package rerunfilecheck Warning: File `Thesis.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `Thesis.brf':
-(rerunfilecheck)             Before: 4092D8F99F1729E9D67C512EAE39ABDC;814
-(rerunfilecheck)             After:  7333E2044884058102D69ACDE4B8E7DA;814.
+(rerunfilecheck)             Before: 7DDA6AFF2F4C37B1CD8B247191B76EE3;584
+(rerunfilecheck)             After:  5DFF3E87AB688F2997E1C62DE4E84473;584.
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 19759 strings out of 494045
- 333078 string characters out of 3145970
- 438729 words of memory out of 3000000
- 22416 multiletter control sequences out of 15000+200000
- 58625 words of font info for 130 fonts, out of 3000000 for 9000
+ 19714 strings out of 494045
+ 333529 string characters out of 3145970
+ 439729 words of memory out of 3000000
+ 22387 multiletter control sequences out of 15000+200000
+ 47411 words of font info for 99 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  63i,12n,72p,1125b,569s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/mathpazo/fplmr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/mathpazo/fplmri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmtt12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/ncn
-trsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/up
-lb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Thesis.pdf (38 pages, 673168 bytes).
+pdfTeX warning (dest): name{chapter*.16} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.14} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.12} has been referenced but does not exist
+, replaced by a fixed one
+
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pal
+atino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/up
+lr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pf
+b>
+Output written on Thesis.pdf (39 pages, 312693 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 393 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 

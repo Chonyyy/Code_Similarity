@@ -1,12 +1,19 @@
-\BOOKMARK [0][-]{chapter*.4}{Introducci\363n}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Estado del Arte}{}% 2
+\BOOKMARK [0][-]{chapter*.6}{Introducci\363n}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Preliminares}{}% 2
 \BOOKMARK [0][-]{chapter.2}{Propuesta de soluci\363n}{}% 3
-\BOOKMARK [1][-]{section.2.1}{Extraccion del AST}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.2}{Extraccion de features}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.3}{Preparacion del dataset}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.4}{Probando modelos}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.5}{Modelos}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter.3}{Detalles de Implementaci\363n y Experimentos}{}% 9
-\BOOKMARK [0][-]{section*.23}{Conclusiones}{}% 10
-\BOOKMARK [0][-]{section*.25}{Recomendaciones}{}% 11
-\BOOKMARK [0][-]{chapter*.27}{Bibliograf\355a}{}% 12
+\BOOKMARK [0][-]{chapter.3}{Extracci\363n de features del AST}{}% 4
+\BOOKMARK [1][-]{section.3.1}{Extraccion del AST}{chapter.3}% 5
+\BOOKMARK [1][-]{section.3.2}{Extraccion de features}{chapter.3}% 6
+\BOOKMARK [0][-]{chapter.4}{Preparacion del dataset}{}% 7
+\BOOKMARK [1][-]{section.4.1}{Construcci\363n del dataset}{chapter.4}% 8
+\BOOKMARK [1][-]{section.4.2}{Word2Vec}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.3}{Dataset de diferencias}{chapter.4}% 10
+\BOOKMARK [0][-]{chapter.5}{Redes Neuronales Siamesas para la Similitud de C\363digo}{}% 11
+\BOOKMARK [1][-]{section.5.1}{Estructura de una Red Neuronal Siamesa}{chapter.5}% 12
+\BOOKMARK [1][-]{section.5.2}{Proceso de Entrenamiento y Funci\363n de P\351rdida}{chapter.5}% 13
+\BOOKMARK [1][-]{section.5.3}{Aplicaci\363n de Redes Siamesas en la Similitud de C\363digo en C\043}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.4}{Futuras Direcciones}{chapter.5}% 15
+\BOOKMARK [0][-]{chapter.6}{Detalles de Implementaci\363n y Experimentos}{}% 16
+\BOOKMARK [0][-]{section*.11}{Conclusiones}{}% 17
+\BOOKMARK [0][-]{section*.13}{Recomendaciones}{}% 18
+\BOOKMARK [0][-]{chapter*.15}{Bibliograf\355a}{}% 19
