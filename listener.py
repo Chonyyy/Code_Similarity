@@ -99,19 +99,22 @@ class FeatureExtractorListener(CSharpParserListener):
         if self.current_depth > self.max_depth:
             self.max_depth = self.current_depth
 
-        # identificar diferentes tipos de nodos:
-        if node_type == "Local_variable_declarationContext":
-            var_type = ctx.children[0].start.text
-            var_name = ctx.children[1].start.text
-            self.variables += 1
-            self.variable_names.add((var_type, var_name))
-            
-            if var_type == "Tuple":
-                self.number_of_tuples += 1
-            if var_type == "List":
-                self.lists += 1
-            if var_type == "Dictionary":
-                self.dicts += 1
+        # identificar diferentes tipos de nodos: 
+        if node_type == "Local_variable_declarationContext" and ctx.children:
+            if type(ctx.children[0]).__name__ == 'ErrorNodeImpl':
+                pass
+            else:
+                var_type = ctx.children[0].start.text
+                var_name = ctx.children[1].start.text
+                self.variables += 1
+                self.variable_names.add((var_type, var_name))
+                
+                if var_type == "Tuple":
+                    self.number_of_tuples += 1
+                if var_type == "List":
+                    self.lists += 1
+                if var_type == "Dictionary":
+                    self.dicts += 1
          
         elif node_type == "Method_declarationContext": 
             self.methods += 1

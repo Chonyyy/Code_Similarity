@@ -6,7 +6,7 @@ from embedding.word2vec import FeatureVectorizer
 import networkx as nx
 from collections import deque
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/others/'
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/ChatGPT/'
 
 DATA_FOLDER = f'{os.getcwd()}/data/features_others/'
                                                           
@@ -17,9 +17,9 @@ os.makedirs(DATA_FOLDER, exist_ok=True)
 for f in os.scandir(PROJECTS_FOLDER):
     if f.is_file():
         print(PROJECTS_FOLDER + f.name)
-        output = []
-        output_json_path = os.path.join(DATA_FOLDER, f"features_{f.name}.json")
-        output_json_path_vect = f'data/features_vect/features_{f.name}.json'
+
+        output_json_path = os.path.join(DATA_FOLDER, f"features_{f.name[:-3]}.json")
+        output_json_path_vect = os.path.join(DATA_FOLDER_VECT, f"features_{f.name[:-3]}.json")
         
         if os.path.exists(output_json_path):
             if not os.path.exists(output_json_path_vect):
@@ -38,10 +38,9 @@ for f in os.scandir(PROJECTS_FOLDER):
         else:
             features['label'] = "original"
         
-        output.append(features)
         # Guardar los features en un archivo JSON
         with open(output_json_path, 'w', encoding='utf-8') as json_file:
-            json.dump(output, json_file, ensure_ascii=False, indent=4)
+            json.dump(features, json_file, ensure_ascii=False, indent=4)
         
         print("Archivo JSON guardado correctamente.")
         

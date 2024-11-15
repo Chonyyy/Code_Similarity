@@ -6,7 +6,7 @@ import pickle
 
 class PrepareDataSNN:
     def __init__(self):
-        self.projects_directory = f'{os.getcwd()}/data/features_vect/'
+        self.projects_directory = f'{os.getcwd()}/data/features_vect_others/'
         self.all_projects = []
 
     def _load_projects_from_json(self, json_file):
@@ -103,14 +103,19 @@ class PrepareDataSNN:
         pairs = self._generate_pairs(self.all_projects)
 
         # Extraer las características de los pares
-        data_a = np.array([pair["project_1"] for pair in pairs])
-        data_b = np.array([pair["project_2"] for pair in pairs])
         labels = np.array([pair["similarity_flag"] for pair in pairs])
+        # a = []
+        # for pair in pairs:
+        #     b = np.array(pair["project_1"])
+        #     a.append(b)
+        # a = np.array(a)
+        data_a = np.array([pair["project_1"] for pair in pairs], dtype=object)
+        data_b = np.array([pair["project_2"] for pair in pairs], dtype=object)
 
         # Normalizar los datos
-        scaler = StandardScaler()
-        data_a = scaler.fit_transform(data_a)
-        data_b = scaler.transform(data_b)
+        # scaler = StandardScaler()
+        # data_a = scaler.fit_transform(data_a)
+        # data_b = scaler.transform(data_b)
 
         # Guardar los pares en un archivo JSON
         with open('training_pairs.json', 'wb') as f:
