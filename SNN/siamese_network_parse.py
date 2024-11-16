@@ -14,67 +14,75 @@ class PrepareDataSNN:
             projects = json.load(f)
         return projects
 
+    def ensure_length(self, vector, length):
+        return (vector + [0] * length)[:length]
+
     def _extract_features(self, json_data):
         features = [
-            json_data["total_nodes"],
-            json_data["max_depth"],
-            json_data["number_of_variables"],
-            json_data["number_of_constants"],
-            json_data["out_variables"],
-            json_data["ref_params"],
-            json_data["number_of_methods"],
-            json_data["number_of_classes"],
-            json_data["number_of_interfaces"],
-            json_data["number_of_abstract_classes"],
-            json_data["number_of_sealed_classes"],
-            json_data["import_statements"],
-            json_data["number_of_try_blocks"],
-            json_data["number_of_lists"],
-            json_data["number_of_dictionaries"],
-            json_data["number_of_enums"],
-            json_data["number_of_delegates"],
-            json_data["function_calls"],
-            json_data["control_structures_if"],
-            json_data["control_structures_switch"],
-            json_data["control_structures_for"],
-            json_data["control_structures_while"],
-            json_data["control_structures_dowhile"],
-            json_data["access_modifiers_public"],
-            json_data["access_modifiers_private"],
-            json_data["access_modifiers_protected"],
-            json_data["access_modifiers_internal"],
-            json_data["access_modifiers_static"],
-            json_data["access_modifiers_protected_internal"],
-            json_data["access_modifiers_private_protected"],
-            json_data["modifier_readonly"],
-            json_data["modifier_volatile"],
-            json_data["modifier_virtual"],
-            json_data["modifier_override"],
-            json_data["modifier_new"],
-            json_data["modifier_partial"],
-            json_data["modifier_extern"],
-            json_data["modifier_unsafe"],
-            json_data["modifier_async"],
-            json_data["linq_querie_select"],
-            json_data["linq_queries_where"],
-            json_data["linq_queries_orderBy"],
-            json_data["linq_queries_groupBy"],
-            json_data["linq_queries_join"],
-            json_data["linq_queries_sum"],
-            json_data["linq_queries_count"],
-            json_data["library_call_console"],
-            json_data["library_call_math"],
-            json_data["number_of_lambdas"],
-            json_data["number_of_getters"],
-            json_data["number_of_setters"],
-            json_data["number_of_tuples"],
-            json_data["number_of_namespaces"],
-            *json_data["variable_names_vector"],
-            *json_data["method_return_types_vector"],
-            *json_data["method_names_vector"],
-            *json_data["class_names_vector"],
-            *json_data["method_parameters_vector"]
+            json_data.get("total_nodes", 0),
+            json_data.get("max_depth", 0),
+            json_data.get("number_of_variables", 0),
+            json_data.get("number_of_constants", 0),
+            json_data.get("out_variables", 0),
+            json_data.get("ref_params", 0),
+            json_data.get("number_of_methods", 0),
+            json_data.get("number_of_classes", 0),
+            json_data.get("number_of_interfaces", 0),
+            json_data.get("number_of_abstract_classes", 0),
+            json_data.get("number_of_sealed_classes", 0),
+            json_data.get("import_statements", 0),
+            json_data.get("number_of_try_blocks", 0),
+            json_data.get("number_of_lists", 0),
+            json_data.get("number_of_dictionaries", 0),
+            json_data.get("number_of_enums", 0),
+            json_data.get("number_of_delegates", 0),
+            json_data.get("function_calls", 0),
+            json_data.get("control_structures_if", 0),
+            json_data.get("control_structures_switch", 0),
+            json_data.get("control_structures_for", 0),
+            json_data.get("control_structures_while", 0),
+            json_data.get("control_structures_dowhile", 0),
+            json_data.get("access_modifiers_public", 0),
+            json_data.get("access_modifiers_private", 0),
+            json_data.get("access_modifiers_protected", 0),
+            json_data.get("access_modifiers_internal", 0),
+            json_data.get("access_modifiers_static", 0),
+            json_data.get("access_modifiers_protected_internal", 0),
+            json_data.get("access_modifiers_private_protected", 0),
+            json_data.get("modifier_readonly", 0),
+            json_data.get("modifier_volatile", 0),
+            json_data.get("modifier_virtual", 0),
+            json_data.get("modifier_override", 0),
+            json_data.get("modifier_new", 0),
+            json_data.get("modifier_partial", 0),
+            json_data.get("modifier_extern", 0),
+            json_data.get("modifier_unsafe", 0),
+            json_data.get("modifier_async", 0),
+            json_data.get("linq_querie_select", 0),
+            json_data.get("linq_queries_where", 0),
+            json_data.get("linq_queries_orderBy", 0),
+            json_data.get("linq_queries_groupBy", 0),
+            json_data.get("linq_queries_join", 0),
+            json_data.get("linq_queries_sum", 0),
+            json_data.get("linq_queries_count", 0),
+            json_data.get("library_call_console", 0),
+            json_data.get("library_call_math", 0),
+            json_data.get("number_of_lambdas", 0),
+            json_data.get("number_of_getters", 0),
+            json_data.get("number_of_setters", 0),
+            json_data.get("number_of_tuples", 0),
+            json_data.get("number_of_namespaces", 0),
+            *self.ensure_length(json_data.get("variable_names_vector", []), 2),
+            *self.ensure_length(json_data.get("method_return_types_vector", []), 2),
+            *self.ensure_length(json_data.get("method_names_vector", []), 2),
+            *self.ensure_length(json_data.get("class_names_vector", []), 2),
+            *self.ensure_length(json_data.get("method_parameters_vector", []), 4),
         ]
+
+
+        l = len(features)
+        if l == 63:
+            pass
         return np.array(features)
 
     def _generate_pairs(self, projects):
@@ -103,19 +111,17 @@ class PrepareDataSNN:
         pairs = self._generate_pairs(self.all_projects)
 
         # Extraer las características de los pares
+        for i, pair in enumerate(pairs):  # Revisemos los primeros 5
+            print(f"Elemento {i}: project_2 shape: {pair['project_2'].shape}")
+
         labels = np.array([pair["similarity_flag"] for pair in pairs])
-        # a = []
-        # for pair in pairs:
-        #     b = np.array(pair["project_1"])
-        #     a.append(b)
-        # a = np.array(a)
-        data_a = np.array([pair["project_1"] for pair in pairs], dtype=object)
-        data_b = np.array([pair["project_2"] for pair in pairs], dtype=object)
+        data_a = np.array([pair["project_1"] for pair in pairs])
+        data_b = np.array([pair["project_2"] for pair in pairs])
 
         # Normalizar los datos
-        # scaler = StandardScaler()
-        # data_a = scaler.fit_transform(data_a)
-        # data_b = scaler.transform(data_b)
+        scaler = StandardScaler()
+        data_a = scaler.fit_transform(data_a)
+        data_b = scaler.transform(data_b)
 
         # Guardar los pares en un archivo JSON
         with open('training_pairs.json', 'wb') as f:

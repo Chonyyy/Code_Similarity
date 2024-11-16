@@ -10088,8 +10088,8 @@ class CSharpParser ( CSharpParserBase ):
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re) 
-            self._errHandler.recover(self, re) #TODO Arreglar este error(no existe self._errHandler )
-            self.err
+            # self._errHandler.recover(self, re) #TODO Arreglar este error(no existe self._errHandler )
+            self.ERROR
         finally:
             self.exitRule()
         return localctx

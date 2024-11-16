@@ -6,11 +6,11 @@ from embedding.word2vec import FeatureVectorizer
 import networkx as nx
 from collections import deque
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/All/'
+PROJECTS_FOLDER = f'{os.getcwd()}\\Projects\\ChatGPT\\'
 
-DATA_FOLDER = f'{os.getcwd()}/data/features_all/'
+DATA_FOLDER = f'{os.getcwd()}\\data\\features_others\\'
                                                           
-DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect/'
+DATA_FOLDER_VECT = f'{os.getcwd()}\\data\\features_vect_others\\'
 
 os.makedirs(DATA_FOLDER, exist_ok=True)
 
@@ -29,7 +29,13 @@ for f in os.scandir(PROJECTS_FOLDER):
         
         features = process_project(PROJECTS_FOLDER + f.name)
         features['project_name'] = f.name
-        features['label'] = "original"
+        if "copy_of" in f.name:
+            start_index = f.name.index("copy_of")
+            copy_of_name = f.name[start_index:]
+            features['label'] = copy_of_name
+        else:
+            features['label'] = "original"
+        
         
         # Guardar los features en un archivo JSON
         with open(output_json_path, 'w', encoding='utf-8') as json_file:
