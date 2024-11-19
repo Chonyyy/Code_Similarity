@@ -110,10 +110,6 @@ class PrepareDataSNN:
         # Generar los pares de entrenamiento
         pairs = self._generate_pairs(self.all_projects)
 
-        # Extraer las características de los pares
-        for i, pair in enumerate(pairs):  # Revisemos los primeros 5
-            print(f"Elemento {i}: project_2 shape: {pair['project_2'].shape}")
-
         labels = np.array([pair["similarity_flag"] for pair in pairs])
         data_a = np.array([pair["project_1"] for pair in pairs])
         data_b = np.array([pair["project_2"] for pair in pairs])

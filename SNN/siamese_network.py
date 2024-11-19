@@ -9,11 +9,6 @@ from siamese_network_parse import PrepareDataSNN
 
 # Definir la arquitectura base
 def create_base_network(input_shape):
-    # input = Input(shape=input_shape)
-    # x = Dense(128, activation='relu')(input)
-    # x = Dense(128, activation='relu')(x)
-    # x = Dense(128, activation='relu')(x)
-
     model = Sequential()
     
     # Reshape the input to be compatible with Conv1D
@@ -70,7 +65,7 @@ def train_siamese_network(data_a, data_b, labels):
     input_shape = (data_a.shape[1],)
     model = create_siamese_network(input_shape)
 
-    model.compile(loss=contrastive_loss, optimizer=Adam(learning_rate=0.001))
+    model.compile(loss=contrastive_loss, optimizer=Adam(learning_rate=0.001), metrics=['accuracy'])
 
     model.fit([data_a, data_b], labels, batch_size=128, epochs=20)
 

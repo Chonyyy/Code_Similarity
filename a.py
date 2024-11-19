@@ -4,35 +4,75 @@ from tensorflow.keras.models import Model, Sequential
 from tensorflow.keras.layers import Dense, Input, Lambda
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.regularizers import l2
+from keras.layers import Input, Lambda, Dense, Dropout, Convolution2D,Conv1D, MaxPooling2D, Flatten,Activation, Flatten, Reshape, Conv1D, MaxPooling1D
 import numpy as np
+import tensorflow.keras.backend as K
 from SNN.siamese_network_parse import PrepareDataSNN
 from sklearn.model_selection import train_test_split
 
 import numpy as np
 
-class CodeSimilarityNetwork:
+class SiameseNeuralNetwork:
     def __init__(self, input_shape,l2_regularization_penalization = 0.01, learning_rate=0.001):
         self.input_shape = input_shape
         self.learning_rate = learning_rate
         self.l2_reg = l2_regularization_penalization
-        self.model = self._build_model()
+        self.model = self._build_model_l1_distance()
+    
+    def create_base_network(self, input_shape):
+        model = Sequential()
+        
+        # Reshape the input to be compatible with Conv1D
+        model.add(Reshape((65, 1), input_shape=input_shape))
+        
+        # Replace Convolution2D with Conv1D
+        model.add(Conv1D(16, 8, strides=1, activation="relu"))
+        model.add(MaxPooling1D(pool_size=2))
+        
+        model.add(Conv1D(32, 4, strides=1, activation="relu"))
+        model.add(MaxPooling1D(pool_size=2))
+        
+        model.add(Flatten())
+        model.add(Dense(512, activation="relu"))
+        model.add(Dense(256, activation="relu"))
+        model.add(Dense(10, activation='softmax'))
+
+        return model
+
+    def create_base_network_l1_distance(self, input_shape):
+        model = Sequential()
+        
+        # Reshape the input to be compatible with Conv1D
+        model.add(Reshape((65, 1), input_shape=input_shape))
+        
+        # Replace Convolution2D with Conv1D
+        model.add(Conv1D(16, 8, strides=1, activation="relu"))
+        model.add(MaxPooling1D(pool_size=2))
+        
+        model.add(Conv1D(32, 4, strides=1, activation="relu"))
+        model.add(MaxPooling1D(pool_size=2))
+        
+        model.add(Flatten())
+        model.add(Dense(512, activation="relu", kernel_regularizer=l2(self.l2_reg)))
+        model.add(Dense(256, activation="relu", kernel_regularizer=l2(self.l2_reg)))
+        model.add(Dense(10, activation='softmax', kernel_regularizer=l2(self.l2_reg)))
+
+        return model
+
 
     def _build_model(self):
         # Definir la red base
-        input = Input(shape=self.input_shape)
-        x = Dense(128, activation='relu')(input)
-        x = Dense(64, activation='relu')(x)
-        encoded = Dense(32, activation='relu')(x)
+        base_network = self.create_base_network(input_shape)
 
         # Definir el modelo siamés
         input_a = Input(shape=self.input_shape)
         input_b = Input(shape=self.input_shape)
 
-        encoded_a = self._get_encoded(input_a)
-        encoded_b = self._get_encoded(input_b)
+        encoded_a = base_network(input_a)
+        encoded_b = base_network(input_b)
 
         # Capa de distancia
-        distance = Lambda(lambda x: tf.abs(x[0] - x[1]))([encoded_a, encoded_b])
+        distance = Lambda(self.euclidean_distance, output_shape=(1,))([encoded_a, encoded_b])
 
         # Capa de salida
         output = Dense(1, activation='sigmoid')(distance)
@@ -43,12 +83,7 @@ class CodeSimilarityNetwork:
     
     def _build_model_l1_distance(self):
         #Definimos la red base
-        base_network = Sequential([
-            Dense(128, activation='relu', input_shape=self.input_shape, 
-                  kernel_regularizer=l2(self.l2_reg)),
-            Dense(64, activation='relu', kernel_regularizer=l2(self.l2_reg)),
-            Dense(32, activation='relu', kernel_regularizer=l2(self.l2_reg))
-        ])
+        base_network = self.create_base_network_l1_distance(input_shape)
 
         # Entradas para los pares de códigos
         input_code_1 = Input(self.input_shape)
@@ -58,7 +93,7 @@ class CodeSimilarityNetwork:
         encoded_code_1 = base_network(input_code_1)
         encoded_code_2 = base_network(input_code_2)
 
-         # Capa de distancia L1
+        # Capa de distancia L1
         l1_distance = Lambda(lambda tensors: tf.abs(tensors[0] - tensors[1]))
         l1_distance_layer = l1_distance([encoded_code_1, encoded_code_2])
 
@@ -70,12 +105,13 @@ class CodeSimilarityNetwork:
         optimizer = Adam(learning_rate=self.learning_rate)
         self.model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
         return self.model
-
-    def _get_encoded(self, input_tensor):
-        x = Dense(128, activation='relu')(input_tensor)
-        x = Dense(64, activation='relu')(x)
-        return Dense(32, activation='relu')(x)
     
+    def euclidean_distance(self, vects):
+        x, y = vects
+        sum_square = K.sum(K.square(x - y), axis=1, keepdims=True)
+        return K.sqrt(K.maximum(sum_square, K.epsilon()))
+
+
     def _save_model(self, model_name):
         """Guarda el modelo"""
         if not os.path.exists('./models'):
@@ -131,7 +167,7 @@ print(f"y_val: {y_val.shape}")
 
 # Inicializar y entrenar la red
 input_shape = (65,)  # Asumiendo que tus vectores de características tienen 65 elementos
-siamese_net = CodeSimilarityNetwork(input_shape)
+siamese_net = SiameseNeuralNetwork(input_shape)
 history = siamese_net.train(X1_train, X2_train, y_train, validation_data=(X1_val, X2_val, y_val))
 
 # Hacer una predicción
