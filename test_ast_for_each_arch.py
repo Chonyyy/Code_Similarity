@@ -19,7 +19,7 @@ for f in os.scandir(PROJECTS_FOLDER):
         print(PROJECTS_FOLDER + f.name)
         
         output_json_path = os.path.join(DATA_FOLDER, f"features_{f.name}.json")
-        output_json_path_vect = f'data/features_vect/features_{f.name}.json'
+        output_json_path_vect = f'data/features_vect_others/features_{f.name}.json'
         
         if os.path.exists(output_json_path):
             if not os.path.exists(output_json_path_vect):
