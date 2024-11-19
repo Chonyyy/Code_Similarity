@@ -6,14 +6,18 @@
 \BOOKMARK [1][-]{section.3.2}{Extraccion de features}{chapter.3}% 6
 \BOOKMARK [0][-]{chapter.4}{Preparacion del dataset}{}% 7
 \BOOKMARK [1][-]{section.4.1}{Construcci\363n del dataset}{chapter.4}% 8
-\BOOKMARK [1][-]{section.4.2}{Word2Vec}{chapter.4}% 9
-\BOOKMARK [1][-]{section.4.3}{Dataset de diferencias}{chapter.4}% 10
+\BOOKMARK [1][-]{section.4.2}{Dataset de diferencias}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.3}{Word2Vec}{chapter.4}% 10
 \BOOKMARK [0][-]{chapter.5}{Redes Neuronales Siamesas para la Similitud de C\363digo}{}% 11
-\BOOKMARK [1][-]{section.5.1}{Estructura de una Red Neuronal Siamesa}{chapter.5}% 12
+\BOOKMARK [1][-]{section.5.1}{Estructura de la Red Neuronal Siamesa}{chapter.5}% 12
 \BOOKMARK [1][-]{section.5.2}{Proceso de Entrenamiento y Funci\363n de P\351rdida}{chapter.5}% 13
-\BOOKMARK [1][-]{section.5.3}{Aplicaci\363n de Redes Siamesas en la Similitud de C\363digo en C\043}{chapter.5}% 14
-\BOOKMARK [1][-]{section.5.4}{Futuras Direcciones}{chapter.5}% 15
-\BOOKMARK [0][-]{chapter.6}{Detalles de Implementaci\363n y Experimentos}{}% 16
-\BOOKMARK [0][-]{section*.11}{Conclusiones}{}% 17
-\BOOKMARK [0][-]{section*.13}{Recomendaciones}{}% 18
-\BOOKMARK [0][-]{chapter*.15}{Bibliograf\355a}{}% 19
+\BOOKMARK [1][-]{section.5.3}{Version2}{chapter.5}% 14
+\BOOKMARK [2][-]{subsection.5.3.1}{Estructura y Proceso de Entrenamiento de la Red Neuronal Siamesa}{section.5.3}% 15
+\BOOKMARK [2][-]{subsection.5.3.2}{Arquitectura de la Red}{section.5.3}% 16
+\BOOKMARK [2][-]{subsection.5.3.3}{ M\351trica de Distancia \040L1 }{section.5.3}% 17
+\BOOKMARK [2][-]{subsection.5.3.4}{Proceso de Entrenamiento}{section.5.3}% 18
+\BOOKMARK [2][-]{subsection.5.3.5}{Predicci\363n de Similitud}{section.5.3}% 19
+\BOOKMARK [0][-]{chapter.6}{Detalles de Implementaci\363n y Experimentos}{}% 20
+\BOOKMARK [0][-]{section*.11}{Conclusiones}{}% 21
+\BOOKMARK [0][-]{section*.13}{Recomendaciones}{}% 22
+\BOOKMARK [0][-]{chapter*.15}{Bibliograf\355a}{}% 23

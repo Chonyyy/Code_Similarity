@@ -34,14 +34,14 @@ La implementacion  de este trabajo esta dividida en tres partes fundamentales: E
 
     \item \textbf{Creación del Árbol de Sintaxis Abstracta (AST):} ANTLR facilita la creación de un AST, una representación simplificada que retiene la estructura lógica del código, omitiendo detalles innecesarios para ciertos tipos de análisis.
 
-    \item \textbf{Recorridos y Transformaciones en el AST:} Una vez construido el AST, es posible recorrerlo para realizar análisis adicionales, transformaciones o para interpretar el código. ANTLR proporciona métodos para recorrer este árbol y manipular los nodos según las reglas definidas en la gramática, en este caso se utilizó el listener proporcionado por ANTLR para recorrer el árbol y extraer los features.
+    \item \textbf{Recorridos y Transformaciones en el AST:} Una vez construido el AST, es posible recorrerlo para realizar análisis adicionales, transformaciones o para interpretar el código. ANTLR proporciona métodos para recorrer este árbol y manipular los nodos según las reglas definidas en la gramática, en este caso se utilizó el listener llamado {\bf CSharpParserListener}, proporcionado por ANTLR para recorrer el árbol y extraer los features.
 \end{enumerate}
 
 
 
 \section{Extraccion de features}
 
-En el análisis de similitud de código y detección de patrones, es necesario extraer características relevantes que capturen la estructura y el comportamiento del código. Estas características, conocidas como {\bf features}, representan los aspectos más importantes de los datos, permitiendo analizar y comparar fragmentos de código de manera efectiva. Para este propósito, se implementó una clase denominada {\bf FeatureExtractorListener}, que extiende la funcionalidad de ANTLR para analizar el código fuente en C\#. A continuación, se presenta una descripción detallada del proceso de extracción de características y la importancia de cada una. \\
+En el análisis de similitud de código y detección de patrones, es necesario extraer características relevantes que capturen la estructura y el comportamiento del código. Estas características, conocidas como {\bf features}, representan los aspectos más importantes de los datos, permitiendo analizar y comparar fragmentos de código de manera efectiva. Para este propósito, se implementó una clase llamada {\bf FeatureExtractorListener}, que extiende la funcionalidad de CSharpParserListener para analizar el código fuente en C\#. A continuación, se presenta una descripción detallada del proceso de extracción de características y la importancia de cada una. \\
 
 \begin{enumerate}
 	\item Estructura del AST:
@@ -163,22 +163,21 @@ La extracción de características con FeatureExtractorListener permite capturar
 
 \chapter{Preparacion del dataset}\label{chapter:proposal}
 
-Para preparar el dataset, se convierten los nombres de variables, métodos y otros identificadores de tipo string en vectores de características numéricas, lo cual permite que un modelo de machine learning procese el código de manera efectiva. Este proceso de transformación se realiza utilizando embeddings, una técnica de procesamiento del lenguaje natural, mediante el modelo Word2Vec \cite{mikolov2013efficient}. Estos embeddings se combinan luego con otras características numéricas extraídas del código, como el número de métodos o la cantidad de expresiones lambda, lo cual forma un vector de características completo. Este vector integrado proporciona una descripción multidimensional del código, capturando tanto la estructura como la semántica en una única representación, lo que mejora la capacidad del modelo para detectar patrones y realizar comparaciones entre diferentes fragmentos de código.
+Para preparar el dataset, se convierten los nombres de variables, métodos y otros identificadores de tipo string en vectores de características numéricas, lo cual permite que un modelo de machine learning procese el código de manera efectiva. Este proceso de transformación se realiza utilizando embeddings, una técnica de procesamiento del lenguaje natural, mediante el modelo Word2Vec \cite{mikolov2013efficient}. Estos embeddings se combinan con otras características numéricas extraídas del código, como el número de métodos o la cantidad de expresiones lambda, lo cual forma un vector de características completo. Este vector integrado proporciona una descripción multidimensional del código, capturando tanto la estructura como la semántica en una única representación, lo que mejora la capacidad del modelo para detectar patrones y realizar comparaciones entre diferentes fragmentos de código.
 
 \section{Construcción del dataset}
-bla bla bla
 
-\section{Word2Vec}
-
-En el contexto del análisis de similitud de código, los nombres de variables, métodos y otros identificadores en el código fuente proporcionan información semántica sobre la funcionalidad y el propósito de diferentes partes del código. Por ejemplo, los identificadores que se usan de manera similar en diferentes contextos tendrán embeddings\footnote{Los embeddings son una técnica de procesamiento de lenguaje natural que convierte el lenguaje humano en vectores matemáticos. Estos vectores son una representación del significado subyacente de las palabras, lo que permite que las computadoras procesen el lenguaje de manera más efectiva.} similares. Sin embargo, los identificadores en el código no están estructurados de manera que las máquinas puedan comprender fácilmente sus relaciones semánticas, para esto se utilizó Word2Vec. El proceso involucró los siguientes pasos:
+El dataset de códigos en C\# está compuesto por pares de archivos que mantienen la misma funcionalidad pero presentan variaciones en la estructura y nomenclatura. Cada par está compuesto por un archivo original y su respectiva copia, con cambios mínimos y modificaciones que buscan simular escenarios típicos en los que el código mantiene su esencia lógica pero experimenta alteraciones en la sintaxis y organización. Cuenta con 116 archivos generados por ChatGPT, donde la mitad son originales y la mitad son copias.
 
 \begin{enumerate}
-	\item Extracción de Identificadores: Se extrajeron todos los nombres de variables, métodos, clases, interfaces, enumeraciones y delegados del código fuente utilizando la clase FeatureExtractorListener.
-	
-	\item Entrenamiento de Word2Vec: Se utilizó un corpus de identificadores extraídos de múltiples proyectos de C\# para entrenar el modelo Word2Vec. El modelo aprendió las relaciones semánticas entre los diferentes identificadores en el contexto del código.
-	
-	\item Conversión a Embeddings: Cada identificador extraído se convirtió en un vector de características numéricas utilizando el modelo Word2Vec entrenado. Luego se halla el promedio entre todos los vectores por feature correspondiente para asegurar que todos las caracteristicas de vectores tengan la misma dimensión. Estos vectores capturan la semántica y el contexto de los identificadores en el código.
-	 
+    \item \textbf{Creación de Código Base}: Se crearon múltiples fragmentos de código en C\# que abarcan una variedad de funciones comunes, como cálculos geométricos, operaciones matemáticas, manipulación de cadenas de texto y validaciones de números. Estos fragmentos de código están diseñados para ejecutar funciones claras y específicas. 
+
+    \item \textbf{Generación de Copias con Modificaciones}: Para cada archivo original, se generó una copia modificada siguiendo varias estrategias de variación:
+    \begin{itemize}
+        \item \textit{Renombramiento de Clases, Métodos y Variables}: Los nombres de clases, métodos y variables fueron modificados en las copias para simular diferencias en nomenclatura sin cambiar el objetivo funcional del código.
+        \item \textit{Modificación de Estructura de Código}: Se alteraron estructuras sintácticas, como el tipo de bucles (de \texttt{for} a \texttt{while}) o la reestructuración de condiciones lógicas. Estas modificaciones permiten que la copia mantenga la misma funcionalidad que el original, pero con una apariencia diferente en términos de código.
+        \item \textit{Ajustes en la Organización}: Algunos fragmentos fueron reorganizados en cuanto al orden de ejecución o el uso de estructuras de control alternativas, manteniendo los resultados finales consistentes con el código original.
+    \end{itemize}
 \end{enumerate}
 
 \section{Dataset de diferencias}
@@ -203,47 +202,124 @@ Este enfoque tiene varias ventajas significativas:
 En resumen, la creación de este dataset con todos los pares posibles y sus diferencias vectoriales no solo aumenta la cantidad de datos disponibles, sino que también enriquece la información sobre las relaciones entre proyectos, mejorando así la capacidad del modelo para detectar similitudes de manera precisa y eficiente.  
 
 
+\section{Word2Vec}
+
+En el contexto del análisis de similitud de código, los nombres de variables, métodos y otros identificadores en el código fuente proporcionan información semántica sobre la funcionalidad y el propósito de diferentes partes del código. Por ejemplo, los identificadores que se usan de manera similar en diferentes contextos tendrán embeddings\footnote{Los embeddings son una técnica de procesamiento de lenguaje natural que convierte el lenguaje humano en vectores matemáticos. Estos vectores son una representación del significado subyacente de las palabras, lo que permite que las computadoras procesen el lenguaje de manera más efectiva.} similares. Sin embargo, los identificadores en el código no están estructurados de manera que las máquinas puedan comprender fácilmente sus relaciones semánticas, para esto se utilizó Word2Vec. El proceso involucró los siguientes pasos:
+
+\begin{enumerate}
+	\item \textit{Extracción de Identificadores}: Se extrajeron todos los nombres de variables, métodos, clases, interfaces, enumeraciones y delegados del código fuente utilizando la clase FeatureExtractorListener.
+	
+	\item \textit{Entrenamiento de Word2Vec}: Se utilizó un corpus de identificadores extraídos de múltiples proyectos de C\# para entrenar el modelo Word2Vec. El modelo aprendió las relaciones semánticas entre los diferentes identificadores en el contexto del código.
+	
+	\item \textit{Conversión a Embeddings}: Cada identificador extraído se convirtió en un vector de características numéricas utilizando el modelo Word2Vec entrenado. Luego se halla el promedio entre todos los vectores por feature correspondiente para asegurar que todos las caracteristicas de vectores tengan la misma dimensión. Estos vectores capturan la semántica y el contexto de los identificadores en el código.
+	 
+\end{enumerate}
+
+
 \chapter{Redes Neuronales Siamesas para la Similitud de Código}\label{chapter:proposal}
 
-Las redes neuronales siamesas han demostrado ser efectivas en el análisis de similitud de código, debido a su estructura que permite aprender relaciones semánticas profundas entre pares de datos de entrada. En este capítulo se describen los componentes fundamentales de esta arquitectura y su proceso de entrenamiento.
+Las redes neuronales siamesas se emplearon para analizar y capturar tanto la estructura como el comportamiento lógico del código. Este enfoque facilita la identificación de patrones y relaciones que trascienden las comparaciones textuales o sintácticas, proporcionando una mayor precisión en los resultados obtenidos. En este capítulo se detallan los componentes esenciales de esta arquitectura y el proceso llevado a cabo para su entrenamiento.
 
-\section{Estructura de una Red Neuronal Siamesa}
 
-La red neuronal siamesa consta de dos subredes idénticas que comparten los mismos parámetros y pesos. Cada subred toma como entrada un fragmento de código, que es representado a través de vectores de características derivados de su Árbol de Sintaxis Abstracta (AST). Las salidas de ambas subredes son vectores de alta dimensión que capturan características semánticas y estructurales del código procesado. Posteriormente, estos vectores se comparan mediante una función de distancia, la similitud de coseno, que cuantifica el grado de similitud entre los fragmentos de código.\\
+\section{Estructura de la Red Neuronal Siamesa}
 
-Esta red esta compuesta por tres capas densas.\\
+La red neuronal siamesa utilizada está compuesta por dos subredes idénticas que comparten parámetros y pesos, una propiedad que garantiza que ambas subredes procesen las entradas de manera uniforme. Cada subred recibe como entrada un vector de características derivado del Árbol de Sintaxis Abstracta (AST) del código fuente, transformado previamente en una representación numérica adecuada para su procesamiento mediante redes neuronales. Este enfoque permite abstraer detalles superficiales del código, como nombres de variables o cambios en el formato, enfocándose en aspectos estructurales y funcionales que capturan la lógica del programa.
 
-Al emplear una red siamesa, el modelo puede determinar qué tan “cercanos” o “distantes” son dos fragmentos de código en el espacio semántico aprendido, lo cual es crucial en aplicaciones donde se busca identificar equivalencias estructurales o funcionales.
+La arquitectura base de cada subred incluye capas de convolución unidimensional (Conv1D), las cuales son  utilizadas para capturar patrones locales en secuencias de datos. Estas capas están diseñadas para procesar vectores de entrada de forma eficiente y extraer características significativas mediante la convolución, seguida de operaciones de *pooling* que reducen la dimensionalidad y retienen las características más relevantes. La estructura general de la subred se describe como sigue:
+
+\begin{itemize}
+    \item Una capa de \textit{Conv1D} con 16 filtros y un tamaño de kernel de 8, activada mediante ReLU, seguida de una operación de \textit{max pooling} con un tamaño de ventana de 2.
+    \item Una segunda capa de \textit{Conv1D} con 32 filtros y un tamaño de kernel de 4, también activada mediante ReLU, seguida de \textit{max pooling}.
+    \item Una capa de \textit{Flatten} que transforma los tensores resultantes en un vector de características de alta dimensión.
+    \item Tres capas densas, con 512, 256 y 10 neuronas respectivamente, utilizando ReLU para las dos primeras y softmax para la última. Esta última capa proyecta las características en un espacio de 10 dimensiones.
+\end{itemize}
+
+La salida de cada subred es un vector de alta dimensión \( \mathbf{h} \in \mathbb{R}^d \), donde \( d \) es el número de neuronas en la capa de salida. Estos vectores encapsulan las propiedades semánticas y estructurales del código procesado.
+
+La comparación entre las dos salidas se realiza mediante una función de distancia. En este caso, se emplea la distancia euclidiana, definida como:
+
+\[
+d(\mathbf{h}_a, \mathbf{h}_b) = \sqrt{\sum_{i=1}^{d} (\mathbf{h}_{a,i} - \mathbf{h}_{b,i})^2},
+\]
+
+donde \( \mathbf{h}_a \) y \( \mathbf{h}_b \) son las representaciones vectoriales generadas por las dos subredes para los fragmentos de código \( a \) y \( b \). Esta métrica cuantifica el grado de similitud entre los fragmentos, donde distancias menores indican mayor similitud.
 
 \section{Proceso de Entrenamiento y Función de Pérdida}
 
-El entrenamiento de una red neuronal siamesa para la detección de similitud de código generalmente se lleva a cabo mediante la \textit{pérdida de contraste} (contrastive loss) o la \textit{pérdida de triplete} (triplet loss). Estas funciones de pérdida están diseñadas para reducir la distancia entre los vectores de fragmentos de código que cumplen la misma funcionalidad (pares similares) y aumentar la distancia entre los vectores de fragmentos de código que cumplen funciones diferentes (pares disimilares), en este trabajo se utilizará la tecnica de \textit{pérdida de contraste}. Esta función minimiza la distancia entre representaciones de fragmentos de código similares y maximiza la distancia entre representaciones de fragmentos disímiles. Para cada par de fragmentos de código, esta función penaliza la red de acuerdo con la cercanía o lejanía de las representaciones generadas.
+El modelo fue entrenado utilizando la \textit{pérdida de contraste} (contrastive loss), una función utilizada en redes siamesas para tareas de comparación y similitud. Esta función busca minimizar la distancia entre vectores de fragmentos de código similares y maximizarla para fragmentos disímiles. La pérdida de contraste se define como:
+
+\[
+L(y, d) = y \cdot d^2 + (1 - y) \cdot \max(0, m - d)^2,
+\]
+
+donde:
+\begin{itemize}
+    \item \( y \in \{0, 1\} \) es la etiqueta que indica si el par de fragmentos de código es similar (\( y = 1 \)) o disímil (\( y = 0 \)).
+    \item \( d \) es la distancia euclidiana entre los vectores de los fragmentos generados por las subredes.
+    \item \( m > 0 \) es un margen que define la distancia mínima esperada entre fragmentos disímiles.
+\end{itemize}
+
+El término \( y \cdot d^2 \) penaliza pares similares que están demasiado separados en el espacio vectorial, mientras que \( (1 - y) \cdot \max(0, m - d)^2 \) penaliza pares disímiles cuya distancia es menor que el margen \( m \). Esta formulación garantiza que los pares similares se agrupen en el espacio vectorial, mientras que los disímiles se alejen al menos una distancia \( m \).\\
+
+El modelo fue optimizado mediante el optimizador Adam, conocido por su capacidad para manejar problemas de optimización no convexa en redes profundas. El aprendizaje se realizó durante 20 épocas con un tamaño de lote de 128, ajustando la tasa de aprendizaje inicial a 0.001. Durante el entrenamiento, se evaluó la pérdida en cada lote para garantizar la convergencia del modelo.\\
+
+La arquitectura propuesta combina convoluciones unidimensionales y capas densas para extraer características relevantes de los fragmentos de código, aprovechando la estructura del AST como entrada. La función de pérdida de contraste, junto con la métrica de distancia euclidiana, permitió entrenar un modelo robusto capaz de identificar similitudes estructurales y funcionales. Este enfoque demuestra cómo las redes siamesas pueden superar las limitaciones de métodos tradicionales al enfocarse en aspectos semánticos y contextuales del código.
+
+\section{Version2}
+
+\subsection{Estructura y Proceso de Entrenamiento de la Red Neuronal Siamesa} 
+
+Esta implementación de la red neuronal siamesa está diseñada para comparar fragmentos de código mediante la métrica de distancia \( L1 \), que calcula la diferencia absoluta entre las representaciones vectoriales generadas para cada fragmento. La arquitectura de la red se basa en una clase personalizada, `SiameseNeuralNetwork`, que encapsula la construcción, entrenamiento y predicción del modelo, proporcionando una solución modular y reutilizable para tareas de análisis de similitud de código.
+
+\subsection{Arquitectura de la Red} 
+
+La red neuronal consta de dos subredes idénticas que procesan los vectores de características extraídos de los fragmentos de código. Cada subred incluye las siguientes capas principales:
+
+\begin{enumerate}
+    \item \textbf{Preprocesamiento de la entrada:} La entrada, un vector de 65 dimensiones, se ajusta a una forma compatible con las operaciones de convolución unidimensional mediante una capa de \textit{Reshape}.
+    \item \textbf{Capas de convolución unidimensional (Conv1D):} Se emplean dos capas convolucionales con tamaños de kernel de 8 y 4, y activación ReLU. Estas capas extraen patrones locales de las características del código.
+    \item \textbf{Operaciones de Max Pooling:} Cada capa de convolución es seguida por una operación de \textit{max pooling} con un tamaño de ventana de 2, lo que reduce dimensionalidad mientras se preservan características relevantes.
+    \item \textbf{Capas densas con regularización \( L2 \):} La salida convolucional se aplana y pasa por tres capas densas con activaciones ReLU y softmax. Estas capas incluyen regularización \( L2 \) para prevenir el sobreajuste y mejorar la generalización.
+\end{enumerate}
+
+La salida de cada subred es un vector de alta dimensión \( \mathbf{h} \in \mathbb{R}^d \) que encapsula las propiedades semánticas y estructurales del código.
+
+\subsection{ Métrica de Distancia \( L1 \)}
+
+La comparación entre los fragmentos de código se realiza mediante una capa de distancia \( L1 \), definida como:
+
+\[
+d_{L1}(\mathbf{h}_1, \mathbf{h}_2) = \sum_{i=1}^{d} |\mathbf{h}_{1,i} - \mathbf{h}_{2,i}|,
+\]
+
+donde \( \mathbf{h}_1 \) y \( \mathbf{h}_2 \) son los vectores generados por las subredes para cada fragmento de código. Esta distancia captura diferencias absolutas, permitiendo una medida robusta y sencilla de similitud.
+
+\subsection{Proceso de Entrenamiento} 
+
+El entrenamiento se realiza mediante la función de pérdida de entropía cruzada binaria, que se utiliza para clasificar pares de código como similares o disímiles. La función de pérdida se define como:
+
+\[
+L(y, \hat{y}) = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right],
+\]
+
+donde:
+- \( y_i \) es la etiqueta verdadera (1 para pares similares, 0 para disímiles).
+- \( \hat{y}_i \) es la probabilidad predicha por la red.
+- \( N \) es el tamaño del lote.
+
+Se utiliza el optimizador Adam con una tasa de aprendizaje inicial de 0.001, lo que garantiza una convergencia eficiente al encontrar mínimos locales en el espacio de pérdida.
+
+El modelo se entrena durante 20 épocas, con un tamaño de lote de 32, y se evalúa utilizando un conjunto de validación que representa el 20\% de los datos originales. Este enfoque garantiza que la red aprenda a diferenciar fragmentos de código similares y disímiles mientras mantiene la capacidad de generalizar a nuevos datos.
+
+\subsection{Predicción de Similitud} 
+
+La red predice la similitud entre dos fragmentos de código generando un valor entre 0 y 1 mediante una capa densa con activación sigmoide. Un valor cercano a 1 indica alta similitud, mientras que valores cercanos a 0 reflejan una mayor diferencia. El proceso de predicción incluye los siguientes pasos:
+\begin{enumerate}
+    \item Los vectores de características de ambos fragmentos de código se pasan a las subredes.
+    \item Se calcula la distancia \( L1 \) entre las salidas de las subredes.
+    \item La capa sigmoide produce la probabilidad final de similitud.
+\end{enumerate}
 
 
-\section{Aplicación de Redes Siamesas en la Similitud de Código en C\#}
 
-Para aplicar redes siamesas en la detección de similitud de código en C\#, cada fragmento de código se transforma en un vector de características utilizando su AST. Este árbol captura la estructura sintáctica y lógica del código, permitiendo que el modelo aprenda relaciones más profundas que las posibles mediante representaciones textuales o léxicas. Los vectores de características pueden incluir información sobre las operaciones, los flujos de control, los nombres de funciones, y otros elementos sintácticos relevantes del código en C\#. \\
-
-La representación vectorial del AST es crítica, ya que permite que la red siamés se enfoque en aspectos estructurales y funcionales del código, ignorando variaciones superficiales, como cambios en el nombre de variables o formato. De esta forma, el modelo se vuelve robusto frente a modificaciones superficiales que no alteran la lógica del programa, pero susceptibles de engañar métodos más básicos de detección de similitud.
-
-\section{Futuras Direcciones}
-
- Se me ocurre la idea de entrenar el modelo con codigo de java(existe mas dataset con java que C\#) para que vaya teniendo una base de que es una copia de codigo y luego especializarlo con codigos de C\#, porque pienso que esto funcionaria? Los vectores vas a tener la misma estructura tanto para C# como para Java (cantidad de if, de while etc.) . Aqui tendria que investigar las diferencias entre C\# y Java, generar el AST con ANTLR para Java hacer de nuevo la extraccion de caracteristicas si los ast no tienen la misma estructura que es lo mas probable, muy pesado de hacer... y ya despues de esto tendria el vector de caracteristicas para Java y a entrenar el modelo con java, luego investigar como se reutiliza un modelo ya entrenado y especializarlo, esto tiene el nombre en ML como fine tuning. Tambien puede que aparezca magicamente el modelo ya entrenado con Java y sea cargarlo.  Segun ChatGPT:
- 
- Este método implica dos fases principales:
-Pre-entrenamiento (Pre-training):
-En esta fase, el modelo se entrena con un conjunto de datos grande y general. Este entrenamiento inicial permite al modelo aprender características generales y representaciones útiles de los datos.
-Fine-tuning (Ajuste fino):
-Después del pre-entrenamiento, el modelo se vuelve a entrenar con un conjunto de datos más pequeño y específico para la tarea en cuestión. Durante este proceso, se ajustan los pesos del modelo para adaptarse mejor a la tarea específica.
-Características clave del transfer learning:
-Eficiencia: Permite aprovechar el conocimiento adquirido en tareas generales para mejorar el rendimiento en tareas específicas.
-Menor necesidad de datos: Requiere menos datos para la tarea específica, ya que el modelo ya ha aprendido características generales útiles.
-Tiempo de entrenamiento reducido: El fine-tuning suele ser más rápido que entrenar un modelo desde cero.
-Mejor rendimiento: A menudo resulta en un mejor rendimiento en la tarea específica, especialmente cuando los datos específicos son limitados.
-Versatilidad: Se puede aplicar en diversos campos como visión por computadora, procesamiento de lenguaje natural, y reconocimiento de voz.
-En el contexto de tu proyecto de similitud de código, podrías considerar pre-entrenar tu modelo siamés en un conjunto grande de proyectos de código de diversos lenguajes, y luego hacer fine-tuning con un conjunto más pequeño de proyectos C# específicos. Esto podría ayudar a tu modelo a capturar características generales de la estructura del código y luego especializarse en las particularidades del C#.
-
-Despues de esta maravillosa idea que no se si funcione esta seguir probando con chatGPT a ver si me quiere dar codigos plagueados bien, entrenar a algun LLM hacerle prompt ingeeniering para ensennarle a plaguear y que luego nos de el codigo que queremos.
-
-No se me ocurre mas nada para el dataset.
-
+Esta implementación presenta un diseño modular y robusto que combina convoluciones unidimensionales, regularización \( L2 \), y la métrica de distancia \( L1 \) para abordar el problema de similitud de código. Además, el uso de la entropía cruzada binaria como función de pérdida asegura que la red optimice de manera efectiva su capacidad para distinguir entre fragmentos de código similares y disímiles. Esta arquitectura es particularmente adecuada para aplicaciones donde los datos presentan patrones estructurales complejos que requieren una evaluación precisa y escalable. 
