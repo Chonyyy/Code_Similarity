@@ -578,12 +578,12 @@
         "CalculateNewRelevance",
         "BuildSuggestion",
         "Preproccess",
-        "Determinant",
-        "DeterminantOrder1",
+        "Determi[]t",
+        "Determi[]tOrder1",
         "Multiply",
         "Add",
-        "DeterminantOrder2",
-        "DeterminantOrder3",
+        "Determi[]tOrder2",
+        "Determi[]tOrder3",
         "ProductByScalar",
         "Print",
         "Norm",
@@ -683,7 +683,7 @@
             "Matrix"
         ],
         [
-            "DeterminantOrder1",
+            "Determi[]tOrder1",
             "double"
         ],
         [
@@ -691,11 +691,11 @@
             "Matrix"
         ],
         [
-            "Determinant",
+            "Determi[]t",
             "double"
         ],
         [
-            "DeterminantOrder3",
+            "Determi[]tOrder3",
             "double"
         ],
         [
@@ -707,7 +707,7 @@
             "void"
         ],
         [
-            "DeterminantOrder2",
+            "Determi[]tOrder2",
             "double"
         ],
         [

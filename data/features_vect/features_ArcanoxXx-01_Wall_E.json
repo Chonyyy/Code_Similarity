@@ -202,7 +202,7 @@
         0.5302144885063171,
         0.11260156333446503
     ],
-    "delegate_names_vector": NaN,
+    "delegate_names_vector": [],
     "method_return_types_vector": [
         0.8122918009757996,
         0.2438608556985855

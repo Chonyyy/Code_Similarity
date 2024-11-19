@@ -178,7 +178,7 @@
             ]
         ],
         [
-            "Determinante",
+            "Determi[]te",
             [
                 [
                     "double[,]",
@@ -187,7 +187,7 @@
             ]
         ],
         [
-            "Determinante2",
+            "Determi[]te2",
             [
                 [
                     "double[,]",
@@ -593,10 +593,10 @@
         "Query",
         "Product",
         "Transpuesta",
-        "Determinante2",
+        "Determi[]te2",
         "PrintMatrix",
         "Suma",
-        "Determinante",
+        "Determi[]te",
         "Menor",
         "MultEscalar",
         "Calcular_Tf_Idf_query",
@@ -649,7 +649,7 @@
             "int"
         ],
         [
-            "Determinante",
+            "Determi[]te",
             "double"
         ],
         [
@@ -661,7 +661,7 @@
             "int"
         ],
         [
-            "Determinante2",
+            "Determi[]te2",
             "double"
         ],
         [

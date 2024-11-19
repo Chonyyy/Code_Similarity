@@ -2045,7 +2045,7 @@
             ]
         ],
         [
-            "ScanAndParse",
+            "Sca[]dParse",
             [
                 [
                     "string",
@@ -3259,7 +3259,7 @@
         "OperableMeasure",
         "GetMostRestrictedOrError",
         "ToString",
-        "ScanAndParse",
+        "Sca[]dParse",
         "VisitUndefinedExpr",
         "Accept",
         "VisitUnaryPrefixExpr",
@@ -3905,8 +3905,8 @@
             "bool"
         ],
         [
-            "ScanAndParse",
-            "ScanAndParseResult"
+            "Sca[]dParse",
+            "Sca[]dParseResult"
         ],
         [
             "VisitGroupingExpr",
@@ -4452,7 +4452,7 @@
         "SimpleType",
         "FigureType",
         "DrawableType",
-        "ScanAndParseResult",
+        "Sca[]dParseResult",
         "Parser",
         "InternalParseError",
         "Expr",

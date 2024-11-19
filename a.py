@@ -17,7 +17,7 @@ class SiameseNeuralNetwork:
         self.input_shape = input_shape
         self.learning_rate = learning_rate
         self.l2_reg = l2_regularization_penalization
-        self.model = self._build_model_l1_distance()
+        self.model = self._build_model()
     
     def create_base_network(self, input_shape):
         model = Sequential()
@@ -58,7 +58,6 @@ class SiameseNeuralNetwork:
         model.add(Dense(10, activation='softmax', kernel_regularizer=l2(self.l2_reg)))
 
         return model
-
 
     def _build_model(self):
         # Definir la red base
