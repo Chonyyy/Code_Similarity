@@ -226,7 +226,7 @@ class FeatureExtractorListener(CSharpParserListener):
         if node_type == "Lambda_expressionContext":
             self.number_of_lambdas += 1
 
-        if node_type == "Accessor_declarationsContext":
+        if node_type == "Accessor_declarationsContext" and ctx.children:
             accessor_type = ctx.children[0].getText()
             if accessor_type == "get":
                 self.number_of_getters += 1

@@ -17,7 +17,7 @@ class SiameseNeuralNetwork:
         self.input_shape = input_shape
         self.learning_rate = learning_rate
         self.l2_reg = l2_regularization_penalization
-        self.model = self._build_model()
+        self.model = self._build_model_l1_distance()
     
     def create_base_network(self, input_shape):
         model = Sequential()
@@ -173,6 +173,7 @@ history = siamese_net.train(X1_train, X2_train, y_train, validation_data=(X1_val
 code1_features = np.random.rand(65)  # Ejemplo de vector de características
 code2_features = np.random.rand(65)  # Ejemplo de vector de características
 similarity = siamese_net.predict_similarity(code1_features, code2_features)
+
 
 # Interpretar el resultado
 if similarity > 0.5:
