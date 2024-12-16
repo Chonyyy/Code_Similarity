@@ -53,6 +53,33 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#deconstruction_expression.
+    def enterDeconstruction_expression(self, ctx:CSharpParser.Deconstruction_expressionContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#deconstruction_expression.
+    def exitDeconstruction_expression(self, ctx:CSharpParser.Deconstruction_expressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#deconstruction_tuple.
+    def enterDeconstruction_tuple(self, ctx:CSharpParser.Deconstruction_tupleContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#deconstruction_tuple.
+    def exitDeconstruction_tuple(self, ctx:CSharpParser.Deconstruction_tupleContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#deconstruction_element.
+    def enterDeconstruction_element(self, ctx:CSharpParser.Deconstruction_elementContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#deconstruction_element.
+    def exitDeconstruction_element(self, ctx:CSharpParser.Deconstruction_elementContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#tuple_element.
     def enterTuple_element(self, ctx:CSharpParser.Tuple_elementContext):
         pass
