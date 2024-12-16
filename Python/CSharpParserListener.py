@@ -2132,6 +2132,33 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#interpolation_minimum_width.
+    def enterInterpolation_minimum_width(self, ctx:CSharpParser.Interpolation_minimum_widthContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#interpolation_minimum_width.
+    def exitInterpolation_minimum_width(self, ctx:CSharpParser.Interpolation_minimum_widthContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#format_string.
+    def enterFormat_string(self, ctx:CSharpParser.Format_stringContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#format_string.
+    def exitFormat_string(self, ctx:CSharpParser.Format_stringContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#constant_expression.
+    def enterConstant_expression(self, ctx:CSharpParser.Constant_expressionContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#constant_expression.
+    def exitConstant_expression(self, ctx:CSharpParser.Constant_expressionContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#keyword.
     def enterKeyword(self, ctx:CSharpParser.KeywordContext):
         pass
