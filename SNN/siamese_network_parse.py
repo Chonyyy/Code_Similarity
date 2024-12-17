@@ -2,7 +2,7 @@ import json, os
 import itertools
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-import pickle
+import pickle, random
 
 class PrepareDataSNN:
     def __init__(self):
@@ -86,15 +86,28 @@ class PrepareDataSNN:
         return np.array(features)
 
     def _generate_pairs(self, projects):
-        pairs = []
+        pairs_with_flag_1 = []
+        pairs_with_flag_0 = []
+
+        # Generar todos los pares posibles
         for (proj1, proj2) in itertools.combinations(projects, 2):
             pair = {
                 "project_1": self._extract_features(proj1),
                 "project_2": self._extract_features(proj2),
                 "similarity_flag": 1 if proj1["label"] == f"copy_of_{proj2['project_name']}" or proj2["label"] == f"copy_of_{proj1['project_name']}" else 0
             }
-            pairs.append(pair)
-        return pairs
+            if pair["similarity_flag"] == 1:
+                pairs_with_flag_1.append(pair)
+            else:
+                pairs_with_flag_0.append(pair)
+
+        # Balancear la cantidad de pares
+        min_count = min(len(pairs_with_flag_1), len(pairs_with_flag_0))
+        
+        balanced_pairs = random.sample(pairs_with_flag_1, min_count) + random.sample(pairs_with_flag_0, min_count)
+        random.shuffle(balanced_pairs)  # Mezclar los pares para mayor aleatoriedad
+
+        return balanced_pairs
 
     def _load_all_project(self):
         # Cargar todos los proyectos desde los archivos JSON en el directorio

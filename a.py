@@ -26,11 +26,15 @@ class SiameseNeuralNetwork:
         model.add(Reshape((65, 1), input_shape=input_shape))
         
         # Replace Convolution2D with Conv1D
-        model.add(Conv1D(16, 8, strides=1, activation="relu"))
-        model.add(MaxPooling1D(pool_size=2))
+        # model.add(Conv1D(16, 8, strides=1, activation="relu"))
+        # model.add(MaxPooling1D(pool_size=2))
         
-        model.add(Conv1D(32, 4, strides=1, activation="relu"))
-        model.add(MaxPooling1D(pool_size=2))
+        # model.add(Conv1D(32, 4, strides=1, activation="relu"))
+        # model.add(MaxPooling1D(pool_size=2))
+
+        # model.add(Conv1D(64, 2, strides=1, activation="relu"))
+        # model.add(MaxPooling1D(pool_size=2))
+
         
         model.add(Flatten())
         model.add(Dense(512, activation="relu"))
@@ -46,11 +50,11 @@ class SiameseNeuralNetwork:
         model.add(Reshape((65, 1), input_shape=input_shape))
         
         # Replace Convolution2D with Conv1D
-        model.add(Conv1D(16, 8, strides=1, activation="relu"))
-        model.add(MaxPooling1D(pool_size=2))
+        # model.add(Conv1D(16, 8, strides=1, activation="relu"))
+        # model.add(MaxPooling1D(pool_size=2))
         
-        model.add(Conv1D(32, 4, strides=1, activation="relu"))
-        model.add(MaxPooling1D(pool_size=2))
+        # model.add(Conv1D(32, 4, strides=1, activation="relu"))
+        # model.add(MaxPooling1D(pool_size=2))
         
         model.add(Flatten())
         model.add(Dense(512, activation="relu", kernel_regularizer=l2(self.l2_reg)))
@@ -81,8 +85,8 @@ class SiameseNeuralNetwork:
         return model
     
     def _build_model_l1_distance(self):
-        #Definimos la red base
-        base_network = self.create_base_network_l1_distance(input_shape)
+        # Definimos la red base
+        base_network = self.create_base_network_l1_distance(self.input_shape)
 
         # Entradas para los pares de códigos
         input_code_1 = Input(self.input_shape)
@@ -92,18 +96,19 @@ class SiameseNeuralNetwork:
         encoded_code_1 = base_network(input_code_1)
         encoded_code_2 = base_network(input_code_2)
 
-        # Capa de distancia L1
-        l1_distance = Lambda(lambda tensors: tf.abs(tensors[0] - tensors[1]))
-        l1_distance_layer = l1_distance([encoded_code_1, encoded_code_2])
+        # Capa de distancia L2
+        l2_distance = Lambda(lambda tensors: tf.sqrt(tf.reduce_sum(tf.square(tensors[0] - tensors[1]), axis=1, keepdims=True)))
+        distance_output = l2_distance([encoded_code_1, encoded_code_2])
 
-        # Predicción de similitud
-        prediction = Dense(1, activation='sigmoid')(l1_distance_layer)
+        # Definimos el modelo
+        self.model = Model(inputs=[input_code_1, input_code_2], outputs=distance_output)
 
-        self.model = Model(inputs=[input_code_1, input_code_2], outputs=prediction)
-
+        # Compilamos el modelo con Contrastive Loss
         optimizer = Adam(learning_rate=self.learning_rate)
-        self.model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+        self.model.compile(loss='binary_crossentropy', optimizer=Adam(self.learning_rate), metrics=['accuracy'])
         return self.model
+    
+
     
     def euclidean_distance(self, vects):
         x, y = vects
