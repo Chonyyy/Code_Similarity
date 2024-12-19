@@ -17,6 +17,15 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#top_level_statements.
+    def enterTop_level_statements(self, ctx:CSharpParser.Top_level_statementsContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#top_level_statements.
+    def exitTop_level_statements(self, ctx:CSharpParser.Top_level_statementsContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#namespace_or_type_name.
     def enterNamespace_or_type_name(self, ctx:CSharpParser.Namespace_or_type_nameContext):
         pass
@@ -125,6 +134,42 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#default_value_expression.
+    def enterDefault_value_expression(self, ctx:CSharpParser.Default_value_expressionContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#default_value_expression.
+    def exitDefault_value_expression(self, ctx:CSharpParser.Default_value_expressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#explictly_typed_default.
+    def enterExplictly_typed_default(self, ctx:CSharpParser.Explictly_typed_defaultContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#explictly_typed_default.
+    def exitExplictly_typed_default(self, ctx:CSharpParser.Explictly_typed_defaultContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#default_literal.
+    def enterDefault_literal(self, ctx:CSharpParser.Default_literalContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#default_literal.
+    def exitDefault_literal(self, ctx:CSharpParser.Default_literalContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#variable_reference.
+    def enterVariable_reference(self, ctx:CSharpParser.Variable_referenceContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#variable_reference.
+    def exitVariable_reference(self, ctx:CSharpParser.Variable_referenceContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#class_type.
     def enterClass_type(self, ctx:CSharpParser.Class_typeContext):
         pass
@@ -158,6 +203,15 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#argument.
     def exitArgument(self, ctx:CSharpParser.ArgumentContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#argument_name.
+    def enterArgument_name(self, ctx:CSharpParser.Argument_nameContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#argument_name.
+    def exitArgument_name(self, ctx:CSharpParser.Argument_nameContext):
         pass
 
 
@@ -935,192 +989,138 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#theEmptyStatement.
-    def enterTheEmptyStatement(self, ctx:CSharpParser.TheEmptyStatementContext):
+    # Enter a parse tree produced by CSharpParser#empty_statement.
+    def enterEmpty_statement(self, ctx:CSharpParser.Empty_statementContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#theEmptyStatement.
-    def exitTheEmptyStatement(self, ctx:CSharpParser.TheEmptyStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#expressionStatement.
-    def enterExpressionStatement(self, ctx:CSharpParser.ExpressionStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#expressionStatement.
-    def exitExpressionStatement(self, ctx:CSharpParser.ExpressionStatementContext):
+    # Exit a parse tree produced by CSharpParser#empty_statement.
+    def exitEmpty_statement(self, ctx:CSharpParser.Empty_statementContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#ifStatement.
-    def enterIfStatement(self, ctx:CSharpParser.IfStatementContext):
+    # Enter a parse tree produced by CSharpParser#if_statement.
+    def enterIf_statement(self, ctx:CSharpParser.If_statementContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#ifStatement.
-    def exitIfStatement(self, ctx:CSharpParser.IfStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#switchStatement.
-    def enterSwitchStatement(self, ctx:CSharpParser.SwitchStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#switchStatement.
-    def exitSwitchStatement(self, ctx:CSharpParser.SwitchStatementContext):
+    # Exit a parse tree produced by CSharpParser#if_statement.
+    def exitIf_statement(self, ctx:CSharpParser.If_statementContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#whileStatement.
-    def enterWhileStatement(self, ctx:CSharpParser.WhileStatementContext):
+    # Enter a parse tree produced by CSharpParser#checked_statement.
+    def enterChecked_statement(self, ctx:CSharpParser.Checked_statementContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#whileStatement.
-    def exitWhileStatement(self, ctx:CSharpParser.WhileStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#doStatement.
-    def enterDoStatement(self, ctx:CSharpParser.DoStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#doStatement.
-    def exitDoStatement(self, ctx:CSharpParser.DoStatementContext):
+    # Exit a parse tree produced by CSharpParser#checked_statement.
+    def exitChecked_statement(self, ctx:CSharpParser.Checked_statementContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#forStatement.
-    def enterForStatement(self, ctx:CSharpParser.ForStatementContext):
+    # Enter a parse tree produced by CSharpParser#unchecked_statement.
+    def enterUnchecked_statement(self, ctx:CSharpParser.Unchecked_statementContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#forStatement.
-    def exitForStatement(self, ctx:CSharpParser.ForStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#foreachStatement.
-    def enterForeachStatement(self, ctx:CSharpParser.ForeachStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#foreachStatement.
-    def exitForeachStatement(self, ctx:CSharpParser.ForeachStatementContext):
+    # Exit a parse tree produced by CSharpParser#unchecked_statement.
+    def exitUnchecked_statement(self, ctx:CSharpParser.Unchecked_statementContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#breakStatement.
-    def enterBreakStatement(self, ctx:CSharpParser.BreakStatementContext):
+    # Enter a parse tree produced by CSharpParser#lock_statement.
+    def enterLock_statement(self, ctx:CSharpParser.Lock_statementContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#breakStatement.
-    def exitBreakStatement(self, ctx:CSharpParser.BreakStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#continueStatement.
-    def enterContinueStatement(self, ctx:CSharpParser.ContinueStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#continueStatement.
-    def exitContinueStatement(self, ctx:CSharpParser.ContinueStatementContext):
+    # Exit a parse tree produced by CSharpParser#lock_statement.
+    def exitLock_statement(self, ctx:CSharpParser.Lock_statementContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#gotoStatement.
-    def enterGotoStatement(self, ctx:CSharpParser.GotoStatementContext):
+    # Enter a parse tree produced by CSharpParser#unmanaged_type.
+    def enterUnmanaged_type(self, ctx:CSharpParser.Unmanaged_typeContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#gotoStatement.
-    def exitGotoStatement(self, ctx:CSharpParser.GotoStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#returnStatement.
-    def enterReturnStatement(self, ctx:CSharpParser.ReturnStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#returnStatement.
-    def exitReturnStatement(self, ctx:CSharpParser.ReturnStatementContext):
+    # Exit a parse tree produced by CSharpParser#unmanaged_type.
+    def exitUnmanaged_type(self, ctx:CSharpParser.Unmanaged_typeContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#throwStatement.
-    def enterThrowStatement(self, ctx:CSharpParser.ThrowStatementContext):
+    # Enter a parse tree produced by CSharpParser#stackalloc_expression.
+    def enterStackalloc_expression(self, ctx:CSharpParser.Stackalloc_expressionContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#throwStatement.
-    def exitThrowStatement(self, ctx:CSharpParser.ThrowStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#tryStatement.
-    def enterTryStatement(self, ctx:CSharpParser.TryStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#tryStatement.
-    def exitTryStatement(self, ctx:CSharpParser.TryStatementContext):
+    # Exit a parse tree produced by CSharpParser#stackalloc_expression.
+    def exitStackalloc_expression(self, ctx:CSharpParser.Stackalloc_expressionContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#checkedStatement.
-    def enterCheckedStatement(self, ctx:CSharpParser.CheckedStatementContext):
+    # Enter a parse tree produced by CSharpParser#stackalloc_initializer.
+    def enterStackalloc_initializer(self, ctx:CSharpParser.Stackalloc_initializerContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#checkedStatement.
-    def exitCheckedStatement(self, ctx:CSharpParser.CheckedStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#uncheckedStatement.
-    def enterUncheckedStatement(self, ctx:CSharpParser.UncheckedStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#uncheckedStatement.
-    def exitUncheckedStatement(self, ctx:CSharpParser.UncheckedStatementContext):
+    # Exit a parse tree produced by CSharpParser#stackalloc_initializer.
+    def exitStackalloc_initializer(self, ctx:CSharpParser.Stackalloc_initializerContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#lockStatement.
-    def enterLockStatement(self, ctx:CSharpParser.LockStatementContext):
+    # Enter a parse tree produced by CSharpParser#stackalloc_initializer_element_list.
+    def enterStackalloc_initializer_element_list(self, ctx:CSharpParser.Stackalloc_initializer_element_listContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#lockStatement.
-    def exitLockStatement(self, ctx:CSharpParser.LockStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#usingStatement.
-    def enterUsingStatement(self, ctx:CSharpParser.UsingStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#usingStatement.
-    def exitUsingStatement(self, ctx:CSharpParser.UsingStatementContext):
+    # Exit a parse tree produced by CSharpParser#stackalloc_initializer_element_list.
+    def exitStackalloc_initializer_element_list(self, ctx:CSharpParser.Stackalloc_initializer_element_listContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#yieldStatement.
-    def enterYieldStatement(self, ctx:CSharpParser.YieldStatementContext):
+    # Enter a parse tree produced by CSharpParser#stackalloc_element_initializer.
+    def enterStackalloc_element_initializer(self, ctx:CSharpParser.Stackalloc_element_initializerContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#yieldStatement.
-    def exitYieldStatement(self, ctx:CSharpParser.YieldStatementContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#unsafeStatement.
-    def enterUnsafeStatement(self, ctx:CSharpParser.UnsafeStatementContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#unsafeStatement.
-    def exitUnsafeStatement(self, ctx:CSharpParser.UnsafeStatementContext):
+    # Exit a parse tree produced by CSharpParser#stackalloc_element_initializer.
+    def exitStackalloc_element_initializer(self, ctx:CSharpParser.Stackalloc_element_initializerContext):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#fixedStatement.
-    def enterFixedStatement(self, ctx:CSharpParser.FixedStatementContext):
+    # Enter a parse tree produced by CSharpParser#using_statement.
+    def enterUsing_statement(self, ctx:CSharpParser.Using_statementContext):
         pass
 
-    # Exit a parse tree produced by CSharpParser#fixedStatement.
-    def exitFixedStatement(self, ctx:CSharpParser.FixedStatementContext):
+    # Exit a parse tree produced by CSharpParser#using_statement.
+    def exitUsing_statement(self, ctx:CSharpParser.Using_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#yield_statement.
+    def enterYield_statement(self, ctx:CSharpParser.Yield_statementContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#yield_statement.
+    def exitYield_statement(self, ctx:CSharpParser.Yield_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#fixed_statement.
+    def enterFixed_statement(self, ctx:CSharpParser.Fixed_statementContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#fixed_statement.
+    def exitFixed_statement(self, ctx:CSharpParser.Fixed_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#unsafe_statement.
+    def enterUnsafe_statement(self, ctx:CSharpParser.Unsafe_statementContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#unsafe_statement.
+    def exitUnsafe_statement(self, ctx:CSharpParser.Unsafe_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#try_statement.
+    def enterTry_statement(self, ctx:CSharpParser.Try_statementContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#try_statement.
+    def exitTry_statement(self, ctx:CSharpParser.Try_statementContext):
         pass
 
 
@@ -1175,15 +1175,6 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#local_constant_declaration.
     def exitLocal_constant_declaration(self, ctx:CSharpParser.Local_constant_declarationContext):
-        pass
-
-
-    # Enter a parse tree produced by CSharpParser#if_body.
-    def enterIf_body(self, ctx:CSharpParser.If_bodyContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#if_body.
-    def exitIf_body(self, ctx:CSharpParser.If_bodyContext):
         pass
 
 
@@ -1481,6 +1472,69 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#primary_constraint.
     def exitPrimary_constraint(self, ctx:CSharpParser.Primary_constraintContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#pattern.
+    def enterPattern(self, ctx:CSharpParser.PatternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#pattern.
+    def exitPattern(self, ctx:CSharpParser.PatternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#declaration_pattern.
+    def enterDeclaration_pattern(self, ctx:CSharpParser.Declaration_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#declaration_pattern.
+    def exitDeclaration_pattern(self, ctx:CSharpParser.Declaration_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#simple_designation.
+    def enterSimple_designation(self, ctx:CSharpParser.Simple_designationContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#simple_designation.
+    def exitSimple_designation(self, ctx:CSharpParser.Simple_designationContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#single_variable_designation.
+    def enterSingle_variable_designation(self, ctx:CSharpParser.Single_variable_designationContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#single_variable_designation.
+    def exitSingle_variable_designation(self, ctx:CSharpParser.Single_variable_designationContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#constant_pattern.
+    def enterConstant_pattern(self, ctx:CSharpParser.Constant_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#constant_pattern.
+    def exitConstant_pattern(self, ctx:CSharpParser.Constant_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#var_pattern.
+    def enterVar_pattern(self, ctx:CSharpParser.Var_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#var_pattern.
+    def exitVar_pattern(self, ctx:CSharpParser.Var_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#designation.
+    def enterDesignation(self, ctx:CSharpParser.DesignationContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#designation.
+    def exitDesignation(self, ctx:CSharpParser.DesignationContext):
         pass
 
 
@@ -2051,15 +2105,6 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CSharpParser#stackalloc_initializer.
-    def enterStackalloc_initializer(self, ctx:CSharpParser.Stackalloc_initializerContext):
-        pass
-
-    # Exit a parse tree produced by CSharpParser#stackalloc_initializer.
-    def exitStackalloc_initializer(self, ctx:CSharpParser.Stackalloc_initializerContext):
-        pass
-
-
     # Enter a parse tree produced by CSharpParser#right_arrow.
     def enterRight_arrow(self, ctx:CSharpParser.Right_arrowContext):
         pass
@@ -2204,12 +2249,30 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#class_modifier.
+    def enterClass_modifier(self, ctx:CSharpParser.Class_modifierContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#class_modifier.
+    def exitClass_modifier(self, ctx:CSharpParser.Class_modifierContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#struct_definition.
     def enterStruct_definition(self, ctx:CSharpParser.Struct_definitionContext):
         pass
 
     # Exit a parse tree produced by CSharpParser#struct_definition.
     def exitStruct_definition(self, ctx:CSharpParser.Struct_definitionContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#struct_modifier.
+    def enterStruct_modifier(self, ctx:CSharpParser.Struct_modifierContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#struct_modifier.
+    def exitStruct_modifier(self, ctx:CSharpParser.Struct_modifierContext):
         pass
 
 
