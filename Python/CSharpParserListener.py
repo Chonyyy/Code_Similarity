@@ -44,6 +44,24 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#function_pointer_type.
+    def enterFunction_pointer_type(self, ctx:CSharpParser.Function_pointer_typeContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#function_pointer_type.
+    def exitFunction_pointer_type(self, ctx:CSharpParser.Function_pointer_typeContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#function_pointer_parameter_list.
+    def enterFunction_pointer_parameter_list(self, ctx:CSharpParser.Function_pointer_parameter_listContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#function_pointer_parameter_list.
+    def exitFunction_pointer_parameter_list(self, ctx:CSharpParser.Function_pointer_parameter_listContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#base_type.
     def enterBase_type(self, ctx:CSharpParser.Base_typeContext):
         pass
@@ -491,6 +509,15 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#objectCreationExpression.
     def exitObjectCreationExpression(self, ctx:CSharpParser.ObjectCreationExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#targetTypedNewExpression.
+    def enterTargetTypedNewExpression(self, ctx:CSharpParser.TargetTypedNewExpressionContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#targetTypedNewExpression.
+    def exitTargetTypedNewExpression(self, ctx:CSharpParser.TargetTypedNewExpressionContext):
         pass
 
 
@@ -1142,6 +1169,24 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#unsafe_function_pointer.
+    def enterUnsafe_function_pointer(self, ctx:CSharpParser.Unsafe_function_pointerContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#unsafe_function_pointer.
+    def exitUnsafe_function_pointer(self, ctx:CSharpParser.Unsafe_function_pointerContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#delegate_function_pointer.
+    def enterDelegate_function_pointer(self, ctx:CSharpParser.Delegate_function_pointerContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#delegate_function_pointer.
+    def exitDelegate_function_pointer(self, ctx:CSharpParser.Delegate_function_pointerContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#local_variable_type.
     def enterLocal_variable_type(self, ctx:CSharpParser.Local_variable_typeContext):
         pass
@@ -1394,6 +1439,51 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#record_definition.
+    def enterRecord_definition(self, ctx:CSharpParser.Record_definitionContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#record_definition.
+    def exitRecord_definition(self, ctx:CSharpParser.Record_definitionContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#record_base.
+    def enterRecord_base(self, ctx:CSharpParser.Record_baseContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#record_base.
+    def exitRecord_base(self, ctx:CSharpParser.Record_baseContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#record_body.
+    def enterRecord_body(self, ctx:CSharpParser.Record_bodyContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#record_body.
+    def exitRecord_body(self, ctx:CSharpParser.Record_bodyContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#record_parameters.
+    def enterRecord_parameters(self, ctx:CSharpParser.Record_parametersContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#record_parameters.
+    def exitRecord_parameters(self, ctx:CSharpParser.Record_parametersContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#record_parameter.
+    def enterRecord_parameter(self, ctx:CSharpParser.Record_parameterContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#record_parameter.
+    def exitRecord_parameter(self, ctx:CSharpParser.Record_parameterContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#qualified_alias_member.
     def enterQualified_alias_member(self, ctx:CSharpParser.Qualified_alias_memberContext):
         pass
@@ -1484,6 +1574,42 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#relational_pattern.
+    def enterRelational_pattern(self, ctx:CSharpParser.Relational_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#relational_pattern.
+    def exitRelational_pattern(self, ctx:CSharpParser.Relational_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#and_pattern.
+    def enterAnd_pattern(self, ctx:CSharpParser.And_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#and_pattern.
+    def exitAnd_pattern(self, ctx:CSharpParser.And_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#or_pattern.
+    def enterOr_pattern(self, ctx:CSharpParser.Or_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#or_pattern.
+    def exitOr_pattern(self, ctx:CSharpParser.Or_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#not_pattern.
+    def enterNot_pattern(self, ctx:CSharpParser.Not_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#not_pattern.
+    def exitNot_pattern(self, ctx:CSharpParser.Not_patternContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#declaration_pattern.
     def enterDeclaration_pattern(self, ctx:CSharpParser.Declaration_patternContext):
         pass
@@ -1535,6 +1661,15 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#designation.
     def exitDesignation(self, ctx:CSharpParser.DesignationContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#module_initializer_declaration.
+    def enterModule_initializer_declaration(self, ctx:CSharpParser.Module_initializer_declarationContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#module_initializer_declaration.
+    def exitModule_initializer_declaration(self, ctx:CSharpParser.Module_initializer_declarationContext):
         pass
 
 
@@ -1742,6 +1877,15 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#accessor_declarations.
     def exitAccessor_declarations(self, ctx:CSharpParser.Accessor_declarationsContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#init_accessor_declaration.
+    def enterInit_accessor_declaration(self, ctx:CSharpParser.Init_accessor_declarationContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#init_accessor_declaration.
+    def exitInit_accessor_declaration(self, ctx:CSharpParser.Init_accessor_declarationContext):
         pass
 
 
@@ -2417,6 +2561,15 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#object_creation_expression.
     def exitObject_creation_expression(self, ctx:CSharpParser.Object_creation_expressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#target_typed_new.
+    def enterTarget_typed_new(self, ctx:CSharpParser.Target_typed_newContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#target_typed_new.
+    def exitTarget_typed_new(self, ctx:CSharpParser.Target_typed_newContext):
         pass
 
 
