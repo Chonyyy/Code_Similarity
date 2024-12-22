@@ -17,6 +17,15 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#compilation_unit_element.
+    def enterCompilation_unit_element(self, ctx:CSharpParser.Compilation_unit_elementContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#compilation_unit_element.
+    def exitCompilation_unit_element(self, ctx:CSharpParser.Compilation_unit_elementContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#top_level_statements.
     def enterTop_level_statements(self, ctx:CSharpParser.Top_level_statementsContext):
         pass
@@ -2516,6 +2525,78 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#method_declaration.
     def exitMethod_declaration(self, ctx:CSharpParser.Method_declarationContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#method_header.
+    def enterMethod_header(self, ctx:CSharpParser.Method_headerContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#method_header.
+    def exitMethod_header(self, ctx:CSharpParser.Method_headerContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#ref_kind.
+    def enterRef_kind(self, ctx:CSharpParser.Ref_kindContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#ref_kind.
+    def exitRef_kind(self, ctx:CSharpParser.Ref_kindContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#ref_method_modifiers.
+    def enterRef_method_modifiers(self, ctx:CSharpParser.Ref_method_modifiersContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#ref_method_modifiers.
+    def exitRef_method_modifiers(self, ctx:CSharpParser.Ref_method_modifiersContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#ref_return_type.
+    def enterRef_return_type(self, ctx:CSharpParser.Ref_return_typeContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#ref_return_type.
+    def exitRef_return_type(self, ctx:CSharpParser.Ref_return_typeContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#method_modifiers.
+    def enterMethod_modifiers(self, ctx:CSharpParser.Method_modifiersContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#method_modifiers.
+    def exitMethod_modifiers(self, ctx:CSharpParser.Method_modifiersContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#method_modifier.
+    def enterMethod_modifier(self, ctx:CSharpParser.Method_modifierContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#method_modifier.
+    def exitMethod_modifier(self, ctx:CSharpParser.Method_modifierContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#ref_method_body.
+    def enterRef_method_body(self, ctx:CSharpParser.Ref_method_bodyContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#ref_method_body.
+    def exitRef_method_body(self, ctx:CSharpParser.Ref_method_bodyContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#ref_method_modifier.
+    def enterRef_method_modifier(self, ctx:CSharpParser.Ref_method_modifierContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#ref_method_modifier.
+    def exitRef_method_modifier(self, ctx:CSharpParser.Ref_method_modifierContext):
         pass
 
 
