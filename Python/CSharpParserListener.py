@@ -1601,6 +1601,33 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#rest_pattern.
+    def enterRest_pattern(self, ctx:CSharpParser.Rest_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#rest_pattern.
+    def exitRest_pattern(self, ctx:CSharpParser.Rest_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#list_pattern.
+    def enterList_pattern(self, ctx:CSharpParser.List_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#list_pattern.
+    def exitList_pattern(self, ctx:CSharpParser.List_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#pattern_items.
+    def enterPattern_items(self, ctx:CSharpParser.Pattern_itemsContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#pattern_items.
+    def exitPattern_items(self, ctx:CSharpParser.Pattern_itemsContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#is_pattern.
     def enterIs_pattern(self, ctx:CSharpParser.Is_patternContext):
         pass
@@ -2336,6 +2363,15 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#literal.
     def exitLiteral(self, ctx:CSharpParser.LiteralContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#utf8_string_literal.
+    def enterUtf8_string_literal(self, ctx:CSharpParser.Utf8_string_literalContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#utf8_string_literal.
+    def exitUtf8_string_literal(self, ctx:CSharpParser.Utf8_string_literalContext):
         pass
 
 
