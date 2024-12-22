@@ -35,6 +35,24 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#global_using_directives.
+    def enterGlobal_using_directives(self, ctx:CSharpParser.Global_using_directivesContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#global_using_directives.
+    def exitGlobal_using_directives(self, ctx:CSharpParser.Global_using_directivesContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#global_using_directive.
+    def enterGlobal_using_directive(self, ctx:CSharpParser.Global_using_directiveContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#global_using_directive.
+    def exitGlobal_using_directive(self, ctx:CSharpParser.Global_using_directiveContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#namespace_or_type_name.
     def enterNamespace_or_type_name(self, ctx:CSharpParser.Namespace_or_type_nameContext):
         pass
@@ -1580,6 +1598,33 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#pattern.
     def exitPattern(self, ctx:CSharpParser.PatternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#is_pattern.
+    def enterIs_pattern(self, ctx:CSharpParser.Is_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#is_pattern.
+    def exitIs_pattern(self, ctx:CSharpParser.Is_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#property_pattern.
+    def enterProperty_pattern(self, ctx:CSharpParser.Property_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#property_pattern.
+    def exitProperty_pattern(self, ctx:CSharpParser.Property_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#property_pattern_clause.
+    def enterProperty_pattern_clause(self, ctx:CSharpParser.Property_pattern_clauseContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#property_pattern_clause.
+    def exitProperty_pattern_clause(self, ctx:CSharpParser.Property_pattern_clauseContext):
         pass
 
 
