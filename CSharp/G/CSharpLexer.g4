@@ -29,6 +29,7 @@ SHARP                       : '#'                     -> mode(DIRECTIVE_MODE), s
 
 ABSTRACT   : 'abstract';
 ADD        : 'add';
+AND        : 'and';
 ALIAS      : 'alias';
 ARGLIST    : '__arglist';
 AS         : 'as';
@@ -64,11 +65,13 @@ FALSE      : 'false';
 FINALLY    : 'finally';
 FIXED      : 'fixed';
 FLOAT      : 'float';
+FILE       : 'file';
 FOR        : 'for';
 FOREACH    : 'foreach';
 FROM       : 'from';
 GET        : 'get';
 GOTO       : 'goto';
+GLOBAL     : 'global';
 GROUP      : 'group';
 IF         : 'if';
 IMPLICIT   : 'implicit';
@@ -76,6 +79,7 @@ IN         : 'in';
 INT        : 'int';
 INTERFACE  : 'interface';
 INTERNAL   : 'internal';
+INIT       : 'init';
 INTO       : 'into';
 IS         : 'is';
 JOIN       : 'join';
@@ -85,9 +89,11 @@ LONG       : 'long';
 NAMEOF     : 'nameof';
 NAMESPACE  : 'namespace';
 NEW        : 'new';
+NOT        : 'not';
 NULL_      : 'null';
 OBJECT     : 'object';
 ON         : 'on';
+OR         : 'or';
 OPERATOR   : 'operator';
 ORDERBY    : 'orderby';
 OUT        : 'out';
@@ -98,6 +104,7 @@ PRIVATE    : 'private';
 PROTECTED  : 'protected';
 PUBLIC     : 'public';
 READONLY   : 'readonly';
+REQUIRED   : 'required';
 REF        : 'ref';
 REMOVE     : 'remove';
 RETURN     : 'return';
@@ -117,6 +124,7 @@ THROW      : 'throw';
 TRUE       : 'true';
 TRY        : 'try';
 TYPEOF     : 'typeof';
+UTF8_SUFFIX: 'u8';
 UINT       : 'uint';
 ULONG      : 'ulong';
 UNCHECKED  : 'unchecked';
@@ -132,6 +140,7 @@ WHEN       : 'when';
 WHERE      : 'where';
 WHILE      : 'while';
 YIELD      : 'yield';
+RECORD     : 'record';
 
 //B.1.6 Identifiers
 // must be defined after all keywords so the first branch (Available_identifier) does not match keywords
@@ -158,17 +167,20 @@ INTERPOLATED_REGULAR_STRING_START:
 INTERPOLATED_VERBATIUM_STRING_START:
     '$@"' { this.OnInterpolatedVerbatiumStringStart(); } -> pushMode(INTERPOLATION_STRING)
 ;
+RAW_STRING_LITERAL
+    : '"""' .*? '"""'
+    ;
 
 //B.1.9 Operators And Punctuators
-OPEN_BRACE               : '{' { this.OnOpenBrace(); };
-CLOSE_BRACE              : '}' { this.OnCloseBrace(); };
+OPEN_BRACE               : '{' { self.OnOpenBrace(); };
+CLOSE_BRACE              : '}' { self.OnCloseBrace(); };
 OPEN_BRACKET             : '[';
 CLOSE_BRACKET            : ']';
 OPEN_PARENS              : '(';
 CLOSE_PARENS             : ')';
 DOT                      : '.';
 COMMA                    : ',';
-COLON                    : ':' { this.OnColon(); };
+COLON                    : ':' { self.OnColon(); };
 SEMICOLON                : ';';
 PLUS                     : '+';
 MINUS                    : '-';
@@ -208,16 +220,17 @@ OP_LEFT_SHIFT_ASSIGNMENT : '<<=';
 OP_COALESCING_ASSIGNMENT : '??=';
 OP_RANGE                 : '..';
 
+
 // https://msdn.microsoft.com/en-us/library/dn961160.aspx
 mode INTERPOLATION_STRING;
 
 DOUBLE_CURLY_INSIDE           : '{{';
-OPEN_BRACE_INSIDE             : '{' { this.OpenBraceInside(); } -> skip, pushMode(DEFAULT_MODE);
-REGULAR_CHAR_INSIDE           :     { this.IsRegularCharInside() }? SimpleEscapeSequence;
-VERBATIUM_DOUBLE_QUOTE_INSIDE :     { this.IsVerbatiumDoubleQuoteInside() }? '""';
-DOUBLE_QUOTE_INSIDE           : '"' { this.OnDoubleQuoteInside(); } -> popMode;
-REGULAR_STRING_INSIDE         :     { this.IsRegularCharInside() }? ~('{' | '\\' | '"')+;
-VERBATIUM_INSIDE_STRING       :     { this.IsVerbatiumDoubleQuoteInside() }? ~('{' | '"')+;
+OPEN_BRACE_INSIDE             : '{' ;
+REGULAR_CHAR_INSIDE           :     { self.IsRegularCharInside() }? SimpleEscapeSequence;
+VERBATIUM_DOUBLE_QUOTE_INSIDE :     { self.IsVerbatiumDoubleQuoteInside() }? '""';
+DOUBLE_QUOTE_INSIDE           : '"' { self.OnDoubleQuoteInside(); } -> popMode;
+REGULAR_STRING_INSIDE         :     { self.IsRegularCharInside() }? ~('{' | '\\' | '"')+;
+VERBATIUM_INSIDE_STRING       :     { self.IsVerbatiumDoubleQuoteInside() }? ~('{' | '"')+;
 
 mode INTERPOLATION_FORMAT;
 
