@@ -458,6 +458,33 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#collection_expression.
+    def enterCollection_expression(self, ctx:CSharpParser.Collection_expressionContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#collection_expression.
+    def exitCollection_expression(self, ctx:CSharpParser.Collection_expressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#collection_element_list.
+    def enterCollection_element_list(self, ctx:CSharpParser.Collection_element_listContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#collection_element_list.
+    def exitCollection_element_list(self, ctx:CSharpParser.Collection_element_listContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#collection_element.
+    def enterCollection_element(self, ctx:CSharpParser.Collection_elementContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#collection_element.
+    def exitCollection_element(self, ctx:CSharpParser.Collection_elementContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#primary_expression.
     def enterPrimary_expression(self, ctx:CSharpParser.Primary_expressionContext):
         pass
@@ -2480,6 +2507,15 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#class_definition.
     def exitClass_definition(self, ctx:CSharpParser.Class_definitionContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#primary_constructor_parameters.
+    def enterPrimary_constructor_parameters(self, ctx:CSharpParser.Primary_constructor_parametersContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#primary_constructor_parameters.
+    def exitPrimary_constructor_parameters(self, ctx:CSharpParser.Primary_constructor_parametersContext):
         pass
 
 
