@@ -1,23 +1,149 @@
 \BOOKMARK [0][-]{chapter*.6}{Introducci\363n}{}% 1
 \BOOKMARK [0][-]{chapter.1}{Preliminares}{}% 2
-\BOOKMARK [0][-]{chapter.2}{Propuesta de soluci\363n}{}% 3
-\BOOKMARK [0][-]{chapter.3}{Extracci\363n de features del AST}{}% 4
-\BOOKMARK [1][-]{section.3.1}{Extraccion del AST}{chapter.3}% 5
-\BOOKMARK [1][-]{section.3.2}{Extraccion de features}{chapter.3}% 6
-\BOOKMARK [0][-]{chapter.4}{Preparacion del dataset}{}% 7
-\BOOKMARK [1][-]{section.4.1}{Construcci\363n del dataset}{chapter.4}% 8
-\BOOKMARK [1][-]{section.4.2}{Dataset de diferencias}{chapter.4}% 9
-\BOOKMARK [1][-]{section.4.3}{Word2Vec}{chapter.4}% 10
-\BOOKMARK [0][-]{chapter.5}{Redes Neuronales Siamesas para la Similitud de C\363digo}{}% 11
-\BOOKMARK [1][-]{section.5.1}{Estructura de la Red Neuronal Siamesa}{chapter.5}% 12
-\BOOKMARK [1][-]{section.5.2}{Proceso de Entrenamiento y Funci\363n de P\351rdida}{chapter.5}% 13
-\BOOKMARK [1][-]{section.5.3}{Version2}{chapter.5}% 14
-\BOOKMARK [2][-]{subsection.5.3.1}{Estructura y Proceso de Entrenamiento de la Red Neuronal Siamesa}{section.5.3}% 15
-\BOOKMARK [2][-]{subsection.5.3.2}{Arquitectura de la Red}{section.5.3}% 16
-\BOOKMARK [2][-]{subsection.5.3.3}{ M\351trica de Distancia \040L1 }{section.5.3}% 17
-\BOOKMARK [2][-]{subsection.5.3.4}{Proceso de Entrenamiento}{section.5.3}% 18
-\BOOKMARK [2][-]{subsection.5.3.5}{Predicci\363n de Similitud}{section.5.3}% 19
-\BOOKMARK [0][-]{chapter.6}{Detalles de Implementaci\363n y Experimentos}{}% 20
-\BOOKMARK [0][-]{section*.11}{Conclusiones}{}% 21
-\BOOKMARK [0][-]{section*.13}{Recomendaciones}{}% 22
-\BOOKMARK [0][-]{chapter*.15}{Bibliograf\355a}{}% 23
+\BOOKMARK [1][-]{section.1.1}{Introducci\363n al An\341lisis de Similitud de C\363digo}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{T\351cnicas Basadas en \301rboles de Sintaxis Abstracta \(AST\)}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Avances en An\341lisis de Similitud de C\363digo}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.3.1}{Integraci\363n del Aprendizaje Autom\341tico}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.2}{Redes Neuronales Siamesas}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.3}{Aplicaciones Modernas: Transformadores}{section.1.3}% 8
+\BOOKMARK [1][-]{section.1.4}{Representaciones Vectoriales y Aprendizaje Profundo}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.5}{Conclusi\363n}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{Modificaciones a la Gram\341tica de ANTLR para Soporte de C\043 Actual}{}% 11
+\BOOKMARK [1][-]{section.2.1}{C\043 7.0}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.1.1}{Variables out}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.2}{Tuplas y Deconstrucci\363n}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.3}{Coincidencia de Patrones}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.4}{Funciones Locales}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.5}{Miembros Expresados con Cuerpo de Expresi\363n Expandido}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.6}{Locales ref}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.7}{Retornos ref}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.8}{Discards}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.9}{Literales Binarios y Separadores de D\355gitos}{section.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.1.10}{Expresiones throw}{section.2.1}% 22
+\BOOKMARK [1][-]{section.2.2}{C\043 7.1}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.1}{M\351todo Main As\355ncrono}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.2}{Expresiones Literales por Defecto \(default\)}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.3}{Inferencia de Nombres de Elementos en Tuplas}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.4}{Coincidencia de Patrones en Par\341metros Gen\351ricos}{section.2.2}% 27
+\BOOKMARK [1][-]{section.2.3}{C\043 7.2}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.3.1}{Inicializadores en Arreglos Stackalloc}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.3.2}{Uso de Sentencias Fijas con Tipos que Soportan Patrones}{section.2.3}% 30
+\BOOKMARK [2][-]{subsection.2.3.3}{Acceso a Campos Fijos Sin Fijaci\363n}{section.2.3}% 31
+\BOOKMARK [2][-]{subsection.2.3.4}{Reasignaci\363n de Variables Locales Referenciadas}{section.2.3}% 32
+\BOOKMARK [2][-]{subsection.2.3.5}{Declaraci\363n de Tipos Struct Solo de Lectura \(readonly struct\)}{section.2.3}% 33
+\BOOKMARK [2][-]{subsection.2.3.6}{Modificador in en Par\341metros}{section.2.3}% 34
+\BOOKMARK [2][-]{subsection.2.3.7}{Modificador ref readonly en Retornos de M\351todos}{section.2.3}% 35
+\BOOKMARK [2][-]{subsection.2.3.8}{Declaraci\363n de Tipos Struct Referenciados \(ref struct\)}{section.2.3}% 36
+\BOOKMARK [2][-]{subsection.2.3.9}{M\341s Restricciones Gen\351ricas}{section.2.3}% 37
+\BOOKMARK [2][-]{subsection.2.3.10}{Argumentos Nombrados No Finales}{section.2.3}% 38
+\BOOKMARK [2][-]{subsection.2.3.11}{Guiones Bajos Iniciales en Literales Num\351ricos}{section.2.3}% 39
+\BOOKMARK [2][-]{subsection.2.3.12}{Modificador private protected}{section.2.3}% 40
+\BOOKMARK [2][-]{subsection.2.3.13}{Expresiones Condicionales por Referencia}{section.2.3}% 41
+\BOOKMARK [1][-]{section.2.4}{C\043 7.3}{chapter.2}% 42
+\BOOKMARK [2][-]{subsection.2.4.1}{Acceso a Campos Fijos Sin Fijaci\363n}{section.2.4}% 43
+\BOOKMARK [2][-]{subsection.2.4.2}{Reasignaci\363n de Variables Locales Referenciadas}{section.2.4}% 44
+\BOOKMARK [2][-]{subsection.2.4.3}{Inicializadores en Arreglos Stackalloc}{section.2.4}% 45
+\BOOKMARK [2][-]{subsection.2.4.4}{Sentencias Fijas con Tipos que Soportan Patrones}{section.2.4}% 46
+\BOOKMARK [2][-]{subsection.2.4.5}{M\341s Restricciones Gen\351ricas}{section.2.4}% 47
+\BOOKMARK [2][-]{subsection.2.4.6}{Pruebas con Tipos Tupla}{section.2.4}% 48
+\BOOKMARK [2][-]{subsection.2.4.7}{Uso de Variables de Expresi\363n en M\341s Ubicaciones}{section.2.4}% 49
+\BOOKMARK [2][-]{subsection.2.4.8}{Atributos en Campos de Respaldo de Propiedades Implementadas Autom\341ticamente}{section.2.4}% 50
+\BOOKMARK [2][-]{subsection.2.4.9}{Resoluci\363n de M\351todos Mejorada al Usar Argumentos Diferentes por in}{section.2.4}% 51
+\BOOKMARK [2][-]{subsection.2.4.10}{Resoluci\363n de Sobrecargas con Menos Casos Ambiguos}{section.2.4}% 52
+\BOOKMARK [1][-]{section.2.5}{C\043 8}{chapter.2}% 53
+\BOOKMARK [2][-]{subsection.2.5.1}{Miembros Solo de Lectura}{section.2.5}% 54
+\BOOKMARK [2][-]{subsection.2.5.2}{M\351todos de Interfaz por Defecto}{section.2.5}% 55
+\BOOKMARK [2][-]{subsection.2.5.3}{Mejoras en Coincidencia de Patrones}{section.2.5}% 56
+\BOOKMARK [2][-]{subsection.2.5.4}{Patrones de Propiedades}{section.2.5}% 57
+\BOOKMARK [2][-]{subsection.2.5.5}{Patrones Tupla}{section.2.5}% 58
+\BOOKMARK [2][-]{subsection.2.5.6}{Patrones Posicionales}{section.2.5}% 59
+\BOOKMARK [2][-]{subsection.2.5.7}{Declaraciones Using}{section.2.5}% 60
+\BOOKMARK [2][-]{subsection.2.5.8}{Funciones Locales Est\341ticas}{section.2.5}% 61
+\BOOKMARK [2][-]{subsection.2.5.9}{Estructuras Ref Descartables}{section.2.5}% 62
+\BOOKMARK [2][-]{subsection.2.5.10}{Tipos Nullable Referencia}{section.2.5}% 63
+\BOOKMARK [2][-]{subsection.2.5.11}{Flujos Asincr\363nicos}{section.2.5}% 64
+\BOOKMARK [2][-]{subsection.2.5.12}{\315ndices y Rangos}{section.2.5}% 65
+\BOOKMARK [2][-]{subsection.2.5.13}{Asignaci\363n Null-Coalescing}{section.2.5}% 66
+\BOOKMARK [2][-]{subsection.2.5.14}{Tipos Construidos No Administrados}{section.2.5}% 67
+\BOOKMARK [2][-]{subsection.2.5.15}{Stackalloc en Expresiones Anidadas}{section.2.5}% 68
+\BOOKMARK [2][-]{subsection.2.5.16}{Mejora en las Cadenas Interpoladas Verbatim}{section.2.5}% 69
+\BOOKMARK [1][-]{section.2.6}{C\043 9}{chapter.2}% 70
+\BOOKMARK [2][-]{subsection.2.6.1}{Registros}{section.2.6}% 71
+\BOOKMARK [2][-]{subsection.2.6.2}{Setters Solo de Inicializaci\363n}{section.2.6}% 72
+\BOOKMARK [2][-]{subsection.2.6.3}{Declaraciones en Nivel Superior}{section.2.6}% 73
+\BOOKMARK [2][-]{subsection.2.6.4}{Mejoras en Coincidencia de Patrones}{section.2.6}% 74
+\BOOKMARK [2][-]{subsection.2.6.5}{Rendimiento e Interoperabilidad}{section.2.6}% 75
+\BOOKMARK [2][-]{subsection.2.6.6}{Enteros de Tama\361o Nativo}{section.2.6}% 76
+\BOOKMARK [2][-]{subsection.2.6.7}{Punteros a Funciones}{section.2.6}% 77
+\BOOKMARK [2][-]{subsection.2.6.8}{Suprimir el Emisi\363n del Flag localsinit}{section.2.6}% 78
+\BOOKMARK [2][-]{subsection.2.6.9}{Inicializadores de M\363dulo}{section.2.6}% 79
+\BOOKMARK [2][-]{subsection.2.6.10}{Nuevas Funciones para M\351todos Parciales}{section.2.6}% 80
+\BOOKMARK [2][-]{subsection.2.6.11}{Caracter\355sticas de Ajuste y Terminaci\363n}{section.2.6}% 81
+\BOOKMARK [2][-]{subsection.2.6.12}{Expresiones Nuevas con Tipos Objetivo}{section.2.6}% 82
+\BOOKMARK [2][-]{subsection.2.6.13}{Funciones An\363nimas Est\341ticas}{section.2.6}% 83
+\BOOKMARK [2][-]{subsection.2.6.14}{Expresiones Condicionales Tipadas por Objetivo}{section.2.6}% 84
+\BOOKMARK [2][-]{subsection.2.6.15}{Tipos Retornados Covariantes}{section.2.6}% 85
+\BOOKMARK [2][-]{subsection.2.6.16}{Soporte para Extensiones GetEnumerator en Bucles foreach}{section.2.6}% 86
+\BOOKMARK [2][-]{subsection.2.6.17}{Par\341metros Descartados en Lambdas}{section.2.6}% 87
+\BOOKMARK [2][-]{subsection.2.6.18}{Atributos en Funciones Locales}{section.2.6}% 88
+\BOOKMARK [1][-]{section.2.7}{C\043 10}{chapter.2}% 89
+\BOOKMARK [2][-]{subsection.2.7.1}{Estructuras de Registro}{section.2.7}% 90
+\BOOKMARK [2][-]{subsection.2.7.2}{Mejoras en Tipos de Estructura}{section.2.7}% 91
+\BOOKMARK [2][-]{subsection.2.7.3}{Manejadores de Cadenas Interpoladas}{section.2.7}% 92
+\BOOKMARK [2][-]{subsection.2.7.4}{Directivas using Globales}{section.2.7}% 93
+\BOOKMARK [2][-]{subsection.2.7.5}{Declaraci\363n de Espacios de Nombres a Nivel de Archivo}{section.2.7}% 94
+\BOOKMARK [2][-]{subsection.2.7.6}{Patrones de Propiedades Extendidos}{section.2.7}% 95
+\BOOKMARK [2][-]{subsection.2.7.7}{Expresiones Lambda con Tipo Natural}{section.2.7}% 96
+\BOOKMARK [2][-]{subsection.2.7.8}{Expresiones Lambda con Tipo de Retorno Expl\355cito}{section.2.7}% 97
+\BOOKMARK [2][-]{subsection.2.7.9}{Atributos en Expresiones Lambda}{section.2.7}% 98
+\BOOKMARK [2][-]{subsection.2.7.10}{Inicializaci\363n de Cadenas Constantes con Interpolaci\363n}{section.2.7}% 99
+\BOOKMARK [2][-]{subsection.2.7.11}{Modificador sealed en ToString de Registros}{section.2.7}% 100
+\BOOKMARK [2][-]{subsection.2.7.12}{Advertencias para Asignaci\363n Definida y An\341lisis de Estado Nulo}{section.2.7}% 101
+\BOOKMARK [2][-]{subsection.2.7.13}{Declaraci\363n y Asignaci\363n en Deconstrucci\363n}{section.2.7}% 102
+\BOOKMARK [2][-]{subsection.2.7.14}{Atributo AsyncMethodBuilder}{section.2.7}% 103
+\BOOKMARK [2][-]{subsection.2.7.15}{Atributo CallerArgumentExpression}{section.2.7}% 104
+\BOOKMARK [2][-]{subsection.2.7.16}{Nuevo Formato para la Directiva \043line}{section.2.7}% 105
+\BOOKMARK [1][-]{section.2.8}{C\043 11}{chapter.2}% 106
+\BOOKMARK [2][-]{subsection.2.8.1}{Literales de Cadena Raw}{section.2.8}% 107
+\BOOKMARK [2][-]{subsection.2.8.2}{Soporte Gen\351rico para Operaciones Matem\341ticas}{section.2.8}% 108
+\BOOKMARK [2][-]{subsection.2.8.3}{Atributos Gen\351ricos}{section.2.8}% 109
+\BOOKMARK [2][-]{subsection.2.8.4}{Literales de Cadena UTF-8}{section.2.8}% 110
+\BOOKMARK [2][-]{subsection.2.8.5}{Saltos de L\355nea en Expresiones Interpoladas}{section.2.8}% 111
+\BOOKMARK [2][-]{subsection.2.8.6}{Patrones de Lista}{section.2.8}% 112
+\BOOKMARK [2][-]{subsection.2.8.7}{Tipos Locales a Archivo}{section.2.8}% 113
+\BOOKMARK [2][-]{subsection.2.8.8}{Miembros Obligatorios}{section.2.8}% 114
+\BOOKMARK [2][-]{subsection.2.8.9}{Estructuras con Valores Predeterminados}{section.2.8}% 115
+\BOOKMARK [2][-]{subsection.2.8.10}{Coincidencia de Patrones con Span<char>}{section.2.8}% 116
+\BOOKMARK [2][-]{subsection.2.8.11}{Alcance Extendido de nameof}{section.2.8}% 117
+\BOOKMARK [2][-]{subsection.2.8.12}{Tipo IntPtr Num\351rico}{section.2.8}% 118
+\BOOKMARK [2][-]{subsection.2.8.13}{Campos ref y scoped ref}{section.2.8}% 119
+\BOOKMARK [2][-]{subsection.2.8.14}{Mejora en la Conversi\363n de Grupos de M\351todos a Delegados}{section.2.8}% 120
+\BOOKMARK [2][-]{subsection.2.8.15}{Ola de Advertencias 7}{section.2.8}% 121
+\BOOKMARK [1][-]{section.2.9}{C\043 12}{chapter.2}% 122
+\BOOKMARK [2][-]{subsection.2.9.1}{Constructores Primarios}{section.2.9}% 123
+\BOOKMARK [2][-]{subsection.2.9.2}{Expresiones de Colecci\363n}{section.2.9}% 124
+\BOOKMARK [2][-]{subsection.2.9.3}{Arrays en L\355nea}{section.2.9}% 125
+\BOOKMARK [2][-]{subsection.2.9.4}{Par\341metros Opcionales en Expresiones Lambda}{section.2.9}% 126
+\BOOKMARK [2][-]{subsection.2.9.5}{Par\341metros ref readonly}{section.2.9}% 127
+\BOOKMARK [2][-]{subsection.2.9.6}{Alias Any Type}{section.2.9}% 128
+\BOOKMARK [2][-]{subsection.2.9.7}{Atributo Experimental}{section.2.9}% 129
+\BOOKMARK [0][-]{chapter.3}{Extracci\363n de features del AST}{}% 130
+\BOOKMARK [1][-]{section.3.1}{Extraccion del AST}{chapter.3}% 131
+\BOOKMARK [1][-]{section.3.2}{Extraccion de features}{chapter.3}% 132
+\BOOKMARK [0][-]{chapter.4}{Preparacion del dataset}{}% 133
+\BOOKMARK [1][-]{section.4.1}{Construcci\363n del dataset}{chapter.4}% 134
+\BOOKMARK [1][-]{section.4.2}{Dataset de diferencias}{chapter.4}% 135
+\BOOKMARK [1][-]{section.4.3}{Word2Vec}{chapter.4}% 136
+\BOOKMARK [0][-]{chapter.5}{Redes Neuronales Siamesas para la Similitud de C\363digo}{}% 137
+\BOOKMARK [1][-]{section.5.1}{Estructura de la Red Neuronal Siamesa}{chapter.5}% 138
+\BOOKMARK [1][-]{section.5.2}{Proceso de Entrenamiento y Funci\363n de P\351rdida}{chapter.5}% 139
+\BOOKMARK [1][-]{section.5.3}{Version2}{chapter.5}% 140
+\BOOKMARK [2][-]{subsection.5.3.1}{Estructura y Proceso de Entrenamiento de la Red Neuronal Siamesa}{section.5.3}% 141
+\BOOKMARK [2][-]{subsection.5.3.2}{Arquitectura de la Red}{section.5.3}% 142
+\BOOKMARK [2][-]{subsection.5.3.3}{ M\351trica de Distancia \040L1 }{section.5.3}% 143
+\BOOKMARK [2][-]{subsection.5.3.4}{Proceso de Entrenamiento}{section.5.3}% 144
+\BOOKMARK [2][-]{subsection.5.3.5}{Predicci\363n de Similitud}{section.5.3}% 145
+\BOOKMARK [0][-]{chapter.6}{Detalles de Implementaci\363n y Experimentos}{}% 146
+\BOOKMARK [0][-]{section*.10}{Conclusiones}{}% 147
+\BOOKMARK [0][-]{section*.12}{Recomendaciones}{}% 148
+\BOOKMARK [0][-]{chapter*.14}{Bibliograf\355a}{}% 149
