@@ -15,11 +15,11 @@ def create_base_network(input_shape):
     model.add(Reshape((65, 1), input_shape=input_shape))
     
     # Replace Convolution2D with Conv1D
-    model.add(Conv1D(16, 8, strides=1, activation="relu"))
-    model.add(MaxPooling1D(pool_size=2))
+    # model.add(Conv1D(16, 8, strides=1, activation="relu"))
+    # model.add(MaxPooling1D(pool_size=2))
     
-    model.add(Conv1D(32, 4, strides=1, activation="relu"))
-    model.add(MaxPooling1D(pool_size=2))
+    # model.add(Conv1D(32, 4, strides=1, activation="relu"))
+    # model.add(MaxPooling1D(pool_size=2))
     
     model.add(Flatten())
     model.add(Dense(512, activation="relu"))

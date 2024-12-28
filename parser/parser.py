@@ -2,6 +2,7 @@ from antlr4 import *
 import os
 from listener import FeatureExtractorListener, walk_tree
 from antlr4 import CommonTokenStream
+from antlr4.error.ErrorListener import ErrorListener
 from Python.CSharpLexer import CSharpLexer
 from Python.CSharpParser import CSharpParser
 
@@ -11,9 +12,18 @@ def extract_features_from_file(file_path):
     tokens = CommonTokenStream(lexer)
     parser = CSharpParser(tokens)
 
-    # Agrega tu listener de errores personalizado aquí si es necesario
+    # Agregar el listener personalizado
+    error_listener = SimpleErrorListener()
+    parser.addErrorListener(error_listener) 
 
     tree = parser.compilation_unit()
+
+    # Verificar si hubo errores
+    if error_listener.has_errors:
+        print("Se detectaron errores durante el análisis.")
+    else:
+        print("Análisis completado sin errores.")
+
     extractor = FeatureExtractorListener()
     walk_tree(extractor, tree)
     return extractor.get_features()
@@ -89,3 +99,13 @@ def process_project(root_directory):
     combined_features = combine_features(all_features)
     return combined_features
     
+
+# Listener personalizado para capturar errores
+class SimpleErrorListener(ErrorListener):
+    def __init__(self):
+        super(SimpleErrorListener, self).__init__()
+        self.has_errors = False  # Bandera para errores
+
+    def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
+        self.has_errors = True  # Marca que ocurrió un error
+        print(f"Error en línea {line}, columna {column}: {msg}")

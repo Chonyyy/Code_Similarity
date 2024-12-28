@@ -104,27 +104,44 @@ class FeatureExtractorListener(CSharpParserListener):
             if type(ctx.children[0]).__name__ == 'ErrorNodeImpl':
                 pass
             else:
-                var_type = ctx.children[0].start.text
-                var_name = ctx.children[1].start.text
-                self.variables += 1
-                self.variable_names.add((var_type, var_name))
-
-                try:
-                    i = 3
-                    while ctx.children[i]:
-                        var_name2 = ctx.children[i].start.text
+                if type(ctx.children[0]).__name__ == 'TerminalNodeImpl':
+                    var_type = ctx.children[0].symbol.text
+                    if ctx.children[1].start.text == '(':
+                        var_name = ctx.children[1].children[0].children[1].start.text
                         self.variables += 1
-                        self.variable_names.add((var_type, var_name2))
-                        i = i + 2
-                except:
-                    pass
+                        self.variable_names.add((var_type, var_name))
+
+                        try:
+                            i = 3
+                            while ctx.children[i]:
+                                var_name2 = ctx.children[1].children[0].children[i].start.text
+                                self.variables += 1
+                                self.variable_names.add((var_type, var_name2))
+                                i = i + 2
+                        except:
+                            pass
+                    else:
+                        var_type = ctx.children[0].start.text
+                        var_name = ctx.children[1].start.text
+                        self.variables += 1
+                        self.variable_names.add((var_type, var_name))
+
+                        try:
+                            i = 3
+                            while ctx.children[i]:
+                                var_name2 = ctx.children[i].start.text
+                                self.variables += 1
+                                self.variable_names.add((var_type, var_name2))
+                                i = i + 2
+                        except:
+                            pass
                 
-                if var_type == "Tuple":
-                    self.number_of_tuples += 1
-                if var_type == "List":
-                    self.lists += 1
-                if var_type == "Dictionary":
-                    self.dicts += 1
+                        if var_type == "Tuple":
+                            self.number_of_tuples += 1
+                        if var_type == "List":
+                            self.lists += 1
+                        if var_type == "Dictionary":
+                            self.dicts += 1
          
         elif node_type == "Method_declarationContext": 
             self.methods += 1

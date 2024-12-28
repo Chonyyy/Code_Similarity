@@ -269,6 +269,15 @@ class CSharpParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CSharpParser#with_expression.
+    def enterWith_expression(self, ctx:CSharpParser.With_expressionContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#with_expression.
+    def exitWith_expression(self, ctx:CSharpParser.With_expressionContext):
+        pass
+
+
     # Enter a parse tree produced by CSharpParser#non_assignment_expression.
     def enterNon_assignment_expression(self, ctx:CSharpParser.Non_assignment_expressionContext):
         pass
@@ -1625,6 +1634,24 @@ class CSharpParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CSharpParser#pattern.
     def exitPattern(self, ctx:CSharpParser.PatternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#positional_pattern.
+    def enterPositional_pattern(self, ctx:CSharpParser.Positional_patternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#positional_pattern.
+    def exitPositional_pattern(self, ctx:CSharpParser.Positional_patternContext):
+        pass
+
+
+    # Enter a parse tree produced by CSharpParser#subpattern.
+    def enterSubpattern(self, ctx:CSharpParser.SubpatternContext):
+        pass
+
+    # Exit a parse tree produced by CSharpParser#subpattern.
+    def exitSubpattern(self, ctx:CSharpParser.SubpatternContext):
         pass
 
 
