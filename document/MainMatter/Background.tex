@@ -1,7 +1,7 @@
 \chapter{Preliminares}\label{chapter:state-of-the-art}
 
 \section{Introducción al Análisis de Similitud de Código}
-El análisis de similitud de código es un campo que ha evolucionado significativamente desde sus inicios en la década de 1970. Es utilizado en aplicaciones como la detección de plagio, refactorización de código, revisión de código y herramientas de asistencia a la programación. En esta sección se revisan los desarrollos históricos, metodologías y tecnologías clave, así como los avances recientes en este ámbito.
+El análisis de similitud de código es un campo que ha evolucionado desde sus inicios en la década de 1970. Es utilizado en aplicaciones como la detección de plagio, refactorización de código, revisión de código y herramientas de asistencia a profesores de programación. En esta sección se revisan los desarrollos históricos, metodologías y tecnologías clave, así como los avances recientes en este ámbito.
 
 Los orígenes del análisis de similitud de código se remontan a los años 70 con los primeros algoritmos de coincidencia de cadenas, cuando se buscaban métodos para detectar plagio en tareas de programación. Algoritmos como Knuth-Morris-Pratt (KMP) \cite{knuth1977fast} y Boyer-Moore \cite{boyer1977fast} se utilizaron inicialmente para comparar secuencias de texto, sentando las bases para la comparación de código fuente.
 
@@ -29,18 +29,10 @@ Las redes neuronales siamesas son un tipo de arquitectura de red diseñada para 
 
 La similitud entre las dos representaciones vectoriales se mide usando una métrica, como la distancia euclidiana o la similitud del coseno. Este enfoque permite identificar relaciones semánticas y estructurales entre fragmentos de código, incluso cuando no son idénticos textualmente.
 
-Aplicaciones destacadas de redes siamesas incluyen la detección de plagio y la búsqueda de fragmentos de código similares en grandes bases de datos. Estas redes son especialmente útiles cuando se necesita comparar fragmentos de código que han sido modificados, ya que se centran en la esencia lógica y estructural de los fragmentos.
-
-\subsection{Aplicaciones Modernas: Transformadores}
-Transformadores como Codex de OpenAI y GitHub Copilot \cite{vaswani2017attention} han revolucionado el análisis de código. Su capacidad para manejar dependencias a largo plazo y procesar secuencias extensas permite tareas avanzadas como completar código y detectar similitudes.
+Aplicaciones destacadas de redes siamesas incluyen la detección de plagio y la búsqueda de fragmentos de código similares en grandes bases de datos. Estas redes son útiles cuando se necesita comparar fragmentos de código que han sido modificados, ya que se centran en la esencia lógica y estructural de los fragmentos.
 
 \section{Representaciones Vectoriales y Aprendizaje Profundo}
 
-Word2Vec se ha utilizado para generar representaciones vectoriales de fragmentos de código, capturando relaciones semánticas complejas. Sin embargo, su aplicación directa al código plantea desafíos debido a la estructura jerárquica inherente.
+Word2Vec se ha utilizado para generar representaciones vectoriales de fragmentos de código, capturando relaciones semánticas complejas. Las representaciones vectoriales permiten realizar comparaciones rápidas, ya que los fragmentos de código se transforman en puntos dentro de un espacio vectorial. Estas representaciones capturan tanto la estructura lógica como los patrones semánticos, lo que facilita la detección de similitudes en un nivel más abstracto.
 
-Desde 2014, se han empleado redes neuronales profundas (DNN) para aprender incrustaciones vectoriales de código. Estas técnicas han mejorado significativamente la precisión en la detección de similitudes y relaciones contextuales entre fragmentos de código.
-
-Las representaciones vectoriales permiten realizar comparaciones más rápidas y precisas, ya que los fragmentos de código se transforman en puntos dentro de un espacio vectorial. Estas representaciones capturan tanto la estructura lógica como los patrones semánticos, lo que facilita la detección de similitudes en un nivel más abstracto.
-
-\section{Conclusión}
-El análisis de similitud de código ha evolucionado desde comparaciones textuales simples hasta técnicas avanzadas basadas en aprendizaje profundo y representaciones estructurales. Aunque las tecnologías actuales han mejorado significativamente la precisión y la eficiencia, persisten desafíos, como la escalabilidad y la manipulación intencional del código. Esto abre oportunidades para futuras investigaciones en métodos híbridos que combinen aprendizaje profundo y análisis estructural.
+Desde 2014, se han empleado redes neuronales profundas (DNN) para aprender incrustaciones vectoriales de código. Estas técnicas han mejorado la precisión en la detección de similitudes y relaciones contextuales entre fragmentos de código.

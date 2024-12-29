@@ -1,284 +1,261 @@
 \chapter{Modificaciones a la Gramática de ANTLR para Soporte de C\# Actual}\label{chapter:proposal}
 
-ANTLR (Another Tool for Language Recognition) cuenta con una gramática basada en C\# 6.0. Sin embargo, dado que la versión actual de C\# es 12.0 (introducida en noviembre de 2023), esta gramática presentaba limitaciones significativas al trabajar con el código moderno. Esto generaba errores durante el análisis sintáctico y resultaba en un árbol de sintaxis abstracta (AST) incompleto. \\
-
-Dado que el lenguaje C\# ha evolucionado considerablemente desde la versión 6.0, era necesario actualizar la gramática para reflejar las características introducidas en versiones posteriores. A continuación, se describen los principales problemas encontrados y las modificaciones realizadas para solventarlos.
+ANTLR (Another Tool for Language Recognition) cuenta con una gramática basada en C\# 6.0, esta gramática presentaba limitaciones significativas al trabajar con el código moderno. Generaba errores durante el análisis sintáctico y resultaba en un árbol de sintaxis abstracta (AST) incompleto. Sin embargo, se decidió actualizar a una versión más actual de C\# 12.0 (introducida en noviembre de 2023), para reflejar las características introducidas en versiones posteriores.  A continuación, se describen los principales problemas encontrados y las modificaciones realizadas para solventarlos.\\
 
 \section{C\# 7.0}
 
-\subsection{Variables \texttt{out}}
-\textbf{Problema:} En versiones anteriores de C\#, el uso de variables \texttt{out} requería una declaración previa. Desde C\# 7.0, se permite declarar variables directamente en la declaración del método.
+\subsection*{Variables \texttt{out}}
+\textbf{Problema:} El uso de variables \texttt{out} requería una declaración previa. Desde C\# 7.0, se permite declarar variables directamente en la declaración del método.
 
-\textbf{Solución:} Se modificó la gramática para permitir la declaración de variables \texttt{out} directamente en la llamada al método.
+\textbf{Solución:} Se modificó la regla \texttt{argument} para incluir una declaración de variable opcional antes del modificador \texttt{out}. Además, se ajustó la regla \texttt{local\_variable\_declaration} para permitir el uso de \texttt{out} como modificador de variable.
 
-\subsection{Tuplas y Deconstrucción}
-\textbf{Problema:} En versiones anteriores, las tuplas no eran un tipo nativo y requerían una biblioteca externa. Desde C\# 7.0, se introdujeron tuplas como un tipo nativo, permitiendo la deconstrucción de sus elementos.
+\subsection*{Tuplas y Deconstrucción}
+\textbf{Problema:} Las tuplas no eran un tipo nativo y requerían una biblioteca externa. Desde C\# 7.0, se introdujeron tuplas como un tipo nativo, permitiendo la deconstrucción de sus elementos.
 
-\textbf{Solución:} Se ajustaron las reglas gramaticales para permitir el uso de tuplas nativas y la deconstrucción.
+\textbf{Solución:} Se agregó una nueva regla \texttt{tuple\_type} para definir tipos de tuplas. Se modificó la regla \texttt{type} para incluir \texttt{tuple\_type}. Además, se añadió una regla \texttt{tuple\_literal} para la creación de tuplas y se actualizó la regla \texttt{assignment} para soportar la deconstrucción de tuplas.
 
-\subsection{Coincidencia de Patrones}
-\textbf{Problema:} En versiones anteriores, no había soporte para coincidencia de patrones en C\#. Desde C\# 7.0, se introdujo la coincidencia de patrones que permite simplificar el código al verificar tipos y valores.
+\subsection*{Coincidencia de Patrones}
+\textbf{Problema:} No había soporte para coincidencia de patrones en C\#. Desde C\# 7.0, se introdujo la coincidencia de patrones que permite simplificar el código al verificar tipos y valores.
 
-\textbf{Solución:} Se agregó soporte para coincidencia de patrones en la gramática.
+\textbf{Solución:} Se introdujo una nueva regla \texttt{pattern\_matching\_expression} que incluye subreglas para diferentes tipos de patrones (constante, tipo, var). Se actualizaron las reglas \texttt{is\_expression} y \texttt{switch\_section} para incorporar la nueva sintaxis de coincidencia de patrones.
 
-\subsection{Funciones Locales}
-\textbf{Problema:} En versiones anteriores, las funciones debían estar definidas a nivel de clase. Desde C\# 7.0, se introdujeron funciones locales que permiten definir funciones dentro de métodos.
+\subsection*{Funciones Locales}
+\textbf{Problema:} Las funciones debían estar definidas a nivel de clase. Desde C\# 7.0, se introdujeron funciones locales que permiten definir funciones dentro de métodos.
 
-\textbf{Solución:} Se modificó la gramática para permitir la definición de funciones locales dentro de métodos.
+\textbf{Solución:} Se creó una nueva regla \texttt{local\_function\_declaration} similar a \texttt{method\_declaration}, pero permitida dentro de bloques de código. Se actualizó la regla \texttt{statement} para incluir \texttt{local\_function\_declaration} como una opción válida.
 
-\subsection{Miembros Expresados con Cuerpo de Expresión Expandido}
-\textbf{Problema:} En versiones anteriores, los miembros debían tener un cuerpo completo. Desde C\# 7.0, se introdujo la posibilidad de usar cuerpos de expresión para simplificar la definición de miembros.
+\subsection*{Miembros Expresados con Cuerpo de Expresión Expandido}
+\textbf{Problema:} Los miembros debían tener un cuerpo completo. Desde C\# 7.0, se introdujo la posibilidad de usar cuerpos de expresión para simplificar la definición de miembros.
 
-\textbf{Solución:} Se ajustaron las reglas gramaticales para permitir cuerpos de expresión en miembros.
+\textbf{Solución:} Se modificaron las reglas \texttt{method\_declaration}, \texttt{property\_declaration}, \texttt{operator\_declaration}, \texttt{constructor\_declaration}, \texttt{destructor\_declaration}, y \texttt{indexer\_declaration} para permitir el uso de \texttt{=>} seguido de una expresión como alternativa al cuerpo del bloque tradicional.
 
-\subsection{Locales \texttt{ref}}
-\textbf{Problema:} En versiones anteriores, no era posible utilizar locales \texttt{ref} que permiten referenciar variables directamente en lugar de copiar su valor. Desde C\# 7.0, se introdujeron los locales \texttt{ref}.
+\subsection*{Locales \texttt{ref}}
+\textbf{Problema:} No era posible utilizar locales \texttt{ref} que permiten referenciar variables directamente en lugar de copiar su valor. Desde C\# 7.0, se introdujeron los locales \texttt{ref}.
 
-\textbf{Solución:} Se agregó soporte para locales \texttt{ref} en la gramática.
+\textbf{Solución:} Se actualizó la regla \texttt{local\_variable\_declaration} para incluir el modificador \texttt{ref} opcional. Se agregó una nueva regla \texttt{ref\_expression} para manejar expresiones que devuelven referencias.
 
-\subsection{Retornos \texttt{ref}}
-\textbf{Problema:} En versiones anteriores, los métodos no podían devolver referencias directamente. Desde C\# 7.0, se introdujo el soporte para retornos \texttt{ref}, permitiendo que un método devuelva una referencia a un valor existente.
+\subsection*{Retornos \texttt{ref}}
+\textbf{Problema:} Los métodos no podían devolver referencias directamente. Desde C\# 7.0, se introdujo el soporte para retornos \texttt{ref}, permitiendo que un método devuelva una referencia a un valor existente.
 
-\textbf{Solución:} Se ajustaron las reglas gramaticales para permitir retornos \texttt{ref}.
+\textbf{Solución:} Se modificó la regla \texttt{method\_declaration} para permitir el modificador \texttt{ref} antes del tipo de retorno. Se actualizó la regla \texttt{return\_statement} para incluir la opción de devolver una referencia usando \texttt{ref}.
 
-\subsection{Discards}
-\textbf{Problema:} En versiones anteriores, no había una forma explícita de ignorar valores en asignaciones o expresiones. Desde C\# 7.0, se introdujo el uso de discards (\texttt{\_}) que permite omitir valores que no son necesarios.
+\subsection*{Discards}
+\textbf{Problema:} No había una forma explícita de ignorar valores en asignaciones o expresiones. Desde C\# 7.0, se introdujo el uso de discards (\texttt{\_}) que permite omitir valores que no son necesarios.
 
-\textbf{Solución:} Se modificó la gramática para permitir el uso del símbolo \texttt{\_} como discard.
+\textbf{Solución:} Se agregó una nueva regla \texttt{discard} que reconoce el símbolo \texttt{\_}. Se actualizaron las reglas relevantes como \texttt{variable\_declaration}, \texttt{foreach\_statement}, y \texttt{out\_variable\_declaration} para permitir el uso de \texttt{discard} en lugar de identificadores.
 
-\subsection{Literales Binarios y Separadores de Dígitos}
-\textbf{Problema:} En versiones anteriores, no había soporte para literales binarios ni separadores de dígitos en números. Desde C\# 7.0, se introdujeron literales binarios y la capacidad de usar guiones bajos como separadores en literales numéricos.
+\subsection*{Literales Binarios y Separadores de Dígitos}
+\textbf{Problema:} No había soporte para literales binarios ni separadores de dígitos en números. Desde C\# 7.0, se introdujeron literales binarios y la capacidad de usar guiones bajos como separadores en literales numéricos.
 
-\textbf{Solución:} Se ajustaron las reglas gramaticales para permitir literales binarios y separadores de dígitos.
+\textbf{Solución:} Se modificó la regla \texttt{integer\_literal} para incluir el prefijo \texttt{0b} o \texttt{0B} para literales binarios. Se actualizaron las reglas de literales numéricos para permitir guiones bajos (\texttt{\_}) entre dígitos en cualquier posición excepto al principio o final del literal.
 
-\subsection{Expresiones \texttt{throw}}
-\textbf{Problema:} En versiones anteriores, las expresiones \texttt{throw} solo podían usarse en instrucciones completas. Desde C\# 7.0, se introdujeron expresiones \texttt{throw}, permitiendo lanzar excepciones como parte de expresiones más complejas.
+\subsection*{Expresiones \texttt{throw}}
+\textbf{Problema:} Las expresiones \texttt{throw} solo podían usarse en instrucciones completas. Desde C\# 7.0, se introdujeron expresiones \texttt{throw}, permitiendo lanzar excepciones como parte de expresiones más complejas.
 
-\textbf{Solución:} Se modificó la gramática para permitir expresiones \texttt{throw}.
+\textbf{Solución:} Se creó una nueva regla \texttt{throw\_expression} que permite el uso de \texttt{throw} seguido de una expresión. Se actualizaron las reglas relevantes como \texttt{conditional\_expression} y \texttt{null\_coalescing\_expression} para incluir \texttt{throw\_expression} como una opción válida.
 
 
-\section{C\# 7.1}
+\subsection{C\# 7.1}
 
-\subsection{Método \texttt{Main} Asíncrono}
-\textbf{Problema:} En versiones anteriores de C\#, el método de entrada \texttt{Main} no podía ser asíncrono. Esto limitaba el uso de operaciones asincrónicas en la inicialización de aplicaciones. Desde C\# 7.1, se permite que el método \texttt{Main} tenga el modificador \texttt{async}.
-
+\subsection*{Método \texttt{Main} Asíncrono}
+\textbf{Problema:} El método de entrada \texttt{Main} no podía ser asíncrono. Esto limitaba el uso de operaciones asincrónicas en la inicialización de aplicaciones. Desde C\# 7.1, se permite que el método \texttt{Main} tenga el modificador \texttt{async}.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para permitir el modificador \texttt{async} en el método de entrada \texttt{Main}.
 
-\subsection{Expresiones Literales por Defecto (\texttt{default})}
+\subsection*{Expresiones Literales por Defecto (\texttt{default})}
 \textbf{Problema:} En versiones anteriores, era necesario especificar explícitamente el tipo al usar valores predeterminados. Desde C\# 7.1, se introdujeron las expresiones literales \texttt{default}, que infieren automáticamente el tipo cuando es posible.
 
 \textbf{Solución:} Se modificó la gramática para permitir expresiones literales \texttt{default} en contextos donde el tipo puede inferirse.
 
-\subsection{Inferencia de Nombres de Elementos en Tuplas}
+\subsection*{Inferencia de Nombres de Elementos en Tuplas}
 \textbf{Problema:} En versiones anteriores, era necesario nombrar explícitamente los elementos de una tupla al inicializarla. Desde C\# 7.1, se permite inferir los nombres de los elementos a partir de las variables utilizadas en la inicialización.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para inferir automáticamente los nombres de los elementos en inicializaciones de tuplas.
 
-\subsection{Coincidencia de Patrones en Parámetros Genéricos}
-\textbf{Problema:} En versiones anteriores, no era posible realizar coincidencia de patrones en variables cuyo tipo era un parámetro genérico. Desde C\# 7.1, se permite realizar coincidencias de patrones en este caso.
+\subsection*{Coincidencia de Patrones en Parámetros Genéricos}
+\textbf{Problema:} No era posible realizar coincidencia de patrones en variables cuyo tipo era un parámetro genérico. Desde C\# 7.1, se permite realizar coincidencias de patrones en este caso.
 
 \textbf{Solución:} Se expandieron las reglas para permitir coincidencia de patrones en variables con tipos genéricos.
 
 
-\section{C\# 7.2}
+\subsection{C\# 7.2}
 
-\subsection{Inicializadores en Arreglos Stackalloc}
-\textbf{Problema:} En versiones anteriores de C\#, no era posible inicializar directamente los arreglos creados con \texttt{stackalloc}. Desde C\# 7.2, se permite usar inicializadores en arreglos \texttt{stackalloc}.
+\subsection*{Inicializadores en Arreglos Stackalloc}
+\textbf{Problema:} No era posible inicializar directamente los arreglos creados con \texttt{stackalloc}. Desde C\# 7.2, se permite usar inicializadores en arreglos \texttt{stackalloc}.
 
 \textbf{Solución:} Se ajustó la gramática para permitir inicializadores en arreglos creados con \texttt{stackalloc}.
 
-\subsection{Uso de Sentencias Fijas con Tipos que Soportan Patrones}
-\textbf{Problema:} En versiones anteriores, las sentencias \texttt{fixed} solo podían usarse con tipos específicos como arreglos o cadenas. Desde C\# 7.2, se permite usar sentencias \texttt{fixed} con cualquier tipo que soporte un patrón.
+\subsection*{Uso de Sentencias Fijas con Tipos que Soportan Patrones}
+\textbf{Problema:} Las sentencias \texttt{fixed} solo podían usarse con tipos específicos como arreglos o cadenas. Desde C\# 7.2, se permite usar sentencias \texttt{fixed} con cualquier tipo que soporte un patrón.
 
 \textbf{Solución:} Se modificó la regla \texttt{fixed\_statement} para permitir el uso de cualquier tipo que soporte patrones.
 
-\subsection{Acceso a Campos Fijos Sin Fijación}
-\textbf{Problema:} En versiones anteriores, para acceder a campos fijos era necesario fijar la dirección de memoria explícitamente. Desde C\# 7.2, se permite acceder a campos fijos sin necesidad de fijarlos.
+\subsection*{Acceso a Campos Fijos Sin Fijación}
+\textbf{Problema:} Para acceder a campos fijos era necesario fijar la dirección de memoria explícitamente. Desde C\# 7.2, se permite acceder a campos fijos sin necesidad de fijarlos.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para permitir el acceso a campos fijos sin fijación explícita.
 
-\subsection{Reasignación de Variables Locales Referenciadas}
-\textbf{Problema:} En versiones anteriores, no era posible reasignar variables locales referenciadas (\texttt{ref}). Desde C\# 7.2, se permite reasignar estas variables.
+\subsection*{Reasignación de Variables Locales Referenciadas}
+\textbf{Problema:} No era posible reasignar variables locales referenciadas (\texttt{ref}). Desde C\# 7.2, se permite reasignar estas variables.
 
 \textbf{Solución:} Se modificaron las reglas para permitir la reasignación de variables locales referenciadas.
 
-\subsection{Declaración de Tipos Struct Solo de Lectura (\texttt{readonly struct})}
-\textbf{Problema:} En versiones anteriores, no había una forma explícita de declarar estructuras inmutables. Desde C\# 7.2, se introdujo el modificador \texttt{readonly struct} para indicar que una estructura es inmutable y debe pasarse como un parámetro \texttt{in}.
+\subsection*{Declaración de Tipos Struct Solo de Lectura (\texttt{readonly struct})}
+\textbf{Problema:} No había una forma explícita de declarar estructuras inmutables. Desde C\# 7.2, se introdujo el modificador \texttt{readonly struct} para indicar que una estructura es inmutable y debe pasarse como un parámetro \texttt{in}.
 
 \textbf{Solución:} Se agregó soporte para el modificador \texttt{readonly} en la declaración de estructuras.
 
-\subsection{Modificador \texttt{in} en Parámetros}
-\textbf{Problema:} En versiones anteriores, no era posible pasar argumentos por referencia sin permitir su modificación. Desde C\# 7.2, se introdujo el modificador \texttt{in}, que permite pasar argumentos por referencia sin permitir modificaciones.
+\subsection*{Modificador \texttt{in} en Parámetros}
+\textbf{Problema:} No era posible pasar argumentos por referencia sin permitir su modificación. Desde C\# 7.2, se introdujo el modificador \texttt{in}, que permite pasar argumentos por referencia sin permitir modificaciones.
 
 \textbf{Solución:} Se ajustó la regla \texttt{parameter\_modifier} para incluir el modificador \texttt{in}.
 
-\subsection{Modificador \texttt{ref readonly} en Retornos de Métodos}
-\textbf{Problema:} En versiones anteriores, no había una forma explícita de devolver referencias inmutables desde métodos. Desde C\# 7.2, se introdujo el modificador \texttt{ref readonly}, que permite devolver referencias inmutables.
+\subsection*{Modificador \texttt{ref readonly} en Retornos de Métodos}
+\textbf{Problema:} No había una forma explícita de devolver referencias inmutables desde métodos. Desde C\# 7.2, se introdujo el modificador \texttt{ref readonly}, que permite devolver referencias inmutables.
 
 \textbf{Solución:} Se agregó soporte para el modificador \texttt{ref readonly} en las reglas de retorno de métodos.
 
-\subsection{Declaración de Tipos Struct Referenciados (\texttt{ref struct})}
-\textbf{Problema:} En versiones anteriores, no había una forma explícita de declarar estructuras que accedan directamente a memoria administrada y deban ser asignadas en el stack. Desde C\# 7.2, se introdujo el modificador \texttt{ref struct}.
+\subsection*{Declaración de Tipos Struct Referenciados (\texttt{ref struct})}
+\textbf{Problema:} No había una forma explícita de declarar estructuras que accedan directamente a memoria administrada y deban ser asignadas en el stack. Desde C\# 7.2, se introdujo el modificador \texttt{ref struct}.
 
 \textbf{Solución:} Se agregó soporte para el modificador \texttt{ref struct} en la declaración de estructuras.
 
-\subsection{Más Restricciones Genéricas}
-\textbf{Problema:} En versiones anteriores, había limitaciones en las restricciones genéricas. Desde C\# 7.2, se introdujeron más restricciones genéricas para mejorar la flexibilidad.
-
-\textbf{Solución:} Se ajustaron las reglas gramaticales para permitir más restricciones genéricas.
-
-\subsection{Argumentos Nombrados No Finales}
+\subsection*{Argumentos Nombrados No Finales}
 \textbf{Problema:} En versiones anteriores, los argumentos nombrados debían colocarse al final de la lista de argumentos. Desde C\# 7.2, se permite mezclar argumentos posicionales y nombrados siempre que los posicionales estén primero.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para permitir argumentos nombrados no finales.
 
-\subsection{Guiones Bajos Iniciales en Literales Numéricos}
-\textbf{Problema:} En versiones anteriores, los literales numéricos no podían comenzar con guiones bajos (\texttt{\_}). Desde C\# 7.2, se permite usar guiones bajos iniciales antes de los dígitos impresos.
+\subsection*{Guiones Bajos Iniciales en Literales Numéricos}
+\textbf{Problema:} Los literales numéricos no podían comenzar con guiones bajos (\texttt{\_}). Desde C\# 7.2, se permite usar guiones bajos iniciales antes de los dígitos impresos.
 
 \textbf{Solución:} Se ajustó la gramática para permitir guiones bajos iniciales en literales numéricos.
 
-\subsection{Modificador \texttt{private protected}}
-\textbf{Problema:} En versiones anteriores, no había un modificador que combinara las restricciones de acceso \texttt{private} y \texttt{protected}. Desde C\# 7.2, se introdujo el modificador \texttt{private protected}, que permite acceso desde clases derivadas dentro del mismo ensamblado.
+\subsection*{Modificador \texttt{private protected}}
+\textbf{Problema:} No había un modificador que combinara las restricciones de acceso \texttt{private} y \texttt{protected}. Desde C\# 7.2, se introdujo el modificador \texttt{private protected}, que permite acceso desde clases derivadas dentro del mismo ensamblado.
 
 \textbf{Solución:} Se agregó soporte para el modificador \texttt{private protected} en las reglas de acceso.
 
-\subsection{Expresiones Condicionales por Referencia}
+\subsection*{Expresiones Condicionales por Referencia}
 \textbf{Problema:} En versiones anteriores, las expresiones condicionales (\texttt{?:}) no podían devolver referencias. Desde C\# 7.2, se permite que el resultado sea una referencia.
 
 \textbf{Solución:} Se ajustó la gramática para permitir expresiones condicionales por referencia.
 
 
-\section{C\# 7.3}
+\subsection{C\# 7.3}
 
-\subsection{Acceso a Campos Fijos Sin Fijación}
+\subsection*{Acceso a Campos Fijos Sin Fijación}
 \textbf{Problema:} En versiones anteriores de C\#, para acceder a campos fijos era necesario fijar la dirección de memoria. Desde C\# 7.3, se permite acceder a campos fijos sin necesidad de fijarlos explícitamente.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para permitir el acceso a campos fijos sin fijación.
 
-\subsection{Reasignación de Variables Locales Referenciadas}
-\textbf{Problema:} En versiones anteriores, no se podía reasignar variables locales referenciadas. Desde C\# 7.3, se permite la reasignación de variables locales que están marcadas como \texttt{ref}.
+\subsection*{Reasignación de Variables Locales Referenciadas}
+\textbf{Problema:} No se podía reasignar variables locales referenciadas. Desde C\# 7.3, se permite la reasignación de variables locales que están marcadas como \texttt{ref}.
 
 \textbf{Solución:} Se modificaron las reglas para permitir la reasignación de variables locales referenciadas.
 
-\subsection{Inicializadores en Arreglos Stackalloc}
-\textbf{Problema:} En versiones anteriores, no era posible utilizar inicializadores con arreglos creados con \texttt{stackalloc}. Desde C\# 7.3, se permite usar inicializadores en arreglos \texttt{stackalloc}.
+\subsection*{Inicializadores en Arreglos Stackalloc}
+\textbf{Problema:} No era posible utilizar inicializadores con arreglos creados con \texttt{stackalloc}. Desde C\# 7.3, se permite usar inicializadores en arreglos \texttt{stackalloc}.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para permitir inicializadores en arreglos \texttt{stackalloc}.
 
-\subsection{Sentencias Fijas con Tipos que Soportan Patrones}
-\textbf{Problema:} En versiones anteriores, las sentencias fijas solo podían usarse con tipos específicos. Desde C\# 7.3, se permiten sentencias fijas con cualquier tipo que soporte patrones.
+\subsection*{Sentencias Fijas con Tipos que Soportan Patrones}
+\textbf{Problema:} Las sentencias fijas solo podían usarse con tipos específicos. Desde C\# 7.3, se permiten sentencias fijas con cualquier tipo que soporte patrones.
 
 \textbf{Solución:} Se modificó la regla \texttt{fixed\_statement} para permitir el uso con cualquier tipo que soporte patrones.
 
-\subsection{Más Restricciones Genéricas}
-\textbf{Problema:} En versiones anteriores, había limitaciones en las restricciones genéricas. Desde C\# 7.3, se introdujeron más restricciones genéricas para mejorar la flexibilidad.
-
-\textbf{Solución:} Se ajustaron las reglas gramaticales para permitir más restricciones genéricas.
-
-\subsection{Pruebas con Tipos Tupla}
-\textbf{Problema:} En versiones anteriores, no se podía usar \texttt{==} y \texttt{!=} directamente con tipos tupla. Desde C\# 7.3, se permite comparar tuplas usando estos operadores.
+\subsection*{Pruebas con Tipos Tupla}
+\textbf{Problema:} No se podía usar \texttt{==} y \texttt{!=} directamente con tipos tupla. Desde C\# 7.3, se permite comparar tuplas usando estos operadores.
 
 \textbf{Solución:} Se modificaron las reglas para permitir comparaciones directas entre tipos tupla.
 
-\subsection{Uso de Variables de Expresión en Más Ubicaciones}
-\textbf{Problema:} En versiones anteriores, las variables de expresión tenían un alcance limitado. Desde C\# 7.3, se permite usar variables de expresión en más ubicaciones dentro del código.
+\subsection*{Uso de Variables de Expresión en Más Ubicaciones}
+\textbf{Problema:} Las variables de expresión tenían un alcance limitado. Desde C\# 7.3, se permite usar variables de expresión en más ubicaciones dentro del código.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para ampliar el uso de variables de expresión en diferentes contextos.
 
-\subsection{Atributos en Campos de Respaldo de Propiedades Implementadas Automáticamente}
-\textbf{Problema:} En versiones anteriores, no era posible aplicar atributos a los campos de respaldo de propiedades implementadas automáticamente. Desde C\# 7.3, se permite aplicar atributos a estos campos.
-
-\textbf{Solución:} Se modificó la regla \texttt{attribute} para permitir atributos en campos de respaldo.
-
-\subsection{Resolución de Métodos Mejorada al Usar Argumentos Diferentes por \texttt{in}}
-\textbf{Problema:} En versiones anteriores, la resolución de métodos al usar argumentos diferentes por \texttt{in} era confusa y poco clara. Desde C\# 7.3, se mejoró este aspecto.
+\subsection*{Resolución de Métodos Mejorada al Usar Argumentos Diferentes por \texttt{in}}
+\textbf{Problema:} La resolución de métodos al usar argumentos diferentes por \texttt{in} era confusa y poco clara. Desde C\# 7.3, se mejoró este aspecto.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para mejorar la resolución de métodos al usar argumentos por \texttt{in}.
 
-\subsection{Resolución de Sobrecargas con Menos Casos Ambiguos}
-\textbf{Problema:} En versiones anteriores, había muchos casos ambiguos al resolver sobrecargas de métodos. Desde C\# 7.3, se redujeron los casos ambiguos en la resolución de sobrecargas.
-
-\textbf{Solución:} Se mejoró el algoritmo de resolución en la gramática para reducir ambigüedades.
-
 \section{C\# 8}
 
-\subsection{Miembros Solo de Lectura}
-\textbf{Problema:} En versiones anteriores de C\#, no se podía definir miembros de solo lectura en las clases. Desde C\# 8, se introdujeron los miembros solo de lectura, que permiten que las propiedades sean inmutables después de su inicialización.
+\subsection*{Miembros Solo de Lectura \texttt{readonly}}
+\textbf{Problema:} No se podía definir miembros de solo lectura en las clases. Desde C\# 8, se introdujeron los miembros solo de lectura, que permiten que las propiedades sean inmutables después de su inicialización.
 
-\textbf{Solución:} Se modificó la regla \texttt{property\_declaration} para permitir miembros solo de lectura.
+\textbf{Solución:} Se modificó la regla \texttt{property\_declaration} para permitir miembros solo de lectura \texttt{readonly}.
 
-\subsection{Métodos de Interfaz por Defecto}
-\textbf{Problema:} En versiones anteriores de C\#, no era posible definir métodos en interfaces con una implementación por defecto. Desde C\# 8, se introdujeron métodos de interfaz por defecto, permitiendo que las interfaces contengan métodos implementados.
+\subsection*{Métodos de Interfaz por Defecto}
+\textbf{Problema:} No era posible definir métodos en interfaces con una implementación por defecto. Desde C\# 8, se introdujeron métodos de interfaz por defecto, permitiendo que las interfaces contengan métodos implementados.
 
 \textbf{Solución:} Se ajustó la regla \texttt{interface\_declaration} para permitir métodos de interfaz con implementación por defecto.
 
-\subsection{Mejoras en Coincidencia de Patrones}
+\subsection*{Mejoras en Coincidencia de Patrones}
 \textbf{Problema:} Las versiones anteriores de C\# tenían limitaciones en los patrones disponibles. Desde C\# 8, se introdujeron mejoras en la coincidencia de patrones, incluyendo expresiones \texttt{switch} y patrones de propiedades.
 
 \textbf{Solución:} Se expandieron las reglas \texttt{pattern} para incluir expresiones \texttt{switch} y patrones mejorados.
 
-\subsection{Patrones de Propiedades}
-\textbf{Problema:} En versiones anteriores, no había soporte para patrones que coincidieran con propiedades específicas. Desde C\# 8, se introdujeron patrones de propiedades para facilitar la coincidencia con las propiedades de un objeto.
+\subsection*{Patrones de Propiedades}
+\textbf{Problema:} No había soporte para patrones que coincidieran con propiedades específicas. Desde C\# 8, se introdujeron patrones de propiedades para facilitar la coincidencia con las propiedades de un objeto.
 
 \textbf{Solución:} Se modificó la regla \texttt{pattern} para incluir patrones que coincidan con propiedades.
 
-\subsection{Patrones Tupla}
-\textbf{Problema:} En versiones anteriores, no había soporte para coincidencias basadas en tuplas. Desde C\# 8, se introdujeron patrones tupla para facilitar la coincidencia con estructuras de tuplas.
+\subsection*{Patrones Tupla}
+\textbf{Problema:} No había soporte para coincidencias basadas en tuplas. Desde C\# 8, se introdujeron patrones tupla para facilitar la coincidencia con estructuras de tuplas.
 
 \textbf{Solución:} Se agregó soporte para patrones tupla en la regla \texttt{pattern}.
 
-\subsection{Patrones Posicionales}
-\textbf{Problema:} En versiones anteriores, no había soporte para patrones que coincidieran con la posición de los elementos. Desde C\# 8, se introdujeron patrones posicionales que permiten coincidir elementos en una posición específica.
+\subsection*{Patrones Posicionales}
+\textbf{Problema:} No había soporte para patrones que coincidieran con la posición de los elementos. Desde C\# 8, se introdujeron patrones posicionales que permiten coincidir elementos en una posición específica.
 
 \textbf{Solución:} Se agregó soporte para patrones posicionales en la regla \texttt{pattern}.
 
-\subsection{Declaraciones Using}
-\textbf{Problema:} En versiones anteriores, las declaraciones \texttt{using} debían estar al principio del archivo o dentro del bloque. Desde C\# 8, se permite utilizar declaraciones \texttt{using} dentro del bloque de código.
+\subsection*{Declaraciones Using}
+\textbf{Problema:} Las declaraciones \texttt{using} debían estar al principio del archivo o dentro del bloque. Desde C\# 8, se permite utilizar declaraciones \texttt{using} dentro del bloque de código.
 
 \textbf{Solución:} Se modificó la regla \texttt{using\_declaration} para permitir declaraciones \texttt{using} más flexibles.
 
-\subsection{Funciones Locales Estáticas}
+\subsection*{Funciones Locales Estáticas}
 \textbf{Problema:} Las funciones locales no podían ser estáticas antes. Desde C\# 8, se permite definir funciones locales como estáticas.
 
 \textbf{Solución:} Se agregó soporte para funciones locales estáticas en la gramática.
 
-\subsection{Estructuras Ref Descartables}
-\textbf{Problema:} En versiones anteriores, no había un manejo específico para estructuras ref descartables. Desde C\# 8, se introdujo el soporte para estructuras ref descartables que permiten un manejo más eficiente de la memoria.
+\subsection*{Estructuras Ref Descartables}
+\textbf{Problema:} No había un manejo específico para estructuras ref descartables. Desde C\# 8, se introdujo el soporte para estructuras ref descartables que permiten un manejo más eficiente de la memoria.
 
 \textbf{Solución:} Se modificó la regla \texttt{struct\_declaration} para permitir estructuras ref descartables.
 
-\subsection{Tipos Nullable Referencia}
-\textbf{Problema:} En versiones anteriores, todas las referencias eran consideradas no nulas. Desde C\# 8, se introdujo el concepto de tipos nullable referencia que permite indicar explícitamente si una referencia puede ser nula.
+\subsection*{Tipos Nullable Referencia}
+\textbf{Problema:} Todas las referencias eran consideradas no nulas. Desde C\# 8, se introdujo el concepto de tipos nullable referencia que permite indicar explícitamente si una referencia puede ser nula.
 
 \textbf{Solución:} Se ajustaron las reglas gramaticales para incluir el manejo de tipos nullable referencia.
 
-\subsection{Flujos Asincrónicos}
-\textbf{Problema:} En versiones anteriores, no había un manejo eficiente para flujos asincrónicos. Desde C\# 8, se introdujo el soporte para flujos asincrónicos que permite trabajar con secuencias de datos asincrónicas.
+\subsection*{Flujos Asincrónicos}
+\textbf{Problema:} No había un manejo eficiente para flujos asincrónicos. Desde C\# 8, se introdujo el soporte para flujos asincrónicos que permite trabajar con secuencias de datos asincrónicas.
 
 \textbf{Solución:} Se modificaron las reglas gramaticales para permitir flujos asincrónicos y su uso en bucles.
 
-\subsection{Índices y Rangos}
-\textbf{Problema:} En versiones anteriores, no había una forma sencilla de trabajar con índices y rangos en colecciones. Desde C\# 8, se introdujo el soporte para índices y rangos que facilita el acceso a elementos en colecciones.
+\subsection*{Índices y Rangos}
+\textbf{Problema:} No había una forma sencilla de trabajar con índices y rangos en colecciones. Desde C\# 8, se introdujo el soporte para índices y rangos que facilita el acceso a elementos en colecciones.
 
 \textbf{Solución:} Se agregó soporte para índices y rangos en la gramática.
 
-\subsection{Asignación Null-Coalescing}
-\textbf{Problema:} En versiones anteriores, no había una forma concisa de asignar valores cuando una variable es nula. Desde C\# 8, se introdujo el operador null-coalescing assignment (\texttt{??=}).
+\subsection*{Asignación Null-Coalescing}
+\textbf{Problema:} No había forma concisa de asignar valores cuando una variable es nula. Desde C\# 8, se introdujo el operador null-coalescing assignment (\texttt{??=}).
 
 \textbf{Solución:} Se ajustó la gramática para incluir el operador null-coalescing assignment.
 
-\subsection{Tipos Construidos No Administrados}
-\textbf{Problema:} En versiones anteriores, no había un manejo específico para tipos construidos no administrados. Desde C\# 8, se introdujo el soporte para tipos construidos no administrados que permiten trabajar con tipos sin administración del recolector de basura.
+\subsection*{Tipos Construidos No Administrados}
+\textbf{Problema:} No había un manejo específico para tipos construidos no administrados. Desde C\# 8, se introdujo el soporte para tipos construidos no administrados que permiten trabajar con tipos sin administración del recolector de basura.
 
 \textbf{Solución:} Se agregó soporte para tipos construidos no administrados en la gramática.
 
-\subsection{Stackalloc en Expresiones Anidadas}
-\textbf{Problema:} En versiones anteriores, no era posible usar \texttt{stackalloc} dentro de expresiones anidadas. Desde C\# 8, se permite usar \texttt{stackalloc} dentro de expresiones anidadas.
+\subsection*{Stackalloc en Expresiones Anidadas}
+\textbf{Problema:} No era posible usar \texttt{stackalloc} dentro de expresiones anidadas. Desde C\# 8, se permite usar \texttt{stackalloc} dentro de expresiones anidadas.
 
 \textbf{Solución:} Se ajustó la gramática para permitir el uso de \texttt{stackalloc} en expresiones anidadas.
 
-\subsection{Mejora en las Cadenas Interpoladas Verbatim}
+\subsection*{Mejora en las Cadenas Interpoladas Verbatim}
 \textbf{Problema:} Las cadenas interpoladas verbatim tenían limitaciones en su formato. Desde C\# 8, se mejoraron las cadenas interpoladas verbatim para permitir más flexibilidad al incluir expresiones complejas.
 
 \textbf{Solución:} Se modificó la regla \texttt{interpolated\_string\_expression} para mejorar el manejo de cadenas interpoladas verbatim.
@@ -287,331 +264,307 @@ Dado que el lenguaje C\# ha evolucionado considerablemente desde la versión 6.0
 
 \section{C\# 9}
 
-\subsection{Registros}
+\subsection*{Registros \texttt{record}}
 
-\textbf{Problema:} En versiones anteriores de C\#, no existía un tipo de datos específico para registros. Sin embargo, desde C\# 9, se introdujeron los registros, que son tipos de referencia inmutables que facilitan la creación de objetos con propiedades.
+\textbf{Problema:} No existía un tipo de datos específico para registros. Sin embargo, desde C\# 9, se introdujeron los registros, que son tipos de referencia inmutables que facilitan la creación de objetos con propiedades.
 
-\textbf{Solución:} Se modificó la regla \texttt{class\_declaration} para permitir la definición de registros.
+\textbf{Solución:} Se modificó la regla \texttt{class\_declaration} para permitir la definición de \texttt{record}.
 
-\subsection{Setters Solo de Inicialización}
+\subsection*{Setters Solo de Inicialización \texttt{init}}
 
-\textbf{Problema:} En versiones anteriores de C\#, todas las propiedades podían ser modificadas después de su inicialización. Desde C\# 9, se introdujo la posibilidad de definir propiedades con setters solo de inicialización, permitiendo que las propiedades sean asignadas solo durante la creación del objeto.
+\textbf{Problema:} Todas las propiedades podían ser modificadas después de su inicialización. Desde C\# 9, se introdujo la posibilidad de definir propiedades con setters solo de inicialización, permitiendo que las propiedades sean asignadas solo durante la creación del objeto.
 
 \textbf{Solución:} Se ajustó la regla \texttt{property\_declaration} para incluir el modificador \texttt{init}.
 
-\subsection{Declaraciones en Nivel Superior}
+\subsection*{Declaraciones en Nivel Superior}
 
-\textbf{Problema:} En versiones anteriores de C\#, el código debía estar contenido dentro de una clase o espacio de nombres. Desde C\# 9, se permite escribir declaraciones en nivel superior, lo que simplifica el código.
+\textbf{Problema:} El código debía estar contenido dentro de una clase o espacio de nombres. Desde C\# 9, se permite escribir declaraciones en nivel superior, lo que simplifica el código.
 
 \textbf{Solución:} Se modificó la gramática para permitir declaraciones en nivel superior sin necesidad de definir una clase.
 
-\subsection{Mejoras en Coincidencia de Patrones}
+\subsection*{Mejoras en Coincidencia de Patrones}
 
 \textbf{Problema:} Las versiones anteriores de C\# tenían limitaciones en los patrones disponibles. Desde C\# 9, se introdujeron mejoras en la coincidencia de patrones, incluyendo patrones relacionales y lógicos.
 
-\textbf{Solución:} Se expandieron las reglas \texttt{pattern} para incluir patrones relacionales y lógicos.
+\textbf{Solución:} Se expandieron las reglas \texttt{pattern} para incluir patrones relacionales (>, <, $\leq$, $\geq$) y lógicos(or, and, not).
 
-\subsection{Rendimiento e Interoperabilidad}
+\subsection*{Enteros de Tamaño Nativo}
 
-\textbf{Problema:} En versiones anteriores, las optimizaciones para el rendimiento y la interoperabilidad eran limitadas. Desde C\# 9, se han realizado mejoras significativas en estas áreas.
-
-\textbf{Solución:} Se implementaron mejoras en el manejo del rendimiento y la interoperabilidad a través de ajustes en las reglas gramaticales y optimizaciones internas.
-
-\subsection{Enteros de Tamaño Nativo}
-
-\textbf{Problema:} En versiones anteriores de C\#, no había un tipo específico para enteros que se adaptara al tamaño nativo del sistema. Desde C\# 9, se introdujeron enteros de tamaño nativo (\texttt{nint} y \texttt{nuint}).
+\textbf{Problema:} No había un tipo específico para enteros que se adaptara al tamaño nativo del sistema. Desde C\# 9, se introdujeron enteros de tamaño nativo (\texttt{nint} y \texttt{nuint}).
 
 \textbf{Solución:} Se agregó soporte para los tipos \texttt{nint} y \texttt{nuint} en la regla \texttt{type\_}.
 
-\subsection{Punteros a Funciones}
+\subsection*{Punteros a Funciones}
 
-\textbf{Problema:} En versiones anteriores de C\#, no era posible trabajar con punteros a funciones directamente. Desde C\# 9, se introdujo el soporte para punteros a funciones.
+\textbf{Problema:} No era posible trabajar con punteros a funciones directamente. Desde C\# 9, se introdujo el soporte para punteros a funciones.
 
 \textbf{Solución:} Se agregó soporte para punteros a funciones en las reglas correspondientes.
 
-\subsection{Suprimir el Emisión del Flag \texttt{localsinit}}
+\subsection*{Inicializadores de Módulo}
 
-\textbf{Problema:} En versiones anteriores, cada método emitía automáticamente un flag \texttt{localsinit}, lo que podía afectar el rendimiento. Desde C\# 9, se permite suprimir este flag.
+\textbf{Problema:} No había una forma específica de inicializar módulos. Desde C\# 9, se introdujeron inicializadores de módulo.
 
-\textbf{Solución:} Se ajustaron las reglas para permitir la supresión del flag \texttt{localsinit}.
+\textbf{Solución:} Se agregó soporte para inicializadores de módulo \texttt{[ModuleInitializer]} en la gramática.
 
-\subsection{Inicializadores de Módulo}
-
-\textbf{Problema:} En versiones anteriores, no había una forma específica de inicializar módulos. Desde C\# 9, se introdujeron inicializadores de módulo.
-
-\textbf{Solución:} Se agregó soporte para inicializadores de módulo en la gramática.
-
-\subsection{Nuevas Funciones para Métodos Parciales}
+\subsection*{Nuevas Funciones para Métodos Parciales}
 
 \textbf{Problema:} Las funciones parciales tenían limitaciones en su uso. Desde C\# 9, se introdujeron nuevas características para métodos parciales.
 
 \textbf{Solución:} Se ajustaron las reglas relacionadas con métodos parciales para incluir nuevas características.
 
-\subsection{Características de Ajuste y Terminación}
+\subsection*{Expresiones Nuevas con Tipos Objetivo}
 
-\textbf{Problema:} Las versiones anteriores carecían de ciertas características estéticas y funcionales. Desde C\# 9, se mejoraron varios aspectos visuales y funcionales del lenguaje.
-
-\textbf{Solución:} Se realizaron ajustes generales en la gramática y el formato del lenguaje.
-
-\subsection{Expresiones Nuevas con Tipos Objetivo}
-
-\textbf{Problema:} Antes de C\# 9, no había una forma concisa de crear instancias utilizando tipos objetivo. Desde esta versión, se permite crear expresiones tipadas directamente.
+\textbf{Problema:} No había una forma concisa de crear instancias utilizando tipos objetivo. Desde esta versión, se permite crear expresiones tipadas directamente.
 
 \textbf{Solución:} Se ajustó la gramática para permitir expresiones tipadas al usar \texttt{new}.
 
-\subsection{Funciones Anónimas Estáticas}
+\subsection*{Funciones Anónimas Estáticas}
 
 \textbf{Problema:} Las funciones anónimas no podían ser estáticas anteriormente. Sin embargo, desde C\# 9, se permite definir funciones anónimas como estáticas.
 
 \textbf{Solución:} Se agregó soporte para funciones anónimas estáticas en la gramática.
 
-\subsection{Expresiones Condicionales Tipadas por Objetivo}
+\subsection*{Expresiones Condicionales Tipadas por Objetivo}
 
 \textbf{Problema:} Las expresiones condicionales no podían ser tipadas por objetivo antes. Desde C\# 9, se permite que las expresiones condicionales tengan un tipo objetivo inferido.
 
 \textbf{Solución:} Se modificó la gramática para permitir expresiones condicionales tipadas por objetivo.
 
-\subsection{Tipos Retornados Covariantes}
+\subsection*{Tipos Retornados Covariantes}
 
-\textbf{Problema:} En versiones anteriores, los tipos retornados covariantes no eran compatibles. Sin embargo, desde C\# 9, se introdujo el soporte para tipos retornados covariantes en métodos virtuales o sobrescritos.
+\textbf{Problema:} Los tipos retornados covariantes \( c \, ? \, e_1 \, : \, e_2 \)
+ no eran compatibles. Sin embargo, desde C\# 9, se introdujo el soporte para tipos retornados covariantes en métodos virtuales o sobrescritos.
 
 \textbf{Solución:} Se ajustó la regla \texttt{method\_declaration} para permitir tipos retornados covariantes.
 
-\subsection{Soporte para Extensiones GetEnumerator en Bucles \texttt{foreach}}
+\subsection*{Soporte para Extensiones GetEnumerator en Bucles \texttt{foreach}}
 
-\textbf{Problema:} Antes de C\# 9, el bucle \texttt{foreach} requería que las colecciones implementaran explícitamente \texttt{IEnumerable}. Con esta versión, se permite un soporte más flexible mediante extensiones \texttt{GetEnumerator}.
+\textbf{Problema:} El bucle \texttt{foreach} requería que las colecciones implementaran explícitamente \texttt{IEnumerable}. Con esta versión, se permite un soporte más flexible mediante extensiones \texttt{GetEnumerator}.
 
 \textbf{Solución:} Se modificó la regla correspondiente al bucle \texttt{foreach} para incluir soporte para extensiones \texttt{GetEnumerator}.
 
-\subsection{Parámetros Descartados en Lambdas}
+\subsection*{Parámetros Descartados en Lambdas}
 
-\textbf{Problema:} En versiones anteriores, los parámetros descartados no eran compatibles en expresiones lambda. Sin embargo, desde C\# 9, se permite usar parámetros descartados (\texttt{\_}) en lambdas.
+\textbf{Problema:} Los parámetros descartados no eran compatibles en expresiones lambda. Sin embargo, desde C\# 9, se permite usar parámetros descartados (\texttt{\_}) en lambdas.
 
 \textbf{Solución:} Se ajustó la regla \texttt{lambda\_expression} para permitir parámetros descartados.
 
-\subsection{Atributos en Funciones Locales}
+\subsection*{Atributos en Funciones Locales}
 
 \textbf{Problema:} Anteriormente no era posible aplicar atributos a funciones locales. Sin embargo, desde C\# 9, se permite aplicar atributos a funciones locales definidas dentro de métodos.
 
 \textbf{Solución:} Se modificó la regla correspondiente a los atributos para permitir su uso en funciones locales.
 
+\subsection*{Uso del operador \texttt{with}}
+\textbf{Problema:} Antes de C\# 9.0, no existía una forma concisa y directa de crear copias de objetos inmutables con algunas propiedades modificadas. Esto dificultaba la manipulación de objetos inmutables, ya que requería la creación manual de nuevos objetos con las propiedades deseadas.
+
+\textbf{Solución:} Se modificó la regla \texttt{object\_initializer} para permitir el uso del operador \texttt{with}, que permite a los desarrolladores crear un nuevo objeto basado en uno existente y modificar solo las propiedades especificadas. Esto se implementó mediante la adición de una nueva regla \texttt{with\_expression} en la gramática, que permite la sintaxis \texttt{objeto with \{ propiedad = valor \}}.
+
 \section{C\# 10}
 
-\subsection{Estructuras de Registro}
-\textbf{Problema:} En versiones anteriores de C\#, las estructuras de registro no estaban disponibles. Sin embargo, desde C\# 10, se introdujeron las estructuras de registro, que permiten definir estructuras con características de registro.
+\subsection*{Estructuras de Registro \texttt{record struct}}
+\textbf{Problema:} Las estructuras de registro no estaban disponibles. Sin embargo, desde C\# 10, se introdujeron las estructuras de registro, que permiten definir estructuras con características de registro.
 
 \textbf{Solución:} Se modificó la regla \texttt{struct\_declaration} para permitir estructuras de registro.
 
-\subsection{Mejoras en Tipos de Estructura}
-\textbf{Problema:} En versiones anteriores de C\#, los tipos de estructura no tenían tantas características como las clases. Sin embargo, desde C\# 10, se mejoraron los tipos de estructura para que puedan incluir más funcionalidades.
-
-\textbf{Solución:} Se modificó la regla \texttt{struct\_declaration} para permitir más características en estructuras.
-
-\subsection{Manejadores de Cadenas Interpoladas}
-\textbf{Problema:} En versiones anteriores de C\#, no había una forma explícita de manejar las cadenas interpoladas. Sin embargo, desde C\# 10, se introdujeron los manejadores de cadenas interpoladas para mejorar su manejo.
+\subsection*{Manejadores de Cadenas Interpoladas}
+\textbf{Problema:} No había una forma explícita de manejar las cadenas interpoladas. Sin embargo, desde C\# 10, se introdujeron los manejadores de cadenas interpoladas para mejorar su manejo.
 
 \textbf{Solución:} Se ajustó la regla \texttt{interpolated\_string\_expression} para reconocer correctamente las expresiones dentro de cadenas interpoladas.
 
-\subsection{Directivas \texttt{using} Globales}
-\textbf{Problema:} En versiones anteriores de C\#, las directivas \texttt{using} debían estar dentro de un espacio de nombres. Sin embargo, desde C\# 10, se permiten directivas \texttt{using} globales que pueden aplicarse a todo el archivo.
+\subsection*{Directivas \texttt{using} Globales}
+\textbf{Problema:} Las directivas \texttt{using} debían estar dentro de un espacio de nombres. Sin embargo, desde C\# 10, se permiten directivas \texttt{using} globales que pueden aplicarse a todo el archivo.
 
 \textbf{Solución:} Se modificó la regla \texttt{using\_directive} para permitir directivas \texttt{using} globales.
 
-\subsection{Declaración de Espacios de Nombres a Nivel de Archivo}
-\textbf{Problema:} En versiones anteriores de C\#, los espacios de nombres debían declararse utilizando llaves (\texttt{\{\}}). Sin embargo, desde C\# 10, también es posible declararlos con punto y coma (\texttt{;}), permitiendo definiciones más concisas.
+\subsection*{Declaración de Espacios de Nombres \texttt{namespace} a Nivel de Archivo}
+\textbf{Problema:} Los espacios de nombres debían declararse utilizando llaves (\texttt{\{\}}). Sin embargo, desde C\# 10, también es posible declararlos con punto y coma (\texttt{;}), permitiendo definiciones más concisas.
 
 \textbf{Solución:} Se amplió la regla \texttt{namespace\_declaration} para soportar ambas sintaxis.
 
-\subsection{Patrones de Propiedades Extendidos}
-\textbf{Problema:} En versiones anteriores de C\#, los patrones de propiedades no eran tan flexibles. Sin embargo, desde C\# 10, se extendieron los patrones de propiedades para permitir más flexibilidad en la coincidencia de patrones.
+\subsection*{Patrones de Propiedades Extendidos}
+\textbf{Problema:} Los patrones de propiedades no eran tan flexibles. Sin embargo, desde C\# 10, se extendieron los patrones de propiedades para permitir más flexibilidad en la coincidencia de patrones.
 
-\textbf{Solución:} Se modificó la regla \texttt{pattern} para soportar patrones de propiedades extendidos.
+\textbf{Solución:} Se modificó la regla \texttt{pattern} para soportar patrones de propiedades extendidos \texttt{property\_pattern}.
 
-\subsection{Expresiones Lambda con Tipo Natural}
-\textbf{Problema:} En versiones anteriores de C\#, las expresiones lambda debían tener un tipo explícito. Sin embargo, desde C\# 10, se permite que las expresiones lambda tengan un tipo natural, donde el compilador puede inferir el tipo delegado.
+\subsection*{Expresiones Lambda con Tipo Natural}
+\textbf{Problema:} Las expresiones lambda debían tener un tipo explícito. Sin embargo, desde C\# 10, se permite que las expresiones lambda tengan un tipo natural, donde el compilador puede inferir el tipo delegado.
 
 \textbf{Solución:} Se modificó la regla \texttt{lambda\_expression} para permitir tipos naturales en expresiones lambda.
 
-\subsection{Expresiones Lambda con Tipo de Retorno Explícito}
-\textbf{Problema:} En versiones anteriores de C\#, las expresiones lambda no podían declarar un tipo de retorno explícito. Sin embargo, desde C\# 10, se permite que las expresiones lambda declaren un tipo de retorno cuando el compilador no puede inferirlo.
+\subsection*{Expresiones Lambda con Tipo de Retorno Explícito}
+\textbf{Problema:} Las expresiones lambda no podían declarar un tipo de retorno explícito. Sin embargo, desde C\# 10, se permite que las expresiones lambda declaren un tipo de retorno cuando el compilador no puede inferirlo.
 
 \textbf{Solución:} Se modificó la regla \texttt{lambda\_expression} para permitir tipos de retorno explícitos.
 
-\subsection{Atributos en Expresiones Lambda}
-\textbf{Problema:} En versiones anteriores de C\#, los atributos no podían aplicarse a expresiones lambda. Sin embargo, desde C\# 10, se permite aplicar atributos a expresiones lambda.
+\subsection*{Atributos en Expresiones Lambda}
+\textbf{Problema:} Los atributos no podían aplicarse a expresiones lambda. Sin embargo, desde C\# 10, se permite aplicar atributos a expresiones lambda.
 
 \textbf{Solución:} Se modificó la regla \texttt{lambda\_expression} para permitir atributos.
 
-\subsection{Inicialización de Cadenas Constantes con Interpolación}
-\textbf{Problema:} En versiones anteriores de C\#, las cadenas constantes no podían inicializarse con interpolación. Sin embargo, desde C\# 10, se permite inicializar cadenas constantes utilizando interpolación si todos los marcadores son cadenas constantes.
+\subsection*{Inicialización de Cadenas Constantes con Interpolación}
+\textbf{Problema:} Las cadenas constantes no podían inicializarse con interpolación. Sin embargo, desde C\# 10, se permite inicializar cadenas constantes utilizando interpolación si todos los marcadores son cadenas constantes.
 
 \textbf{Solución:} Se ajustó la regla \texttt{constant\_expression} para permitir interpolación en cadenas constantes.
 
-\subsection{Modificador \texttt{sealed} en \texttt{ToString} de Registros}
-\textbf{Problema:} En versiones anteriores de C\#, no había una forma explícita de sellar el método \texttt{ToString} en tipos de registro. Sin embargo, desde C\# 10, se permite agregar el modificador \texttt{sealed} cuando se sobrescribe \texttt{ToString} en un tipo de registro.
+\subsection*{Modificador \texttt{sealed} en \texttt{ToString} de Registros}
+\textbf{Problema:} No había una forma explícita de sellar el método \texttt{ToString} en tipos de registro. Sin embargo, desde C\# 10, se permite agregar el modificador \texttt{sealed} cuando se sobrescribe \texttt{ToString} en un tipo de registro.
 
 \textbf{Solución:} Se modificó la regla \texttt{method\_declaration} para permitir el modificador \texttt{sealed} en \texttt{ToString}.
 
-\subsection{Advertencias para Asignación Definida y Análisis de Estado Nulo}
-\textbf{Problema:} En versiones anteriores de C\#, las advertencias para asignación definida y análisis de estado nulo no eran tan precisas. Sin embargo, desde C\# 10, se mejoraron estas advertencias para ser más precisas.
+\subsection*{Advertencias para Asignación Definida y Análisis de Estado Nulo}
+\textbf{Problema:} Las advertencias para asignación definida y análisis de estado nulo no eran tan precisas. Sin embargo, desde C\# 10, se mejoraron estas advertencias para ser más precisas.
 
 \textbf{Solución:} Se ajustó la regla \texttt{expression} para mejorar las advertencias relacionadas con la asignación definida y el análisis de estado nulo.
 
-\subsection{Declaración y Asignación en Deconstrucción}
-\textbf{Problema:} En versiones anteriores de C\#, la deconstrucción solo permitía declarar variables. Sin embargo, desde C\# 10, se permite tanto declarar como asignar valores en la misma deconstrucción.
+\subsection*{Declaración y Asignación en Deconstrucción}
+\textbf{Problema:} La deconstrucción solo permitía declarar variables. Sin embargo, desde C\# 10, se permite tanto declarar como asignar valores en la misma deconstrucción.
 
 \textbf{Solución:} Se modificó la regla \texttt{deconstruction\_expression} para permitir tanto declaraciones como asignaciones.
 
-\subsection{Atributo \texttt{AsyncMethodBuilder}}
-\textbf{Problema:} En versiones anteriores de C\#, no había una forma explícita de marcar métodos como constructores de métodos asíncronos. Sin embargo, desde C\# 10, se introdujo el atributo \texttt{AsyncMethodBuilder} para indicar métodos que construyen métodos asíncronos.
+\subsection*{Atributo \texttt{AsyncMethodBuilder}}
+\textbf{Problema:} No había una forma explícita de marcar métodos como constructores de métodos asíncronos. Sin embargo, desde C\# 10, se introdujo el atributo \texttt{AsyncMethodBuilder} para indicar métodos que construyen métodos asíncronos.
 
 \textbf{Solución:} Se agregó soporte para el atributo \texttt{AsyncMethodBuilder}.
 
-\subsection{Atributo \texttt{CallerArgumentExpression}}
-\textbf{Problema:} En versiones anteriores de C\#, no había una forma explícita de obtener la expresión del argumento del llamador. Sin embargo, desde C\# 10, se introdujo el atributo \texttt{CallerArgumentExpression} para obtener esta información.
+\subsection*{Atributo \texttt{CallerArgumentExpression}}
+\textbf{Problema:} No había una forma explícita de obtener la expresión del argumento del llamador. Sin embargo, desde C\# 10, se introdujo el atributo \texttt{CallerArgumentExpression} para obtener esta información.
 
 \textbf{Solución:} Se agregó soporte para el atributo \texttt{CallerArgumentExpression}.
 
-\subsection{Nuevo Formato para la Directiva \texttt{\#line}}
-\textbf{Problema:} En versiones anteriores de C\#, la directiva \texttt{\#line} no tenía un formato flexible. Sin embargo, desde C\# 10, se introdujo un nuevo formato para esta directiva que permite más flexibilidad.
+\subsection*{Nuevo Formato para la Directiva \texttt{\#line}}
+\textbf{Problema:} La directiva \texttt{\#line} no tenía un formato flexible. Sin embargo, desde C\# 10, se introdujo un nuevo formato para esta directiva que permite más flexibilidad.
 
 \textbf{Solución:} Se modificó la regla \texttt{line\_directive} para soportar el nuevo formato.
 
 
 \section{C\# 11}
 
-\subsection{Literales de Cadena Raw}
+\subsection*{Literales de Cadena Raw}
 
-\textbf{Problema:} En versiones anteriores de C\#, las cadenas literales no podían contener caracteres especiales sin escaparlos. Sin embargo, desde C\# 11, se introdujeron los literales de cadena raw, que permiten cadenas sin necesidad de escapar caracteres especiales.
+\textbf{Problema:} Las cadenas literales no podían contener caracteres especiales sin escaparlos. Sin embargo, desde C\# 11, se introdujeron los literales de cadena raw, que permiten cadenas sin necesidad de escapar caracteres especiales.
 
 \textbf{Solución:} Se agregó soporte para los literales de cadena raw en la regla \texttt{string\_literal}.
 
-\subsection{Soporte Genérico para Operaciones Matemáticas}
+\subsection*{Soporte Genérico para Operaciones Matemáticas}
 
-\textbf{Problema:} En versiones anteriores de C\#, las operaciones matemáticas no podían ser genéricas. Sin embargo, desde C\# 11, se introdujo el soporte genérico para operaciones matemáticas, permitiendo definir métodos que trabajen con tipos numéricos genéricos.
+\textbf{Problema:} Las operaciones matemáticas no podían ser genéricas. Sin embargo, desde C\# 11, se introdujo el soporte genérico para operaciones matemáticas, permitiendo definir métodos que trabajen con tipos numéricos genéricos.
 
 \textbf{Solución:} Se modificó la regla \texttt{type\_} para permitir tipos genéricos en operaciones matemáticas.
 
-\subsection{Atributos Genéricos}
+\subsection*{Atributos Genéricos}
 
-\textbf{Problema:} En versiones anteriores de C\#, los atributos no podían ser genéricos. Sin embargo, desde C\# 11, se introdujo el soporte para atributos genéricos, permitiendo definir atributos que acepten tipos genéricos.
+\textbf{Problema:} Los atributos no podían ser genéricos. Sin embargo, desde C\# 11, se introdujo el soporte para atributos genéricos, permitiendo definir atributos que acepten tipos genéricos.
 
 \textbf{Solución:} Se modificó la regla \texttt{attribute} para permitir atributos genéricos.
 
-\subsection{Literales de Cadena UTF-8}
+\subsection*{Literales de Cadena UTF-8}
 
-\textbf{Problema:} En versiones anteriores de C\#, las cadenas literales no podían especificar codificación UTF-8 explícitamente. Sin embargo, desde C\# 11, se introdujo el soporte para literales de cadena UTF-8, permitiendo especificar la codificación explícitamente.
+\textbf{Problema:} Las cadenas literales no podían especificar codificación UTF-8 explícitamente. Sin embargo, desde C\# 11, se introdujo el soporte para literales de cadena UTF-8, permitiendo especificar la codificación explícitamente.
 
 \textbf{Solución:} Se agregó soporte para literales de cadena UTF-8 en la regla \texttt{string\_literal}.
 
-\subsection{Saltos de Línea en Expresiones Interpoladas}
+\subsection*{Saltos de Línea en Expresiones Interpoladas}
 
-\textbf{Problema:} En versiones anteriores de C\#, las expresiones interpoladas no permitían saltos de línea dentro de la cadena. Sin embargo, desde C\# 11, se permite incluir saltos de línea en expresiones interpoladas.
+\textbf{Problema:} Las expresiones interpoladas no permitían saltos de línea dentro de la cadena. Sin embargo, desde C\# 11, se permite incluir saltos de línea en expresiones interpoladas.
 
 \textbf{Solución:} Se modificó la regla \texttt{interpolated\_string\_expression} para permitir saltos de línea.
 
-\subsection{Patrones de Lista}
+\subsection*{Patrones de Lista}
 
-\textbf{Problema:} En versiones anteriores de C\#, los patrones no podían aplicarse a listas. Sin embargo, desde C\# 11, se introdujo el soporte para patrones de lista, permitiendo comparar listas con patrones específicos.
+\textbf{Problema:} Los patrones no podían aplicarse a listas. Sin embargo, desde C\# 11, se introdujo el soporte para patrones de lista, permitiendo comparar listas con patrones específicos.
 
 \textbf{Solución:} Se agregó soporte para patrones de lista en la regla \texttt{pattern}.
 
-\subsection{Tipos Locales a Archivo}
+\subsection*{Tipos Locales a Archivo}
 
-\textbf{Problema:} En versiones anteriores de C\#, los tipos definidos debían ser accesibles desde cualquier parte del archivo. Sin embargo, desde C\# 11, se introdujo el soporte para tipos locales a archivo, permitiendo definir tipos que solo sean accesibles dentro del mismo archivo.
+\textbf{Problema:} Los tipos definidos debían ser accesibles desde cualquier parte del archivo. Sin embargo, desde C\# 11, se introdujo el soporte para tipos locales a archivo, permitiendo definir tipos que solo sean accesibles dentro del mismo archivo.
 
 \textbf{Solución:} Se modificó la regla \texttt{class\_definition} para permitir tipos locales a archivo.
 
-\subsection{Miembros Obligatorios}
+\subsection*{Miembros Obligatorios}
 
-\textbf{Problema:} En versiones anteriores de C\#, no había una forma explícita de marcar miembros como obligatorios. Sin embargo, desde C\# 11, se introdujo el soporte para miembros obligatorios, permitiendo definir miembros que deben ser inicializados.
+\textbf{Problema:} No había una forma explícita de marcar miembros como obligatorios. Sin embargo, desde C\# 11, se introdujo el soporte para miembros obligatorios, permitiendo definir miembros que deben ser inicializados.
 
 \textbf{Solución:} Se agregó soporte para miembros obligatorios en la regla \texttt{property\_declaration}.
 
-\subsection{Estructuras con Valores Predeterminados}
+\subsection*{Estructuras con Valores Predeterminados}
 
-\textbf{Problema:} En versiones anteriores de C\#, las estructuras no tenían valores predeterminados. Sin embargo, desde C\# 11, se introdujo el soporte para estructuras con valores predeterminados, permitiendo que las estructuras tengan valores por defecto.
+\textbf{Problema:} Las estructuras no tenían valores predeterminados. Sin embargo, desde C\# 11, se introdujo el soporte para estructuras con valores predeterminados, permitiendo que las estructuras tengan valores por defecto.
 
 \textbf{Solución:} Se modificó la regla \texttt{struct\_declaration} para permitir valores predeterminados en estructuras.
 
-\subsection{Coincidencia de Patrones con \texttt{Span\textless char\textgreater}}
+\subsection*{Coincidencia de Patrones con \texttt{Span\textless char\textgreater}}
 
-\textbf{Problema:} En versiones anteriores de C\#, los patrones no podían aplicarse a \texttt{Span\textless char\textgreater}. Sin embargo, desde C\# 11, se introdujo el soporte para coincidir patrones con \texttt{Span\textless char\textgreater}.
+\textbf{Problema:} Los patrones no podían aplicarse a \texttt{Span\textless char\textgreater}. Sin embargo, desde C\# 11, se introdujo el soporte para coincidir patrones con \texttt{Span\textless char\textgreater}.
 
 \textbf{Solución:} Se agregó soporte para patrones con \texttt{Span\textless char\textgreater} en la regla \texttt{pattern}.
 
-\subsection{Alcance Extendido de \texttt{nameof}}
+\subsection*{Alcance Extendido de \texttt{nameof}}
 
-\textbf{Problema:} En versiones anteriores de C\#, el operador \texttt{nameof} solo podía aplicarse a nombres de tipos y miembros. Sin embargo, desde C\# 11, se extendió el alcance de \texttt{nameof} para permitir su uso en más contextos.
+\textbf{Problema:} El operador \texttt{nameof} solo podía aplicarse a nombres de tipos y miembros. Sin embargo, desde C\# 11, se extendió el alcance de \texttt{nameof} para permitir su uso en más contextos.
 
 \textbf{Solución:} Se modificó la regla \texttt{expression} para permitir el uso extendido de \texttt{nameof}.
 
-\subsection{Tipo \texttt{IntPtr} Numérico}
+\subsection*{Tipo \texttt{IntPtr} Numérico}
 
-\textbf{Problema:} En versiones anteriores de C\#, el tipo \texttt{IntPtr} no era numérico. Sin embargo, desde C\# 11, se introdujo el soporte para que \texttt{IntPtr} sea un tipo numérico.
+\textbf{Problema:} El tipo \texttt{IntPtr} no era numérico. Sin embargo, desde C\# 11, se introdujo el soporte para que \texttt{IntPtr} sea un tipo numérico.
 
 \textbf{Solución:} Se modificó la regla \texttt{type\_} para permitir que \texttt{IntPtr} sea un tipo numérico.
 
-\subsection{Campos \texttt{ref} y \texttt{scoped ref}}
+\subsection*{Campos \texttt{ref} y \texttt{scoped ref}}
 
-\textbf{Problema:} En versiones anteriores de C\#, los campos no podían ser \texttt{ref}. Sin embargo, desde C\# 11, se introdujo el soporte para campos \texttt{ref} y \texttt{scoped ref}, permitiendo definir campos que se comporten como referencias.
+\textbf{Problema:} Los campos no podían ser \texttt{ref}. Sin embargo, desde C\# 11, se introdujo el soporte para campos \texttt{ref} y \texttt{scoped ref}, permitiendo definir campos que se comporten como referencias.
 
 \textbf{Solución:} Se agregó soporte para campos \texttt{ref} en la regla \texttt{field\_declaration}.
 
-\subsection{Mejora en la Conversión de Grupos de Métodos a Delegados}
+\subsection*{Mejora en la Conversión de Grupos de Métodos a Delegados}
 
-\textbf{Problema:} En versiones anteriores de C\#, la conversión de grupos de métodos a delegados no era tan flexible. Sin embargo, desde C\# 11, se mejoró esta conversión para permitir más flexibilidad en la asignación de métodos a delegados.
+\textbf{Problema:} La conversión de grupos de métodos a delegados no era tan flexible. Sin embargo, desde C\# 11, se mejoró esta conversión para permitir más flexibilidad en la asignación de métodos a delegados.
 
 \textbf{Solución:} Se modificó la regla \texttt{expression} para mejorar la conversión de grupos de métodos a delegados.
 
-\subsection{Ola de Advertencias 7}
-
-\textbf{Problema:} En versiones anteriores de C\#, no había una forma explícita de marcar características experimentales. Sin embargo, desde C\# 11, se introdujo la ola de advertencias 7 para indicar características experimentales.
-
-\textbf{Solución:} Se agregó soporte para la ola de advertencias 7 en la regla \texttt{attribute}.
-
-
 \section{C\# 12}
 
-\subsection{Constructores Primarios}
+\subsection*{Constructores Primarios}
 
-\textbf{Problema:} En versiones anteriores de C\#, los constructores deb\'ian definirse expl\'icitamente dentro de una clase o estructura. Desde C\# 12, se permite crear constructores primarios en cualquier tipo de clase o estructura.
+\textbf{Problema:} Los constructores deb\'ian definirse expl\'icitamente dentro de una clase o estructura. Desde C\# 12, se permite crear constructores primarios en cualquier tipo de clase o estructura.
 
 \textbf{Soluci\'on:} Se modific\'o la regla \texttt{class\_definition} para permitir constructores primarios. Esto simplifica la definici\'on de clases y estructuras al combinar la declaraci\'on de par\'ametros con la inicializaci\'on de campos.
 
-\subsection{Expresiones de Colecci\'on}
+\subsection*{Expresiones de Colecci\'on}
 
-\textbf{Problema:} En versiones anteriores de C\#, las colecciones se creaban utilizando el operador \texttt{new[]}. Desde C\# 12, se introdujo una nueva sintaxis para expresiones de colecci\'on, incluyendo el elemento de propagaci\'on (\texttt{..e}).
+\textbf{Problema:} Las colecciones se creaban utilizando el operador \texttt{new[]}. Desde C\# 12, se introdujo una nueva sintaxis para expresiones de colecci\'on, incluyendo el elemento de propagaci\'on (\texttt{..e}).
 
 \textbf{Soluci\'on:} Se agreg\'o una nueva regla para soportar las expresiones de colecci\'on, definiendo la sintaxis de colecciones en l\'inea y el operador de propagaci\'on (\texttt{..e}).
 
-\subsection{Arrays en L\'inea}
+\subsection*{Arrays en L\'inea}
 
-\textbf{Problema:} En versiones anteriores de C\#, los arrays deb\'ian declararse con un tama\~no fijo utilizando llaves (\texttt{\{}). Desde C\# 12, se permite declarar arrays en l\'inea dentro de estructuras.
+\textbf{Problema:} Los arrays deb\'ian declararse con un tama\~no fijo utilizando llaves (\texttt{\{}). Desde C\# 12, se permite declarar arrays en l\'inea dentro de estructuras.
 
 \textbf{Soluci\'on:} Se modific\'o la regla \texttt{type\_} para permitir arrays en l\'inea, simplificando la declaraci\'on de estructuras con arrays de tama\~no fijo.
 
-\subsection{Par\'ametros Opcionales en Expresiones Lambda}
+\subsection*{Par\'ametros Opcionales en Expresiones Lambda}
 
-\textbf{Problema:} En versiones anteriores de C\#, los par\'ametros en expresiones lambda no pod\'ian ser opcionales. Desde C\# 12, se permite el uso de par\'ametros opcionales en expresiones lambda.
+\textbf{Problema:}Los par\'ametros en expresiones lambda no pod\'ian ser opcionales. Desde C\# 12, se permite el uso de par\'ametros opcionales en expresiones lambda.
 
 \textbf{Soluci\'on:} Se actualiz\'o la regla \texttt{explicit\_anonymous\_function\_parameter} para soportar par\'ametros opcionales.
 
-\subsection{Par\'ametros \texttt{ref readonly}}
+\subsection*{Par\'ametros \texttt{ref readonly}}
 
-\textbf{Problema:} En versiones anteriores de C\#, los par\'ametros en expresiones lambda no pod\'ian ser \texttt{ref readonly}. Desde C\# 12, se permite el uso de par\'ametros \texttt{ref readonly} en expresiones lambda.
+\textbf{Problema:} Los par\'ametros en expresiones lambda no pod\'ian ser \texttt{ref readonly}. Desde C\# 12, se permite el uso de par\'ametros \texttt{ref readonly} en expresiones lambda.
 
 \textbf{Soluci\'on:} Se modific\'o la regla \texttt{explicit\_anonymous\_function\_parameter} para soportar par\'ametros \texttt{ref readonly}.
 
-\subsection{Alias Any Type}
+\subsection*{Alias Any Type}
 
-\textbf{Problema:} En versiones anteriores de C\#, el alias de tipo solo se pod\'ia utilizar con tipos nombrados. Desde C\# 12, se permite utilizar el alias de tipo con cualquier tipo.
+\textbf{Problema:} El alias de tipo solo se pod\'ia utilizar con tipos nombrados. Desde C\# 12, se permite utilizar el alias de tipo con cualquier tipo.
 
 \textbf{Soluci\'on:} Se actualiz\'o la regla \texttt{using\_directive} para permitir alias de cualquier tipo.
 
-\subsection{Atributo Experimental}
+\subsection*{Atributo Experimental}
 
-\textbf{Problema:} En versiones anteriores de C\#, no hab\'ia una forma expl\'icita de marcar caracter\'isticas experimentales. Desde C\# 12, se introdujo el atributo \texttt{Experimental}.
+\textbf{Problema:} No hab\'ia una forma expl\'icita de marcar caracter\'isticas experimentales. Desde C\# 12, se introdujo el atributo \texttt{Experimental}.
 
 \textbf{Soluci\'on:} Se agreg\'o soporte para el atributo \texttt{Experimental}.
 
@@ -829,108 +782,163 @@ En el contexto del análisis de similitud de código, los nombres de variables, 
 
 \chapter{Redes Neuronales Siamesas para la Similitud de Código}\label{chapter:proposal}
 
-Las redes neuronales siamesas se emplearon para analizar y capturar tanto la estructura como el comportamiento lógico del código. Este enfoque facilita la identificación de patrones y relaciones que trascienden las comparaciones textuales o sintácticas, proporcionando una mayor precisión en los resultados obtenidos. En este capítulo se detallan los componentes esenciales de esta arquitectura y el proceso llevado a cabo para su entrenamiento.
+Las redes neuronales siamesas se emplearon para analizar y capturar tanto la estructura como el comportamiento lógico del código. Este enfoque facilita la identificación de patrones, relaciones textuales y sintácticas, proporcionando una mayor precisión en los resultados obtenidos. En este capítulo se detallan los componentes esenciales de esta arquitectura y el proceso llevado a cabo para su entrenamiento.
 
+\section{Concepto de Red Siamesa}
 
-\section{Estructura de la Red Neuronal Siamesa}
-
-La red neuronal siamesa utilizada está compuesta por dos subredes idénticas que comparten parámetros y pesos, una propiedad que garantiza que ambas subredes procesen las entradas de manera uniforme. Cada subred recibe como entrada un vector de características derivado del Árbol de Sintaxis Abstracta (AST) del código fuente, transformado previamente en una representación numérica adecuada para su procesamiento mediante redes neuronales. Este enfoque permite abstraer detalles superficiales del código, como nombres de variables o cambios en el formato, enfocándose en aspectos estructurales y funcionales que capturan la lógica del programa.
-
-La arquitectura base de cada subred incluye capas de convolución unidimensional (Conv1D), las cuales son  utilizadas para capturar patrones locales en secuencias de datos. Estas capas están diseñadas para procesar vectores de entrada de forma eficiente y extraer características significativas mediante la convolución, seguida de operaciones de *pooling* que reducen la dimensionalidad y retienen las características más relevantes. La estructura general de la subred se describe como sigue:
-
+Una red neuronal siamesa consta de dos subredes idénticas que procesan dos entradas en paralelo y producen representaciones vectoriales latentes. La arquitectura básica es la siguiente:
 \begin{itemize}
-    \item Una capa de \textit{Conv1D} con 16 filtros y un tamaño de kernel de 8, activada mediante ReLU, seguida de una operación de \textit{max pooling} con un tamaño de ventana de 2.
-    \item Una segunda capa de \textit{Conv1D} con 32 filtros y un tamaño de kernel de 4, también activada mediante ReLU, seguida de \textit{max pooling}.
-    \item Una capa de \textit{Flatten} que transforma los tensores resultantes en un vector de características de alta dimensión.
-    \item Tres capas densas, con 512, 256 y 10 neuronas respectivamente, utilizando ReLU para las dos primeras y softmax para la última. Esta última capa proyecta las características en un espacio de 10 dimensiones.
+    \item \textbf{Entrada:} Dos vectores \(x_1\) y \(x_2\) de tamaño \(n\).
+    \item \textbf{Subred Base:} Ambas entradas se procesan mediante una red compartida \(f_\theta\), obteniendo:
+    \[
+    h_1 = f_\theta(x_1), \quad h_2 = f_\theta(x_2).
+    \]
+    \item \textbf{Métrica de Distancia:} La similitud entre las representaciones latentes se mide mediante una distancia, como:
+    \[
+    d(h_1, h_2) = ||h_1 - h_2||_p,
+    \]
+    donde \(p = 1\) para la distancia \(L1\) o \(p = 2\) para la distancia Euclidiana.
+    \item \textbf{Clasificación Binaria:} La distancia se pasa por una capa de activación sigmoidal para obtener una probabilidad:
+    \[
+    \hat{y} = \sigma(W \cdot d(h_1, h_2) + b).
+    \]
 \end{itemize}
 
-La salida de cada subred es un vector de alta dimensión \( \mathbf{h} \in \mathbb{R}^d \), donde \( d \) es el número de neuronas en la capa de salida. Estos vectores encapsulan las propiedades semánticas y estructurales del código procesado.
+\section{Implementación del Modelo}
 
-La comparación entre las dos salidas se realiza mediante una función de distancia. En este caso, se emplea la distancia euclidiana, definida como:
+Esta sección describe cómo se implementa un modelo de red siamesa utilizando TensorFlow/Keras. La implementación incluye tres componentes clave: la subred base, la arquitectura siamesa y los mecanismos de optimización.
+
+\subsection{Subred Base}
+
+La subred base transforma las entradas crudas \( x \in \mathbb{R}^{65} \) en representaciones vectoriales compactas y abstractas. Este proceso ayuda al modelo a identificar patrones relevantes y eliminar información redundante.
+
+\begin{enumerate}
+    \item \textbf{Capa densa (\textit{Dense}):} Cada capa densa aplica una transformación lineal seguida de una función de activación no lineal \textbf{ReLU} (Rectified Linear Unit). La fórmula matemática para una capa es:
+    \[
+    h^{(l)} = \text{ReLU}(W^{(l)} \cdot h^{(l-1)} + b^{(l)}),
+    \]
+    donde:
+    \begin{itemize}
+        \item \( W^{(l)} \) es la matriz de pesos.
+        \item \( b^{(l)} \) es el vector de sesgos.
+        \item \( h^{(l)} \) es la salida de la capa \( l \).
+    \end{itemize}
+    
+    \item \textbf{Regularización con \textit{Dropout}:} Dropout apaga aleatoriamente una proporción \( p = 0.5 \) de las neuronas en cada capa durante el entrenamiento. Esto previene el sobreajuste del modelo.
+
+    \item \textbf{Arquitectura detallada:} La subred consta de:
+    \begin{itemize}
+        \item Entrada \( x \in \mathbb{R}^{65} \), donde cada dimensión es una característica del conjunto de datos.
+        \item Tres capas densas con tamaños decrecientes (512, 256, y 128 neuronas) y activaciones \textbf{ReLU}.
+        \item Salida \( h(x) \in \mathbb{R}^{128} \), un vector de representación latente que condensa la información relevante de las entradas.
+    \end{itemize}
+\end{enumerate}
+
+Esta arquitectura es compartida entre las dos ramas del modelo siamesa.
+
+\subsection{Construcción del Modelo Siamesa}
+
+El modelo siamesa utiliza dos copias idénticas de la subred base para procesar dos entradas, compararlas y calcular una probabilidad de similitud.
+
+\begin{enumerate}
+    \item \textbf{Entradas:} Dos vectores \( x_1, x_2 \in \mathbb{R}^{65} \) que representan las instancias a comparar.
+
+    \item \textbf{Representaciones Latentes:} Cada entrada se transforma en una representación latente compacta mediante la subred base:
+    \[
+    h_1 = f_\theta(x_1), \quad h_2 = f_\theta(x_2),
+    \]
+    donde \( f_\theta \) representa la subred base con parámetros compartidos \( \theta \).
+
+    \item \textbf{Cálculo de la Distancia L1:} Para medir la similitud entre las representaciones latentes, se calcula la distancia L1:
+    \[
+    d(h_1, h_2) = |h_1 - h_2|.
+    \]
+    Esto se implementa utilizando una capa \textbf{Lambda} en TensorFlow/Keras.
+
+    \item \textbf{Clasificación:} La distancia calculada se pasa a una capa densa con una activación sigmoidal (\textbf{sigmoid}) que produce una probabilidad:
+    \[
+    \hat{y} = \sigma(W \cdot d(h_1, h_2) + b),
+    \]
+    donde:
+    \begin{itemize}
+        \item \( W \) son los pesos de la capa.
+        \item \( b \) es el sesgo.
+        \item \( \sigma(z) = \frac{1}{1 + e^{-z}} \) convierte \( z \) en un valor entre 0 y 1, interpretado como la probabilidad de similitud.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Función de Pérdida}
+
+El modelo se entrena minimizando la entropía cruzada binaria, que mide la discrepancia entre las probabilidades predichas (\( \hat{y} \)) y las etiquetas verdaderas (\( y \)):
 
 \[
-d(\mathbf{h}_a, \mathbf{h}_b) = \sqrt{\sum_{i=1}^{d} (\mathbf{h}_{a,i} - \mathbf{h}_{b,i})^2},
+\mathcal{L} = - \frac{1}{N} \sum_{i=1}^N \Big[ y_i \cdot \log(\hat{y}_i) + (1 - y_i) \cdot \log(1 - \hat{y}_i) \Big],
 \]
-
-donde \( \mathbf{h}_a \) y \( \mathbf{h}_b \) son las representaciones vectoriales generadas por las dos subredes para los fragmentos de código \( a \) y \( b \). Esta métrica cuantifica el grado de similitud entre los fragmentos, donde distancias menores indican mayor similitud.
-
-\section{Proceso de Entrenamiento y Función de Pérdida}
-
-El modelo fue entrenado utilizando la \textit{pérdida de contraste} (contrastive loss), una función utilizada en redes siamesas para tareas de comparación y similitud. Esta función busca minimizar la distancia entre vectores de fragmentos de código similares y maximizarla para fragmentos disímiles. La pérdida de contraste se define como:
-
-\[
-L(y, d) = y \cdot d^2 + (1 - y) \cdot \max(0, m - d)^2,
-\]
-
 donde:
 \begin{itemize}
-    \item \( y \in \{0, 1\} \) es la etiqueta que indica si el par de fragmentos de código es similar (\( y = 1 \)) o disímil (\( y = 0 \)).
-    \item \( d \) es la distancia euclidiana entre los vectores de los fragmentos generados por las subredes.
-    \item \( m > 0 \) es un margen que define la distancia mínima esperada entre fragmentos disímiles.
+    \item \( y_i \in \{0, 1\} \) indica si los pares de entrada son similares (\(1\)) o diferentes (\(0\)).
+    \item \( \hat{y}_i \in [0, 1] \) es la probabilidad predicha por el modelo para el par \( i \).
 \end{itemize}
 
-El término \( y \cdot d^2 \) penaliza pares similares que están demasiado separados en el espacio vectorial, mientras que \( (1 - y) \cdot \max(0, m - d)^2 \) penaliza pares disímiles cuya distancia es menor que el margen \( m \). Esta formulación garantiza que los pares similares se agrupen en el espacio vectorial, mientras que los disímiles se alejen al menos una distancia \( m \).\\
+Esta función penaliza predicciones incorrectas de manera proporcional a su magnitud.
 
-El modelo fue optimizado mediante el optimizador Adam, conocido por su capacidad para manejar problemas de optimización no convexa en redes profundas. El aprendizaje se realizó durante 20 épocas con un tamaño de lote de 128, ajustando la tasa de aprendizaje inicial a 0.001. Durante el entrenamiento, se evaluó la pérdida en cada lote para garantizar la convergencia del modelo.\\
+\subsection{Optimización}
 
-La arquitectura propuesta combina convoluciones unidimensionales y capas densas para extraer características relevantes de los fragmentos de código, aprovechando la estructura del AST como entrada. La función de pérdida de contraste, junto con la métrica de distancia euclidiana, permitió entrenar un modelo robusto capaz de identificar similitudes estructurales y funcionales. Este enfoque demuestra cómo las redes siamesas pueden superar las limitaciones de métodos tradicionales al enfocarse en aspectos semánticos y contextuales del código.
+El modelo utiliza el optimizador \textbf{Adam} (Adaptive Moment Estimation) para ajustar los pesos \( \theta \). Adam combina las ventajas de:
+\begin{itemize}
+    \item \textbf{Momentum:} Acelera el entrenamiento en direcciones consistentes.
+    \item \textbf{Tasas de aprendizaje adaptativas:} Ajusta la tasa de aprendizaje individual para cada parámetro.
+\end{itemize}
 
-\section{Version2}
-
-\subsection{Estructura y Proceso de Entrenamiento de la Red Neuronal Siamesa} 
-
-Esta implementación de la red neuronal siamesa está diseñada para comparar fragmentos de código mediante la métrica de distancia \( L1 \), que calcula la diferencia absoluta entre las representaciones vectoriales generadas para cada fragmento. La arquitectura de la red se basa en una clase personalizada, `SiameseNeuralNetwork`, que encapsula la construcción, entrenamiento y predicción del modelo, proporcionando una solución modular y reutilizable para tareas de análisis de similitud de código.
-
-\subsection{Arquitectura de la Red} 
-
-La red neuronal consta de dos subredes idénticas que procesan los vectores de características extraídos de los fragmentos de código. Cada subred incluye las siguientes capas principales:
-
+El algoritmo de Adam se define como:
 \begin{enumerate}
-    \item \textbf{Preprocesamiento de la entrada:} La entrada, un vector de 65 dimensiones, se ajusta a una forma compatible con las operaciones de convolución unidimensional mediante una capa de \textit{Reshape}.
-    \item \textbf{Capas de convolución unidimensional (Conv1D):} Se emplean dos capas convolucionales con tamaños de kernel de 8 y 4, y activación ReLU. Estas capas extraen patrones locales de las características del código.
-    \item \textbf{Operaciones de Max Pooling:} Cada capa de convolución es seguida por una operación de \textit{max pooling} con un tamaño de ventana de 2, lo que reduce dimensionalidad mientras se preservan características relevantes.
-    \item \textbf{Capas densas con regularización \( L2 \):} La salida convolucional se aplana y pasa por tres capas densas con activaciones ReLU y softmax. Estas capas incluyen regularización \( L2 \) para prevenir el sobreajuste y mejorar la generalización.
+    \item Estimación del primer momento (media):
+    \[
+    m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t,
+    \]
+    donde \( g_t \) es el gradiente en el paso \( t \).
+
+    \item Estimación del segundo momento (varianza):
+    \[
+    v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2.
+    \]
+
+    \item Actualización de los parámetros:
+    \[
+    \theta_{t+1} = \theta_t - \alpha \frac{m_t}{\sqrt{v_t} + \epsilon}.
+    \]
 \end{enumerate}
 
-La salida de cada subred es un vector de alta dimensión \( \mathbf{h} \in \mathbb{R}^d \) que encapsula las propiedades semánticas y estructurales del código.
+Los hiperparámetros típicos son \( \beta_1 = 0.9 \), \( \beta_2 = 0.999 \), y \( \epsilon = 10^{-8} \). Adam combina estabilidad y velocidad, logrando convergencia eficiente en problemas complejos.
 
-\subsection{ Métrica de Distancia \( L1 \)}
 
-La comparación entre los fragmentos de código se realiza mediante una capa de distancia \( L1 \), definida como:
+\section{Proceso de Entrenamiento y Predicción}
 
-\[
-d_{L1}(\mathbf{h}_1, \mathbf{h}_2) = \sum_{i=1}^{d} |\mathbf{h}_{1,i} - \mathbf{h}_{2,i}|,
-\]
+En esta sección, explicamos cómo se lleva a cabo el proceso de entrenamiento y predicción en el modelo siamesa, enfatizando cómo los pares de datos son utilizados para aprender las representaciones y cómo se realiza la inferencia posterior para predecir la similitud entre las entradas.
 
-donde \( \mathbf{h}_1 \) y \( \mathbf{h}_2 \) son los vectores generados por las subredes para cada fragmento de código. Esta distancia captura diferencias absolutas, permitiendo una medida robusta y sencilla de similitud.
+\subsection{Entrenamiento}
 
-\subsection{Proceso de Entrenamiento} 
+El modelo siamesa se entrena utilizando un conjunto de pares de datos \( (x_1, x_2, y) \), donde \( x_1 \) y \( x_2 \) son dos instancias que se comparan entre sí, y \( y \) es la etiqueta binaria que indica si las instancias son similares (\(y = 1\)) o disímiles (\(y = 0\)).
 
-El entrenamiento se realiza mediante la función de pérdida de entropía cruzada binaria, que se utiliza para clasificar pares de código como similares o disímiles. La función de pérdida se define como:
+Durante el entrenamiento, el modelo ajusta los pesos para minimizar la función de pérdida sobre todo el conjunto de entrenamiento. La optimización se realiza utilizando el algoritmo de Adam, como se mencionó anteriormente, que es capaz de actualizar los pesos de manera eficiente. El proceso de entrenamiento se realiza mediante el método \texttt{model.fit}, el cual toma los datos de entrada y las etiquetas correspondientes:
 
 \[
-L(y, \hat{y}) = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right],
+\text{model.fit}([x_1, x_2], y, \text{validation\_data}=([x_1^{val}, x_2^{val}], y^{val})).
 \]
 
-donde:
-- \( y_i \) es la etiqueta verdadera (1 para pares similares, 0 para disímiles).
-- \( \hat{y}_i \) es la probabilidad predicha por la red.
-- \( N \) es el tamaño del lote.
+Aquí, \( [x_1, x_2] \) son las dos entradas que representan un par de datos de entrenamiento, y \( y \) es la etiqueta correspondiente. Además, se proporciona un conjunto de validación \( ([x_1^{val}, x_2^{val}], y^{val}) \) para evaluar el rendimiento del modelo durante el entrenamiento y prevenir el sobreajuste. La validación permite que el modelo se ajuste y aprenda sin memorizar excesivamente los datos de entrenamiento, lo que puede llevar a una mala generalización.
 
-Se utiliza el optimizador Adam con una tasa de aprendizaje inicial de 0.001, lo que garantiza una convergencia eficiente al encontrar mínimos locales en el espacio de pérdida.
+El modelo procesa cada par de entradas \( x_1, x_2 \) a través de la subred base, calculando sus representaciones latentes \( h_1 \) y \( h_2 \). Luego, calcula la distancia entre estas representaciones y utiliza esta información para realizar una predicción \( \hat{y} \), que se compara con la etiqueta \( y \) en la función de pérdida. A medida que el modelo se entrena, ajusta sus pesos para minimizar la discrepancia entre las predicciones \( \hat{y} \) y las etiquetas \( y \).
 
-El modelo se entrena durante 20 épocas, con un tamaño de lote de 32, y se evalúa utilizando un conjunto de validación que representa el 20\% de los datos originales. Este enfoque garantiza que la red aprenda a diferenciar fragmentos de código similares y disímiles mientras mantiene la capacidad de generalizar a nuevos datos.
+\subsection{Predicción}
 
-\subsection{Predicción de Similitud} 
+Una vez que el modelo ha sido entrenado, se puede utilizar para hacer predicciones sobre nuevos pares de datos \( (x_1, x_2) \). En este caso, el modelo toma las dos entradas \( x_1 \) y \( x_2 \), las pasa a través de la subred base para obtener sus representaciones latentes \( h_1 \) y \( h_2 \), y luego calcula la distancia entre ellas utilizando la métrica L1.
 
-La red predice la similitud entre dos fragmentos de código generando un valor entre 0 y 1 mediante una capa densa con activación sigmoide. Un valor cercano a 1 indica alta similitud, mientras que valores cercanos a 0 reflejan una mayor diferencia. El proceso de predicción incluye los siguientes pasos:
-\begin{enumerate}
-    \item Los vectores de características de ambos fragmentos de código se pasan a las subredes.
-    \item Se calcula la distancia \( L1 \) entre las salidas de las subredes.
-    \item La capa sigmoide produce la probabilidad final de similitud.
-\end{enumerate}
+A continuación, el modelo predice la similitud entre los dos elementos utilizando la fórmula:
 
+\[
+\text{similarity} = \text{model.predict}([x_1, x_2]).
+\]
 
+El valor de \texttt{similarity} es un valor entre 0 y 1, que indica qué tan similares son las dos entradas. Un valor cercano a 0 indica que las entradas son similares, mientras que un valor cercano a 1 indica que son disímiles. Esto se debe a que el modelo genera una probabilidad, y la activación sigmoidal transforma la distancia entre las representaciones latentes en un valor de probabilidad. La salida final, \( \hat{y} \), se interpreta como la probabilidad de que las dos entradas pertenezcan a la misma clase (es decir, que sean similares).
 
-Esta implementación presenta un diseño modular y robusto que combina convoluciones unidimensionales, regularización \( L2 \), y la métrica de distancia \( L1 \) para abordar el problema de similitud de código. Además, el uso de la entropía cruzada binaria como función de pérdida asegura que la red optimice de manera efectiva su capacidad para distinguir entre fragmentos de código similares y disímiles. Esta arquitectura es particularmente adecuada para aplicaciones donde los datos presentan patrones estructurales complejos que requieren una evaluación precisa y escalable. 

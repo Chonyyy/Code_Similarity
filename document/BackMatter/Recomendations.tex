@@ -1,4 +1,44 @@
 \begin{recomendations}
-     A futuro, se pueden explorar modelos avanzados de aprendizaje profundo, como transformadores, redes neuronales siamesas(SNN) y redes neuronales gráficas (GNN), para mejorar aún más la precisión y eficiencia en la detección de similitud de código. Además, la generación de datasets más amplios y diversificados, así como la incorporación de técnicas de procesamiento de lenguaje natural, pueden ofrecer nuevas oportunidades para el análisis y comprensión del código fuente.
+
+\subsection*{Optimización y Escalabilidad}
+\begin{itemize}
+    \item Explorar métodos avanzados para optimizar la representación y comparación de Árboles de Sintaxis Abstracta (AST), buscando reducir el tiempo de procesamiento y los requerimientos computacionales en grandes conjuntos de datos. Esto podría incluir:
+    \begin{itemize}
+        \item \textbf{Paralelización de Procesos:} Implementar algoritmos paralelos o distribuidos para dividir el análisis en múltiples núcleos de procesamiento o máquinas.
+        \item \textbf{Compresión de Estructuras:} Diseñar representaciones más compactas de los AST, como árboles binarios optimizados, que permitan una comparación más rápida y eficiente.
+        \item \textbf{Preprocesamiento Inteligente:} Incorporar mecanismos de filtrado previo que identifiquen rápidamente fragmentos irrelevantes o claramente distintos, reduciendo el tamaño efectivo del conjunto de datos.
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Ampliación de la Herramienta}
+\begin{itemize}
+    \item Expandir la compatibilidad de la herramienta para incluir múltiples lenguajes de programación. Esto requeriría:
+    \begin{itemize}
+        \item Adaptación de gramáticas específicas para cada lenguaje soportado.
+        \item Desarrollo de un módulo de detección automática del lenguaje de entrada.
+        \item Evaluación de la efectividad de los análisis en lenguajes dinámicos (como Python) y lenguajes fuertemente tipados (como Java o C++).
+    \end{itemize}
+    \item Incorporar módulos adicionales para analizar similitudes en paradigmas específicos, como programación funcional o programación orientada a objetos.
+    \item Diseñar una interfaz gráfica intuitiva que facilite la interacción con la herramienta, haciendo más accesibles sus funcionalidades para usuarios no técnicos.
+\end{itemize}
+
+\subsection*{Educación y Ética}
+
+ Utilizar los hallazgos de esta investigación para fomentar prácticas éticas en la programación. Colaboración con instituciones educativas para integrar estas herramientas y contenidos en los planes de estudio de cursos de programación y ética profesional.
+
+\subsection*{Monitoreo y Actualización de la Herramienta}
+\begin{itemize}
+    \item Establecer un ciclo continuo de evaluación y actualización para mantener la relevancia y precisión de la herramienta. Esto incluiría:
+    \begin{itemize}
+        \item Recolectar datos de uso reales para identificar patrones comunes de similitud y áreas de mejora.
+        \item Mantener una base de datos de gramáticas de lenguajes actualizada, incluyendo soporte para nuevos lenguajes o versiones.
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Contribución Abierta}
+\begin{itemize}
+    \item Publicar los resultados y herramientas desarrolladas bajo licencias de código abierto, permitiendo a la comunidad académica e industrial contribuir a su mejora y expansión.
+    \item Crear un repositorio público para compartir datasets, modelos y resultados de evaluación, fomentando investigaciones futuras en el campo.
+\end{itemize}
 
 \end{recomendations}

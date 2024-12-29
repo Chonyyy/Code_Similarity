@@ -1,19 +1,9 @@
 \begin{conclusions}
 
-En esta investigación, se ha abordado la problemática de la detección de similitud y plagio en proyectos de C\# mediante técnicas avanzadas de análisis y aprendizaje automático.\\
+El análisis de similitud de código ha avanzado desde sus inicios, convirtiéndose en una herramienta para abordar problemas en los ámbitos académico. En esta tesis, se analizan los avances en representación estructural, como el uso de Árboles de Sintaxis Abstracta (AST), y el desarrollo de modelos basados en aprendizaje profundo que permiten detectar similitudes en código más allá de comparaciones textuales. Los AST, al capturar la estructura jerárquica del código, permiten realizar comparaciones basadas en lógica y semántica, evitando la dependencia de detalles superficiales. El proceso de actualización de la gramática de lenguajes como C\# garantiza la representación de nuevas características en los AST, manteniendo la aplicabilidad de las herramientas de análisis frente a la evolución de los lenguajes de programación.
 
- La extracción de árboles de sintaxis abstracta (AST) de diferentes proyectos de C\# ha demostrado ser una técnica efectiva para capturar la estructura sintáctica y lógica de los códigos. Este enfoque ha permitido obtener características detalladas y representativas del código fuente, facilitando un análisis más profundo y preciso.\\
+Las redes neuronales siamesas permiten comparar representaciones vectoriales de fragmentos de código, incluso en casos con modificaciones superficiales. Estas redes, configuradas para procesar pares de entradas mediante ramas idénticas con pesos compartidos, miden similitudes enfocándose en las características más relevantes. Este enfoque permite detectar relaciones semánticas y estructurales que no pueden captarse mediante métodos tradicionales basados en características superficiales.
 
- Al agrupar los proyectos en pares y calcular las diferencias entre sus vectores de características, se ha logrado incrementar significativamente la cantidad de datos disponibles para el entrenamiento de modelos de aprendizaje automático. Esta estrategia no solo ha aumentado la diversidad y riqueza del dataset, sino que también ha permitido capturar relaciones y distancias específicas entre los proyectos, mejorando así la precisión en la detección de similitudes.\\
-
-Durante el proceso de experimentación, se evaluaron varios algoritmos de clustering, como K-Means, DBSCAN y Agglomerative Clustering. Sin embargo, estos métodos no resultaron efectivos para la tarea específica de detección de similitud de proyectos de C\#. \\
-
- Ante las limitaciones de los métodos de clustering, se decidió utilizar algoritmos de detección de anomalías como One-Class SVM e Isolation Forest. Estos métodos han demostrado ser más adecuados para describir la región de los vectores de similitud de proyectos distintos, permitiendo una identificación más precisa de proyectos similares y diferentes.\\
-
- La similitud de código se ha confirmado como una métrica crucial para detectar duplicaciones, plagio y patrones reutilizables en el software. Las herramientas y técnicas desarrolladas en esta tesis contribuyen significativamente a la mejora continua del software, facilitando la identificación de áreas de optimización y refactorización.\\
-
- La integración de técnicas de aprendizaje automático, como el uso modelos de detección de anomalías, ha permitido abordar el problema de la similitud de código de manera más efectiva y precisa. Estas técnicas han abierto nuevas posibilidades para el análisis de código.
-
-En resumen, esta tesis ha demostrado que la combinación de técnicas de análisis sintáctico, generación de datasets enriquecidos y algoritmos de aprendizaje automático puede abordar de manera efectiva la detección de similitud y plagio en proyectos de C\#.
+En conclusión, esta investigación evalúa las metodologías propuestas y establece un marco para el desarrollo de herramientas más precisas y adaptadas. Las contribuciones de esta tesis, que incluyen el uso de AST, el refinamiento de redes neuronales siamesas y la actualización de gramáticas, plantean oportunidades para investigaciones futuras en el análisis de similitud de código.
 
 \end{conclusions}
