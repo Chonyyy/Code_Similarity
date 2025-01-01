@@ -1,4 +1,4 @@
-from Python.CSharpParserListener import CSharpParserListener
+from python.CSharpParserListener import CSharpParserListener
 import numpy as np
 import pandas as pd
 

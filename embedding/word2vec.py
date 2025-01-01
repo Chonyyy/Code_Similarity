@@ -1,7 +1,6 @@
 import json
 import numpy as np
 from gensim.models import Word2Vec
-import os
 
 class FeatureVectorizer:
     def __init__(self, json_file_path):
