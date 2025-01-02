@@ -6,11 +6,11 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.regularizers import l2
 from keras.layers import Input, Lambda, Dense, Dropout, Flatten,Activation, Flatten, Reshape
 import numpy as np
+from tensorflow.keras.layers import Layer
 import tensorflow.keras.backend as K
-from siamese_network_parse import PrepareDataSNN
+from SNN.siamese_network_parse import PrepareDataSNN
 from sklearn.model_selection import train_test_split
-
-import numpy as np
+from tensorflow.keras.models import load_model
 
 class SiameseNeuralNetwork:
     def __init__(self, input_shape,l2_regularization_penalization = 0.01, learning_rate=0.001):
@@ -26,7 +26,7 @@ class SiameseNeuralNetwork:
         model.add(Dropout(0.5))  # Regularización para evitar sobreajuste
         model.add(Dense(256, activation="relu"))
         model.add(Dropout(0.5))
-        model.add(Dense(128, activation="relu"))  # Representación final más compacta
+        model.add(Dense(128, activation="relu")) 
 
         return model
 
@@ -45,23 +45,27 @@ class SiameseNeuralNetwork:
         return model
 
     def _build_model(self):
-        # Definir la red base
-        base_network = self.create_base_network(input_shape)
+        # Red base
+        base_network = self.create_base_network(self.input_shape)
 
-        # Definir el modelo siamés
+        # Entradas
         input_a = Input(shape=self.input_shape)
         input_b = Input(shape=self.input_shape)
 
+        # Representaciones aprendidas
         encoded_a = base_network(input_a)
         encoded_b = base_network(input_b)
 
-        # Distancia L1 
-        l1_distance = Lambda(lambda tensors: K.abs(tensors[0] - tensors[1]))([encoded_a, encoded_b])
+        # Distancia L1 con `output_shape`
+        l1_distance = Lambda(
+            lambda tensors: K.abs(tensors[0] - tensors[1]),
+            output_shape=lambda input_shapes: input_shapes[0]
+        )([encoded_a, encoded_b])
 
         # Clasificación binaria
         output = Dense(1, activation='sigmoid')(l1_distance)
 
-
+        # Modelo completo
         model = Model(inputs=[input_a, input_b], outputs=output)
         model.compile(loss='binary_crossentropy', optimizer=Adam(self.learning_rate), metrics=['accuracy'])
         return model
@@ -98,73 +102,100 @@ class SiameseNeuralNetwork:
         # Asegurarse de que las características tengan la forma correcta
         code1_features = np.array(code1_features).reshape(1, -1)
         code2_features = np.array(code2_features).reshape(1, -1)
-        
         return self.model.predict([code1_features, code2_features])[0][0]
 
-
-# Asumiendo que ya tienes tus datos procesados
-data = PrepareDataSNN()
-# data_a, data_b, labels = data.process()
-
-
-# Ruta para guardar los datos
-data_dir = "./data_snn"
-if not os.path.exists(data_dir):
-    os.makedirs(data_dir)
-
-# data_file = os.path.join(data_dir, "dataset_split.npz")
-
-# if os.path.exists(data_file):
-#     # Cargar los datos si ya están guardados
-#     print("Cargando conjuntos de entrenamiento y validación desde archivo...")
-#     data = np.load(data_file)
-#     X1_train, X1_val = data["X1_train"], data["X1_val"]
-#     X2_train, X2_val = data["X2_train"], data["X2_val"]
-#     y_train, y_val = data["y_train"], data["y_val"]
-# else:
-#     # Crear los conjuntos de datos y guardarlos
-#     print("Dividiendo los datos y guardándolos...")
-#     data_a, data_b, labels = PrepareDataSNN().process()
-#     X1_train, X1_val, X2_train, X2_val, y_train, y_val = train_test_split(
-#         data_a, data_b, labels, test_size=0.2, random_state=42
-#     )
-#     np.savez(data_file, X1_train=X1_train, X1_val=X1_val, 
-#              X2_train=X2_train, X2_val=X2_val, 
-#              y_train=y_train, y_val=y_val)
-
-data_a, data_b, labels = PrepareDataSNN().process()
-X1_train, X1_val, X2_train, X2_val, y_train, y_val = train_test_split(
-    data_a, data_b, labels, test_size=0.2, random_state=42
-)
-
-# Verificar las formas de los arrays
-print("Formas de los conjuntos de entrenamiento:")
-print(f"X1_train: {X1_train.shape}")
-print(f"X2_train: {X2_train.shape}")
-print(f"y_train: {y_train.shape}")
-
-print("\nFormas de los conjuntos de validación:")
-print(f"X1_val: {X1_val.shape}")
-print(f"X2_val: {X2_val.shape}")
-print(f"y_val: {y_val.shape}")
+    def evaluate(self, data_a, data_b, labels):
+        """
+        Evalúa el modelo con datos nuevos.
+        
+        Parámetros:
+        - data_a: numpy array con las primeras entradas de los pares.
+        - data_b: numpy array con las segundas entradas de los pares.
+        - labels: numpy array con las etiquetas reales (0 o 1).
+        
+        Retorna:
+        - loss: pérdida en los datos de evaluación.
+        - accuracy: precisión en los datos de evaluación.
+        """
+        loss, accuracy = self.model.evaluate([data_a, data_b], labels, verbose=1)
+        print(f"Pérdida en los nuevos datos: {loss:.4f}")
+        print(f"Precisión en los nuevos datos: {accuracy:.4f}")
+        return loss, accuracy
 
 
-# Inicializar y entrenar la red
-input_shape = (65,)  # Asumiendo que tus vectores de características tienen 65 elementos
-siamese_net = SiameseNeuralNetwork(input_shape)
-history = siamese_net.train(X1_train, X2_train, y_train, validation_data=(X1_val, X2_val, y_val))
+if __name__ == "__main__":
 
-# Hacer una predicción
-code1_features = np.random.rand(65)  # Ejemplo de vector de características
-code2_features = np.random.rand(65)  # Ejemplo de vector de características
-similarity = siamese_net.predict_similarity(code1_features, code2_features)
+    data = PrepareDataSNN()
+    # data_a, data_b, labels = data.process()
+
+    # Ruta para guardar los datos
+    data_dir = "./data_snn"
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
+
+    # data_file = os.path.join(data_dir, "dataset_split.npz")
+
+    # if os.path.exists(data_file):
+    #     # Cargar los datos si ya están guardados
+    #     print("Cargando conjuntos de entrenamiento y validación desde archivo...")
+    #     data = np.load(data_file)
+    #     X1_train, X1_val = data["X1_train"], data["X1_val"]
+    #     X2_train, X2_val = data["X2_train"], data["X2_val"]
+    #     y_train, y_val = data["y_train"], data["y_val"]
+    # else:
+    #     # Crear los conjuntos de datos y guardarlos
+    #     print("Dividiendo los datos y guardándolos...")
+    #     data_a, data_b, labels = PrepareDataSNN().process()
+    #     X1_train, X1_val, X2_train, X2_val, y_train, y_val = train_test_split(
+    #         data_a, data_b, labels, test_size=0.2, random_state=42
+    #     )
+    #     np.savez(data_file, X1_train=X1_train, X1_val=X1_val, 
+    #              X2_train=X2_train, X2_val=X2_val, 
+    #              y_train=y_train, y_val=y_val)
+
+    data_a, data_b, labels = PrepareDataSNN().process()
+    X1_train, X1_val, X2_train, X2_val, y_train, y_val = train_test_split(
+        data_a, data_b, labels, test_size=0.2, random_state=42
+    )
+
+    # Verificar las formas de los arrays
+    print("Formas de los conjuntos de entrenamiento:")
+    print(f"X1_train: {X1_train.shape}")
+    print(f"X2_train: {X2_train.shape}")
+    print(f"y_train: {y_train.shape}")
+
+    print("\nFormas de los conjuntos de validación:")
+    print(f"X1_val: {X1_val.shape}")
+    print(f"X2_val: {X2_val.shape}")
+    print(f"y_val: {y_val.shape}")
 
 
-# Interpretar el resultado
-if similarity < 0.5:
-    print(f"Los códigos son similares con una probabilidad de {1-similarity:.2f}")
-else:
-    print(f"Los códigos son diferentes con una probabilidad de {similarity:.2f}")
+    # Inicializar y entrenar la red
+    input_shape = (65,)  # Asumiendo que tus vectores de características tienen 65 elementos
+    siamese_net = SiameseNeuralNetwork(input_shape)
+    history = siamese_net.train(X1_train, X2_train, y_train, validation_data=(X1_val, X2_val, y_val))
 
-print(f"La similitud entre los dos códigos es: {similarity}")
+    # Guardar el modelo
+    siamese_net._save_model("model_1")
+
+    data_val = PrepareDataSNN("data/features_vect_val/")
+    X1_new, X2_new, y_new = data_val.process()
+
+    loss, accuracy = siamese_net.evaluate(X1_new, X2_new, y_new)
+    # print(f"Pérdida en los nuevos datos: {loss:.4f}")
+    # print(f"Precisión en los nuevos datos: {accuracy:.4f}")
+
+    # Hacer una predicción
+    code1_features = np.random.rand(65)  # Ejemplo de vector de características
+    code2_features = np.random.rand(65)  # Ejemplo de vector de características
+    similarity = siamese_net.predict_similarity(code1_features, code2_features)
+
+
+    # Interpretar el resultado
+    if similarity < 0.5:
+        print(f"Los códigos son similares con una probabilidad de {1-similarity:.2f}")
+    else:
+        print(f"Los códigos son diferentes con una probabilidad de {similarity:.2f}")
+
+    print(f"La similitud entre los dos códigos es: {similarity}")
 

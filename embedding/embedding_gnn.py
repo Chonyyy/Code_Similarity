@@ -5,8 +5,8 @@ from torch_geometric.nn import GCNConv
 from torch.optim import Adam
 from antlr4 import *
 from antlr4 import CommonTokenStream
-from python.CSharpLexer import CSharpLexer
-from python.CSharpParser import CSharpParser
+from Python.CSharpLexer import CSharpLexer
+from Python.CSharpParser import CSharpParser
 import os
 import gensim.downloader as api
 

@@ -5,8 +5,8 @@ from sklearn.preprocessing import StandardScaler
 import pickle, random
 
 class PrepareDataSNN:
-    def __init__(self):
-        self.projects_directory = f'{os.getcwd()}/data/features_vect_others/'
+    def __init__(self, dir = ""):
+        self.projects_directory = f'{os.getcwd()}/data/features_vect_others/' if dir == "" else dir
         self.all_projects = []
 
     def _load_projects_from_json(self, json_file):

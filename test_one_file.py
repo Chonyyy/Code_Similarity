@@ -6,11 +6,11 @@ from embedding.word2vec import FeatureVectorizer
 import networkx as nx
 from collections import deque
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/copilot/'
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/val/'
                                                     
-DATA_FOLDER = f'{os.getcwd()}/data/features_others/'
+DATA_FOLDER = f'{os.getcwd()}/data/features_val/'
                                                           
-DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect_others/'
+DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect_val/'
 
 os.makedirs(DATA_FOLDER, exist_ok=True)
 
