@@ -100,12 +100,16 @@ class FeatureExtractorListener(CSharpParserListener):
             self.max_depth = self.current_depth
 
         # identificar diferentes tipos de nodos: Local_variable_declaratorContext
-        if node_type == "Local_variable_declarationContext" and ctx.children:
+        if node_type == "Local_variable_declarationContext" :
+            if(not ctx.children):
+                pass
             if type(ctx.children[0]).__name__ == 'ErrorNodeImpl':
                 pass
             else:
-                if type(ctx.children[0]).__name__ == 'TerminalNodeImpl':
-                    var_type = ctx.children[0].symbol.text
+                    if type(ctx.children[0]).__name__ == 'TerminalNodeImpl':
+                        var_type = ctx.children[0].symbol.text
+                    else:
+                        var_type = ctx.children[0].start.text
                     if ctx.children[1].start.text == '(':
                         var_name = ctx.children[1].children[0].children[1].start.text
                         self.variables += 1
@@ -145,25 +149,26 @@ class FeatureExtractorListener(CSharpParserListener):
          
         elif node_type == "Method_declarationContext": 
             self.methods += 1
-            self.method_names.add(ctx.start.text)
+            name = ctx.children[2].start.text
+            self.method_names.add(name)
             
             return_type = ctx.parentCtx.start.text
-            self.method_return_types.add((ctx.start.text,return_type))            
+            self.method_return_types.add((name,return_type))            
             # Obtener parámetros del método
             param_count = 0
             param_info = []
             
-            if(type(ctx.children[2]).__name__ == "Formal_parameter_listContext"):
+            if(type(ctx.children[2].children[2]).__name__ == "Formal_parameter_listContext"):
 
-                if ctx.children[2].parameter_array():
+                if ctx.children[2].children[2].parameter_array():
                     param = ctx.children[2].parameter_array()
                     param_type = param.children[1].start.text
                     param_name = param.children[2].start.text
                     param_info.append((param_type, param_name))
                     param_count += 1
                 
-                if ctx.children[2].fixed_parameters():
-                    for param in ctx.children[2].children[0].fixed_parameter() :
+                if ctx.children[2].children[2].fixed_parameters():
+                    for param in ctx.children[2].children[2].children[0].fixed_parameter() :
                         if param.children[0].children[0].getText() == "out":
                             self.out_variables += 1
                             param_type = param.children[1].children[0].getText()
