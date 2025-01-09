@@ -112,7 +112,7 @@ class PrepareDataSNN:
             random.shuffle(balanced_pairs)
             return balanced_pairs
         else:
-            random.shuffle(third_pairs)
+            # random.shuffle(third_pairs)
             all = pairs_with_flag_0 + pairs_with_flag_1
             return all
             # return third_pairs
