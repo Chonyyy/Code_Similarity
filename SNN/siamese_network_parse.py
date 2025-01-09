@@ -103,11 +103,20 @@ class PrepareDataSNN:
 
         # Balancear la cantidad de pares
         min_count = min(len(pairs_with_flag_1), len(pairs_with_flag_0))
-        
-        balanced_pairs = random.sample(pairs_with_flag_1, min_count) + random.sample(pairs_with_flag_0, min_count)
-        random.shuffle(balanced_pairs)  # Mezclar los pares para mayor aleatoriedad
+        third_count = len(pairs_with_flag_1) * 3
 
-        return balanced_pairs
+        balanced_pairs = random.sample(pairs_with_flag_1, min_count) + random.sample(pairs_with_flag_0, min_count)
+        third_pairs = random.sample(pairs_with_flag_1, min_count) + random.sample(pairs_with_flag_0, third_count)
+
+        if self.projects_directory == f'{os.getcwd()}/data/features_vect_others/':
+            random.shuffle(balanced_pairs)
+            return balanced_pairs
+        else:
+            random.shuffle(third_pairs)
+            all = pairs_with_flag_0 + pairs_with_flag_1
+            return all
+            # return third_pairs
+        
 
     def _load_all_project(self):
         # Cargar todos los proyectos desde los archivos JSON en el directorio

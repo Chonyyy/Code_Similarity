@@ -3,14 +3,13 @@ from antlr4.tree.Tree import ErrorNodeImpl
 import json, os
 from parser.parser import *
 from embedding.word2vec import FeatureVectorizer
-import networkx as nx
 from collections import deque
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/ChatGPT/'
-
-DATA_FOLDER = f'{os.getcwd()}/data/features_others/'
+PROJECTS_FOLDER = f'{os.getcwd()}/Projects/val/'
+                                                    
+DATA_FOLDER = f'{os.getcwd()}/data/features_val/'
                                                           
-DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect_others/'
+DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect_val/'
 
 os.makedirs(DATA_FOLDER, exist_ok=True)
 
@@ -19,7 +18,7 @@ for f in os.scandir(PROJECTS_FOLDER):
         print(PROJECTS_FOLDER + f.name)
         
         output_json_path = os.path.join(DATA_FOLDER, f"features_{f.name}.json")
-        output_json_path_vect = f'data/features_vect_others/features_{f.name}.json'
+        output_json_path_vect = os.path.join(DATA_FOLDER_VECT, f"features_{f.name[:-3]}.json")
         
         if os.path.exists(output_json_path):
             if not os.path.exists(output_json_path_vect):

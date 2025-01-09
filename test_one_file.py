@@ -1,16 +1,13 @@
 from antlr4 import *
-from antlr4.tree.Tree import ErrorNodeImpl
 import json, os
 from parser.parser import *
 from embedding.word2vec import FeatureVectorizer
-import networkx as nx
-from collections import deque
 
 PROJECTS_FOLDER = f'{os.getcwd()}/Projects/val/'
                                                     
-DATA_FOLDER = f'{os.getcwd()}/data/features_val/'
+DATA_FOLDER = f'{os.getcwd()}/data/features_others/'
                                                           
-DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect_val/'
+DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect_others/'
 
 os.makedirs(DATA_FOLDER, exist_ok=True)
 
