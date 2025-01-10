@@ -8,15 +8,18 @@ from keras.layers import Input, Lambda, Dense, Dropout, Flatten,Activation, Flat
 import numpy as np
 from tensorflow.keras.layers import Layer
 import tensorflow.keras.backend as K
-from SNN.siamese_network_parse import PrepareDataSNN
+from siamese_network_parse import PrepareDataSNN
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import load_model
 from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score
 from tensorflow.keras.initializers import GlorotUniform
+from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras.losses import binary_crossentropy
+
 
 # Configurar la semilla para reproducibilidad
-# SEED = 42
-SEED = 49
+# SEED = 44
+SEED = 38
 tf.random.set_seed(SEED)
 np.random.seed(SEED)
 random.seed(SEED)
@@ -31,14 +34,17 @@ class SiameseNeuralNetwork:
     
     def create_base_network(self, input_shape):
         model = Sequential()
-        
-        # Reducir dimensionalidad con una capa densa
         initializer = GlorotUniform(seed=SEED)
+        # Reducir dimensionalidad con una capa densa
+        
         model.add(Dense(512, activation="relu", input_shape=input_shape, kernel_initializer=initializer))
-        model.add(Dropout(0.5))  # Regularización para evitar sobreajuste
-        model.add(Dense(256, activation="relu"))
+        model.add(BatchNormalization())  # Normalización por lotes
         model.add(Dropout(0.5))
-        model.add(Dense(128, activation="relu")) 
+        model.add(Dense(256, activation="relu", kernel_initializer=initializer))
+        model.add(BatchNormalization())
+        model.add(Dropout(0.5))
+        model.add(Dense(128, activation="relu", kernel_initializer=initializer))
+        model.add(BatchNormalization()) 
 
         return model
 
@@ -62,7 +68,7 @@ class SiameseNeuralNetwork:
 
         # Modelo completo
         model = Model(inputs=[input_a, input_b], outputs=output)
-        model.compile(loss='binary_crossentropy', optimizer=Adam(self.learning_rate), metrics=['accuracy'])
+        model.compile(loss=asymmetric_loss, optimizer=Adam(self.learning_rate), metrics=['accuracy'])
         return model
      
     def euclidean_distance(self, vects):
@@ -103,26 +109,14 @@ class SiameseNeuralNetwork:
         return self.model.predict([code1_features, code2_features])[0][0]
 
     def evaluate(self, data_a, data_b, labels):
-        """
-        Evalúa el modelo con datos nuevos y calcula métricas adicionales.
-        
-        Parámetros:
-        - data_a: numpy array con las primeras entradas de los pares.
-        - data_b: numpy array con las segundas entradas de los pares.
-        - labels: numpy array con las etiquetas reales (0 o 1).
-        
-        Retorna:
-        - loss: pérdida en los datos de evaluación.
-        - accuracy: precisión en los datos de evaluación.
-        - metrics: diccionario con FP, TN, TP, FN, precisión, recall y F1-score.
-        """
         # Evaluar la pérdida y la precisión
         loss, accuracy = self.model.evaluate([data_a, data_b], labels, verbose=1)
         print(f"Pérdida en los nuevos datos: {loss:.4f}")
         print(f"Accuracy en los nuevos datos: {accuracy:.4f}")
         
-        # Generar predicciones
-        predictions = (self.model.predict([data_a, data_b]) > 0.5).astype(int).flatten()
+        # Generar predicciones con un umbral ajustado
+        threshold = 0.30  # Ajusta este valor según los resultados que obtengas
+        predictions = (self.model.predict([data_a, data_b]) > threshold).astype(int).flatten()
         
         # Calcular la matriz de confusión
         tn, fp, fn, tp = confusion_matrix(labels, predictions).ravel()
@@ -154,6 +148,29 @@ class SiameseNeuralNetwork:
             "f1_score": f1
         }
         return metrics
+
+def asymmetric_loss(y_true, y_pred):
+    """
+    Función de pérdida con penalización asimétrica para falsos negativos.
+    
+    Parámetros:
+    - y_true: Etiquetas reales (0 o 1).
+    - y_pred: Predicciones del modelo (probabilidades entre 0 y 1).
+    
+    Retorna:
+    - Valor escalar de la pérdida modificada.
+    """
+    alpha = 2.0  # Factor de penalización para falsos negativos (ajustar según necesidad)
+
+    # Pérdida binaria estándar
+    base_loss = binary_crossentropy(y_true, y_pred)
+
+    # Penalización para falsos negativos
+    penalization = alpha * y_true * K.log(1 - y_pred + K.epsilon())
+
+    # Pérdida total
+    loss = base_loss - penalization
+    return loss
 
 class L1Distance(Layer):
     def __init__(self, **kwargs):
