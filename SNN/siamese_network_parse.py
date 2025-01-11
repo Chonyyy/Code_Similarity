@@ -5,9 +5,10 @@ from sklearn.preprocessing import StandardScaler
 import pickle, random
 
 class PrepareDataSNN:
-    def __init__(self, dir = ""):
+    def __init__(self, dir = "", predict = False):
         self.projects_directory = f'{os.getcwd()}/data/features_vect_others/' if dir == "" else dir
         self.all_projects = []
+        self.predict = predict
 
     def _load_projects_from_json(self, json_file):
         with open(json_file, 'r') as f:
@@ -92,9 +93,10 @@ class PrepareDataSNN:
         # Generar todos los pares posibles
         for (proj1, proj2) in itertools.combinations(projects, 2):
             pair = {
+                "project_name": (proj1['project_name'], proj2['project_name']),
                 "project_1": self._extract_features(proj1),
                 "project_2": self._extract_features(proj2),
-                "similarity_flag": 1 if proj1["label"] == f"copy_of_{proj2['project_name']}" or proj2["label"] == f"copy_of_{proj1['project_name']}" else 0
+                "similarity_flag": 1 if proj1["label"] == f"copy_of_{proj2['project_name']}" or proj2["label"] == f"copy_of_{proj1['project_name']}" or proj1["label"] == f"copy2_of_{proj2['project_name']}" or proj2["label"] == f"copy2_of_{proj1['project_name']}" else 0
             }
             if pair["similarity_flag"] == 1:
                 pairs_with_flag_1.append(pair)
@@ -108,9 +110,14 @@ class PrepareDataSNN:
         balanced_pairs = random.sample(pairs_with_flag_1, min_count) + random.sample(pairs_with_flag_0, min_count)
         third_pairs = random.sample(pairs_with_flag_1, min_count) + random.sample(pairs_with_flag_0, third_count)
 
-        if self.projects_directory == f'{os.getcwd()}/data/features_vect_others/':
+        if self.predict:
+            random.shuffle(pairs_with_flag_0 + pairs_with_flag_1)
+            return pairs_with_flag_0 + pairs_with_flag_1
+        
+        elif self.projects_directory == f'{os.getcwd()}/data/features_vect_others/':
             random.shuffle(balanced_pairs)
             return balanced_pairs
+        
         else:
             random.shuffle(third_pairs)
             return third_pairs
@@ -126,13 +133,14 @@ class PrepareDataSNN:
 
     def process(self): 
         self._load_all_project()
-        self._generate_pairs(self.all_projects)
+        # self._generate_pairs(self.all_projects)
         # Generar los pares de entrenamiento
         pairs = self._generate_pairs(self.all_projects)
 
         labels = np.array([pair["similarity_flag"] for pair in pairs])
         data_a = np.array([pair["project_1"] for pair in pairs])
         data_b = np.array([pair["project_2"] for pair in pairs])
+        names = np.array([pair["project_name"] for pair in pairs])
 
         # Normalizar los datos
         scaler = StandardScaler()
@@ -143,7 +151,7 @@ class PrepareDataSNN:
         with open('training_pairs.json', 'wb') as f:
             pickle.dump(pairs, f)
         
-        return data_a, data_b, labels
+        return data_a, data_b, labels, names
 
 
 if __name__ == "__main__":
