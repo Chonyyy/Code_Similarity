@@ -1,24 +1,17 @@
 import os, random
-import tensorflow as tf
-from tensorflow.keras.models import Model, Sequential
-from tensorflow.keras.layers import Dense, Input, Lambda
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.regularizers import l2
-from keras.layers import Input, Lambda, Dense, Dropout, Flatten,Activation, Flatten, Reshape
 import numpy as np
-from tensorflow.keras.layers import Layer
+import tensorflow as tf
 import tensorflow.keras.backend as K
-from siamese_network_parse import PrepareDataSNN
-from sklearn.model_selection import train_test_split
+from keras.layers import Input, Lambda, Dense, Dropout, Layer, BatchNormalization
 from tensorflow.keras.models import load_model
-from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score
+from tensorflow.keras.models import Model, Sequential
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.initializers import GlorotUniform
-from tensorflow.keras.layers import BatchNormalization
 from tensorflow.keras.losses import binary_crossentropy
-
-# Configurar la semilla para reproducibilidad
-# SEED = 44
-
+from tensorflow.keras.saving import register_keras_serializable
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score
+from SNN.siamese_network_parse import PrepareDataSNN
 
 class SiameseNeuralNetwork:
     def __init__(self, input_shape, learning_rate=0.001, SEED=37):
@@ -66,8 +59,8 @@ class SiameseNeuralNetwork:
 
         # Modelo completo
         model = Model(inputs=[input_a, input_b], outputs=output)
-        model.compile(loss='binary_crossentropy', optimizer=Adam(self.learning_rate), metrics=['accuracy'])
-        # model.compile(loss=asymmetric_loss, optimizer=Adam(self.learning_rate), metrics=['accuracy'])
+        # model.compile(loss='binary_crossentropy', optimizer=Adam(self.learning_rate), metrics=['accuracy'])
+        model.compile(loss=asymmetric_loss, optimizer=Adam(self.learning_rate), metrics=['accuracy'])
         return model
      
     def euclidean_distance(self, vects):
@@ -133,7 +126,7 @@ class SiameseNeuralNetwork:
         print(f"Accuracy en los nuevos datos: {accuracy:.4f}")
         
         # Generar predicciones con un umbral ajustado
-        threshold = 0.20  # Ajusta este valor según los resultados que obtengas
+        threshold = 0.10  # Ajusta este valor según los resultados que obtengas
         predictions = (self.model.predict([data_a, data_b]) > threshold).astype(int).flatten()
         
         # Calcular la matriz de confusión
@@ -193,6 +186,7 @@ class SiameseNeuralNetwork:
         }
         return metrics
 
+@register_keras_serializable()
 def asymmetric_loss(y_true, y_pred):
     """
     Función de pérdida con penalización asimétrica para falsos negativos.
@@ -204,7 +198,7 @@ def asymmetric_loss(y_true, y_pred):
     Retorna:
     - Valor escalar de la pérdida modificada.
     """
-    alpha = 5  # Factor de penalización para falsos negativos (ajustar según necesidad)
+    alpha = 2  # Factor de penalización para falsos negativos (ajustar según necesidad)
 
     # Pérdida binaria estándar
     base_loss = binary_crossentropy(y_true, y_pred)
@@ -331,6 +325,10 @@ if __name__ == "__main__":
 
     print("Entrenando el modelo...")
     history = siamese_net.train(X1_train, X2_train, y_train, validation_data=(X1_val, X2_val, y_val))
+
+    # Guardar el modelo
+    siamese_net._save_model("model_1")
+
 
     print("Evaluando en el conjunto de prueba...")
     metrics = siamese_net.evaluate(X1_test, X2_test, y_test)
