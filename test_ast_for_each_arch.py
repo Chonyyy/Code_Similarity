@@ -69,9 +69,9 @@ class ProjectFeatureProcessor:
         print(f"Se han combinado {len(combined_data)} archivos JSON en {output_file}")
 
 if __name__ == "__main__":
-    PROJECTS_FOLDER = f'{os.getcwd()}/Projects/pruebas/Moogle/'
-    DATA_FOLDER = f'{os.getcwd()}/data/pruebas/Moogle/features'
-    DATA_FOLDER_VECT = f'{os.getcwd()}/data/pruebas/Moogle/features_vect'
+    PROJECTS_FOLDER = f'{os.getcwd()}/Projects/pruebas/WallE/'
+    DATA_FOLDER = f'{os.getcwd()}/data/pruebas/WallE/features'
+    DATA_FOLDER_VECT = f'{os.getcwd()}/data/pruebas/WallE/features_vect'
 
     processor = ProjectFeatureProcessor(PROJECTS_FOLDER, DATA_FOLDER, DATA_FOLDER_VECT)
 

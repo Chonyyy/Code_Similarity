@@ -9,7 +9,7 @@ from SNN.siamese_network_parse import PrepareDataSNN
 from test_ast_for_each_arch import ProjectFeatureProcessor
 
 class SimilarityDetector:
-    def __init__(self, projects_folder, data_folder, data_folder_vect, model_path, threshold=0.2):
+    def __init__(self, projects_folder, data_folder, data_folder_vect, model_path, threshold=0.30):
         self.projects_folder = projects_folder
         self.data_folder = data_folder
         self.data_folder_vect = data_folder_vect
