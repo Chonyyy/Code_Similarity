@@ -1,0 +1,181 @@
+\chapter{Experimentos y resultados}\label{chapter:implementation}
+
+En este capítulo se presentan los resultados que se obtuvieron durante la experimentación, así como los factores que influyeron en el rendimiento del modelo propuesto.
+
+
+\section{Evaluación del Modelo}
+
+Para evaluar el modelo se utiliza un conjunto de datos de prueba compuesto por pares de instancias etiquetados. El objetivo de esta evaluación es medir el desempeño del modelo en términos de  la precisión (\textit{precision}), exhaustividad (\textit{recall}), y exactitud (\textit{accuracy}). Además, se analizaron los errores para identificar áreas de mejora.
+
+El modelo se evaluó de la siguiente forma:
+\begin{enumerate}
+    \item \textbf{Cálculo de pérdida y precisión:} Se calcularon la pérdida y la accuracy promedio en el conjunto de datos de prueba.\\
+    
+   $ \texttt{loss, accuracy} = \texttt{self.model.evaluate}([data\_a, data\_b], \text{labels}, \text{verbose}=1)
+$
+
+    \item \textbf{Predicción con umbral ajustado:} Se generaron predicciones con un umbral definido para clasificar las instancias. En este caso, el umbral fue $(0.10)$, que se seleccionó para priorizar los verdaderos positivos.\\
+	
+
+$\texttt{threshold} = 0.10$ \\
+$\texttt{predictions} = \left( \texttt{self.model.predict}([data\_a, data\_b]) > \texttt{threshold} \right)$ \\ $\texttt{astype}(int). \texttt{flatten}()$
+
+
+
+	 \item \textbf{Análisis de la matriz de confusión:} Se analizó la matriz de confusión para identificar los errores del modelo y categorizar las instancias en verdaderos positivos (\(TP\)), falsos positivos (\(FP\)), verdaderos negativos (\(TN\)), y falsos negativos (\(FN\)).
+	 
+	 \begin{table}[ht]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Métrica} & \textbf{Valor} \\ \hline
+Verdaderos Positivos (TP) & 98 \\ \hline
+Falsos Positivos (FP) & 21 \\ \hline
+Verdaderos Negativos (TN) & 75 \\ \hline
+Falsos Negativos (FN) & 2 \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Métricas de rendimiento del modelo}
+\end{table}
+
+
+    \item \textbf{Identificación de errores:} Se registraron los pares de datos que resultaron en falsos negativos y falsos positivos para analizar sus características. Esto permitió identificar posibles patrones en los errores.
+
+\end{enumerate}
+
+
+\section{Experimentos}
+
+ La experimentación tuvo como objetivo principal reducir los falsos negativos (como se explicó en la sección \ref{sec:func} ) y, con ello, aumentar el recall del modelo. Este enfoque responde a la necesidad de priorizar la sensibilidad del modelo en detrimento de la precisión,por la importancia de capturar correctamente todos los casos positivos, proyectos que son fraude, incluso a costa de generar un mayor número de falsos positivos.
+
+ Esto resultó en una disminución del \texttt{accuracy} en comparación con la función de pérdida \texttt{binary\_crossentropy}.
+
+
+Para evaluar el rendimiento del modelo, se utilizaron las métricas estándar descritas a continuación:
+
+\begin{itemize}
+    \item \textbf{Accuracy:} Mide la proporción de predicciones correctas sobre el total de predicciones. Se define como:
+    \[
+    Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+    \]
+    donde $TP$ representa los verdaderos positivos, $TN$ los verdaderos negativos, $FP$ los falsos positivos y $FN$ los falsos negativos.
+
+    \item \textbf{Precision:} Evalúa la proporción de verdaderos positivos entre todas las predicciones clasificadas como positivas por el modelo:
+    \[
+    Precision = \frac{TP}{TP + FP}
+    \]
+    En esta fórmula, el aumento de los falsos positivos ($FP$) incrementa el denominador, lo que resulta en una disminución de la precisión. Esto refleja que el modelo clasifica incorrectamente más ejemplos como positivos, lo que reduce la proporción de verdaderos positivos respecto al total de predicciones positivas.
+
+    \item \textbf{Recall:} Mide la proporción de verdaderos positivos capturados por el modelo respecto al total de ejemplos positivos reales:
+    \[
+    Recall = \frac{TP}{TP + FN}
+    \]
+    En esta ecuación, el aumento de los verdaderos positivos ($TP$) incrementa el numerador, lo que lleva a un mayor valor de \textit{recall}. Asimismo, la disminución de los falsos negativos ($FN$) reduce el denominador, lo que también incrementa esta métrica. Por tanto, el \textit{recall} es directamente proporcional a los verdaderos positivos y de forma inversa proporcional a los falsos negativos.
+
+\end{itemize}
+
+El diseño de una función de pérdida personalizada que enfatiza la penalización de los falsos negativos permitió optimizar el \textit{recall}, aunque a expensas de reducir la \textit{precision} y la \textit{accuracy}. Este enfoque prioriza minimizar los errores en la identificación de ejemplos positivos, incluso cuando ello conlleva un aumento en los errores al clasificar negativos como positivos. Si bien esta estrategia no es adecuada en contextos donde la precisión es prioritaria, es efectiva en problemas donde los falsos negativos representan un riesgo para el sistema.
+
+A continuación se presentan los resultados de los casos de pruebas donde se utilizaron las dos funciones de pérdida implementadas, se obtuvo que la función de pérdida personalizada logró mejores resultados en términos de \texttt{ recall }, mientras que binary\_crossentropy mantuvo un recall ligeramente inferior, pero consigió un \texttt{accuracy} considerablemente mayor.
+
+\begin{table}[ht]
+    \centering
+    \caption{Resultados}
+    \begin{tabular}{lccccc}
+        \toprule
+        \textbf{Función de perdida} & \textbf{acc} & \textbf{loss} & \textbf{precision}  & \textbf{recall} \\
+        \midrule
+        binary\_crossentropy  &  0.9082 &  0.4948 & 0.9192 & 0.9100 \\
+        assymetric\_loss & 0.8469 & 1.1607 & 0.8235 & 0.9800  \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:results}
+\end{table}
+
+El recall cercano a 1.0 de la función de pérdida personalizada resultó en un modelo capaz de detectar una inmensa mayoría de los proyectos similares al comparar dos a dos un conjunto de códigos en lenguaje C\#. Además, con binary\_crossentropy se entrenó otro modelo que captura una gran cantidad de plagios, y da, al mismo tiempo, pocos falsos positivos. Este es el principal aporte del presente trabajo y el siguiente capítulo sirve como validación para este resultado.
+
+
+\section{Validación de resultados}
+
+Para validar los reusultados de la tesis se tomaron 4 orientaciones de proyectos reales que se impartieron en la asignatura de Programación de MATCOM primer año. Para clasificar se usó el modelo que se entrenó con la función de pérdida personalizada que se presentó en la sección \ref{sec:func}. La tabla \ref{tab:moogle} muestra los resultados de \textbf{Moogle} \cite{MoogleGitHub}, la tabla \ref{tab:Domino} muestra los resltados de \textbf{Dominó} \cite{DominoGitHub}, la tabla \ref{tab:Hulk} muestra los resultados de \textbf{Hulk} \cite{HulkGitHub} y la tabla \ref{tab:WallE} muestra los resultados de \textbf{WallE} \cite{CoolCompilerBase2019}. En cada caso se tomó un conjunto de 10 proyectos implementados por estudiantes y a un subconjunto aleatorio de 5 proyectos (por cada grupo de 10 se escogieron 5), se le generó una copia, simulando lo que haría un estudiante para cometer fraude. Por ejemplo: 
+
+\begin{itemize}
+\item Cambios en nombres de variables, métodos y clases.
+\item Cambios estructurales (Como orden de declaraciones de variables) que no afectan la lógica del código.
+\item Intercambios de tipos similares (Como intercambios de \textbf{log} por \textbf{int} y \textbf{double} por \textbf{float}).
+\item Cambios sintácticos que no afectan la lógica del código (Como intercambios de condicionales \textbf{Switch} por conjuntos de condicionales \textbf{if})
+\end{itemize}
+
+En cada tipo de proyecto (Moogle, Dominó, Hulk y WallE) se probaron, por tanto, 5 parejas de proyectos que se clasifican como \textbf{plagio} y ${15}\choose{2}$ - 5 = 100 (Todas las parejas dos a dos menos las 5 parejas de proyectos clonadas) que no se clasifican como \textbf{plagio}. 
+
+Cada una de las 4 tablas (\ref{tab:moogle}, \ref{tab:Domino}, \ref{tab:Hulk} y \ref{tab:WallE} presenta 4 columnas:
+
+\begin{enumerate}
+
+\end{enumerate}
+\item \textbf{Parejas plagio}: Pares de proyectos copia que se generaron.
+\item \textbf{Parejas no plagio}: Proyectos no similares que se emparejaron dos a dos.
+\item \textbf{Plagios detectados}: Parejas de proyectos copia que se generaron y fueron detectados por el modelo.
+\item \textbf{Plagios no detectados}: Parejas de proyectos copia que se generaron y el algoritmo no fue capaz de detectar.
+\item \textbf{Falsos plagios}: Parejas de proyectos no similares que el algoritmo detectó erroneamente como copias.
+
+\begin{table}[ht]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Parejas plagio} & \textbf{Parejas NO plagio} & \textbf{Plagios detectados} & \textbf{Plagios no detectados} & \textbf{Falsos plagios}  \\ \hline
+5 & 100 & 5 & 0 & 18  \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Resultados de la detección de similitud de Moogle}
+\label{tab:moogle}
+\end{table}
+
+
+
+\begin{table}[ht]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Parejas plagio} & \textbf{Parejas NO plagio} & \textbf{Plagios detectados} & \textbf{Plagios no detectados} & \textbf{Falsos plagios}  \\ \hline
+5 & 100 & 5 & 0 & 20  \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Resultados de la detección de similitud de Dominó}
+\label{tab:Domino}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Parejas plagio} & \textbf{Parejas NO plagio} & \textbf{Plagios detectados} & \textbf{Plagios no detectados} & \textbf{Falsos plagios}  \\ \hline
+5 & 100 & 5 & 0 & 22  \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Resultados de la detección de similitud de Hulk}
+\label{tab:Hulk}
+\end{table}
+
+
+
+\begin{table}[ht]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Parejas plagio} & \textbf{Parejas NO plagio} & \textbf{Plagios detectados} & \textbf{Plagios no detectados} & \textbf{Falsos plagios}  \\ \hline
+5 & 100 & 5 & 0 & 25  \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Resultados de la detección de similitud de WallE}
+\label{tab:WallE}
+\end{table}
+
+Los resultados que se presentaron en este capítulo muestran que el modelo es capaz de identificar correctamente los proyectos fraudulentos en una gran mayoría de los casos. Sin embargo, se capturaron también erróneamente varios proyectos no fraudulentos que deben ser filtrados por expertos (profesores).
+

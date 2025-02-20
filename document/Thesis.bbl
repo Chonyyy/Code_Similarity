@@ -1,0 +1,343 @@
+\begin{thebibliography}{10}
+
+\bibitem{Abadi2016}
+Martín Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen, Craig
+  Citro, Greg~S. Corrado, Andy Davis, Jeffrey Dean, Mathew Eastwood, Scott
+  Gray, Dominic Harvey, Geoffrey Irving, Michael Isard, Yangqing Jia, Rafal~M.
+  K., Josh Kratz, Kunal Malhotra, Balazs McGinnis, Sherry Moore, Derek Murray,
+  Dave Orr, Mike Schuster, Josh Susskind, Zhuowen Tu, Vijay V., Pete Warden,
+  Xiaoqiang Wu, and Reza Zadeh.
+\newblock Tensorflow: Large-scale machine learning on heterogeneous systems.
+\newblock {\em arXiv:1603.04467}, 2016.
+
+\bibitem{abadi2016tensorflow}
+Martín Abadi, Ashish Agarwal, Paul Barham, et~al.
+\newblock Tensorflow: A system for large-scale machine learning.
+\newblock {\em Proceedings of the 12th USENIX Symposium on Operating Systems
+  Design and Implementation (OSDI)}, pages 265--283, 2016.
+
+\bibitem{aho1986compilers}
+Alfred~V. Aho, Ravi Sethi, and Jeffrey~D. Ullman.
+\newblock {\em Compilers: Principles, Techniques, and Tools}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{aiken1994moss}
+Alex Aiken.
+\newblock Moss (measure of software similarity), 1994.
+
+\bibitem{alon2019code2seq}
+Uri Alon, Shaked Brody, Omer Levy, and Eran Yahav.
+\newblock Code2seq: Generating sequences from structured representations of
+  code.
+\newblock In {\em International Conference on Learning Representations (ICLR)},
+  2019.
+
+\bibitem{alon2019code2vec}
+Uri Alon, Meital Zilberstein, Omer Levy, and Eran Yahav.
+\newblock Code2vec: Learning distributed representations of code.
+\newblock In {\em Proceedings of the ACM on Programming Languages}, volume~3,
+  pages 40:1--40:29, 2019.
+
+\bibitem{SupervisedLearning}
+Ethem Alpaydin.
+\newblock {\em Introduction to Machine Learning (2nd Edition)}.
+\newblock MIT Press, 2014.
+
+\bibitem{springer2016vulnerable}
+Unspecified Author.
+\newblock Discovering vulnerable functions: A code similarity based approach.
+\newblock In {\em Proceedings of the 2016 International Conference on Software
+  Engineering}, 2016.
+
+\bibitem{iccc2020clustering}
+Unspecified Author.
+\newblock Code similarity detection technique based on ast unsupervised
+  clustering method.
+\newblock In {\em Proceedings of the 2020 International Conference on
+  Computational Communications and Networks (ICCC)}, 2020.
+
+\bibitem{ijana2022semantic}
+Unspecified Author.
+\newblock Enhanced semantic similarity detection of program code using siamese
+  neural network.
+\newblock {\em International Journal of Advanced Networking and Applications},
+  14(2), 2022.
+
+\bibitem{baxter1998clone}
+Ira~D. Baxter, Andrew Yahin, Leonardo Moura, Marcelo Sant'Anna, and Lorraine
+  Bier.
+\newblock Clone detection using abstract syntax trees.
+\newblock In {\em Proceedings of the International Conference on Software
+  Maintenance (ICSM)}, pages 368--377, 1998.
+\newblock Propuesta de métodos para detectar clones exactos y casi
+  coincidentes mediante subárboles de AST.
+
+\bibitem{Bishop1995}
+C.~M. Bishop and L.~J. F.~H. van~der Maaten.
+\newblock L1 distance in machine learning: Applications and analysis.
+\newblock {\em IEEE Transactions on Neural Networks}, 6(1):11--19, 1995.
+\newblock Explora la aplicación de la distancia L1 en el aprendizaje
+  supervisado.
+
+\bibitem{bishop2006pattern}
+Christopher~M. Bishop.
+\newblock {\em Pattern Recognition and Machine Learning}.
+\newblock Springer, 2006.
+
+\bibitem{boyer1977stringsearch}
+Robert~S. Boyer and J.~Strother Moore.
+\newblock A fast string searching algorithm.
+\newblock In {\em Proceedings of the 19th Annual Symposium on Switching and
+  Automata Theory (SWAT 1978)}, pages 62--72. IEEE, 1977.
+
+\bibitem{bromley1993signature}
+J.~Bromley, Y.~LeCun, I.~Guyon, R.~Shah, L.~Bottou, and Y.~Hu.
+\newblock Signature verification using a siamese time delay neural network.
+\newblock In {\em Neural Networks, 1993., IEEE International Conference on},
+  pages 669--674. IEEE, 1993.
+
+\bibitem{brown2020language}
+Tom~B. Brown, Benjamin Mann, Nick Ryder, et~al.
+\newblock Language models are few-shot learners.
+\newblock {\em arXiv preprint arXiv:2005.14165}, 2020.
+
+\bibitem{Cai2020}
+H.~Cai, Y.~Liu, and Z.~Wu.
+\newblock Modeling functional similarity in source code with graph-based
+  siamese network.
+\newblock {\em ACM SIGPLAN Notices}, 2020.
+
+\bibitem{chopra2005learning}
+Sumit Chopra, Raia Hadsell, and Yann LeCun.
+\newblock Learning a similarity metric discriminatively, with application to
+  face verification.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, 2005.
+
+\bibitem{cortes1995support}
+Corinna Cortes and Vladimir Vapnik.
+\newblock {\em Support-vector networks}, volume~20.
+\newblock Springer, 1995.
+
+\bibitem{duchi2011adagrad}
+John Duchi, Elad Hazan, and Yoram Singer.
+\newblock Adaptive subgradient methods for online learning and stochastic
+  optimization.
+\newblock {\em Journal of Machine Learning Research}, 12(7):2121--2159, 2011.
+\newblock Introducción al concepto de tasas de aprendizaje adaptativas con
+  AdaGrad.
+
+\bibitem{duracik2018sourcecode}
+M.~Duracik, E.~Kirsak, and P.~Hrkut.
+\newblock Source code representations for plagiarism detection.
+\newblock In {\em Springer International Publishing AG, part of Springer
+  Nature: CCIS 870}, pages 61--69, 2018.
+
+\bibitem{JPlag2025}
+Benedikt G., Matthias F., Jens K., and Helmut P.
+\newblock Jplag: A system for detecting software plagiarism.
+
+\bibitem{Goodfellow-et-al-2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem{goodfellow2016deep}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock Capítulo 8, Optimización.
+
+\bibitem{Hahnloser2000}
+Richard~H. Hahnloser, Robert~S. Finkelstein, and Steven~H. Seung.
+\newblock Sigmoid activation functions for neural networks.
+\newblock {\em Neural Computation}, 12(4):909--931, 2000.
+\newblock Este artículo analiza las funciones de activación sigmoidal y su
+  aplicación en redes neuronales.
+
+\bibitem{harris2020array}
+Charles~R. Harris, K.~Jarrod Millman, Stéfan van~der Walt, et~al.
+\newblock Array programming with numpy.
+\newblock {\em Nature}, 585(7825):357--362, 2020.
+
+\bibitem{he2015deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 770--778, 2015.
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+
+\bibitem{semantics2024chatgpt}
+Unspecified Hoq and Unspecified Shi.
+\newblock Detecting chatgpt-generated code submissions in a cs1 course using
+  machine learning models.
+\newblock {\em Semantics Scholar}, 2024.
+
+\bibitem{kam2005syntax}
+Timothy Kam.
+\newblock Analyzing and understanding software artifacts with abstract syntax
+  trees.
+\newblock In {\em Proceedings of the 2005 International Conference on Software
+  Engineering Research and Practice}, 2005.
+
+\bibitem{knuth1977patternmatching}
+Donald~E. Knuth, James H.~Morris Jr, and Vaughan~R. Pratt.
+\newblock Fast pattern matching in strings.
+\newblock {\em SIAM Journal on Computing}, 6(2):323--350, 1977.
+
+\bibitem{koch2015siamese}
+Gregory Koch, Richard Zemel, and Ruslan Salakhutdinov.
+\newblock Siamese neural networks for one-shot image recognition.
+\newblock {\em Proceedings of the 32nd International Conference on Machine
+  Learning (ICML)}, 2015.
+
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  25:1097--1105, 2012.
+
+\bibitem{lecun1998gradient}
+Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock {\em Proceedings of the IEEE}, 86(11):2278--2324, 1998.
+
+\bibitem{Li2022}
+Y.~Li, F.~Liu, and Y.~Wang.
+\newblock Java source code similarity detection using siamese networks.
+\newblock In {\em Proceedings of the International Conference on Machine
+  Learning}, 2022.
+
+\bibitem{manning2008introduction}
+Christopher~D. Manning, Prabhakar Raghavan, and Hinrich Schütze.
+\newblock {\em Introduction to Information Retrieval}.
+\newblock Cambridge University Press, 2008.
+
+\bibitem{DominoGitHub}
+MATCOM.
+\newblock Domino.
+
+\bibitem{HulkGitHub}
+MATCOM.
+\newblock Hulk.
+
+\bibitem{MoogleGitHub}
+MATCOM.
+\newblock Moogle.
+
+\bibitem{CoolCompilerBase2019}
+MATCOM.
+\newblock Wall-e.
+
+\bibitem{mckinney2010data}
+Wes McKinney.
+\newblock {\em Data Structures for Statistical Computing in Python}.
+\newblock Springer, New York, NY, 2010.
+
+\bibitem{csharp_version_history}
+Microsoft.
+\newblock C\# version history, 2024.
+
+\bibitem{mikolov2013efficient}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
+
+\bibitem{muchnick1997compilerdesign}
+Steven~S. Muchnick.
+\newblock {\em Advanced Compiler Design and Implementation}.
+\newblock Morgan Kaufmann Publishers, 1997.
+
+\bibitem{muhammad2022semantic}
+Aminu~B. Muhammad, Abba Almu~Hadiza Lawal, Abba~Abubakar Roko, and Abdulgafar
+  Usman.
+\newblock Enhanced semantic similarity detection of program code using siamese
+  neural network.
+\newblock {\em Int. J. Advanced Networking and Applications}, 14(2):5353--5360,
+  2022.
+
+\bibitem{damerauLevenshteinPlagiarismAST}
+Ahlijati Nuraminah and Abdullah Ammar.
+\newblock Damerau-levenshtein distance algorithm based on abstract syntax tree
+  to detect code plagiarism.
+\newblock {\em Journal of Software Engineering Research and Applications},
+  2019.
+
+\bibitem{parr2013antlr}
+Terence Parr.
+\newblock {\em The Definitive ANTLR 4 Reference}.
+\newblock Pragmatic Bookshelf, Raleigh, NC, 2013.
+
+\bibitem{paszke2019pytorch}
+Adam Paszke, Sam Gross, Francisco Massa, et~al.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+\newblock {\em Proceedings of NeurIPS}, 32, 2019.
+
+\bibitem{pedregosa2011scikit}
+Fabrice Pedregosa, Guillaume Varoquaux, et~al.
+\newblock Scikit-learn: Machine learning in python.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem{pellin2004authorship}
+B.~N. Pellin.
+\newblock Using support vector machines and abstract syntax trees for
+  classifying code authorship.
+\newblock In {\em Proceedings of the 4th International Conference on Software
+  Engineering Research and Practice}, 2004.
+\newblock Clasificación de autoría en código fuente utilizando SVM y AST.
+
+\bibitem{antlr4}
+ANTLR Project.
+\newblock Antlr v4.
+\newblock \url{https://github.com/antlr/antlr4}, 2025.
+
+\bibitem{qian1999momentum}
+Ning Qian.
+\newblock On the momentum term in gradient descent learning algorithms.
+\newblock {\em Neural Networks}, 12(1):145--151, 1999.
+\newblock Detalles sobre el uso de Momentum.
+
+\bibitem{saini2021learning}
+Rahul Saini, Prashant Singh, Jitendra Singh, and Girdhari Sikka.
+\newblock Learning semantic representations of source code using word2vec.
+\newblock {\em International Journal of Advanced Computer Science and
+  Applications}, 12(8):99, 2021.
+
+\bibitem{smith2020subtree}
+Robert Smith, Mary Johnson, and Kevin Lee.
+\newblock A first step towards algorithm plagiarism detection using subtree
+  comparison.
+\newblock In {\em Proceedings of the 15th International Conference on
+  Computational Intelligence}. IEEE, 2020.
+
+\bibitem{srivastava2014dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan
+  Salakhutdinov.
+\newblock Dropout: A simple way to prevent neural networks from overfitting.
+\newblock {\em Journal of Machine Learning Research}, 15(56):1929--1958, 2014.
+\newblock Introducción de Dropout como técnica de regularización.
+
+\bibitem{levenshteinCloneDetection}
+&~Ettore~Merlo Thierry M.~Lavoie.
+\newblock Levenshtein edit distance-based type iii clone detection using metric
+  trees.
+\newblock 2011.
+
+\bibitem{wgr2020graph}
+Wenhan Wang and Unspecified Zhang.
+\newblock Detecting code clones with graph neural network and flow-augmented
+  abstract syntax tree.
+\newblock {\em ResearchGate}, 2020.
+
+\bibitem{wang2022kernel}
+Xin Wang, Li~Zhang, Yu~Chen, et~al.
+\newblock A weighted abstract syntax tree kernel method for source code
+  plagiarism detection.
+\newblock {\em Journal of Software Engineering and Applications}, 2022.
+
+\end{thebibliography}

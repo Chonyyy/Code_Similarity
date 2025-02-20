@@ -1,0 +1,44 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
+A level-1 auxiliary file: FrontMatter/Dedication.aux
+A level-1 auxiliary file: FrontMatter/Thanks.aux
+A level-1 auxiliary file: FrontMatter/SupervisorOpinion.aux
+A level-1 auxiliary file: FrontMatter/Abstract.aux
+A level-1 auxiliary file: FrontMatter/Contents.aux
+A level-1 auxiliary file: MainMatter/Introduction.aux
+A level-1 auxiliary file: MainMatter/Background.aux
+A level-1 auxiliary file: MainMatter/Proposal.aux
+A level-1 auxiliary file: MainMatter/Implementation.aux
+A level-1 auxiliary file: BackMatter/Conclusions.aux
+A level-1 auxiliary file: BackMatter/Recomendations.aux
+A level-1 auxiliary file: BackMatter/Anexos.aux
+A level-1 auxiliary file: BackMatter/Bibliography.aux
+The style file: plain.bst
+Database file #1: Bibliography.bib
+Repeated entry---line 260 of file Bibliography.bib
+ : @article{ijana2022semantic
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 269 of file Bibliography.bib
+ : @inproceedings{iccc2020clustering
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 276 of file Bibliography.bib
+ : @article{wgr2020graph
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 284 of file Bibliography.bib
+ : @inproceedings{springer2016vulnerable
+ :                                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 292 of file Bibliography.bib
+ : @article{semantics2024chatgpt
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 432 of file Bibliography.bib
+ : @article{mckinney2010data
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--can't use both volume and number fields in alon2019code2vec
+Warning--can't use both volume and number fields in cortes1995support
+Warning--empty booktitle in levenshteinCloneDetection
+(There were 6 error messages)

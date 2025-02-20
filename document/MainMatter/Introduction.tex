@@ -1,0 +1,51 @@
+\chapter*{Introducción}\label{chapter:introduction}
+\addcontentsline{toc}{chapter}{Introducción}
+
+El análisis de similitud de código en Ciencias de la Computación se centra en la comparación de fragmentos de este para identificar similitudes y diferencias entre ellos. Este enfoque se utiliza en la detección de plagios y en la revisión de código, en sentido general. 
+
+Esta investigación surge de la necesidad de dotar a las instituciones educativas de herramientas que puedan analizar código con precisión. Al combinar técnicas de aprendizaje autom\'atico \cite{Goodfellow-et-al-2016} y extracci\'on de \'Arboles de Sintaxis Abstracta \cite{baxter1998clone}, se propone un enfoque para la detección de similitud de código. Este enfoque no sólo busca resolver los problemas de plagio en entornos académicos, sino también contribuir al entendimiento teórico del problema y ofrecer una base para futuras investigaciones en el área.  
+
+
+\section*{Motivación y justificación}
+
+En el contexto académico, la detección de similitud de código y el análisis de plagios representan un desafío en las evaluaciones docentes. Los profesores enfrentan la tarea de garantizar la originalidad en las soluciones de los estudiantes a los problemas de programación que se le presenta. Este problema no solo afecta la integridad académica, sino que también dificulta evaluar de manera justa el aprendizaje y la comprensión de conceptos.  
+
+El plagio de código puede presentarse mediante prácticas como la copia literal, el cambio de nombres de variables, la reorganización de bloques de código o la reescritura con estructuras equivalentes que mantengan la l\'ogica de los algoritmos. Como resultado, la detección efectiva requiere sistemas que puedan identificar similitudes semánticas y estructurales, independientemente de las transformaciones que se realizan.  
+
+
+\section*{Formulación del problema}
+
+Formalmente el problema que este trabajo propone resolver es: dado un conjunto de proyectos computacionales en el lenguaje C\#, encontrar parejas de éstos que sean similares entre sí. El ámbito del problema en esta investigación se encuentra dentro del dominio general de los problemas de Inteligencia Artificial, particularmente en los procesos de análisis de similitud y detección de patrones en conjuntos de datos estructurados. Este problema es relevante en múltiples áreas, como la detección de plagios en código fuente, la refactorización de \textit{software}, la optimización de bases de código y la identificación de redundancias en sistemas de desarrollo colaborativo.
+
+\section*{Hipótesis}
+
+Dado que se tiene un conjunto de proyectos de la asignatura de programación en lenguaje C\#, entonces resultaría útil, para los profesores que evalúan esta asignatura, tener un software capaz de por cada pareja de proyectos dos a dos, extraer sus respectivos AST, compararlos, y clasificarlos de acuerdo a su similitud para descubrir posibles fraudes.
+
+\section*{Objetivo General} 
+
+El objetivo general de este trabajo de investigación es desarrollar un marco teórico para el análisis de similitud de código que combine la extracción de características mediante árboles de sintaxis abstracta (AST) con técnicas de aprendizaje automático para mejorar la precisión y la eficiencia en la detección de similitudes de c\'odigo C\#.
+
+ 
+\section*{Objetivos Específicos}
+
+\renewcommand{\labelenumi}{\Roman{enumi}.}
+\begin{enumerate}
+	\item {\bf Extracción y Procesamiento de AST para la Comparación de Código}\\
+Diseñar e implementar un sistema que utilice Árboles de Sintaxis Abstracta (AST) para analizar y comparar código o proyectos de C\#.   
+	
+	\item {\bf Integrar Técnicas de Aprendizaje Automático para la Detección de Similitudes} \\
+Integrar técnicas de aprendizaje automático para mejorar la detección de similitudes en el código. Entrenar un modelo de aprendizaje supervisado utilizando un conjunto de datos conformado por proyectos de C\#. 
+
+	\item {\bf Desarrollar y Validar una Herramienta Práctica} \\
+Desarrollar una herramienta de \textit{software} que implemente las técnicas desarrolladas, y sea f\'acil de usar por desarrolladores y educadores. 
+\end{enumerate}
+
+\section*{Propuesta de solución}
+
+
+Se propone extraer los ASTs de códigos de C\#, convertirlos en vectores de carácteristicas y utilizarlos como entrada a un modelo de Red Neuronal Siamesa. El modelo asignará valores entre 0 y 1 a parejas de códigos según su similitud (siendo más parecido mientras más se acerca a 1) y se utilizará en un \textit{software} clasificador. La red siamesa se entrenará utilizando un conjunto de códigos generados por Inteligencias Artificiales generativas y otro conjunto compuesto por copias manuales de proyectos de C\#. De este modo se obtendrá una herramienta práctica, que se pueda integrar en entornos de desarrollo reales. 
+
+La validación de la herramienta se llevará a cabo en escenarios prácticos, como la detección de plagios en tareas de programación de código. Esto no solo demostrará la efectividad de las técnicas implementadas, sino también garantizará que la herramienta sea útil para los usuarios finales.
+
+
+El presente documento está organizado en 6 capítulos. En el capítulo 1 se describen los elementos fundamentales del problema de similitud de código. En el capítulo 2 se describe la extracción de caracteristicas del AST. Por su parte en el capítulo 3 se muestra la preparación del conjunto de entrenamiento y en el capítulo 4 se describe el modelo de red neuronal utilizado para este problema. En el capítulo 5 se exponen los experimentos y resultados alcanzados y finalmete en el capítulo 6 se exponen las conclusiones del trabajo y se presentan, a modo de recomendaciones, las líneas futuras que dan continuidad a la presente investigacion.

@@ -1,0 +1,36 @@
+\BOOKMARK [0][-]{chapter*.6}{Introducci\363n}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Estudio del estado actual de la t\351cnica}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Introducci\363n al An\341lisis de Similitud de C\363digo}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{T\351cnicas Basadas en \301rboles de Sintaxis Abstracta \(AST\)}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Avances en An\341lisis de Similitud de C\363digo}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.3.1}{Integraci\363n del Aprendizaje Autom\341tico}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.2}{Redes Neuronales Siamesas}{section.1.3}% 7
+\BOOKMARK [1][-]{section.1.4}{Representaciones Vectoriales y Aprendizaje Profundo}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{Uso de ANTLR y Python para extracci\363n de ASTs}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.6}{Resumen }{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{Extracci\363n de features del AST}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Modificaciones a la Gram\341tica de ANTLR para Soporte de C\043 Actual}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{Extraccion del AST}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Extraccion de features}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Preparaci\363n del conjunto de entrenamiento \(dataset\)}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Word2Vec}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Vectores de caracter\355sticas}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{Construcci\363n del dataset}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Redes Neuronales Siamesas para la Similitud de C\363digo}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Red Neuronal Siamesa}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Implementaci\363n del Modelo}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.2.1}{Subred Base}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.2}{Construcci\363n del Modelo Siam\351s}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.3}{Funci\363n de P\351rdida}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.4}{Optimizaci\363n}{section.4.2}% 25
+\BOOKMARK [1][-]{section.4.3}{Proceso de Entrenamiento y Predicci\363n}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.3.1}{Entrenamiento}{section.4.3}% 27
+\BOOKMARK [2][-]{subsection.4.3.2}{Predicci\363n}{section.4.3}% 28
+\BOOKMARK [0][-]{chapter.5}{Experimentos y resultados}{}% 29
+\BOOKMARK [1][-]{section.5.1}{Evaluaci\363n del Modelo}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.2}{Experimentos}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.3}{Validaci\363n de resultados}{chapter.5}% 32
+\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 33
+\BOOKMARK [0][-]{section*.13}{Recomendaciones}{}% 34
+\BOOKMARK [0][-]{chapter*.15}{Anexos}{}% 35
+\BOOKMARK [0][-]{chapter*.126}{Bibliograf\355a}{}% 36

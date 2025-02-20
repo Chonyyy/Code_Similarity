@@ -1,0 +1,116 @@
+\chapter{Estudio del estado actual de la técnica}\label{chapter:state-of-the-art}
+
+\section{Introducción al Análisis de Similitud de Código}
+El análisis de similitud de código tiene sus inicios en la década de 1970\cite{knuth1977patternmatching}. Se utiliza para la detección de plagios, la revisión de código y como herramientas de asistencia a clases. En esta sección se revisan los desarrollos históricos, metodologías y tecnologías relacionadas con este tema, así como los avances recientes en este ámbito.
+
+Los orígenes del análisis de similitud de código se remontan a los años 70 con los primeros algoritmos de coincidencia de cadenas de texto, cuando se buscaban métodos para detectar plagios en tareas de programación. Algoritmos como Knuth-Morris-Pratt (KMP) \cite{knuth1977patternmatching} y Boyer-Moore \cite{boyer1977stringsearch} se utilizaron inicialmente para comparar secuencias de texto, sentando las bases para tareas posteriores relacionadas con la comparación de código fuente la comparación de código fuente.
+
+En los 90, herramientas como MOSS (Measure of Software Similarity) \cite{aiken1994moss} fueron un primer paso dentro de este ámbito. MOSS normaliza el código, transform\'andolo en una representación estándar que facilita su comparación y reduce variaciones superficiales sin alterar su significado. En este proceso, MOSS elimina comentarios, renombra variables y unifica ciertos aspectos estructurales del código para detectar similitudes más allá de diferencias menores en la escritura. Esta normalización permite identificar similitudes estructurales y lógicas incluso frente a modificaciones superficiales, como cambios en los nombres de variables y funciones, alteraciones en la indentación o formato, reordenamiento de bloques de código sin afectar la lógica del programa, inserción o eliminación de comentarios, e incluso, reformulaciones sintácticas que no alteran la semántica del código. 
+
+\section{Técnicas Basadas en Árboles de Sintaxis Abstracta (AST)}
+
+Originalmente, fueron utilizadas en los 80 para ser usados en el desarrollo de compiladores \cite{aho1986compilers}, con posterioridad a esto, los AST comenzaron a usarse para el análisis y la transformación de código. A través de ellos, se pueden realizar comparaciones basadas en la estructura lógica y sintáctica del código, lo cual supera las limitaciones de las comparaciones textuales. Estas comparaciones más avanzadas se enfocan en el análisis de la estructura interna del programa, a través del uso de los AST y el análisis de flujos de control y las relaciones entre las diferentes partes del código, en lugar de simplemente comparar las secuencias de texto. Este enfoque permite identificar similitudes entre fragmentos de código que, aunque puedan diferir en su sintaxis o formato, mantienen la misma lógica subyacente, como ocurre con las reescrituras de código o cambios en los identificadores.
+
+Un AST es una representación jerárquica y estructurada de un código fuente\cite{kam2005syntax}. Cada nodo del árbol representa una construcción en un lenguaje de programación, tales como operadores, declaraciones o expresiones. Esta representación abstracta facilita el análisis del código al ignorar detalles superficiales como el formato o los comentarios. Un ejemplo de un fragmento de AST se muestra en la figura \ref{fig:ast}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ast.jpg}
+    \caption{La imagen muestra un subgrafo que representa una ecuación a = 3 * 5 + 2} 
+    \label{fig:ast}
+\end{figure} 
+
+En I. Baxter et al. propusieron métodos que utilizan hashing\footnote{Hashing es el proceso de transformar datos de longitud variable en un valor de longitud fija usando una función hash. Este valor, conocido como hash, es único para cada conjunto de datos, lo que permite comparar rápidamente información sin necesidad de analizar los datos completos. Se utiliza en estructuras de datos (como tablas hash), verificación de integridad (para detectar cambios en archivos) y seguridad (por ejemplo, en contraseñas). La principal característica del hashing es que pequeños cambios en los datos de entrada producen resultados muy diferentes.} para detectar clones exactos \cite{baxter1998clone} y casi coincidentes mediante subárboles de AST. Aunque efectivos, enfrentan desafíos como falsos positivos en la detección de clones complejos.
+
+B. N. Pellin utilizó una M\'aquina de Soporte Vectorial (SVM) y los AST para clasificar autoría en código fuente \cite{pellin2004authorship}.
+
+En investigaciones recientes, se enriquecen los métodos de árboles de sintaxis abstracta (AST) con funciones de kernel para mejorar su capacidad descriptiva en la detección de clones y similitudes. Las funciones de kernel son técnicas matemáticas utilizadas en aprendizaje automático, especialmente en métodos como las Máquinas de Soporte Vectorial (SVM). A partir de esto, se pueden capturar patrones complejos, mejorando la precisión en la detección de similitudes, incluso, en casos donde las estructuras pueden diferir en términos de sintaxis o formato. Por ejemplo, Wang et al. \cite{wang2022kernel} introdujo un enfoque que utiliza un kernel de árbol ponderado para identificar plagios en código fuente. Este método aumenta la precisión al considerar las relaciones jerárquicas entre los nodos.
+
+Por otro lado, la comparación de subárboles mediante la subsecuencia común más larga (LCS) es útil para detectar similitudes estructurales en algoritmos \cite{smith2020subtree}. Este enfoque permite identificar patrones recurrentes cuando el código presenta modificaciones superficiales.
+
+El análisis basado en AST no se limita a detectar similitudes textuales, sino que también abarca similitudes semánticas y estructurales. Estas capacidades lo convierten en una herramienta eficaz para analizar la lógica subyacente del código, aún en casos donde se realizan modificaciones para dificultar la detección directa.
+
+
+\section{Avances en Análisis de Similitud de Código}
+
+Los avances recientes en el análisis de similitud de código utilizan técnicas como la distancia de Levenshtein \cite{levenshteinCloneDetection}, que miden las modificaciones necesarias para transformar un fragmento de código en otro. También se emplean modelos de representación vectorial como Word2Vec y Code2Vec \cite{alon2019code2vec}, que convierten el código en vectores para comparar similitudes. Estas técnicas utilizan el AST, que representan la estructura lógica del código, lo que permite detectar similitudes en la lógica del programa más allá de la sintaxis.
+
+Entre las técnicas basadas en distancias de edición, destaca el uso de la distancia de Levenshtein, que es una métrica que calcula el número mínimo de operaciones (inserciones, eliminaciones o sustituciones de caracteres) necesarias para transformar una cadena de texto en otra. Esto permite detectar clones que presentan cambios significativos en su estructura, como la reordenación de bloques de código o cambios en los identificadores, pero que mantienen la misma lógica \cite{levenshteinCloneDetection}. Por otro lado, la distancia de Damerau-Levenshtein \cite{damerauLevenshteinPlagiarismAST} es una extensión de la distancia de Levenshtein que extiende este enfoque al análisis estructural del código mediante el empleo de AST y utiliza no solo las operaciones básicas de edición, sino también la reordenación de caracteres como una operación válida.
+
+En cuanto a los modelos de representación vectorial\footnote{Los modelos de representación vectorial son técnicas que convierten datos, como texto o código, en vectores numéricos en un espacio multidimensional.}, propuestas recientes como Code2Vec \cite{alon2019code2vec} y Code2Seq \cite{alon2019code2seq} se utilizan en el análisis de similitudes de código al transformar el código fuente en vectores que encapsulan tanto información sintáctica como semántica. Estos modelos emplean técnicas adaptadas del procesamiento de lenguaje natural (NLP), como las utilizadas en la representación de palabras y frases mediante modelos de embeddings. En el contexto de código, adaptan estas técnicas para representar fragmentos de código como vectores, utilizando las estructuras de árboles de sintaxis abstracta (AST). En lugar de palabras o frases, se trabaja con caminos entre nodos en el AST, lo que permite capturar relaciones jerárquicas y secuenciales dentro del código fuente.
+
+\subsection{Integración del Aprendizaje Automático}
+Desde 2010, el aprendizaje automático contribuye a mejorar la precisión del análisis de similitud de código. El uso de redes neuronales recurrentes (RNN) \cite{hochreiter1997long} y convolucionales (CNN) \cite{lecun1998gradient} generan representaciones vectoriales que capturan patrones.
+
+Por otro lado, la detección de similitudes mediante el uso de clustering y métricas como la similitud coseno se exploran en \textit{Code Similarity Detection Technique Based on AST Unsupervised Clustering Method} \cite{iccc2020clustering}. Este enfoque combina métodos de agrupamiento o clustering con la estructura AST. El uso de técnicas no supervisadas en este contexto permite identificar patrones similares sin necesidad de etiquetar los datos previamente.
+
+En  \cite{semantics2024chatgpt} se presenta un estudio donde se destaca el uso de modelos de aprendizaje automático para detectar el código que generan herramientas como ChatGPT \cite{brown2020language} en entornos académicos.
+
+Los modelos más recientes \cite{wgr2020graph} también exploran la integración de redes neuronales de grafos (Graph Neural Networks, GNN), que son técnicas de aprendizaje profundo que operan sobre estructuras de grafos, como las representaciones gráficas del código. Estos modelos permiten capturar relaciones no lineales y dependencias complejas entre los componentes del código. La integración con árboles de sintaxis abstracta (AST) permite combinar la representación estructural jerárquica del código con la capacidad de las GNN de capturar interacciones a nivel de grafo, lo que mejora la detección de patrones y similitudes en el código fuente.
+
+Como se detalla en \cite{wgr2020graph}, este estudio implementa redes neuronales de grafos (GNN) y las combina con AST para mejorar la detección de clones de código. Con un 96\% de precisión, este modelo aprovecha la representación gráfica del flujo de información en el código fuente para identificar similitudes estructurales profundas que otras técnicas podrían pasar por alto.
+
+Otras investigaciones se centran en la detección de vulnerabilidades en el código mediante similitud estructural. Un ejemplo de esto se presenta en \cite{springer2016vulnerable}, que emplea la similitud coseno \footnote{La similitud del coseno es una métrica utilizada para medir la similitud entre dos vectores en un espacio vectorial.} entre ASTs para identificar cercan\'ias entre funciones en el c\'odigo, y el uso de un enfoque de redes neuronales profundas ( Deep Neural Networks, DNN)\footnote{Son una clase de modelos de aprendizaje automático que están compuestos por múltiples capas de neuronas, lo que les permite aprender representaciones complejas de los datos.} para mapear estas funciones a patrones conocidos de replicaci\'on.
+
+\subsection{Redes Neuronales Siamesas}
+Las redes neuronales siamesas son un tipo de arquitectura de red diseñada para aprender similitudes entre pares de entradas que son muestras relacionadas o similares. Por ejemplo imágenes, fragmentos de texto, o secuencias de código. Originalmente propuestas por Bromley y LeCun \cite{bromley1993signature}, estas redes constan de dos ramas idénticas que comparten los mismos parámetros. Cada rama procesa una de las entradas y genera una representación vectorial de alto nivel, la cual captura las características abstractas o esenciales del dato de entrada.
+
+Una representación vectorial de alto nivel es una proyección del dato de entrada en un espacio de características latentes, que son representaciones abstractas de los datos que capturan la información más importante y significativa de los mismos, pero de forma comprimida y en un espacio de mayor nivel, donde se enfatizan las relaciones relevantes para la tarea específica como por ejemplo similitud, clasificación o agrupamiento y se descartan detalles irrelevantes \cite{mikolov2013efficient}. En el contexto de las redes neuronales siamesas, estas representaciones permiten comparar entradas al evaluar su similitud o disimilitud mediante métricas específicas. Estas métricas, como la distancia euclidiana\cite{cortes1995support}, la similitud del coseno\cite{manning2008introduction} o la distancia L1\cite{bishop2006pattern}, identifican relaciones semánticas y estructurales entre los datos, incluso cuando no son idénticos textualmente \cite{chopra2005learning, bromley1993signature}.
+
+En \cite{koch2015siamese} se introducee la arquitectura siamesa como un enfoque para la solución de problemas de comparación entre pares de entradas ( imágenes, fragmentos de texto o secuencias de código). Este tipo de redes es especialmente útil en escenarios de aprendizaje de pocas muestras ( se refiere a la capacidad de entrenar un modelo con un número muy reducido de ejemplos ) en lugar de grandes cantidades de datos etiquetados. Las redes siamesas aprenden una métrica de similitud procesando pares de datos a través de dos ramas idénticas con pesos compartidos, lo que permite que la red compare las entradas y determine si son similares o no. Este enfoque reduce la necesidad de grandes conjuntos de datos etiquetados, los cuales son costosos y difíciles de obtener en muchas aplicaciones\cite{koch2015siamese}. Su capacidad para generalizar con pocos ejemplos las hace ideales para tareas como la detección de similitud de código, donde puede ser difícil y costoso etiquetar grandes cantidades de código de manera manual.
+
+En investigaciones recientes, como \cite{ijana2022semantic}, esta arquitectura se utiliza junto con redes convolucionales (CNN)\cite{krizhevsky2012imagenet} para analizar similitudes semánticas, logrando precisiones de hasta un 90\%.
+
+Por otro lado, en \cite{Li2022}, se combinan redes siamesas con modelos de embeddings de palabras como Word2Vec para mejorar la representación de tokens en el análisis de similitud.
+
+
+
+\section{Representaciones Vectoriales y Aprendizaje Profundo}
+
+Word2Vec se utiliza para generar representaciones vectoriales de fragmentos de código, a partir de lo cual se pueden capturar relaciones semánticas complejas \cite{mikolov2013efficient}. Las representaciones vectoriales permiten realizar comparaciones entre los fragmentos de código, pues se transforman en puntos dentro de un espacio vectorial. Estas representaciones capturan tanto la estructura lógica como los patrones semánticos.
+
+Desde 2013, se han empleado redes neuronales profundas (DNN) para aprender incrustaciones vectoriales \cite{mikolov2013efficient} de código. \cite{he2015deep}.
+
+\section{Uso de ANTLR y Python para extracción de ASTs}
+
+ANTLR (ANother Tool for Language Recognition) \cite{antlr4} es una herramienta que crea analizadores sintácticos y léxicos para lenguajes de programación, mediante la especificación de una gramática formal, que describe la estructura sintáctica de dicho lenguaje. A partir de esta gramática, ANTLR genera el código necesario para reconocer, analizar y manipular el código fuente \cite{parr2013antlr}.
+
+Se utiliza ANTLR debido a su versatilidad y eficiencia para trabajar con diferentes lenguajes de programación, especialmente en el caso de C\#. Una de las ventajas de ANTLR es su compatibilidad con múltiples lenguajes de programación, lo que permite generar analizadores para Python, Java, JavaScript, C\#, entre otros. Al generar los analizadores en Python, se aprovecha la simplicidad y flexibilidad de este lenguaje, ampliamente utilizado en el campo de Machine Learning. Python, además, es un lenguaje que se caracteriza por su sintaxis clara y su extensa librería de herramientas para análisis y procesamiento de datos: \texttt{NumPy} \cite{harris2020array}, \texttt{pandas} \cite{mckinney2010data}, \texttt{scikit-learn} \cite{pedregosa2011scikit}, \texttt{TensorFlow} \cite{abadi2016tensorflow}, y \texttt{PyTorch} \cite{paszke2019pytorch}, por tal motivo, se utiliza para implementar modelos de Machine Learning \cite{mckinney2010data}.
+
+
+\section{Resumen }
+
+\begin{table}[ht] 
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{|p{5cm}|p{1.8cm}|p{1.8cm}|p{4cm}|p{2cm}|p{2cm}|p{2cm}|p{3cm}|p{2.5cm}|}
+\hline
+\textbf{Paper} & \textbf{Machine Learning} & \textbf{AST} & \textbf{Modelo} & \textbf{Accuracy} & \textbf{Precisión} & \textbf{Recall} & \textbf{Lenguaje de Programación} & \textbf{Versión de C#} \\ \hline
+Enhanced Semantic Similarity Detection of Program Code Using Siamese Neural Network & TRUE & TRUE & Redes Neuronales Siamesas, CNN & (67\%-88\%) & 90\% & 95\% & C++ & \\ \hline
+Code Similarity Detection Technique Based on AST Unsupervised Clustering Method & TRUE & TRUE & Unsupervised Clustering & 0.8549-0.9043 & & & Python & \\ \hline
+Detecting ChatGPT-Generated Code Submissions in a CS1 Course Using Machine Learning Models & TRUE & TRUE & SVM, XGBoost, code2vec, ASTNN, and SANN & 97\% & 99\% & 97\% & Python & \\ \hline
+Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree & TRUE & TRUE & Graph Neural Networks (GNN) & 96\% & 94\% & 95\% & Java & \\ \hline
+Asteria: Deep Learning-based AST-Encoding for Cross-platform Binary Code Similarity Detection & TRUE & TRUE & Twin Network with Tree-LSTM and softmax & & & & Binario & \\ \hline
+JAVA SOURCE CODE SIMILARITY DETECTION USING SIAMESE NETWORKS & TRUE & TRUE & Recursive Neural Networks, Siamese Neural Networks & & 100\% & 99\% & Java & \\ \hline
+Modeling Functional Similarity in Source Code with Graph-Based Siamese Network & TRUE & TRUE & Graph Neural Networks & & & & Java & \\ \hline
+Clone Detection Using Abstract Syntax Suffix Trees & FALSE & TRUE & None & & & & (Java, C) & \\ \hline
+MOSS: Measure of Software Similarity & FALSE & FALSE & Normalización de código (eliminación de comentarios, renombrado de variables) & & & & (C, C++, Java, C#, Python, Visual Basic, Javascript, FORTRAN, ML, Haskell, Lisp, Scheme, Pascal, Modula2, Ada, Perl, TCL, Matlab, VHDL, Verilog, Spice, MIPS assembly, a8086 assembly, a8086 assembly, HCL2.) & \\ \hline
+JPlag: A System for Detecting Software Plagiarism & FALSE & TRUE & Tokenización,Clustering & & & & C#, Java, C++, Python & 6.0 \\ \hline
+\end{tabular}
+\end{adjustbox}
+\caption{Estudio sobre la detención de similitudes de código utilizando técnicas de Machine Learning, extracción de AST y otros modelos, en diferentes lenguajes de programación}
+\label{tab:1}
+\end{table}
+
+
+La tabla \ref{tab:1} muestra estudios sobre la detección de similitudes de código utilizando técnicas de \textbf{Machine Learning}, extracción de \textbf{AST}, y otros modelos en diferentes lenguajes de programación. Sin embargo, al observar los lenguajes de programación que se utilizan, se destaca que \textbf{C\#} es un lenguaje con poca representación si se compara con otros como \textbf{Java}, \textbf{Python} o \textbf{C++}.
+
+De los estudios que se mencionan, solo 2 sirven para comparar código de \textbf{C\#}: 
+\begin{itemize}
+ \item \textbf{MOSS} (una herramienta para la detección de similitudes de código) soporta \textbf{C\#}. Este \textit{software} usa técnicas de normalización de código: eliminar comentarios y renombrar variables. No usa técnicas de \textbf{Machine Learning}. MOSS fue creado en 1994 y en la actualidad todavía es una herramienta popular, pero no se actualiza con regularidad \cite{aiken1994moss}. 
+ 
+ \item \textbf{JPlag} \cite{JPlag2025} utiliza una versión desactualizada de \textbf{C\# 6.0}. Se creó en 1996 y su última actualización fue en \textbf{2015}. No emplea técnicas de análisis de aprendizaje supervisado como redes neuronales. En cambio usa técicas de clustering \cite{JPlag2025}. 
+
+\end{itemize}
+
+ El análisis anterior muestra que existen pocas herramientas que detecten similitudes de código en \textbf{C\#}, y ninguna en una versión actualizada del lenguaje. Esto sugiere que este lenguaje no ha sido explorado con la misma profundidad que otros en el contexto de la comparación de código. Esta tesis propone un \textit{software} capaz de analizar \textbf{C\# 12} y que además combina técnicas de Aprendizaje Automático Supervisado con comparaciones de ASTs. Esto representa su principal contribución.

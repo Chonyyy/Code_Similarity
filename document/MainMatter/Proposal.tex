@@ -1,0 +1,451 @@
+
+\chapter{Extracción de \textit{features} del AST}\label{chapter:proposal}
+
+En el análisis de similitud de código y detección de patrones, es necesario extraer características relevantes que capturen la estructura y el comportamiento del código para permitir a los modelos de análisis identificar similitudes y patrones. Estas características, se conocen como \textit{features}, y representan los aspectos más importantes de los datos, lo que permite analizar y comparar fragmentos de código de manera efectiva. Una de las técnicas más comunes para extraer estas características es el uso de Arboles de Sintaxis Abstracta (AST), que representan la estructura sintáctica de un fragmento de código en forma de árbol. En este capítulo se detalla la modificación de la gramática de ANTLR así como todo lo referido a la extracción del Árbol de Sintaxis Abstracta (AST) de los códigos y a la extracción de los \textit{features} de dichos árboles.
+
+\section{Modificaciones a la Gramática de ANTLR para Soporte de C\# Actual}
+
+ANTLR (Another Tool for Language Recognition) cuenta con una gramática basada en C\# 6.0. Esta gramática presentaba limitaciones significativas al trabajar con el código moderno (o sea, código que utilice versiones recientes del lenguaje). Se generan errores durante el análisis sintáctico y se genera un árbol de sintaxis abstracta (AST) incompleto. Por tal motivo, se decide rabajar con una versión más actualizada del lenguaje C\# 12.0 (introducida en noviembre de 2023) para reflejar las características que presentan versiones posteriores a C\# 6.  En los anexos se describen los cambios realizados a la gramática en dichas versiones, según lo reflejado en la documentacion correspondiente de Microsoft \cite{csharp_version_history} y las modificaciones que, como parte de este trabajo, se han realizado para actualizar la misma.\\
+
+\section{Extraccion del AST}
+
+  ANTLR convierte una gramática de lenguaje en un código a partir del cual se puede generar un árbol de sintaxis. A continuación, se describen los pasos que se siguen para generar un AST a partir de un código fuente, que utiliza un proceso de análisis léxico y sintáctico.
+ 
+ \begin{enumerate}
+    \item \textbf{Definición de la Gramática:}
+    primero, se define la gramática del lenguaje en un archivo \texttt{.g4} que expresa la estructura de un lenguaje mediante una serie de reglas léxicas y sintácticas. Es el núcleo de la herramienta ANTLR y sirve como una especificación formal del lenguaje de programación que se desea analizar o procesar. Estas reglas se emplean para descomponer el texto de entrada en componentes que ANTLR puede reconocer y procesar. 
+    \begin{itemize}
+    \item Las \textbf{reglas léxicas ( \textit{tokens} )} se encuentran en el archivo \textit{CSharpLexer.g4}. Estas  se encargan de identificar los componentes más simples del lenguaje: palabras clave, identificadores, operadores, números, comillas, entre otros. Los \textit{tokens} son las unidades mínimas de información con las que trabaja el analizador léxico, y cada uno de ellos se representa como una secuencia de caracteres que ANTLR puede reconocer.
+    
+    \item Las \textbf{reglas sintácticas} se encuentran en el archivo \textit{CSharpParser.g4}. Describen cómo los \textit{tokens} del \textit{lexer} se combinan en estructuras válidas dentro del lenguaje. Definen cómo los \textit{tokens} se agrupan y organizan en expresiones, sentencias, funciones o cualquier otra estructura del lenguaje. Por ejemplo, una regla sintáctica puede definir cómo se estructura una asignación de variable, estableciendo que una asignación se compone de un identificador, seguido de un operador de asignación y una expresión que puede ser un valor o una operación.
+\end{itemize}
+
+    \item \textbf{Generación del Lexer y el Parser:}
+    después de definir la gramática en un archivo \texttt{.g4}, ANTLR genera automáticamente las clases necesarias para implementar el \textit{lexer} (analizador léxico) y el \textit{parser} (analizador sintáctico) en Python. 
+ Como parte de este proceso, ANTLR también genera un árbol de sintaxis básico \textit{Parse Tree}, el cual representa la estructura jerárquica del código fuente que se analiza, incluyendo todos los \textit{tokens} y reglas gramaticales definidos en la gramática. Este árbol es fundamental para analizar el flujo y la estructura del programa, sirviendo como base para la creación de un Árbol de Sintaxis Abstracta (AST).
+
+Se utilizó ANTLR versión 4.13.2, que procesa los archivos \texttt{.g4} y genera las clases necesarias en Python. De igual forma, ANTLR automatiza el proceso de análisis léxico y sintáctico, facilitando la creación de herramientas como compiladores y analizadores de código.
+
+
+    \item \textbf{Análisis del Código o Texto de Entrada:} El lexer y parser se utilizan para procesar el código fuente o texto de entrada. 
+    
+\begin{quote} \texttt{ input\_stream = FileStream(file\_path, encoding='utf-8')} \end{quote}
+    
+    Este análisis comienza con el lexer, que divide el texto en tokens que siguen las reglas léxicas que se definen en la gramática.
+
+\begin{quote} \texttt{ lexer = CSharpLexer(input\_stream) \\ tokens = CommonTokenStream(lexer)} \end{quote}    
+    
+     Luego, el parser organiza estos tokens en una estructura jerárquica que refleja la gramática sintáctica del lenguaje. Este proceso de análisis genera un árbol de sintaxis, también conocido como un árbol de derivación, que representa la estructura jerárquica del código según las reglas definidas en el archivo \texttt{.g4}. Cada nodo del árbol corresponde a una regla de la gramática, lo que permite una representación estructurada del código.
+      
+\begin{quote} \texttt{ parser = CSharpParser(tokens)   } \end{quote}       
+
+    \item \textbf{Creación del Árbol de Sintaxis Abstracta (AST):} ANTLR no solo genera el árbol de sintaxis básico, sino que también crea un Árbol de Sintaxis Abstracta (AST), mediante la invocación de \textit{compilation\_unit()} que corresponde al nodo raíz del AST. A diferencia del árbol de sintaxis, el AST elimina detalles como los símbolos delimitadores o ciertos tokens que no aportan al análisis lógico del programa. El AST conserva la estructura lógica y semántica del código, organiza las relaciones jerárquicas entre elementos como expresiones, declaraciones, y bloques de control. Esto permite realizar análisis, como la extracción de características o la transformación del código.
+
+\begin{quote} \texttt{tree = parser.compilation\_unit()} \end{quote} 
+
+\item \textbf{Recorridos y Transformaciones en el AST:} Después de construir el AST, se utilizó el listener CSharpParserListener de ANTLR para recorrer el árbol y extraer información relevante del código fuente, que se explica en la próxima sección. Este listener recorre el AST y maneja cada nodo de acuerdo con la lógica que se define en el código.
+\end{enumerate}
+
+\section{Extraccion de features}
+
+ Se implementó una clase llamada {\bf FeatureExtractorListener}, que extiende la funcionalidad de CSharpParserListener para analizar el código fuente en C\#. A continuación, se describe del proceso de extracción de características y la importancia de cada una. \\
+
+\begin{enumerate}
+	\item Estructura del AST:
+    		\begin{itemize}
+			\item {\bf total\_nodes:} Número total de nodos en el AST.
+			\item {\bf max\_depth:} Profundidad máxima del AST.
+		\end{itemize}
+		
+	 \item Declaraciones y Variables:
+    \begin{itemize}
+        \item {\bf variables:} Número de variables locales.
+        \item {\bf constants:} Número de constantes declaradas.
+        \item {\bf variable\_names:} Conjunto de nombres de variables y sus tipos.
+        \item {\bf number\_of\_tuples:} Número de variables de tipo tupla.
+        \item {\bf lists:} Número de listas declaradas.
+        \item {\bf dicts:} Número de diccionarios declarados.
+    \end{itemize}
+    
+Las variables y constantes almacenan valores que pueden cambiar o permanecer fijos durante la ejecución. Las variables revelan el comportamiento dinámico del código, mientras que las constantes indican valores fijos que definen parámetros o condiciones estables dentro del flujo de ejecución.\\
+
+Además, la variedad y el tipo de estructuras de datos, como tuplas, listas y diccionarios, aportan información sobre el enfoque y la complejidad del código. Por ejemplo, el uso de estructuras de datos, como diccionarios anidados o listas de objetos, puede reflejar abstracción y modularidad en el diseño, mientras que estructuras más simples pueden indicar un código directo.
+
+    \item Declaraciones de Métodos y Clases:
+    \begin{itemize}
+        \item {\bf methods:} Número de métodos declarados.
+        \item {\bf method\_names:} Conjunto de nombres de métodos.
+        \item {\bf method\_return\_types:} Conjunto de tipos de retorno de métodos.
+        \item {\bf method\_parameters:} Lista de parámetros de métodos.
+        \item {\bf classes:} Número de clases declaradas.
+        \item {\bf class\_names:} Conjunto de nombres de clases.
+        \item {\bf abstract\_classes:} Número de clases abstractas.
+        \item {\bf sealed\_classes:} Número de clases selladas.
+        \item {\bf interfaces:} Número de interfaces declaradas.
+        \item {\bf interface\_names:} Conjunto de nombres de interfaces.
+    \end{itemize}
+    
+    La organización y modularidad del código se reflejan en la estructura y en los nombres de los métodos y clases. La interacción de los métodos con otros componentes evidencia el nivel de cohesión y diseño de la aplicación. Asimismo, las clases y sus tipos, como las abstractas o selladas, proporcionan información sobre la arquitectura y el enfoque de diseño del sistema.
+
+    \item Estructuras de Control:
+    \begin{itemize}
+        \item {\bf control\_structures\_if:} Número de sentencias if.
+        \item {\bf control\_structures\_switch:} Número de sentencias switch.
+        \item {\bf control\_structures\_for:} Número de bucles for.
+        \item {\bf control\_structures\_while:} Número de bucles while.
+        \item {\bf control\_structures\_dowhile:} Número de bucles do-while.
+        \item {\bf try\_catch\_blocks:} Número de bloques try-catch.
+    \end{itemize}
+    
+    Las estructuras de control definen el flujo del programa y su lógica. Un mayor número de estructuras de control indica una lógica ramificada.
+
+    \item Modificadores y Accesibilidad:
+    \begin{itemize}
+        \item {\bf access\_modifiers\_public:} Número de elementos públicos.
+        \item {\bf access\_modifiers\_private:} Número de elementos privados.
+        \item {\bf access\_modifiers\_protected:} Número de elementos protegidos.
+        \item {\bf access\_modifiers\_internal:} Número de elementos internos.
+        \item {\bf access\_modifiers\_static:} Número de elementos estáticos.
+        \item {\bf access\_modifiers\_protected\_internal:} Número de elementos protegidos internos.
+        \item {\bf access\_modifiers\_private\_protected:} Número de elementos privados protegidos.
+    \end{itemize}
+    Los modificadores de acceso proporcionan información sobre la encapsulación y visibilidad de los componentes del código. La prevalencia de ciertos modificadores puede indicar prácticas de diseño y seguridad en el código.
+
+    \item Modificadores Específicos:
+    \begin{itemize}
+        \item {\bf modifier\_readonly:} Número de elementos readonly.
+        \item {\bf modifier\_volatile:} Número de elementos volatile.
+        \item {\bf modifier\_virtual:} Número de elementos virtual.
+        \item {\bf modifier\_override:} Número de elementos override.
+        \item {\bf modifier\_new:} Número de elementos new.
+        \item {\bf modifier\_partial:} Número de elementos partial.
+        \item {\bf modifier\_extern:} Número de elementos extern.
+        \item {\bf modifier\_unsafe:} Número de elementos unsafe.
+        \item {\bf modifier\_async:} Número de elementos async.
+    \end{itemize}
+    
+    Al analizar modificadores como readonly, volatile o async, se obtiene información sobre cómo el código maneja la concurrencia, la inmutabilidad y la asincronía. Estos modificadores se emplean para identificar similitudes en la lógica y el flujo de ejecución. Modificadores como virtual y override indican una arquitectura orientada a objetos, lo que permite comparar el grado de extensibilidad y personalización en distintos fragmentos de código. Además, la presencia de unsafe y extern sugiere interacción con recursos de bajo nivel o externos, lo que proporciona información sobre las dependencias.
+
+    \item Llamadas a Librerías y LINQ(Language Integrated Query):
+    \begin{itemize}
+        \item {\bf library\_call\_console:} Número de llamadas a la librería Console.
+        \item {\bf library\_call\_math:} Número de llamadas a la librería Math.
+        \item {\bf linq\_queries\_select:} Número de consultas LINQ Select.
+        \item {\bf linq\_queries\_where:} Número de consultas LINQ Where.
+        \item {\bf linq\_queries\_orderBy:} Número de consultas LINQ OrderBy.
+        \item {\bf linq\_queries\_groupBy:} Número de consultas LINQ GroupBy.
+        \item {\bf linq\_queries\_join:} Número de consultas LINQ Join.
+        \item {\bf linq\_queries\_sum:} Número de consultas LINQ Sum.
+        \item {\bf linq\_queries\_count:} Número de consultas LINQ Count.
+    \end{itemize}
+    
+    Las llamadas a librerías y las consultas LINQ reflejan el uso de funcionalidades estándar y la gestión de datos. Las primeras indican el acceso a herramientas optimizadas, lo que puede denotar la experiencia del programador en modularidad y adaptabilidad. Las consultas LINQ, por su parte, facilitan el acceso eficiente y la manipulación de colecciones de datos, lo que sugiere preferencia por una sintaxis declarativa y gestión avanzada de datos en .NET.
+
+    \item Otras Características:
+    \begin{itemize}
+        \item {\bf number\_of\_lambdas:} Número de expresiones lambda.
+        \item {\bf number\_of\_getters:} Número de métodos get.
+        \item {\bf number\_of\_setters:} Número de métodos set.
+        \item {\bf number\_of\_namespaces:} Número de espacios de nombres.
+        \item {\bf enums:} Número de enumeraciones.
+        \item {\bf enum\_names:} Conjunto de nombres de enumeraciones.
+        \item {\bf delegates:} Número de delegados.
+        \item {\bf delegate\_names:} Conjunto de nombres de delegados.
+        \item {\bf node\_count:} Conteo de nodos por tipo.
+    \end{itemize}
+    
+  El número de expresiones lambda indica el uso de funciones anónimas, lo que sugiere una orientación hacia la programación funcional. La cantidad de métodos de acceso refleja el manejo de encapsulamiento y control de atributos. La presencia de espacios de nombres señala la estructura modular y la separación de responsabilidades. 
+ 
+\end{enumerate}
+    
+La extracción de características mediante el uso de FeatureExtractorListener captura información del código fuente en C\#, incluyendo su estructura, complejidad, patrones de diseño y prácticas de programación. Estas se procesan y se utilizan en el conjunto de entrenamiento, que será explicado en el próximo capítulo
+
+\chapter{Preparación del conjunto de entrenamiento (\textit{dataset})}\label{chapter:proposal}
+En este capítulo se detalla la construcción de los vectores de características que sirven como entrada a la Red Neuronal que se propone y la construcción del conjunto de entrenamiento.
+
+\section{Word2Vec}
+
+En el contexto del análisis de similitud de código, los nombres de variables, métodos y otros identificadores en el código fuente proporcionan información semántica sobre la funcionalidad y el propósito de diferentes partes del código. Sin embargo, los identificadores en el código no están estructurados de manera que las máquinas puedan comprender sus relaciones semánticas, para lograr esto se utilizó Word2Vec \cite{mikolov2013efficient}. Por ejemplo, los identificadores que se usan de manera similar en diferentes contextos tendrán \textit{embeddings} similares, esto es una técnica de procesamiento de lenguaje natural que convierte el lenguaje natural en vectores numéricos. Estos vectores son una representación del significado subyacente de las palabras.
+  El proceso involucra los siguientes pasos:
+\begin{enumerate}
+	\item \textit{Extracción de Identificadores}: se extraen todos los nombres de variables, métodos, clases, interfaces, enumeraciones y delegados del código fuente utilizando la clase FeatureExtractorListener.
+	
+	\item \textit{Entrenamiento de Word2Vec}: se utiliza un corpus de identificadores que se extrajeron de proyectos de C\# para entrenar el modelo Word2Vec. El modelo aprende las relaciones semánticas \cite{saini2021learning} entre los diferentes identificadores en el contexto del código.
+	
+	\item \textit{Conversión a \textit{embeddings} \cite{mikolov2013efficient}}: se halla el promedio entre los vectores que corresponden a cada \textit{feature} para asegurar que todos los vectores tengan la misma dimensión. Así, se captura la semántica y el contexto de los identificadores en el código.
+	 
+\end{enumerate}
+
+
+Estos vectores forman parte de los vectores de características que se usan como entradas del modelo que se propone en este trabajo.
+
+
+\section{Vectores de características} \label{sec:vec}
+Para preparar el conjunto de entrenamiento, los \textit{features} que se extraen del AST se transforman en vectores de características numéricas (figura \ref{fig:vec}). Esto permite que un modelo de aprendizaje los reciba como entrada. 
+
+Para transformar en valores numéricos los nombres de variables, nombres de clases, nombres de interfaces y otros identificadores de tipo \textit{string} se utiliza embeddings con el modelo Word2Vec (como se explicó en el capítulo anterior). Esto permite representar características no numéricas como vectores ($y_i$ en la figura \ref{fig:vec}).  
+
+Estos embeddings se combinan con otras características numéricas del código como: cantidad de variables, cantidad de métodos, total de nodos y profundidad del AST ( $x_i$ e la figura \ref{fig:vec})
+
+La unión de los $x_i$ y los $y_i$ forma un vector de características completo. Este vector proporciona una descripción multidimensional del código y captura tanto la estructura como la semántica en una única representación. 
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.1\textwidth]{vec.jpg}
+    \caption{Ejemplo de vector de características} 
+    \label{fig:vec}
+\end{figure}
+
+\section{Construcción del dataset}
+
+El \textit{dataset} de códigos en C\# está compuesto por dos tipos de pares de archivos:
+\begin{itemize}
+\item Aquellos que mantienen la misma funcionalidad pero presentan variaciones en la estructura y nomenclatura. Cada par está compuesto por 2 archivos que no son copias o un archivo original y su respectiva copia, con cambios mínimos y modificaciones que buscan simular escenarios típicos en los que el código mantiene su esencia lógica pero experimenta alteraciones en la sintaxis y organización.
+\item Aquellos que se clasifican como diferentes.
+\end{itemize}
+
+ Se eligieron las siguientes inteligencias artificiales generativas para generar parejas de códigos: 300 parejas generadas por GPT-4o, 300 por Copilot, 150 por Perplexity y 90 por Phind. Se usó un total de 1000 parejas para el entrenamiento, de ellas, 500 se clasificaron como similares (un código se generó a partir del otro) y 500 se clasificaron como distintas. 
+
+ Se crearon múltiples fragmentos de código en C\# que abarcan una variedad de funciones comunes, como cálculos geométricos, operaciones matemáticas, manipulación de cadenas de texto y validaciones de números.
+ 
+
+Además, se eligió un conjunto de 100 parejas de proyectos de programación en C\#. De esas, 30 parejas se generaron como copias manuales y 70 se crearon como cruces de códigos disímiles.
+
+Para las 30 parejas similares, para cada archivo o proyecto original, se generó una copia modificada siguiendo las siguientes estrategias de variación:
+    \begin{itemize}
+        \item \textit{Renombramiento de Clases, Métodos y Variables}: los nombres de clases, métodos y variables fueron modificados en las copias para simular diferencias en nomenclatura sin cambiar el objetivo funcional del código.
+        \item \textit{Modificación de Estructura de Código}: se alteraron estructuras sintácticas, como el tipo de bucles (de \texttt{for} a \texttt{while}) o la reestructuración de condiciones lógicas como por ejemplo: dividir un proceso complejo en pasos más pequeños de manera diferente o reordenar las instrucciones sin cambiar el resultado esperado. Estas modificaciones permiten que la copia mantenga la misma funcionalidad que el original, pero con una apariencia diferente en términos de código.
+        \item \textit{Ajustes en la Organización}: Algunos fragmentos se reorganizaron en cuanto al orden de ejecución o el uso de estructuras de control alternativas, manteniendo los resultados finales consistentes con el código original.
+    \end{itemize}
+
+Como resultado, se obtuvo un conjunto de datos que incluye código sintético (1000 parejas) y no sintético (100 parejas) ya que las copias que se generaron a mano se pueden considerar plagios reales.
+
+
+\chapter{Redes Neuronales Siamesas para la Similitud de Código}\label{chapter:proposal}
+
+Las redes neuronales siamesas se emplearon para analizar la estructura y el comportamiento lógico del código. Este enfoque facilita la identificación de patrones y las relaciones textuales y sintácticas. En este capítulo se detallan los componentes de esta arquitectura, la implementación del modelo y el proceso que se usó para el entrenamiento y predicción.
+
+\section{Red Neuronal Siamesa}
+
+Una red neuronal siamesa (figura \ref{fig:snn}) consta de dos subredes idénticas que procesan dos entradas en paralelo y producen representaciones vectoriales latentes. 
+Una representación vectorial latente es una forma de representar datos, como palabras, fragmentos de texto o código, en un espacio vectorial de alta dimensión. Estas capturan la información subyacente y las relaciones estructurales de los datos.
+ La arquitectura básica de una red neuronal siamesa es la siguiente:
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{snn2.jpg}
+    \caption{La imagen muestra la estructura general de una Red Neuronal Siamesa} 
+    \label{fig:snn}
+\end{figure}
+
+
+\begin{itemize}
+    \item \textbf{Entrada:} Dos vectores \(x_1\) y \(x_2\) de tamaño \(n\).
+    \item \textbf{Subred Base:} Ambas entradas se procesan mediante una red compartida (mismas capas y pesos para ambas entradas) \(f_\theta\):
+    \[
+    d_1 = f_\theta(x_1), \quad d_2 = f_\theta(x_2).
+    \]
+    que producen representaciones latentes.
+    \item \textbf{Métrica de Distancia:} La similitud entre las representaciones latentes se mide mediante una distancia como se muestra en la figura \ref{fig:snn}
+    \[
+    d(d_1, d_2) = ||d_1 - d_2||_p,
+    \]
+    donde \(p = 1\) para la distancia \(L1\) \cite{Bishop1995}, que se utiliza en este modelo.
+    \item \textbf{Clasificación Binaria:} La distancia se pasa por una capa de activación sigmoidal\cite{Hahnloser2000} para obtener una probabilidad:
+    \[
+    \hat{y} = \sigma(W \cdot d(d_1, d_2) + b).
+    \]
+\end{itemize}
+
+\section{Implementación del Modelo}
+
+Esta sección describe cómo se implementa un modelo de red siamesa utilizando TensorFlow/Keras \cite{Abadi2016}. La implementación incluye tres componentes: la subred base, la arquitectura siamesa y los mecanismos de optimización.
+
+\subsection{Subred Base}
+
+La subred base transforma las entradas \( x \in \mathbb{R}^{65} \) (la dimensión se corresponde con el número de \textit{features} que se extraen del AST) en representaciones vectoriales como se explicó en la sección \ref{sec:vec}. Este proceso ayuda al modelo a identificar patrones y eliminar información redundante.
+
+Las capas de la subred base son las siguientes:
+
+
+\begin{enumerate}
+    \item \textbf{Capa densa (\textit{Dense}):} cada capa densa aplica una transformación lineal seguida de una función de activación no lineal \textbf{ReLU} (Rectified Linear Unit) \cite{Goodfellow-et-al-2016}. La fórmula matemática para una capa es:
+    \[
+    h^{(l)} = \text{ReLU}(W^{(l)} \cdot h^{(l-1)} + b^{(l)}),
+    \]
+    donde:
+    \begin{itemize}
+        \item \( W^{(l)} \) es la matriz de pesos.
+        \item \( b^{(l)} \) es el vector de sesgos.
+        \item \( h^{(l)} \) es la salida de la capa \( l \).
+    \end{itemize}
+    
+    \item \textbf{Regularización con \textit{Dropout}:} Dropout apaga aleatoriamente una proporción \( p = 0.5 \) de las neuronas en cada capa durante el entrenamiento. Esto previene el sobreajuste del modelo\cite{srivastava2014dropout}.
+
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Arquitectura detallada de la subred:} 
+    \begin{itemize}
+        \item Entrada \( x \in \mathbb{R}^{65} \), donde cada dimensión es una característica del conjunto de datos.
+        \item Tres capas densas con tamaños decrecientes (512, 256, y 128 neuronas) y activaciones \textbf{ReLU}.
+        \item Salida \( h(x) \in \mathbb{R}^{128} \), un vector de representación latente que condensa la información relevante de las entradas
+
+Esta arquitectura se utiliza en las dos ramas del modelo siamés. El orden de en que se aplican las capas en cada rama se muestra en la figura \ref{fig:base}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.1\textwidth]{base.jpg}
+    \caption{Capas de la subred base} 
+    \label{fig:base}
+\end{figure}
+
+\subsection{Construcción del Modelo Siamés}
+
+El modelo siamés utiliza dos copias idénticas de la subred base para procesar dos entradas, compararlas y calcular una probabilidad de similitud.
+
+\begin{enumerate}
+    \item \textbf{Entradas:} Dos vectores \( x_1, x_2 \in \mathbb{R}^{65} \) que representan las instancias a comparar.
+
+    \item \textbf{Representaciones Latentes:} Cada entrada se transforma en una representación latente compacta mediante la subred base:
+    \[
+    d_1 = f_\theta(x_1), \quad d_2 = f_\theta(x_2),
+    \]
+    donde \( f_\theta \) representa la subred base con parámetros compartidos \( \theta \).
+
+    \item \textbf{Cálculo de la Distancia L1:} Para medir la similitud entre las representaciones latentes, se calcula la distancia L1:
+    \[
+    d(d_1, d_2) = ||d_1 - d_2||.
+    \]
+    Esto se implementa utilizando una capa \textbf{Lambda} en TensorFlow/Keras.
+
+    \item \textbf{Clasificación:} La distancia calculada se pasa a una capa densa con una activación sigmoidal (\textbf{sigmoid}) que produce una probabilidad:
+    \[
+    \hat{y} = \sigma(W \cdot d(d_1, d_2) + b),
+    \]
+    donde:
+    \begin{itemize}
+        \item \( W \) son los pesos de la capa.
+        \item \( b \) es el sesgo.
+        \item \( \sigma(z) = \frac{1}{1 + e^{-z}} \) convierte \( z \) en un valor entre 0 y 1, que se interpreta como la probabilidad de similitud.
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Función de Pérdida} \label{sec:func}
+
+En el contexto del aprendizaje automático, una \textbf{función de pérdida}  (también llamada \textbf{función de coste}) es una medida de cuán bien o mal funciona un modelo de aprendizaje automático. En términos simples, evalúa la diferencia entre las predicciones que hace el modelo y los valores reales (etiquetas) que se observan en los datos de entrenamiento.
+
+El objetivo del modelo durante el entrenamiento es minimizar la \textbf{función de pérdida}, lo que significa ajustar sus parámetros (como los pesos de una red neuronal) de manera que las predicciones del modelo se acerquen lo más posible a los valores reales.
+
+En este trabajo se implementó una \textbf{función de pérdida} personalizada que introduce una penalización adicional a los falsos negativos. A diferencia de la función estándar \textit{binary\_crossentropy}, que considera una penalización uniforme para errores. Para la red que se propone, un falso positivo es una pareja de códigos que se detectan falsamente como copias, mientras que un falso negativo es una pareja de poyectos similares que no se puede detectar. El software que este trabajo propone tiene el objetivo de capturar posibles códigos similares, para que luego un experto humano ( profesor ) los clasifique con exactitud. En este contexto resulta preferible devolver falsos plagios antes de fallar en detectar plagios reales.
+
+La \textbf{función de pérdida} personalizada se define como:
+\[
+\text{Loss} = \text{binary\_crossentropy}(y_{\text{true}}, y_{\text{pred}}) - \alpha \cdot y_{\text{true}} \cdot \log(1 - y_{\text{pred}} + \epsilon)
+\]
+
+Donde:
+\begin{itemize}
+    \item \( y_{\text{true}} \): Etiqueta real (0 o 1).
+    \item \( y_{\text{pred}} \): Predicción del modelo (probabilidad entre 0 y 1).
+    \item \( \alpha \): Factor de penalización para falsos negativos.
+    \item \( \epsilon \): Valor pequeño para evitar indeterminaciones en el cálculo del logaritmo.
+\end{itemize}
+
+\subsection{Optimización}\label{o}
+
+El modelo utiliza el optimizador \textbf{Adam} (Adaptive Moment Estimation) para ajustar los pesos \( \theta \) \cite{goodfellow2016deep}. Adam combina las ventajas de:
+\begin{itemize}
+    \item \textbf{Momentum:} acelera el entrenamiento en direcciones consistentes \cite{qian1999momentum}.
+    \item \textbf{Tasas de aprendizaje adaptativas:} ajusta la tasa de aprendizaje individual para cada parámetro \cite{duchi2011adagrad}.
+\end{itemize}
+
+Adam recibe los siguientes parámetros de entrada:
+
+\begin{itemize}
+    \item \textbf{Gradiente de la función de pérdida}: \( g_t \) (gradiente en el paso \( t \))
+    \item \textbf{Tasa de aprendizaje}: \( \alpha \) (por defecto \( 0.001 \))
+    \item \textbf{Tasas de decaimiento para los momentos}:
+    \begin{itemize}
+        \item \( \beta_1 \) (para el término de Momentum, típicamente \( 0.9 \))
+        \item \( \beta_2 \) (para el término de RMSProp, típicamente \( 0.999 \))
+    \end{itemize}
+    \item \textbf{Pequeña constante \( \varepsilon \)} para evitar divisiones por cero (por defecto \( 10^{-8} \))
+    \item \textbf{Valores iniciales de los parámetros}: \( \theta_0 \) (pesos a optimizar)
+    \item \textbf{Paso de tiempo}: \( t \), inicializado en 0.
+\end{itemize}
+
+En cada iteración \( t \), Adam actualiza los parámetros siguiendo los siguientes pasos:
+
+\begin{enumerate}
+    \item \textbf{Cálculo del Primer Momento (Término de Momentum)}
+    \begin{equation}
+        m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t
+    \end{equation}
+    Este término representa un \textbf{promedio móvil exponencial de los gradientes anteriores}, y suaviza las actualizaciones.
+
+    \item \textbf{Cálculo del Segundo Momento (Término de RMSProp)}
+    \begin{equation}
+        v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2
+    \end{equation}
+    Este término mantiene un \textbf{promedio móvil exponencial de los cuadrados de los gradientes}.
+
+    \item \textbf{Corrección del Sesgo:}
+    dado que \( m_t \) y \( v_t \) están inicialmente en cero, se debe corregir este sesgo mediante:
+
+    \begin{equation}
+        \hat{m}_t = \frac{m_t}{1 - \beta_1^t}
+    \end{equation}
+
+    \begin{equation}
+        \hat{v}_t = \frac{v_t}{1 - \beta_2^t}
+    \end{equation}
+
+    \item \textbf{Actualización de los Parámetros:}
+    usando los momentos corregidos, se actualizan los parámetros \( \theta_t \) de la siguiente manera:
+
+    \begin{equation}
+        \theta_t = \theta_{t-1} - \frac{\alpha \hat{m}_t}{\sqrt{\hat{v}_t} + \varepsilon}
+    \end{equation}
+
+    \begin{itemize}
+        \item La actualización \textbf{ajusta el tamaño del paso} usando la raíz cuadrada del segundo momento (\( \hat{v}_t \)).
+        \item La tasa de aprendizaje \( \alpha \) se ajusta automáticamente según la varianza de los gradientes.
+    \end{itemize}
+
+    \item \textbf{Incremento del Paso de Tiempo}
+    \begin{equation}
+        t = t + 1
+    \end{equation}
+\end{enumerate}
+
+
+El algoritmo devuelve los \textbf{parámetros actualizados} \( \theta_t \), moviéndolos en la dirección que minimiza la función de pérdida.
+
+
+\section{Proceso de Entrenamiento y Predicción}
+
+En esta sección se explica cómo se lleva a cabo el proceso de entrenamiento y predicción en el modelo siamés y cómo se  predice la similitud entre las entradas.
+
+\subsection{Entrenamiento}
+
+Se entrena el modelo siames utilizando un conjunto de tuplas de datos \( (x_1, x_2, y) \), donde \( x_1 \) y \( x_2 \) son dos instancias que se comparan entre sí, y \( y \) es la etiqueta binaria que indica si las instancias son similares (\(y = 1\)) o disímiles (\(y = 0\)).
+
+Durante el entrenamiento, el modelo ajusta los pesos para minimizar la \textbf{función de pérdida} sobre el conjunto de entrenamiento. Se optimiza el modelo con el algoritmo de \textbf{Adam}, como se mencionó en la sección \ref{o}.
+
+El modelo procesa cada par de entradas \( x_1, x_2 \) a través de la subred base para calcular sus representaciones latentes \( d_1 \) y \( d_2 \). Luego, calcula la distancia entre estas representaciones y utiliza esta información para una predicción \( \hat{y} \), que se compara con la etiqueta \( y \) en la función de pérdida. A medida que el modelo se entrena, ajusta sus pesos para minimizar la diferencia entre las predicciones \( \hat{y} \) y las etiquetas \( y \).
+
+
+\subsection{Predicción}
+
+Después de entrenar el modelo, el mismo se puede utilizar para hacer predicciones sobre nuevos pares de características \( \mathbf{X_1} \) y \( \mathbf{X_2} \). La similitud entre los dos fragmentos de código se calcula pasando las características de cada fragmento a través del modelo y obteniendo un valor numérico de similitud.
+
+El valor de la similitud, se obtiene de la siguiente forma:
+
+\[
+\text{similarity} = \text{model.predict}([ \mathbf{X_1}, \mathbf{X_2} ]).
+\]
+
+Este valor es un número entre 0 y 1, que indica cuán similares son los dos fragmentos de código. Un valor cercano a 1 indica que los fragmentos son similares, mientras que un valor cercano a 0 indica que son disímiles. La similitud se basa en la activación de la red, que convierte la distancia entre las representaciones latentes de los fragmentos en un valor de probabilidad.
