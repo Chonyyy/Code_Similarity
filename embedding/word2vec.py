@@ -1,4 +1,4 @@
-import json
+import json, os
 import numpy as np
 from gensim.models import Word2Vec
 
@@ -101,7 +101,8 @@ class FeatureVectorizer:
         del self.features["method_parameters"]
         
         self.convert_ndarray_to_list(self.features)
-        
+        os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
+
         with open(output_json_path, 'w', encoding='utf-8') as f:
             json.dump(self.features, f, ensure_ascii=False, indent=4)
         

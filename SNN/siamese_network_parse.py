@@ -133,7 +133,7 @@ class PrepareDataSNN:
 
     def process(self): 
         self._load_all_project()
-        # self._generate_pairs(self.all_projects)
+        self._generate_pairs(self.all_projects)
         # Generar los pares de entrenamiento
         pairs = self._generate_pairs(self.all_projects)
 

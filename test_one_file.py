@@ -3,11 +3,11 @@ import json, os
 from parser.parser import *
 from embedding.word2vec import FeatureVectorizer
 
-PROJECTS_FOLDER = f'{os.getcwd()}/Projects/val/'
+PROJECTS_FOLDER = f'{os.getcwd()}\\Projects\\Predefensa\\Codigos\\'
                                                     
-DATA_FOLDER = f'{os.getcwd()}/data/features_others/'
+DATA_FOLDER = f'{os.getcwd()}\\data\\Predefensa\\Codigos\\features\\'
                                                           
-DATA_FOLDER_VECT = f'{os.getcwd()}/data/features_vect_others/'
+DATA_FOLDER_VECT = f'{os.getcwd()}\\data\\Predefensa\\Codigos\\features_vect\\'
 
 os.makedirs(DATA_FOLDER, exist_ok=True)
 

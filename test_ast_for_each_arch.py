@@ -18,6 +18,8 @@ class ProjectFeatureProcessor:
             if project.is_dir():
                 print(f"Procesando: {self.projects_folder + project.name}")
                 self._process_single_project(project)
+                    
+                
 
     def _process_single_project(self, project):
         """Procesa un único proyecto y guarda los resultados en JSON y vectores."""

@@ -11,7 +11,7 @@ from tensorflow.keras.losses import binary_crossentropy
 from tensorflow.keras.saving import register_keras_serializable
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score
-from SNN.siamese_network_parse import PrepareDataSNN
+from siamese_network_parse import PrepareDataSNN
 
 class SiameseNeuralNetwork:
     def __init__(self, input_shape, learning_rate=0.001, SEED=37):
@@ -59,8 +59,8 @@ class SiameseNeuralNetwork:
 
         # Modelo completo
         model = Model(inputs=[input_a, input_b], outputs=output)
-        # model.compile(loss='binary_crossentropy', optimizer=Adam(self.learning_rate), metrics=['accuracy'])
-        model.compile(loss=asymmetric_loss, optimizer=Adam(self.learning_rate), metrics=['accuracy'])
+        model.compile(loss='binary_crossentropy', optimizer=Adam(self.learning_rate), metrics=['accuracy'])
+        # model.compile(loss=asymmetric_loss, optimizer=Adam(self.learning_rate), metrics=['accuracy'])
         return model
      
     def euclidean_distance(self, vects):
@@ -77,7 +77,7 @@ class SiameseNeuralNetwork:
             os.makedirs('./models')
         self.model.save(f'models/{model_name}.keras')
 
-    def train(self, X1_train, X2_train, y_train, validation_data, epochs=20, batch_size=32):
+    def train(self, X1_train, X2_train, y_train, validation_data, epochs=1000, batch_size=32):
         X1_val, X2_val, y_val = validation_data
         history = self.model.fit([X1_train, X2_train], y_train,
                                  validation_data=([X1_val, X2_val], y_val),
@@ -302,7 +302,7 @@ if __name__ == "__main__":
     # history = siamese_net.train(X1_train, X2_train, y_train, validation_data=(X1_val, X2_val, y_val))
 
     # # Guardar el modelo
-    # # siamese_net._save_model("model_1")
+    # siamese_net._save_model("model_1")
 
 
     # m = siamese_net.evaluate(X1_new, X2_new, y_new, names)
@@ -327,7 +327,7 @@ if __name__ == "__main__":
     history = siamese_net.train(X1_train, X2_train, y_train, validation_data=(X1_val, X2_val, y_val))
 
     # Guardar el modelo
-    siamese_net._save_model("model_1")
+    # siamese_net._save_model("model_1")
 
 
     print("Evaluando en el conjunto de prueba...")

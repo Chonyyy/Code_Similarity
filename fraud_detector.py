@@ -9,7 +9,7 @@ from SNN.siamese_network_parse import PrepareDataSNN
 from test_ast_for_each_arch import ProjectFeatureProcessor
 
 class SimilarityDetector:
-    def __init__(self, projects_folder, data_folder, data_folder_vect, model_path, threshold=0.2):
+    def __init__(self, projects_folder, data_folder, data_folder_vect, model_path, threshold=0.3):
         self.projects_folder = projects_folder
         self.data_folder = data_folder
         self.data_folder_vect = data_folder_vect
@@ -47,9 +47,9 @@ class SimilarityDetector:
         return duplicates, count
 
 if __name__ == "__main__":
-    PROJECTS_FOLDER = f"{os.getcwd()}/Projects/pruebas/Moogle/"
-    DATA_FOLDER = f"{os.getcwd()}/data/pruebas/Moogle/features"
-    DATA_FOLDER_VECT = f"{os.getcwd()}/data/pruebas/Moogle/features_vect"
+    PROJECTS_FOLDER = f"{os.getcwd()}\\Projects\\Predefensa\\Moogle\\"
+    DATA_FOLDER = f"{os.getcwd()}\\data\\Predefensa\\Moogle\\features\\"
+    DATA_FOLDER_VECT = f"{os.getcwd()}\\data\\Predefensa\\Moogle\\features_vect\\"
     MODEL_PATH = "./models/model_1.keras"
 
     detector = SimilarityDetector(PROJECTS_FOLDER, DATA_FOLDER, DATA_FOLDER_VECT, MODEL_PATH)
