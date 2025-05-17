@@ -1,5 +1,5 @@
 import os
-import random
+import random, logging
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
@@ -9,7 +9,7 @@ from SNN.siamese_network_parse import PrepareDataSNN
 from test_ast_for_each_arch import ProjectFeatureProcessor
 
 class SimilarityDetector:
-    def __init__(self, projects_folder, data_folder, data_folder_vect, model_path, threshold=0.30):
+    def __init__(self, projects_folder, data_folder, data_folder_vect, model_path, threshold=0.45):
         self.projects_folder = projects_folder
         self.data_folder = data_folder
         self.data_folder_vect = data_folder_vect
@@ -17,7 +17,8 @@ class SimilarityDetector:
         self.threshold = threshold
         self.processor = ProjectFeatureProcessor(projects_folder, data_folder, data_folder_vect)
         self.model = load_model(self.model_path, custom_objects={'L1Distance': L1Distance})
-
+        
+        
     def process_projects(self):
         """Procesa los proyectos para generar características."""
         self.processor.process_projects()
@@ -34,12 +35,16 @@ class SimilarityDetector:
 
         duplicates = []
         count = 0
+        logger = logging.getLogger(__name__)
+        logging.basicConfig(filename='result.log', encoding='utf-8', level=logging.DEBUG)
+        
 
         for a, b, name in zip(data_a, data_b, names):
             similarity = self.predict_similarity(a, b)
 
             if similarity >= self.threshold:
                 duplicates.append(name)
+                logger.debug(f"{name}  : {similarity}")
                 count += 1
                 print(f"¡Posibles copias detectadas!: {name} (Similitud: {similarity:.2f})")
 
@@ -47,9 +52,9 @@ class SimilarityDetector:
         return duplicates, count
 
 if __name__ == "__main__":
-    PROJECTS_FOLDER = f"{os.getcwd()}\\Projects\\Predefensa\\Moogle\\"
-    DATA_FOLDER = f"{os.getcwd()}\\data\\Predefensa\\Moogle\\features\\"
-    DATA_FOLDER_VECT = f"{os.getcwd()}\\data\\Predefensa\\Moogle\\features_vect\\"
+    PROJECTS_FOLDER = f"{os.getcwd()}\\Projects\\projects\\"
+    DATA_FOLDER = f"{os.getcwd()}\\data\\rodrigo\\features\\"
+    DATA_FOLDER_VECT = f"{os.getcwd()}\\data\\rodrigo\\features_vect\\"
     MODEL_PATH = "./models/model_1.keras"
 
     detector = SimilarityDetector(PROJECTS_FOLDER, DATA_FOLDER, DATA_FOLDER_VECT, MODEL_PATH)
